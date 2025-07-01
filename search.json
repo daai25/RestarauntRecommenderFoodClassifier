@@ -1,12 +1,22 @@
 [
   {
-    "objectID": "modelling_report.html",
-    "href": "modelling_report.html",
-    "title": "Room for new Information again… yaay!",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "About This Documentation",
     "section": "",
-    "text": "Room for new Information again… yaay!",
+    "text": "Well… currently there is nothing… so I dunno",
     "crumbs": [
-      "Room for new Information again... yaay!"
+      "About This Documentation"
+    ]
+  },
+  {
+    "objectID": "project_charta.html",
+    "href": "project_charta.html",
+    "title": "Room for new Information again!!! AHHHHH",
+    "section": "",
+    "text": "Room for new Information again!!! AHHHHH",
+    "crumbs": [
+      "Room for new Information again!!! AHHHHH"
     ]
   },
   {
@@ -73,36 +83,6 @@
     "text": "Conclusions of the key findings from the modelling phase\nDiscussion about limitations\nProposal for extensions and further work\nProposal for the deployment of the generated insights/model"
   },
   {
-    "objectID": "evaluation.html",
-    "href": "evaluation.html",
-    "title": "Room for new Information again",
-    "section": "",
-    "text": "Room for new Information again",
-    "crumbs": [
-      "Room for new Information again"
-    ]
-  },
-  {
-    "objectID": "project_charta.html",
-    "href": "project_charta.html",
-    "title": "Room for new Information again!!! AHHHHH",
-    "section": "",
-    "text": "Room for new Information again!!! AHHHHH",
-    "crumbs": [
-      "Room for new Information again!!! AHHHHH"
-    ]
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "About This Documentation",
-    "section": "",
-    "text": "Well… currently there is nothing… so I dunno",
-    "crumbs": [
-      "About This Documentation"
-    ]
-  },
-  {
     "objectID": "data_report.html",
     "href": "data_report.html",
     "title": "Room for new Information",
@@ -167,5 +147,25 @@
     "title": "Sample Project - Project Charta",
     "section": "",
     "text": "List the people involved in the development work here with their role titles, tasks and contact details"
+  },
+  {
+    "objectID": "evaluation.html",
+    "href": "evaluation.html",
+    "title": "Room for new Information again",
+    "section": "",
+    "text": "Room for new Information again",
+    "crumbs": [
+      "Room for new Information again"
+    ]
+  },
+  {
+    "objectID": "modelling_report.html",
+    "href": "modelling_report.html",
+    "title": "Room for new Information again… yaay!",
+    "section": "",
+    "text": "Room for new Information again… yaay!",
+    "crumbs": [
+      "Room for new Information again... yaay!"
+    ]
   }
 ]
