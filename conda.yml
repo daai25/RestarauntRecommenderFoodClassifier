@@ -1,17 +1,17 @@
-name: sample
+name: restaurant-recommend-classifier
 channels:
-  - anaconda
-  - conda-forge
-  - defaults
+    - anaconda
+    - conda-forge
+    - defaults
 dependencies:
-  - bokeh
-  - jupyterlab
-  - pandas
-  - python
-  - scikit-learn
-  - scikit-plot
-  - seaborn
-  - pip
-  - pip:
-      - python-dotenv
-      - ydata-profiling
+    - bokeh
+    - jupyterlab
+    - pandas
+    - python
+    - scikit-learn
+    - scikit-plot
+    - seaborn
+    - pip
+    - pip:
+          - python-dotenv
+          - ydata-profiling
