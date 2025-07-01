@@ -15,7 +15,8 @@ counts = {
     "fast_food": 0,
     "cafe": 0,
     "with_url": 0,
-    "with_cuisine": 0
+    "with_cuisine": 0,
+    "with_url_and_cuisine": 0
 }
 
 # Count
@@ -32,7 +33,10 @@ for el in elements:
 
     if "url" in tags or "website" in tags:
         counts["with_url"] += 1
-    if "cuisine" in tags:
+        if "cuisine" in tags:
+            counts["with_cuisine"] += 1
+            counts["with_url_and_cuisine"] += 1
+    elif "cuisine" in tags:
         counts["with_cuisine"] += 1
 
 # Total
@@ -41,6 +45,7 @@ total = counts["restaurant"] + counts["fast_food"] + counts["cafe"]
 # Percentages
 url_pct = (counts["with_url"] / total * 100) if total else 0
 cuisine_pct = (counts["with_cuisine"] / total * 100) if total else 0
+url_and_cuisine_pct = (counts["with_url_and_cuisine"] / total * 100) if total else 0
 
 # Output
 report = f"""\
@@ -54,6 +59,7 @@ Total gathered: {total}
 Additional information:
 - With URL: {counts["with_url"]} ({url_pct:.2f}%)
 - With cuisine type: {counts["with_cuisine"]} ({cuisine_pct:.2f}%)
+- With URL and cuisine type: {counts["with_url_and_cuisine"]} ({url_and_cuisine_pct:.2f}%)
 """
 
 with open(output_file, "w", encoding="utf-8") as f:

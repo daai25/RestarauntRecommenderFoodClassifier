@@ -8,3 +8,4 @@ Total gathered: 10657
 Additional information:
 - With URL: 5138 (48.21%)
 - With cuisine type: 5039 (47.28%)
+- With URL and cuisine type: 2984 (28.00%)
