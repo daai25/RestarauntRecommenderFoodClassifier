@@ -26,24 +26,25 @@ area["name"="{name}"]["boundary"="administrative"]["admin_level"="4"]->.a;
 out center;
 """
 
-# Ensure the output directory exists
-os.makedirs("raw_data/cantons", exist_ok=True)
+if __name__ == "__main__":
+    # Ensure the output directory exists
+    os.makedirs("raw_data/cantons", exist_ok=True)
 
-for k in kantone:
-    filename = f"raw_data/cantons/restaurants_{k.replace(' ', '_').replace('/', '_')}.json"
-    if os.path.exists(filename):
-        print(f"Skipping {k}, file already exists.")
-        continue
+    for k in kantone:
+        filename = f"raw_data/cantons/restaurants_{k.replace(' ', '_').replace('/', '_')}.json"
+        if os.path.exists(filename):
+            print(f"Skipping {k}, file already exists.")
+            continue
 
-    print(f"Gathering restaurants in {k} ...")
-    query = template.format(name=k)
-    response = requests.post("https://overpass-api.de/api/interpreter", data={"data": query})
-    if response.ok:
-        with open(filename, "w", encoding="utf-8") as f:
-            json.dump(response.json(), f, ensure_ascii=False, indent=2)
-    else:
-        print(f"Error with {k}: {response.status_code}")
+        print(f"Gathering restaurants in {k} ...")
+        query = template.format(name=k)
+        response = requests.post("https://overpass-api.de/api/interpreter", data={"data": query})
+        if response.ok:
+            with open(filename, "w", encoding="utf-8") as f:
+                json.dump(response.json(), f, ensure_ascii=False, indent=2)
+        else:
+            print(f"Error with {k}: {response.status_code}")
 
-    time_to_sleep = random.randint(1, 20)
-    print(f"Waiting for {time_to_sleep} seconds before next request...")
-    time.sleep(time_to_sleep)
+        time_to_sleep = random.randint(1, 20)
+        print(f"Waiting for {time_to_sleep} seconds before next request...")
+        time.sleep(time_to_sleep)
