@@ -1,0 +1,7487 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.7 375dc00a",
+  "osm3s": {
+    "timestamp_osm_base": "2025-07-02T11:19:30Z",
+    "timestamp_areas_base": "2025-07-02T08:19:40Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+    {
+      "type": "node",
+      "id": 290293980,
+      "lat": 46.7539231,
+      "lon": 7.1460915,
+      "tags": {
+        "addr:housenumber": "16",
+        "addr:street": "Au Village",
+        "amenity": "restaurant",
+        "name": "Auberge du Château",
+        "opening_hours": "Th-Sa 09:00-13:30; Su 09:00-14:00",
+        "phone": "+41 26 413 28 34",
+        "website": "https://www.auberge-ependes.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 291259370,
+      "lat": 46.805847,
+      "lon": 7.1386987,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Aiglon Sport"
+      }
+    },
+    {
+      "type": "node",
+      "id": 293379081,
+      "lat": 46.8053388,
+      "lon": 7.156299,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "italian",
+        "name": "Molino",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 293379493,
+      "lat": 46.8061989,
+      "lon": 7.1542515,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "kebab",
+        "name": "Snack Kebap Memo"
+      }
+    },
+    {
+      "type": "node",
+      "id": 293379494,
+      "lat": 46.806144,
+      "lon": 7.1543604,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "kebab",
+        "name": "Indiana Café-Bar"
+      }
+    },
+    {
+      "type": "node",
+      "id": 293379547,
+      "lat": 46.8046986,
+      "lon": 7.1532854,
+      "tags": {
+        "addr:city": "Fribourg",
+        "addr:postcode": "1700",
+        "addr:street": "Rue du Temple",
+        "amenity": "restaurant",
+        "name": "Restaurant Pizzeria La Nonna",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 296582365,
+      "lat": 46.8055599,
+      "lon": 7.1563454,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "vietnamese",
+        "name": "Vietnam house"
+      }
+    },
+    {
+      "type": "node",
+      "id": 299550701,
+      "lat": 46.9312943,
+      "lon": 7.118348,
+      "tags": {
+        "addr:postcode": "3280",
+        "amenity": "restaurant",
+        "cuisine": "crepe",
+        "email": "info@lachaloupe.ch",
+        "name": "La Chaloupe",
+        "opening_hours": "Mo-Su 09:30-20:00",
+        "outdoor_seating": "yes",
+        "phone": "+41 26 670 40 00",
+        "website": "https://www.lachaloupe.ch",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 308679918,
+      "lat": 46.9257509,
+      "lon": 7.115172,
+      "tags": {
+        "amenity": "restaurant",
+        "indoor_seating": "yes",
+        "name": "Bahnhof",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 318400562,
+      "lat": 46.7000216,
+      "lon": 6.9227708,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Auberge de l'Aigle"
+      }
+    },
+    {
+      "type": "node",
+      "id": 355018403,
+      "lat": 46.6209514,
+      "lon": 7.0579741,
+      "tags": {
+        "addr:city": "Bulle",
+        "addr:housenumber": "65",
+        "addr:postcode": "1630",
+        "addr:street": "Grand-Rue",
+        "amenity": "restaurant",
+        "name": "Le Barbq"
+      }
+    },
+    {
+      "type": "node",
+      "id": 355018409,
+      "lat": 46.6179965,
+      "lon": 7.0570751,
+      "tags": {
+        "addr:city": "Bulle",
+        "addr:housenumber": "7",
+        "addr:postcode": "1630",
+        "addr:street": "Grand-Rue",
+        "amenity": "restaurant",
+        "name": "Hôtel de Ville",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 355018411,
+      "lat": 46.6177515,
+      "lon": 7.0569553,
+      "tags": {
+        "addr:city": "Bulle",
+        "addr:housenumber": "1",
+        "addr:postcode": "1630",
+        "addr:street": "Grand-Rue",
+        "amenity": "restaurant",
+        "name": "Le Gruyérien",
+        "tourism": "attraction"
+      }
+    },
+    {
+      "type": "node",
+      "id": 355018415,
+      "lat": 46.6184406,
+      "lon": 7.0576037,
+      "tags": {
+        "addr:city": "Bulle",
+        "addr:housenumber": "18",
+        "addr:postcode": "1630",
+        "addr:street": "Grand-Rue",
+        "amenity": "restaurant",
+        "name": "Crêperie-Restaurant Marco Polo",
+        "source": "survey",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 355018417,
+      "lat": 46.619188,
+      "lon": 7.0579154,
+      "tags": {
+        "addr:city": "Bulle",
+        "addr:housenumber": "31",
+        "addr:postcode": "1630",
+        "addr:street": "Rue de la Promenade",
+        "amenity": "restaurant",
+        "name": "Café de la Promenade",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 355018529,
+      "lat": 46.6180383,
+      "lon": 7.0558451,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Aux parfums des saisons",
+        "opening_hours": "Tu-Fr 06:00-18:30; Sa, Su 06:00-18:00",
+        "source": "survey",
+        "website": "https://www.auxparfumsdessaisons.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 355357551,
+      "lat": 46.6175084,
+      "lon": 7.056269,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Le Fribourgeois",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 355357919,
+      "lat": 46.5832781,
+      "lon": 7.081082,
+      "tags": {
+        "amenity": "restaurant",
+        "diet:vegan": "no",
+        "diet:vegetarian": "yes",
+        "email": "reception@hotel-fleurdelys.ch",
+        "name": "Hotel de la Fleur de Lys",
+        "opening_hours": "Mo-Su 11:30-14:00,18:15-20:30",
+        "phone": "+41 26 921 82 82",
+        "tourism": "hotel",
+        "website": "https://hotel-fleurdelys.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 355357920,
+      "lat": 46.5834414,
+      "lon": 7.0814505,
+      "tags": {
+        "addr:housenumber": "22",
+        "addr:street": "Rue du Bourg",
+        "amenity": "restaurant",
+        "check_date:opening_hours": "2024-02-24",
+        "diet:vegan": "no",
+        "diet:vegetarian": "yes",
+        "email": "info@lesaintgeorges.ch",
+        "name": "Saint-Georges",
+        "opening_hours:signed": "no",
+        "phone": "+41 26 921 83 00",
+        "tourism": "hotel",
+        "website": "https://www.lesaintgeorges.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 355357921,
+      "lat": 46.5834814,
+      "lon": 7.0816162,
+      "tags": {
+        "addr:housenumber": "24",
+        "addr:street": "Rue du Bourg",
+        "amenity": "restaurant",
+        "email": "ah@aubergehalle.ch",
+        "name": "Auberge de la Halle",
+        "opening_hours": "Mo-Su 10:00-22:00",
+        "phone": "+41 26 921 21 78",
+        "website": "https://aubergehalle.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 370171684,
+      "lat": 46.7273266,
+      "lon": 7.1369585,
+      "tags": {
+        "addr:city": "Treyvaux",
+        "addr:country": "CH",
+        "addr:housenumber": "1",
+        "addr:postcode": "1733",
+        "addr:street": "Route D'Arconciel",
+        "amenity": "restaurant",
+        "cuisine": "pizza",
+        "name": "Croix Blanche",
+        "phone": "+41 26 413 11 53",
+        "source": "survey",
+        "toilets:wheelchair": "yes",
+        "website": "http://www.restaurant-pizzeria-croix-blanche.ch",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 370198135,
+      "lat": 46.7864793,
+      "lon": 7.0954221,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Auberge du Tilleul"
+      }
+    },
+    {
+      "type": "node",
+      "id": 370811468,
+      "lat": 46.6241487,
+      "lon": 6.990236,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Hotel de Ville",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 370811560,
+      "lat": 46.6395651,
+      "lon": 6.9742694,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Auberge de la Couronne",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 371407258,
+      "lat": 46.6973632,
+      "lon": 6.9187356,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "chinese",
+        "name": "Donghai",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 371407260,
+      "lat": 46.6966455,
+      "lon": 6.9180554,
+      "tags": {
+        "addr:city": "Romont FR",
+        "addr:housenumber": "8",
+        "addr:postcode": "1680",
+        "addr:street": "Grand-Rue",
+        "amenity": "restaurant",
+        "email": "info@hotelliondor.ch",
+        "name": "Hotel Lion d'Or",
+        "phone": "+41 26 652 22 96",
+        "tourism": "hotel",
+        "website": "https://hotelliondor.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 371407324,
+      "lat": 46.6962971,
+      "lon": 6.9195774,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Les 13 Cantons",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 371407331,
+      "lat": 46.6966188,
+      "lon": 6.9188876,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Restaurant de la Couronne",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 371407367,
+      "lat": 46.6943959,
+      "lon": 6.9176473,
+      "tags": {
+        "alt_name": "Café-Restaurant Au Suisse",
+        "amenity": "restaurant",
+        "contact:addr": "Rue du Château 105, 1680 Romont",
+        "contact:phone": "+ 41 26 6517675",
+        "name": "Au Suisse",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 371407453,
+      "lat": 46.6914239,
+      "lon": 6.9147203,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Hôtel de la Belle-Croix",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 377104017,
+      "lat": 46.97549,
+      "lon": 7.1953016,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Restaurant Bären",
+        "name:fr": "Hotel de L'Ours",
+        "source": "survey",
+        "tourism": "hotel",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 377104314,
+      "lat": 46.9746469,
+      "lon": 7.1950188,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Avanti Pizza",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 381712513,
+      "lat": 46.6204249,
+      "lon": 6.9884544,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Restaurant de la Croix-Verte",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 381712516,
+      "lat": 46.6200948,
+      "lon": 6.9885686,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "italian",
+        "name": "Manoir",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 383176624,
+      "lat": 46.6556833,
+      "lon": 6.9297083,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Country Lodge",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 383176933,
+      "lat": 46.6937756,
+      "lon": 6.9542123,
+      "tags": {
+        "addr:city": "Berlens",
+        "addr:housenumber": "7",
+        "addr:postcode": "1680",
+        "addr:street": "Route de l'Epine",
+        "amenity": "restaurant",
+        "name": "Auberge du Pélegrin",
+        "source": "survey",
+        "toilets:wheelchair": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 383177134,
+      "lat": 46.6984036,
+      "lon": 6.9229837,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Auberge de L'Ange",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 392298280,
+      "lat": 46.8209916,
+      "lon": 7.1626992,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Auberge aux 4 Vents",
+        "phone": "+41 26 321 56 00",
+        "stars": "3",
+        "tourism": "hotel",
+        "website": "http://www.aux4vents.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 392915098,
+      "lat": 46.5855254,
+      "lon": 7.1628551,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Pinte du Pralet"
+      }
+    },
+    {
+      "type": "node",
+      "id": 403119278,
+      "lat": 46.7626466,
+      "lon": 7.2084914,
+      "tags": {
+        "amenity": "restaurant",
+        "level": "1",
+        "name": "Pinte",
+        "smoking": "no",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 410725232,
+      "lat": 46.576339,
+      "lon": 6.8687975,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Auberge de la croix fédérale"
+      }
+    },
+    {
+      "type": "node",
+      "id": 459473286,
+      "lat": 46.7165314,
+      "lon": 6.9950118,
+      "tags": {
+        "alt_name": "Restaurant/Resto Cheval Blanc, Orsonnens FR",
+        "amenity": "restaurant",
+        "name": "Le Cheval Blanc"
+      }
+    },
+    {
+      "type": "node",
+      "id": 460441725,
+      "lat": 46.673617,
+      "lon": 7.0246564,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Pizzeria La Forêt",
+        "source": "survey",
+        "website": "https://www.camping-la-foret.ch/pizzeria.html"
+      }
+    },
+    {
+      "type": "node",
+      "id": 460441817,
+      "lat": 46.6772526,
+      "lon": 6.9781511,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Hôtel du Lion D'Or",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 460924337,
+      "lat": 46.6905957,
+      "lon": 6.8999993,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "L' Union",
+        "source": "survey",
+        "url": "http://www.restaurant-union-billens.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 461616789,
+      "lat": 46.5276004,
+      "lon": 6.9014585,
+      "tags": {
+        "addr:city": "Châtel-St-Denis",
+        "addr:housenumber": "31",
+        "addr:postcode": "1618",
+        "addr:street": "Grand-Rue",
+        "amenity": "restaurant",
+        "cuisine": "chinese",
+        "name": "Sichuan",
+        "phone": "+41 21 948 68 68",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 461616794,
+      "lat": 46.5279144,
+      "lon": 6.9020291,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Les 13 Cantons",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 461616866,
+      "lat": 46.5270247,
+      "lon": 6.9007247,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "La Place",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 493599694,
+      "lat": 46.8158612,
+      "lon": 6.7878862,
+      "tags": {
+        "addr:city": "Cheyres",
+        "addr:housenumber": "342",
+        "addr:postcode": "1468",
+        "addr:street": "Route d'Yverdon-les-Bains",
+        "amenity": "restaurant",
+        "contact:facebook": "LaGrappeCheyres",
+        "contact:instagram": "lagrappecheyres",
+        "cuisine": "italian",
+        "diet:vegan": "no",
+        "diet:vegetarian": "yes",
+        "indoor_seating": "yes",
+        "name": "La Grappe",
+        "opening_hours": "Tu-Sa 08:00-14:00,17:00-22:00; Su 08:00-14:30",
+        "outdoor_seating": "yes",
+        "phone": "+41 26 663 55 55",
+        "toilets": "yes",
+        "toilets:wheelchair": "no",
+        "website": "https://lagrappe-cheyres.ch",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 496831054,
+      "lat": 46.8356442,
+      "lon": 6.8186842,
+      "tags": {
+        "addr:city": "Font",
+        "addr:housenumber": "143",
+        "addr:postcode": "1473",
+        "addr:street": "Route d'Yverdon-les-Bains",
+        "amenity": "restaurant",
+        "name": "Auberge de la Couronne",
+        "phone": "+41 26 663 11 62"
+      }
+    },
+    {
+      "type": "node",
+      "id": 498878914,
+      "lat": 46.9302936,
+      "lon": 7.1171692,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Lord Nelson"
+      }
+    },
+    {
+      "type": "node",
+      "id": 503509383,
+      "lat": 46.8872258,
+      "lon": 6.9820902,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Le Grütli"
+      }
+    },
+    {
+      "type": "node",
+      "id": 503523893,
+      "lat": 46.8668961,
+      "lon": 7.0124531,
+      "tags": {
+        "alt_name": "Café restaurant le Lion d'Or",
+        "amenity": "restaurant",
+        "bar": "yes",
+        "contact:facebook": "https://www.facebook.com/people/Caf%C3%A9-Restaurant-Lion-dOr-Domdidier/100068749996410/",
+        "contact:phone": "+41 26 675 12 56",
+        "indoor_seating": "yes",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "internet_access:ssid": "UPC79EE489",
+        "level": "0",
+        "name": "Le Lion d'Or",
+        "opening_hours": "PH,Mo-Su 06:15-22:00+",
+        "outdoor_seating": "yes",
+        "unsigned": "opening_hours",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 510620332,
+      "lat": 46.8909894,
+      "lon": 6.9804049,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Les Carabiniers"
+      }
+    },
+    {
+      "type": "node",
+      "id": 510780777,
+      "lat": 46.8875488,
+      "lon": 6.9821571,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Le Gottau"
+      }
+    },
+    {
+      "type": "node",
+      "id": 516655328,
+      "lat": 46.838561,
+      "lon": 7.0997287,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Le Sarrazin"
+      }
+    },
+    {
+      "type": "node",
+      "id": 529675694,
+      "lat": 46.9285814,
+      "lon": 7.1165531,
+      "tags": {
+        "addr:city": "Murten",
+        "addr:country": "CH",
+        "addr:housenumber": "2",
+        "addr:postcode": "3280",
+        "addr:street": "Kreuzgasse",
+        "amenity": "restaurant",
+        "contact:website": "https://www.kyoto-murten.ch/",
+        "cuisine": "asian",
+        "name": "Kyoto"
+      }
+    },
+    {
+      "type": "node",
+      "id": 529675707,
+      "lat": 46.9285137,
+      "lon": 7.1166663,
+      "tags": {
+        "addr:city": "Murten",
+        "addr:country": "CH",
+        "addr:housenumber": "4",
+        "addr:postcode": "3280",
+        "addr:street": "Kreuzgasse",
+        "amenity": "restaurant",
+        "cuisine": "italian",
+        "name": "Taverna Italiana"
+      }
+    },
+    {
+      "type": "node",
+      "id": 529967760,
+      "lat": 46.8511643,
+      "lon": 6.9897212,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Relais du Lion d'Or"
+      }
+    },
+    {
+      "type": "node",
+      "id": 550492788,
+      "lat": 46.8676846,
+      "lon": 7.0130614,
+      "tags": {
+        "amenity": "restaurant",
+        "bar": "yes",
+        "contact:phone": "+41 26 6751270",
+        "cuisine": "pizza;italian",
+        "diet:halal": "no",
+        "diet:non-vegetarian": "yes",
+        "diet:vegan": "no",
+        "diet:vegetarian": "yes",
+        "indoor_seating": "yes",
+        "name": "Café de la Gare",
+        "opening_hours": "Mo-Sa 10:00-14:00,17:00-23:00; Su 17:00-22:00",
+        "outdoor_seating": "yes",
+        "takeaway": "yes",
+        "unsigned": "opening_hours"
+      }
+    },
+    {
+      "type": "node",
+      "id": 560704499,
+      "lat": 46.8031534,
+      "lon": 7.1622849,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "La Clef"
+      }
+    },
+    {
+      "type": "node",
+      "id": 563262734,
+      "lat": 46.8038188,
+      "lon": 7.167232,
+      "tags": {
+        "addr:country": "CH",
+        "addr:housenumber": "29",
+        "addr:postcode": "1700",
+        "addr:street": "Rue de la Samaritaine",
+        "amenity": "restaurant",
+        "name": "Le Soleil blanc",
+        "opening_hours": "Tu-Sa 08:00-23:30; Su 08:00-15:30",
+        "phone": "+41 26 322 21 33"
+      }
+    },
+    {
+      "type": "node",
+      "id": 563262792,
+      "lat": 46.8040544,
+      "lon": 7.1660719,
+      "tags": {
+        "addr:city": "Fribourg",
+        "addr:country": "CH",
+        "addr:housenumber": "2",
+        "addr:postcode": "1700",
+        "addr:street": "Rue de la Samaritaine",
+        "amenity": "restaurant",
+        "check_date:opening_hours": "2025-01-26",
+        "cuisine": "moroccan;european",
+        "indoor_seating": "yes",
+        "name": "Cafe restaurant des 3 Rois",
+        "opening_hours:signed": "no",
+        "outdoor_seating": "parklet",
+        "phone": "+41 26 321 36 46",
+        "website": "https://www.restaurantdes3rois.ch/",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 563286954,
+      "lat": 46.8053353,
+      "lon": 7.1565082,
+      "tags": {
+        "addr:housenumber": "91",
+        "addr:postcode": "1700",
+        "addr:street": "Rue de Lausanne",
+        "amenity": "restaurant",
+        "cuisine": "italian;italian_pizza;pasta;noodles;pizza",
+        "email": "fribourg@luigia.ch",
+        "name": "Restaurant LUIGIA",
+        "opening_hours": "Mo-Th 11:30-14:00, 17:30-22:30; Fr-Sa 11:30-23:00; Su 11:30-22:00",
+        "phone": "+41 26 322 21 30",
+        "toilets:wheelchair": "yes",
+        "website": "https://www.luigia.ch/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 563286955,
+      "lat": 46.8055449,
+      "lon": 7.1588205,
+      "tags": {
+        "addr:city": "Fribourg",
+        "addr:country": "CH",
+        "addr:housenumber": "38",
+        "addr:postcode": "1700",
+        "addr:street": "Rue de Lausanne",
+        "alt_name": "Bindella Fribourg",
+        "amenity": "restaurant",
+        "cuisine": "italian",
+        "name": "Bindella",
+        "operator": "Bindella",
+        "website": "https://www.bindella.ch/de/bindella-fribourg.html"
+      }
+    },
+    {
+      "type": "node",
+      "id": 563877100,
+      "lat": 46.8048989,
+      "lon": 7.154845,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Le Chantilly",
+        "opening_hours": "Mo-Fr 06:15-17:00; Su 07:00-17:00; Sa 09:00-19:00",
+        "operator": "Suard",
+        "phone": "+41 26 322 22 01",
+        "website": "https://www.confiserie-suard.ch",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 563877145,
+      "lat": 46.8046791,
+      "lon": 7.1545091,
+      "tags": {
+        "addr:housenumber": "25",
+        "addr:postcode": "1700",
+        "addr:street": "Rue de Romont",
+        "amenity": "restaurant",
+        "name": "Le Midi",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 563877196,
+      "lat": 46.8049899,
+      "lon": 7.1551521,
+      "tags": {
+        "addr:housenumber": "3",
+        "addr:postcode": "1700",
+        "addr:street": "Rue de Romont",
+        "amenity": "cafe",
+        "brand": "Starbucks",
+        "brand:wikidata": "Q37158",
+        "brand:wikipedia": "en:Starbucks",
+        "cuisine": "coffee_shop",
+        "internet_access": "wlan",
+        "name": "Starbucks",
+        "official_name": "Starbucks Coffee",
+        "opening_hours": "Mo-Fr 07:00-20:00; Sa 08:00-20:00; Su 09:00-20:00",
+        "takeaway": "yes",
+        "website": "https://www.starbucks.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 563877240,
+      "lat": 46.8048327,
+      "lon": 7.1548029,
+      "tags": {
+        "addr:housenumber": "15",
+        "addr:postcode": "1700",
+        "addr:street": "Rue de Romont",
+        "amenity": "fast_food",
+        "brand": "McDonald's",
+        "brand:wikidata": "Q38076",
+        "brand:wikipedia": "en:McDonald's",
+        "cuisine": "burger",
+        "internet_access": "wlan",
+        "name": "McDonald's",
+        "operator": "McDonald's",
+        "smoking": "no",
+        "takeaway": "yes",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 564673715,
+      "lat": 46.818603,
+      "lon": 6.976938,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Hôtel de la Gare"
+      }
+    },
+    {
+      "type": "node",
+      "id": 569310881,
+      "lat": 46.9278585,
+      "lon": 7.117791,
+      "tags": {
+        "addr:housenumber": "2",
+        "addr:street": "Deutsche Kirchgasse",
+        "amenity": "restaurant",
+        "name": "Ringmauer",
+        "opening_hours": "Mo-Sa 11:00-14:30, 17:00-23:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 569311573,
+      "lat": 46.929143,
+      "lon": 7.1182719,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Berntor",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 569313223,
+      "lat": 46.9282386,
+      "lon": 7.1167471,
+      "tags": {
+        "amenity": "restaurant",
+        "indoor_seating": "yes",
+        "name": "Eintracht",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 571613473,
+      "lat": 46.8144593,
+      "lon": 6.892396,
+      "tags": {
+        "addr:city": "Cugy FR",
+        "addr:housenumber": "46",
+        "addr:postcode": "1482",
+        "addr:street": "Grand-Rue",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Hôtel de l'Ange"
+      }
+    },
+    {
+      "type": "node",
+      "id": 581200649,
+      "lat": 46.9232008,
+      "lon": 7.1118415,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Bistro West"
+      }
+    },
+    {
+      "type": "node",
+      "id": 613345718,
+      "lat": 46.850766,
+      "lon": 7.1908746,
+      "tags": {
+        "addr:housenumber": "1",
+        "addr:postcode": "3186",
+        "addr:street": "Bahnhofstrasse",
+        "amenity": "fast_food",
+        "cuisine": "kebab",
+        "name": "Alibaba",
+        "opening_hours": "Mo-Su 08:00-00:00",
+        "phone": "+41 26 493 53 53",
+        "smoking": "no",
+        "takeaway": "yes",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 613378209,
+      "lat": 46.7948136,
+      "lon": 7.2601071,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Alpenrose"
+      }
+    },
+    {
+      "type": "node",
+      "id": 613378210,
+      "lat": 46.795023,
+      "lon": 7.259297,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Zur Traube"
+      }
+    },
+    {
+      "type": "node",
+      "id": 613403046,
+      "lat": 46.8479286,
+      "lon": 7.1901483,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Elite Sierra",
+        "opening_hours": "Tu-Th 16:00-23:30;Fr-Sa 08:30-02:00; Su 09:00-22:00; Mo off",
+        "smoking": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 613403047,
+      "lat": 46.8490801,
+      "lon": 7.1887213,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "email": "info@desalpes.org",
+        "fax": "+41 26 493 32 86",
+        "name": "Des Alpes",
+        "opening_hours": "Mo off; Tu-Th 07:30-23:30;Fr-Sa 07:30-24:00; Su 07:30-22:00",
+        "phone": "+41 26 493 32 40",
+        "smoking": "no",
+        "tourism": "hotel",
+        "website": "http://www.desalpes.org",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 616090345,
+      "lat": 46.7677078,
+      "lon": 7.2422019,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Sternen",
+        "smoking": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 616348163,
+      "lat": 46.8140504,
+      "lon": 7.2158156,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Maggenberg"
+      }
+    },
+    {
+      "type": "node",
+      "id": 616584510,
+      "lat": 46.8156879,
+      "lon": 7.155933,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Café-Restaurant Saint-Léonard"
+      }
+    },
+    {
+      "type": "node",
+      "id": 616591844,
+      "lat": 46.8057708,
+      "lon": 7.1652785,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "asian",
+        "level": "0",
+        "name": "Teppan-Yaki",
+        "opening_hours": "Tu-Th 11:00-14:30,11:10-23:30,Fr-Su 11:00-14:35,18:30-24:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 643877473,
+      "lat": 46.8013912,
+      "lon": 7.1485822,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "ethiopian",
+        "name": "Marathon"
+      }
+    },
+    {
+      "type": "node",
+      "id": 645641934,
+      "lat": 46.8067863,
+      "lon": 7.162407,
+      "tags": {
+        "addr:city": "Fribourg",
+        "addr:housenumber": "4",
+        "addr:postcode": "1700",
+        "addr:street": "Place de Notre-Dame",
+        "alt_name": "Salle de la Grenette;Grenette",
+        "amenity": "restaurant",
+        "cuisine": "malaysian;thai",
+        "diet:non-vegetarian": "yes",
+        "diet:vegetarian": "yes",
+        "name": "Punkt",
+        "opening_hours": "Tu-Fr 10:00-14:00; Tu-Fr 17:00-23:00; Sa 11:00-23:00",
+        "phone": "+41263226521",
+        "website": "https://www.restaurant-punkt.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 687777341,
+      "lat": 46.9236469,
+      "lon": 7.1145828,
+      "tags": {
+        "addr:housenumber": "4",
+        "addr:street": "Engelhardstrasse",
+        "amenity": "restaurant",
+        "cuisine": "pizza",
+        "name": "Morango"
+      }
+    },
+    {
+      "type": "node",
+      "id": 746975123,
+      "lat": 46.8025265,
+      "lon": 7.1594906,
+      "tags": {
+        "addr:city": "Fribourg",
+        "addr:housenumber": "8",
+        "addr:postcode": "1700",
+        "addr:street": "Chemin des Bains",
+        "amenity": "restaurant",
+        "name": "Restaurant Bains de la Motta"
+      }
+    },
+    {
+      "type": "node",
+      "id": 767162813,
+      "lat": 46.5471724,
+      "lon": 7.0182144,
+      "tags": {
+        "addr:postcode": "1663",
+        "alt_name": "Le Moléson - Le Sommet",
+        "amenity": "restaurant",
+        "changing_table": "yes",
+        "changing_table:fee": "no",
+        "changing_table:location": "male_toilet;female_toilet",
+        "contact:email": "sommet@moleson.ch",
+        "contact:phone": "+41 26 921 29 96",
+        "cuisine": "regional",
+        "delivery": "no",
+        "highchair": "yes",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "internet_access:ssid": "MOLESON_CLIENTS",
+        "name": "Le Sommet",
+        "operator": "Famille Nathalie Pythoud",
+        "outdoor_seating": "yes",
+        "self_service": "yes",
+        "takeaway": "no",
+        "toilets": "yes",
+        "toilets:access": "yes",
+        "toilets:wheelchair": "no",
+        "website": "https://www.moleson.ch/en/som/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 769899221,
+      "lat": 46.8005702,
+      "lon": 7.1739876,
+      "tags": {
+        "amenity": "cafe",
+        "level": "0",
+        "name": "Waeber GmbH",
+        "wheelchair": "designated"
+      }
+    },
+    {
+      "type": "node",
+      "id": 773143509,
+      "lat": 46.8515674,
+      "lon": 7.191641,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "thai",
+        "email": "thaigourmet2@bluewin.ch",
+        "name": "Thai Gourmet",
+        "opening_hours": "We 11:00-13:30",
+        "phone": "+41 79 302 10 03",
+        "takeaway": "yes",
+        "website": "https://www.thai-gourmet.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 789376841,
+      "lat": 46.8558125,
+      "lon": 7.198768,
+      "tags": {
+        "addr:housenumber": "52",
+        "addr:postcode": "3186",
+        "addr:street": "Riedlistrasse",
+        "amenity": "restaurant",
+        "cuisine": "barbecue;italian;coffee_shop;local;regional",
+        "name": "Restaurant Tennishalle Düdingen",
+        "opening_hours": "Mo-Th 07:30-23:30; Fr 07:30-24:00; Sa 08:00-24:00; Su 08:00-22:00",
+        "phone": "+41 26 493 27 71",
+        "smoking": "no",
+        "website": "http://www.restaurant-tennishalle.ch",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 801049323,
+      "lat": 46.834794,
+      "lon": 6.8884325,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Auberge Communale"
+      }
+    },
+    {
+      "type": "node",
+      "id": 803217553,
+      "lat": 46.7417525,
+      "lon": 7.2870595,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Fontana",
+        "smoking": "no",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 847687968,
+      "lat": 46.7986806,
+      "lon": 6.9161355,
+      "tags": {
+        "addr:street": "Le Village",
+        "amenity": "restaurant",
+        "cuisine": "pizza",
+        "cuisine:ja": "pasta",
+        "name": "Auberge Communale"
+      }
+    },
+    {
+      "type": "node",
+      "id": 848544717,
+      "lat": 46.7832104,
+      "lon": 6.8808054,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Aux XIX Cantons"
+      }
+    },
+    {
+      "type": "node",
+      "id": 852469481,
+      "lat": 46.8915162,
+      "lon": 7.1100559,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "asian",
+        "name": "Goldener Adler"
+      }
+    },
+    {
+      "type": "node",
+      "id": 861720524,
+      "lat": 46.9647106,
+      "lon": 7.118405,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "pizza",
+        "description": "pizza au feu de bois",
+        "name": "Hôtel de la gare",
+        "takeaway": "yes",
+        "tourism": "hotel",
+        "website": "www.chezleisi.ch",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 861720578,
+      "lat": 46.9618546,
+      "lon": 7.1136802,
+      "tags": {
+        "addr:city": "Sugiez",
+        "addr:postcode": "1786",
+        "addr:street": "Route du Pra Novy",
+        "amenity": "restaurant",
+        "cuisine": "italian",
+        "name": "Bella Italia",
+        "opening_hours": "Mo-Fr 07:00-24:00; Sa 08:00-24:00",
+        "outdoor_seating": "yes",
+        "smoking": "no",
+        "survey:date": "2018-06",
+        "takeaway": "no",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 866526487,
+      "lat": 46.9291754,
+      "lon": 7.117606,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Käserei Murten",
+        "url": "http://www.kaeserei-murten.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 870790446,
+      "lat": 46.8176587,
+      "lon": 6.9954618,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Auberge de l'Union"
+      }
+    },
+    {
+      "type": "node",
+      "id": 935792480,
+      "lat": 46.9707902,
+      "lon": 7.1920666,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Pizzeria la Luna",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 946212390,
+      "lat": 46.8216865,
+      "lon": 7.2604951,
+      "tags": {
+        "addr:city": "St. Antoni",
+        "addr:country": "CH",
+        "addr:housenumber": "2",
+        "addr:postcode": "1713",
+        "addr:street": "Schulhausstrasse",
+        "alt_name": "Restaurant Flora",
+        "amenity": "restaurant",
+        "contact:phone": "+41 26 4951866",
+        "name": "Flora",
+        "smoking": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 960120266,
+      "lat": 46.8932421,
+      "lon": 7.2283406,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Vrenis kafi Gipfel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 977406572,
+      "lat": 46.8204979,
+      "lon": 7.1535771,
+      "tags": {
+        "amenity": "restaurant",
+        "brand": "Coop Restaurant",
+        "brand:wikidata": "Q432564",
+        "cuisine": "german",
+        "level": "0",
+        "name": "Coop Restaurant",
+        "operator": "Coop",
+        "smoking": "no",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 988702808,
+      "lat": 46.8266886,
+      "lon": 7.1085918,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Buvette"
+      }
+    },
+    {
+      "type": "node",
+      "id": 988716374,
+      "lat": 46.8218964,
+      "lon": 7.1057318,
+      "tags": {
+        "addr:city": "Belfaux",
+        "addr:housenumber": "11",
+        "addr:postcode": "1782",
+        "addr:street": "Route du Centre",
+        "amenity": "restaurant",
+        "cuisine": "french;swiss",
+        "name": "Auberge du Mouton",
+        "opening_hours": "Tu-Sa 10:00-14:00,17:00-22:30; Su 10:00-15:00",
+        "phone": "+41 26 475 48 40;+41 78 637 63 63",
+        "website": "https://www.aubergedumouton.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 990691749,
+      "lat": 46.7937502,
+      "lon": 7.1577381,
+      "tags": {
+        "amenity": "restaurant",
+        "contact:email": "mensa@unifr.ch",
+        "contact:fax": "+41 26 300 96 20",
+        "contact:phone": "+41 26 300 71 90",
+        "contact:website": "http://www.unifr.ch/mensa/fr/restaurant-horaire/Mensa-Perolles",
+        "name": "Mensa Université de Fribourg Pérolles 2",
+        "opening_hours": "Mo-Fr 07:30-15:00; Sa,Su off",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1008737878,
+      "lat": 46.9249789,
+      "lon": 7.1074193,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Pinte de Meyriez",
+        "website": "https://www.vieuxmanoir.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1008750580,
+      "lat": 46.9264548,
+      "lon": 7.1108882,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Maramix",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1012265347,
+      "lat": 46.7687034,
+      "lon": 7.0663904,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Restaurant de l'Aigle Noir",
+        "toilets:wheelchair": "yes",
+        "tourism": "hotel",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1033230748,
+      "lat": 46.7942746,
+      "lon": 7.1571997,
+      "tags": {
+        "amenity": "restaurant",
+        "brewery": "guinness;Cardinal;Leffe;Kilkenny;Grimbergen;Hoegaarden",
+        "contact:phone": "+41 26 422 16 71",
+        "cuisine": "italian",
+        "internet_access": "wlan",
+        "name": "L'imprévu",
+        "opening_hours": "Sa 09:30-23:00; Su off; Mo-Fr 08:00-23:00",
+        "website": "https://imprevucafe.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1041832002,
+      "lat": 46.7212866,
+      "lon": 7.065279,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "La Pinte"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1126467211,
+      "lat": 46.848268,
+      "lon": 7.1897307,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "kebab",
+        "name": "Ali Baba"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1129478443,
+      "lat": 46.7935299,
+      "lon": 7.1333245,
+      "tags": {
+        "addr:housenumber": "4",
+        "addr:postcode": "1752",
+        "addr:street": "Route du Centre",
+        "amenity": "restaurant",
+        "cuisine": "pizza",
+        "name": "Le Cormanon",
+        "website": "https://www.lecormanon.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1180988693,
+      "lat": 46.8002706,
+      "lon": 7.1525963,
+      "tags": {
+        "addr:housenumber": "18A",
+        "addr:postcode": "1700",
+        "addr:street": "Boulevard de Pérolles",
+        "amenity": "restaurant",
+        "cuisine": "pizza",
+        "indoor_seating": "yes",
+        "name": "De Pérolles",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1254623469,
+      "lat": 46.9279567,
+      "lon": 7.1161004,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "kebab",
+        "indoor_seating": "yes",
+        "name": "Marmara",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1311795604,
+      "lat": 46.8110804,
+      "lon": 7.1779335,
+      "tags": {
+        "addr:city": "Fribourg",
+        "addr:country": "CH",
+        "addr:housenumber": "17",
+        "addr:postcode": "1700",
+        "addr:street": "Route de Tavel",
+        "amenity": "restaurant",
+        "cuisine": "italian",
+        "name": "Da Vinci",
+        "opening_hours": "Mo-Fr 07:30-23:30;Sa-Su 08:30-23:30",
+        "phone": "+41 26 481 33 66",
+        "website": "https://pizzeriadavinci.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1322628842,
+      "lat": 46.8831259,
+      "lon": 7.0689462,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Auberge de la Croix Blanche",
+        "opening_hours": "Th,Su,Mo 11:30-15:00,17:00-23:30, Fr,Sa 17:00-24:00; Tu,We off",
+        "wikidata": "Q90153547"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1325586721,
+      "lat": 46.7974328,
+      "lon": 7.1538929,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Brasserie 39",
+        "opening_hours": "Mo-Su 09:00-24:00",
+        "outdoor_seating": "yes",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1351136419,
+      "lat": 46.7964709,
+      "lon": 7.1549948,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "turkish",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Snack Ch@t",
+        "opening_hours": "Mo-Sa 10:00-22:00; Su off",
+        "phone": "+41 26 422 33 73",
+        "takeaway": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1351137759,
+      "lat": 46.800119,
+      "lon": 7.1393835,
+      "tags": {
+        "addr:city": "Fribourg",
+        "addr:housenumber": "26",
+        "addr:postcode": "1700",
+        "addr:street": "Route de Villars",
+        "amenity": "restaurant",
+        "cuisine": "chinese",
+        "name": "Ji Xiang"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1362397939,
+      "lat": 46.7684711,
+      "lon": 7.168482,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Pro-Tennis",
+        "outdoor_seating": "yes",
+        "smoking": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1365685924,
+      "lat": 46.80808,
+      "lon": 7.1028185,
+      "tags": {
+        "addr:city": "Corminboeuf",
+        "addr:country": "CH",
+        "addr:housenumber": "14",
+        "addr:postcode": "1720",
+        "addr:street": "Route du Centre",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Auberge du St-Georges",
+        "phone": "+41 26 402 32 25"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1365685938,
+      "lat": 46.8079364,
+      "lon": 7.1030256,
+      "tags": {
+        "addr:city": "Corminboeuf",
+        "addr:country": "CH",
+        "addr:housenumber": "13",
+        "addr:postcode": "1720",
+        "addr:street": "Route du Centre",
+        "amenity": "cafe",
+        "name": "Le Jardin Tea-Room",
+        "phone": "+41  26 475 30 68"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1394017908,
+      "lat": 46.7995566,
+      "lon": 6.8487589,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Auberge du Rendez-vous"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1394862645,
+      "lat": 46.8161562,
+      "lon": 6.8706806,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Au Lion d'Or"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1394862654,
+      "lat": 46.8175173,
+      "lon": 6.8657579,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Café-restaurant La Caravelle"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1395851524,
+      "lat": 46.7512058,
+      "lon": 6.940731,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Au coin Peinard"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1395851525,
+      "lat": 46.7532029,
+      "lon": 6.936776,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Auberge de la Croix-Blanche",
+        "opening_hours": "Tu-Fr 08:00-23:00; Sa 09:00-22:00; Su 09:00-14:00,17:00-20:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1413518398,
+      "lat": 46.9288498,
+      "lon": 7.1178289,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "turkish",
+        "indoor_seating": "yes",
+        "name": "Anatolia",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1419297590,
+      "lat": 46.8096698,
+      "lon": 7.148337,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "chinese",
+        "name": "Guang Dong",
+        "phone": "+41 26 322 42 82",
+        "url": "http://www.guang-dong.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1419909103,
+      "lat": 46.8066114,
+      "lon": 7.1565418,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "kebab",
+        "name": "Berfin"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1419909105,
+      "lat": 46.7956772,
+      "lon": 7.1558636,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "name": "Brasserie du commerce",
+        "opening_hours": "Mo 07:00-14:30; Tu-Fr 07:00-23:30; Sa 16:30-23:30",
+        "outdoor_seating": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1419909114,
+      "lat": 46.8091607,
+      "lon": 7.150486,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "pizza",
+        "name": "Hauser Jacques",
+        "phone": "+41 26 322 55 80"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1419909549,
+      "lat": 46.8057284,
+      "lon": 7.1643338,
+      "tags": {
+        "addr:city": "Fribourg",
+        "addr:country": "CH",
+        "addr:housenumber": "2",
+        "addr:postcode": "1700",
+        "addr:street": "Rue des Bouchers",
+        "amenity": "restaurant",
+        "check_date": "2025-06-25",
+        "name": "Restaurant du Cygne",
+        "name:de": "Schwanen",
+        "name:fr": "Auberge du Cygne",
+        "opening_hours": "Mo,Th-Fr,Su 08:00-22:00; Tu-We off; Sa 08:00-23:00",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "website": "https://aubergeducygne.ch",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1419971397,
+      "lat": 46.6209003,
+      "lon": 7.0582261,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Café l'Industriel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1426833502,
+      "lat": 46.4982617,
+      "lon": 7.0371371,
+      "tags": {
+        "addr:city": "Les Sciernes-d'Albeuve",
+        "addr:housenumber": "21",
+        "addr:postcode": "1669",
+        "addr:street": "Route de la Dent-de-Lys",
+        "amenity": "restaurant",
+        "name": "Auberge des Préalpes",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1431599015,
+      "lat": 46.7857837,
+      "lon": 7.0158827,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Restaurant Auberge de la Cigogne"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1431599017,
+      "lat": 46.7853221,
+      "lon": 7.0143289,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Chez Majoe"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1437464792,
+      "lat": 46.4649657,
+      "lon": 7.0056545,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Croix de Fer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1445580305,
+      "lat": 46.7595281,
+      "lon": 7.2785319,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Zur Linde",
+        "smoking": "no",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1446131663,
+      "lat": 46.808941,
+      "lon": 6.8738542,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Restaurant-Pizzeria de l'Etoile"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1447081330,
+      "lat": 46.8446545,
+      "lon": 6.8448157,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Buffet de la Gare"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1447081332,
+      "lat": 46.8499218,
+      "lon": 6.8491443,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Gerbe d'Or"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1447082780,
+      "lat": 46.8496362,
+      "lon": 6.8447263,
+      "tags": {
+        "amenity": "restaurant",
+        "internet_access": "wlan",
+        "name": "Hotel Restaurant du Port",
+        "tourism": "hotel",
+        "website": "https://www.hotelduport.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1449586183,
+      "lat": 46.8048833,
+      "lon": 7.1539648,
+      "tags": {
+        "amenity": "fast_food"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1449586186,
+      "lat": 46.8049503,
+      "lon": 7.1538871,
+      "tags": {
+        "addr:housenumber": "7",
+        "addr:postcode": "1700",
+        "addr:street": "Rue du Criblet",
+        "amenity": "restaurant",
+        "name": "Le Galopin"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1517037960,
+      "lat": 46.805885,
+      "lon": 7.1525814,
+      "tags": {
+        "amenity": "restaurant",
+        "indoor_seating": "yes",
+        "name": "Mensa",
+        "outdoor_seating": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1523211117,
+      "lat": 46.8079239,
+      "lon": 7.1560262,
+      "tags": {
+        "addr:housenumber": "10",
+        "addr:postcode": "1700",
+        "addr:street": "Rue du Père-Girard",
+        "amenity": "fast_food",
+        "cuisine": "kebab",
+        "name": "Paradise Kebab"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1523560110,
+      "lat": 46.8074568,
+      "lon": 7.1558832,
+      "tags": {
+        "addr:housenumber": "1",
+        "addr:postcode": "1700",
+        "addr:street": "Rue Jean-Grimoux",
+        "amenity": "restaurant",
+        "name": "Restaurant Marcello"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1526547917,
+      "lat": 46.8079993,
+      "lon": 7.1554852,
+      "tags": {
+        "addr:housenumber": "2",
+        "addr:postcode": "1700",
+        "addr:street": "Rue Marcello",
+        "amenity": "restaurant",
+        "cuisine": "thai",
+        "name": "Thai Lanna"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1531776490,
+      "lat": 46.8064171,
+      "lon": 7.154045,
+      "tags": {
+        "addr:city": "Fribourg",
+        "addr:country": "CH",
+        "addr:housenumber": "39",
+        "addr:postcode": "1700",
+        "addr:street": "Rue de l'Hôpital",
+        "amenity": "fast_food",
+        "cuisine": "kebab",
+        "name": "Chez mon cousin"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1532897549,
+      "lat": 46.806257,
+      "lon": 7.1542046,
+      "tags": {
+        "addr:city": "Fribourg",
+        "addr:country": "CH",
+        "addr:housenumber": "35",
+        "addr:postcode": "1700",
+        "addr:street": "Rue de l'Hôpital",
+        "amenity": "fast_food",
+        "cuisine": "kebab",
+        "name": "Istanbul Kebab"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1644149564,
+      "lat": 46.7925913,
+      "lon": 7.1230736,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Café des Préalpes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1672507632,
+      "lat": 46.8061679,
+      "lon": 7.1607287,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Le Rendez-vous"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1672507670,
+      "lat": 46.8054016,
+      "lon": 7.161431,
+      "tags": {
+        "amenity": "restaurant",
+        "diet:vegetarian": "yes",
+        "name": "Hôtel de ville"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1672507672,
+      "lat": 46.805694,
+      "lon": 7.1620579,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Schweizerhalle"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1711632226,
+      "lat": 46.8318226,
+      "lon": 6.859012,
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "McDonald's",
+        "brand:wikidata": "Q38076",
+        "brand:wikipedia": "en:McDonald's",
+        "cuisine": "burger",
+        "drive_through": "yes",
+        "name": "McDonald's",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1744162452,
+      "lat": 46.5270908,
+      "lon": 6.9005247,
+      "tags": {
+        "addr:housenumber": "18",
+        "addr:postcode": "1618",
+        "addr:street": "lace d'Armes",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Café Tivoli"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1889976210,
+      "lat": 46.8901623,
+      "lon": 7.3155731,
+      "tags": {
+        "addr:city": "Flamatt",
+        "addr:country": "CH",
+        "addr:housename": "Sense Restaurant",
+        "addr:housenumber": "23",
+        "addr:postcode": "3175",
+        "addr:street": "Bernstrasse",
+        "alt_name": "Sense Restaurant",
+        "amenity": "restaurant",
+        "name": "Sense"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1889979617,
+      "lat": 46.8898067,
+      "lon": 7.3125851,
+      "tags": {
+        "addr:city": "Flamatt",
+        "addr:country": "CH",
+        "addr:housenumber": "8",
+        "addr:postcode": "3175",
+        "addr:street": "Bernstrasse",
+        "amenity": "fast_food",
+        "cuisine": "turkish",
+        "name": "Mammamia Pizzeria Kebab House"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1941501657,
+      "lat": 46.8502073,
+      "lon": 7.1903988,
+      "tags": {
+        "amenity": "cafe",
+        "level": "0",
+        "name": "Pause-Café",
+        "phone": "+41 26 493 32 12",
+        "smoking": "no",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1941501667,
+      "lat": 46.8626383,
+      "lon": 7.2153586,
+      "tags": {
+        "addr:city": "Düdingen",
+        "addr:country": "CH",
+        "addr:housenumber": "2",
+        "addr:postcode": "3186",
+        "addr:street": "Steinlera",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Restaurant Steinlera",
+        "opening_hours": "Mo off;Tu-Fr 09:00-23:00;Sa 10:00-23:00;Su 10:00-18:00",
+        "phone": "+41 26 493 44 77"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1954907198,
+      "lat": 46.8040456,
+      "lon": 7.1510044,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Alconi Restaurant - Cantine"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1966755644,
+      "lat": 46.8216345,
+      "lon": 7.1065914,
+      "tags": {
+        "addr:city": "Belfaux",
+        "addr:country": "CH",
+        "addr:housenumber": "7",
+        "addr:postcode": "1782",
+        "addr:street": "Route du Centre",
+        "amenity": "restaurant",
+        "cuisine": "asian",
+        "fax": "+41 26 475 39 49",
+        "name": "Genghis Khan - XIII Cantons",
+        "opening_hours": "Mo off; Tu 18:30-23:30; We-Th 11:45-14:00,18:30-23:30; Fr-Sa 11:45-14:00,18:30-24:00; Su 11:45-14:00,18:00-23:00",
+        "operator": "asian",
+        "phone": "+41 26 475 36 14",
+        "smoking": "no",
+        "website": "http://www.genghis-khan.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2013483917,
+      "lat": 46.7369435,
+      "lon": 6.7673275,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date": "2022-07-15",
+        "name": "À Votre Goût",
+        "website": "https://www.golfvuissens.ch/restaurant/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2013483965,
+      "lat": 46.7374075,
+      "lon": 6.7664101,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Restaurant du Château",
+        "outdoor_seating": "yes",
+        "phone": "+41 24 433 30 33",
+        "website": "https://www.lechateaudevuissens.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2015319329,
+      "lat": 46.9636231,
+      "lon": 7.1134576,
+      "tags": {
+        "addr:city": "Sugiez",
+        "addr:housenumber": "5",
+        "addr:postcode": "1786",
+        "addr:street": "Route de l'Ancien-Pont",
+        "amenity": "restaurant",
+        "capacity": "50",
+        "cuisine": "suisse",
+        "delivery": "no",
+        "name": "Hotel de l'Ours",
+        "outdoor_seating": "yes",
+        "smoking": "outside",
+        "takeaway": "no",
+        "tourism": "hotel",
+        "website": "https://www.hotel-ours.ch/fr/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2026382334,
+      "lat": 46.8689868,
+      "lon": 7.1226128,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "kebab",
+        "name": "Kenan Mutlu",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2069812608,
+      "lat": 46.6032889,
+      "lon": 7.0980435,
+      "tags": {
+        "amenity": "cafe"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2069912786,
+      "lat": 46.8109757,
+      "lon": 7.1732488,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Brasserie La Chope"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2188150777,
+      "lat": 46.7761546,
+      "lon": 7.1612614,
+      "tags": {
+        "amenity": "cafe",
+        "level": "1",
+        "smoking": "no",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2188150784,
+      "lat": 46.7764966,
+      "lon": 7.1612113,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Le Centre - café-restaurant",
+        "opening_hours": "Mo 08:00-17:00; Tu-Sa 08:00-23:00",
+        "website": "https://marly-centre.ch/commerces/restaurant-le-centre/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2257549195,
+      "lat": 46.7403838,
+      "lon": 7.2904167,
+      "tags": {
+        "amenity": "cafe",
+        "capacity": "40",
+        "name": "Café",
+        "opening_hours": "Mo-Fr 08:00-18:30; Sa 07:30-16:00",
+        "smoking": "no",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2288208918,
+      "lat": 46.9976138,
+      "lon": 7.2083507,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Restaurant Sternen"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2291603685,
+      "lat": 46.9506026,
+      "lon": 7.0701076,
+      "tags": {
+        "addr:city": "Lugnorre",
+        "addr:country": "CH",
+        "addr:housenumber": "4",
+        "addr:postcode": "1789",
+        "addr:street": "Route de Chenaux",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Auberge des Clefs",
+        "opening_hours": "Mo,Tu 08:30-23:30; Fr,Sa 08:30-00:00; Su,PH 08:30-17:00",
+        "opening_hours:kitchen": "Mo,Tu,Fr,Sa 12:00-13:45,18:30-21:30; Su,PH 12:00-16:00",
+        "operator": "Therese Rätz, Werner Rätz",
+        "outdoor_seating": "yes",
+        "phone": "+41 266 733 106",
+        "reservation": "recommended",
+        "website": "https://www.aubergedesclefs.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2291603686,
+      "lat": 46.9652971,
+      "lon": 7.1191848,
+      "tags": {
+        "addr:city": "Sugiez",
+        "addr:housenumber": "21",
+        "addr:postcode": "1786",
+        "addr:street": "Route du Péage",
+        "amenity": "cafe",
+        "name": "Boulangerie Guillaume",
+        "opening_hours": "Tu-Fr 06:00-18:30; Sa, Su 06:00-18:00",
+        "shop": "bakery",
+        "website": "https://www.boulangerie-guillaume.ch/",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2291657886,
+      "lat": 46.9557308,
+      "lon": 7.0858223,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "indoor_seating": "yes",
+        "name": "Restaurant Mont Vully",
+        "outdoor_seating": "yes",
+        "reservation": "yes",
+        "smoking": "outside",
+        "website": "http://www.hotel-mont-vully.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2291677055,
+      "lat": 46.9481033,
+      "lon": 7.08333,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "fish",
+        "name": "Du Port",
+        "website": "http://restaurantduport.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2292064950,
+      "lat": 46.9524245,
+      "lon": 7.0973206,
+      "tags": {
+        "addr:city": "Praz (Vully)",
+        "addr:housenumber": "145",
+        "addr:postcode": "1788",
+        "addr:street": "Route Principale",
+        "amenity": "restaurant",
+        "capacity": "300",
+        "cuisine": "regional",
+        "delivery": "no",
+        "diet:gluten_free": "yes",
+        "diet:lactose_free": "yes",
+        "diet:vegetarian": "yes",
+        "hotel": "yes",
+        "name": "Hôtel Restaurant Cave Bel-Air",
+        "opening_hours": "Mo,Tu,Fr-Su 08:00-23:45",
+        "opening_hours:covid19": "Mo,Tu,Fr,Sa-Su 11:00-15:00,18:00-22:00",
+        "operator": "Laurent Chervet",
+        "outdoor_seating": "yes",
+        "phone": "+41266731414",
+        "toilets:wheelchair": "yes",
+        "tourism": "hotel",
+        "website": "https://www.bel-air.swiss/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2294558777,
+      "lat": 46.8020268,
+      "lon": 7.1512463,
+      "tags": {
+        "addr:city": "Fribourg",
+        "addr:country": "CH",
+        "addr:housenumber": "1",
+        "addr:postcode": "1700",
+        "addr:street": "Boulevard de Pérolles",
+        "amenity": "restaurant",
+        "name": "Le Pérolles",
+        "phone": "+41 26 347 40 30",
+        "website": "https://www.leperolles.ch",
+        "wikidata": "Q90153992"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2306428518,
+      "lat": 46.7934257,
+      "lon": 7.1591493,
+      "tags": {
+        "addr:city": "Fribourg",
+        "addr:country": "CH",
+        "addr:housename": "École d'ingénieurs et d'architectes de Fribourg",
+        "addr:housenumber": "80",
+        "addr:postcode": "1700",
+        "addr:street": "Boulevard de Pérolles",
+        "amenity": "restaurant",
+        "cuisine": "Self_Service",
+        "name": "Restaurant de la Haute école d'ingénierie et d'architecture de Fribourg",
+        "phone": "+41 26 425 65 45",
+        "source": "http://www.fourchetteverte.ch/it/restos/detail/5/0/1066"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2338138994,
+      "lat": 46.7265793,
+      "lon": 7.1336601,
+      "tags": {
+        "addr:housenumber": "21",
+        "addr:postcode": "1733",
+        "addr:street": "route du Barrage",
+        "amenity": "cafe",
+        "cuisine": "regional",
+        "name": "Terre d'Elles"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2342468041,
+      "lat": 46.5656681,
+      "lon": 7.0836144,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "french;local",
+        "diet:vegetarian": "yes",
+        "name": "Auberge de la Couronne",
+        "opening_hours": "Tu 07:30-18:00; We,Th 07:30-23:00; Fr 07:30-24:00, Sa 08:00-24:00, Su 08:00-19:00",
+        "phone": "+41 26 921 21 19",
+        "website": "https://aubergelacouronneenney.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2345436372,
+      "lat": 46.5939126,
+      "lon": 7.055963,
+      "tags": {
+        "addr:city": "Le Pâquier-Montbarry",
+        "addr:housenumber": "1",
+        "addr:postcode": "1661",
+        "addr:street": "Route de la Gare",
+        "amenity": "restaurant",
+        "name": "Ô Pâquier"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2351646102,
+      "lat": 46.5937906,
+      "lon": 7.0555422,
+      "tags": {
+        "amenity": "cafe"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2352266624,
+      "lat": 46.804695,
+      "lon": 7.0956151,
+      "tags": {
+        "amenity": "cafe"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2365283931,
+      "lat": 46.9758083,
+      "lon": 7.0931489,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Les 3 Lacs"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2368737808,
+      "lat": 46.5624067,
+      "lon": 7.0346402,
+      "tags": {
+        "addr:city": "Moléson-sur-Gruyères",
+        "addr:housenumber": "12",
+        "addr:postcode": "1663",
+        "addr:street": "Place de l'Aigle",
+        "amenity": "restaurant",
+        "name": "Bar à Toutou"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2370918285,
+      "lat": 46.7948005,
+      "lon": 7.1324938,
+      "tags": {
+        "addr:housenumber": "7",
+        "addr:postcode": "1752",
+        "addr:street": "Route du Centre",
+        "amenity": "restaurant",
+        "cuisine": "french",
+        "name": "Le Souffleur",
+        "website": "https://www.equilibre-nuithonie.ch/fr/all/restaurant/le-souffleur/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2371476484,
+      "lat": 46.7980914,
+      "lon": 7.1200985,
+      "tags": {
+        "addr:city": "Villars-sur-Glâne",
+        "addr:country": "CH",
+        "addr:housenumber": "14",
+        "addr:postcode": "1752",
+        "addr:street": "Route de Moncor",
+        "amenity": "restaurant",
+        "cuisine": "french",
+        "name": "Le Moncor",
+        "opening_hours": "Mo-Fr 06:00-24:00; Sa,Su 09:00-24:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2371476986,
+      "lat": 46.7902249,
+      "lon": 7.1366206,
+      "tags": {
+        "addr:housenumber": "12",
+        "addr:postcode": "1752",
+        "addr:street": "Route du Platy",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Le Platy"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2377108631,
+      "lat": 46.7528843,
+      "lon": 7.0331466,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Tea Room Marchon et Favre",
+        "opening_hours": "Mo-Th 06:30-18:45,13:00-17:30; Fr 06:30-22:00; Sa 07:00-16:30; Su 07:00-16:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2395326655,
+      "lat": 46.7954396,
+      "lon": 7.1561122,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "pizza",
+        "name": "Mirabeau"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2402332065,
+      "lat": 46.5945221,
+      "lon": 7.0932485,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Aérodrome de la Gruyère"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2433708408,
+      "lat": 46.7880334,
+      "lon": 7.0794183,
+      "tags": {
+        "amenity": "restaurant",
+        "branch": "Avry Centre",
+        "brand": "Migros Restaurant",
+        "brand:wikidata": "Q111803848",
+        "cuisine": "international",
+        "level": "1",
+        "name": "Migros Restaurant",
+        "operator": "Coopérative Migros Neuchâtel-Fribourg",
+        "smoking": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2434928647,
+      "lat": 46.8033465,
+      "lon": 7.1680071,
+      "tags": {
+        "addr:city": "Fribourg",
+        "addr:country": "CH",
+        "addr:housenumber": "23",
+        "addr:postcode": "1700",
+        "addr:street": "Place du Petit-Saint-Jean / St. Johann-Platz",
+        "alt_name": "Restaurant Au Tirlibaum",
+        "amenity": "restaurant",
+        "name": "Café du Tirlibaum",
+        "opening_hours": "Th-Tu 08:30-23:30",
+        "phone": "+41 26 322 53 98",
+        "website": "https://www.restaurant-tirlibaum.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2453828097,
+      "lat": 46.8102445,
+      "lon": 7.1659737,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "pizza",
+        "name": "Pizza Zone",
+        "website": "https://www.pizza-zone.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2459504696,
+      "lat": 46.9350266,
+      "lon": 7.1263506,
+      "tags": {
+        "addr:housename": "Restaurant Le Jardin",
+        "addr:housenumber": "37",
+        "addr:postcode": "3286",
+        "addr:street": "Fabrikstrasse",
+        "amenity": "restaurant",
+        "name": "Restaurant Le Jardin",
+        "phone": "+41 26 672 30 13",
+        "website": "http://www.restaurant-le-jardin.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2459508684,
+      "lat": 46.9289015,
+      "lon": 7.1184108,
+      "tags": {
+        "addr:city": "Murten",
+        "addr:country": "CH",
+        "addr:housename": "Restaurant Pizzeria La Fontana",
+        "addr:housenumber": "58",
+        "addr:postcode": "3280",
+        "addr:street": "Hauptgasse",
+        "alt_name": "Restaurant Pizzeria La Fontana",
+        "amenity": "restaurant",
+        "contact:email": "info@la-fontana.ch",
+        "contact:phone": "+41 26 670 21 32",
+        "contact:website": "https://www.restaurant-lafontana.ch",
+        "cuisine": "italian",
+        "indoor_seating": "yes",
+        "name": "La Fontana",
+        "opening_hours": "10:00-24:00",
+        "opening_hours:kitchen": "10:00-14:00, 17:00-22:30",
+        "outdoor_seating": "yes",
+        "payment:american_express": "yes",
+        "payment:cash": "yes",
+        "payment:maestro": "yes",
+        "payment:mastercard": "yes",
+        "payment:postfinance_card": "yes",
+        "payment:visa": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2459513465,
+      "lat": 46.7606006,
+      "lon": 7.0946289,
+      "tags": {
+        "addr:city": "Posieux",
+        "addr:housename": "Brasserie La Croix-Blanche",
+        "addr:housenumber": "71",
+        "addr:postcode": "1725",
+        "addr:street": "Route de Fribourg",
+        "alt_name": "brewery brasserie brauerei biere artisanale craft beer posieux",
+        "amenity": "restaurant",
+        "cuisine": "beer",
+        "name": "Brasserie La Croix-Blanche",
+        "opening_hours": "Mo-We 06:30-23:00; Th 06:30-23:30; Fr 06:30-24:00; Sa 08:00-24:00",
+        "website": "http://www.brasserie-fribourg.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2463554275,
+      "lat": 46.8929094,
+      "lon": 7.2279987,
+      "tags": {
+        "addr:city": "Bösingen",
+        "addr:country": "CH",
+        "addr:housenumber": "1",
+        "addr:postcode": "3178",
+        "addr:street": "Dorfplatz",
+        "amenity": "restaurant",
+        "name": "Restaurant 3 Eidgenossen"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2496613311,
+      "lat": 46.8647227,
+      "lon": 7.1245024,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "le Centre"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2499314062,
+      "lat": 46.8056744,
+      "lon": 7.1563587,
+      "tags": {
+        "addr:city": "Fribourg",
+        "addr:housenumber": "5",
+        "addr:postcode": "1700",
+        "addr:street": "Rue Saint-Michel",
+        "amenity": "restaurant",
+        "cuisine": "spanish;tapas",
+        "name": "La Taperia"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2518861132,
+      "lat": 46.5174765,
+      "lon": 6.9607181,
+      "tags": {
+        "addr:city": "Les Paccots",
+        "addr:housenumber": "20",
+        "addr:postcode": "1619",
+        "addr:street": "Route des Rosalys",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Les Rosalys",
+        "opening_hours": "Fr-Tu 09:00-23:00",
+        "phone": "+41 21 948 80 80",
+        "toilets:wheelchair": "no",
+        "website": "https://www.lesrosalys.ch/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2530618826,
+      "lat": 46.8085746,
+      "lon": 7.1516247,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "italian",
+        "name": "la terrazza"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2571052170,
+      "lat": 46.693553,
+      "lon": 6.912214,
+      "tags": {
+        "addr:city": "Romont FR",
+        "addr:housenumber": "1",
+        "addr:postcode": "1680",
+        "addr:street": "La Gare",
+        "amenity": "restaurant",
+        "cuisine": "chinese;vietnamese",
+        "description": "Buffet de la gare",
+        "name": "La Baie d'Halong",
+        "opening_hours": "Mo-Su 06:00-23:00",
+        "takeaway": "yes",
+        "website": "https://restaurantlabaiedhalong.business.site/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2620739373,
+      "lat": 46.6955592,
+      "lon": 6.9169976,
+      "tags": {
+        "amenity": "cafe",
+        "indoor_seating": "yes",
+        "name": "Des Remparts",
+        "opening_hours": "Mo off; Tu-Fr 05:45-18:30; Sa-Su 06:00-18:00",
+        "outdoor_seating": "no",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2653434607,
+      "lat": 46.7947459,
+      "lon": 7.156852,
+      "tags": {
+        "addr:city": "Fribourg",
+        "addr:housenumber": "91",
+        "addr:postcode": "1700",
+        "addr:street": "Boulevard de Pérolles",
+        "amenity": "cafe",
+        "contact:phone": "+41 26 322 02 28",
+        "diet:vegan": "no",
+        "diet:vegetarian": "yes",
+        "drink:club-mate": "served",
+        "name": "Cyclo",
+        "opening_hours": "Mo-We 08:00-23:30; Th-Sa 09:00-23:30; Su off",
+        "payment:cash": "yes",
+        "payment:credit_cards": "no",
+        "payment:debit_cards": "no",
+        "website": "https://www.facebook.com/cyclocafefr/info"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2653437571,
+      "lat": 46.7942261,
+      "lon": 7.1548016,
+      "tags": {
+        "addr:city": "Fribourg",
+        "addr:country": "CH",
+        "addr:housenumber": "2",
+        "addr:postcode": "1700",
+        "addr:street": "Route de la Fonderie",
+        "amenity": "cafe",
+        "contact:email": "info@villarsmaitrechocolatier.ch",
+        "contact:phone": "+41 26 4266549",
+        "contact:website": "http://www.chocolat-villars.com/Contact.contact.0.html",
+        "cuisine": "regional",
+        "internet_access": "no",
+        "name": "Boutique Chocolat Villars",
+        "note": "Boutique of the Villars chocolate factory",
+        "opening_hours": "Mo-Fr 08:30-17:30; Sa 08:30-12:30; Jul-Aug Mo-Fr 08:30-17:00; PH off",
+        "operator": "Villars Maître Chocolatier S.A.",
+        "source": "website",
+        "website": "https://shop.villars.com/fr/content/8-magasin-villars"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2773355447,
+      "lat": 46.5259924,
+      "lon": 6.8524707,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Restaurant de la Gare",
+        "website": "http://www.resto-lagarebossonnens.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2841303839,
+      "lat": 46.6710621,
+      "lon": 7.2901897,
+      "tags": {
+        "addr:city": "Schwarzsee",
+        "addr:country": "CH",
+        "addr:housenumber": "212",
+        "addr:postcode": "1716",
+        "addr:street": "Schwarzseestrasse",
+        "amenity": "cafe",
+        "diet:vegan": "yes",
+        "name": "Café Mamsell",
+        "opening_hours": "We-Su 08:00-18:00; Mo-Tu off",
+        "phone": "+41 26 412 00 61",
+        "smoking": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2936739108,
+      "lat": 46.5955682,
+      "lon": 7.2837098,
+      "tags": {
+        "addr:city": "jaun",
+        "addr:housenumber": "172",
+        "addr:postcode": "1656",
+        "addr:street": "Mauzes Bergle",
+        "amenity": "restaurant",
+        "name": "Bärghus Gastlosen",
+        "phone": "+41 76 358 60 07",
+        "tourism": "alpine_hut",
+        "website": "http://www.brghs.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2999819751,
+      "lat": 46.8502812,
+      "lon": 6.8478126,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "pizza",
+        "name": "Le Centenaire"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2999819752,
+      "lat": 46.8505182,
+      "lon": 6.8479695,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Restaurant au Château"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3000908151,
+      "lat": 46.8492331,
+      "lon": 6.8470905,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Le Carnen"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3001960261,
+      "lat": 46.8481944,
+      "lon": 6.8459389,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Le Moulinet"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3008217019,
+      "lat": 46.5616336,
+      "lon": 7.0378718,
+      "tags": {
+        "amenity": "restaurant",
+        "indoor_seating": "yes",
+        "name": "La Pierre à Catillion",
+        "outdoor_seating": "yes",
+        "website": "https://www.moleson.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3151228858,
+      "lat": 46.8726966,
+      "lon": 7.2835734,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "sausage",
+        "delivery": "no",
+        "opening_hours": "We-Su 11:30-21:00",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3195266621,
+      "lat": 46.8895324,
+      "lon": 7.3127426,
+      "tags": {
+        "addr:city": "Flamatt",
+        "addr:country": "CH",
+        "addr:housenumber": "2",
+        "addr:postcode": "3175",
+        "addr:street": "Bahnhofstrasse",
+        "amenity": "restaurant",
+        "email": "info@hotelflamatt.ch",
+        "indoor_seating": "yes",
+        "internet_access": "yes",
+        "name": "Hotel Flamatt",
+        "outdoor_seating": "no",
+        "phone": "+41 31 741 06 60",
+        "tourism": "hotel",
+        "website": "https://www.hotelflamatt.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3229810438,
+      "lat": 46.8803417,
+      "lon": 7.3520982,
+      "tags": {
+        "addr:city": "Ueberstorf",
+        "addr:housenumber": "20",
+        "addr:postcode": "3182",
+        "addr:street": "Sensenau",
+        "amenity": "restaurant",
+        "name": "Sensestrand (Hollywood)"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3276913273,
+      "lat": 46.7419611,
+      "lon": 7.2862002,
+      "tags": {
+        "addr:city": "Plaffeien",
+        "addr:country": "CH",
+        "addr:housenumber": "6",
+        "addr:postcode": "1716",
+        "addr:street": "Kirchstrasse",
+        "amenity": "fast_food",
+        "check_date:opening_hours": "2018-11-18",
+        "cuisine": "barbecue",
+        "delivery": "yes",
+        "name": "Seisler Grill",
+        "opening_hours": "We,Th 10:00-21:00; Fr-Su 10:00-23:00",
+        "phone": "+41 26 419 00 49",
+        "takeaway": "yes",
+        "website": "https://www.seislergrill.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3284696962,
+      "lat": 46.8897526,
+      "lon": 7.3132356,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "sushi;asian",
+        "name": "Yummy Tele",
+        "website": "https://www.tele-flamatt.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3284697053,
+      "lat": 46.890007,
+      "lon": 7.3125975,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "email": "restaurantzurwaage@gmx.ch",
+        "indoor_seating": "yes",
+        "name": "Restaurant zur Waage",
+        "outdoor_seating": "yes",
+        "phone": "+41 31 741 02 35",
+        "smoking": "yes",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3300565262,
+      "lat": 46.6134147,
+      "lon": 7.0485521,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Buvette"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3313987088,
+      "lat": 46.6037152,
+      "lon": 7.0997345,
+      "tags": {
+        "addr:city": "Broc",
+        "addr:housenumber": "2",
+        "addr:postcode": "1636",
+        "addr:street": "Rue du Bourg de l'Auge",
+        "amenity": "fast_food",
+        "cuisine": "kebab;pizza",
+        "name": "L'Avenir"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3346683744,
+      "lat": 46.9241522,
+      "lon": 6.9541222,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "La Salamandre",
+        "opening_hours": "Th-Mo 08:00-23:30; Tu-We closed",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3348431383,
+      "lat": 46.9137608,
+      "lon": 7.09056,
+      "tags": {
+        "addr:city": "Greng",
+        "addr:housenumber": "19",
+        "addr:postcode": "3280",
+        "addr:street": "De Castella-Platz",
+        "amenity": "restaurant",
+        "name": "La Tavola Pronta",
+        "opening_hours": "Tu-Sa 11:45-14:30,18:00-23:30",
+        "phone": "+41 31 382 66 33",
+        "website": "http://www.schloss-taverne-greng.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3435643159,
+      "lat": 46.582442,
+      "lon": 7.0727917,
+      "tags": {
+        "addr:city": "Pringy",
+        "addr:housenumber": "3",
+        "addr:postcode": "1663",
+        "addr:street": "Place de la Gare",
+        "amenity": "restaurant",
+        "diet:vegan": "no",
+        "diet:vegetarian": "yes",
+        "name": "Restaurant de La Maison du Gruyère",
+        "opening_hours": "Mo-Sa 07:30-18:30; Su 08:00-18:00",
+        "outdoor_seating": "yes",
+        "takeaway": "yes",
+        "website": "https://www.lamaisondugruyere.ch/restaurant-de/la-maison-du-gruyere-restaurant/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3517052100,
+      "lat": 46.8712409,
+      "lon": 7.1079109,
+      "tags": {
+        "addr:city": "Wallenried",
+        "addr:country": "CH",
+        "addr:housenumber": "18",
+        "addr:postcode": "1784",
+        "addr:street": "Chemin du Golf",
+        "amenity": "restaurant",
+        "name": "Le Disnöf Golf de Wallenried"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3606420834,
+      "lat": 46.8053174,
+      "lon": 7.156791,
+      "tags": {
+        "addr:city": "Fribourg",
+        "addr:country": "CH",
+        "addr:housenumber": "87",
+        "addr:postcode": "1700",
+        "addr:street": "Rue de Lausanne",
+        "amenity": "restaurant",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Les Trentenaires",
+        "opening_hours": "Mo-Th 09:00-24:00; Fr-Sa 09:00-02:00; Su 10:00-24:00",
+        "phone": "+41 26 322 44 11",
+        "website": "https://www.lestrentenaires.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3607798639,
+      "lat": 46.9309836,
+      "lon": 7.1255949,
+      "tags": {
+        "addr:city": "Murten",
+        "addr:housenumber": "30",
+        "addr:postcode": "3280",
+        "addr:street": "Bernstrasse",
+        "amenity": "restaurant",
+        "cuisine": "italian",
+        "name": "Fellini"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3690133750,
+      "lat": 46.8027925,
+      "lon": 7.1510442,
+      "tags": {
+        "amenity": "cafe",
+        "brand": "Starbucks",
+        "brand:wikidata": "Q37158",
+        "brand:wikipedia": "en:Starbucks",
+        "cuisine": "coffee_shop",
+        "name": "Starbucks",
+        "official_name": "Starbucks Coffee",
+        "opening_hours": "Mo-Fr 06:00-21:00; Sa 07:00-20:00; Su 08:00-20:00",
+        "takeaway": "yes",
+        "wheelchair": "yes",
+        "wheelchair:description": "Access from inside the train station."
+      }
+    },
+    {
+      "type": "node",
+      "id": 3690133755,
+      "lat": 46.7998359,
+      "lon": 7.1522121,
+      "tags": {
+        "amenity": "cafe",
+        "check_date": "2024-04-05",
+        "name": "Le Provencal",
+        "opening_hours": "Mo-Fr 08:00-19:00; Tu 08:00-21:00; Sa 08:00-16:00, Su off"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3691534671,
+      "lat": 46.8023919,
+      "lon": 7.1508991,
+      "tags": {
+        "amenity": "fast_food",
+        "contact:phone": "+4126 322 84 20",
+        "cuisine": "kebab",
+        "name": "Au Bospore"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3691534674,
+      "lat": 46.8026344,
+      "lon": 7.1507497,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Le Passenger",
+        "opening_hours": "Mo 10:30-18:30; Tu-Fr 09:30-18:30; Sa 09:30-14:00; Su off"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3694130630,
+      "lat": 46.7798004,
+      "lon": 7.1493233,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Treyvaux",
+        "opening_hours": "Mo off"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3695813966,
+      "lat": 46.8014361,
+      "lon": 7.1507751,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "turkish",
+        "name": "Café Istanbul"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3703483118,
+      "lat": 46.7971908,
+      "lon": 7.154096,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Café de la Presse",
+        "opening_hours": "Mo-Fr 09:00-23:30; Sa 17:00-23:30; Su,PH off"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3703483123,
+      "lat": 46.8010124,
+      "lon": 7.1522881,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "San Marco",
+        "opening_hours": "Mo-Th 11:30-14:00, 18:00-21:30; Fr-Sa 11:30-14:00, 18:00-22:00; Su 11:00-14:30, 18:00-21:30"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3708163009,
+      "lat": 46.7990691,
+      "lon": 7.1502721,
+      "tags": {
+        "amenity": "fast_food",
+        "contact:email": "fribourg@pizzaphone.com",
+        "contact:phone": "+4126 321 27 26",
+        "contact:website": "http://www.pizzaphone-fribourg.ch/",
+        "cuisine": "italian",
+        "delivery": "yes",
+        "name": "Pizzaphone",
+        "opening_hours": "Mo-Fr 11:15-13:30, 17:15-22:00; Sa-Su 11:15-13:30, 17:15-22:30",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3716603075,
+      "lat": 46.7961177,
+      "lon": 7.1538965,
+      "tags": {
+        "amenity": "restaurant",
+        "building:levels": "7",
+        "contact:email": "lisola@hispeed.ch",
+        "contact:phone": "+4126 422 24 53",
+        "cuisine": "italian",
+        "name": "L'Isola",
+        "opening_hours": "Mo,Tu 11:00-13:00; We-Fr 11:00-13:00,18:00-23:00; Sa 11:00-15:00,18:00-23:00; Su,PH off",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3733675525,
+      "lat": 46.8011706,
+      "lon": 7.1516797,
+      "tags": {
+        "amenity": "fast_food",
+        "contact:website": "http://www.mike-wong.ch",
+        "cuisine": "asian",
+        "drive_through": "no",
+        "name": "Mike Wong",
+        "opening_hours": "Su-Th 11:00-22:00; Fr-Sa 11:00-23:00",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3735733927,
+      "lat": 46.7997188,
+      "lon": 7.1519305,
+      "tags": {
+        "amenity": "restaurant",
+        "brand": "Migros Restaurant",
+        "brand:wikidata": "Q111803848",
+        "cuisine": "international",
+        "layer": "1",
+        "name": "Migros Restaurant",
+        "opening_hours": "Mo-Fr 08:00-19:00; Tu 08:00-21:00; Sa 08:00-16:00, Su off"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3743259027,
+      "lat": 46.7953948,
+      "lon": 7.1561655,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "turkish",
+        "name": "Can Dersim",
+        "opening_hours": "Mo-Sa 09:00-23:00; Su 10:00-19:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3743259029,
+      "lat": 46.7949672,
+      "lon": 7.1566283,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "kebab",
+        "name": "83",
+        "opening_hours": "Mo-Fr 09:00-22:30; Sa, Su 10:00-22:30"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3743259031,
+      "lat": 46.7950108,
+      "lon": 7.1565841,
+      "tags": {
+        "amenity": "fast_food",
+        "contact:email": "lelotustakeaway@yahoo.fr",
+        "contact:mobile": "+41 79 617 74 87",
+        "contact:phone": "+41 26 422 35 71",
+        "contact:website": "http://www.le-lotus.ch",
+        "cuisine": "asian",
+        "name": "Le-Lotus",
+        "opening_hours": "Mo-Fr 11:00-14:30; Th 18:00-21:00; Sa-Su off"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3743259033,
+      "lat": 46.7950676,
+      "lon": 7.1565153,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "italian",
+        "name": "Pastamia",
+        "opening_hours": "Mo-Fr 11:00-14:00, Sa-Su off"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3743259052,
+      "lat": 46.7951788,
+      "lon": 7.1563872,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "sandwich",
+        "name": "Club MG"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3743259053,
+      "lat": 46.7960329,
+      "lon": 7.1554906,
+      "tags": {
+        "amenity": "fast_food",
+        "contact:phone": "+41766386867",
+        "cuisine": "burger",
+        "delivery": "yes",
+        "diet:vegan": "yes",
+        "name": "Sixty Five",
+        "opening_hours": "Su off; Mo-Fr 11:00-14:00,17:30-22:00; Sa 17:30-22:00",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3744745835,
+      "lat": 46.7963793,
+      "lon": 7.1550898,
+      "tags": {
+        "amenity": "restaurant",
+        "contact:phone": "+41264244232",
+        "cuisine": "asian",
+        "name": "Au phenix d'Or",
+        "opening_hours": "Mo-Th 09:00-22:00; Fr,Sa 09:00-22:30; Su off"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3745279599,
+      "lat": 46.8031788,
+      "lon": 7.1509556,
+      "tags": {
+        "amenity": "cafe",
+        "check_date:opening_hours": "2024-11-06",
+        "contact:email": "info-ch@autogrill.net",
+        "contact:fax": "+4126 322 25 14",
+        "contact:phone": "+4126 322 25 11",
+        "contact:website": "http://www.autogrill.ch",
+        "indoor_seating": "yes",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "layer": "-1",
+        "name": "Coffee & Friends",
+        "opening_hours": "Mo-Fr 05:00-20:00; Sa,Su 06:00-20:00",
+        "outdoor_seating": "no",
+        "payment:american_express": "yes",
+        "payment:diners_club": "yes",
+        "payment:maestro": "yes",
+        "payment:mastercard": "yes",
+        "payment:postfinance_card": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3748925530,
+      "lat": 46.7962662,
+      "lon": 7.1552167,
+      "tags": {
+        "amenity": "restaurant",
+        "contact:phone": "+41 26 424 59 22",
+        "contact:website": "http://etoile-dor.ch",
+        "cuisine": "asian",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Etoile d'Or",
+        "opening_hours": "Tu-Fr 11:00-14:00,18:00-22:00; Mo,Sa 11:30-14:00; Su,PH off",
+        "phone": "+41 26 424 59 22"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3751791226,
+      "lat": 46.5048042,
+      "lon": 6.9795124,
+      "tags": {
+        "amenity": "restaurant"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3752027805,
+      "lat": 46.7963407,
+      "lon": 7.1551389,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "Happy Food",
+        "opening_hours": "Su-Th 09:00-23:30, Fr 09:00-14:00, Sa 09:00-02:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3754476244,
+      "lat": 46.8936449,
+      "lon": 7.1739343,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Zum Brennenden Herzen"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3782309121,
+      "lat": 46.8404102,
+      "lon": 7.2760871,
+      "tags": {
+        "addr:city": "Heitenried",
+        "addr:country": "CH",
+        "addr:housenumber": "105",
+        "addr:postcode": "1714",
+        "addr:street": "Niedermuhren",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Restaurant Sonne",
+        "opening_hours": "Mo-Sa 08:00-24:00; Tu off; Su 08:00-18:00",
+        "operator": "Familie Schmied",
+        "outdoor_seating": "yes",
+        "phone": "+41 26 495 12 32",
+        "website": "https://www.sonnemuhre.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3784293057,
+      "lat": 46.8031748,
+      "lon": 7.15121,
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Burger King",
+        "brand:wikidata": "Q177054",
+        "brand:wikipedia": "en:Burger King",
+        "check_date": "2024-11-06",
+        "check_date:opening_hours": "2024-11-06",
+        "contact:phone": "+41 79 942 71 22",
+        "cuisine": "burger",
+        "delivery": "no",
+        "drive_through": "no",
+        "indoor_seating": "yes",
+        "name": "Burger King",
+        "opening_hours": "Mo-We 10:30-24:00, Th 10:30-02:00, Fr,Sa 10:30-03:00, Su 10:30-24:00",
+        "operator": "Fricent Sarl",
+        "outdoor_seating": "no",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "smoking": "no",
+        "takeaway": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3927098664,
+      "lat": 46.8509994,
+      "lon": 7.190377,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "email": "office@hbd.ch",
+        "fax": "+41 26 492 56 50",
+        "internet_access": "wlan",
+        "name": "Hotel Bahnhof",
+        "opening_hours": "Mo-Th 06:30-23:30;Fr 06:30-00:30;Sa 07:30-00:30;Su off",
+        "phone": "+41 26 492 56 56",
+        "smoking": "no",
+        "tourism": "hotel",
+        "website": "http://www.hbd.ch",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4032360489,
+      "lat": 46.7967784,
+      "lon": 7.1546254,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "italian",
+        "name": "Mena Me",
+        "opening_hours": "Mo-Fr 11:30-14:00,17:30-22:00; Sa 11:30-14:00,18:00-22:00; Su,PH off"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4093704128,
+      "lat": 46.8050068,
+      "lon": 7.1650995,
+      "tags": {
+        "addr:city": "Fribourg",
+        "addr:country": "CH",
+        "addr:housenumber": "36",
+        "addr:postcode": "1700",
+        "addr:street": "Grand-Rue",
+        "amenity": "cafe",
+        "contact:phone": "+41 26 323 44 07",
+        "contact:website": "https://www.facebook.com/cafebelvedere/",
+        "diet:vegetarian": "yes",
+        "internet_access": "no",
+        "name": "Café du Belvédère",
+        "opening_hours": "Mo-Sa 11:00-24:00; Sa-Su 00:00-02:00; Sa 10:00-00:00; Su 10:00-23:00",
+        "outdoor_seating": "yes",
+        "payment:cash": "yes",
+        "payment:credit_cards": "no",
+        "payment:debit_cards": "no",
+        "smoking": "outside",
+        "survey:date": "2016-04-02"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4095481830,
+      "lat": 46.8053829,
+      "lon": 7.1572676,
+      "tags": {
+        "addr:city": "Fribourg",
+        "addr:country": "CH",
+        "addr:housenumber": "77",
+        "addr:postcode": "1700",
+        "addr:street": "Rue de Lausanne",
+        "amenity": "restaurant",
+        "capacity": "30",
+        "cuisine": "asian",
+        "delivery": "no",
+        "diet:vegan": "no",
+        "diet:vegetarian": "yes",
+        "name": "KUMO",
+        "opening_hours": "Tu,We 11:30-14:30,18:00-22:00, Th-Sa 11:30-14:30,18:00-23:00, Mo-Su 11:30-22:30",
+        "outdoor_seating": "yes",
+        "phone": "+41 26 555 28 08",
+        "smoking": "outside",
+        "survey:date": "2016-04-03",
+        "takeaway": "no",
+        "website": "https://www.kumofribourg.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4099014505,
+      "lat": 46.5841073,
+      "lon": 7.0819729,
+      "tags": {
+        "addr:housenumber": "53",
+        "addr:postcode": "1663",
+        "addr:street": "Rue du Bourg",
+        "amenity": "restaurant",
+        "changing_table": "yes",
+        "changing_table:description": "in the chalet",
+        "changing_table:location": "unisex_toilet",
+        "check_date:opening_hours": "2024-02-24",
+        "cuisine": "fondue",
+        "email": "chalet@gruyereshotels.ch",
+        "internet_access": "wlan",
+        "name": "Le Chalet de Gruyères",
+        "opening_hours": "Mo-Su 08:00-21:00",
+        "outdoor_seating": "yes",
+        "phone": "+41 26 921 21 54",
+        "smoking": "outside",
+        "toilets:wheelchair": "no",
+        "website": "https://www.chalet-gruyeres.ch/",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4101056008,
+      "lat": 46.9105126,
+      "lon": 7.1521196,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Maison Salvagny",
+        "website": "https://www.maison-salvagny.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4147691289,
+      "lat": 46.6221642,
+      "lon": 7.0584807,
+      "tags": {
+        "addr:city": "Bulle",
+        "addr:housenumber": "16",
+        "addr:postcode": "1630",
+        "addr:street": "Route de Riaz",
+        "amenity": "restaurant",
+        "check_date": "2024-10-19",
+        "name": "Le Yata"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4156399173,
+      "lat": 46.6176991,
+      "lon": 7.0554837,
+      "tags": {
+        "addr:city": "Bulle",
+        "addr:housenumber": "3",
+        "addr:postcode": "1630",
+        "addr:street": "Rue Nicolas-Glasson",
+        "amenity": "restaurant",
+        "cuisine": "burger",
+        "name": "Fry Burger"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4160515543,
+      "lat": 46.9895627,
+      "lon": 7.2004841,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Jungle Restaurant",
+        "outdoor_seating": "yes",
+        "website": "https://www.papiliorama.ch/en/visit/#restaurant",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4160817573,
+      "lat": 46.8149366,
+      "lon": 6.8897029,
+      "tags": {
+        "addr:city": "Cugy FR",
+        "addr:housenumber": "11",
+        "addr:postcode": "1482",
+        "addr:street": "Grand-Rue",
+        "amenity": "restaurant",
+        "cuisine": "italian",
+        "name": "Restaurant de la Gare"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4170102037,
+      "lat": 46.8036006,
+      "lon": 7.1547699,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "italian",
+        "name": "VaSano",
+        "opening_hours": "Mo-Th 10:30-23:00; Fr-Sa 10:30-00:00; Su 10:30-23:00",
+        "phone": "+41 26 321 47 80",
+        "website": "https://vasanoristorante.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4196804892,
+      "lat": 46.9304283,
+      "lon": 7.123581,
+      "tags": {
+        "addr:street": "Bernstrasse",
+        "amenity": "restaurant",
+        "internet_access": "wlan",
+        "name": "Restaurant Migros"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4196843191,
+      "lat": 46.9299402,
+      "lon": 7.1219358,
+      "tags": {
+        "addr:housenumber": "16",
+        "addr:street": "Bernstrasse",
+        "amenity": "fast_food",
+        "cuisine": "pizza",
+        "name": "Pizza Time",
+        "opening_hours": "Mo off; Tu-Sa 11:30-23:00; Su 11:30-22:00",
+        "phone": "+41 26 672 14 00",
+        "website": "https://www.pizza-time-murten.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4196908190,
+      "lat": 46.9285136,
+      "lon": 7.1172871,
+      "tags": {
+        "addr:city": "Murten/Morat",
+        "addr:housenumber": "33",
+        "addr:postcode": "3280",
+        "addr:street": "Hauptgasse",
+        "amenity": "cafe",
+        "indoor_seating": "yes",
+        "name": "Confiserie Züger",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4196908292,
+      "lat": 46.9283944,
+      "lon": 7.1170241,
+      "tags": {
+        "addr:city": "Murten/Morat",
+        "addr:housenumber": "25",
+        "addr:postcode": "3280",
+        "addr:street": "Hauptgasse",
+        "amenity": "cafe",
+        "indoor_seating": "yes",
+        "name": "Monnier",
+        "outdoor_seating": "yes",
+        "website": "https://www.monniermurten.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4196982191,
+      "lat": 46.9289103,
+      "lon": 7.1171827,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Chesery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4196982891,
+      "lat": 46.9289493,
+      "lon": 7.117979,
+      "tags": {
+        "amenity": "restaurant",
+        "indoor_seating": "yes",
+        "name": "Bistrottino",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4196986991,
+      "lat": 46.9281913,
+      "lon": 7.1171867,
+      "tags": {
+        "addr:street": "Hauptgasse",
+        "amenity": "restaurant",
+        "name": "Monkey Bowl"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4197389153,
+      "lat": 46.940367,
+      "lon": 7.1446615,
+      "tags": {
+        "addr:city": "Muntelier",
+        "addr:housenumber": "16",
+        "addr:postcode": "3280",
+        "addr:street": "Grande Ferme",
+        "amenity": "fast_food",
+        "brand": "McDonald's",
+        "brand:wikidata": "Q38076",
+        "brand:wikipedia": "en:McDonald's",
+        "cuisine": "burger",
+        "drive_through": "yes",
+        "internet_access": "wlan",
+        "name": "McDonald's",
+        "opening_hours": "Su-Th 10:00-23:00, Fr,Sa 10:00-01:00",
+        "phone": "+41 26 670 48 90",
+        "smoking": "outside",
+        "takeaway": "yes",
+        "toilets:wheelchair": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4205784646,
+      "lat": 46.9268736,
+      "lon": 7.115043,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "italian;pizza",
+        "level": "1",
+        "name": "Roma",
+        "opening_hours": "Mo-Th 09:00-14:00,17:00-23:30; Fr-Sa 09:00-14:00,17:00-00:00",
+        "website": "https://pizzeriaroma.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4232261389,
+      "lat": 46.8050312,
+      "lon": 7.1545662,
+      "tags": {
+        "addr:city": "Fribourg",
+        "addr:housenumber": "13",
+        "addr:postcode": "1700",
+        "addr:street": "Rue du Criblet",
+        "amenity": "restaurant",
+        "cuisine": "japanese;vietnamese",
+        "name": "Sakura",
+        "phone": "+41 26 322 10 46;+41 79 758 71 88",
+        "takeaway": "yes",
+        "website": "http://www.sakurafribourg.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4271026761,
+      "lat": 46.8551023,
+      "lon": 7.2488732,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "pizza",
+        "name": "Pizza Bella"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4325365491,
+      "lat": 46.7955037,
+      "lon": 7.1560201,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "vietnamese",
+        "name": "PHO Vietnam",
+        "opening_hours": "Mo 17:00-23:00; Tu-Sa 10:00-14:30,17:00-23:00",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "phone": "+41 26 422 17 48",
+        "website": "https://www.phovietnam.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4327465896,
+      "lat": 46.61788,
+      "lon": 7.0562959,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Café de la Gare"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4342515634,
+      "lat": 46.5937895,
+      "lon": 7.0548688,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Tea-Room Carambar"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4366987753,
+      "lat": 46.6139129,
+      "lon": 7.1296322,
+      "tags": {
+        "addr:postcode": "1653",
+        "amenity": "restaurant",
+        "cuisine": "french",
+        "delivery": "no",
+        "name": "Restaurant de la Tour",
+        "opening_hours": "Th-Mo 09:00-23:00",
+        "phone": "+41 26 921 08 85",
+        "smoking": "outside",
+        "takeaway": "no",
+        "website": "http://www.restodelatour.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4373510995,
+      "lat": 46.8076175,
+      "lon": 7.1556013,
+      "tags": {
+        "amenity": "cafe",
+        "name": "tea-room Le Capri",
+        "opening_hours": "Mo-Fr 06:15-18:30, Sa 06:45-13:00",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4382329905,
+      "lat": 46.803376,
+      "lon": 7.150616,
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Brezelkönig",
+        "brand:wikidata": "Q111728604",
+        "contact:website": "http://brezelkönig.ch/de/filiale.php?id=36",
+        "cuisine": "pretzel",
+        "name": "Brezelkönig",
+        "opening_hours": "Mo-Fr 06:00-19:00; Sa 10:00-17:00",
+        "operator": "Mohamad Said Soliman Shaimaa",
+        "takeaway": "only",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4416201794,
+      "lat": 46.8061229,
+      "lon": 7.1616617,
+      "tags": {
+        "addr:city": "Fribourg",
+        "addr:country": "CH",
+        "addr:housenumber": "16",
+        "addr:postcode": "1701",
+        "addr:street": "Rue du Pont-Muré",
+        "amenity": "restaurant",
+        "contact:email": "info@le-gothard.ch",
+        "contact:fax": "+41 26 321 23 79",
+        "contact:phone": "+41 26 322 32 85",
+        "contact:website": "http://www.le-gothard.ch/",
+        "cuisine": "regional",
+        "name": "Café du Gothard",
+        "opening_hours": "Mo-Fr 09:00-23:30; We off; Sa-Su 08:00-23:30",
+        "operator": "Patrick & Muriel Hauser",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4449242558,
+      "lat": 46.80986,
+      "lon": 7.1440313,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "swiss",
+        "name": "Cafe Restaurant Le Jura"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4449250537,
+      "lat": 46.8094715,
+      "lon": 7.1497067,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Solemio Delivery",
+        "website": "solemiodelivery.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4449251434,
+      "lat": 46.809391,
+      "lon": 7.1499355,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "pizza",
+        "drive_through": "no",
+        "name": "Automate Pizza 24/7",
+        "opening_hours": "24/7",
+        "website": "http://jacqueshauser.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4449251708,
+      "lat": 46.8088354,
+      "lon": 7.1511535,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "Casa Leal"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4462010813,
+      "lat": 46.8215373,
+      "lon": 7.1074246,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "L'étoile",
+        "name:fr": "L'étoile"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4496495940,
+      "lat": 46.6179589,
+      "lon": 7.0551224,
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Subway",
+        "brand:wikidata": "Q244457",
+        "brand:wikipedia": "en:Subway (restaurant)",
+        "cuisine": "sandwich",
+        "name": "Subway",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4496788591,
+      "lat": 46.8059683,
+      "lon": 7.1620933,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Café du Marché"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4532571239,
+      "lat": 46.9749572,
+      "lon": 7.1933641,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "pizza",
+        "name": "club cafe Bahnhof",
+        "opening_hours": "Mo-Sa 11:00-14:00, 18:00-23:30",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4567086722,
+      "lat": 46.9280629,
+      "lon": 7.1168939,
+      "tags": {
+        "addr:city": "Murten/Morat",
+        "addr:housenumber": "12",
+        "addr:postcode": "3280",
+        "addr:street": "Hauptgasse",
+        "amenity": "restaurant",
+        "contact:email": "info@brasserie-murten.ch",
+        "contact:phone": "+41 26 670 00 70",
+        "contact:website": "http://www.brasserie-murten.ch/",
+        "name": "La Brasserie",
+        "opening_hours": "Tu 17:00-23:00; We-Sa 07:00-23:00; Su 07:00-17:00",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4592319792,
+      "lat": 46.696952,
+      "lon": 6.9189454,
+      "tags": {
+        "addr:city": "Romont FR",
+        "addr:housenumber": "39",
+        "addr:postcode": "1680",
+        "addr:street": "Grand-Rue",
+        "amenity": "restaurant",
+        "indoor_seating": "yes",
+        "name": "Escale",
+        "outdoor_seating": "yes",
+        "phone": "+41 26 652 33 77"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4623902218,
+      "lat": 46.8064543,
+      "lon": 7.1613595,
+      "tags": {
+        "addr:city": "Fribourg",
+        "addr:country": "CH",
+        "addr:housenumber": "1",
+        "addr:postcode": "1700",
+        "addr:street": "Place des Ormeaux",
+        "amenity": "cafe",
+        "cuisine": "coffee_shop",
+        "name": "Café des Arcades"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4650860729,
+      "lat": 46.8537568,
+      "lon": 7.250306,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "pizza",
+        "name": "Pizzeria Cardinal"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4705448069,
+      "lat": 46.6194582,
+      "lon": 6.8228633,
+      "tags": {
+        "addr:city": "Rue",
+        "addr:housenumber": "30",
+        "addr:postcode": "1673",
+        "addr:street": "Rue du Casino",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Hôtel de Ville",
+        "opening_hours": "Tu-Sa 09:00-14:00,17:00-23:00",
+        "outdoor_seating": "no",
+        "takeaway": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4706354768,
+      "lat": 46.7489964,
+      "lon": 7.0013472,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Auberge du Chêne"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4782996283,
+      "lat": 46.8062846,
+      "lon": 7.1622397,
+      "tags": {
+        "amenity": "cafe",
+        "level": "0",
+        "name": "Galerie Café Le Temps de Vivre"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4782996287,
+      "lat": 46.8057336,
+      "lon": 7.1642135,
+      "tags": {
+        "amenity": "restaurant",
+        "level": "0",
+        "name": "Café du Théâtre",
+        "opening_hours": "Tu-Sa 09:00-23:55",
+        "phone": "+41 26 321 42 20"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4782996289,
+      "lat": 46.8060813,
+      "lon": 7.1615698,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "pizza",
+        "level": "0",
+        "name": "Le Bocalino"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4782996293,
+      "lat": 46.8058883,
+      "lon": 7.1631512,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "indonesian",
+        "level": "0",
+        "name": "Wayang",
+        "opening_hours": "Mo-We,Fr 11:30-14:00,17:45-19:00,Th 11:30-14:00,17:45-21:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4783000146,
+      "lat": 46.8023686,
+      "lon": 7.1626022,
+      "tags": {
+        "addr:city": "Fribourg",
+        "addr:country": "CH",
+        "addr:housenumber": "39",
+        "addr:postcode": "1700",
+        "addr:street": "Planche-Supérieure",
+        "amenity": "restaurant",
+        "entrance": "yes",
+        "level": "0",
+        "name": "Brasserie de l'Epee",
+        "opening_hours": "Mo 09:00-15:00; We,Th 09:00-23:30; Fr 09:00-24:00; Sa 16:00-24:00; Su 10:00-17:00; May-Sep Su 10:00-19:00",
+        "outdoor_seating": "yes",
+        "phone": "+41 26 322 34 07",
+        "website": "http://www.brasserie-epee.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4783000163,
+      "lat": 46.8022881,
+      "lon": 7.1633916,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "lebanese",
+        "level": "0",
+        "name": "Restaurant zum Schild",
+        "name:fr": "Le Schild",
+        "outdoor_seating": "yes",
+        "website": "https://restaurantschild.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4783010670,
+      "lat": 46.8054082,
+      "lon": 7.1643554,
+      "tags": {
+        "addr:city": "Fribourg",
+        "addr:country": "CH",
+        "addr:housenumber": "45",
+        "addr:postcode": "1700",
+        "addr:street": "Grand-Rue",
+        "amenity": "restaurant",
+        "cuisine": "pizza",
+        "email": "info@pizzamia.ch",
+        "level": "0",
+        "name": "Pizza mia",
+        "phone": "+41 26 535 35 53",
+        "takeaway": "yes",
+        "website": "https://www.pizzamia.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4783041441,
+      "lat": 46.8055471,
+      "lon": 7.1586529,
+      "tags": {
+        "amenity": "restaurant",
+        "level": "0",
+        "name": "Araral"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4809430721,
+      "lat": 46.7945131,
+      "lon": 7.1155989,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "chinese",
+        "name": "Fu Lin",
+        "name:fr": "Fu Lin"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4826476323,
+      "lat": 46.6199175,
+      "lon": 7.0576599,
+      "tags": {
+        "addr:city": "Bulle",
+        "addr:housenumber": "43",
+        "addr:postcode": "1630",
+        "addr:street": "Grand-Rue",
+        "amenity": "restaurant",
+        "cuisine": "tapas",
+        "indoor_seating": "yes",
+        "name": "Le 43",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4909599428,
+      "lat": 46.8707469,
+      "lon": 7.0214453,
+      "tags": {
+        "addr:housenumber": "80",
+        "addr:street": "Vy-d'Avenches",
+        "alt_name": "La Station",
+        "amenity": "fast_food",
+        "contact:website": "https://la-station.ch/",
+        "name": "Station Pizza"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4946957923,
+      "lat": 46.539186,
+      "lon": 7.0865685,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Vanil Noir"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4958634622,
+      "lat": 46.6152478,
+      "lon": 7.057637,
+      "tags": {
+        "addr:housenumber": "5",
+        "addr:street": "Rue Saint-Denis",
+        "amenity": "restaurant",
+        "name": "Restaurant de l'Écu",
+        "name:fr": "Restaurant de l'Écu",
+        "phone": "+41 26 912 93 18",
+        "website": "https://www.restaurant-de-lecu.ch/",
+        "website:menu": "https://www.restaurant-de-lecu.ch/nos-cartes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5053481722,
+      "lat": 46.7853595,
+      "lon": 7.014489,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "La grange",
+        "name:fr": "La grange"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5094523951,
+      "lat": 46.6056359,
+      "lon": 6.9323228,
+      "tags": {
+        "amenity": "restaurant",
+        "internet_access": "wlan",
+        "internet_access:ssid": "Buvette",
+        "name": "Buvette des Obasseires",
+        "phone": "+41 26 918 51 21"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5298949267,
+      "lat": 46.9665664,
+      "lon": 7.1238403,
+      "tags": {
+        "amenity": "cafe",
+        "cuisine": "coffee_shop",
+        "delivery": "no",
+        "drive_through": "no",
+        "name": "Starbucks on the go",
+        "operator": "Starbucks",
+        "outdoor_seating": "no",
+        "smoking": "no",
+        "toilets:wheelchair": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5372347911,
+      "lat": 46.7952211,
+      "lon": 7.1563291,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "asian",
+        "name": "Délices d‘Asie",
+        "opening_hours": "Mo-Fr 11:00-14:30"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5608798427,
+      "lat": 46.8298087,
+      "lon": 7.0177695,
+      "tags": {
+        "addr:city": "Léchelles",
+        "addr:housenumber": "16",
+        "addr:postcode": "1773",
+        "addr:street": "Route de Fribourg",
+        "amenity": "restaurant",
+        "name": "Café, Restaurant Au fil du temps"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5706095223,
+      "lat": 46.8053358,
+      "lon": 7.1570372,
+      "tags": {
+        "addr:city": "Fribourg",
+        "addr:country": "CH",
+        "addr:housenumber": "81",
+        "addr:postcode": "1700",
+        "addr:street": "Rue de Lausanne",
+        "alt_name": "Restaurant Indien Diyarah FR",
+        "amenity": "restaurant",
+        "cuisine": "indian",
+        "name": "Restaurant Indian Diyarah",
+        "opening_hours": "Mo-Su 11:30-14:00,17:30-22:00",
+        "phone": "+41 26 303 79 25",
+        "website": "https://www.restaurantdiyarah.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5709887025,
+      "lat": 46.8498904,
+      "lon": 6.8386646,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Le Nomade"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5715337921,
+      "lat": 46.8049611,
+      "lon": 7.1550967,
+      "tags": {
+        "addr:housenumber": "5",
+        "addr:postcode": "1700",
+        "addr:street": "Rue de Romont",
+        "amenity": "restaurant",
+        "name": "Restaurant FIVE",
+        "phone": "+41 26 322 84 50"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5718322022,
+      "lat": 46.7987455,
+      "lon": 7.1497777,
+      "tags": {
+        "addr:housenumber": "15",
+        "addr:postcode": "1700",
+        "addr:street": "Route des Arsenaux",
+        "amenity": "restaurant",
+        "name": "Le Chemin de Fer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5762060078,
+      "lat": 46.634133,
+      "lon": 6.8374116,
+      "tags": {
+        "addr:city": "Ursy",
+        "addr:housenumber": "29",
+        "addr:postcode": "1670",
+        "addr:street": "Route de Romont",
+        "amenity": "restaurant",
+        "name": "Le Flamboyant",
+        "phone": "+41 21 909 00 98"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5764247455,
+      "lat": 46.7544242,
+      "lon": 7.0762532,
+      "tags": {
+        "addr:city": "Écuvillens",
+        "addr:housenumber": "20",
+        "addr:postcode": "1730",
+        "addr:street": "Route de l’aérodrome",
+        "amenity": "restaurant",
+        "cuisine": "pizza;portuguese;international",
+        "delivery": "no",
+        "email": "info@restaurantlaerodromeecuvillens.ch",
+        "internet_access": "wlan",
+        "name": "L’aérodrome d’Écuvillens - Chez Seraphim",
+        "opening_hours": "Mo-Su 08:30-23:00",
+        "outdoor_seating": "yes",
+        "phone": "+41 26 411 12 20",
+        "takeaway": "yes",
+        "website": "http://www.restaurantlaerodromeecuvillens.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5771419353,
+      "lat": 46.606777,
+      "lon": 7.1374059,
+      "tags": {
+        "addr:city": "Broc",
+        "addr:housenumber": "1",
+        "addr:place": "La Gîte à Conrad",
+        "addr:postcode": "1636",
+        "amenity": "restaurant",
+        "name": "Au Creux du Feu",
+        "opening_hours": "Mo-Sa 10:30-23:30; Su 10:30-18:00",
+        "phone": "+41 79 755 88 07",
+        "website": "https://www.aucreuxdufeu.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5771419453,
+      "lat": 46.6091104,
+      "lon": 7.1340354,
+      "tags": {
+        "addr:city": "Broc",
+        "addr:postcode": "1636",
+        "amenity": "restaurant",
+        "cuisine": "local",
+        "email": "info@Boudji.ch",
+        "name": "Chez Boudji",
+        "opening_hours": "Mo-Su 10:00-16:00, 17:00-23:00",
+        "phone": "+41 26 921 90 50",
+        "website": "http://www.boudji.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5824823761,
+      "lat": 46.8059969,
+      "lon": 7.1545586,
+      "tags": {
+        "addr:housenumber": "25",
+        "addr:postcode": "1700",
+        "addr:street": "Rue de l'Hôpital",
+        "amenity": "restaurant",
+        "name:en": "Crazy Wolf"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5824823859,
+      "lat": 46.8034883,
+      "lon": 7.153474,
+      "tags": {
+        "addr:city": "Fribourg",
+        "addr:housenumber": "1",
+        "addr:postcode": "1700",
+        "addr:street": "Place Jean-Tinguely",
+        "amenity": "cafe",
+        "email": "fribourg@boulangeriebrut.ch",
+        "internet_access": "yes",
+        "internet_access:fee": "no",
+        "name": "Brut Café",
+        "opening_hours": "Mo-Sa 08:00-18:30",
+        "outdoor_seating": "yes",
+        "phone": "+41 26 535 03 90",
+        "takeaway": "yes",
+        "website": "https://www.boulangeriebrut.ch/brut-cafe/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5839901185,
+      "lat": 46.6230097,
+      "lon": 7.0334985,
+      "tags": {
+        "addr:postcode": "1630",
+        "addr:street": "Rue Hans Liebherr",
+        "amenity": "restaurant",
+        "cuisine": "local",
+        "diet:vegan": "no",
+        "diet:vegetarian": "yes",
+        "name": "Cantine Liebherr Machines Bulle SA",
+        "opening_hours": "Mo-Fr 08:00-16:00",
+        "phone": "+41 26 913 31 11",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5851132975,
+      "lat": 46.9130421,
+      "lon": 6.9682436,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "dog": "outside",
+        "name": "Au Vieux Four",
+        "opening_hours": "We,Th 08:30-22:00; Fr-Sa 08:30-23:00; Su 10:00-14:00",
+        "outdoor_seating": "yes",
+        "website": "http://www.auvieuxfour.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5852260453,
+      "lat": 46.9190068,
+      "lon": 6.9564593,
+      "tags": {
+        "amenity": "restaurant",
+        "contact:phone": "+41 26 677 11 22",
+        "contact:website": "https://le-bateau.ch/",
+        "cuisine": "regional",
+        "name": "Le Bateau"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5854776091,
+      "lat": 46.8317415,
+      "lon": 6.8590872,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Amo'",
+        "operator": "Autogrill Suisse SA",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5862281353,
+      "lat": 46.6178976,
+      "lon": 7.0211884,
+      "tags": {
+        "amenity": "cafe",
+        "check_date": "2022-10-24",
+        "internet_access": "no",
+        "name": "Le Kiosque",
+        "opening_hours": "Mo-Fr 06:00-20:00; Sa 06:30-17:00; Su 07:00-12:00",
+        "payment:mastercard": "yes",
+        "payment:visa": "yes",
+        "phone": "+41 26 919 51 51",
+        "shop": "newsagent",
+        "website": "https://www.lekiosque-sandwicherie.ch",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5890200949,
+      "lat": 46.6196775,
+      "lon": 7.159546,
+      "tags": {
+        "addr:city": "Charmey (Gruyère)",
+        "addr:housenumber": "6",
+        "addr:postcode": "1637",
+        "addr:street": "Route du Plan",
+        "amenity": "restaurant",
+        "name": "Le Pâtissier de l'Hôtel Cailler"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5911558673,
+      "lat": 46.918772,
+      "lon": 6.9563414,
+      "tags": {
+        "amenity": "restaurant",
+        "contact:phone": "+41 26 677 11 22",
+        "contact:website": "https://le-bateau.ch/",
+        "cuisine": "pizza;regional",
+        "name": "St-Louis"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5922583985,
+      "lat": 46.9291943,
+      "lon": 7.1146152,
+      "tags": {
+        "amenity": "restaurant",
+        "internet_access": "wlan",
+        "name": "Des Bains"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5926368521,
+      "lat": 46.8011076,
+      "lon": 7.1521812,
+      "tags": {
+        "addr:city": "Fribourg - Freiburg",
+        "addr:housenumber": "18",
+        "addr:postcode": "1700",
+        "addr:street": "Boulevard de Pérolles",
+        "amenity": "fast_food",
+        "check_date": "2024-05-26",
+        "name": "Walima",
+        "opening_hours": "11:00-22:00",
+        "phone": "+41 26 303 52 02",
+        "start_date": "07.07.2018",
+        "website": "https://www.walima-fribourg.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6007300499,
+      "lat": 46.7867314,
+      "lon": 7.099461,
+      "tags": {
+        "addr:city": "Matran",
+        "addr:housenumber": "16",
+        "addr:postcode": "1753",
+        "addr:street": "Route de l'Ecole",
+        "amenity": "restaurant",
+        "cuisine": "pizza",
+        "name": "La Tomate",
+        "website": "https://la-tomate.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6070714085,
+      "lat": 46.8037152,
+      "lon": 7.1514434,
+      "tags": {
+        "addr:city": "Fribourg",
+        "addr:housenumber": "1",
+        "addr:postcode": "1700",
+        "addr:street": "Place de la Gare",
+        "amenity": "restaurant",
+        "capacity": "25",
+        "cuisine": "kebab;tacos",
+        "name": "Mykebab",
+        "opening_hours": "Mo-Su 11:00-23:00",
+        "outdoor_seating": "no",
+        "takeaway": "yes",
+        "website": "http://mykebab.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6070742044,
+      "lat": 46.7968093,
+      "lon": 7.1545885,
+      "tags": {
+        "addr:city": "Fribourg",
+        "addr:housenumber": "53",
+        "addr:postcode": "1700",
+        "addr:street": "Boulevard de Pérolles",
+        "amenity": "fast_food",
+        "cuisine": "lebanese;pasta",
+        "delivery": "no",
+        "drive_through": "no",
+        "name": "Comptoir libanais",
+        "opening_hours": "Mo-Fr 11:30-13:30",
+        "outdoor_seating": "no",
+        "takeaway": "only"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6169409886,
+      "lat": 46.6214464,
+      "lon": 7.1629174,
+      "tags": {
+        "access": "yes",
+        "addr:city": "Charmey (Gruyère)",
+        "addr:housenumber": "28",
+        "addr:postcode": "1637",
+        "addr:street": "Gros-Plan",
+        "amenity": "restaurant",
+        "cuisine": "mediterranean;fine_dining;international;breakfast;french",
+        "name": "Le Bistro Hôtel Cailler",
+        "name:fr": "Le Bistro Hôtel Cailler"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6222575144,
+      "lat": 46.9530194,
+      "lon": 7.1889047,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Kreuz"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6268496130,
+      "lat": 46.9107023,
+      "lon": 7.1678634,
+      "tags": {
+        "amenity": "cafe",
+        "cuisine": "coffee_shop",
+        "name": "Cafeteria",
+        "opening_hours": "Mo-Su 14:00-16:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6324181691,
+      "lat": 46.8088737,
+      "lon": 7.1735864,
+      "tags": {
+        "addr:city": "Fribourg",
+        "addr:postcode": "1700",
+        "amenity": "restaurant",
+        "contact:phone": "+41 76 238 29 26;+41 26 481 10 37",
+        "cuisine": "portuguese",
+        "name": "Pokemon"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6341499588,
+      "lat": 46.6008136,
+      "lon": 6.8670014,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Restaurant la fleur de lys",
+        "phone": "+41 26 565 52 99",
+        "website": "https://aubergedeporsel.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6356654692,
+      "lat": 46.9279599,
+      "lon": 7.1159707,
+      "tags": {
+        "amenity": "restaurant",
+        "indoor_seating": "yes",
+        "name": "Saveurs Berberes",
+        "opening_hours": "Tu-Su 10:30-14:30, 17:00-23:00",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6356654693,
+      "lat": 46.9280095,
+      "lon": 7.1162786,
+      "tags": {
+        "addr:housenumber": "5",
+        "addr:street": "Hauptgasse",
+        "amenity": "cafe",
+        "indoor_seating": "yes",
+        "name": "Zeit",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6356654695,
+      "lat": 46.9281036,
+      "lon": 7.1164863,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "L'italiano"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419477836,
+      "lat": 46.6161015,
+      "lon": 7.0549033,
+      "tags": {
+        "amenity": "restaurant",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "name": "Le Thai break",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419478115,
+      "lat": 46.6161572,
+      "lon": 7.0544056,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "pizza",
+        "name": "Olympia"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6431542193,
+      "lat": 46.8055326,
+      "lon": 7.1584596,
+      "tags": {
+        "addr:city": "Fribourg",
+        "addr:country": "CH",
+        "addr:housenumber": "50",
+        "addr:postcode": "1700",
+        "addr:street": "Rue de Lausanne",
+        "alt_name": "Crêperie Sucré Salé crepes FR",
+        "amenity": "restaurant",
+        "name": "Crêperie SucréSalé",
+        "phone": "+41 26 321 32 50",
+        "website": "https://creperie-sucresale.ch/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6443357186,
+      "lat": 46.5834772,
+      "lon": 7.0808841,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "swiss",
+        "name": "Café Restaurant des Remparts"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6454374826,
+      "lat": 46.8054449,
+      "lon": 7.16062,
+      "tags": {
+        "addr:city": "Fribourg - Freiburg",
+        "addr:country": "CH",
+        "addr:housenumber": "1",
+        "addr:postcode": "1700",
+        "addr:street": "Rue de la Grand-Fontaine / Alte Brunnengasse",
+        "alt_name": "Gougain FR",
+        "amenity": "cafe",
+        "cuisine": "Not mentioned",
+        "name": "La Coutellerie"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6461054587,
+      "lat": 46.6127916,
+      "lon": 7.1722639,
+      "tags": {
+        "addr:housenumber": "23",
+        "addr:street": "La Tzintre",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Le Baron"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6486480344,
+      "lat": 46.798124,
+      "lon": 7.1479678,
+      "tags": {
+        "addr:city": "Fribourg",
+        "addr:housenumber": "1",
+        "addr:postcode": "1700",
+        "addr:street": "Passage du Cardinal",
+        "amenity": "restaurant",
+        "cuisine": "regional;saison",
+        "email": "info@lesmenteurs.ch",
+        "internet_access": "yes",
+        "name": "Les Menteurs",
+        "opening_hours": "Mo-We 08:00-23:00; Th-Fr 08:00-24:00",
+        "outdoor_seating": "yes",
+        "phone": "+41 26 422 22 17",
+        "website": "https://www.lesmenteurs.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6547086088,
+      "lat": 46.7466172,
+      "lon": 6.8685915,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Auberge Communale"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6716814308,
+      "lat": 46.9429608,
+      "lon": 7.1336318,
+      "tags": {
+        "amenity": "cafe"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6755804291,
+      "lat": 46.6405534,
+      "lon": 7.0607458,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Plaisance"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6864945245,
+      "lat": 46.619712,
+      "lon": 7.05844,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Les Halles",
+        "website": "www.halles.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6914485450,
+      "lat": 46.8518372,
+      "lon": 7.0668966,
+      "tags": {
+        "addr:city": "Misery-Courtion",
+        "addr:country": "CH",
+        "addr:housenumber": "1",
+        "addr:postcode": "1721",
+        "addr:street": "Route de Fribourg",
+        "amenity": "restaurant",
+        "name": "Da Mauro",
+        "opening_hours": "Tu-Fr 10:00-14:00, 17:00-22:00; Sa 10:00-22:00; Su 10:00-14:00",
+        "phone": "+41266841402"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7036721690,
+      "lat": 46.6168971,
+      "lon": 7.0569605,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Cheval Blanc",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7167791385,
+      "lat": 46.8745145,
+      "lon": 7.2772596,
+      "tags": {
+        "addr:housenumber": "7",
+        "addr:postcode": "3184",
+        "addr:street": "Dorfstrasse",
+        "amenity": "restaurant",
+        "name": "Gasthof St. Jakob",
+        "opening_hours": "Tu-Th 11:00-14:00, 17:00-23:00; Fr-Sa 11:00-00:00; Su 10:00-17:00",
+        "phone": "+41 26 496 11 04",
+        "website": "http://www.st-jakob-gasthof.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7172148723,
+      "lat": 46.5267017,
+      "lon": 6.8522662,
+      "tags": {
+        "amenity": "cafe"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7252936241,
+      "lat": 46.9285402,
+      "lon": 7.1160949,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Meat & View"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7294974044,
+      "lat": 46.7771871,
+      "lon": 7.1501517,
+      "tags": {
+        "addr:city": "Marly",
+        "addr:housenumber": "106",
+        "addr:postcode": "1723",
+        "addr:street": "Route de l'Ancienne-Papeterie",
+        "amenity": "restaurant",
+        "name": "L'Atelier MIC",
+        "phone": "+41264300271",
+        "website": "https://atelier-mic.ch/",
+        "website:menu": "https://atelier-mic.ch/wp-content/uploads/menu.pdf"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7376109479,
+      "lat": 46.8028731,
+      "lon": 7.1517428,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "China town",
+        "opening_hours": "Mo-Su 09:00-23:30"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7376176473,
+      "lat": 46.80361,
+      "lon": 7.1518808,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Le centre",
+        "opening_hours": "Mo-Th 06:00-22:00; Fr 06:00-24:00; Sa 06:30-24:00; PH,Su 07:30-19:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7376185217,
+      "lat": 46.8042327,
+      "lon": 7.1609973,
+      "tags": {
+        "addr:city": "Fribourg",
+        "addr:housenumber": "50",
+        "addr:postcode": "1700",
+        "addr:street": "Rue de la Neuveville",
+        "amenity": "restaurant",
+        "email": "contact@frilours.ch",
+        "name": "Café de l'Ours",
+        "opening_hours": "Mo-Tu 08:00-23:30; Th-Su 8:00-23:30",
+        "phone": "026 525 22 83",
+        "website": "https://www.frilours.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7443294874,
+      "lat": 46.7967009,
+      "lon": 7.1415532,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "regional;pizza",
+        "name": "Le Bistrot",
+        "phone": "+41 26 424 65 85",
+        "website": "https://www.bistrot-fribourg.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7501387098,
+      "lat": 46.832339,
+      "lon": 7.0659092,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Le centurion",
+        "website": "https://lecentu.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7579671907,
+      "lat": 46.8006982,
+      "lon": 7.1519523,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "Star Pizza Kebab"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7623361861,
+      "lat": 46.8010371,
+      "lon": 7.1446404,
+      "tags": {
+        "amenity": "cafe",
+        "check_date:opening_hours": "2025-05-23",
+        "name": "Le Club",
+        "opening_hours": "Mo-Fr 07:00-19:00; Sa 07:30-17:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7623361862,
+      "lat": 46.8008746,
+      "lon": 7.1447911,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "pizza",
+        "name": "Pronto Pizza",
+        "opening_hours": "Mo-Su 11:00-14:00, Fr,Sa 17:00-22:00,17:00-23:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7623445731,
+      "lat": 46.7966456,
+      "lon": 7.140635,
+      "tags": {
+        "amenity": "cafe"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7625244086,
+      "lat": 46.5604319,
+      "lon": 7.1023114,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Auberge des Montagnards"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7676874685,
+      "lat": 46.6112148,
+      "lon": 7.2771499,
+      "tags": {
+        "addr:housenumber": "411",
+        "addr:street": "Hauptstrasse",
+        "amenity": "restaurant",
+        "cuisine": "local",
+        "diet:vegetarian": "yes",
+        "name": "Restaurant de la Cascade",
+        "name:de": "Restaurant Wasserfall",
+        "phone": "+41269298206"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7768939391,
+      "lat": 46.6191455,
+      "lon": 6.8221114,
+      "tags": {
+        "addr:city": "Rue",
+        "addr:housenumber": "19",
+        "addr:postcode": "1673",
+        "addr:street": "Rue du Casino",
+        "amenity": "restaurant",
+        "cuisine": "french",
+        "name": "La Bretonne",
+        "opening_hours": "Tu-Su,PH 11:00-22:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7804726087,
+      "lat": 46.6992563,
+      "lon": 7.1435411,
+      "tags": {
+        "addr:city": "La Roche",
+        "addr:housenumber": "48",
+        "addr:postcode": "1634",
+        "addr:street": "Route de Fribourg",
+        "amenity": "cafe",
+        "name": "Le Pâtissier de La Roche"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7886916886,
+      "lat": 46.6220972,
+      "lon": 7.0576052,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "thai",
+        "name": "Kalasin",
+        "opening_hours": "Tu-Su 11:30-13:30,18:00-21:30"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8068552498,
+      "lat": 46.9282776,
+      "lon": 7.1174115,
+      "tags": {
+        "addr:city": "Murten",
+        "addr:housenumber": "24",
+        "addr:postcode": "3280",
+        "addr:street": "Hauptgasse",
+        "amenity": "restaurant",
+        "cuisine": "local",
+        "diet:vegetarian": "yes",
+        "indoor_seating": "yes",
+        "name": "Agora",
+        "outdoor_seating": "yes",
+        "phone": "+41266703849"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8173321993,
+      "lat": 46.9418644,
+      "lon": 7.1437971,
+      "tags": {
+        "amenity": "cafe",
+        "name": "La Ferme 1794",
+        "phone": "+41 26 565 46 12",
+        "website": "https://laferme1794.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8381737718,
+      "lat": 46.6583435,
+      "lon": 7.0740091,
+      "tags": {
+        "addr:housenumber": "34",
+        "addr:postcode": "1633",
+        "addr:street": "Route Principale",
+        "amenity": "restaurant",
+        "email": "restaurantvuippens@bluewin.ch",
+        "name": "Maison-de-Ville",
+        "phone": "+41269151592",
+        "website": "https://www.maison-de-ville.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8396690217,
+      "lat": 46.8047261,
+      "lon": 7.1532114,
+      "tags": {
+        "addr:housenumber": "5",
+        "addr:postcode": "1700",
+        "addr:street": "Rue du Temple",
+        "amenity": "fast_food",
+        "check_date:opening_hours": "2022-12-28",
+        "cuisine": "burger",
+        "internet_access": "wlan",
+        "name": "Fryburger",
+        "opening_hours": "Mo-Th 11:00-14:00,17:30-21:30; Fr 11:00-14:00,17:30-22:00; Sa 11:30-14:30,17:30-22:00; Su 17:30-22:00",
+        "website": "https://frydaygastro.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8396690318,
+      "lat": 46.804933,
+      "lon": 7.1536627,
+      "tags": {
+        "addr:street": "Rue du Criblet",
+        "amenity": "restaurant",
+        "cuisine": "fine_dining",
+        "name": "La Cène"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8396690418,
+      "lat": 46.803188,
+      "lon": 7.1511821,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date": "2024-11-06",
+        "check_date:opening_hours": "2024-11-06",
+        "indoor_seating": "yes",
+        "name": "L’unique tartare",
+        "opening_hours": "Mo-Sa 10:00-22:00; Su 11:00-22:00",
+        "outdoor_seating": "no",
+        "website": "https://www.lunique-tartare.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8434637517,
+      "lat": 46.8552214,
+      "lon": 7.2493315,
+      "tags": {
+        "addr:housenumber": "7",
+        "addr:postcode": "3185",
+        "addr:street": "Franz Xaver Müllerstrasse",
+        "amenity": "cafe",
+        "name": "Madlen's"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8643606744,
+      "lat": 46.6188625,
+      "lon": 7.0576788,
+      "tags": {
+        "amenity": "cafe",
+        "contact:facebook": "https://www.facebook.com/lepassagecafe/",
+        "contact:phone": "+41 79 219 41 99",
+        "level": "0",
+        "name": "Le Passage",
+        "website": "https://passage-cafe.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8668924967,
+      "lat": 46.6019767,
+      "lon": 7.0743176,
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "McDonald's",
+        "brand:wikidata": "Q38076",
+        "brand:wikipedia": "en:McDonald's",
+        "cuisine": "burger",
+        "name": "McDonald's",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8841411945,
+      "lat": 46.6104975,
+      "lon": 6.993247,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Ô Colombettes",
+        "website": "https://www.lescolombettes.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8848928950,
+      "lat": 46.8564545,
+      "lon": 6.8475992,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "Le Snack"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8849215445,
+      "lat": 46.8565076,
+      "lon": 6.8474627,
+      "tags": {
+        "amenity": "restaurant",
+        "email": "restaurant@la-plage.ch",
+        "name": "La Plage",
+        "opening_hours": "Mar-Oct",
+        "outdoor_seating": "yes",
+        "phone": "+41 26 663 18 85",
+        "website": "http://la-plage.ch/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8865800133,
+      "lat": 46.8178495,
+      "lon": 6.7832354,
+      "tags": {
+        "addr:city": "Cheyres",
+        "addr:housenumber": "57",
+        "addr:postcode": "1468",
+        "addr:street": "Route du Port",
+        "amenity": "fast_food",
+        "cuisine": "burger",
+        "diet:vegan": "no",
+        "diet:vegetarian": "yes",
+        "drive_through": "no",
+        "indoor_seating": "no",
+        "name": "Snack au Dragon",
+        "opening_hours": "Fr-Su 12:00-20:00",
+        "outdoor_seating": "no",
+        "phone": "+41 79 222 17 76",
+        "takeaway": "only",
+        "website": "https://snack-au-dragon.business.site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8866572017,
+      "lat": 46.5804214,
+      "lon": 7.062697,
+      "tags": {
+        "amenity": "restaurant",
+        "contact:phone": "+41 26 921 04 00",
+        "contact:website": "https://www.auberge-de-la-loue.ch",
+        "cuisine": "regional",
+        "level": "0",
+        "name": "Auberge de la Loue",
+        "opening_hours": "We-Th 11:30-15:00,18:30-22:00; Fr-Sa 11:30-15:30,18:30-23:00; PH,Su 11:30-16:00",
+        "opening_hours:kitchen": "We-Th 11:30-14:00,18:30-21:00; Fr-Sa 11:30-14:30,18:30-22:00; PH,Su 11:30-15:00",
+        "outdoor_seating": "yes",
+        "reservation": "yes",
+        "toilets": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8867453259,
+      "lat": 46.6173997,
+      "lon": 7.0197947,
+      "tags": {
+        "addr:city": "Vuadens",
+        "addr:housenumber": "191",
+        "addr:postcode": "1628",
+        "addr:street": "Route Principale",
+        "air_conditioning": "no",
+        "amenity": "fast_food",
+        "check_date:opening_hours": "2022-07-06",
+        "cuisine": "pizza",
+        "delivery": "yes",
+        "diet:vegetarian": "yes",
+        "drive_through": "no",
+        "internet_access": "no",
+        "name": "Pizza factory",
+        "opening_hours": "Mo 17:00-22:00; Tu-Su 10:30-13:30,17:00-22:00",
+        "survey:date": "2021-06-26",
+        "website": "https://www.pizza-factory-vuadens.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8914825655,
+      "lat": 46.8066347,
+      "lon": 7.1603055,
+      "tags": {
+        "addr:city": "Fribourg",
+        "addr:country": "CH",
+        "addr:housenumber": "11",
+        "addr:postcode": "1700",
+        "addr:street": "Rue Pierre-Aeby",
+        "amenity": "restaurant",
+        "cuisine": "pizza",
+        "name": "Capricciosa",
+        "website": "https://capricciosa.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9026063691,
+      "lat": 46.8461546,
+      "lon": 6.8449416,
+      "tags": {
+        "addr:city": "Estavayer-le-Lac",
+        "addr:housenumber": "34",
+        "addr:postcode": "1470",
+        "addr:street": "Route de la Gare",
+        "amenity": "cafe",
+        "indoor_seating": "yes",
+        "name": "Rosière Café",
+        "opening_hours": "Mo-Fr 08:00-15:30",
+        "outdoor_seating": "yes",
+        "website": "http://www.rosiere.ch/?page_id=25"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9065279451,
+      "lat": 46.9520869,
+      "lon": 7.0976867,
+      "tags": {
+        "addr:city": "Praz (Vully)",
+        "addr:housenumber": "145",
+        "addr:postcode": "1788",
+        "addr:street": "Route Principale",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "diet:gluten_free": "yes",
+        "diet:vegetarian": "yes",
+        "name": "Restolac",
+        "phone": "+41266731414",
+        "website": "https://bel-air-lac.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9105385198,
+      "lat": 46.4858301,
+      "lon": 7.0426236,
+      "tags": {
+        "addr:city": "Montbovon",
+        "addr:housenumber": "331",
+        "addr:postcode": "1669",
+        "addr:street": "Route de l'Intyamon",
+        "amenity": "cafe",
+        "cuisine": "tea-room;sandwich",
+        "email": "lechefdegare.rd@gmail.com",
+        "internet_access": "yes",
+        "internet_access:fee": "customers",
+        "name": "Le Chef de Gare",
+        "opening_hours": "Mo-Su 06:00-18:00",
+        "outdoor_seating": "yes",
+        "phone": "+41269282753",
+        "smoking": "outside",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9177743149,
+      "lat": 46.928898,
+      "lon": 7.1179034,
+      "tags": {
+        "amenity": "restaurant",
+        "indoor_seating": "yes",
+        "name": "Jäger",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9188281941,
+      "lat": 46.7734072,
+      "lon": 7.1616811,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "kebab;pizza;tacos;durum;pide",
+        "drive_through": "no",
+        "name": "Mar Lee, Kebab",
+        "note": "Some prices 2021-10: kebab 8, durum 9, tacos 10, pide 10, cafe 2.50",
+        "opening_hours": "Mo-Sa 09:30-23:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9188281947,
+      "lat": 46.7739676,
+      "lon": 7.1616608,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "kebab;pizza",
+        "name": "Chez Ezo, Kebab"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9216061663,
+      "lat": 46.8170054,
+      "lon": 7.1555255,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "regional;burger;salad",
+        "name": "SportCafé"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9227694915,
+      "lat": 46.8149386,
+      "lon": 7.1546427,
+      "tags": {
+        "addr:city": "Fribourg",
+        "addr:housenumber": "3",
+        "addr:postcode": "1700",
+        "addr:street": "Impasse de la Sous-Station",
+        "amenity": "restaurant",
+        "cuisine": "beer",
+        "name": "le Biergarten",
+        "opening_hours": "Th-Fr 16:00-22:00; Sa 11:00-22:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9272857981,
+      "lat": 46.8031068,
+      "lon": 7.1539257,
+      "tags": {
+        "addr:city": "Fribourg",
+        "addr:housenumber": "10",
+        "addr:postcode": "1700",
+        "addr:street": "Grand-Places",
+        "amenity": "restaurant",
+        "cuisine": "italian",
+        "delivery": "no",
+        "name": "Ristorante Gemelli",
+        "opening_hours": "Mo-Th 08:30-23:30; Fr-Sa 08:30-24:00; Su,PH 10:00-23:30",
+        "outdoor_seating": "yes",
+        "phone": "+41 26 321 59 10",
+        "takeaway": "no",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9392518629,
+      "lat": 46.8023848,
+      "lon": 7.1531764,
+      "tags": {
+        "addr:city": "Fribourg",
+        "addr:housenumber": "18",
+        "addr:postcode": "1700",
+        "addr:street": "Grand-Places",
+        "amenity": "restaurant",
+        "cuisine": "crepe",
+        "email": "bachetbuck.fr@gmail.com",
+        "name": "Crêperie Bach & Buck",
+        "opening_hours": "Mo-Su 10:00-21:00",
+        "phone": "026 321 31 62",
+        "website": "https://www.bachetbuck.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9563059150,
+      "lat": 46.8059327,
+      "lon": 7.1630676,
+      "tags": {
+        "addr:city": "Fribourg",
+        "addr:country": "CH",
+        "addr:housenumber": "8",
+        "addr:postcode": "1700",
+        "addr:street": "Rue du Pont-Suspendu / Hängebrückengasse",
+        "amenity": "restaurant",
+        "changing_table": "yes",
+        "changing_table:location": "unisex_toilet",
+        "cuisine": "burger;fish_and_chips;salad;bagel;kebab",
+        "diet:vegan": "only",
+        "name": "Bliss",
+        "opening_hours": "Tu-Fr 11:30-14:30,18:00-22:00; Sa 09:00-22:00",
+        "phone": "+41 26 323 30 00",
+        "takeaway": "yes",
+        "toilets": "unisex"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9572488997,
+      "lat": 46.805904,
+      "lon": 7.1630329,
+      "tags": {
+        "addr:city": "Fribourg",
+        "addr:country": "CH",
+        "addr:housenumber": "8",
+        "addr:postcode": "1700",
+        "addr:street": "Rue du Pont-Suspendu / Hängebrückengasse",
+        "amenity": "fast_food",
+        "changing_table": "yes",
+        "changing_table:location": "unisex_toilet",
+        "cuisine": "kebab",
+        "diet:vegan": "only",
+        "name": "Secret Spot",
+        "opening_hours": "Tu-Th 11:30-13:00,18:00-20:00; Fr-Sa 11:30-13:00,18:00-21:00",
+        "operator": "Bliss",
+        "phone": "+41 26 323 30 00",
+        "takeaway": "only",
+        "toilets": "unisex",
+        "website": "https://secret-spot-plantbased.business.site/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9754092060,
+      "lat": 46.7940845,
+      "lon": 7.1333002,
+      "tags": {
+        "addr:city": "Villars-sur-Glâne",
+        "addr:housenumber": "12",
+        "addr:postcode": "1752",
+        "addr:street": "Rue du Centre",
+        "alt_name": "Le Loft bar",
+        "amenity": "restaurant",
+        "name": "Loft",
+        "website": "https://alchimie-restaurant.business.site/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9759764444,
+      "lat": 46.5224041,
+      "lon": 6.945222,
+      "tags": {
+        "amenity": "cafe",
+        "check_date": "2022-05-21",
+        "name": "La Randonnée",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9766806217,
+      "lat": 46.6235933,
+      "lon": 7.0587845,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Etna Pizza Bulle"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9767622238,
+      "lat": 46.8203442,
+      "lon": 7.1513188,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Le Smash",
+        "website": "https://www.le-smash.ch/en/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9795570418,
+      "lat": 46.6830537,
+      "lon": 7.0876382,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Restoroute de la Gruyère",
+        "website": "https://www.restoroute-gruyere.ch/restaurants/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9801226975,
+      "lat": 46.5836392,
+      "lon": 7.0811116,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date": "2023-08-04",
+        "name": "Hotel Restaurant",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9809207418,
+      "lat": 46.5891475,
+      "lon": 6.9222978,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "auberge de l’union"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9816522861,
+      "lat": 46.5607056,
+      "lon": 7.1018747,
+      "tags": {
+        "addr:city": "Estavannens",
+        "addr:housenumber": "5",
+        "addr:postcode": "1665",
+        "addr:street": "Rue du Village-d'Enbas",
+        "amenity": "cafe",
+        "cuisine": "regional;nordique;cafe;coffee_shop",
+        "description": "Boutique and Coffee Shop, outdoors inspired and great place to meet before, during or after a hike or a bike ride",
+        "email": "info@etape-esta.ch",
+        "image": "https://www.etape-esta.ch/",
+        "internet_access": "yes",
+        "internet_access:fee": "no",
+        "name": "Etape Boutique & coffee",
+        "opening_hours": "We-Fr 08:00-11:30, 13:30-17:00, Sat 09:00-17:00",
+        "outdoor_seating": "yes",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "payment:twint": "yes",
+        "phone": "+41 79 902 64 67",
+        "website": "https://www.instagram.com/etape_estagram/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9824745417,
+      "lat": 46.6304792,
+      "lon": 6.939118,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "café l’union"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9843382317,
+      "lat": 46.7012545,
+      "lon": 6.974487,
+      "tags": {
+        "amenity": "cafe",
+        "name": "auberge de l’union"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9843981918,
+      "lat": 46.6247664,
+      "lon": 7.0371857,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "l’oscar restaurant"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9844122217,
+      "lat": 46.6163464,
+      "lon": 7.0380461,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "LE GLOBE"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9852373517,
+      "lat": 46.6147281,
+      "lon": 7.0502865,
+      "tags": {
+        "amenity": "cafe",
+        "indoor_seating": "yes",
+        "name": "Le Baraka",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9852979017,
+      "lat": 46.6142935,
+      "lon": 7.0382882,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "restaurant Marrakech"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9862740353,
+      "lat": 46.8490702,
+      "lon": 6.8460225,
+      "tags": {
+        "amenity": "fast_food",
+        "check_date": "2022-07-02",
+        "cuisine": "kebab"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9864252065,
+      "lat": 46.5741904,
+      "lon": 6.9279167,
+      "tags": {
+        "addr:city": "Semsales",
+        "addr:housenumber": "18",
+        "addr:postcode": "1623",
+        "addr:street": "Grand-Rue",
+        "amenity": "restaurant",
+        "name": "Auberge du Sauvage"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9897775120,
+      "lat": 46.8093585,
+      "lon": 7.1476541,
+      "tags": {
+        "addr:city": "Fribourg",
+        "addr:housenumber": "12",
+        "addr:postcode": "1700",
+        "addr:street": "Route du Jura",
+        "amenity": "restaurant",
+        "cuisine": "pizza",
+        "name": "Dieci pizza",
+        "opening_hours": "Mo-Th 11:00-13:30,17:00-22:00; Fr-Sa 11:00-13:30,17:00-23:00; Su 11:00-22:00",
+        "phone": "0264021010",
+        "website": "https://www.dieci.ch/en/home"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9936066117,
+      "lat": 46.8041754,
+      "lon": 7.1612954,
+      "tags": {
+        "addr:city": "Fribourg",
+        "addr:housenumber": "31",
+        "addr:postcode": "1700",
+        "addr:street": "Rue de la Neuveville",
+        "amenity": "restaurant",
+        "cuisine": "portuguese",
+        "email": "andreia.de.oliveira.1812@gmail.com",
+        "name": "Café du Paon",
+        "phone": "+41263223260",
+        "website": "https://www.cafedupaon.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9991100183,
+      "lat": 46.8500462,
+      "lon": 6.8474084,
+      "tags": {
+        "amenity": "fast_food",
+        "check_date": "2022-08-31",
+        "cuisine": "pizza",
+        "delivery": "yes",
+        "name": "Pizza speedy",
+        "takeaway": "only"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9997666473,
+      "lat": 46.8069556,
+      "lon": 7.1557997,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date": "2022-09-03",
+        "name": "Hello Bangkok"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9997870495,
+      "lat": 46.8056678,
+      "lon": 7.1617771,
+      "tags": {
+        "alt_name": "Café du Tunnel",
+        "alt_name:fr": "Le Tunnel - Café Restaurant FR",
+        "amenity": "cafe",
+        "check_date": "2025-04-06",
+        "name": "Le Tunnel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9997885772,
+      "lat": 46.8065716,
+      "lon": 7.1546011,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date": "2022-09-03",
+        "cuisine": "pasta",
+        "name": "Pasteria"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9997897959,
+      "lat": 46.8057735,
+      "lon": 7.1595762,
+      "tags": {
+        "addr:city": "Fribourg",
+        "addr:housenumber": "25",
+        "addr:postcode": "1700",
+        "addr:street": "Rue de Lausanne",
+        "amenity": "restaurant",
+        "check_date": "2025-02-20",
+        "cuisine": "vietnamese",
+        "diet:non-vegetarian": "yes",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "name": "Chez Ginette",
+        "opening_hours": "Mo-We 11:00-14:30,18:00-23:00; Th-Fr 11:00-14:30,18:00-23:30; Sa 11:30-15:30,18:00-23:30",
+        "phone": "+41 26 303 60 52",
+        "website": "https://chezginette.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10019293427,
+      "lat": 46.6732947,
+      "lon": 7.077619,
+      "tags": {
+        "addr:city": "Gumefens",
+        "addr:housenumber": "2",
+        "addr:postcode": "1643",
+        "addr:street": "Vers la Chapelle",
+        "amenity": "restaurant",
+        "name": "La Cigogne"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10068767036,
+      "lat": 46.7812174,
+      "lon": 7.1500924,
+      "tags": {
+        "addr:city": "Marly",
+        "addr:country": "CH",
+        "addr:housenumber": "12",
+        "addr:postcode": "1723",
+        "addr:street": "Route du Midi",
+        "amenity": "restaurant",
+        "name": "Le Yaca - Tea-Room",
+        "survey:date": "2016-03-25"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10075954061,
+      "lat": 46.6585626,
+      "lon": 7.2621291,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Alphütte Unter Recardets"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10097247159,
+      "lat": 46.5825503,
+      "lon": 7.0733332,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "email": "info@brasseriedurelais.ch",
+        "name": "Brasserie du Relais",
+        "opening_hours": "We-Su 09:00-22:00; Fr,Sa 09:00-23:30",
+        "outdoor_seating": "yes",
+        "phone": "+41 26 921 10 20",
+        "website": "http://www.brasseriedurelais.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10099016369,
+      "lat": 46.7991272,
+      "lon": 7.1530682,
+      "tags": {
+        "addr:city": "Fribourg",
+        "addr:housenumber": "30",
+        "addr:postcode": "1700",
+        "addr:street": "Boulevard de Pérolles",
+        "amenity": "restaurant",
+        "cuisine": "chinese",
+        "email": "info@chengdu-suisse.ch",
+        "indoor_seating": "yes",
+        "name": "Chengdu (成 都)",
+        "opening_hours": "Mo-Fr 10:30-14:30, 17:15-22:00; Sa 11:00-14:30, 17:15-22:00; Su 11:00-14:30",
+        "outdoor_seating": "no",
+        "phone": "026 321 16 23",
+        "website": "https://chengdu-suisse.ch/",
+        "website:menu": "https://chengdu-suisse.ch/wp-content/uploads/2024/12/Menuplan-des-octobre-2024.pdf"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10102809280,
+      "lat": 46.5828539,
+      "lon": 7.0710913,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Pinte des Vernes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10160029217,
+      "lat": 46.8034893,
+      "lon": 7.1581546,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Café du funiculaire"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10221414303,
+      "lat": 46.7988549,
+      "lon": 7.1497943,
+      "tags": {
+        "addr:city": "Fribourg",
+        "addr:housenumber": "15",
+        "addr:postcode": "1700",
+        "addr:street": "Route des Arsenaux",
+        "amenity": "restaurant",
+        "cuisine": "pizza;italian",
+        "name": "Café Chemin de Fer - Restaurant, Pizzeria",
+        "opening_hours": "Su-Fr 11:00-14:00,17:30-23:00, Sa 11:00-14:00",
+        "phone": "0263221045"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10225069756,
+      "lat": 46.588296,
+      "lon": 7.0844426,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date": "2022-11-29",
+        "name": "La Croix Blanche",
+        "phone": "026 921 21 32",
+        "website": "https://croixblancheepagny.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10271906750,
+      "lat": 46.7709323,
+      "lon": 7.1465976,
+      "tags": {
+        "addr:city": "Marly",
+        "addr:housenumber": "85a",
+        "addr:postcode": "1723",
+        "addr:street": "Route de Chésalles",
+        "amenity": "cafe",
+        "name": "Buvette du stand de tir Marly",
+        "opening_hours": "Tu-Fr 09:00-23:00; Sa 09:00-18:00 || Jun-Aug: Su 10:00-16:00",
+        "phone": "0264392333"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10296799348,
+      "lat": 46.9296785,
+      "lon": 7.1213927,
+      "tags": {
+        "addr:postcode": "3280",
+        "amenity": "restaurant",
+        "cuisine": "indian",
+        "name": "Masala",
+        "opening_hours": "Mo-Tu, Th-Fr 11:00-14:30, 17:00-22:30; Sa-Su 11:00-15:00, 17:00-22:30",
+        "phone": "+41 26 672 03 03",
+        "shop": "second_hand",
+        "website": "https://masalamurten.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10554098178,
+      "lat": 46.6034101,
+      "lon": 7.0998176,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Hauser"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10566080615,
+      "lat": 46.889944,
+      "lon": 7.3193177,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Kafi Sense",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10680006705,
+      "lat": 46.6157199,
+      "lon": 7.0579127,
+      "tags": {
+        "amenity": "restaurant",
+        "contact:facebook": "Com%C3%87a-112764587873529",
+        "contact:instagram": "com_ca_bulle",
+        "name": "Com'Ça",
+        "phone": "+41 26 9125514",
+        "website": "https://www.com-ca.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10719961764,
+      "lat": 46.9748422,
+      "lon": 7.2014502,
+      "tags": {
+        "addr:city": "Kerzers",
+        "addr:housenumber": "8",
+        "addr:postcode": "3210",
+        "addr:street": "Kreuzgasse",
+        "amenity": "cafe",
+        "cuisine": "coffee_shop",
+        "email": "info@kafi8.ch",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Kafi8",
+        "outdoor_seating": "yes",
+        "phone": "031 508 11 01",
+        "website": "https://kafi8.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10787882857,
+      "lat": 46.6236486,
+      "lon": 7.0572619,
+      "tags": {
+        "amenity": "restaurant",
+        "branch": "Gruyère Centre",
+        "name": "Migros Restaurant",
+        "operator": "Coopérative Migros Neuchâtel-Fribourg"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10929111899,
+      "lat": 46.8442381,
+      "lon": 6.8438422,
+      "tags": {
+        "addr:city": "Estavayer",
+        "addr:housenumber": "3",
+        "addr:postcode": "1470",
+        "addr:street": "Place de la Gare",
+        "alt_name": "Café de la Gare",
+        "amenity": "restaurant",
+        "cuisine": "hungarian",
+        "email": "eydenfood@bluewin.ch",
+        "name": "Budapest",
+        "outdoor_seating": "yes",
+        "phone": "+41 26 664 09 30",
+        "seats": "70"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10934897116,
+      "lat": 46.802075,
+      "lon": 7.148784,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "indian",
+        "delivery": "yes",
+        "email": "info@hostindia.ch",
+        "name": "Host India",
+        "opening_hours": "Mo-Fr 08:00-16:00; Sa 09:00-17:00",
+        "phone": "+41 26 466 77 77",
+        "takeaway": "yes",
+        "website": "https://hostindia.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10967573841,
+      "lat": 46.9021123,
+      "lon": 7.2301002,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "BEO-Restaurant",
+        "opening_hours": "Mo-Th 11:00-18:30; Fr 11:00-20:00; Sa 10:00-20:00; Su 10:00-18:30",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10980616750,
+      "lat": 46.6914768,
+      "lon": 6.9152124,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "burger;sandwich;kebab;pizza",
+        "name": "La Forge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11044664406,
+      "lat": 46.7980063,
+      "lon": 7.1493765,
+      "tags": {
+        "addr:postcode": "1700",
+        "amenity": "restaurant",
+        "cuisine": "italian;italian_pizza",
+        "name": "Pizzeria des Arsenaux",
+        "opening_hours": "Mo-Su 11:00-14:00,18:00-23:00",
+        "phone": "+41263221111",
+        "website": "https://www.lesarsenaux8.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11076709026,
+      "lat": 46.6958978,
+      "lon": 6.917308,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "pizza"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11085084446,
+      "lat": 46.8043311,
+      "lon": 7.155017,
+      "tags": {
+        "addr:city": "Fribourg",
+        "addr:housenumber": "7",
+        "addr:postcode": "1700",
+        "addr:street": "Rue de l'Abbé-Bovet",
+        "amenity": "restaurant",
+        "cuisine": "lebanese",
+        "diet:non-vegetarian": "yes",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "name": "BekaaHouse",
+        "opening_hours": "Mo-Fr 11:30-14:00,18:30-23:00; Sa 18:30-23:00",
+        "outdoor_seating": "yes",
+        "phone": "+41 26 321 14 51",
+        "takeaway": "yes",
+        "website": "https://www.bekaahouse.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11090091605,
+      "lat": 46.5832154,
+      "lon": 7.0804765,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date": "2024-03-29",
+        "check_date:opening_hours": "2024-02-25",
+        "diet:vegetarian": "no",
+        "name": "Le Bonnet Rouge",
+        "opening_hours:signed": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11090091609,
+      "lat": 46.583356,
+      "lon": 7.0813679,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date": "2023-08-04",
+        "check_date:opening_hours": "2024-02-24",
+        "diet:vegan": "no",
+        "diet:vegetarian": "yes",
+        "name": "Gruyère Traditions",
+        "opening_hours:signed": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11100979605,
+      "lat": 46.6930989,
+      "lon": 6.9124796,
+      "tags": {
+        "addr:city": "Romont FR",
+        "addr:housenumber": "7",
+        "addr:postcode": "1680",
+        "addr:street": "Avenue de la Gare",
+        "amenity": "cafe",
+        "name": "Xpresso Café",
+        "name:fr": "Xpresso-Café",
+        "opening_hours": "Mo-Th 06:00-19:00; Fr 06:00-21:00; Sa 07:00-17:00",
+        "phone": "+266528208"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11112682814,
+      "lat": 46.6888466,
+      "lon": 7.1513783,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Auberge de Montsoflo"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11143255242,
+      "lat": 46.8044177,
+      "lon": 7.1556686,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "burger",
+        "name": "Holy Cow!",
+        "opening_hours": "Mo-Su 10:00-23:00",
+        "website": "https://www.holycow.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11181484706,
+      "lat": 46.6192298,
+      "lon": 7.1644381,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Pizzeria Le Sapin"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11228935937,
+      "lat": 46.9044586,
+      "lon": 7.1619349,
+      "tags": {
+        "addr:housenumber": "25",
+        "addr:postcode": "1793",
+        "addr:street": "Dorfstrasse",
+        "amenity": "restaurant",
+        "name": "Restaurant Jäger",
+        "website": "https://www.restaurant-jaeger-jeuss.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11242066593,
+      "lat": 46.5246097,
+      "lon": 6.8290089,
+      "tags": {
+        "addr:city": "Granges (Veveyse)",
+        "addr:housenumber": "1",
+        "addr:postcode": "1614",
+        "addr:street": "Route de la Léchère",
+        "amenity": "restaurant",
+        "cuisine": "bistro;iranian",
+        "email": "croixblanchegranges@gmail.com",
+        "indoor_seating": "yes",
+        "name": "Auberge de la Croix-Blanche",
+        "outdoor_seating": "yes",
+        "phone": "+41 21 947 59 85",
+        "website": "https://www.aubergedelacroixblanche.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11243203095,
+      "lat": 46.5098991,
+      "lon": 6.8483545,
+      "tags": {
+        "addr:city": "Attalens",
+        "addr:housenumber": "11",
+        "addr:postcode": "1616",
+        "addr:street": "Grand-Rue",
+        "amenity": "restaurant",
+        "email": "Lacondemine1616@gmail.com",
+        "facebook": "LeBarmanVousAimeQuandMeme",
+        "name": "Café Bar La Condémine",
+        "opening_hours": "Mo-Th 07:00-00:00; Fr 07:00-02:00; Sa 07:30-02:00; Su 07:30-00:00",
+        "phone": "+41 21 947 47 11"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11243577076,
+      "lat": 46.5112093,
+      "lon": 6.848501,
+      "tags": {
+        "addr:city": "Attalens",
+        "addr:housenumber": "33",
+        "addr:postcode": "1616",
+        "addr:street": "Grand-Rue",
+        "amenity": "fast_food",
+        "cuisine": "kebab",
+        "name": "Sultan Kebab",
+        "opening_hours": "Mo-Sa 09:00-23:00; Su 09:00-21:00",
+        "phone": "+41 21 543 28 08",
+        "website": "https://sultan-kebab-pizza.business.site/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11383336509,
+      "lat": 46.7969202,
+      "lon": 7.0180703,
+      "tags": {
+        "addr:city": "Prez-vers-Noréaz",
+        "addr:housenumber": "70",
+        "addr:postcode": "1746",
+        "addr:street": "Les Totes Zoures",
+        "alt_name": "La buvette stand de du tir Noreaz",
+        "amenity": "cafe",
+        "name": "La Buvette - Société de tir",
+        "opening_hours": "\"by appointment\"",
+        "operator": "Société de tir de Prez & Environs",
+        "outdoor_seating": "yes",
+        "phone": "+41 79 514 37 71",
+        "website": "https://www.tir-prez-environs.com/location-buvette"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11386412508,
+      "lat": 46.7993762,
+      "lon": 7.1189628,
+      "tags": {
+        "addr:city": "Villars-sur-Glâne",
+        "addr:housenumber": "1n",
+        "addr:postcode": "1752",
+        "addr:street": "Route du Petit-Moncor",
+        "amenity": "restaurant",
+        "cuisine": "portuguese",
+        "name": "Os Lusitanos",
+        "opening_hours": "Mo 11:00-15:00; Tu-Th 11:00-15:00,17:30-22:30; Fr 11:00-15:00,17:30-23:00; Sa 10:30-23:00; Su 10:00-22:30"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11416853558,
+      "lat": 46.6566091,
+      "lon": 6.9309974,
+      "tags": {
+        "amenity": "restaurant"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11494518267,
+      "lat": 46.7990835,
+      "lon": 7.1530894,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Au pied de cochon"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11515853788,
+      "lat": 46.5403404,
+      "lon": 7.069352,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "L'Espace Gourmand",
+        "website": "https://espace-gourmand.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11516112940,
+      "lat": 46.6516841,
+      "lon": 7.298411,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Rainlihuus",
+        "outdoor_seating": "yes",
+        "payment:twint": "yes",
+        "website": "https://fribourg.ch/de/schwarzsee/berghuetten-mit-verpflegungsmoeglichkeit/alp-rainlihuus/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11533757155,
+      "lat": 46.512213,
+      "lon": 6.9505105,
+      "tags": {
+        "amenity": "cafe",
+        "name": "L'Automate"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11581675270,
+      "lat": 46.6173838,
+      "lon": 7.0571259,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Café de l’Union"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11581720569,
+      "lat": 46.6134348,
+      "lon": 7.0610202,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Le Tivoli"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11623628864,
+      "lat": 46.8226605,
+      "lon": 7.109459,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "pizza"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11753627786,
+      "lat": 46.8038948,
+      "lon": 7.1612576,
+      "tags": {
+        "addr:city": "Fribourg",
+        "addr:housenumber": "62",
+        "addr:postcode": "1700",
+        "addr:street": "Rue de la Neuveville",
+        "amenity": "cafe",
+        "name": "Boulangers",
+        "outdoor_seating": "yes",
+        "phone": "0263223733"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11753627791,
+      "lat": 46.8039941,
+      "lon": 7.1613863,
+      "tags": {
+        "addr:city": "Fribourg",
+        "addr:housenumber": "37",
+        "addr:postcode": "1700",
+        "addr:street": "Rue de la Neuveville",
+        "amenity": "restaurant",
+        "name": "Café Les Falaises"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11781680672,
+      "lat": 46.7489307,
+      "lon": 6.8335336,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Le Grenier"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11813186797,
+      "lat": 46.7831192,
+      "lon": 7.1487531,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "pizza",
+        "name": "La Cena",
+        "website": "https://www.restaurant-hotel-fribourg.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11865934969,
+      "lat": 46.530872,
+      "lon": 6.9307069,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Ranch du Rotzé",
+        "website": "https://ranch-du-rotze.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11866697381,
+      "lat": 46.793566,
+      "lon": 7.1146615,
+      "tags": {
+        "addr:city": "Villars-sur-Glâne",
+        "addr:housenumber": "17",
+        "addr:postcode": "1752",
+        "addr:street": "Rue des Platanes",
+        "amenity": "fast_food",
+        "cuisine": "pizza;kebab",
+        "delivery": "yes",
+        "name": "Tacos Factory",
+        "website": "https://tacos-factorys.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11871970778,
+      "lat": 46.6294705,
+      "lon": 7.2829851,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "traditionnelle",
+        "name": "Ritzlli Alp",
+        "opening_hours": "mai/juin : fermé le lundi; juillet à mi-septembre: 7/7",
+        "phone": "+41 26 929 81 24",
+        "website": "https://www.ritzlialp.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11893379769,
+      "lat": 46.8047386,
+      "lon": 7.1575977,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "L’Aigle Noir"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11922897936,
+      "lat": 46.6185936,
+      "lon": 7.0572417,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "chinese"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11922989339,
+      "lat": 46.6208506,
+      "lon": 7.0579354,
+      "tags": {
+        "amenity": "cafe",
+        "indoor_seating": "yes",
+        "name": "Nooba",
+        "outdoor_seating": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11922996606,
+      "lat": 46.6196426,
+      "lon": 7.0538718,
+      "tags": {
+        "addr:housenumber": "3",
+        "addr:place": "Place de la Gare",
+        "amenity": "restaurant",
+        "cuisine": "asian;ramen",
+        "level": "0",
+        "name": "Kumo",
+        "phone": "+41 6 301 20 33",
+        "self_service": "no",
+        "website": "https://www.kumobulle.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11922996607,
+      "lat": 46.6194075,
+      "lon": 7.0554702,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "asian",
+        "name": "Wok Palais Royal"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11923061981,
+      "lat": 46.6068146,
+      "lon": 7.1086058,
+      "tags": {
+        "amenity": "cafe"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11923136127,
+      "lat": 46.6212461,
+      "lon": 7.1617867,
+      "tags": {
+        "access": "yes",
+        "amenity": "cafe"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11923136128,
+      "lat": 46.6212615,
+      "lon": 7.1616875,
+      "tags": {
+        "access": "customers",
+        "amenity": "cafe"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11934757596,
+      "lat": 46.8035054,
+      "lon": 7.1512967,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date": "2024-05-26",
+        "cuisine": "sushi",
+        "name": "Sushi Kai"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11934757597,
+      "lat": 46.8035687,
+      "lon": 7.1513452,
+      "tags": {
+        "amenity": "fast_food",
+        "check_date": "2024-05-26",
+        "cuisine": "burger",
+        "name": "L'artisan"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11989994075,
+      "lat": 46.6169917,
+      "lon": 7.0573785,
+      "tags": {
+        "addr:city": "Bulle",
+        "addr:housenumber": "11",
+        "addr:postcode": "1630",
+        "addr:street": "Rue de Gruyères",
+        "amenity": "cafe",
+        "name": "3t",
+        "website": "https://3tsuisse.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12065903684,
+      "lat": 46.7347368,
+      "lon": 7.0539148,
+      "tags": {
+        "alt_name": "Auberge de Posat, Poulet au panier resto",
+        "amenity": "restaurant",
+        "cuisine": "chicken",
+        "name": "Auberge de la Croix d'Or",
+        "opening_hours": "Mo-Sa 10:30-14:30,17:30-24:00; Su 10:30-23:00",
+        "website": "https://www.pouletposat.ch/fr"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12066505146,
+      "lat": 46.5440114,
+      "lon": 6.9772201,
+      "tags": {
+        "addr:housenumber": "134",
+        "addr:street": "Rathvel",
+        "amenity": "restaurant",
+        "check_date": "2024-07-21",
+        "email": "contact@buvette-rathvel.ch",
+        "name": "Buvette d'alpage de Rathvel",
+        "phone": "+41 21 948 90 17",
+        "website": "https://buvette-rathvel.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12073753112,
+      "lat": 46.6148155,
+      "lon": 7.0582103,
+      "tags": {
+        "addr:city": "Bulle",
+        "addr:housenumber": "60",
+        "addr:postcode": "1630",
+        "addr:street": "Rue de Gruyères",
+        "amenity": "restaurant",
+        "cuisine": "african",
+        "name": "Sotavento",
+        "phone": "+41 26 912 83 18"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12073753113,
+      "lat": 46.6149464,
+      "lon": 7.0580746,
+      "tags": {
+        "addr:city": "Bulle",
+        "addr:housenumber": "56",
+        "addr:postcode": "1630",
+        "addr:street": "Rue de Gruyères",
+        "amenity": "restaurant",
+        "cuisine": "fast_food;tacos;kebab",
+        "delivery": "yes",
+        "name": "KING'S 46",
+        "takeaway": "yes",
+        "website": "https://www.kings-46-bulle.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12083623710,
+      "lat": 46.6166921,
+      "lon": 7.0558507,
+      "tags": {
+        "amenity": "fast_food",
+        "check_date": "2024-07-30",
+        "cuisine": "sandwich",
+        "name": "L'unique Tartare"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12133152562,
+      "lat": 46.8669773,
+      "lon": 7.0132955,
+      "tags": {
+        "addr:housenumber": "1",
+        "addr:street": "Rue Centrale",
+        "alt_name": "L'Antica",
+        "amenity": "restaurant",
+        "contact:email": "info@lantica.ch",
+        "contact:phone": "+41265570259",
+        "contact:website": "https://lantica.ch/",
+        "indoor_seating": "yes",
+        "name": "La L'Antica Croix-Blanche",
+        "old_name": "La Croix-Blanche",
+        "opening_hours": "Tu-Fr 09:00-14:00,17:00-22:00; Sa 17:00-23:00; Su 17:00-22:00",
+        "outdoor_seating": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12133221749,
+      "lat": 46.8515722,
+      "lon": 6.9897435,
+      "tags": {
+        "addr:housenumber": "1",
+        "addr:street": "Rue Centrale",
+        "amenity": "fast_food",
+        "name": "Le dépanneur"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12151423166,
+      "lat": 46.5894875,
+      "lon": 6.9935622,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Cabane des Portes",
+        "network": "CAS",
+        "website": "https://www.cas-gruyere.ch/fr/cabanes/cabane-des-portes/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12158128668,
+      "lat": 46.8028359,
+      "lon": 7.1678837,
+      "tags": {
+        "addr:housenumber": "2",
+        "addr:street": "Derrière-les-Jardin",
+        "amenity": "cafe",
+        "name": "Café de la Marionnette",
+        "opening_hours": "Tu 09:00-15:00; We-Fr 09:00-23:00; Sa 10:00-23:00; Su 10:00-16:00",
+        "phone": "+41 26 321 36 32"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12165018644,
+      "lat": 46.8052882,
+      "lon": 7.1574301,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "italian",
+        "name": "Solemio",
+        "opening_hours": "Mo-Su 11:30-14:00, 18:30-22:00",
+        "website": "https://www.solemio-restaurants.ch/restaurant/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12187492324,
+      "lat": 46.8081531,
+      "lon": 7.2161917,
+      "tags": {
+        "amenity": "cafe",
+        "name": "café bijou",
+        "opening_hours": "Tu-Fr 13:30-17:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12206845210,
+      "lat": 46.7976188,
+      "lon": 7.1477298,
+      "tags": {
+        "addr:city": "Fribourg",
+        "addr:housenumber": "5",
+        "addr:postcode": "1700",
+        "addr:street": "Passage du Cardinal",
+        "amenity": "restaurant",
+        "name": "Mycelium",
+        "opening_hours": "Mo-Fr 07:00-16:00",
+        "phone": "+41 26 526 33 71",
+        "website": "mycelium@zfv.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12233227755,
+      "lat": 46.8047707,
+      "lon": 7.1576089,
+      "tags": {
+        "addr:housenumber": "10",
+        "addr:street": "rue des alpes",
+        "amenity": "restaurant",
+        "name": "Aigle Noir",
+        "website": "https://www.aiglenoir.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12233229004,
+      "lat": 46.8056446,
+      "lon": 7.1646684,
+      "tags": {
+        "addr:housenumber": "10",
+        "addr:street": "Rue des Bouchers 10",
+        "amenity": "restaurant",
+        "name": "Trattoria du bourg"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12241937974,
+      "lat": 46.5433212,
+      "lon": 6.9773508,
+      "tags": {
+        "amenity": "restaurant",
+        "cafe": "yes",
+        "cuisine": "regional",
+        "description": "Café, restaurant",
+        "email": "cabane@rathvel.ch",
+        "name": "Cabane du Petit Oiseau",
+        "phone": "+41 21 948 77 01",
+        "survey:date": "2024-07-21",
+        "website": "https://www.rathvel.ch/ete/index.php"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12265657401,
+      "lat": 46.6172904,
+      "lon": 7.0573487,
+      "tags": {
+        "addr:housenumber": "5",
+        "addr:street": "Rue de Gruyères",
+        "amenity": "restaurant",
+        "name": "Aux XIII cantons",
+        "phone": "+41 26 921 15 33",
+        "website": "https://www.aux13cantons.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12265727989,
+      "lat": 46.6195847,
+      "lon": 7.0579315,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "kebab",
+        "indoor_seating": "yes",
+        "name": "Alibaba",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12265735827,
+      "lat": 46.619137,
+      "lon": 7.0573984,
+      "tags": {
+        "addr:housenumber": "31",
+        "addr:street": "Grand-Rue",
+        "amenity": "restaurant",
+        "email": "info@le-tonnelier.ch",
+        "name": "Le Tonnelier",
+        "website": "https://www.le-tonnelier.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12265816239,
+      "lat": 46.6194213,
+      "lon": 7.0551651,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Caroots"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12265816240,
+      "lat": 46.619561,
+      "lon": 7.0540982,
+      "tags": {
+        "amenity": "fast_food",
+        "level": "0",
+        "name": "Brown Bull",
+        "phone": "+41 26 303 00 02",
+        "website": "https://brownbull.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12265871008,
+      "lat": 46.6156256,
+      "lon": 7.0533873,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "pizza",
+        "name": "L'Edel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12265871043,
+      "lat": 46.6150555,
+      "lon": 7.0517864,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "asian",
+        "name": "Chanaan"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12265978811,
+      "lat": 46.615077,
+      "lon": 7.0518627,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "kebab",
+        "name": "L'Orient express"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12387720731,
+      "lat": 46.8055388,
+      "lon": 7.1585314,
+      "tags": {
+        "addr:city": "Fribourg",
+        "addr:country": "CH",
+        "addr:housenumber": "48",
+        "addr:postcode": "1700",
+        "addr:street": "Rue de Lausanne",
+        "amenity": "fast_food",
+        "cuisine": "sandwich",
+        "name": "L'Artisan - Sandwich House"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12501114232,
+      "lat": 46.804803,
+      "lon": 7.1533131,
+      "tags": {
+        "addr:city": "Fribourg",
+        "addr:housenumber": "11",
+        "addr:postcode": "1700",
+        "addr:street": "Rue du Criblet",
+        "amenity": "cafe",
+        "cuisine": "coffee_shop;cafe;pastry",
+        "description": "Specialty coffee shop",
+        "name": "Mahalo coffee shop",
+        "outdoor_seating": "yes",
+        "website": "https://www.instagram.com/mahalo.fribourg/?hl=fr"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12580501440,
+      "lat": 46.8283256,
+      "lon": 7.1475822,
+      "tags": {
+        "amenity": "cafe",
+        "indoor_seating": "yes",
+        "name": "Alves",
+        "opening_hours": "Mo-Th 08:30-18:30; Fr,Sa 08:30-23:30; Su 09:00-23:30",
+        "outdoor_seating": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12613330965,
+      "lat": 46.6030262,
+      "lon": 7.1001818,
+      "tags": {
+        "addr:city": "Broc",
+        "addr:housenumber": "4",
+        "addr:postcode": "1636",
+        "addr:street": "Rue de Montsalvens",
+        "amenity": "restaurant",
+        "name": "Les Montagnards - Le Sommet",
+        "phone": "+41265645566",
+        "website": "https://lesmontagnards.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12613580890,
+      "lat": 46.6214324,
+      "lon": 7.1630545,
+      "tags": {
+        "addr:city": "Charmey (Gruyère)",
+        "addr:housenumber": "28",
+        "addr:postcode": "1637",
+        "addr:street": "Gros-Plan",
+        "amenity": "restaurant",
+        "name": "4 Saisons",
+        "website": "https://www.hotel-cailler.ch/fr/restaurant-quatre-saisons.html"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12766638585,
+      "lat": 46.6745617,
+      "lon": 7.0866901,
+      "tags": {
+        "amenity": "restaurant",
+        "diet:vegetarian": "yes",
+        "name": "Buvette du Lac",
+        "outdoor_seating": "yes",
+        "phone": "+41 26 915 15 70",
+        "takeaway": "yes",
+        "website": "http://www.labuvettedulac.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12842240843,
+      "lat": 46.7751478,
+      "lon": 7.1516946,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "thai",
+        "name": "Kalasin - restaurant thai, café de la piscine"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12842255085,
+      "lat": 46.7772251,
+      "lon": 7.1533013,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "burger",
+        "name": "Bim Burger"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12842255086,
+      "lat": 46.7768767,
+      "lon": 7.1543653,
+      "tags": {
+        "addr:city": "Marly",
+        "addr:housenumber": "1a",
+        "addr:postcode": "1723",
+        "addr:street": "Allée Charles-Edouard-Guillaume",
+        "alt_name": "Cafe La Flamme - Marly FR",
+        "amenity": "cafe",
+        "name": "La Flamme",
+        "opening_hours": "Tu-Th 10:00-14:00,17:00-23:00; Fr 10:00-14:00,17:00-24:00; 10:00-14:00,17:00-23:00",
+        "website": "https://www.akdagsa.ch/restaurant/la-flamme/"
+      }
+    }
+  ]
+}
