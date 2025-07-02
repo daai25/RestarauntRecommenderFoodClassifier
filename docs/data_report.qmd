@@ -17,15 +17,18 @@ out center;
 ### Explanation of the query:
 
 ---
+
 #### 1. **Query Output and Timeout Settings**
 
 ```
 [out:json][timeout:180];
 ```
+
 * `out:json`: Sets the output format to **JSON**.
 * `timeout:180`: Sets a **timeout limit of 180 seconds** for the query to run, useful for large or slow queries.
 
 ---
+
 #### 2. **Select the Area**
 
 ```
@@ -40,6 +43,7 @@ area["name"="{name}"]["boundary"="administrative"]["admin_level"="4"]->.a;
 Note: The area is **not the same** as a polygon in the map. Internally, Overpass assigns IDs to areas derived from OSM relations.
 
 ---
+
 #### 3. **Find Nodes Within That Area**
 
 ```
@@ -55,6 +59,7 @@ Note: The area is **not the same** as a polygon in the map. Internally, Overpass
 * Parentheses group the different queries together so the result includes all three types.
 
 ---
+
 #### 4. **Output the Results**
 
 ```
