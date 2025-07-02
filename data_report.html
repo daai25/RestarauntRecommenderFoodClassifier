@@ -188,6 +188,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#explanation-of-the-query" id="toc-explanation-of-the-query" class="nav-link" data-scroll-target="#explanation-of-the-query">Explanation of the query:</a></li>
   <li><a href="#result-of-the-api-query" id="toc-result-of-the-api-query" class="nav-link" data-scroll-target="#result-of-the-api-query">Result of the API Query</a></li>
   </ul></li>
+  <li><a href="#finalizing-the-cuisine-types" id="toc-finalizing-the-cuisine-types" class="nav-link" data-scroll-target="#finalizing-the-cuisine-types">Finalizing the Cuisine Types</a>
+  <ul class="collapse">
+  <li><a href="#defining-the-cuisine-types" id="toc-defining-the-cuisine-types" class="nav-link" data-scroll-target="#defining-the-cuisine-types">Defining the Cuisine Types</a></li>
+  <li><a href="#gathering-the-cuisine-types" id="toc-gathering-the-cuisine-types" class="nav-link" data-scroll-target="#gathering-the-cuisine-types">Gathering the Cuisine Types</a></li>
+  </ul></li>
   </ul></li>
   </ul>
 <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="data_report.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
@@ -202,7 +207,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h1>Room for new Information</h1>
 <section id="extracting-restaurants-fast-food-and-cafes-from-openstreetmap" class="level2">
 <h2 class="anchored" data-anchor-id="extracting-restaurants-fast-food-and-cafes-from-openstreetmap">Extracting Restaurants, Fast Food and Cafes from OpenStreetMap</h2>
-<p>For extracting the data from OpenStreetMap, we utilized the Overpass API. The used query is as follow:</p>
+<p>For extracting the data from OpenStreetMap, we utilized the Overpass API. The used query is as follows:</p>
 <pre><code>[out:json][timeout:180];
 area["name"="{name}"]["boundary"="administrative"]["admin_level"="4"]-&gt;.a;
 (
@@ -395,10 +400,71 @@ bangladeshi
 bar
 bar_and_grill
 ...</code></pre>
-<p>We can still see some cuisine types doesn’t really match our expectations, like “alpine_hut” isn’t really a cuisine type and could be fused with “alp”.</p>
-
-
+<p>We can still see some cuisine types doesn’t really match our expectations, like “alp”, “alpine_hut” isn’t really a cuisine type.</p>
 </section>
+</section>
+</section>
+<section id="finalizing-the-cuisine-types" class="level2">
+<h2 class="anchored" data-anchor-id="finalizing-the-cuisine-types">Finalizing the Cuisine Types</h2>
+<p>Like mentioned before, the cuisine types are used as labels for the training data and also will be used as result of the module. So we need to finalize the cuisine types and currently the extracted cuisine types from the OpenStreetMap data are not really suitable for that. 1. Define what should be included in the cuisine types. 2. Gather all the cuisine types and save it to a file.</p>
+<section id="defining-the-cuisine-types" class="level3">
+<h3 class="anchored" data-anchor-id="defining-the-cuisine-types">Defining the Cuisine Types</h3>
+<p>For simplicity, we will only include countries. Regions, cities or other types are at the current moment a little bit too specific and because of that we will limit ourselves only to the countries.</p>
+</section>
+<section id="gathering-the-cuisine-types" class="level3">
+<h3 class="anchored" data-anchor-id="gathering-the-cuisine-types">Gathering the Cuisine Types</h3>
+<p>The first step to get all the countries, like before we use the Overpass API to extract the countries from OpenStreetMap. That way we can use the country names an make an API call to <code>restcountries.com</code> to get the matching demonyms.</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> requests</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> get_demonym(country_name):</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">try</span>:</span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>        response <span class="op">=</span> requests.get(<span class="ss">f"https://restcountries.com/v3.1/name/</span><span class="sc">{</span>country_name<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>        data <span class="op">=</span> response.json()</span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>        <span class="co"># include small random delay</span></span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> data[<span class="dv">0</span>][<span class="st">"demonyms"</span>][<span class="st">"eng"</span>][<span class="st">"m"</span>]</span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">except</span> <span class="pp">Exception</span> <span class="im">as</span> e:</span>
+<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"Error fetching demonym for </span><span class="sc">{</span>country_name<span class="sc">}</span><span class="ss">: </span><span class="sc">{</span>e<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="st">"Unknown"</span></span>
+<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-14"><a href="#cb12-14" aria-hidden="true" tabindex="-1"></a>countries <span class="op">=</span> [] <span class="co"># is filled with the country names</span></span>
+<span id="cb12-15"><a href="#cb12-15" aria-hidden="true" tabindex="-1"></a><span class="co"># remove duplicates and sort the list</span></span>
+<span id="cb12-16"><a href="#cb12-16" aria-hidden="true" tabindex="-1"></a>countries <span class="op">=</span> <span class="bu">sorted</span>(<span class="bu">set</span>(countries))</span>
+<span id="cb12-17"><a href="#cb12-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-18"><a href="#cb12-18" aria-hidden="true" tabindex="-1"></a><span class="co"># get the demonym for each country</span></span>
+<span id="cb12-19"><a href="#cb12-19" aria-hidden="true" tabindex="-1"></a>countries_demonyms <span class="op">=</span> [get_demonym(country) <span class="cf">for</span> country <span class="kw">in</span> countries]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>After all the demonyms are gathered, we can use the following code to sanitize and normalize the demonyms:</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># remove duplicates</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>countries_demonyms <span class="op">=</span> <span class="bu">list</span>(<span class="bu">set</span>(countries_demonyms))</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="co"># remove the "Unkown" demonym</span></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>countries_demonyms <span class="op">=</span> [d <span class="cf">for</span> d <span class="kw">in</span> countries_demonyms <span class="cf">if</span> d <span class="op">!=</span> <span class="st">"Unknown"</span>]</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a><span class="co"># split the demonyms by comma</span></span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> cd <span class="kw">in</span> countries_demonyms:</span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="st">","</span> <span class="kw">in</span> cd:</span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a>        parts <span class="op">=</span> cd.split(<span class="st">","</span>)</span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a>        countries_demonyms.remove(cd)</span>
+<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a>        countries_demonyms.extend([part.strip() <span class="cf">for</span> part <span class="kw">in</span> parts <span class="cf">if</span> part.strip()])</span>
+<span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-14"><a href="#cb13-14" aria-hidden="true" tabindex="-1"></a><span class="co"># normalize the demonyms</span></span>
+<span id="cb13-15"><a href="#cb13-15" aria-hidden="true" tabindex="-1"></a>countries_demonyms <span class="op">=</span> [d.replace(<span class="st">" "</span>, <span class="st">"_"</span>).lower() <span class="cf">for</span> d <span class="kw">in</span> countries_demonyms]</span>
+<span id="cb13-16"><a href="#cb13-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-17"><a href="#cb13-17" aria-hidden="true" tabindex="-1"></a><span class="co"># sort the demonyms</span></span>
+<span id="cb13-18"><a href="#cb13-18" aria-hidden="true" tabindex="-1"></a>countries_demonyms <span class="op">=</span> <span class="bu">sorted</span>(countries_demonyms)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>The resulting list of demonyms is as follows:</p>
+<pre class="text"><code>afghan
+albanian
+algerian
+american_islander
+american_samoan
+andorran
+angolan
+anguillian
+antiguan
+...</code></pre>
+
+
 </section>
 </section>
 </section>
