@@ -20,6 +20,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -146,7 +181,14 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#room-for-new-information" id="toc-room-for-new-information" class="nav-link active" data-scroll-target="#room-for-new-information">Room for new Information</a></li>
+  <li><a href="#room-for-new-information" id="toc-room-for-new-information" class="nav-link active" data-scroll-target="#room-for-new-information">Room for new Information</a>
+  <ul class="collapse">
+  <li><a href="#extracting-restaurants-fast-food-and-cafes-from-openstreetmap" id="toc-extracting-restaurants-fast-food-and-cafes-from-openstreetmap" class="nav-link" data-scroll-target="#extracting-restaurants-fast-food-and-cafes-from-openstreetmap">Extracting Restaurants, Fast Food and Cafes from OpenStreetMap</a>
+  <ul class="collapse">
+  <li><a href="#explanation-of-the-query" id="toc-explanation-of-the-query" class="nav-link" data-scroll-target="#explanation-of-the-query">Explanation of the query:</a></li>
+  <li><a href="#result-of-the-api-query" id="toc-result-of-the-api-query" class="nav-link" data-scroll-target="#result-of-the-api-query">Result of the API Query</a></li>
+  </ul></li>
+  </ul></li>
   </ul>
 <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="data_report.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
     </div>
@@ -158,8 +200,207 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="room-for-new-information" class="level1">
 <h1>Room for new Information</h1>
+<section id="extracting-restaurants-fast-food-and-cafes-from-openstreetmap" class="level2">
+<h2 class="anchored" data-anchor-id="extracting-restaurants-fast-food-and-cafes-from-openstreetmap">Extracting Restaurants, Fast Food and Cafes from OpenStreetMap</h2>
+<p>For extracting the data from OpenStreetMap, we utilized the Overpass API. The used query is as follow:</p>
+<pre><code>[out:json][timeout:180];
+area["name"="{name}"]["boundary"="administrative"]["admin_level"="4"]-&gt;.a;
+(
+  node["amenity"="restaurant"](area.a);
+  node["amenity"="cafe"](area.a);
+  node["amenity"="fast_food"](area.a);
+);
+out center;</code></pre>
+<section id="explanation-of-the-query" class="level3">
+<h3 class="anchored" data-anchor-id="explanation-of-the-query">Explanation of the query:</h3>
+<hr>
+<section id="query-output-and-timeout-settings" class="level4">
+<h4 class="anchored" data-anchor-id="query-output-and-timeout-settings">1. <strong>Query Output and Timeout Settings</strong></h4>
+<pre><code>[out:json][timeout:180];</code></pre>
+<ul>
+<li><code>out:json</code>: Sets the output format to <strong>JSON</strong>.</li>
+<li><code>timeout:180</code>: Sets a <strong>timeout limit of 180 seconds</strong> for the query to run, useful for large or slow queries.</li>
+</ul>
+<hr>
+</section>
+<section id="select-the-area" class="level4">
+<h4 class="anchored" data-anchor-id="select-the-area">2. <strong>Select the Area</strong></h4>
+<pre><code>area["name"="{name}"]["boundary"="administrative"]["admin_level"="4"]-&gt;.a;</code></pre>
+<ul>
+<li>This finds an <strong>administrative area</strong>:
+<ul>
+<li>With name <code>{name}</code> (e.g.&nbsp;“Germany” or “Zurich” – replace with the actual name).</li>
+<li>With <code>boundary=administrative</code> (only administrative boundaries).</li>
+<li>With <code>admin_level=4</code> (typically a region/state-level boundary).</li>
+</ul></li>
+<li><code>-&gt;.a;</code>: Saves the matched area into a variable <code>.a</code>.</li>
+</ul>
+<p>Note: The area is <strong>not the same</strong> as a polygon in the map. Internally, Overpass assigns IDs to areas derived from OSM relations.</p>
+<hr>
+</section>
+<section id="find-nodes-within-that-area" class="level4">
+<h4 class="anchored" data-anchor-id="find-nodes-within-that-area">3. <strong>Find Nodes Within That Area</strong></h4>
+<pre><code>(
+  node["amenity"="restaurant"](area.a);
+  node["amenity"="cafe"](area.a);
+  node["amenity"="fast_food"](area.a);
+);</code></pre>
+<ul>
+<li>This block fetches <strong>nodes</strong> (points) that:
+<ul>
+<li>Have <code>amenity=restaurant</code>, <code>amenity=cafe</code>, or <code>amenity=fast_food</code>.</li>
+<li>Are <strong>located within the area <code>.a</code></strong> defined above.</li>
+</ul></li>
+<li>Parentheses group the different queries together so the result includes all three types.</li>
+</ul>
+<hr>
+</section>
+<section id="output-the-results" class="level4">
+<h4 class="anchored" data-anchor-id="output-the-results">4. <strong>Output the Results</strong></h4>
+<pre><code>out center;</code></pre>
+<ul>
+<li><code>out center</code>: Outputs each matching object with its <strong>center coordinates</strong>.
+<ul>
+<li><code>center</code> is typically used for areas (ways/relations), but if only nodes are returned, the output is similar to <code>out body</code>.</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="result-of-the-api-query" class="level3">
+<h3 class="anchored" data-anchor-id="result-of-the-api-query">Result of the API Query</h3>
+<p>For our example we extracted all the restaurants from all the cantons in Switzerland. This gives us the following list of JSON files:</p>
+<pre class="text"><code>cantons/
+├── restaurants_Aargau.json
+├── restaurants_Appenzell_Ausserrhoden.json
+├── restaurants_Appenzell_Innerrhoden.json
+├── restaurants_Basel-Landschaft.json
+├── restaurants_Basel-Stadt.json
+├── restaurants_Bern_Berne.json
+├── restaurants_Fribourg_Freiburg.json
+├── restaurants_Genève.json
+├── restaurants_Glarus.json
+├── restaurants_Graubünden_Grischun_Grigioni.json
+├── restaurants_Jura.json
+├── restaurants_Luzern.json
+├── restaurants_Neuchâtel.json
+├── restaurants_Nidwalden.json
+├── restaurants_Obwalden.json
+├── restaurants_Schaffhausen.json
+├── restaurants_Schwyz.json
+├── restaurants_Solothurn.json
+├── restaurants_St._Gallen.json
+├── restaurants_Thurgau.json
+├── restaurants_Ticino.json
+├── restaurants_Uri.json
+├── restaurants_Valais_Wallis.json
+├── restaurants_Vaud.json
+├── restaurants_Zug.json
+└── restaurants_Zürich.json</code></pre>
+<p>After combing all the JSON into one single JSON file, the data can be analyzed. The following statistics were generated:</p>
+<pre><code>Restaurant Statistics – restaurants_Switzerland.json
+
+Total gathered: 20977
+- Restaurants: 14917
+- Fast food: 2710
+- Cafes: 3350
+
+Additional information:
+- With URL: 8924 (42.54%)
+- With cuisine type: 9440 (45.00%)
+- With URL and cuisine type: 5064 (24.14%)</code></pre>
+<section id="conclusion-of-the-analysis" class="level4">
+<h4 class="anchored" data-anchor-id="conclusion-of-the-analysis">Conclusion of the Analysis</h4>
+<p>Based on the analysis it is visible that only 50% percent of all the restaurants e.g.&nbsp;have an URL or a cuisine type. And only 28% have both. Even with the missing data, the dataset can still be used to test or verify the FoodClassifier.</p>
+</section>
+<section id="extracting-cuisine-types" class="level4">
+<h4 class="anchored" data-anchor-id="extracting-cuisine-types">Extracting Cuisine Types</h4>
+<p>For the next steps, the cuisine types needs to be extracted from the JSON file. The FoodClassifier will use these cuisine types as labels for the training data and also will be used as result of the module.</p>
+<p>The simplest way to extract the cuisine types is to use a set, which will automatically remove duplicates. The cuisine types are stored in the <code>cuisines</code> set.</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> json</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">"restaurants_Switzerland.json"</span>, <span class="st">"r"</span>, encoding<span class="op">=</span><span class="st">"utf-8"</span>) <span class="im">as</span> f:</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>    data <span class="op">=</span> json.load(f)</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="co"># prepare set for the cuisine type</span></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>cuisines <span class="op">=</span> <span class="bu">set</span>()</span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> element <span class="kw">in</span> data.get(<span class="st">"elements"</span>, []):</span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>    tags <span class="op">=</span> element.get(<span class="st">"tags"</span>, {})</span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>    cuisine <span class="op">=</span> tags.get(<span class="st">"cuisine"</span>)</span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> cuisine:</span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>        <span class="co"># split multiple types</span></span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>        types <span class="op">=</span> [c.strip() <span class="cf">for</span> c <span class="kw">in</span> cuisine.split(<span class="st">";"</span>)]</span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a>        cuisines.update(types)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Now we take a look at the extracted cuisine types:</p>
+<pre><code>Central American
+Gourmet
+Grill
+Pains
+Pizza &amp; Grill
+Schnitzel
+Southern_BBQ
+Texas_Barbecue
+afghan
+african
+american
+...
+homemade
+hot_dog
+https://labelfaitmaison.ch/de/restaurant/roba-buona-2/
+ice_cream
+indian
+...</code></pre>
+<p>We see the cuisine types are not really normalized. For example: * Uppercase vs.&nbsp;lowercase * Spaces vs.&nbsp;underscores * Types seperated with ‘&amp;’ * URLs in the cuisine type</p>
+<p>Now we need to update the python code to normalize the cuisine types, with the following rules: * Convert to lowercase * Replace spaces with underscores * Additionally, split types separated by ‘&amp;’ and add them as separate entries * Remove URLs from the cuisine type</p>
+<p>This leads to the following updated code:</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> re</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> json</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">"restaurants_Switzerland.json"</span>, <span class="st">"r"</span>, encoding<span class="op">=</span><span class="st">"utf-8"</span>) <span class="im">as</span> f:</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>    data <span class="op">=</span> json.load(f)</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a><span class="co"># prepare set for the cuisine type</span></span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>cuisines <span class="op">=</span> <span class="bu">set</span>()</span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> element <span class="kw">in</span> data.get(<span class="st">"elements"</span>, []):</span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>    tags <span class="op">=</span> element.get(<span class="st">"tags"</span>, {})</span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a>    cuisine <span class="op">=</span> tags.get(<span class="st">"cuisine"</span>)</span>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> cuisine:</span>
+<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a>        <span class="co"># split multiple types</span></span>
+<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a>        types <span class="op">=</span> [c.strip() <span class="cf">for</span> c <span class="kw">in</span> re.split(<span class="vs">r'</span><span class="pp">[;&amp;]</span><span class="vs">'</span>, cuisine)]</span>
+<span id="cb10-16"><a href="#cb10-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-17"><a href="#cb10-17" aria-hidden="true" tabindex="-1"></a>        cleaned_types <span class="op">=</span> [</span>
+<span id="cb10-18"><a href="#cb10-18" aria-hidden="true" tabindex="-1"></a>            t.replace(<span class="st">" "</span>, <span class="st">"_"</span>).replace(<span class="st">"-"</span>, <span class="st">"_"</span>).lower() <span class="co"># clean up the types</span></span>
+<span id="cb10-19"><a href="#cb10-19" aria-hidden="true" tabindex="-1"></a>            <span class="cf">for</span> t <span class="kw">in</span> types</span>
+<span id="cb10-20"><a href="#cb10-20" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> <span class="kw">not</span> t.strip().lower().startswith(<span class="st">"http"</span>) <span class="co"># filter out URLs</span></span>
+<span id="cb10-21"><a href="#cb10-21" aria-hidden="true" tabindex="-1"></a>        ]</span>
+<span id="cb10-22"><a href="#cb10-22" aria-hidden="true" tabindex="-1"></a>        cuisines.update(cleaned_types)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This leads to the following normalized cuisine types with 386 unique entries:</p>
+<pre><code>afghan
+african
+alp
+alpine_hut
+american
+arab
+argentinian
+asian
+austrian
+ayran
+bacon
+bagel
+bakery
+baklawa
+balkan
+bangladeshi
+bar
+bar_and_grill
+...</code></pre>
+<p>We can still see some cuisine types doesn’t really match our expectations, like “alpine_hut” isn’t really a cuisine type and could be fused with “alp”.</p>
 
 
+</section>
+</section>
+</section>
 </section>
 
 </main> <!-- /main -->
