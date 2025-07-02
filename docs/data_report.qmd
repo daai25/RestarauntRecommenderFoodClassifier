@@ -1,58 +1,225 @@
-# Data Report
-All information on the data used in the project is compiled in the data report in order to ensure the traceability and reproducibility of the results and to enable a systematic expansion of the database.
+# Room for new Information
 
-Typically, in the exploratory analysis of the acquired raw data, quality and other issues are identified, which require pre-processing, merging of individual datasets and feature engineering into processed datasets. Therefore, this template provides a separate section for the processed data, which then serves as a starting point for the modelling activities. This needs to be adapted to the specific project requirements.
+## Extracting Restaurants, Fast Food and Cafes from OpenStreetMap
 
-## Raw data
-### Overview Raw Datasets
-| Name | Quelle | Storage location |
-|----------------|-----------------------------------------|--------------------------------------------------------------------------|
-| Dataset 1      | Name/short description of the data source | Link and/or short description of the location where the data is stored, e.g. accessible to the team |
-| Dataset 2      | …                                       | …                                                                        |
+For extracting the data from OpenStreetMap, we utilized the Overpass API. The used query is as follow:
+```
+[out:json][timeout:180];
+area["name"="{name}"]["boundary"="administrative"]["admin_level"="4"]->.a;
+(
+  node["amenity"="restaurant"](area.a);
+  node["amenity"="cafe"](area.a);
+  node["amenity"="fast_food"](area.a);
+);
+out center;
+```
 
-### Details Dataset 1
-- Description of what information the dataset contains
-- Details of the data source/provider
-- Information on data procurement: description and possibly references to resources (download scripts, tools, online services, ...). Any new team member should be able to acquire the data indepentendently following these instructions.
-- Legal aspects of data use, licences, etc.
-- Data governance aspects: Categorisation of the data based on internal business requirements, e.g. public, business-relevant, personal
-- If applicable: categorisation into dependent (target variable, regressor) and independent (regressor) variables
-- ...
+### Explanation of the query:
 
-#### Data Catalogue
-The data catalogue basically represents an extended schema of a relational database.
+---
+#### 1. **Query Output and Timeout Settings**
 
-| Column index | Column name |  Datatype | Values (Range, validation rules) | Short description |
-|---|---|---|---|---|
-| 1 |   |   |   |   |
-| 2 |   |   |   |   |
-|   |   |   |   |   |
+```
+[out:json][timeout:180];
+```
+* `out:json`: Sets the output format to **JSON**.
+* `timeout:180`: Sets a **timeout limit of 180 seconds** for the query to run, useful for large or slow queries.
 
+---
+#### 2. **Select the Area**
 
-#### If applicable: Entity Relationship Diagram
+```
+area["name"="{name}"]["boundary"="administrative"]["admin_level"="4"]->.a;
+```
+* This finds an **administrative area**:
+  * With name `{name}` (e.g. "Germany" or "Zurich" – replace with the actual name).
+  * With `boundary=administrative` (only administrative boundaries).
+  * With `admin_level=4` (typically a region/state-level boundary).
+* `->.a;`: Saves the matched area into a variable `.a`.
 
+Note: The area is **not the same** as a polygon in the map. Internally, Overpass assigns IDs to areas derived from OSM relations.
 
-#### Data Quality
+---
+#### 3. **Find Nodes Within That Area**
 
+```
+(
+  node["amenity"="restaurant"](area.a);
+  node["amenity"="cafe"](area.a);
+  node["amenity"="fast_food"](area.a);
+);
+```
+* This block fetches **nodes** (points) that:
+  * Have `amenity=restaurant`, `amenity=cafe`, or `amenity=fast_food`.
+  * Are **located within the area `.a`** defined above.
+* Parentheses group the different queries together so the result includes all three types.
 
-## Processed Data
-### Overview Processed Datasets
-| Name | Quelle | Storage location |
-|----------------|-----------------------------------------|--------------------------------------------------------------------------|
-| Processed Dataset 1      | Name/short description of the data source | Link and/or short description of the location where the data is stored, e.g. accessible to the team |
-| Processed Dataset 2      | …                                       | …                                                                        |
+---
+#### 4. **Output the Results**
 
-### Details Processed Dataset 1
-- Description of what information the dataset contains
-- Details and reasons for the processing steps -> Traceability and ensuring reproducibility
-- How can the data be accessed? Description, scripts, tools, ...
-- ...
+```
+out center;
+```
+* `out center`: Outputs each matching object with its **center coordinates**.
+  * `center` is typically used for areas (ways/relations), but if only nodes are returned, the output is similar to `out body`.
 
-#### Data Catalogue
+### Result of the API Query
 
+For our example we extracted all the restaurants from all the cantons in Switzerland. This gives us the following list of JSON files:
+```text
+cantons/
+├── restaurants_Aargau.json
+├── restaurants_Appenzell_Ausserrhoden.json
+├── restaurants_Appenzell_Innerrhoden.json
+├── restaurants_Basel-Landschaft.json
+├── restaurants_Basel-Stadt.json
+├── restaurants_Bern_Berne.json
+├── restaurants_Fribourg_Freiburg.json
+├── restaurants_Genève.json
+├── restaurants_Glarus.json
+├── restaurants_Graubünden_Grischun_Grigioni.json
+├── restaurants_Jura.json
+├── restaurants_Luzern.json
+├── restaurants_Neuchâtel.json
+├── restaurants_Nidwalden.json
+├── restaurants_Obwalden.json
+├── restaurants_Schaffhausen.json
+├── restaurants_Schwyz.json
+├── restaurants_Solothurn.json
+├── restaurants_St._Gallen.json
+├── restaurants_Thurgau.json
+├── restaurants_Ticino.json
+├── restaurants_Uri.json
+├── restaurants_Valais_Wallis.json
+├── restaurants_Vaud.json
+├── restaurants_Zug.json
+└── restaurants_Zürich.json
+```
 
-#### If applicable: Entity Relationship Diagram
+After combing all the JSON into one single JSON file, the data can be analyzed. The following statistics were generated:
+```
+Restaurant Statistics – restaurants_Switzerland.json
 
+Total gathered: 20977
+- Restaurants: 14917
+- Fast food: 2710
+- Cafes: 3350
 
-### Details Processed Dataset 2
+Additional information:
+- With URL: 8924 (42.54%)
+- With cuisine type: 9440 (45.00%)
+- With URL and cuisine type: 5064 (24.14%)
+```
+
+#### Conclusion of the Analysis
+
+Based on the analysis it is visible that only 50% percent of all the restaurants e.g. have an URL or a cuisine type.
+And only 28% have both. Even with the missing data, the dataset can still be used to test or verify the FoodClassifier.
+
+#### Extracting Cuisine Types
+
+For the next steps, the cuisine types needs to be extracted from the JSON file. The FoodClassifier will use these cuisine types as labels for the training data and also will be used as result of the module.
+
+The simplest way to extract the cuisine types is to use a set, which will automatically remove duplicates. The cuisine types are stored in the `cuisines` set.
+```python
+import json
+
+with open("restaurants_Switzerland.json", "r", encoding="utf-8") as f:
+    data = json.load(f)
+
+# prepare set for the cuisine type
+cuisines = set()
+
+for element in data.get("elements", []):
+    tags = element.get("tags", {})
+    cuisine = tags.get("cuisine")
+    if cuisine:
+        # split multiple types
+        types = [c.strip() for c in cuisine.split(";")]
+        cuisines.update(types)
+```
+
+Now we take a look at the extracted cuisine types:
+```
+Central American
+Gourmet
+Grill
+Pains
+Pizza & Grill
+Schnitzel
+Southern_BBQ
+Texas_Barbecue
+afghan
+african
+american
 ...
+homemade
+hot_dog
+https://labelfaitmaison.ch/de/restaurant/roba-buona-2/
+ice_cream
+indian
+...
+```
+
+We see the cuisine types are not really normalized. For example:
+* Uppercase vs. lowercase
+* Spaces vs. underscores
+* Types seperated with '&'
+* URLs in the cuisine type
+
+Now we need to update the python code to normalize the cuisine types, with the following rules:
+* Convert to lowercase
+* Replace spaces with underscores
+* Additionally, split types separated by '&' and add them as separate entries
+* Remove URLs from the cuisine type
+
+This leads to the following updated code:
+```python
+import re
+import json
+
+with open("restaurants_Switzerland.json", "r", encoding="utf-8") as f:
+    data = json.load(f)
+
+# prepare set for the cuisine type
+cuisines = set()
+
+for element in data.get("elements", []):
+    tags = element.get("tags", {})
+    cuisine = tags.get("cuisine")
+    if cuisine:
+        # split multiple types
+        types = [c.strip() for c in re.split(r'[;&]', cuisine)]
+
+        cleaned_types = [
+            t.replace(" ", "_").replace("-", "_").lower() # clean up the types
+            for t in types
+            if not t.strip().lower().startswith("http") # filter out URLs
+        ]
+        cuisines.update(cleaned_types)
+```
+
+This leads to the following normalized cuisine types with 386 unique entries:
+```
+afghan
+african
+alp
+alpine_hut
+american
+arab
+argentinian
+asian
+austrian
+ayran
+bacon
+bagel
+bakery
+baklawa
+balkan
+bangladeshi
+bar
+bar_and_grill
+...
+```
+
+We can still see some cuisine types doesn't really match our expectations, like "alpine_hut" isn't really a cuisine type and could be fused with "alp".

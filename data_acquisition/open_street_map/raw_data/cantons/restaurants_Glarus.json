@@ -1,0 +1,2497 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.7 375dc00a",
+  "osm3s": {
+    "timestamp_osm_base": "2025-07-01T21:04:35Z",
+    "timestamp_areas_base": "2025-06-25T21:32:45Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+    {
+      "type": "node",
+      "id": 32222644,
+      "lat": 47.0996422,
+      "lon": 9.0651077,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Café Müller"
+      }
+    },
+    {
+      "type": "node",
+      "id": 32851853,
+      "lat": 47.1173159,
+      "lon": 9.1501592,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Sternen",
+        "opening_hours": "Su-Th 08:00-23:00;Fr-Sa 08:00-24:00",
+        "phone": "+41 55 614 11 77",
+        "tourism": "hotel",
+        "website": "https://www.sternen-obstalden.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 32851854,
+      "lat": 47.1169747,
+      "lon": 9.1508843,
+      "tags": {
+        "addr:city": "Obstalden",
+        "addr:country": "CH",
+        "addr:housenumber": "21",
+        "addr:postcode": "8758",
+        "addr:street": "Kerenzerbergstrasse",
+        "amenity": "restaurant",
+        "name": "Hirschen",
+        "tourism": "hotel",
+        "website": "https://www.hirschen-obstalden.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 54754465,
+      "lat": 47.1214095,
+      "lon": 9.1174346,
+      "tags": {
+        "addr:housenumber": "104",
+        "addr:postcode": "8757",
+        "addr:street": "Kerenzerbergstrasse",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "RömerTurm",
+        "opening_hours": "Mo-Su 07:00-24:00",
+        "phone": "+41 55 614 62 62",
+        "tourism": "hotel",
+        "website": "https://www.roemerturm.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 57558761,
+      "lat": 46.9492366,
+      "lon": 8.994013,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Chämistube",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 57558764,
+      "lat": 46.9388171,
+      "lon": 8.990731,
+      "tags": {
+        "amenity": "restaurant",
+        "email": "info@hotel-cristal.ch",
+        "name": "Cristal",
+        "phone": "+41 55 643 1045",
+        "tourism": "hotel",
+        "website": "https://hotel-cristal.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 57558768,
+      "lat": 46.9382318,
+      "lon": 8.9890883,
+      "tags": {
+        "amenity": "restaurant",
+        "email": "info@uhubraunwald.ch",
+        "name": "Uhu",
+        "opening_hours": "We-Sa 10:00-20:00; Su 10:00-16:00; Dec-Feb We-Su 09:00-17:00",
+        "phone": "+41 55 643 1736",
+        "website": "https://www.uhubraunwald.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 60467930,
+      "lat": 47.0508104,
+      "lon": 9.0587185,
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "McDonald's",
+        "brand:wikidata": "Q38076",
+        "brand:wikipedia": "en:McDonald's",
+        "check_date": "2023-04-19",
+        "cuisine": "burger",
+        "name": "McDonald's",
+        "operator": "McDonald's",
+        "smoking": "no",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 277751501,
+      "lat": 47.1185504,
+      "lon": 9.0589803,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "kebab",
+        "name": "Özi Baba's"
+      }
+    },
+    {
+      "type": "node",
+      "id": 277753231,
+      "lat": 47.1253166,
+      "lon": 9.0083791,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Bergrestaurant Hirzli"
+      }
+    },
+    {
+      "type": "node",
+      "id": 283105123,
+      "lat": 46.9562198,
+      "lon": 8.9848057,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Berggasthaus Gumen",
+        "outdoor_seating": "yes",
+        "tourism": "alpine_hut",
+        "website": "https://gumen.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 287980290,
+      "lat": 46.9103933,
+      "lon": 9.1555724,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Bergführer",
+        "opening_hours": "Mo 14:00-22:00; We-Su 09:00-22:00",
+        "phone": "+41 55 642 21 06",
+        "tourism": "hotel",
+        "website": "https://www.hotelbergfuehrer.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 303756701,
+      "lat": 46.9415892,
+      "lon": 8.9947409,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "email": "toediblick@bluewin.ch",
+        "name": "Alexander's Tödiblick",
+        "operator": "Familie Stuber",
+        "phone": "+41 55 653 6363",
+        "tourism": "hotel",
+        "website": "https://www.hotel-toediblick.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 303782558,
+      "lat": 46.9595021,
+      "lon": 8.9922966,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Bergrestaurant Seblengrat",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 366918584,
+      "lat": 47.09892,
+      "lon": 9.0664318,
+      "tags": {
+        "addr:city": "Näfels",
+        "addr:country": "CH",
+        "addr:housenumber": "6",
+        "addr:postcode": "8752",
+        "addr:street": "Alte Bahnhofstrasse",
+        "amenity": "restaurant",
+        "email": "info@national-naefels.ch",
+        "name": "National",
+        "phone": "+41 55 612 10 30",
+        "tourism": "hotel",
+        "website": "https://national-naefels.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 421907998,
+      "lat": 47.0344297,
+      "lon": 9.0132915,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Schwammhöhe",
+        "outdoor_seating": "yes",
+        "website": "https://www.schwammhoehe.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 441647047,
+      "lat": 47.1259731,
+      "lon": 9.0534452,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "italian;pizza",
+        "name": "Ochsen",
+        "opening_hours": "Mo-Fr 09:00-23:00; Sa 17:00-23:00; Su 10:30-23:00",
+        "phone": "+41 55 610 19 69",
+        "tourism": "hotel",
+        "wikidata": "Q112013543"
+      }
+    },
+    {
+      "type": "node",
+      "id": 474784539,
+      "lat": 47.0230687,
+      "lon": 8.911903,
+      "tags": {
+        "addr:city": "Klöntal",
+        "addr:housenumber": "106",
+        "addr:postcode": "8750",
+        "addr:street": "Richisauerstrasse",
+        "amenity": "restaurant",
+        "email": "info@gasthaus-richisau.ch",
+        "internet_access": "yes",
+        "name": "Gasthaus Richisau",
+        "opening_hours": "09:00-22:00; Sa,Su 08:00-22:00; Nov 1-Aug 9: off",
+        "outdoor_seating": "yes",
+        "phone": "+41 55 640 10 85",
+        "tourism": "hotel",
+        "website": "https://www.gasthaus-richisau.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 543230155,
+      "lat": 47.1045652,
+      "lon": 9.1253637,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Berggasthaus Habergschwänd"
+      }
+    },
+    {
+      "type": "node",
+      "id": 543359149,
+      "lat": 46.9397955,
+      "lon": 9.1032216,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Alp Ober Stafel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 600851085,
+      "lat": 46.9848852,
+      "lon": 9.1494231,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Freihof"
+      }
+    },
+    {
+      "type": "node",
+      "id": 600851144,
+      "lat": 46.9818121,
+      "lon": 9.1530277,
+      "tags": {
+        "addr:housenumber": "30",
+        "addr:street": "Dorfstrasse",
+        "amenity": "restaurant",
+        "name": "Adler"
+      }
+    },
+    {
+      "type": "node",
+      "id": 665543072,
+      "lat": 46.9638502,
+      "lon": 9.1849243,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Wirtschaft zum Weissenberg",
+        "opening_hours": "Mo-Su 08:00-24:00; Th off; Fr 11:00-24:00",
+        "phone": "+41 55 642 11 90",
+        "url": "http://www.wirtschaft-weissenberg.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 665543084,
+      "lat": 46.9642293,
+      "lon": 9.1859774,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Berggasthaus Edelwyss",
+        "opening_hours": "Th-Mo",
+        "phone": "+41 55 642 24 26"
+      }
+    },
+    {
+      "type": "node",
+      "id": 775540518,
+      "lat": 46.9346607,
+      "lon": 9.0137368,
+      "tags": {
+        "addr:city": "Rüti",
+        "addr:housenumber": "75",
+        "addr:postcode": "8782",
+        "addr:street": "Dorfstrasse",
+        "amenity": "restaurant",
+        "cuisine": "chinese",
+        "name": "China Restaurant",
+        "phone": "+41 55 653 11 62",
+        "website": "https://bahnhof-restaurant-taste-of-china.business.site/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 775540523,
+      "lat": 46.920503,
+      "lon": 8.993848,
+      "tags": {
+        "addr:housenumber": "78",
+        "addr:postcode": "8783",
+        "addr:street": "Ennetlintherstrasse",
+        "alt_name": "Schweizerbund",
+        "amenity": "restaurant",
+        "check_date": "2023-04-19",
+        "cuisine": "italian",
+        "delivery": "yes",
+        "name": "Pizza Pasta Pierino",
+        "phone": "+41 55 653 13 13",
+        "website": "https://pizza-pasta-pierino.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 790002048,
+      "lat": 47.0712669,
+      "lon": 9.0907589,
+      "tags": {
+        "addr:housenumber": "10",
+        "addr:place": "Untere Fronalp",
+        "addr:postcode": "8753",
+        "amenity": "restaurant",
+        "cuisine": "local",
+        "name": "Naturfreundehaus",
+        "tourism": "hotel",
+        "website": "https://www.fronalp.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 790324235,
+      "lat": 47.1517807,
+      "lon": 9.0280615,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Café-Bar"
+      }
+    },
+    {
+      "type": "node",
+      "id": 791021925,
+      "lat": 47.1522548,
+      "lon": 9.0189624,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "pizza",
+        "name": "Pizzeria Vesuvio",
+        "website": "https://www.pizzeriavesuviobilten.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 791031150,
+      "lat": 47.1625994,
+      "lon": 8.9972621,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Freihof",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 833022923,
+      "lat": 46.9955795,
+      "lon": 8.9403724,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Käsernalp",
+        "outdoor_seating": "yes",
+        "website": "http://www.kaesernalp.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 843592323,
+      "lat": 46.9793071,
+      "lon": 9.0684013,
+      "tags": {
+        "addr:housenumber": "21",
+        "addr:postcode": "8773",
+        "addr:street": "Tannenbergstrasse",
+        "amenity": "restaurant",
+        "name": "Gasthaus Tannenberg",
+        "outdoor_seating": "yes",
+        "phone": "+41 55 640 20 29",
+        "tourism": "guest_house",
+        "website": "https://www.gasthaustannenberg.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 851027622,
+      "lat": 47.0240039,
+      "lon": 8.9401986,
+      "tags": {
+        "air_conditioning": "yes",
+        "alt_name": "Restaurant Im Plätz",
+        "amenity": "restaurant",
+        "check_date": "2022-07-26",
+        "indoor_seating": "yes",
+        "name": "Gasthaus zum Klöntal",
+        "opening_hours": "Mo, Tu off",
+        "outdoor_seating": "yes",
+        "payment:cards": "no",
+        "payment:credit_cards": "no",
+        "payment:debit_cards": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 989250501,
+      "lat": 47.0989944,
+      "lon": 9.1343527,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Talalpsee"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1218757821,
+      "lat": 47.1157034,
+      "lon": 9.1866658,
+      "tags": {
+        "air_conditioning": "no",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "diet:halal": "no",
+        "diet:kosher": "no",
+        "diet:vegetarian": "no",
+        "indoor_seating": "yes",
+        "name": "Seerestaurant Zur Brauerei",
+        "outdoor_seating": "terrace",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "smoking": "outside",
+        "toilets": "yes",
+        "website": "https://www.braui-muehlehorn.ch/",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1361427585,
+      "lat": 47.0668457,
+      "lon": 9.0587063,
+      "tags": {
+        "amenity": "restaurant",
+        "brand": "Coop Restaurant",
+        "brand:wikidata": "Q432564",
+        "cuisine": "german",
+        "name": "Coop Restaurant",
+        "operator": "Coop Genossenschaft"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1634543175,
+      "lat": 46.9223086,
+      "lon": 9.1425429,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "internet_access": "wlan",
+        "name": "Munggä Hüttä"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1634543384,
+      "lat": 46.922559,
+      "lon": 9.1545388,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Älpli"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1709242619,
+      "lat": 47.1300345,
+      "lon": 9.0578157,
+      "tags": {
+        "amenity": "restaurant",
+        "indoor_seating": "yes",
+        "name": "Café Siesta",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1709242620,
+      "lat": 47.1290119,
+      "lon": 9.0517932,
+      "tags": {
+        "addr:housenumber": "43",
+        "addr:street": "Badstrasse",
+        "amenity": "restaurant",
+        "description": "Restaurant&Bistro mit Balkanischen Spezialitäten: Börek(Fleisch,Spinat, Käse) Cevapcici, mixed grill und verschiede Desserts.",
+        "name": "Kiki‘s Restaurant",
+        "website": "https://www.just-eat.ch/speisekarte/kiki-restaurant-bar-take-away"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1709242622,
+      "lat": 47.1269883,
+      "lon": 9.0550475,
+      "tags": {
+        "addr:city": "Niederurnen",
+        "addr:country": "CH",
+        "addr:housenumber": "14",
+        "addr:postcode": "8867",
+        "addr:street": "Ziegelbrückstrasse",
+        "air_conditioning": "no",
+        "amenity": "fast_food",
+        "cuisine": "turkish",
+        "drive_through": "no",
+        "level": "1",
+        "name": "König-Imbiss",
+        "payment:cash": "yes",
+        "takeaway": "yes",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1709242626,
+      "lat": 47.1281826,
+      "lon": 9.0530562,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Schwert"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1709242627,
+      "lat": 47.1261085,
+      "lon": 9.0562066,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Sternen"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1709242628,
+      "lat": 47.1264747,
+      "lon": 9.0561079,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Zum Grünen Baum"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1709262306,
+      "lat": 47.1288604,
+      "lon": 9.0560434,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Café Pralino",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1783966916,
+      "lat": 47.0995956,
+      "lon": 9.0675209,
+      "tags": {
+        "addr:housenumber": "29",
+        "addr:postcode": "8752",
+        "addr:street": "Bahnhofstrasse",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Bahnhof",
+        "tourism": "hotel",
+        "website": "https://hotelbahnhof-naefels.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1783966920,
+      "lat": 47.1017992,
+      "lon": 9.0701489,
+      "tags": {
+        "addr:housenumber": "49",
+        "addr:postcode": "8752",
+        "addr:street": "Autschachen",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Eisenbahn"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1783966921,
+      "lat": 47.0941442,
+      "lon": 9.0608224,
+      "tags": {
+        "addr:housenumber": "67",
+        "addr:postcode": "8752",
+        "addr:street": "Oberdorf",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Freihof",
+        "website": "http://www.restaurant-frei-hof.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1783966922,
+      "lat": 47.0988631,
+      "lon": 9.0631374,
+      "tags": {
+        "addr:postcode": "8752",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Harmonie"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1783966926,
+      "lat": 47.0990433,
+      "lon": 9.0629558,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Schwert",
+        "opening_hours": "Mo 11:00-14:00, 17:00-23:00; Tu-Fr 11:00-23:00; Sa 17:00-23:00",
+        "phone": "+41 55 618 42 80",
+        "tourism": "hotel",
+        "website": "https://hotelschwert.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1783966940,
+      "lat": 47.0973692,
+      "lon": 9.0630557,
+      "tags": {
+        "addr:postcode": "8752",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "diet:vegetarian": "yes",
+        "email": "schuetzenhof-naefels@bluewin.ch",
+        "name": "Hotel Restaurant Schützenhof",
+        "opening_hours": "Fr-We 08:00-24:00",
+        "phone": "+41 55 612 11 37",
+        "tourism": "hotel",
+        "website": "https://www.schuetzenhof-naefels.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1783966944,
+      "lat": 47.1077927,
+      "lon": 9.0653205,
+      "tags": {
+        "addr:housenumber": "14",
+        "addr:postcode": "8752",
+        "addr:street": "Oberurnerstrasse",
+        "amenity": "restaurant",
+        "internet_access": "wlan",
+        "name": "lintharena",
+        "tourism": "hotel",
+        "website": "https://www.lintharena.ch/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1784009804,
+      "lat": 47.0995159,
+      "lon": 9.0594748,
+      "tags": {
+        "addr:housenumber": "1",
+        "addr:postcode": "8752",
+        "addr:street": "Herrenweg",
+        "amenity": "restaurant",
+        "name": "Löwen"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1784422441,
+      "lat": 47.1000086,
+      "lon": 9.059888,
+      "tags": {
+        "addr:housenumber": "44b",
+        "addr:postcode": "8752",
+        "addr:street": "Gerbi",
+        "amenity": "restaurant",
+        "name": "Jägerstübli",
+        "website": "https://www.jaegerstuebli-naefels.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1784422448,
+      "lat": 47.1005119,
+      "lon": 9.0622214,
+      "tags": {
+        "addr:housenumber": "4",
+        "addr:postcode": "8752",
+        "addr:street": "Gerbi",
+        "amenity": "restaurant",
+        "name": "Steinbock"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1796010039,
+      "lat": 47.041748,
+      "lon": 9.059388,
+      "tags": {
+        "addr:housenumber": "50",
+        "addr:postcode": "8750",
+        "addr:street": "Berglistrasse",
+        "amenity": "restaurant",
+        "name": "Bergli",
+        "website": "https://bergli-glarus.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1796010042,
+      "lat": 47.0399711,
+      "lon": 9.0684161,
+      "tags": {
+        "addr:city": "Glarus",
+        "addr:housenumber": "18",
+        "addr:postcode": "8750",
+        "addr:street": "Bahnhofstrasse",
+        "amenity": "restaurant",
+        "name": "L'Angolo dei Sapori",
+        "website": "https://www.langolodeisapori.ch/",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1796010053,
+      "lat": 47.0387907,
+      "lon": 9.0674331,
+      "tags": {
+        "addr:housenumber": "6",
+        "addr:postcode": "8750",
+        "addr:street": "Zaunplatz",
+        "amenity": "restaurant",
+        "name": "Glarnerstübli"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1796010086,
+      "lat": 47.045927,
+      "lon": 9.061277,
+      "tags": {
+        "addr:housenumber": "80",
+        "addr:postcode": "8750",
+        "addr:street": "Landstrasse",
+        "amenity": "restaurant",
+        "name": "Höhe"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1796010089,
+      "lat": 47.042556,
+      "lon": 9.06836,
+      "tags": {
+        "addr:housenumber": "56",
+        "addr:postcode": "8750",
+        "addr:street": "Stampfgasse",
+        "amenity": "restaurant",
+        "name": "Krone"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1796010095,
+      "lat": 47.037218,
+      "lon": 9.07145,
+      "tags": {
+        "addr:housenumber": "64",
+        "addr:postcode": "8750",
+        "addr:street": "Kirchweg",
+        "amenity": "restaurant",
+        "name": "National Saloon"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1796010104,
+      "lat": 47.042793,
+      "lon": 9.067228,
+      "tags": {
+        "addr:housenumber": "67",
+        "addr:postcode": "8750",
+        "addr:street": "Burgstrasse",
+        "amenity": "restaurant",
+        "cuisine": "indian;asian;tibetan",
+        "email": "yakfoodservice@bluewin.ch",
+        "name": "YAK Restaurant",
+        "phone": "+41797601050"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1796010112,
+      "lat": 47.044039,
+      "lon": 9.061571,
+      "tags": {
+        "addr:housenumber": "41",
+        "addr:postcode": "8750",
+        "addr:street": "Landstrasse",
+        "amenity": "restaurant",
+        "cuisine": "thai",
+        "name": "Raan Thai Bunma",
+        "website": "http://www.raan-thai.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1796010130,
+      "lat": 47.0382288,
+      "lon": 9.0650331,
+      "tags": {
+        "addr:housenumber": "55",
+        "addr:postcode": "8750",
+        "addr:street": "Schützenhausstrasse",
+        "amenity": "restaurant",
+        "name": "Schützenhaus",
+        "website": "https://www.schuetzenhaus-glarus.ch/",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1796010143,
+      "lat": 47.039299,
+      "lon": 9.069771,
+      "tags": {
+        "addr:housenumber": "2",
+        "addr:postcode": "8750",
+        "addr:street": "Kirchweg",
+        "amenity": "restaurant",
+        "name": "Stadthof",
+        "tourism": "hotel",
+        "website": "http://www.hotel-stadthof-glarus.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1796010151,
+      "lat": 47.041938,
+      "lon": 9.06746,
+      "tags": {
+        "addr:city": "Glarus",
+        "addr:housenumber": "36",
+        "addr:postcode": "8750",
+        "addr:street": "Postgasse",
+        "amenity": "restaurant",
+        "cuisine": "pizza;italian",
+        "name": "Waage",
+        "opening_hours:kitchen": "Tu-Sa 11:30-14:00, 17:30-22:30",
+        "phone": "+41 55 640 11 53",
+        "tourism": "hotel",
+        "website": "https://www.waageglarus.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1796737796,
+      "lat": 47.037592,
+      "lon": 9.069763,
+      "tags": {
+        "addr:housenumber": "29",
+        "addr:postcode": "8750",
+        "addr:street": "Abläschstrasse",
+        "amenity": "restaurant",
+        "name": "Bierhalle"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1796737797,
+      "lat": 47.0395122,
+      "lon": 9.0680558,
+      "tags": {
+        "addr:housenumber": "31",
+        "addr:postcode": "8750",
+        "addr:street": "Hauptstrasse",
+        "amenity": "cafe",
+        "name": "Cornetto",
+        "shop": "bakery",
+        "website": "https://www.cornetto.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1796737798,
+      "lat": 47.038059,
+      "lon": 9.069539,
+      "tags": {
+        "addr:housenumber": "15",
+        "addr:postcode": "8750",
+        "addr:street": "Abläschstrasse",
+        "amenity": "restaurant",
+        "cuisine": "italian",
+        "name": "Pizzeria Steinbock",
+        "opening_hours": "Mo-Tu, Th-Fr 10:00-14:00, 17:00-23:00; Sa-Su 17:00-23:00",
+        "phone": "+41 55 640 23 07",
+        "website": "https://pizzeria-steinbock-glarus.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1796737799,
+      "lat": 47.036273,
+      "lon": 9.0051132,
+      "tags": {
+        "addr:postcode": "8750",
+        "amenity": "restaurant",
+        "name": "Rhodannenberg",
+        "tourism": "hotel",
+        "website": "https://www.rhodannenberg.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1797884213,
+      "lat": 47.0385028,
+      "lon": 9.0673848,
+      "tags": {
+        "addr:housenumber": "14",
+        "addr:postcode": "8750",
+        "addr:street": "Zaunplatz",
+        "amenity": "fast_food",
+        "name": "Glarus Kebap"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1835326135,
+      "lat": 47.1374734,
+      "lon": 9.049592,
+      "tags": {
+        "addr:city": "Niederurnen",
+        "addr:postcode": "8867",
+        "amenity": "restaurant",
+        "branch": "A3 Glarnerland",
+        "brand": "Marché",
+        "name": "Marché Glarnerland",
+        "operator": "Marché Restaurants Schweiz",
+        "outdoor_seating": "yes",
+        "toilets:wheelchair": "yes",
+        "website": "https://www.marche.ch/de/marche_glarnerland.html",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1979304108,
+      "lat": 47.0316397,
+      "lon": 9.0783799,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Cornetto",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2027860463,
+      "lat": 47.0404195,
+      "lon": 9.0710768,
+      "tags": {
+        "addr:city": "Glarus",
+        "addr:housenumber": "6",
+        "addr:postcode": "8750",
+        "addr:street": "Schweizerhofstrasse",
+        "alt_name": "Migros Restaurant Glarus",
+        "amenity": "restaurant",
+        "branch": "Glarus",
+        "brand": "Migros Restaurant",
+        "brand:wikidata": "Q680727",
+        "brand:wikipedia": "de:Migros",
+        "cuisine": "international",
+        "name": "Migros Restaurant",
+        "opening_hours": "Mo-Th,Sa 08:00-19:00; Fr 08:00-20:00",
+        "operator": "Genossenschaft Migros Zürich",
+        "outdoor_seating": "yes",
+        "website": "https://filialen.migros.ch/de/migros-restaurant-glarus-zentrum-glaernisch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2028467133,
+      "lat": 47.0191342,
+      "lon": 9.087305,
+      "tags": {
+        "addr:housenumber": "16",
+        "addr:postcode": "8755",
+        "addr:street": "Uschenrietstrasse",
+        "amenity": "restaurant",
+        "email": "info@uschenriet.ch",
+        "name": "Waldwirtschaft Uschenriet",
+        "outdoor_seating": "yes",
+        "phone": "+41556441555",
+        "website": "https://www.uschenriet.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2028739097,
+      "lat": 47.07758,
+      "lon": 9.0655465,
+      "tags": {
+        "amenity": "restaurant",
+        "delivery": "no",
+        "name": "Aviatico",
+        "opening_hours": "We-Fr 14:00-18:00; Sa,Su 11:00-18:00; \"bei Regen ab 13:30 Uhr offen\"",
+        "phone": "+41 55 6122878",
+        "website": "https://www.rolis.aviatico.ch/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2038085043,
+      "lat": 47.0272309,
+      "lon": 9.1067234,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Bergrestaurant Aeugsten"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2038085063,
+      "lat": 47.0223072,
+      "lon": 9.0795697,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Horgenberg",
+        "website": "https://www.restaurant-horgenberg.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2038156634,
+      "lat": 47.0480141,
+      "lon": 9.0382951,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Staldengarten"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2155061602,
+      "lat": 46.9137379,
+      "lon": 9.1637417,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "pizza",
+        "name": "Sternen"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2157113093,
+      "lat": 46.9845786,
+      "lon": 9.1449241,
+      "tags": {
+        "addr:housenumber": "19",
+        "addr:street": "Sernftalstrasse",
+        "amenity": "restaurant",
+        "name": "Gasthaus zum Bahnhof"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2398702343,
+      "lat": 46.9185343,
+      "lon": 8.9972988,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Eidgenossen",
+        "phone": "+41 55 643 25 28"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2398702344,
+      "lat": 46.918424,
+      "lon": 8.9974931,
+      "tags": {
+        "amenity": "restaurant",
+        "contact:email": "hotelraben@bluewin.ch",
+        "internet_access": "wlan",
+        "name": "Raben",
+        "phone": "+41 55 643 31 22",
+        "tourism": "hotel",
+        "website": "https://hotelraben.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2398702347,
+      "lat": 46.8798621,
+      "lon": 8.981195,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date": "2025-05-27",
+        "name": "Hotel Tödi",
+        "opening_hours": "Jan-Apr Tu-Sa 08:00-23:00; May-Oct Mo-Sa 08:00-23:00, Su 09:00-19:00",
+        "opening_hours:kitchen": "Jan-Apr Tu-Sa 11:30-14:00, 18:00-21:00; May-Oct Mo-Sa 11:30-21:00, Su 11:30-19:00",
+        "phone": "+41 55 653 50 70",
+        "tourism": "hotel",
+        "website": "https://www.hoteltoedi.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2440890606,
+      "lat": 47.0982719,
+      "lon": 9.074528,
+      "tags": {
+        "addr:city": "Mollis",
+        "addr:housenumber": "46",
+        "addr:postcode": "8753",
+        "addr:street": "Hinterdorfstrasse",
+        "amenity": "restaurant",
+        "cuisine": "regional;pizza",
+        "name": "Raben"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2842577587,
+      "lat": 46.8898567,
+      "lon": 8.9939301,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Berggasthaus Obbort",
+        "website": "https://www.obbort.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3273104550,
+      "lat": 46.9395258,
+      "lon": 8.9988953,
+      "tags": {
+        "amenity": "cafe",
+        "email": "info@bsinti.ch",
+        "name": "Bsinti",
+        "opening_hours": "Mo-Sa 10:00-18:00; Su 11:00-17:00",
+        "phone": "+41 55 643 1192",
+        "website": "https://www.bsinti.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3276316340,
+      "lat": 47.0130051,
+      "lon": 9.0814946,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Bären"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3277490444,
+      "lat": 46.9952572,
+      "lon": 9.0752951,
+      "tags": {
+        "addr:housenumber": "34",
+        "addr:postcode": "8762",
+        "addr:street": "Hauptstrasse",
+        "amenity": "restaurant",
+        "capacity": "100",
+        "cuisine": "regional",
+        "name": "Adler"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3277518653,
+      "lat": 46.9936588,
+      "lon": 9.0730114,
+      "tags": {
+        "addr:city": "Schwanden GL",
+        "addr:country": "CH",
+        "addr:housenumber": "80",
+        "addr:postcode": "8762",
+        "addr:street": "Hauptstrasse",
+        "amenity": "restaurant",
+        "cuisine": "italian",
+        "name": "Pizzeria Luna",
+        "phone": "+41 55 644 24 24"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3294358231,
+      "lat": 47.1137566,
+      "lon": 9.059042,
+      "tags": {
+        "addr:city": "Oberurnen",
+        "addr:country": "CH",
+        "addr:housenumber": "2",
+        "addr:postcode": "8868",
+        "addr:street": "Zigerribistrasse",
+        "amenity": "restaurant",
+        "cuisine": "pizza;italian",
+        "name": "Zigerribi",
+        "website": "https://www.kaffi-zigerribi.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3294360995,
+      "lat": 47.1139112,
+      "lon": 9.0579183,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Hirschen"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3294393570,
+      "lat": 47.1173439,
+      "lon": 9.0592167,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Engel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3294399818,
+      "lat": 47.1155659,
+      "lon": 9.0589902,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Post"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3709205773,
+      "lat": 47.0235552,
+      "lon": 9.0685635,
+      "tags": {
+        "amenity": "restaurant",
+        "loc_name": "Zwetschgenhof",
+        "name": "Rütihof",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4306539909,
+      "lat": 47.0397297,
+      "lon": 9.0708037,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Glarnerhof",
+        "website": "https://www.glarnerhof.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4333988891,
+      "lat": 47.0052099,
+      "lon": 9.0671147,
+      "tags": {
+        "addr:housenumber": "144",
+        "addr:postcode": "8762",
+        "addr:street": "Höschetli",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "email": "info@restaurant-unique.ch",
+        "name": "Unique",
+        "opening_hours": "Th-Mo 08:30-22:00",
+        "phone": "+41556442233",
+        "website": "http://www.restaurant-unique.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4335037994,
+      "lat": 46.9754428,
+      "lon": 9.0901033,
+      "tags": {
+        "addr:housenumber": "8",
+        "addr:postcode": "8762",
+        "addr:street": "Niederentalstrasse",
+        "amenity": "restaurant",
+        "name": "Restaurant Fryberg",
+        "website": "https://fryberg.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4335331190,
+      "lat": 47.0569174,
+      "lon": 9.076609,
+      "tags": {
+        "addr:city": "Ennenda",
+        "addr:housenumber": "2",
+        "addr:postcode": "8755",
+        "addr:street": "Untere Ennetbergstrasse",
+        "amenity": "restaurant",
+        "cuisine": "local",
+        "name": "Alpenblick",
+        "opening_hours": "Mo, Tu 11:30-18:00; We off; Th off; Fr, Sa 11:30-18:00; Su 11:30-18:00",
+        "phone": "+41556403081",
+        "website": "https://www.alpenblick-ennetberge.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4335988790,
+      "lat": 47.1169388,
+      "lon": 9.17242,
+      "tags": {
+        "addr:city": "Mühlehorn",
+        "addr:country": "CH",
+        "addr:postcode": "8874",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Mühle"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4513408589,
+      "lat": 47.0942412,
+      "lon": 9.0753012,
+      "tags": {
+        "addr:city": "Mollis",
+        "addr:housenumber": "2",
+        "addr:postcode": "8753",
+        "addr:street": "Bahnhofstrasse",
+        "amenity": "restaurant",
+        "cuisine": "fine_dining;french;regional",
+        "name": "Gasthof zum Löwen",
+        "phone": "+41556103333",
+        "tourism": "hotel",
+        "website": "https://www.loewen-mollis.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4514046489,
+      "lat": 47.1308379,
+      "lon": 9.0868159,
+      "tags": {
+        "addr:housenumber": "1",
+        "addr:postcode": "8872",
+        "addr:street": "Seeflechsenstrasse",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Landgasthof Biäsche",
+        "opening_hours": "We-Su 10:00-22:00",
+        "phone": "+41556161551",
+        "website": "https://biaesche.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4609622989,
+      "lat": 46.9936972,
+      "lon": 9.0732024,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Cornetto"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4614782090,
+      "lat": 47.039882,
+      "lon": 9.0703477,
+      "tags": {
+        "addr:city": "Glarus",
+        "addr:housenumber": "3",
+        "addr:postcode": "8750",
+        "addr:street": "Gemeindehausstrasse",
+        "amenity": "fast_food",
+        "cuisine": "pizza;italian",
+        "name": "Pizzakurier Pinocchio"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4614782193,
+      "lat": 47.0393357,
+      "lon": 9.0695653,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "Döner"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4614782198,
+      "lat": 47.0587704,
+      "lon": 9.0517851,
+      "tags": {
+        "addr:housenumber": "1",
+        "addr:postcode": "8754",
+        "addr:street": "Risi",
+        "amenity": "restaurant",
+        "name": "St. Fridolin Pub"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4752195108,
+      "lat": 47.1231246,
+      "lon": 9.1272055,
+      "tags": {
+        "addr:city": "Filzbach",
+        "addr:country": "CH",
+        "addr:housenumber": "28",
+        "addr:postcode": "8757",
+        "addr:street": "Panoramastrasse",
+        "amenity": "restaurant",
+        "name": "Lihn",
+        "opening_hours": "Mo-Su 07:00-23:00",
+        "phone": "+41556146464",
+        "website": "https://www.lihn.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5109943030,
+      "lat": 47.0688064,
+      "lon": 9.0565057,
+      "tags": {
+        "addr:postcode": "8754",
+        "amenity": "restaurant",
+        "cuisine": "italian_pizza",
+        "internet_access": "wlan",
+        "name": "Restaurant Tris",
+        "phone": "+41 55 640 38 38",
+        "website": "https://www.tris-netstal.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5119607721,
+      "lat": 46.931208,
+      "lon": 9.0114395,
+      "tags": {
+        "addr:housenumber": "97",
+        "addr:street": "Dorfstrasse",
+        "amenity": "restaurant",
+        "name": "Rütihof",
+        "website": "https://www.rütihof-gl.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5119839222,
+      "lat": 46.991507,
+      "lon": 9.0497133,
+      "tags": {
+        "addr:housenumber": "1",
+        "addr:postcode": "8772",
+        "addr:street": "Leuggelen",
+        "amenity": "restaurant",
+        "name": "Berggasthaus Leuggelen",
+        "phone": "+41796507455",
+        "website": "https://www.leuggelen.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5274325392,
+      "lat": 47.04046,
+      "lon": 9.0682147,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "Calimero"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5284079863,
+      "lat": 47.0432109,
+      "lon": 9.066541,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Café Winkel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5312051639,
+      "lat": 47.0641906,
+      "lon": 9.0592602,
+      "tags": {
+        "addr:city": "Netstal",
+        "addr:housenumber": "12",
+        "addr:postcode": "8754",
+        "addr:street": "Bahnhofstrasse",
+        "amenity": "restaurant",
+        "email": "bahnhoefli@escriba.ch",
+        "name": "Bahnhöfli",
+        "phone": "+41 55 640 60 01",
+        "website": "https://escriba.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5322277272,
+      "lat": 47.0374302,
+      "lon": 9.0713583,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Burlet"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5322438233,
+      "lat": 47.0452954,
+      "lon": 9.0646567,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Cafeteria Kantonsspital",
+        "outdoor_seating": "yes",
+        "smoking": "no",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5339721939,
+      "lat": 47.0415137,
+      "lon": 9.074247,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Sonne"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5339721940,
+      "lat": 47.0380142,
+      "lon": 9.0767871,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Freieck"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5376612721,
+      "lat": 47.042095,
+      "lon": 9.0423945,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Schützenstube"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5383779362,
+      "lat": 46.9938969,
+      "lon": 9.0752113,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Boeuf Rouge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5384499035,
+      "lat": 46.9859743,
+      "lon": 9.0598449,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Bahnhöfli"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5440729984,
+      "lat": 46.9043778,
+      "lon": 8.9876237,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Gasthaus Hütten",
+        "website": "https://www.gasthaus-huetten.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5465490501,
+      "lat": 46.9927658,
+      "lon": 9.0731406,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Eidgenossen"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5465490508,
+      "lat": 46.9941508,
+      "lon": 9.0781724,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Müli",
+        "operator": "Glarnersteg",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5474289293,
+      "lat": 46.9590053,
+      "lon": 9.0359759,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Skistübli",
+        "opening_hours": "Nov-Apr",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5476662242,
+      "lat": 46.9953582,
+      "lon": 9.0762614,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Schwimmbad"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5487370440,
+      "lat": 47.0991847,
+      "lon": 9.0608011,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Drei Eidgenossen"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5547910123,
+      "lat": 47.0301196,
+      "lon": 9.0014626,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Kiosk",
+        "opening_hours:kitchen": "Mo-Th 11:30-15:00,17:00-19:00; Fr-Sa 11:30-15:00,17:00-20:00; Su 11:30-18:00",
+        "outdoor_seating": "yes",
+        "payment:cash": "only"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5567603266,
+      "lat": 47.0608772,
+      "lon": 9.0533696,
+      "tags": {
+        "addr:city": "Netstal",
+        "addr:housenumber": "1",
+        "addr:postcode": "8754",
+        "addr:street": "Landstrasse",
+        "amenity": "cafe",
+        "email": "cafewiggis@bluewin.ch",
+        "name": "Café Bar Wiggis",
+        "opening_hours": "Mo-Th 07:00-20:00; Fr 07:00-24:00; Sa 07:00-17:00",
+        "phone": "+41556406330",
+        "takeaway": "yes",
+        "website": "https://cafewiggis.wixsite.com/cafewiggis"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5567603269,
+      "lat": 47.0639723,
+      "lon": 9.0560674,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Schwert",
+        "phone": "+41 55 640 77 66",
+        "tourism": "hotel",
+        "website": "https://www.schwert-netstal.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5567603301,
+      "lat": 47.0632186,
+      "lon": 9.054742,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Raben"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5662596821,
+      "lat": 47.0986618,
+      "lon": 9.0608373,
+      "tags": {
+        "addr:postcode": "8752",
+        "amenity": "restaurant",
+        "cuisine": "burger",
+        "name": "Die Burgerei",
+        "opening_hours": "Mo-Sa 11:00-14:00, 17:00-22:00",
+        "phone": "+41556121303",
+        "website": "https://www.die-burgerei.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5706550095,
+      "lat": 47.0004822,
+      "lon": 9.0859321,
+      "tags": {
+        "addr:city": "Sool",
+        "addr:housenumber": "23",
+        "addr:postcode": "8762",
+        "addr:street": "Dorfstrasse",
+        "amenity": "restaurant",
+        "name": "Adler",
+        "phone": "+41556441232"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5710564928,
+      "lat": 47.045327,
+      "lon": 9.0639949,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "greek",
+        "name": "Taverna Thessaloniki",
+        "outdoor_seating": "yes",
+        "website": "https://www.tavernathessaloniki.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5722293839,
+      "lat": 47.1209886,
+      "lon": 9.1282235,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Kerenzerberg",
+        "opening_hours": "Mo-Su",
+        "opening_hours:kitchen": "Tu-Sa 08:00-23:00; Su 08:00-18:00",
+        "phone": "+41 55 614 66 66",
+        "tourism": "hotel",
+        "website": "https://www.szk.ch/hotel-restaurant/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5841895241,
+      "lat": 46.9847884,
+      "lon": 9.141571,
+      "tags": {
+        "amenity": "cafe"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6012769028,
+      "lat": 47.061994,
+      "lon": 9.0540849,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Sternen",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6514720291,
+      "lat": 46.9265913,
+      "lon": 8.9996102,
+      "tags": {
+        "amenity": "cafe",
+        "level": "0",
+        "name": "Linthpark Café",
+        "opening_hours": "Mo-Fr 07:30-12:00,14:00-18:30; Sa-Su closed; PH closed",
+        "outdoor_seating": "yes",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6732375585,
+      "lat": 47.1276396,
+      "lon": 9.0519888,
+      "tags": {
+        "addr:city": "Niederurnen",
+        "addr:country": "CH",
+        "addr:housenumber": "1",
+        "addr:place": "Schlössli",
+        "addr:postcode": "8867",
+        "addr:street": "Schlössli",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "email": "info@schloessli-niederurnen.ch",
+        "internet_access": "wlan",
+        "name": "Schlössli",
+        "opening_hours": "Th 14:00+; Fr 10:00+; Sa 10:00+; Su 10:00+",
+        "outdoor_seating": "yes",
+        "phone": "+41 55 610 30 60",
+        "website": "https://www.schloessli-niederurnen.ch/",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6732396685,
+      "lat": 47.0900465,
+      "lon": 9.074321,
+      "tags": {
+        "addr:housenumber": "36",
+        "addr:postcode": "8753",
+        "addr:street": "Vorderdorfstrasse",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Bären",
+        "phone": "+41 55 612 11 83",
+        "tourism": "hotel",
+        "website": "https://www.baeren-mollis.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6866394985,
+      "lat": 47.0385215,
+      "lon": 9.0697961,
+      "tags": {
+        "addr:housenumber": "5",
+        "addr:postcode": "8750",
+        "addr:street": "Allmeindstrasse",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "email": "info@kubli.gl",
+        "name": "Restaurant Kubli",
+        "opening_hours": "We-Fr 09:00-14:00, 17:30-23:00; Sa 11:00-14:00, 17:30-23:00; Su 11:00-21:00",
+        "phone": "+41 55 640 27 17",
+        "website": "https://www.kubli.gl/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6870842685,
+      "lat": 47.0605213,
+      "lon": 9.0531146,
+      "tags": {
+        "addr:city": "Netstal",
+        "addr:housenumber": "2",
+        "addr:postcode": "8754",
+        "addr:street": "Kreuzbühlstrasse",
+        "amenity": "restaurant",
+        "cuisine": "pizza",
+        "name": "Napulé",
+        "opening_hours": "Mo-Su 11:30-14:00,17:30-21:00",
+        "phone": "+41 55 650 12 46",
+        "website": "https://www.napule.ch/de/netstal"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7680731983,
+      "lat": 47.0637142,
+      "lon": 9.055141,
+      "tags": {
+        "addr:city": "Netstal",
+        "addr:housenumber": "26",
+        "addr:postcode": "8754",
+        "addr:street": "Landstrasse",
+        "amenity": "restaurant",
+        "name": "Bären",
+        "opening_hours": "Mo-Sa 08:30-24:00; We 08:30-17:00; Su 11:00-17:00",
+        "phone": "+41 55 640 15 60",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7741099107,
+      "lat": 46.9218729,
+      "lon": 9.0013057,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date": "2023-05-09",
+        "name": "Adler",
+        "tourism": "hotel",
+        "website": "https://www.adler-linthal.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7741344209,
+      "lat": 46.9194811,
+      "lon": 8.998769,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Hirschen"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7765244585,
+      "lat": 46.9866317,
+      "lon": 9.055025,
+      "tags": {
+        "addr:postcode": "8772",
+        "amenity": "restaurant",
+        "name": "Krone"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7812038634,
+      "lat": 46.9199314,
+      "lon": 9.1727177,
+      "tags": {
+        "addr:city": "Elm",
+        "addr:postcode": "8767",
+        "amenity": "restaurant",
+        "email": "info@suworow.ch",
+        "name": "Suworow-Cheller",
+        "opening_hours": "Tu-Th 16:00-01:00, Fr,Sa 16:00-02:00",
+        "phone": "+41 55 642 17 31",
+        "website": "https://suworow.ch/",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7812042129,
+      "lat": 46.9937699,
+      "lon": 9.0721207,
+      "tags": {
+        "addr:city": "Schwanden",
+        "addr:housenumber": "15",
+        "addr:postcode": "8762",
+        "addr:street": "Blumengasse",
+        "amenity": "restaurant",
+        "email": "ruth.langenegger@hotmail.ch",
+        "name": "Blume",
+        "phone": "+41 55 644 16 12",
+        "website": "https://www.restaurant-blume.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7812060884,
+      "lat": 46.9926646,
+      "lon": 9.0639209,
+      "tags": {
+        "addr:city": "Schwanden GL",
+        "addr:housenumber": "15",
+        "addr:postcode": "8762",
+        "addr:street": "Mattstrasse",
+        "amenity": "restaurant",
+        "name": "Wydeli",
+        "phone": "+41556441347"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7906003269,
+      "lat": 46.9670349,
+      "lon": 9.03691,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Freihof"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7960180263,
+      "lat": 46.9962958,
+      "lon": 9.0656623,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Raben"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7988968633,
+      "lat": 47.0061896,
+      "lon": 9.0650149,
+      "tags": {
+        "alt_name": "Krone",
+        "amenity": "restaurant",
+        "name": "Chrone",
+        "opening_hours": "Tu-Fr,Su 16:00-19:00",
+        "website": "http://www.chrone.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8109074884,
+      "lat": 46.9740238,
+      "lon": 9.1607972,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Gasthaus Sonne"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8143486541,
+      "lat": 46.9578151,
+      "lon": 9.1712605,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Gasthaus Elmer",
+        "opening_hours": "Mo-Su 20:00-23:00;We off",
+        "phone": "+41 55 642 59 59",
+        "tourism": "hotel",
+        "website": "https://gasthaus-elmer.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8143486640,
+      "lat": 46.9589124,
+      "lon": 9.171056,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Gasthaus Gemsberg"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8143486799,
+      "lat": 46.9592323,
+      "lon": 9.1723676,
+      "tags": {
+        "addr:city": "Matt",
+        "addr:housenumber": "23",
+        "addr:postcode": "8766",
+        "addr:street": "Alte Strasse",
+        "amenity": "restaurant",
+        "changing_table": "yes",
+        "contact:phone": "+41 55 642 50 13",
+        "contact:website": "https://www.haenge-matt.ch/",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "HängeMatt",
+        "outdoor_seating": "yes",
+        "tourism": "hostel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8294193695,
+      "lat": 46.9053761,
+      "lon": 9.1916051,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Tschinglen-Wirtschaft",
+        "website": "https://tschinglen-wirtschaft.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8319324722,
+      "lat": 46.9931825,
+      "lon": 9.0727306,
+      "tags": {
+        "amenity": "cafe",
+        "cuisine": "regional",
+        "internet_access": "yes",
+        "name": "Raben",
+        "opening_hours": "Mo-Su 09:00-21:00",
+        "opening_hours:covid19": "off",
+        "phone": "+41 55 644 10 93"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8358195907,
+      "lat": 46.9386,
+      "lon": 8.9902757,
+      "tags": {
+        "amenity": "cafe",
+        "takeaway": "only"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8439332317,
+      "lat": 47.0324573,
+      "lon": 9.0800099,
+      "tags": {
+        "addr:city": "Ennenda",
+        "addr:housenumber": "10",
+        "addr:postcode": "8755",
+        "addr:street": "Neue Wiese",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "diet:local": "yes",
+        "name": "Restaurant Central",
+        "opening_hours": "Th-Mo 11:00-22:00; Tu,We off",
+        "phone": "+41 55 640 25 55",
+        "website": "https://central-ennenda.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8719129147,
+      "lat": 47.0387861,
+      "lon": 9.0711439,
+      "tags": {
+        "amenity": "cafe",
+        "description": "Gemütliches Café im Park.",
+        "internet_access": "no",
+        "name": "GastroRollbar",
+        "outdoor_seating": "yes",
+        "website": "https://www.gastrorollbar.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8880675735,
+      "lat": 47.1464753,
+      "lon": 9.0230248,
+      "tags": {
+        "addr:housenumber": "31",
+        "addr:street": "Hauptstrasse",
+        "amenity": "restaurant",
+        "name": "Hirschen"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8901054970,
+      "lat": 47.153771,
+      "lon": 9.0239355,
+      "tags": {
+        "amenity": "cafe"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8914406214,
+      "lat": 47.1508909,
+      "lon": 9.0203843,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Hirzli"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8954666412,
+      "lat": 47.0957679,
+      "lon": 9.0777639,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Gasthaus zur Weid"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9001452424,
+      "lat": 47.104862,
+      "lon": 9.1141517,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Mittlere Nüenalp"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9010628789,
+      "lat": 47.0869863,
+      "lon": 9.1015112,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "Mullerä-Beizli",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9035472931,
+      "lat": 47.1209501,
+      "lon": 9.1316563,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Löwen"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9721348917,
+      "lat": 47.0983466,
+      "lon": 9.0631385,
+      "tags": {
+        "addr:postcode": "8752",
+        "amenity": "cafe",
+        "name": "Kafi Beuge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9864253762,
+      "lat": 46.8772761,
+      "lon": 8.9928071,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Baumgartenalp",
+        "outdoor_seating": "only"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10066475617,
+      "lat": 47.0327282,
+      "lon": 9.0798083,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Wiese"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10250704389,
+      "lat": 47.040507,
+      "lon": 9.0673775,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Namaste Coffeeshop",
+        "opening_hours": "We-Su 18:30-18:00+"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11165604406,
+      "lat": 47.0394546,
+      "lon": 9.0684602,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "italian",
+        "name": "bottega ventisei"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11291098516,
+      "lat": 47.0486635,
+      "lon": 9.0529652,
+      "tags": {
+        "addr:city": "Riedern",
+        "addr:housenumber": "18",
+        "addr:postcode": "8750",
+        "addr:street": "Hauptstrasse",
+        "amenity": "cafe",
+        "contact:email": "office@abeille-riedern.ch",
+        "name": "Abeille",
+        "phone": "+41 55 640 60 62",
+        "website": "https://abeille-riedern.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12066898296,
+      "lat": 46.9088979,
+      "lon": 8.9782876,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "barbecue"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12084984869,
+      "lat": 46.9592619,
+      "lon": 9.172258,
+      "tags": {
+        "addr:housenumber": "21",
+        "amenity": "cafe",
+        "cuisine": "regional",
+        "name": "Café (Selbstbedienung)",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12187673557,
+      "lat": 47.0398147,
+      "lon": 9.0677928,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Sommerbistro Rathausplatz",
+        "opening_hours": "Montag bis Sonntag: 14.00 - 23.00 Uhr Nur bei schönem Wetter geöffnet. Bis 1. September 2024."
+      }
+    },
+    {
+      "type": "node",
+      "id": 12194022263,
+      "lat": 47.0393829,
+      "lon": 9.0685356,
+      "tags": {
+        "addr:city": "Glarus",
+        "addr:housenumber": "24",
+        "addr:postcode": "8750",
+        "addr:street": "Hauptstrasse",
+        "amenity": "fast_food",
+        "cuisine": "kebab;pide;pizza;barbecue",
+        "email": "duskiimbiss@gmail.com",
+        "name": "Duski Imbiss",
+        "operator": "Alend Duski",
+        "phone": "+41 55 640 19 19",
+        "website": "https://www.duski-imbiss-glarus.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12243488345,
+      "lat": 47.0665785,
+      "lon": 9.0586969,
+      "tags": {
+        "addr:city": "Netstal",
+        "addr:postcode": "8754",
+        "amenity": "fast_food",
+        "brand": "Burger King",
+        "brand:wikidata": "Q177054",
+        "breakfast": "no",
+        "cuisine": "burger",
+        "delivery": "no",
+        "drive_through": "yes",
+        "kids_area": "no",
+        "name": "Burger King",
+        "opening_hours:drive_through": "Mo-Su 11:00-23:00",
+        "operator": "Marche Restaurants Schweiz AG",
+        "phone": "+41 55 254 01 95",
+        "takeaway": "yes",
+        "website": "https://www.burger-king.ch/store-locator/store/restaurant_240436"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12569079834,
+      "lat": 47.1015927,
+      "lon": 9.0627085,
+      "tags": {
+        "addr:city": "Näfels",
+        "addr:housenumber": "27",
+        "addr:postcode": "8752",
+        "addr:street": "Unterdorf",
+        "amenity": "restaurant",
+        "cuisine": "turkish;pizza;kebab",
+        "name": "Orange Kebap Näfels",
+        "opening_hours": "Su-Th 09:00-24:00; Fr-Sa 09:00-01:00",
+        "phone": "+41 55 612 32 00",
+        "website": "https://orangekebap.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12872351258,
+      "lat": 47.1378966,
+      "lon": 9.0507282,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Marche",
+        "opening_hours": "06:00-23:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12883017592,
+      "lat": 47.0267816,
+      "lon": 8.9465484,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Stefans Wander Zirkus"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12883074482,
+      "lat": 47.0413779,
+      "lon": 9.0633531,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Gärtli Glarus"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12888776066,
+      "lat": 47.1138537,
+      "lon": 9.0587673,
+      "tags": {
+        "addr:city": "Oberurnen",
+        "addr:housenumber": "11",
+        "addr:postcode": "8868",
+        "addr:street": "Adlerstrasse",
+        "amenity": "restaurant",
+        "cuisine": "kebab;pizza;schnitzel;turkish",
+        "name": "Restaurant Schnipo",
+        "phone": "0556155000"
+      }
+    }
+  ]
+}
