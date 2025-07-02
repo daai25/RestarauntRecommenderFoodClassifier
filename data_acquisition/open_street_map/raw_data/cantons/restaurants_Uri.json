@@ -1,0 +1,2259 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.7 375dc00a",
+  "osm3s": {
+    "timestamp_osm_base": "2025-07-01T21:07:45Z",
+    "timestamp_areas_base": "2025-06-25T21:32:45Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+    {
+      "type": "node",
+      "id": 24977789,
+      "lat": 46.7745393,
+      "lon": 8.6436726,
+      "tags": {
+        "addr:city": "Intschi",
+        "addr:postcode": "6476",
+        "addr:street": "Gotthardstrasse",
+        "amenity": "restaurant",
+        "name": "Arnisee",
+        "phone": "+41 41 883 03 42"
+      }
+    },
+    {
+      "type": "node",
+      "id": 24977794,
+      "lat": 46.8810098,
+      "lon": 8.6450032,
+      "tags": {
+        "addr:city": "Altdorf UR",
+        "addr:housenumber": "18",
+        "addr:place": "Lehnplatz",
+        "addr:postcode": "6460",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "diet:vegan": "no",
+        "diet:vegetarian": "yes",
+        "name": "Lehnhof",
+        "opening_hours": "Tu-Th 11:00-14:00,17:00-24:00; Fr 11:00-14:00,16:00-02:00; Sa 11:00-02:00",
+        "toilets:wheelchair": "yes",
+        "wheelchair": "limited",
+        "wheelchair:description": "Eingang in das Speiselokal via Hellgasse."
+      }
+    },
+    {
+      "type": "node",
+      "id": 24977799,
+      "lat": 46.9078166,
+      "lon": 8.6244846,
+      "tags": {
+        "addr:city": "Flüelen",
+        "addr:housenumber": "7",
+        "addr:postcode": "6454",
+        "addr:street": "Seestrasse",
+        "amenity": "restaurant",
+        "check_date": "2022-05-07",
+        "diet:vegetarian": "yes",
+        "name": "Apertura",
+        "outdoor_seating": "yes",
+        "phone": "+41 41 870 16 80"
+      }
+    },
+    {
+      "type": "node",
+      "id": 26054765,
+      "lat": 46.8826227,
+      "lon": 8.6411012,
+      "tags": {
+        "addr:city": "Altdorf UR",
+        "addr:housenumber": "27",
+        "addr:postcode": "6460",
+        "addr:street": "Tellsgasse",
+        "amenity": "restaurant",
+        "diet:vegetarian": "yes",
+        "name": "Wilhelm Tell",
+        "opening_hours": "Mo-Su 10:00-24:00",
+        "website": "https://www.pizzeriatell.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 283280945,
+      "lat": 46.7819915,
+      "lon": 8.7721605,
+      "tags": {
+        "addr:city": "Bristen",
+        "addr:postcode": "6475",
+        "addr:street": "Balmenegg",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Hotel Maderanertal",
+        "opening_hours": "Jun-Sep",
+        "phone": "+41 8831122",
+        "tourism": "hotel",
+        "website": "http://www.hotel-maderanertal.ch",
+        "wikidata": "Q56274576"
+      }
+    },
+    {
+      "type": "node",
+      "id": 294260607,
+      "lat": 46.6327347,
+      "lon": 8.5945047,
+      "tags": {
+        "amenity": "restaurant",
+        "diet:vegetarian": "yes",
+        "name": "Bären restaurant & rooms",
+        "opening_hours": "Tu-Sa 18:00-21:00+",
+        "tourism": "hotel",
+        "website": "https://www.baeren-andermatt.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 294260609,
+      "lat": 46.6330273,
+      "lon": 8.5950508,
+      "tags": {
+        "addr:housenumber": "76",
+        "addr:postcode": "6490",
+        "addr:street": "Gotthardstrasse",
+        "amenity": "restaurant",
+        "check_date:opening_hours": "2023-03-19",
+        "cuisine": "regional",
+        "delivery": "no",
+        "diet:vegetarian": "yes",
+        "name": "Hotel zur Sonne",
+        "opening_hours:signed": "no",
+        "phone": "+41 41 887 1226",
+        "takeaway": "no",
+        "tourism": "hotel",
+        "website": "https://hotelsonneandermatt.ch/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 294260622,
+      "lat": 46.6331592,
+      "lon": 8.595529,
+      "tags": {
+        "addr:city": "Andermatt",
+        "addr:housenumber": "72",
+        "addr:postcode": "6490",
+        "addr:street": "Gotthardstrasse",
+        "amenity": "restaurant",
+        "check_date:opening_hours": "2024-03-02",
+        "diet:vegetarian": "yes",
+        "name": "Gasthaus Ochsen",
+        "opening_hours:signed": "no",
+        "website": "http://www.andermatt-ochsen.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 294260629,
+      "lat": 46.6332576,
+      "lon": 8.5965408,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date:opening_hours": "2024-03-03",
+        "diet:vegetarian": "yes",
+        "name": "Toutoune",
+        "opening_hours:signed": "no",
+        "website": "https://www.restaurant-toutoune.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 294260803,
+      "lat": 46.6341407,
+      "lon": 8.5977482,
+      "tags": {
+        "addr:city": "Andermatt",
+        "amenity": "restaurant",
+        "check_date:opening_hours": "2024-03-04",
+        "cuisine": "regional",
+        "diet:vegetarian": "yes",
+        "name": "Gasthaus zum Sternen",
+        "opening_hours:signed": "no",
+        "outdoor_seating": "terrace",
+        "phone": "+41 (0) 41 887 11 30",
+        "toilets:wheelchair": "no",
+        "tourism": "hotel",
+        "website": "https://www.gasthaussternen.com/",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 294260804,
+      "lat": 46.6341688,
+      "lon": 8.5976018,
+      "tags": {
+        "addr:city": "Andermatt",
+        "addr:housenumber": "65",
+        "addr:postcode": "6490",
+        "addr:street": "Gotthardstrasse",
+        "amenity": "restaurant",
+        "capacity": "50",
+        "check_date": "2025-03-07",
+        "cuisine": "pizza",
+        "diet:vegetarian": "yes",
+        "name": "Spycher",
+        "opening_hours": "Mo-Su 09:00-18:00+",
+        "smoking": "outside",
+        "takeaway": "yes",
+        "website": "https://spycher-andermatt.ch/www/index.php/de/restaurant-spycher"
+      }
+    },
+    {
+      "type": "node",
+      "id": 340803696,
+      "lat": 46.6708488,
+      "lon": 8.561143,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Regliberg"
+      }
+    },
+    {
+      "type": "node",
+      "id": 414572686,
+      "lat": 46.7697602,
+      "lon": 8.7328582,
+      "tags": {
+        "addr:city": "Bristen",
+        "addr:postcode": "6475",
+        "addr:street": "Legni",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Legni",
+        "phone": "+41 79 241 50 81"
+      }
+    },
+    {
+      "type": "node",
+      "id": 452940825,
+      "lat": 46.6362246,
+      "lon": 8.5955398,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date:opening_hours": "2024-03-03",
+        "cuisine": "italian;regional",
+        "diet:vegetarian": "yes",
+        "name": "Badus",
+        "opening_hours:signed": "no",
+        "operator": "Christine und Walter Danioth",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "phone": "+41 41 887 12 86",
+        "stars": "2",
+        "tourism": "hotel",
+        "website": "https://www.hotelbadus.ch/",
+        "wikidata": "Q112014101"
+      }
+    },
+    {
+      "type": "node",
+      "id": 473085842,
+      "lat": 46.6369015,
+      "lon": 8.59375,
+      "tags": {
+        "amenity": "restaurant",
+        "delivery": "no",
+        "diet:vegan": "no",
+        "diet:vegetarian": "yes",
+        "name": "Bahnhof Buffet",
+        "opening_hours": "Mo-Su 06:00-19:00",
+        "outdoor_seating": "yes",
+        "smoking": "outside"
+      }
+    },
+    {
+      "type": "node",
+      "id": 495949814,
+      "lat": 46.9831235,
+      "lon": 8.5783293,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Restaurant Volligen"
+      }
+    },
+    {
+      "type": "node",
+      "id": 538128049,
+      "lat": 46.9131547,
+      "lon": 8.6229599,
+      "tags": {
+        "addr:city": "Flüelen",
+        "addr:housenumber": "82",
+        "addr:postcode": "6454",
+        "addr:street": "Axenstrasse",
+        "amenity": "restaurant",
+        "cuisine": "swiss",
+        "name": "Edelweiss",
+        "opening_hours": "Mo,Th-Sa 09:30-14:00,17:00-23:00; Su 09:30-20:00",
+        "url": "https://restaurant-grillhouse.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 610419113,
+      "lat": 46.618011,
+      "lon": 8.5986757,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date": "2024-03-23",
+        "cuisine": "regional",
+        "name": "Restaurant Gurschenalp",
+        "opening_hours": "09:00-17:00 \"saisonal\"",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 619535566,
+      "lat": 46.7695426,
+      "lon": 8.6710989,
+      "tags": {
+        "addr:city": "Amsteg",
+        "addr:housenumber": "88",
+        "addr:postcode": "6474",
+        "addr:street": "Gotthardstrasse",
+        "amenity": "restaurant",
+        "name": "Stern Post",
+        "opening_hours": "Th-Su 12:00-14:00,18:00-22:00",
+        "phone": "+41 41 884 01 01",
+        "tourism": "hotel",
+        "website": "https://www.stern-post.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 619535567,
+      "lat": 46.7695182,
+      "lon": 8.6717414,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Hirschen"
+      }
+    },
+    {
+      "type": "node",
+      "id": 620914480,
+      "lat": 46.8883825,
+      "lon": 8.6034376,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date:opening_hours": "2021-07-25",
+        "name": "Seerestaurant",
+        "opening_hours": "Mar: 09:00-18:00; Apr-Sep: 09:00-22:00; Oct: 09:00-18:00; Nov-Feb: off",
+        "phone": "+41 41 870 72 72",
+        "self_service": "yes",
+        "website": "https://www.seerestaurant-seedorf.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 631879633,
+      "lat": 46.8865652,
+      "lon": 8.606372,
+      "tags": {
+        "addr:city": "Seedorf UR",
+        "addr:housenumber": "50",
+        "addr:postcode": "6462",
+        "addr:street": "A Pro-Strasse",
+        "amenity": "restaurant",
+        "check_date": "2023-05-21",
+        "cuisine": "regional",
+        "name": "A Pro Schlossrestaurant",
+        "opening_hours": "Mo-We off; Th 11:30-14:30, 18:00-23:00; Fr, Sa 11:30-14:30, 18:00-23:30; Su 11:30-16:00",
+        "phone": "+41 41 870 65 32",
+        "website": "https://www.schlossapro.ch/restaurant/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 771426010,
+      "lat": 46.9149994,
+      "lon": 8.6230492,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "burger",
+        "diet:vegetarian": "no",
+        "name": "Imbiss Camping Fluelen",
+        "opening_hours": "Apr-Oct 08:00-22:00",
+        "operator": "Florian Jauch",
+        "snack": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 775540479,
+      "lat": 46.8931276,
+      "lon": 8.910129,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Klause Ranch",
+        "tourism": "hotel",
+        "url": "http://www.klause-ranch.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 841025053,
+      "lat": 46.7617095,
+      "lon": 8.5967914,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Flüeliblüemli",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 841956162,
+      "lat": 46.5914295,
+      "lon": 8.5610677,
+      "tags": {
+        "addr:city": "Hospental",
+        "addr:postcode": "6493",
+        "addr:street": "Gotthardstrasse",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Mätteli",
+        "phone": "+41 79 763 78 19"
+      }
+    },
+    {
+      "type": "node",
+      "id": 842190418,
+      "lat": 46.6470907,
+      "lon": 8.5910497,
+      "tags": {
+        "amenity": "restaurant",
+        "mapillary": "jkSTkHY8BUp0afk5LPM62w",
+        "name": "Teufelsbrücke",
+        "name:ru": "ресторан \"Суворов\""
+      }
+    },
+    {
+      "type": "node",
+      "id": 901461628,
+      "lat": 46.6340095,
+      "lon": 8.5972641,
+      "tags": {
+        "addr:city": "Andermatt",
+        "amenity": "restaurant",
+        "contact:facebook": "https://www.facebook.com/postillionandermatt",
+        "diet:vegetarian": "yes",
+        "name": "Postillon",
+        "opening_hours": "Tu-Sa 17:00-22:00+",
+        "phone": "+41 41 887 10 44"
+      }
+    },
+    {
+      "type": "node",
+      "id": 901461632,
+      "lat": 46.6346999,
+      "lon": 8.5965751,
+      "tags": {
+        "addr:housenumber": "49",
+        "addr:street": "Gotthardstrasse",
+        "amenity": "cafe",
+        "diet:vegetarian": "yes",
+        "name": "Café Oberalp",
+        "opening_hours": "Mo-Sa 07:00-17:00; Su 08:00-18:00",
+        "website": "https://hauger.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 901461635,
+      "lat": 46.6336947,
+      "lon": 8.5973797,
+      "tags": {
+        "amenity": "cafe",
+        "diet:vegetarian": "yes",
+        "name": "Di alt Apothek",
+        "opening_hours": "We-Mo 16:00-18:00+",
+        "website": "https://theriverhouse.ch/hotel/bar"
+      }
+    },
+    {
+      "type": "node",
+      "id": 901461662,
+      "lat": 46.6329487,
+      "lon": 8.595232,
+      "tags": {
+        "amenity": "cafe",
+        "check_date:opening_hours": "2024-03-04",
+        "diet:vegetarian": "yes",
+        "name": "Kunstcafe Malstudio Boutique",
+        "opening_hours:signed": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1031134858,
+      "lat": 46.8267,
+      "lon": 8.648344,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Hotel Albert",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1219477600,
+      "lat": 46.8769901,
+      "lon": 8.6780831,
+      "tags": {
+        "addr:street": "Klausenstrasse",
+        "amenity": "restaurant",
+        "name": "Kinzigpass",
+        "phone": "+41 41 870 14 02",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1219477690,
+      "lat": 46.8811558,
+      "lon": 8.6453689,
+      "tags": {
+        "amenity": "restaurant",
+        "diet:vegetarian": "yes",
+        "name": "Schützenmatt",
+        "opening_hours": "We-Sa 10:00-24:00, Su 10:00-22:00",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1457531549,
+      "lat": 46.5762312,
+      "lon": 8.421695,
+      "tags": {
+        "amenity": "restaurant",
+        "contact:email": "info@furkablick.ch",
+        "contact:phone": "+41 77 503 36 30",
+        "contact:website": "https://www.furkablick.ch/",
+        "name": "Restaurant Furkablick",
+        "note": "open in summer",
+        "opening_hours": "09:00-17:30; Tu 11:30-17:30; Fr,Sa 09:00-22:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1549483995,
+      "lat": 46.7695141,
+      "lon": 8.6420963,
+      "tags": {
+        "addr:city": "Intschi",
+        "addr:postcode": "6476",
+        "addr:street": "Gotthardstrasse",
+        "amenity": "restaurant",
+        "cuisine": "local",
+        "internet_access": "wlan",
+        "name": "Gasthaus Alpenblick",
+        "name:de": "Berggasthaus Alpenblick",
+        "name:en": "Berggasthaus Alpenblick",
+        "name:fr": "Berggasthaus Alpenblick",
+        "opening_hours": "Mo-Su 08:00-22:00",
+        "phone": "+41 41 883 03 42",
+        "website": "https://www.berggasthaus-alpenblick.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1869057518,
+      "lat": 46.8819626,
+      "lon": 8.6444008,
+      "tags": {
+        "addr:city": "Altdorf UR",
+        "addr:housenumber": "7",
+        "addr:place": "Rathausplatz",
+        "addr:postcode": "6460",
+        "amenity": "restaurant",
+        "check_date": "2024-04-07",
+        "check_date:opening_hours": "2024-04-07",
+        "cuisine": "argentinian",
+        "delivery": "no",
+        "diet:vegetarian": "yes",
+        "name": "central",
+        "opening_hours": "Mo-Fr 06:30-18:30; Sa,Su 07:30-18:00",
+        "outdoor_seating": "yes",
+        "smoking": "outside",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1927890014,
+      "lat": 46.9028713,
+      "lon": 8.6238826,
+      "tags": {
+        "addr:city": "Flüelen",
+        "addr:housenumber": "2",
+        "addr:postcode": "6454",
+        "addr:street": "Bahnhofstrasse",
+        "amenity": "fast_food",
+        "name": "Bistro Hafen Garten Flüelen",
+        "opening_hours": "May, Jun, Sep Su-Th 09:00-20:00; Fr, Sa 09:00-22:30; Jul, Aug Mo-Su 09:00-22:30",
+        "toilets:wheelchair": "no",
+        "website": "https://www.tavolago.ch/",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1927890017,
+      "lat": 46.9021183,
+      "lon": 8.6258752,
+      "tags": {
+        "addr:city": "Flüelen",
+        "addr:housenumber": "15",
+        "addr:postcode": "6454",
+        "addr:street": "Dorfstrasse",
+        "amenity": "restaurant",
+        "check_date": "2016-09-08",
+        "name": "Linde",
+        "phone": "+41 78 915 68 50"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1927890020,
+      "lat": 46.9027151,
+      "lon": 8.6257075,
+      "tags": {
+        "addr:city": "Flüelen",
+        "addr:housenumber": "5",
+        "addr:postcode": "6454",
+        "addr:street": "Dorfstrasse",
+        "amenity": "restaurant",
+        "check_date": "2022-05-07",
+        "diet:vegetarian": "yes",
+        "name": "Anker",
+        "opening_hours": "Tu-Sa 19:00+",
+        "outdoor_seating": "yes",
+        "phone": "+41 41 871 30 30",
+        "reservation": "recommended",
+        "website": "https://deranker.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1927890173,
+      "lat": 46.9006215,
+      "lon": 8.6254989,
+      "tags": {
+        "addr:city": "Flüelen",
+        "addr:housenumber": "42",
+        "addr:postcode": "6454",
+        "addr:street": "Dorfstrasse",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Schützenstube",
+        "opening_hours": "Mo-Su 09:00-00:00",
+        "phone": "+41 41 870 12 57"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1927890175,
+      "lat": 46.9034875,
+      "lon": 8.6253046,
+      "tags": {
+        "addr:city": "Flüelen",
+        "addr:housenumber": "4",
+        "addr:postcode": "6454",
+        "addr:street": "Axenstrasse",
+        "amenity": "restaurant",
+        "cuisine": "chinese",
+        "name": "Asia Garden Urnerhof",
+        "opening_hours": "Mo-Fr 11:30-14:00,17:00-22:00; We off; Sa 16:00-22:00; Su 11:30-22:00",
+        "phone": "+41 41 871 26 26",
+        "website": "https://www.asiagardenurnerhof.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2417850672,
+      "lat": 46.8813742,
+      "lon": 8.6439279,
+      "tags": {
+        "addr:city": "Altdorf UR",
+        "addr:housenumber": "3",
+        "addr:postcode": "6460",
+        "addr:street": "Schmiedgasse",
+        "amenity": "cafe",
+        "delivery": "no",
+        "diet:vegetarian": "yes",
+        "name": "Cafe Danioth",
+        "opening_hours": "Mo-Su 07:30-22:00",
+        "outdoor_seating": "yes",
+        "smoking": "outside",
+        "website": "https://www.danioth.ch/",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2512557631,
+      "lat": 46.8753159,
+      "lon": 8.8013777,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Alpbeizli",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2914610942,
+      "lat": 46.8732485,
+      "lon": 8.8979068,
+      "tags": {
+        "addr:postcode": "8751",
+        "amenity": "restaurant",
+        "name": "Gemsfairenhüttli"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2972683714,
+      "lat": 46.6186256,
+      "lon": 8.5674031,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Speiserestaurant zum Turm"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3089298982,
+      "lat": 46.9487648,
+      "lon": 8.622043,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Hotel Restaurant Eden",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3089298983,
+      "lat": 46.9495729,
+      "lon": 8.6222469,
+      "tags": {
+        "addr:city": "Sisikon",
+        "addr:housenumber": "1",
+        "addr:postcode": "6452",
+        "addr:street": "Axenstrasse",
+        "amenity": "restaurant",
+        "contact:fax": "+41 41 820 26 55",
+        "contact:phone": "+41 41 820 26 55",
+        "cuisine": "italian",
+        "currency:XBT": "yes",
+        "name": "Ristorante Pizzeria Laterne",
+        "opening_hours": "We-Sa 10:00-23:00; Tu 11:00-23:00; Su 10:00-22:00",
+        "outdoor_seating": "yes",
+        "payment:contactless": "yes",
+        "payment:lightning": "yes",
+        "payment:onchain": "yes",
+        "survey:date": "2024-03-07",
+        "website": "https://laternesisikon.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3089298997,
+      "lat": 46.9499213,
+      "lon": 8.6218601,
+      "tags": {
+        "addr:city": "Sisikon",
+        "addr:housenumber": "6",
+        "addr:postcode": "6452",
+        "addr:street": "Axenstrasse",
+        "amenity": "restaurant",
+        "contact:email": "info@sternen-sisikon.ch",
+        "contact:phone": "+41 41 820 17 04",
+        "contact:website": "http://www.sternen-sisikon.ch",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Hotel Restaurant Sternen",
+        "stars": "2",
+        "toilets:wheelchair": "no",
+        "tourism": "hotel",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3784153201,
+      "lat": 46.8211658,
+      "lon": 8.6505422,
+      "tags": {
+        "addr:city": "Erstfeld",
+        "addr:housenumber": "102",
+        "addr:postcode": "6472",
+        "addr:street": "Gotthardstrasse",
+        "amenity": "restaurant",
+        "diet:vegetarian": "yes",
+        "name": "Restaurant La Chica",
+        "phone": "+41 41 880 25 51",
+        "website": "http://www.lachica.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3784158249,
+      "lat": 46.8203502,
+      "lon": 8.650951,
+      "tags": {
+        "addr:city": "Erstfeld",
+        "addr:housenumber": "92",
+        "addr:postcode": "6472",
+        "addr:street": "Gotthardstrasse",
+        "amenity": "restaurant",
+        "diet:vegetarian": "yes",
+        "name": "Hirschen",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3784158250,
+      "lat": 46.8206187,
+      "lon": 8.6507246,
+      "tags": {
+        "addr:city": "Erstfeld",
+        "addr:housenumber": "96",
+        "addr:postcode": "6472",
+        "addr:street": "Gotthardstrasse",
+        "amenity": "restaurant",
+        "indoor_seating": "yes",
+        "name": "Adelheid",
+        "opening_hours": "Tu-Fr 07:30-17:30; Sa,Su 07:30-12:00",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3784158252,
+      "lat": 46.820312,
+      "lon": 8.6512143,
+      "tags": {
+        "addr:city": "Erstfeld",
+        "addr:housenumber": "90",
+        "addr:postcode": "6472",
+        "addr:street": "Gotthardstrasse",
+        "amenity": "fast_food",
+        "cuisine": "kebab;pizza",
+        "internet_access": "wlan",
+        "name": "Buffalo Foodland",
+        "opening_hours": "Mo-Th 10:30-22:00; Fr, Sa 10:30-23:00; Su,PH 11:30-22:00",
+        "outdoor_seating": "yes",
+        "payment:apple_pay": "yes",
+        "payment:cash": "yes",
+        "payment:girocard": "yes",
+        "payment:maestro": "yes",
+        "payment:mastercard": "yes",
+        "payment:visa": "yes",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3784184396,
+      "lat": 46.8255659,
+      "lon": 8.6496592,
+      "tags": {
+        "addr:city": "Erstfeld",
+        "addr:housenumber": "150",
+        "addr:postcode": "6472",
+        "addr:street": "Gotthardstrasse",
+        "amenity": "restaurant",
+        "name": "Krone",
+        "phone": "+41 41 880 13 02",
+        "website": "https://www.krone-erstfeld.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3791465100,
+      "lat": 46.8923903,
+      "lon": 8.6286095,
+      "tags": {
+        "addr:city": "Altdorf UR",
+        "addr:housenumber": "104",
+        "addr:postcode": "6460",
+        "addr:street": "Flüelerstrasse",
+        "amenity": "restaurant",
+        "cuisine": "italian",
+        "diet:vegetarian": "yes",
+        "email": "info@da-sergio.ch",
+        "fax": "+41 41 871 02 55",
+        "internet_access": "no",
+        "name": "Ristorante Pizzeria da Sergio",
+        "opening_hours": "Tu-Th 11:00-23:00, Fr-Sa 11:00-23:30, Su 11:00-21:30",
+        "outdoor_seating": "yes",
+        "phone": "+41 41 870 58 26",
+        "smoking": "no",
+        "toilets:wheelchair": "yes",
+        "website": "https://www.da-sergio.ch/",
+        "wheelchair": "yes",
+        "wheelchair:description": "Toilette ist nur bedingt rollstuhlgerecht"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3974395809,
+      "lat": 46.6361042,
+      "lon": 8.5945125,
+      "tags": {
+        "addr:city": "Andermatt",
+        "addr:country": "CH",
+        "addr:housenumber": "4",
+        "addr:postcode": "6490",
+        "addr:street": "Gotthardstrasse",
+        "amenity": "restaurant",
+        "check_date": "2025-03-07",
+        "contact:email": "info@chediandermatt.com",
+        "contact:fax": "+41 41 888 74 99",
+        "contact:phone": "+41 41 888 74 88",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "The Chedi Andermatt",
+        "operator": "GHM Hotels",
+        "phone": "+41 41 888 74 88",
+        "rooms": "123",
+        "stars": "4",
+        "tourism": "hotel",
+        "website": "https://www.thechediandermatt.com/de",
+        "website:operator": "https://www.ghmhotels.com/en/andermatt/",
+        "wheelchair": "yes",
+        "wikidata": "Q55504450"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4034107095,
+      "lat": 46.6341387,
+      "lon": 8.5838165,
+      "tags": {
+        "amenity": "restaurant",
+        "diet:vegetarian": "yes",
+        "name": "The Club House",
+        "opening_hours:signed": "no",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4244701445,
+      "lat": 46.6657337,
+      "lon": 8.5887469,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "Bistro"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4353980276,
+      "lat": 46.7235274,
+      "lon": 8.5560185,
+      "tags": {
+        "amenity": "cafe",
+        "name": "im Dörfli"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4555851890,
+      "lat": 46.8799903,
+      "lon": 8.6432547,
+      "tags": {
+        "addr:city": "Altdorf UR",
+        "addr:housenumber": "4a",
+        "addr:postcode": "6460",
+        "addr:street": "Gotthardstrasse",
+        "amenity": "cafe",
+        "contact:phone": "+41 41 871 13 50",
+        "contact:website": "http://kafe.grüneshaus.ch",
+        "cuisine": "regional",
+        "internet_access": "wlan",
+        "name": "Kafe im griänä Hüüs",
+        "opening_hours": "We-Sa 08:30-18:00",
+        "operator": "Begägnig im griänä Hüüs",
+        "outdoor_seating": "yes",
+        "smoking": "no",
+        "toilets:wheelchair": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4581532265,
+      "lat": 46.882142,
+      "lon": 8.6449093,
+      "tags": {
+        "addr:city": "Altdorf UR",
+        "addr:housenumber": "4",
+        "addr:postcode": "6460",
+        "addr:street": "Marktgasse",
+        "amenity": "restaurant",
+        "name": "Coconut Restaurant + Bar",
+        "opening_hours": "24/7 off"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4639861818,
+      "lat": 46.8820413,
+      "lon": 8.6431991,
+      "tags": {
+        "addr:city": "Altdorf UR",
+        "addr:housenumber": "6",
+        "addr:postcode": "6460",
+        "addr:street": "Tellsgasse",
+        "amenity": "restaurant",
+        "diet:vegetarian": "no",
+        "name": "Tellenbräu",
+        "opening_hours": "Tu-Sa 09:00-23:30",
+        "phone": "+41 41 870 10 49",
+        "website": "https://www.tellenbrau.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4822616163,
+      "lat": 46.8209372,
+      "lon": 8.6501905,
+      "tags": {
+        "addr:city": "Erstfeld",
+        "addr:country": "CH",
+        "addr:housenumber": "97",
+        "addr:postcode": "6472",
+        "addr:street": "Gotthardstrasse",
+        "amenity": "restaurant",
+        "name": "SBB Restaurant Erstfeld"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5062111349,
+      "lat": 46.8102263,
+      "lon": 8.7089147,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "Seewlialp"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5140206122,
+      "lat": 46.8778571,
+      "lon": 8.6462735,
+      "tags": {
+        "addr:city": "Altdorf UR",
+        "addr:housenumber": "27",
+        "addr:postcode": "6460",
+        "addr:street": "Dätwylerstrasse",
+        "amenity": "cafe",
+        "email": "info@uristier-altdorf.ch",
+        "name": "zum schwarzen Uristier",
+        "opening_hours": "Mo-Fr 08:00-16:00",
+        "operator": "ABC-Event und Catering AG",
+        "phone": "+41418704747",
+        "website": "https://www.uristier-altdorf.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5140223421,
+      "lat": 46.8777496,
+      "lon": 8.6462612,
+      "tags": {
+        "addr:city": "Altdorf UR",
+        "addr:housenumber": "27",
+        "addr:postcode": "6460",
+        "addr:street": "Dätwylerstrasse",
+        "amenity": "restaurant",
+        "email": "info@uristier-altdorf.ch",
+        "name": "zum schwarzen Uristier",
+        "opening_hours": "Mo-Fr 08:00-16:00",
+        "operator": "ABC-Event und Catering AG",
+        "phone": "+41418704747",
+        "website": "https://www.uristier-altdorf.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5353086215,
+      "lat": 46.6428097,
+      "lon": 8.6069089,
+      "tags": {
+        "amenity": "restaurant",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Familienrestaurant Matti"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5437937166,
+      "lat": 46.9173764,
+      "lon": 8.6244402,
+      "tags": {
+        "addr:city": "Flüelen",
+        "addr:housenumber": "90",
+        "addr:postcode": "6454",
+        "addr:street": "Axenstrasse",
+        "amenity": "restaurant",
+        "name": "Gasthaus Tourist",
+        "phone": "+41 41 874 00 50",
+        "tourism": "hotel",
+        "website": "www.hotel-tourist.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5437947527,
+      "lat": 46.9035815,
+      "lon": 8.6255708,
+      "tags": {
+        "addr:city": "Flüelen",
+        "addr:housenumber": "6",
+        "addr:postcode": "6454",
+        "addr:street": "Axenstrasse",
+        "amenity": "restaurant",
+        "name": "Hostellerie Sternen",
+        "stars": "3",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5534492951,
+      "lat": 46.8649712,
+      "lon": 8.6365105,
+      "tags": {
+        "amenity": "restaurant",
+        "diet:vegetarian": "yes",
+        "name": "Neuland",
+        "opening_hours": "Mo-Fr 08:00-15:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5980972888,
+      "lat": 46.9039935,
+      "lon": 8.6256546,
+      "tags": {
+        "addr:city": "Flüelen",
+        "addr:housenumber": "14",
+        "addr:postcode": "6454",
+        "addr:street": "Axenstrasse",
+        "amenity": "restaurant",
+        "cuisine": "italian",
+        "name": "Gotthard Pizzakurier & Restaurant",
+        "opening_hours": "Mo 11:00-13:30,17:00-21:30; Tu11:00-13:30,17:00-21:30; We 11:00-13:30,17:00-21:30; Th 10:45-13:30,16:45-21:30; Fr 10:45-13:30,16:45-21:45; Sa 10:45-21:45; Su 10:45-21:30",
+        "phone": "+41 41 870 70 90",
+        "takeaway": "yes",
+        "website": "https://www.gotthard-pizzakurier-restaurant.ch/colofon"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6080653640,
+      "lat": 46.883993,
+      "lon": 8.6375593,
+      "tags": {
+        "addr:city": "Altdorf UR",
+        "addr:housenumber": "3",
+        "addr:postcode": "6460",
+        "addr:street": "Spitalplatz",
+        "amenity": "cafe",
+        "name": "Lehnbeck",
+        "opening_hours": "Mo-Fr 06:00-12:00; Sa,Su 07:00-12:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6186959209,
+      "lat": 46.6355133,
+      "lon": 8.6016527,
+      "tags": {
+        "addr:city": "Andermatt",
+        "addr:housenumber": "61",
+        "addr:postcode": "6490",
+        "addr:street": "Oberalpstrasse",
+        "amenity": "restaurant",
+        "cuisine": "italian",
+        "diet:vegetarian": "yes",
+        "name": "Restaurant Chuchichästli",
+        "opening_hours:signed": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6404589849,
+      "lat": 46.843138,
+      "lon": 8.6072555,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Berggasthaus Brüsti",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6433834986,
+      "lat": 46.8754307,
+      "lon": 8.6627036,
+      "tags": {
+        "addr:city": "Bürglen UR",
+        "addr:housenumber": "136",
+        "addr:postcode": "6463",
+        "addr:street": "Klausenstrasse",
+        "amenity": "restaurant",
+        "name": "Restaurant Tell",
+        "phone": "+41 41 870 22 04",
+        "website": "http://tell-buerglen.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6438981863,
+      "lat": 46.8767117,
+      "lon": 8.680071,
+      "tags": {
+        "addr:city": "Bürglen UR",
+        "addr:housenumber": "220",
+        "addr:postcode": "6463",
+        "addr:street": "Klausenstrasse",
+        "amenity": "restaurant",
+        "name": "Der Gasthof",
+        "phone": "+41 41 870 14 71"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6449551090,
+      "lat": 46.863366,
+      "lon": 8.769903,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "regional;swiss",
+        "name": "Rose Restaurant & Bar",
+        "opening_hours": "We, Fr-Sa 16:00-00:00; Th 08:00-00:00",
+        "phone": "+41 41 880 01 05",
+        "website": "https://www.arnold-uri.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6521965616,
+      "lat": 46.8808658,
+      "lon": 8.6435062,
+      "tags": {
+        "addr:city": "Altdorf UR",
+        "addr:housenumber": "16",
+        "addr:postcode": "6460",
+        "addr:street": "Schmiedgasse",
+        "amenity": "cafe",
+        "name": "Romantico",
+        "opening_hours": "Mo-Fr 7:30-18:00; Sa 07:30-16:00",
+        "website": "https://www.hauger.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6521965618,
+      "lat": 46.8735665,
+      "lon": 8.6370369,
+      "tags": {
+        "addr:city": "Altdorf UR",
+        "addr:housenumber": "63",
+        "addr:postcode": "6460",
+        "addr:street": "Attinghauserstrasse",
+        "amenity": "cafe",
+        "delivery": "no",
+        "name": "Eis hemmer nu immer gnu",
+        "opening_hours": "Mo-Fr 08:00-11:00,13:30-18:30; Sa 08:00-11:00",
+        "takeaway": "no",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6661754700,
+      "lat": 46.8469838,
+      "lon": 8.632016,
+      "tags": {
+        "amenity": "restaurant",
+        "level": "1",
+        "opening_hours": "Mo-Th 06:00-15:00; Fr-Su 06:00-22:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6682059367,
+      "lat": 46.7834505,
+      "lon": 8.6340028,
+      "tags": {
+        "amenity": "restaurant",
+        "breakfast": "yes",
+        "capacity": "25",
+        "contact:person": "Gnos-Zurfluh Claudia",
+        "dinner": "yes",
+        "drinking_water": "yes",
+        "ele": "1977",
+        "email": "sunniggrathuette@bluewin.ch",
+        "food": "yes",
+        "name": "Bergrestaurant Sunniggratli",
+        "owner": "Familie Gnos",
+        "phone": "+41 79 386 14 85",
+        "tourism": "alpine_hut",
+        "website": "https://www.sunniggrathuette.ch/",
+        "wikidata": "Q2366555",
+        "wikipedia": "de:Sunniggrathütte"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6695097364,
+      "lat": 46.825555,
+      "lon": 8.5151579,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Blackenalp",
+        "opening_hours": "Jun-Sep",
+        "phone": "+41 41 637 04 26",
+        "tourism": "alpine_hut"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6699176370,
+      "lat": 46.8464615,
+      "lon": 8.585697,
+      "tags": {
+        "amenity": "cafe",
+        "capacity": "24",
+        "name": "Alp Grat",
+        "opening_hours": "Jul 15-Sep 30",
+        "tourism": "alpine_hut",
+        "website": "https://www.alp-grat-surenenpass.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6723639460,
+      "lat": 46.8804117,
+      "lon": 8.6451772,
+      "tags": {
+        "addr:city": "Altdorf UR",
+        "addr:housenumber": "14",
+        "addr:place": "Lehnplatz",
+        "addr:postcode": "6460",
+        "amenity": "fast_food",
+        "cuisine": "burger;kebab;pizza",
+        "delivery": "yes",
+        "diet:halal": "no",
+        "diet:kosher": "no",
+        "diet:vegan": "no",
+        "diet:vegetarian": "yes",
+        "name": "Urner Pizza Kurier",
+        "opening_hours": "Su-Th 10:00-21:30; Fr-Sa 10:00-23:30",
+        "outdoor_seating": "yes",
+        "takeaway": "yes",
+        "website": "https://www.urner-pizza-kurier.ch",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6732104217,
+      "lat": 46.8774588,
+      "lon": 8.6459838,
+      "tags": {
+        "addr:city": "Altdorf UR",
+        "addr:housenumber": "1",
+        "addr:postcode": "6460",
+        "addr:street": "Vorstadt",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "delivery": "no",
+        "diet:vegetarian": "no",
+        "name": "Kreuz",
+        "opening_hours": "Tu 17:00-24:00;We-Sa 10:00-14:00,17:00-24:00;Su 10:00-15:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6875845185,
+      "lat": 46.777577,
+      "lon": 8.6680042,
+      "tags": {
+        "addr:housenumber": "65",
+        "addr:postcode": "6474",
+        "addr:street": "Grund",
+        "amenity": "restaurant",
+        "cuisine": "tea;burger;cake;sandwich;breakfast;coffee_shop;local",
+        "email": "info@kostbar-uri.ch",
+        "internet_access": "wlan",
+        "name": "Kostbar Uri",
+        "name:de": "Restaurant Kostbar",
+        "opening_hours": "Mo-Fr 08:00-14:00",
+        "phone": "+41 41 884 05 05",
+        "website": "http://www.kostbar-uri.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6920154074,
+      "lat": 46.9004782,
+      "lon": 8.5000241,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Alpstubli Gitschenen"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6920154075,
+      "lat": 46.9001492,
+      "lon": 8.5001531,
+      "tags": {
+        "addr:city": "Isenthal",
+        "addr:country": "CH",
+        "addr:postcode": "6461",
+        "amenity": "restaurant",
+        "name": "Gasthaus Gitschenen",
+        "website": "http://www.gitschenen.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7851468692,
+      "lat": 46.6470517,
+      "lon": 8.5907641,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Suworow Bar",
+        "name:ru": "Суворов бap"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7878846579,
+      "lat": 46.6343234,
+      "lon": 8.5966397,
+      "tags": {
+        "amenity": "fast_food",
+        "check_date:opening_hours": "2024-03-04",
+        "contact:facebook": "https://www.facebook.com/emporium253/",
+        "cuisine": "italian",
+        "diet:vegetarian": "yes",
+        "name": "Emporium (253)",
+        "opening_hours:signed": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7885845836,
+      "lat": 46.6329537,
+      "lon": 8.5945809,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date:opening_hours": "2023-03-21",
+        "cuisine": "regional",
+        "diet:vegetarian": "yes",
+        "name": "Restaurant Adler",
+        "opening_hours": "Tu-Sa 17:00-22:00",
+        "outdoor_seating": "yes",
+        "website": "https://www.adler-andermatt.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7907457506,
+      "lat": 46.6394124,
+      "lon": 8.5908976,
+      "tags": {
+        "amenity": "restaurant",
+        "diet:vegetarian": "yes",
+        "name": "Restaurant Biselli",
+        "opening_hours": "Su,Mo 08:00-17:00; Tu-Sa 08:00-22:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8041195244,
+      "lat": 46.9032563,
+      "lon": 8.6963506,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Alpcafe Alafund",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8296723194,
+      "lat": 46.8567127,
+      "lon": 8.6448206,
+      "tags": {
+        "amenity": "restaurant",
+        "contact:email": "info@54-hochgenuss.ch",
+        "contact:phone": "+41 41 875 64 54",
+        "cuisine": "international;regional",
+        "delivery": "no",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "level": "8",
+        "name": "54 Hochgenuss",
+        "opening_hours": "Mo-Fr 08:30-15:00, Th-Fr 17:30-23:00, Sa 18:00-23:00",
+        "operator": "Fabian Lombris",
+        "outdoor_seating": "yes",
+        "reservation": "yes",
+        "smoking": "outside",
+        "takeaway": "no",
+        "website": "https://54-hochgenuss.ch",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8702497739,
+      "lat": 46.8772384,
+      "lon": 8.6340268,
+      "tags": {
+        "amenity": "cafe",
+        "cuisine": "swiss",
+        "name": "Rondo",
+        "opening_hours": "Mo-Fr 08:00-19:00; Sa 08:00-12:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8933909257,
+      "lat": 46.8752357,
+      "lon": 8.6378922,
+      "tags": {
+        "addr:city": "Altdorf UR",
+        "addr:housenumber": "49",
+        "addr:postcode": "6460",
+        "addr:street": "Attinghauserstrasse",
+        "amenity": "cafe",
+        "name": "Pine",
+        "opening_hours": "We-Sa 08:30-12:00",
+        "website": "https://www.pine-altdorf.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8983946699,
+      "lat": 46.8751417,
+      "lon": 8.6515764,
+      "tags": {
+        "addr:city": "Altdorf UR",
+        "addr:housenumber": "3",
+        "addr:postcode": "6460",
+        "addr:street": "Klausenstrasse",
+        "amenity": "restaurant",
+        "name": "Schächengrund",
+        "opening_hours": "Mo-Sa 08:00-24:00, PH off",
+        "outdoor_seating": "yes",
+        "website": "https://schaechengrund.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9212664788,
+      "lat": 46.8804317,
+      "lon": 8.6434152,
+      "tags": {
+        "addr:city": "Altdorf UR",
+        "addr:housenumber": "2",
+        "addr:postcode": "6460",
+        "addr:street": "Gotthardstrasse",
+        "amenity": "cafe",
+        "cuisine": "ice_cream",
+        "name": "Kunstcafé",
+        "opening_hours": "Mo-We,Fr 09:00-18:00, Sa 09:00-17:00; Th 13:00-18:00",
+        "operator": "Naci Kocoslan",
+        "toilets": "yes",
+        "toilets:access": "customers",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9232648538,
+      "lat": 46.8690944,
+      "lon": 8.6507561,
+      "tags": {
+        "addr:city": "Schattdorf",
+        "addr:housenumber": "4",
+        "addr:postcode": "6467",
+        "addr:street": "Gotthardstrasse",
+        "amenity": "restaurant",
+        "delivery": "yes",
+        "diet:vegetarian": "yes",
+        "opening_hours": "Tu-Sa 11:00-13:30, 17:00-21:45; Su 11:00-13:30, 17:00-21:30",
+        "outdoor_seating": "yes",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9376809170,
+      "lat": 46.8771769,
+      "lon": 8.6465837,
+      "tags": {
+        "addr:city": "Altdorf UR",
+        "addr:housenumber": "34",
+        "addr:postcode": "6460",
+        "addr:street": "Gotthardstrasse",
+        "amenity": "restaurant",
+        "cuisine": "pizza",
+        "delivery": "yes",
+        "diet:vegetarian": "yes",
+        "name": "Lazika Pizzakurier",
+        "opening_hours": "Mo off; Tu-Th 17:00-21:30, Fr 11:00-13:00, 17:00-22:00; Sa 11:00-14:00, 17:00-22:00; Su 11:00-14:00, 17:00-21:30",
+        "phone": "+41 41 870 00 61",
+        "takeaway": "yes",
+        "website": "https://lazika.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9398783237,
+      "lat": 46.8200915,
+      "lon": 8.6488026,
+      "tags": {
+        "addr:city": "Erstfeld",
+        "addr:housenumber": "4",
+        "addr:postcode": "6472",
+        "addr:street": "Schlossbergstrasse",
+        "amenity": "cafe",
+        "name": "Manu's Cafe",
+        "opening_hours": "Mo-Sa 06:30-12:00, Tu,Th,Fr 14:00-17:30"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9547637489,
+      "lat": 46.6185423,
+      "lon": 8.5672174,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Burg"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9584570724,
+      "lat": 46.8814742,
+      "lon": 8.615731,
+      "tags": {
+        "addr:city": "Seedorf (UR)",
+        "addr:housenumber": "49",
+        "addr:postcode": "6462",
+        "addr:street": "Dorfstrasse",
+        "amenity": "restaurant",
+        "amenity_1": "hotel",
+        "contact:email": "info@roessli-seedorf.ch",
+        "name": "Restaurant & Hotel Rössli",
+        "opening_hours": "Mo, Tu, Th 08:00-23:00; We off; Fr 08:00-00:00; Sa 09:00-00:00; Su 09:00-16:00",
+        "phone": "+41 41 870 25 26",
+        "website": "https://www.roessli-seedorf.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9652356994,
+      "lat": 46.8754215,
+      "lon": 8.6496899,
+      "tags": {
+        "addr:city": "Altdorf UR",
+        "addr:housenumber": "54",
+        "addr:postcode": "6460",
+        "addr:street": "Gotthardstrasse",
+        "amenity": "restaurant",
+        "diet:vegetarian": "yes",
+        "name": "Akaziengarten",
+        "opening_hours": "Mo,We-Fr 08:00-24:00, Sa-Su 09:00-24:00",
+        "outdoor_seating": "yes",
+        "website": "http://akaziengarten.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9653936424,
+      "lat": 46.8809467,
+      "lon": 8.645477,
+      "tags": {
+        "addr:city": "Altdorf UR",
+        "addr:housenumber": "3",
+        "addr:postcode": "6460",
+        "addr:street": "Hellgasse",
+        "amenity": "restaurant",
+        "check_date": "2023-09-11",
+        "check_date:opening_hours": "2023-09-11",
+        "delivery": "no",
+        "diet:vegan": "no",
+        "diet:vegetarian": "yes",
+        "indoor_seating": "yes",
+        "internet_access": "wlan",
+        "name": "Coop-Restaurant",
+        "opening_hours": "Mo-Fr 07:30-18:00; Sa 07:00-17:00; PH off",
+        "outdoor_seating": "no",
+        "smoking": "outside",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9722828086,
+      "lat": 46.8781289,
+      "lon": 8.6519638,
+      "tags": {
+        "amenity": "restaurant",
+        "diet:vegetarian": "yes",
+        "name": "Restaurant Im Weinberg",
+        "opening_hours": "Tu-We 17:00-22:00, Th-Fr 11:00-22:00, Sa 09:30-22:30, Su 09:30-17:00",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9722828087,
+      "lat": 46.8825553,
+      "lon": 8.6449605,
+      "tags": {
+        "addr:housenumber": "11",
+        "addr:street": "Marktgasse",
+        "amenity": "restaurant",
+        "cuisine": "asian",
+        "delivery": "Tu-Sa 17:00-21:00, So 17:00-20:00",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "name": "Tsam",
+        "opening_hours": "Mo, Tu, Th, Fr 11:00-14:00; Mo, Tu, Th, Fr 17:00-22:00; Sa, Su 11:00-22:00",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9722915043,
+      "lat": 46.8822613,
+      "lon": 8.6424357,
+      "tags": {
+        "addr:city": "Altdorf UR",
+        "addr:housenumber": "11",
+        "addr:postcode": "6460",
+        "addr:street": "Tellsgasse",
+        "amenity": "restaurant",
+        "check_date": "2024-06-05",
+        "check_date:opening_hours": "2023-09-11",
+        "cuisine": "asian",
+        "diet:vegetarian": "yes",
+        "name": "Tamil Unavakam",
+        "opening_hours": "Tu-Th 11:00-22:00, Fr-Sa 11:00-23:00",
+        "outdoor_seating": "no",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9823453913,
+      "lat": 46.8828407,
+      "lon": 8.6094257,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Dorfbeck",
+        "opening_hours": "Mo-Fr 06:30-12:00,13:30-18:00; Sa, Su 07:00-16:00",
+        "operator": "Tellbeck",
+        "outdoor_seating": "yes",
+        "website": "https://www.tellbeck.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9871638355,
+      "lat": 46.8814137,
+      "lon": 8.6437641,
+      "tags": {
+        "addr:city": "Altdorf UR",
+        "addr:housenumber": "4",
+        "addr:postcode": "6460",
+        "addr:street": "Schmiedgasse",
+        "amenity": "restaurant",
+        "name": "Bären",
+        "phone": "+41 41 870 11 26"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9871642174,
+      "lat": 46.8825607,
+      "lon": 8.6484208,
+      "tags": {
+        "addr:city": "Altdorf UR",
+        "addr:place": "Nussbäumli",
+        "addr:postcode": "6460",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "diet:vegetarian": "yes",
+        "internet_access": "no",
+        "name": "Nussbäumli",
+        "opening_hours": "Tu-We,Su 09:00-17:00, Th-Sa 11:00-23:00,18:00-24:00,09:00-18:00",
+        "operator": "Adrian und Priska Boss",
+        "outdoor_seating": "yes",
+        "phone": "+41 79 398 92 84",
+        "reservation": "recommended",
+        "smoking": "outside",
+        "toilets:access": "customers",
+        "website": "http://www.nussbaeumli.ch",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9871667297,
+      "lat": 46.8915061,
+      "lon": 8.6306485,
+      "tags": {
+        "addr:city": "Altdorf UR",
+        "addr:housenumber": "80",
+        "addr:postcode": "6460",
+        "addr:street": "Flüelerstrasse",
+        "amenity": "restaurant",
+        "name": "Exotis"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9871723292,
+      "lat": 46.8899128,
+      "lon": 8.629093,
+      "tags": {
+        "addr:city": "Altdorf UR",
+        "addr:housenumber": "77",
+        "addr:postcode": "6460",
+        "addr:street": "Flüelerstrasse",
+        "amenity": "cafe",
+        "name": "Salento"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9871805088,
+      "lat": 46.6402028,
+      "lon": 8.5937198,
+      "tags": {
+        "addr:city": "Andermatt",
+        "addr:housenumber": "7",
+        "addr:postcode": "6490",
+        "addr:street": "Gotthardstrasse",
+        "amenity": "restaurant",
+        "name": "Altkirch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9886664818,
+      "lat": 46.7687753,
+      "lon": 8.6901149,
+      "tags": {
+        "addr:city": "Bristen",
+        "addr:housenumber": "10",
+        "addr:postcode": "6475",
+        "addr:street": "Dorf",
+        "amenity": "restaurant",
+        "name": "Alpenblick",
+        "phone": "+41 41 883 12 40"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9886992499,
+      "lat": 46.9059027,
+      "lon": 8.6822907,
+      "tags": {
+        "addr:city": "Bürglen UR",
+        "addr:housenumber": "1",
+        "addr:place": "Selez",
+        "addr:postcode": "6463",
+        "amenity": "restaurant",
+        "name": "Alpstübli"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9887000488,
+      "lat": 46.8752977,
+      "lon": 8.6630406,
+      "tags": {
+        "addr:city": "Bürglen UR",
+        "addr:housenumber": "137",
+        "addr:postcode": "6463",
+        "addr:street": "Klausenstrasse",
+        "amenity": "restaurant",
+        "name": "Adler",
+        "phone": "+41 41 870 11 33"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9887055317,
+      "lat": 46.8767717,
+      "lon": 8.6679157,
+      "tags": {
+        "addr:city": "Bürglen UR",
+        "addr:housenumber": "165",
+        "addr:postcode": "6463",
+        "addr:street": "Klausenstrasse",
+        "amenity": "restaurant",
+        "name": "Waldhof",
+        "phone": "+41 41 870 31 31"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9903316209,
+      "lat": 46.8192481,
+      "lon": 8.6518478,
+      "tags": {
+        "addr:city": "Erstfeld",
+        "addr:housenumber": "70",
+        "addr:postcode": "6472",
+        "addr:street": "Gotthardstrasse",
+        "amenity": "restaurant",
+        "name": "Ticino",
+        "phone": "+41"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9947207808,
+      "lat": 46.8419381,
+      "lon": 8.7717112,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Trogenalp",
+        "outdoor_seating": "yes",
+        "phone": "+41 41 879 00 34",
+        "website": "https://trogenalp.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9947922426,
+      "lat": 46.8842561,
+      "lon": 8.6444324,
+      "tags": {
+        "amenity": "cafe",
+        "email": "info@kulturkloster.ch",
+        "name": "Kloster Café",
+        "opening_hours": "Th 13:30-18:00; Su[4] 09:00-18:00",
+        "operator": "Kulturkloster",
+        "outdoor_seating": "yes",
+        "phone": "+41 41 874 18 50",
+        "website": "https://kulturkloster.ch/klostergarten/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10016435933,
+      "lat": 46.8613182,
+      "lon": 8.6477694,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Brückli",
+        "opening_hours": "Tu-Sa 08:00-24:00; Su,PH 08:30-17:00",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10095605123,
+      "lat": 46.90382,
+      "lon": 8.6254589,
+      "tags": {
+        "addr:city": "Flüelen",
+        "addr:housenumber": "12",
+        "addr:postcode": "6454",
+        "addr:street": "Axenstrasse",
+        "amenity": "restaurant",
+        "name": "The Roots",
+        "opening_hours": "We-Su 11:30-23:00",
+        "opening_hours:kitchen": "We-Su 11:30-13:45; We-Su 18:00-21:00",
+        "outdoor_seating": "yes",
+        "phone": "+41 (41)_557 7006",
+        "website": "https://theroots-flueelen.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10235672260,
+      "lat": 46.7066688,
+      "lon": 8.5996089,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date": "2022-12-03",
+        "name": "Martini F"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10300850641,
+      "lat": 46.8756263,
+      "lon": 8.6494131,
+      "tags": {
+        "addr:city": "Altdorf UR",
+        "addr:housenumber": "52",
+        "addr:postcode": "6460",
+        "addr:street": "Gotthardstrasse",
+        "amenity": "fast_food",
+        "cuisine": "kebab;pizza",
+        "delivery": "yes",
+        "email": "info@bistromiro.ch",
+        "name": "Bistro Miro",
+        "phone": "+41 41 534 58 63",
+        "takeaway": "yes",
+        "website": "http://bistromiro.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10746280901,
+      "lat": 46.5986721,
+      "lon": 8.5019533,
+      "tags": {
+        "amenity": "cafe",
+        "check_date": "2023-03-19",
+        "cuisine": "regional;coffee_shop",
+        "name": "Astrid's Bistro",
+        "payment:mastercard": "yes",
+        "payment:visa": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10920952380,
+      "lat": 46.902569,
+      "lon": 8.6257013,
+      "tags": {
+        "addr:city": "Flüelen",
+        "addr:housenumber": "7",
+        "addr:postcode": "6454",
+        "addr:street": "Dorfstrasse",
+        "amenity": "restaurant",
+        "cuisine": "pizza;kebab",
+        "name": "Fiora",
+        "opening_hours": "Mo-Th 10:00-22:00; Fr,Sa 11:00-23:00, Su 11:00-21:00",
+        "phone": "+41 41 553 3030"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10958166717,
+      "lat": 46.8691593,
+      "lon": 8.6508699,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "kebab;pizza",
+        "name": "Kebab Hüsli & Pizzeria",
+        "opening_hours": "Mo off, Tu-Th 11:00-22:00; Fr-Sa 11:00-23:00; Su 11:00-21:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11059181649,
+      "lat": 46.7665163,
+      "lon": 8.7107014,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "AlpenkiosK Maderanertal"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11210405610,
+      "lat": 46.8815721,
+      "lon": 8.6437932,
+      "tags": {
+        "addr:city": "Altdorf UR",
+        "addr:housenumber": "4",
+        "addr:place": "Rathausplatz",
+        "addr:postcode": "6460",
+        "amenity": "restaurant",
+        "name": "Egghus",
+        "opening_hours": "Mo,Th-Sa 08:00-22:00, Tu 08:00-17:00, Su,PH 08:00-17:00",
+        "operator": "Ivica Zelic",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11233580597,
+      "lat": 46.8648004,
+      "lon": 8.6552182,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Tell Beck Cafe",
+        "opening_hours": "Mo-Fr 07:00-12:00, 14:00-18:00; Sa 07:00-16:00; Su,PH off"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11401869625,
+      "lat": 46.8472646,
+      "lon": 8.633484,
+      "tags": {
+        "amenity": "restaurant",
+        "opening_hours": "Mo-Su 06:00-22:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11673096981,
+      "lat": 46.632977,
+      "lon": 8.5952117,
+      "tags": {
+        "amenity": "cafe",
+        "check_date:opening_hours": "2024-03-01",
+        "diet:vegetarian": "yes",
+        "name": "Mundart Café",
+        "opening_hours": "We-Su 11:00-18:00",
+        "opening_hours:signed": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11799906651,
+      "lat": 46.8812983,
+      "lon": 8.6444911,
+      "tags": {
+        "addr:city": "Altdorf UR",
+        "addr:housenumber": "8",
+        "addr:postcode": "6460",
+        "addr:street": "Schützengasse",
+        "amenity": "restaurant",
+        "cuisine": "pizza",
+        "delivery": "no",
+        "name": "Duemila Negrini",
+        "opening_hours": "Tu-Th 10:30-13:30,17:00-22:00; Fr-Sa 10:30-13:30,17:00-24:00; Su 11:00-13:30,17:00-22:00",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12125782901,
+      "lat": 46.8289294,
+      "lon": 8.758195,
+      "tags": {
+        "addr:housenumber": "14",
+        "addr:postcode": "6465",
+        "addr:street": "Brunnialp",
+        "amenity": "restaurant",
+        "name": "Brunnialp-Beizli",
+        "opening_hours": "Mo-Su 08:30-22:00",
+        "phone": "+41792745461"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12536447658,
+      "lat": 46.8814476,
+      "lon": 8.6442923,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "Goman",
+        "opening_hours": "Mo, We, Th 10:30-21:00; Fr, Sa 10:30-22:00; Su 10:00-21:00; Tu off"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12612368413,
+      "lat": 46.6360294,
+      "lon": 8.5943421,
+      "tags": {
+        "addr:city": "Andermatt",
+        "addr:housenumber": "4",
+        "addr:postcode": "6490",
+        "addr:street": "Gotthardstrasse",
+        "amenity": "restaurant",
+        "cuisine": "japanese",
+        "name": "The Japanese Restaurant",
+        "phone": "+41418887488",
+        "website": "https://www.thechediandermatt.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12612372623,
+      "lat": 46.6559754,
+      "lon": 8.6216817,
+      "tags": {
+        "addr:city": "Gütsch",
+        "addr:postcode": "6490",
+        "amenity": "restaurant",
+        "name": "GÜTSCH by Markus Neff",
+        "website": "https://guetsch.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12613231025,
+      "lat": 46.6542693,
+      "lon": 8.6196352,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "japanese",
+        "name": "The Japanese by The Chedi at Gütsch",
+        "phone": "+41418887466",
+        "website": "https://www.thechediandermatt.com/de/dining/the-japanese-by-the-chedi-andermatt"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12625594128,
+      "lat": 46.9044661,
+      "lon": 8.6451784,
+      "tags": {
+        "addr:housenumber": "30",
+        "addr:place": "Eggberge",
+        "amenity": "restaurant",
+        "bar": "yes",
+        "check_date": "2025-02-28",
+        "cuisine": "regional;coffee_shop",
+        "name": "Bistro Eggberge",
+        "outdoor_seating": "yes",
+        "phone": "+41 79 678 99 71",
+        "smoking": "outside",
+        "source": "survey",
+        "toilets": "yes",
+        "wheelchair": "yes"
+      }
+    }
+  ]
+}

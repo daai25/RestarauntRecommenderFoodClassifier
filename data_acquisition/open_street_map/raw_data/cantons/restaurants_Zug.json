@@ -1,0 +1,4479 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.7 375dc00a",
+  "osm3s": {
+    "timestamp_osm_base": "2025-07-01T21:07:45Z",
+    "timestamp_areas_base": "2025-06-25T21:32:45Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+    {
+      "type": "node",
+      "id": 102744373,
+      "lat": 47.1344468,
+      "lon": 8.614825,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Hirschen",
+        "website": "https://hirschen-oberaegeri.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 192705347,
+      "lat": 47.1164861,
+      "lon": 8.6412594,
+      "tags": {
+        "addr:city": "Oberägeri/Morgarten",
+        "addr:housenumber": "63",
+        "addr:postcode": "6315",
+        "addr:street": "Hauptseestrasse",
+        "amenity": "restaurant",
+        "cuisine": "fish",
+        "name": "Eierhals",
+        "phone": "+41 41 754 50 50",
+        "toilets:wheelchair": "yes",
+        "website": "https://www.hotel-eierhals.ch/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 254745858,
+      "lat": 47.1816382,
+      "lon": 8.4589134,
+      "tags": {
+        "addr:housenumber": "4",
+        "addr:street": "Sinserstrasse",
+        "amenity": "restaurant",
+        "cuisine": "regional;pasta;pizza;risotto",
+        "delivery": "yes",
+        "name": "Rössli",
+        "opening_hours": "Mo-Fr 11:00-14:00,17:00-23:30; Sa 17:30-23:30; PH closed",
+        "opening_hours:kitchen": "Mo-Fr 11:30-13:30,18:00-21:30; Sa 18:00-21:30; PH off",
+        "outdoor_seating": "yes",
+        "phone": "+41 41 780 13 18",
+        "takeaway": "yes",
+        "website": "https://www.restaurant-roessli.ch/",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 256504242,
+      "lat": 47.179013,
+      "lon": 8.4572525,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "indian",
+        "delivery": "yes",
+        "name": "Restaurant Ganesha",
+        "opening_hours": "Mo-Fr 11:30-14:00,17:00-22:00; Sa,Su 17:00-22:00",
+        "phone": "+41417800257",
+        "takeaway": "yes",
+        "website": "https://www.restaurantganesha.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 268457148,
+      "lat": 47.2071595,
+      "lon": 8.5059055,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Hirssattel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 270920381,
+      "lat": 47.1865701,
+      "lon": 8.4013582,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "steak_house;swiss",
+        "name": "Zoll-Huus",
+        "opening_hours": "Mo-Tu 17:00-22:00, Fr-Sa 17:00-23:00, Su 09:00-22:00, We-Th off",
+        "outdoor_seating": "yes",
+        "phone": "+41 41 780 11 09",
+        "website": "https://www.zoll-huus.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 273500930,
+      "lat": 47.1667167,
+      "lon": 8.5532237,
+      "tags": {
+        "addr:city": "Allenwinden",
+        "addr:housenumber": "35",
+        "addr:postcode": "6319",
+        "addr:street": "Dorfstrasse",
+        "amenity": "restaurant",
+        "name": "Löwen",
+        "opening_hours:covid19": "closed"
+      }
+    },
+    {
+      "type": "node",
+      "id": 317283173,
+      "lat": 47.1374908,
+      "lon": 8.5846995,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "La Corona",
+        "toilets:wheelchair": "no",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 317632438,
+      "lat": 47.1411146,
+      "lon": 8.4302091,
+      "tags": {
+        "amenity": "cafe",
+        "check_date": "2025-02-23",
+        "level": "0",
+        "name": "von Rotz",
+        "opening_hours": "Mo-Fr 06:00-18:30; Sa 06:00-16:00; Su 06:30-13:00",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "shop": "bakery",
+        "website": "https://www.echt-vonrotz.ch/rotkreuz",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 318533765,
+      "lat": 47.143154,
+      "lon": 8.4276437,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "italian",
+        "name": "Pizzeria Mamma-Mia",
+        "opening_hours": "Tu-Fr 09:00-14:00,17:00-22:30; Sa 11:00-22:30; Su 10:00-21:30; Mo 10:00-14:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 319806449,
+      "lat": 47.1467712,
+      "lon": 8.4330118,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "BussinEss Cube"
+      }
+    },
+    {
+      "type": "node",
+      "id": 323254503,
+      "lat": 47.1536447,
+      "lon": 8.4385133,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Rosengarten"
+      }
+    },
+    {
+      "type": "node",
+      "id": 324665337,
+      "lat": 47.1822238,
+      "lon": 8.5253895,
+      "tags": {
+        "addr:city": "Zug",
+        "addr:postcode": "6300",
+        "addr:street": "Ibelweg",
+        "amenity": "restaurant",
+        "indoor_seating": "yes",
+        "name": "ConSol Bistro",
+        "opening_hours": "Mo-Fr 08:00-15:00",
+        "outdoor_seating": "yes",
+        "phone": "+41 41 760 74 10",
+        "smoking": "outside",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 324763420,
+      "lat": 47.1773196,
+      "lon": 8.5177708,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Magnum"
+      }
+    },
+    {
+      "type": "node",
+      "id": 335780636,
+      "lat": 47.1359193,
+      "lon": 8.5849028,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Lindenhof",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 335780687,
+      "lat": 47.1374223,
+      "lon": 8.5853139,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Zumbach",
+        "shop": "bakery",
+        "website": "https://zumbibeck.ch/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 335780703,
+      "lat": 47.1371525,
+      "lon": 8.5844143,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Ägerihof",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 335780725,
+      "lat": 47.1329145,
+      "lon": 8.5608328,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Schützen",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 340223542,
+      "lat": 47.1737401,
+      "lon": 8.5171375,
+      "tags": {
+        "addr:housenumber": "30",
+        "addr:postcode": "6300",
+        "addr:street": "Baarerstrasse",
+        "amenity": "restaurant",
+        "contact:facebook": "tibits.uk",
+        "contact:instagram": "tibits_restaurants",
+        "contact:twitter": "tibits_uk",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "email": "info@tibits.ch",
+        "internet_access": "wlan",
+        "name": "Tibits",
+        "opening_hours": "Mo-Sa 07:30-22:00; Su 09:00-16:00",
+        "phone": "041 531 33 33",
+        "website": "https://www.tibits.ch/en/1698#tibits-zug",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 340223566,
+      "lat": 47.1738925,
+      "lon": 8.5162087,
+      "tags": {
+        "addr:housenumber": "41",
+        "addr:postcode": "6300",
+        "addr:street": "Baarerstrasse",
+        "amenity": "fast_food",
+        "brand": "McDonald's",
+        "brand:wikidata": "Q38076",
+        "contact:facebook": "McDonaldsSwitzerland",
+        "contact:instagram": "mcdonalds_switzerland",
+        "contact:twitter": "mcdschweiz",
+        "cuisine": "burger",
+        "drive_through": "no",
+        "internet_access": "wlan",
+        "name": "McDonald's",
+        "opening_hours": "Su-Th 10:00-23:00; Fr-Sa 10:00-00:00",
+        "phone": "041 534 20 48",
+        "takeaway": "yes",
+        "website": "https://www.mcdonalds.com/ch/de-ch/location/zug/zug/zug/baarerstrasse-41/780258.html",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 340229315,
+      "lat": 47.1642609,
+      "lon": 8.513899,
+      "tags": {
+        "addr:city": "Zug",
+        "addr:country": "CH",
+        "addr:housenumber": "2-4",
+        "addr:postcode": "6300",
+        "addr:street": "Artherstrasse",
+        "amenity": "restaurant",
+        "email": "restaurant@theatercasino.ch",
+        "name": "Theater Casino",
+        "phone": "+41 41 7291040",
+        "website": "https://www.theatercasino.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 340279197,
+      "lat": 47.0904138,
+      "lon": 8.5684185,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Alpli"
+      }
+    },
+    {
+      "type": "node",
+      "id": 343165176,
+      "lat": 47.0997753,
+      "lon": 8.512842,
+      "tags": {
+        "addr:city": "Walchwil",
+        "addr:housenumber": "1",
+        "addr:postcode": "6318",
+        "addr:street": "Dorfstrasse",
+        "amenity": "restaurant",
+        "cuisine": "Gourmet",
+        "name": "Sternen"
+      }
+    },
+    {
+      "type": "node",
+      "id": 389781936,
+      "lat": 47.1422542,
+      "lon": 8.4566217,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Wildenmann"
+      }
+    },
+    {
+      "type": "node",
+      "id": 390393295,
+      "lat": 47.1611214,
+      "lon": 8.4397932,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Restaurant Bösch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 391015242,
+      "lat": 47.1727745,
+      "lon": 8.5046063,
+      "tags": {
+        "amenity": "restaurant",
+        "email": "hafenrestaurant@remimag.ch",
+        "indoor_seating": "yes",
+        "name": "Hafenrestaurant",
+        "opening_hours": "Mo-Su 08:00-24:00",
+        "outdoor_seating": "yes",
+        "phone": "+41 41 711 90 70",
+        "toilets:wheelchair": "no",
+        "website": "https://www.hafenrestaurant.ch/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 391015244,
+      "lat": 47.1731574,
+      "lon": 8.506438,
+      "tags": {
+        "amenity": "restaurant",
+        "email": "podium41@ggz.ch",
+        "indoor_seating": "yes",
+        "name": "Podium 41",
+        "outdoor_seating": "yes",
+        "phone": "+41 41 710 53 83"
+      }
+    },
+    {
+      "type": "node",
+      "id": 412344479,
+      "lat": 47.1352184,
+      "lon": 8.6129494,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Rössli",
+        "website": "https://www.zumroessli.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 412344480,
+      "lat": 47.1351863,
+      "lon": 8.6134391,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Bären",
+        "website": "https://baeren-oberaegeri.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 412344481,
+      "lat": 47.1350488,
+      "lon": 8.613602,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Ochsen"
+      }
+    },
+    {
+      "type": "node",
+      "id": 415945879,
+      "lat": 47.2162323,
+      "lon": 8.5731157,
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "McDonald's",
+        "brand:wikidata": "Q38076",
+        "brand:wikipedia": "en:McDonald's",
+        "cuisine": "burger",
+        "drive_through": "yes",
+        "name": "McDonald's",
+        "operator": "McDonald's",
+        "smoking": "no",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 417137138,
+      "lat": 47.1314026,
+      "lon": 8.5347451,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Restaurant Hintergeissboden",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 417137209,
+      "lat": 47.14391,
+      "lon": 8.5328371,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Restaurant Zugerberg",
+        "toilets:wheelchair": "no",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 417162568,
+      "lat": 47.1662915,
+      "lon": 8.5142571,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "italian",
+        "name": "Pizzeria San Marco",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 457634775,
+      "lat": 47.1744003,
+      "lon": 8.5133152,
+      "tags": {
+        "addr:city": "Zug",
+        "addr:housenumber": "6",
+        "addr:postcode": "6300",
+        "addr:street": "Grafenauweg",
+        "amenity": "restaurant",
+        "check_date": "2025-06-23",
+        "check_date:currency:XBT": "2025-06-23",
+        "contact:facebook": "meating.ch",
+        "contact:instagram": "meatingzug",
+        "currency:XBT": "yes",
+        "name": "Meating",
+        "opening_hours": "Mo-Fr 11:00-23:00",
+        "outdoor_seating": "yes",
+        "payment:lightning": "yes",
+        "payment:lightning_contactless": "no",
+        "payment:onchain": "yes",
+        "phone": "+41 41 711 68 68",
+        "website": "https://meating.ch/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 461250149,
+      "lat": 47.2042244,
+      "lon": 8.5754971,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Schäfli"
+      }
+    },
+    {
+      "type": "node",
+      "id": 461268042,
+      "lat": 47.1997258,
+      "lon": 8.5736198,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Falken"
+      }
+    },
+    {
+      "type": "node",
+      "id": 462504628,
+      "lat": 47.1528217,
+      "lon": 8.5512902,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Rest. Brunegg"
+      }
+    },
+    {
+      "type": "node",
+      "id": 462696124,
+      "lat": 47.1102341,
+      "lon": 8.5457622,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Pfaffenboden",
+        "website": "https://pfaffenboden.ch/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 469172961,
+      "lat": 47.154417,
+      "lon": 8.5599057,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Schmittli"
+      }
+    },
+    {
+      "type": "node",
+      "id": 472408069,
+      "lat": 47.0994474,
+      "lon": 8.6193561,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "description": "Die Alpwirtschaft Schornenrain liegt 1'024 m ü. Meer.\nDie Gaststube hat Platz für ca. 20 Personen und ist mit viel Liebe zum Detail eingerichtet. Eine gemütliche, heimelige Stube zum verweilen... \nDie Aussichtsterrasse besteht aus dem selben Platzangebot",
+        "name": "Alpwirtschaft Schornenrain",
+        "opening_hours": "May-Sep",
+        "outdoor_seating": "yes",
+        "website": "http://alpwirtschaft-schornenrain.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 472408081,
+      "lat": 47.1022435,
+      "lon": 8.6139169,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Ramenegg",
+        "website": "http://www.ramenegg.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 477228349,
+      "lat": 47.1335993,
+      "lon": 8.6646342,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Bergbeizli St. Jost",
+        "opening_hours": "Sa,Su 10:00-17:00",
+        "phone": "+41797229533",
+        "website": "https://www.raten.ch/st-jost.html"
+      }
+    },
+    {
+      "type": "node",
+      "id": 479091697,
+      "lat": 47.1621973,
+      "lon": 8.5737095,
+      "tags": {
+        "addr:city": "Menzingen",
+        "addr:housenumber": "1",
+        "addr:place": "Gubel",
+        "addr:postcode": "6313",
+        "amenity": "restaurant"
+      }
+    },
+    {
+      "type": "node",
+      "id": 517913134,
+      "lat": 47.1733797,
+      "lon": 8.5171552,
+      "tags": {
+        "amenity": "cafe",
+        "branch": "Zug Metalli",
+        "brand": "Starbucks",
+        "brand:wikidata": "Q37158",
+        "brand:wikipedia": "en:Starbucks",
+        "check_date": "2025-06-26",
+        "cuisine": "coffee_shop",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "level": "0",
+        "name": "Starbucks",
+        "official_name": "Starbucks Coffee",
+        "operator": "Starbucks Coffee Switzerland",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "takeaway": "yes",
+        "website": "https://www.starbucks.ch/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 529971942,
+      "lat": 47.1733785,
+      "lon": 8.5177253,
+      "tags": {
+        "addr:city": "Zug",
+        "addr:housenumber": "4",
+        "addr:postcode": "6300",
+        "addr:street": "Metallstrasse",
+        "alt_name": "Confiserie-Café Speck Metalli",
+        "amenity": "cafe",
+        "branch": "Zug Metalli",
+        "brand": "Speck",
+        "check_date": "2025-05-01",
+        "description:covid19": "Nur verkauf ohne cafe betrieb",
+        "diet:vegetarian": "yes",
+        "level": "0",
+        "name": "Confiserie-Café Speck",
+        "opening_hours": "Mo-Sa 09:00-15:00",
+        "operator": "EIU Walter Speck",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "shop": "pastry",
+        "takeaway:covid19": "only",
+        "website": "https://www.speck.ch/standorte/metalli/",
+        "wheelchair": "yes",
+        "wheelchair:description": "Toilette Metalli-Center benützen"
+      }
+    },
+    {
+      "type": "node",
+      "id": 529971974,
+      "lat": 47.1724831,
+      "lon": 8.5149005,
+      "tags": {
+        "addr:city": "Zug",
+        "addr:housenumber": "12",
+        "addr:postcode": "6300",
+        "addr:street": "Alpenstrasse",
+        "alt_name": "Confiserie-Café Speck am Bahnhof",
+        "amenity": "cafe",
+        "branch": "Zug Bahnhof",
+        "brand": "Speck",
+        "diet:vegetarian": "yes",
+        "indoor_seating": "yes",
+        "name": "Confiserie-Café Speck",
+        "opening_hours": "Mo-Fr 06:30-18:30; Sa 07:00-17:00; Su 08:00-12:00",
+        "operator": "EIU Peter Speck",
+        "outdoor_seating": "yes",
+        "shop": "pastry",
+        "website": "https://www.speck.ch/standorte/hauptgeschaeft-am-bahnhof-zug/",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 530777891,
+      "lat": 47.1133307,
+      "lon": 8.5967121,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Brandhöhe"
+      }
+    },
+    {
+      "type": "node",
+      "id": 531435935,
+      "lat": 47.1401784,
+      "lon": 8.4271358,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "italian",
+        "name": "La Tavola",
+        "website": "https://www.latavolagastro.ch/de"
+      }
+    },
+    {
+      "type": "node",
+      "id": 531435956,
+      "lat": 47.1409831,
+      "lon": 8.4281395,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "pizza",
+        "name": "Pizzeria Club-Noi"
+      }
+    },
+    {
+      "type": "node",
+      "id": 534580457,
+      "lat": 47.1756915,
+      "lon": 8.5171271,
+      "tags": {
+        "addr:city": "Zug",
+        "addr:housenumber": "63",
+        "addr:postcode": "6300",
+        "addr:street": "Baarerstrasse",
+        "alt_name": "HAN Zug",
+        "amenity": "restaurant",
+        "branch": "Zug",
+        "check_date": "2025-01-03",
+        "cuisine": "mongolian",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "level": "0",
+        "name": "Han",
+        "opening_hours": "Mo-Su 11:30-14:00,18:00-24:00",
+        "operator": "its1world Management",
+        "outdoor_seating": "yes",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "smoking": "no",
+        "takeaway": "no",
+        "website": "https://www.han.ch/angebot-zug",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 534580549,
+      "lat": 47.1748579,
+      "lon": 8.5168962,
+      "tags": {
+        "addr:city": "Zug",
+        "addr:housenumber": "53",
+        "addr:postcode": "6300",
+        "addr:street": "Baarerstrasse",
+        "amenity": "fast_food",
+        "brand": "Subway",
+        "brand:wikidata": "Q244457",
+        "brand:wikipedia": "en:Subway (restaurant)",
+        "check_date": "2025-01-03",
+        "cuisine": "sandwich",
+        "name": "Subway",
+        "outdoor_seating": "yes",
+        "takeaway": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 540990010,
+      "lat": 47.1775189,
+      "lon": 8.4260229,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Lindenpark"
+      }
+    },
+    {
+      "type": "node",
+      "id": 559493455,
+      "lat": 47.1070942,
+      "lon": 8.5693255,
+      "tags": {
+        "addr:city": "Unterägeri",
+        "addr:country": "CH",
+        "addr:housenumber": "1",
+        "addr:postcode": "6314",
+        "addr:street": "Ochsenfeissi",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Restaurant Alpwirtschaft Sonnegg",
+        "opening_hours": "Apr-Nov",
+        "phone": "+41 41 750 11 57",
+        "website": "https://www.alp-sonnegg.ch/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 565429909,
+      "lat": 47.1662288,
+      "lon": 8.5148039,
+      "tags": {
+        "amenity": "restaurant",
+        "contact:email": "info@ristorante-fischmaert.ch",
+        "contact:phone": "+41 41 720 00 40",
+        "contact:website": "https://www.ristorante-fischmaert.ch/",
+        "cuisine": "italian",
+        "name": "Fischmärt",
+        "opening_hours": "Mo-Fr 11:00-14:00,17:00-23:30; Sa 17:00-24:00",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 568289609,
+      "lat": 47.099643,
+      "lon": 8.604202,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Hüritalhütte"
+      }
+    },
+    {
+      "type": "node",
+      "id": 588171830,
+      "lat": 47.1929794,
+      "lon": 8.5231127,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Thai Benjarong",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 594958400,
+      "lat": 47.2043353,
+      "lon": 8.5230974,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Restaurant Tennis Club Baar"
+      }
+    },
+    {
+      "type": "node",
+      "id": 607167478,
+      "lat": 47.1626131,
+      "lon": 8.4356432,
+      "tags": {
+        "addr:city": "Hünenberg",
+        "addr:country": "CH",
+        "addr:housenumber": "82",
+        "addr:postcode": "6331",
+        "addr:street": "Bösch",
+        "amenity": "restaurant",
+        "name": "Schlössli",
+        "opening_hours": "Mo-Fr",
+        "website": "http://www.restaurantschloessli.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 615952952,
+      "lat": 47.1691606,
+      "lon": 8.5145711,
+      "tags": {
+        "addr:city": "Zug",
+        "addr:housenumber": "20",
+        "addr:postcode": "6300",
+        "addr:street": "Vorstadt",
+        "amenity": "restaurant",
+        "bar": "yes",
+        "brewery": "yes",
+        "check_date": "2025-02-01",
+        "cuisine": "mexican",
+        "diet:meat": "yes",
+        "diet:vegetarian": "yes",
+        "email": "info@juanitos.ch",
+        "microbrewery": "no",
+        "name": "Juanitos Bodega & Bar",
+        "opening_hours": "Mo-Fr 11:30-14:00, Mo-Th 17:00-24:00, Fr 17:00-02:00, Sa 17:00-02:30, Su 17:00-22:30",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "phone": "+41 41 712 01 01",
+        "reservation": "yes",
+        "smoking": "outside",
+        "source": "survey",
+        "toilets": "yes",
+        "website": "https://juanitos.ch",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 649063277,
+      "lat": 47.1544641,
+      "lon": 8.4393549,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "italian",
+        "email": "info@gastromilano.ch",
+        "fax": "+41 41 790 11 30",
+        "name": "Bar Pizzeria Milano",
+        "phone": "+41 41 790 22 22",
+        "website": "https://www.pizzeriamilano.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 649063279,
+      "lat": 47.1545278,
+      "lon": 8.4399759,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Restaurant Tisch Bar Theater",
+        "url": "http://www.tischundbar.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 649063280,
+      "lat": 47.1551146,
+      "lon": 8.4400506,
+      "tags": {
+        "addr:city": "Holzhäusern",
+        "addr:country": "CH",
+        "addr:housenumber": "1",
+        "addr:postcode": "6343",
+        "addr:street": "Holzhäusernstrasse",
+        "amenity": "restaurant",
+        "name": "Restaurant Engel",
+        "url": "https://engel-restaurant.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 660153683,
+      "lat": 47.1983902,
+      "lon": 8.4854183,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Szenario",
+        "opening_hours": "Tu-Su 10:00-23:00",
+        "outdoor_seating": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 660174904,
+      "lat": 47.1973531,
+      "lon": 8.4851684,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Rössli",
+        "opening_hours": "Mo-Sa 08:00-24:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 660176251,
+      "lat": 47.1973353,
+      "lon": 8.4842223,
+      "tags": {
+        "amenity": "cafe",
+        "check_date:opening_hours": "2024-11-05",
+        "name": "Bäckerei Von Rotz",
+        "opening_hours": "Mo-Fr 06:00-18:30; Sa 06:00-16:00; Su 06:00-13:00",
+        "outdoor_seating": "yes",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 676682542,
+      "lat": 47.1780723,
+      "lon": 8.5911643,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Ochsen",
+        "website": "http://www.ochsenmenzingen.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 676682549,
+      "lat": 47.1782702,
+      "lon": 8.5898137,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Rössli"
+      }
+    },
+    {
+      "type": "node",
+      "id": 676682551,
+      "lat": 47.1783421,
+      "lon": 8.5908835,
+      "tags": {
+        "addr:city": "Menzingen",
+        "addr:housenumber": "5",
+        "addr:postcode": "6313",
+        "addr:street": "Neudorfstrasse",
+        "amenity": "cafe",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "internet_access:ssid": "www.diezugerkirschtorte.ch",
+        "name": "Café Confiserie Schlüssel",
+        "smoking": "no",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 766843753,
+      "lat": 47.1658695,
+      "lon": 8.5143375,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "chinese",
+        "name": "Golden Dragon"
+      }
+    },
+    {
+      "type": "node",
+      "id": 813577512,
+      "lat": 47.1688483,
+      "lon": 8.5159222,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "Central American",
+        "name": "SPAGO",
+        "opening_hours": "Mo 08:00-23:00; Tu-Th 08:00-24:00, Fr 08:00-02:00, Sa 09:00-02:00, Su 10:00-22:00",
+        "phone": "+41 41 711 18 72",
+        "smoking": "outside",
+        "website": "https://www.spago-zug.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 817190478,
+      "lat": 47.1671744,
+      "lon": 8.5159589,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Café am Hirschenplatz",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 818905886,
+      "lat": 47.173588,
+      "lon": 8.4496895,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "Zythus imbiss",
+        "opening_hours": "Mo-Fr 06:00-20:00; Sa 08:00-19:00; PH off",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 849883438,
+      "lat": 47.1434321,
+      "lon": 8.5370098,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date": "2025-06-28",
+        "indoor_seating": "yes",
+        "internet_access": "no",
+        "name": "Restaurant Vordergeissboden",
+        "opening_hours": "Mo-Tu,Su 10:00-17:00; We-Sa 10:00-20:30",
+        "outdoor_seating": "yes",
+        "website": "https://www.vordergeissboden.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 939538184,
+      "lat": 47.181995,
+      "lon": 8.4609725,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date:opening_hours": "2024-02-24",
+        "cuisine": "pizza",
+        "delivery": "Mo-Fr 11:00-14:00,17:00-22:00; Sa 11:00-22:00; Su 12:00-21:00; PH closed",
+        "indoor_seating": "yes",
+        "name": "Pizzeria Carrera",
+        "opening_hours": "Mo-Fr 10:00-14:00,17:00-22:00; Sa 10:00-22:00; Su 12:00-21:00; PH off",
+        "outdoor_seating": "yes",
+        "smoking": "no",
+        "takeaway": "yes",
+        "toilets": "yes",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 961780291,
+      "lat": 47.1035749,
+      "lon": 8.6403463,
+      "tags": {
+        "addr:postcode": "6315",
+        "amenity": "restaurant",
+        "email": "info@hotel-morgarten.ch",
+        "indoor_seating": "yes",
+        "name": "Hotel Restaurant Morgarten",
+        "outdoor_seating": "yes",
+        "tourism": "hotel",
+        "website": "https://www.hotel-morgarten.ch/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 961801118,
+      "lat": 47.1781948,
+      "lon": 8.4592841,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Minigolf Cham Villette",
+        "toilets:wheelchair": "limited",
+        "website": "https://www.minigolf-cham.ch/",
+        "wheelchair": "yes",
+        "wheelchair:description": "Man braucht Hilfe um diese Toilette benutzten zu können. Schwer zu öffnende Tür."
+      }
+    },
+    {
+      "type": "node",
+      "id": 963198414,
+      "lat": 47.1479761,
+      "lon": 8.5657657,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Restaurant Rössli"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1052316783,
+      "lat": 47.1681589,
+      "lon": 8.5159314,
+      "tags": {
+        "amenity": "cafe",
+        "diet:vegan": "yes",
+        "name": "Café Plaza",
+        "phone": "+41 41 880 11 11",
+        "wheelchair": "limited",
+        "wheelchair:description": "Toilette ist nicht rollstuhlgerecht"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1052399232,
+      "lat": 47.1729504,
+      "lon": 8.5164115,
+      "tags": {
+        "addr:city": "Zug",
+        "addr:housenumber": "25",
+        "addr:postcode": "6300",
+        "addr:street": "Baarerstrasse",
+        "alt_name": "Burger King Zug",
+        "amenity": "fast_food",
+        "branch": "Zug",
+        "brand": "Burger King",
+        "brand:wikidata": "Q177054",
+        "brand:wikipedia": "en:Burger King",
+        "check_date": "2025-06-26",
+        "contact:phone": "+41 41 541 51 07",
+        "contact:website": "https://de.burger-king.ch",
+        "cuisine": "burger",
+        "indoor_seating": "yes",
+        "internet_access": "wlan",
+        "level": "0",
+        "name": "Burger King",
+        "opening_hours": "Su-We 10:00-24:00; Th 10:00-01:00; Fr-Sa 10:00-02:00",
+        "operator": "Zuger Food",
+        "outdoor_seating": "yes",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "takeaway": "yes",
+        "website": "https://de.burger-king.ch/kingfinder/23821?id=1552",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1055146594,
+      "lat": 47.1669901,
+      "lon": 8.5153406,
+      "tags": {
+        "addr:city": "Zug",
+        "addr:country": "CH",
+        "addr:housenumber": "16",
+        "addr:postcode": "6300",
+        "addr:street": "Neugasse",
+        "amenity": "restaurant",
+        "cuisine": "greek",
+        "diet:vegan": "no",
+        "diet:vegetarian": "yes",
+        "name": "Olive & Oregano",
+        "opening_hours": "Tu-Fr 11:00-14:00; Tu-Th 17:00-22:00; Fr 17:00-23:00; Sa 10:00-23:00; Su 11:00-22:00",
+        "website": "https://www.oliveoregano.ch/",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1059536550,
+      "lat": 47.1743849,
+      "lon": 8.4267929,
+      "tags": {
+        "addr:city": "Hünenberg",
+        "addr:housenumber": "9",
+        "addr:postcode": "6331",
+        "addr:street": "Chamerstrasse",
+        "amenity": "restaurant",
+        "cuisine": "regional;swiss",
+        "name": "Gasthaus Degen",
+        "opening_hours": "Tu-Fr 08:00-24:00; Sa 09:00-24:00; Su,Mo off",
+        "phone": "+41 41 780 12 54",
+        "website": "https://www.gasthausdegen.ch",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1059536558,
+      "lat": 47.1756701,
+      "lon": 8.4264545,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Eiche",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1105436093,
+      "lat": 47.179851,
+      "lon": 8.4589774,
+      "tags": {
+        "addr:housenumber": "5",
+        "addr:postcode": "6330",
+        "addr:street": "Kirchbühl",
+        "amenity": "cafe",
+        "name": "Cafe Plaza",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1128098554,
+      "lat": 47.1619879,
+      "lon": 8.4335654,
+      "tags": {
+        "addr:city": "Hünenberg",
+        "addr:country": "CH",
+        "addr:housenumber": "108",
+        "addr:postcode": "6331",
+        "addr:street": "Bösch",
+        "amenity": "restaurant",
+        "cuisine": "italian",
+        "name": "Restaurant Angolo",
+        "opening_hours": "Mo-Fr 11:00-14:30",
+        "website": "http://www.angolopizza.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1187411578,
+      "lat": 47.1371463,
+      "lon": 8.5842447,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Dorf Café",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1187411860,
+      "lat": 47.1370128,
+      "lon": 8.5838258,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "kebab",
+        "name": "Ägeri Kebap Haus",
+        "toilets:wheelchair": "no",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1231578296,
+      "lat": 47.1329007,
+      "lon": 8.4443965,
+      "tags": {
+        "addr:city": "Risch-Rotkreuz",
+        "addr:housenumber": "1",
+        "addr:postcode": "6343",
+        "addr:street": "Breitfeld",
+        "amenity": "restaurant",
+        "name": "Landgasthof Breitfeld",
+        "phone": "+41 41 790 11 19",
+        "website": "https://www.breitfeld.ch/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1241242465,
+      "lat": 47.1314843,
+      "lon": 8.676987,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Steinstoss-Stubli"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1464796558,
+      "lat": 47.1804715,
+      "lon": 8.5125827,
+      "tags": {
+        "addr:city": "Zug",
+        "addr:housenumber": "13",
+        "addr:place": "Feldhof",
+        "addr:postcode": "6300",
+        "amenity": "restaurant",
+        "cuisine": "indian;curry",
+        "diet:non-vegetarian": "yes",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "name": "Oh! Curry",
+        "opening_hours": "Tu-Fr 11:30 - 14:00 & 18:00 - 21:00; So 18:00 - 21:00",
+        "phone": "+41 41 553 36 63",
+        "website": "https://oohcurry.ch/zug-home/",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1464796559,
+      "lat": 47.181842,
+      "lon": 8.5105563,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Bocciodromo",
+        "opening_hours": "Tu-Su 10:00-22:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1519992106,
+      "lat": 47.1412167,
+      "lon": 8.428306,
+      "tags": {
+        "addr:city": "Rotkreuz",
+        "addr:housename": "Arkadenhof",
+        "addr:housenumber": "1",
+        "addr:postcode": "6343",
+        "addr:street": "Buonaserstrasse",
+        "amenity": "cafe",
+        "branch": "Rotkreuz",
+        "check_date": "2024-06-18",
+        "name": "Hotz Rust",
+        "opening_hours": "Mo-Fr 08:30-18:30; Sa 07:00-16:00; PH,Su 07:30-12:00",
+        "operator": "Bäckerei Hotz Rust",
+        "shop": "bakery",
+        "website": "https://www.zugerbeck.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1552739266,
+      "lat": 47.174469,
+      "lon": 8.4493926,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "italian",
+        "name": "Rialto",
+        "opening_hours": "Tu-Fr 09:00-24:00; Sa-Su 10:00-24:00",
+        "toilets:wheelchair": "no",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1653517617,
+      "lat": 47.185995,
+      "lon": 8.5571465,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "Höllgrotten"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1722654655,
+      "lat": 47.1809158,
+      "lon": 8.4591679,
+      "tags": {
+        "amenity": "cafe",
+        "changing_table": "yes",
+        "cuisine": "ice_cream",
+        "level": "0",
+        "name": "Café Luzia",
+        "opening_hours": "Tu-Su 09:00-19:00",
+        "outdoor_seating": "yes",
+        "takeaway": "yes",
+        "toilets": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1722654660,
+      "lat": 47.1792484,
+      "lon": 8.457818,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "kebab;pizza",
+        "delivery": "yes",
+        "name": "Eat-Club",
+        "outdoor_seating": "yes",
+        "phone": "+41 41 781 59 59",
+        "takeaway": "yes",
+        "website": "https://eatclub.ch/",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1734171574,
+      "lat": 47.1745594,
+      "lon": 8.5172703,
+      "tags": {
+        "addr:city": "Zug",
+        "addr:housenumber": "40",
+        "addr:postcode": "6300",
+        "addr:street": "Baarerstrasse",
+        "alt_name": "Vabi's Restaurant & Take Away",
+        "amenity": "restaurant",
+        "contact:website": "https://www.vabisrestauranttakeaway.ch",
+        "name": "Vabi‘s",
+        "takeaway": "yes",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1819501615,
+      "lat": 47.1463462,
+      "lon": 8.5058228,
+      "tags": {
+        "amenity": "restaurant",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1830735145,
+      "lat": 47.1873064,
+      "lon": 8.4874749,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Mediterraneo"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1836907052,
+      "lat": 47.1696082,
+      "lon": 8.515108,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "italian",
+        "email": "info@giardino-zug.ch",
+        "level": "0",
+        "name": "Giardino",
+        "opening_hours": "Mo-Fr 11:00-14:30,17:30-23:30, Sa 10:30-14:30,17:30-23:30",
+        "phone": "+41 41 710 67 00",
+        "website": "https://giardino-zug.ch",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1879564410,
+      "lat": 47.0961658,
+      "lon": 8.5217076,
+      "tags": {
+        "amenity": "restaurant",
+        "indoor_seating": "yes",
+        "name": "Aesch",
+        "outdoor_seating": "yes",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1937343920,
+      "lat": 47.1752813,
+      "lon": 8.5017087,
+      "tags": {
+        "amenity": "restaurant",
+        "email": "hello@strandbad-zug.ch",
+        "name": "Strandbad Zug",
+        "operator": "Pointbreak Group",
+        "website": "https://www.strandbad-zug.ch/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1938458087,
+      "lat": 47.1777273,
+      "lon": 8.4939442,
+      "tags": {
+        "addr:city": "Zug",
+        "addr:housenumber": "36",
+        "addr:postcode": "6300",
+        "addr:street": "Chamer Fussweg",
+        "amenity": "restaurant",
+        "cuisine": "fish;local",
+        "name": "Sommerbeiz Brüggli",
+        "outdoor_seating": "no",
+        "website": "https://www.brueggli-zug.ch/",
+        "website:menu": "https://www.brueggli-zug.ch/food",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2046685157,
+      "lat": 47.1735825,
+      "lon": 8.5186364,
+      "tags": {
+        "addr:housenumber": "9",
+        "addr:street": "Metallstrasse",
+        "amenity": "restaurant",
+        "diet:gluten_free": "yes",
+        "diet:vegetarian": "yes",
+        "name": "Pizzeria da Pino",
+        "website": "https://www.da-pino.ch/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2046794844,
+      "lat": 47.1731133,
+      "lon": 8.5204285,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "italian",
+        "name": "Centro Italiano"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2046816568,
+      "lat": 47.1573969,
+      "lon": 8.5297093,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "email": "info@blasenberg.ch",
+        "name": "Blasenberg",
+        "opening_hours": "Tu-We off; Su 10:00-21:00; Th-Fr 10:00-24:00; Mo 10:00-24:00",
+        "phone": "+41 41 711 05 44",
+        "website": "https://www.blasenberg.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2068468295,
+      "lat": 47.1642968,
+      "lon": 8.5132577,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Seeliken Kiosk",
+        "website": "https://seeliken.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2078750652,
+      "lat": 47.1664071,
+      "lon": 8.5159707,
+      "tags": {
+        "amenity": "restaurant",
+        "email": "place2be@imhof-zug.ch",
+        "name": "Im Hof",
+        "opening_hours": "Mo-Sa 16:00-24:00",
+        "operator": "Savi Gastro GmbH",
+        "phone": "+41 41 710 43 43",
+        "website": "https://www.imhof-zug.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2078752307,
+      "lat": 47.1637151,
+      "lon": 8.5166254,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date": "2023-11-24",
+        "name": "La Colonia",
+        "opening_hours": "We 19:30-23:00; Fr 19:30-24:00, Sa 17:00-24:00, Su 15:00-23:00",
+        "website": "https://www.colonia.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2078756726,
+      "lat": 47.1662256,
+      "lon": 8.5158269,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Sushi"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2078756727,
+      "lat": 47.1651396,
+      "lon": 8.5147036,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "italian",
+        "name": "Al Teatro"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2078759206,
+      "lat": 47.1774038,
+      "lon": 8.5149862,
+      "tags": {
+        "addr:city": "Zug",
+        "addr:housenumber": "22",
+        "addr:postcode": "6300",
+        "addr:street": "Dammstrasse",
+        "amenity": "restaurant",
+        "email": "fivemoods@sv-group.ch",
+        "name": "fivemoods Kantine",
+        "opening_hours": "Mo-Fr 11:15-13:00",
+        "operator": "Jörg Forster",
+        "phone": "+41 41 724 64 40",
+        "toilets:wheelchair": "yes",
+        "website": "https://siemens.sv-restaurant.ch/de/menuplan/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2083545723,
+      "lat": 47.1776904,
+      "lon": 8.5179287,
+      "tags": {
+        "addr:city": "Zug",
+        "addr:housenumber": "87",
+        "addr:postcode": "6300",
+        "addr:street": "Baarerstrasse",
+        "amenity": "restaurant",
+        "check_date": "2025-01-31",
+        "cuisine": "salad",
+        "name": "Lieblings Salat",
+        "opening_hours": "Mo-Fr 11:00-14:00,17:00-20:00; Sa 11:00-18:00",
+        "website": "https://lieblingssalat.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2088674529,
+      "lat": 47.1707987,
+      "lon": 8.5166033,
+      "tags": {
+        "addr:city": "Zug",
+        "addr:housenumber": "2",
+        "addr:postcode": "6300",
+        "addr:street": "Baarerstrasse",
+        "amenity": "fast_food",
+        "cuisine": "thai",
+        "name": "Thai",
+        "name:de": "Rung Tawan Thai",
+        "opening_hours": "Mo-Fr 07:00-14:00, 17:00-19:00",
+        "phone": "041 710 29 65"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2088674533,
+      "lat": 47.1710711,
+      "lon": 8.5165239,
+      "tags": {
+        "addr:city": "Zug",
+        "addr:housenumber": "6",
+        "addr:postcode": "6300",
+        "addr:street": "Baarerstrasse",
+        "amenity": "restaurant",
+        "brand": "Coop Restaurant",
+        "brand:wikidata": "Q432564",
+        "cuisine": "german",
+        "name": "Coop Restaurant",
+        "operator": "Coop Genossenschaft",
+        "toilets:wheelchair": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2088677582,
+      "lat": 47.1666288,
+      "lon": 8.5150839,
+      "tags": {
+        "addr:city": "Zug",
+        "addr:housenumber": "12",
+        "addr:place": "Landsgemeindeplatz",
+        "addr:postcode": "6300",
+        "amenity": "restaurant",
+        "cuisine": "mediterranean",
+        "name": "Widder",
+        "opening_hours": "Mo-Fr 11:30-14:30,18:00-23:00; Sa 18:00-23:00; Su off",
+        "phone": "+41 41 240 05 05",
+        "website": "https://www.restaurantwidder.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2088679381,
+      "lat": 47.1671865,
+      "lon": 8.51491,
+      "tags": {
+        "addr:city": "Zug",
+        "addr:housenumber": "1",
+        "addr:postcode": "6301",
+        "addr:street": "Landsgemeindeplatz",
+        "amenity": "restaurant",
+        "cuisine": "french;regional;fish",
+        "email": "brasserie@loewen-zug.ch",
+        "internet_access": "wlan",
+        "name": "Brasserie Löwen",
+        "opening_hours": "PH,Mo-Su 09:00-23:00",
+        "outdoor_seating": "yes",
+        "phone": "+41 41 725 22 20",
+        "smoking": "outside",
+        "website": "https://www.loewen-zug.ch/brasserie.html",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2088681257,
+      "lat": 47.1665936,
+      "lon": 8.5152033,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "ice_cream",
+        "name": "Ice Cream"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2088683778,
+      "lat": 47.1667178,
+      "lon": 8.5149571,
+      "tags": {
+        "addr:city": "Zug",
+        "addr:housenumber": "8",
+        "addr:place": "Landsgemeindeplatz",
+        "addr:postcode": "6300",
+        "amenity": "restaurant",
+        "bar": "yes",
+        "cuisine": "mediterranean;portuguese;pizza",
+        "name": "Althus",
+        "opening_hours": "We-Fr 11:30-01:00, Sa 11:30-02:00, Su 10:00-19:00; Mo,Tu off",
+        "phone": "+41 41 711 04 72",
+        "website": "https://althusbar.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2089852341,
+      "lat": 47.1707724,
+      "lon": 8.5154976,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Treichler",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2089867473,
+      "lat": 47.1713293,
+      "lon": 8.5155328,
+      "tags": {
+        "amenity": "cafe",
+        "contact:city": "Zug",
+        "contact:email": "info@schluessel-menzingen.ch",
+        "contact:housenumber": "4",
+        "contact:phone": "+41 41 711 14 02",
+        "contact:postcode": "6300",
+        "contact:street": "Bundesplatz",
+        "contact:website": "https://www.diezugerkirschtorte.ch/",
+        "name": "Café Confiserie Strickler",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2090725638,
+      "lat": 47.1686299,
+      "lon": 8.5148764,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Kaiser Franz Josef"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2090726865,
+      "lat": 47.1693301,
+      "lon": 8.5145116,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date": "2025-05-16",
+        "cuisine": "italian",
+        "diet:vegetarian": "yes",
+        "email": "office@puccini.ch",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "level": "0",
+        "name": "Puccini",
+        "opening_hours": "Mo-Fr 11:30-14:00, 18:00-23:30; Sa 18:00-23:30; Su 11:30-23:30",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "phone": "+41 41 720 04 04",
+        "website": "https://puccini.ch/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2090911540,
+      "lat": 47.1762005,
+      "lon": 8.5069128,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "GG6",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2130614071,
+      "lat": 47.1743582,
+      "lon": 8.5192509,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "chinese",
+        "name": "Dragon Palace"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2331596460,
+      "lat": 47.1963754,
+      "lon": 8.4855595,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Bäckerei Nussbaumer",
+        "opening_hours": "Mo-Fr 05:30-18:00; Sa 06:00-16:00; Su 07:00-12:30"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2447479189,
+      "lat": 47.0995604,
+      "lon": 8.5174032,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Cafeteria Mütschi"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2526440511,
+      "lat": 47.1374536,
+      "lon": 8.5817191,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Cafe Brändle",
+        "opening_hours": "We-Fr 07:00-18:00; Sa-Su 07:00-17:00, Mo-Tu off",
+        "shop": "bakery",
+        "website": "http://www.cafe-braendle.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2609761873,
+      "lat": 47.1494339,
+      "lon": 8.507503,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Zunfthaus Kreuz",
+        "smoking": "no",
+        "website": "https://www.zunfthauskreuz.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2634905431,
+      "lat": 47.1402676,
+      "lon": 8.4267322,
+      "tags": {
+        "addr:city": "Rotkreuz",
+        "addr:country": "CH",
+        "addr:housenumber": "10",
+        "addr:postcode": "6343",
+        "addr:street": "Luzernerstrasse",
+        "amenity": "restaurant",
+        "cuisine": "chinese",
+        "name": "Dragon Schatz",
+        "operator": "Dragon Schatz GmbH"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2734981806,
+      "lat": 47.1866123,
+      "lon": 8.4783754,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "italian",
+        "name": "Ristorante Prisma"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3094502235,
+      "lat": 47.1536484,
+      "lon": 8.5114906,
+      "tags": {
+        "addr:city": "Zug",
+        "addr:housenumber": "59",
+        "addr:postcode": "6300",
+        "addr:street": "Artherstrasse",
+        "amenity": "cafe",
+        "changing_table": "yes",
+        "changing_table:location": "dedicated_room",
+        "contact:website": "https://biohofzug.ch/",
+        "name": "Biohof Zug",
+        "opening_hours": "Mo-Fr 09:00-17:00; Sa 09:00-14:00",
+        "toilets": "yes",
+        "toilets:access": "customers",
+        "toilets:wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3094502238,
+      "lat": 47.0995381,
+      "lon": 8.5132112,
+      "tags": {
+        "addr:housenumber": "1",
+        "addr:postcode": "6318",
+        "addr:street": "Artherstrasse",
+        "amenity": "restaurant",
+        "name": "Engel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3094502247,
+      "lat": 47.0995597,
+      "lon": 8.5176745,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Mütschi-Träff"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3094502258,
+      "lat": 47.0949878,
+      "lon": 8.5241661,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Zentrum Elisabeth",
+        "toilets:wheelchair": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3096177969,
+      "lat": 47.1959963,
+      "lon": 8.5304449,
+      "tags": {
+        "addr:housenumber": "13",
+        "addr:street": "Oberdorfstrasse",
+        "amenity": "restaurant",
+        "cuisine": "chinese",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Hong-Kong Dragon",
+        "operator": "Hong Kong Dragon GmbH",
+        "phone": "+41 41 760 19 60",
+        "website": "https://www.hongkongdragon.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3267888033,
+      "lat": 47.1380387,
+      "lon": 8.5795173,
+      "tags": {
+        "amenity": "cafe",
+        "check_date": "2025-01-01",
+        "name": "Zumbach",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "shop": "bakery",
+        "website": "https://zumbibeck.ch/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3268917057,
+      "lat": 47.1371025,
+      "lon": 8.5840763,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "asian",
+        "name": "Peking Ente",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3269538501,
+      "lat": 47.1325047,
+      "lon": 8.5933191,
+      "tags": {
+        "amenity": "fast_food"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3335165580,
+      "lat": 47.1820021,
+      "lon": 8.4654271,
+      "tags": {
+        "addr:city": "Cham",
+        "addr:country": "CH",
+        "addr:postcode": "6330",
+        "addr:street": "Zugerstrasse",
+        "amenity": "cafe",
+        "name": "Arcade",
+        "opening_hours": "Mo-Fr 6:45-20:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3426996334,
+      "lat": 47.1696217,
+      "lon": 8.5156882,
+      "tags": {
+        "addr:city": "Zug",
+        "addr:housenumber": "19",
+        "addr:postcode": "6300",
+        "addr:street": "Bahnhofstrasse",
+        "amenity": "restaurant",
+        "name": "Kohinoor",
+        "website": "https://kohinoorzug.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3426996336,
+      "lat": 47.1695704,
+      "lon": 8.5159249,
+      "tags": {
+        "amenity": "cafe",
+        "email": "grandcafe@grandcafe.ch",
+        "name": "Grand Café",
+        "opening_hours": "Mo 6:00-23:00; Tu-We 6:00-24:00; Th 6:00-1:00; Fr-Sa 6:00-2:00",
+        "phone": "+41 (0)41 711 20 21",
+        "website": "https://www.grandcafe.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3507251401,
+      "lat": 47.1807916,
+      "lon": 8.4583866,
+      "tags": {
+        "addr:city": "Cham",
+        "addr:housenumber": "1",
+        "addr:postcode": "6330",
+        "addr:street": "Schulhausstrasse",
+        "amenity": "cafe",
+        "name": "Teehaus Umami",
+        "opening_hours": "We-Su 09:00-18:00",
+        "outdoor_seating": "yes",
+        "phone": "+41417802078",
+        "website": "https://www.teehaus-umami.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3507272495,
+      "lat": 47.1802751,
+      "lon": 8.4590357,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "kebab",
+        "delivery": "yes",
+        "level": "0",
+        "name": "Flash Point",
+        "opening_hours": "Tu-Sa 09:00-22:00; PH,Su 09:00-21:00",
+        "outdoor_seating": "yes",
+        "takeaway": "yes",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3690985127,
+      "lat": 47.1674232,
+      "lon": 8.5150387,
+      "tags": {
+        "addr:city": "Zug",
+        "addr:housenumber": "3",
+        "addr:postcode": "6300",
+        "addr:street": "Seestrasse",
+        "amenity": "restaurant",
+        "bar": "yes",
+        "cuisine": "thai",
+        "diet:pescetarian": "yes",
+        "diet:vegetarian": "yes",
+        "email": "info@gotthaerdli.ch",
+        "name": "Gotthärdli am See",
+        "opening_hours": "Mo-Fr 11:30-14:00,17:30-22:00; Sa,Su 17:30-22:00; PH 17:30-22:00",
+        "phone": "+41 41 711 09 04",
+        "website": "https://www.gotthaerdli.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3690989650,
+      "lat": 47.172201,
+      "lon": 8.516775,
+      "tags": {
+        "addr:city": "Zug",
+        "addr:housenumber": "14",
+        "addr:postcode": "6300",
+        "addr:street": "Baarerstrasse",
+        "amenity": "restaurant",
+        "branch": "Zug Metalli",
+        "check_date": "2025-01-03",
+        "cuisine": "japanese;sushi",
+        "delivery": "yes",
+        "delivery:covid19": "only",
+        "level": "0",
+        "name": "Negishi Sushi Bar",
+        "opening_hours": "Mo-Sa 10:00-23:00;Su 16:00-22:00",
+        "operator": "Fredy Wiesner Gastronomie",
+        "takeaway": "yes",
+        "toilets:wheelchair": "no",
+        "website": "https://www.negishi.ch/zug-metalli",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3691000029,
+      "lat": 47.1724415,
+      "lon": 8.5176065,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date": "2025-05-01",
+        "cuisine": "italian",
+        "level": "0",
+        "name": "La Taverna",
+        "opening_hours": "Mo-Su 08:30-23:00",
+        "outdoor_seating": "yes",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "smoking": "no",
+        "toilets:wheelchair": "no",
+        "website": "https://taverna-zug.ch/",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3691000030,
+      "lat": 47.1725513,
+      "lon": 8.5181721,
+      "tags": {
+        "addr:city": "Zug",
+        "addr:housenumber": "13c",
+        "addr:postcode": "6300",
+        "addr:street": "Industriestrasse",
+        "amenity": "restaurant",
+        "bar": "yes",
+        "check_date": "2025-05-01",
+        "cuisine": "asian",
+        "indoor_seating": "yes",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "level": "0",
+        "name": "Miss Miu",
+        "name:de": "Miss Miu",
+        "opening_hours": "Mo-Sa 11:00-23:00; Su 12:00-22:00",
+        "outdoor_seating": "yes",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "phone": "+41 41 710 84 18",
+        "smoking": "outside",
+        "toilets": "yes",
+        "website": "https://www.miss-miu.ch/de/zug-metalli",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3691004381,
+      "lat": 47.1804722,
+      "lon": 8.5187853,
+      "tags": {
+        "amenity": "cafe",
+        "name": "niente"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3771717241,
+      "lat": 47.1846527,
+      "lon": 8.5032189,
+      "tags": {
+        "addr:city": "Zug",
+        "addr:housenumber": "27",
+        "addr:postcode": "6300",
+        "addr:street": "Letzi",
+        "amenity": "restaurant",
+        "capacity": "60",
+        "cuisine": "regional",
+        "email": "sf@wirtschaft-freimann.ch",
+        "indoor_seating": "yes",
+        "name": "Restaurant Freimann",
+        "opening_hours": "Th-Mo 09:00-24:00",
+        "outdoor_seating": "yes",
+        "smoking": "outside",
+        "takeaway": "no",
+        "website": "https://wirtschaft-freimann.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3847628121,
+      "lat": 47.195439,
+      "lon": 8.5244496,
+      "tags": {
+        "addr:city": "Baar",
+        "addr:housenumber": "9",
+        "addr:postcode": "6340",
+        "addr:street": "Bahnhofstrasse",
+        "amenity": "restaurant",
+        "check_date": "2024-12-31",
+        "contact:phone": "+41 41 7608585",
+        "cuisine": "international",
+        "indoor_seating": "yes",
+        "name": "Restaurant Neumühle",
+        "name:de": "Restaurant Neumühle",
+        "outdoor_seating": "yes",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "smoking": "outside",
+        "takeaway": "no",
+        "website": "https://www.restaurant-neumuehle.ch/",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3847629058,
+      "lat": 47.1960835,
+      "lon": 8.5287546,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "turkish",
+        "indoor_seating": "yes",
+        "name": "Kebab und Pizza House",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3847641397,
+      "lat": 47.2017534,
+      "lon": 8.5377264,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "FC Baar Clubhaus"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3865881976,
+      "lat": 47.1373527,
+      "lon": 8.5832241,
+      "tags": {
+        "addr:housenumber": "7",
+        "addr:street": "Zugerstrasse",
+        "amenity": "restaurant",
+        "check_date": "2023-05-04",
+        "cuisine": "thai",
+        "name": "Chilli House",
+        "payment:mastercard": "yes",
+        "payment:visa": "yes",
+        "phone": "+41 41 545 52 23",
+        "takeaway": "yes",
+        "toilets:wheelchair": "no",
+        "website": "http://www.chillihouse-unteraegeri.com/",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3865881981,
+      "lat": 47.1374053,
+      "lon": 8.5826942,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "pizza",
+        "name": "Pizzeria Ägeri Post"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3981899754,
+      "lat": 47.1778884,
+      "lon": 8.5183324,
+      "tags": {
+        "addr:city": "Zug",
+        "addr:housenumber": "88",
+        "addr:postcode": "6300",
+        "addr:street": "Baarerstrasse",
+        "amenity": "cafe",
+        "branch": "Zug",
+        "check_date": "2025-01-21",
+        "contact:website": "http://www.zugerbeck.ch/Zug-Baarerstrasse.htm",
+        "email": "info@zugerbeck.ch",
+        "indoor_seating": "yes",
+        "name": "Hotz Rust",
+        "opening_hours": "Mo-Fr 06:30-18:00; Sa 07:00-13:00; Su 07:30-13:00",
+        "operator": "Bäckerei Hotz Rust",
+        "outdoor_seating": "yes",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "phone": "+41 41 780 80 35",
+        "shop": "bakery",
+        "smoking": "outside",
+        "website": "https://www.zugerbeck.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3981900571,
+      "lat": 47.1770731,
+      "lon": 8.5177129,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "italian",
+        "indoor_seating": "yes",
+        "name": "The Station",
+        "outdoor_seating": "yes",
+        "phone": "+41 41 711 16 00",
+        "website": "https://the-station.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3981900572,
+      "lat": 47.1740945,
+      "lon": 8.5171492,
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "dean&david",
+        "brand:wikidata": "Q66132404",
+        "cuisine": "salad;sandwich",
+        "name": "dean&david",
+        "takeaway": "yes",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4021098532,
+      "lat": 47.1766008,
+      "lon": 8.5074349,
+      "tags": {
+        "addr:city": "Zug",
+        "amenity": "restaurant",
+        "cuisine": "burger",
+        "indoor_seating": "yes",
+        "name": "67 Sixtyseven Sportsbar",
+        "opening_hours": "24/7",
+        "outdoor_seating": "yes",
+        "website": "https://www.67sportsbar.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4482268089,
+      "lat": 47.164165,
+      "lon": 8.5564248,
+      "tags": {
+        "addr:city": "Allenwinden",
+        "addr:housenumber": "5",
+        "addr:postcode": "6319",
+        "addr:street": "Dorfstrasse",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Adler",
+        "name:de": "Adler",
+        "phone": "+41 41 202 10 50",
+        "website": "https://adlerallenwinden.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4482709394,
+      "lat": 47.1641154,
+      "lon": 8.5558862,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "moroccan",
+        "name": "Dörfli-Douar",
+        "name:de": "Dörfli-Douar",
+        "toilets:wheelchair": "no",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4685099309,
+      "lat": 47.178342,
+      "lon": 8.5180983,
+      "tags": {
+        "addr:city": "Zug",
+        "addr:housenumber": "97",
+        "addr:postcode": "6300",
+        "addr:street": "Baarerstrasse",
+        "amenity": "restaurant",
+        "cuisine": "regional;pasta;italian",
+        "name": "Lokal97",
+        "opening_hours": "Mo-Fr 11:30-14:00,17:30-22:30, Sa 17:00-22:30, Mo-Fr 07:00-10:00 open \"breakfast\", Sa,Su 08:00-11:00 open \"breakfast\"",
+        "operator": "ConSol - Berufliche Perspektiven",
+        "outdoor_seating": "yes",
+        "phone": "+41 41 729 38 88",
+        "website": "https://lokal97.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4759370578,
+      "lat": 47.1967502,
+      "lon": 8.4854337,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Schnitz und Gwunder",
+        "opening_hours": "We-Sa 11:00-24:00, Su 11:00-23:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4796544568,
+      "lat": 47.196218,
+      "lon": 8.4257234,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "coffee_shop;ice_cream;regional",
+        "name": "Ziegler-Beizli",
+        "opening_hours": "Apr 15-Oct 22 We-Sa 14:00-17:30; Apr 15-Oct 22 Su 11:00-17:30",
+        "operator": "Stiftung Ziegelei-Museum",
+        "outdoor_seating": "yes",
+        "phone": "+41 41 740 41 20",
+        "website": "https://www.ziegelei-museum.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4799361613,
+      "lat": 47.1818314,
+      "lon": 8.4681186,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "asian",
+        "delivery": "only",
+        "level": "0",
+        "name": "Loasia",
+        "opening_hours": "Mo-Th 11:00-13:30,17:00-21:30; Fr 11:00-13:30,17:00-22:00; Sa,Su 17:00-22:00",
+        "phone": "+41 41 780 32 32",
+        "takeaway": "only",
+        "website": "https://www.loasia.ch/de/loasia-cham"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4844109943,
+      "lat": 47.1818192,
+      "lon": 8.461975,
+      "tags": {
+        "addr:city": "Cham",
+        "addr:housenumber": "17",
+        "addr:postcode": "6330",
+        "addr:street": "Zugerstrasse",
+        "amenity": "restaurant",
+        "cuisine": "thai",
+        "name": "Chaophraya Thai Take Away",
+        "opening_hours": "Mo-Sa 11:00-14:00",
+        "phone": "+41 79 276 96 88",
+        "takeaway": "yes",
+        "website": "https://chaophraya.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4879562921,
+      "lat": 47.1059112,
+      "lon": 8.6415842,
+      "tags": {
+        "addr:housenumber": "131",
+        "addr:postcode": "6315",
+        "addr:street": "Hauptseestrasse",
+        "amenity": "restaurant",
+        "cuisine": "fish",
+        "email": "info@buechwaeldli.ch",
+        "name": "Restaurant Buechwäldli",
+        "name:de": "Restaurant Buechwäldli",
+        "opening_hours": "We-Su 09:00-00:00",
+        "phone": "+41 41 750 12 94",
+        "website": "https://www.buechwaeldli.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4968031723,
+      "lat": 47.1364771,
+      "lon": 8.5879607,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Minigolf Unterägeri",
+        "name:de": "Minigolf Unterägeri",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4968064624,
+      "lat": 47.1363329,
+      "lon": 8.5881361,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Clubhaus SC Frosch Aegeri Wasserball",
+        "name:de": "Clubhaus SC Frosch Aegeri Wasserball"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4969901429,
+      "lat": 47.1937204,
+      "lon": 8.5236744,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date": "2025-01-03",
+        "indoor_seating": "yes",
+        "name": "Cheers Bar in Baar",
+        "opening_hours": "Tu 17:00-24:00; We-Fr 11:30-13:00,17:00-24:00; Sa 18:00-24:00",
+        "outdoor_seating": "yes",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4969906722,
+      "lat": 47.1947896,
+      "lon": 8.5260568,
+      "tags": {
+        "addr:housenumber": "3",
+        "addr:postcode": "6340",
+        "addr:street": "Rathausstrasse",
+        "amenity": "restaurant",
+        "check_date": "2025-03-29",
+        "indoor_seating": "yes",
+        "name": "Restaurant Pizzeria Krone",
+        "name:de": "Restaurant Pizzeria Krone",
+        "opening_hours": "Mo-Sa 07:30-00:00",
+        "outdoor_seating": "yes",
+        "phone": "+41 41 761 72 01",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4970187622,
+      "lat": 47.1943983,
+      "lon": 8.5254641,
+      "tags": {
+        "addr:city": "Baar",
+        "addr:housenumber": "6B",
+        "addr:postcode": "6340",
+        "addr:street": "Dorfstrasse",
+        "amenity": "fast_food",
+        "check_date": "2025-03-29",
+        "cuisine": "kebab;pizza",
+        "drive_through": "no",
+        "indoor_seating": "yes",
+        "name": "Dörfli Kebap",
+        "opening_hours": "Mo-Th,Su 10:00-22:00; Fr-Sa 10:00-23:00",
+        "outdoor_seating": "yes",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "phone": "+41 41 760 72 72",
+        "takeaway": "yes",
+        "website": "https://www.dörflikebap.ch/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4970195324,
+      "lat": 47.1964779,
+      "lon": 8.5283819,
+      "tags": {
+        "amenity": "fast_food",
+        "indoor_seating": "yes",
+        "name": "Mahalaxmi India",
+        "outdoor_seating": "yes",
+        "website": "https://www.mahalaxmiindia.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4970198223,
+      "lat": 47.1809131,
+      "lon": 8.484946,
+      "tags": {
+        "addr:city": "Zug",
+        "addr:housenumber": "169",
+        "addr:postcode": "6300",
+        "addr:street": "Chamerstrasse",
+        "amenity": "restaurant",
+        "name": "Centro Español Zug",
+        "opening_hours": "We,Th 11:00-14:00,17:00-22:00, Fr 11:00-14:00,17:00-24:00, Sa 11:00-24:00, Su 10:00-21:00",
+        "phone": "+41 76 421 83 20",
+        "source": "website",
+        "website": "https://www.centro-espanol-zug.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4970208822,
+      "lat": 47.1956135,
+      "lon": 8.5359854,
+      "tags": {
+        "addr:housenumber": "40",
+        "addr:postcode": "6340",
+        "addr:street": "Langgasse",
+        "amenity": "restaurant",
+        "name": "Royal Siam Thai Restaurant",
+        "name:de": "Royal Siam Thai Restaurant",
+        "website": "http://www.royalsiam.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5046840268,
+      "lat": 47.1621999,
+      "lon": 8.518328,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Hochschulkantine"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5046849025,
+      "lat": 47.1737759,
+      "lon": 8.5236903,
+      "tags": {
+        "addr:city": "Zug",
+        "addr:housenumber": "24",
+        "addr:postcode": "6300",
+        "addr:street": "Lüssiweg",
+        "amenity": "restaurant",
+        "name": "Mensa Kantonsschule Zug",
+        "opening_hours": "Mo-Fr 11:30-13:15",
+        "website": "https://www.eldora-ksz.ch/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5103296753,
+      "lat": 47.1719923,
+      "lon": 8.517913,
+      "tags": {
+        "addr:city": "Zug",
+        "addr:housenumber": "2",
+        "addr:postcode": "6300",
+        "addr:street": "Gotthardstrasse",
+        "amenity": "restaurant",
+        "bar": "no",
+        "branch": "Metalli Zug",
+        "check_date": "2025-05-23",
+        "cuisine": "kebab",
+        "delivery": "no",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "level": "0",
+        "microbrewery": "no",
+        "name": "Ayverdi's Zug",
+        "opening_hours": "Mo-Th 11:00-22:00; Fr-Sa 11:00-23:00; Su 11:00-22:00",
+        "operator": "Fredy Wiesner Gastronomie",
+        "outdoor_seating": "yes",
+        "payment:cash": "yes",
+        "payment:mastercard": "yes",
+        "payment:visa": "yes",
+        "phone": "043 544 99 55",
+        "reservation": "no",
+        "smoking": "outside",
+        "source": "survey",
+        "takeaway": "yes",
+        "toilets": "yes",
+        "website": "https://ayverdis.ch/standorte/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5103296771,
+      "lat": 47.1725054,
+      "lon": 8.5177399,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "italian",
+        "name": "Pronto",
+        "outdoor_seating": "yes",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5580625284,
+      "lat": 47.1980774,
+      "lon": 8.4853979,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date:opening_hours": "2023-04-15",
+        "name": "Masuree Thai Shop",
+        "opening_hours": "Mo-Th 10:00-14:30; Fr 10:00-14:30,17:00-19:30; Sa 10:00-14:00",
+        "takeaway": "yes",
+        "website": "https://www.masuree-thai-shop.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5580649878,
+      "lat": 47.187921,
+      "lon": 8.4813977,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "ToroToro",
+        "website": "https://www.torotoro.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5858275803,
+      "lat": 47.1741119,
+      "lon": 8.51826,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Kaffee Frech"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5903581924,
+      "lat": 47.1395166,
+      "lon": 8.4262738,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Zur Linde",
+        "toilets:wheelchair": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6113508085,
+      "lat": 47.1813528,
+      "lon": 8.5189609,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "sushi",
+        "indoor_seating": "yes",
+        "name": "Aki",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6116632419,
+      "lat": 47.195545,
+      "lon": 8.4785485,
+      "tags": {
+        "amenity": "fast_food",
+        "check_date": "2025-06-26",
+        "name": "Pizzeria Liberty",
+        "opening_hours": "Mo-Su 11:00-22:00",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6149270686,
+      "lat": 47.1612354,
+      "lon": 8.4381171,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "asian",
+        "name": "Jet's",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6149270687,
+      "lat": 47.1614528,
+      "lon": 8.4371363,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "asian",
+        "name": "Thai Garden",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6211404359,
+      "lat": 47.1864551,
+      "lon": 8.5200798,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date": "2025-01-01",
+        "indoor_seating": "yes",
+        "name": "Hello World",
+        "opening_hours": "Mo-Fr 11:00-14:00,17:00-24:00; Sa 17:00-24:00",
+        "outdoor_seating": "yes",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "website": "https://helloworldbaar.ch/helloworld/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6290872985,
+      "lat": 47.1660604,
+      "lon": 8.5145644,
+      "tags": {
+        "addr:postcode": "6300",
+        "amenity": "cafe",
+        "name": "Bob's Food Store",
+        "opening_hours": "Tu-Fr 10:00-13:45,14:30-18:30; Sa 10:00-16:00",
+        "opening_hours:kitchen": "Tu-Fr 11:00-13:45,14:30-16:30; Sa 10:00-15:00",
+        "website": "https://bobsfoodstore.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6444634564,
+      "lat": 47.1887923,
+      "lon": 8.4787238,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Hera"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6544988286,
+      "lat": 47.169387,
+      "lon": 8.4521437,
+      "tags": {
+        "amenity": "restaurant",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6801247421,
+      "lat": 47.1826764,
+      "lon": 8.5702292,
+      "tags": {
+        "addr:city": "Edlibach",
+        "addr:housenumber": "80",
+        "addr:postcode": "6313",
+        "addr:street": "Hauptstrasse",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Restaurant Edlibacherhof",
+        "phone": "+41 41 755 16 77",
+        "website": "https://www.edlibacherhof.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6975271790,
+      "lat": 47.1729115,
+      "lon": 8.5151854,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Cafe Glücklich",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6975273587,
+      "lat": 47.1659494,
+      "lon": 8.5151682,
+      "tags": {
+        "amenity": "restaurant",
+        "changing_table": "yes",
+        "changing_table:count": "1",
+        "changing_table:location": "room",
+        "cuisine": "ice_cream;crepe;pasta",
+        "level": "0",
+        "name": "Intermezzo",
+        "opening_hours": "Tu-Su 09:00-18:00",
+        "opening_hours:kitchen": "Mo-Sa 09:00-17:00",
+        "operator": "zuwebe",
+        "outdoor_seating": "yes",
+        "phone": "+41 41 781 66 66",
+        "smoking": "no",
+        "takeaway": "yes",
+        "toilets": "yes",
+        "website": "https://www.intermezzo-zug.ch",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6975273695,
+      "lat": 47.1950724,
+      "lon": 8.5256187,
+      "tags": {
+        "addr:housenumber": "9",
+        "addr:street": "Rathausstrasse",
+        "amenity": "restaurant",
+        "name": "Rosie's",
+        "website": "https://www.restaurant-rosies.ch/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6975273788,
+      "lat": 47.1937802,
+      "lon": 8.524487,
+      "tags": {
+        "addr:city": "Baar",
+        "addr:housenumber": "23",
+        "addr:postcode": "6340",
+        "addr:street": "Dorfstrasse",
+        "alt_name": "Confiserie-Café Speck Baar",
+        "amenity": "cafe",
+        "branch": "Baar",
+        "brand": "Speck",
+        "check_date": "2025-01-03",
+        "name": "Confiserie-Café Speck",
+        "opening_hours": "Mo-Fr 06:30-18:30; Sa 07:00-16:00; Su 07:30-12:00",
+        "operator": "KlG Peter und Walter Speck",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "shop": "pastry",
+        "website": "https://www.speck.ch/standorte/confiserie-speck-baar/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6975273887,
+      "lat": 47.1657592,
+      "lon": 8.5156558,
+      "tags": {
+        "addr:city": "Zug",
+        "addr:housenumber": "1",
+        "addr:postcode": "6300",
+        "addr:street": "Kirchenstrasse",
+        "alt_name": "Bistro zum Pfauen Confiserie Speck",
+        "amenity": "cafe",
+        "branch": "Zug Kolinplatz",
+        "brand": "Speck",
+        "diet:vegetarian": "yes",
+        "name": "Bistro zum Pfauen",
+        "opening_hours": "Mo-Fr 07:00-18:00; Sa-Su 08:00-15:00",
+        "operator": "KlG Peter und Walter Speck",
+        "outdoor_seating": "yes",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "phone": "+41 41 728 07 28",
+        "website": "https://www.speck.ch/standorte/bistro-zum-pfauen-confiserie-speck/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7013717086,
+      "lat": 47.1768691,
+      "lon": 8.5124278,
+      "tags": {
+        "addr:city": "Zug",
+        "addr:floor": "0",
+        "addr:housenumber": "5",
+        "addr:postcode": "6300",
+        "addr:street": "Zählerweg",
+        "amenity": "restaurant",
+        "bar": "yes",
+        "brewery": "various",
+        "capacity": "1700",
+        "check_date": "2025-05-02",
+        "cuisine": "asian;burger;international;italian;japanese;kebab",
+        "email": "mail@freiruum.ch",
+        "internet_access": "yes",
+        "name": "Freiruum Zug",
+        "opening_hours": "24/7",
+        "payment:cash": "no",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "phone": "+41 41 510 86 06",
+        "takeaway": "yes",
+        "website": "https://freiruum.ch",
+        "website:menu": "https://www.freiruum.ch/genuss",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7112647887,
+      "lat": 47.1762829,
+      "lon": 8.5174286,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date": "2025-01-03",
+        "cuisine": "italian",
+        "indoor_seating": "yes",
+        "name": "Olivo",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7169868179,
+      "lat": 47.1610173,
+      "lon": 8.4408162,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date:opening_hours": "2024-09-25",
+        "cuisine": "italian;regional;asian",
+        "name": "Schlosserei",
+        "opening_hours": "Mo-Fr 07:15-15:45; PH closed",
+        "operator": "zuwebe"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7177682373,
+      "lat": 47.181091,
+      "lon": 8.4597258,
+      "tags": {
+        "amenity": "cafe",
+        "email": "bistro.lorze@hirslanden.ch",
+        "name": "Bistro Lorze",
+        "opening_hours": "Mo-Th 07:30-17:30; Fr 07:30-21:00; Mar-Dec Sa 8:30-14:00; PH off",
+        "operator": "Hirslanden Andreasklinik",
+        "outdoor_seating": "yes",
+        "phone": "+41417840150",
+        "website": "https://www.hirslanden.ch/de/andreasklinik-cham-zug/centers/aerztezentrum-lorze/bistro-lorze.html",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7363307362,
+      "lat": 47.1668477,
+      "lon": 8.5146881,
+      "tags": {
+        "addr:city": "Zug",
+        "addr:housenumber": "2",
+        "addr:place": "Landsgemeindeplatz",
+        "addr:postcode": "6300",
+        "amenity": "restaurant",
+        "cuisine": "pizza;italian",
+        "name": "Café Pizzeria Platzmühle",
+        "outdoor_seating": "yes",
+        "phone": "+41 41 711 01 10",
+        "website": "https://www.platzmuehle.ch/",
+        "wheelchair": "limited",
+        "wheelchair:description:de": "Sitzplatz auf nur über Kopfsteinpflasterbelag erreichbar, ohne Stufen/Schwellen. Nach innen mit kleiner Schwelle, für Handrollstuhlfahrer gut zu überwinden. WCs im hinteren Teil nur über eine Stufe nach unten erreichbar, Platzverhältnisse beengend."
+      }
+    },
+    {
+      "type": "node",
+      "id": 7397305120,
+      "lat": 47.1886535,
+      "lon": 8.4750871,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Timeout",
+        "opening_hours": "Mo-Th 07:00-17:00; Fr 07:00-16:00; PH off",
+        "opening_hours:kitchen": "Mo-Fr 11:15-13:30; PH off",
+        "operator": "zfv",
+        "website": "https://zfv.ch/de/microsites/restaurant-timeout/ueber-uns"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7397482513,
+      "lat": 47.1887245,
+      "lon": 8.4750912,
+      "tags": {
+        "amenity": "cafe",
+        "name": "AMAGino",
+        "opening_hours": "Mo-We 06:30-17:00; Th 06:30-19:00; Fr 06:30-16:00; PH off",
+        "operator": "zfv",
+        "takeaway": "yes",
+        "website": "https://zfv.ch/de/microsites/restaurant-timeout/ueber-uns"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7434461084,
+      "lat": 47.1733091,
+      "lon": 8.5170133,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "thai",
+        "level": "0",
+        "name": "Ying's Thai Kitchen",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7434462394,
+      "lat": 47.1732095,
+      "lon": 8.5170064,
+      "tags": {
+        "amenity": "fast_food",
+        "branch": "Zug Metalli",
+        "indoor_seating": "yes",
+        "level": "0",
+        "name": "Dolma's Momo Point",
+        "outdoor_seating": "no",
+        "website": "https://dolmas-momo-point.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7434462400,
+      "lat": 47.1730578,
+      "lon": 8.5179031,
+      "tags": {
+        "addr:city": "Zug",
+        "addr:housenumber": "15b",
+        "addr:postcode": "6300",
+        "addr:street": "Industriestrasse",
+        "amenity": "fast_food",
+        "branch": "Zug Metalli",
+        "brand": "Brezelkönig",
+        "brand:wikidata": "Q111728604",
+        "cuisine": "pretzel",
+        "level": "0",
+        "name": "Brezelkönig",
+        "opening_hours": "Mo-Fr 07:00-19:00; Th 07:00-21:00; Sa 07:00-17:00",
+        "operator": "Valora",
+        "shop": "bakery",
+        "takeaway": "only",
+        "website": "https://brezelkoenig.ch/de/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7437382888,
+      "lat": 47.1734264,
+      "lon": 8.5151553,
+      "tags": {
+        "addr:city": "Zug",
+        "addr:postcode": "6300",
+        "alt_name": "Caffè Spettacolo Zug",
+        "amenity": "cafe",
+        "branch": "Zug Bahnhof",
+        "brand": "Caffè Spettacolo",
+        "brand:wikidata": "Q111728781",
+        "cuisine": "coffee_shop",
+        "level": "0",
+        "name": "Caffè Spettacolo",
+        "opening_hours": "Mo-Su 05:30-20:00; Sa 09:00-17:00; PH closed",
+        "operator": "Valora",
+        "takeaway": "yes",
+        "toilets": "no",
+        "website": "https://www.spettacolo.ch/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7528891619,
+      "lat": 47.1964007,
+      "lon": 8.5244693,
+      "tags": {
+        "addr:city": "Baar",
+        "addr:housenumber": "11",
+        "addr:postcode": "6340",
+        "addr:street": "Neugasse",
+        "alt_name": "Dieci Pizzakurier Baar",
+        "amenity": "fast_food",
+        "branch": "Baar",
+        "brand": "dieci",
+        "check_date": "2025-01-02",
+        "cuisine": "pizza",
+        "delivery": "yes",
+        "name": "Dieci Pizzakurier",
+        "opening_hours": "Mo-Sa 11:00-13:30,17:30-22:00; Su 17:00-21:30",
+        "operator": "Dieci",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "takeaway": "yes",
+        "website": "https://www.dieci.ch/de/pizzakurier-zug-baar"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7669148533,
+      "lat": 47.1726136,
+      "lon": 8.5132509,
+      "tags": {
+        "addr:city": "Zug",
+        "addr:housenumber": "1",
+        "addr:postcode": "6300",
+        "addr:street": "Pilatusstrasse",
+        "amenity": "restaurant",
+        "description": "Located at the end of track 4 of the Zug station. \nLunch, Tasting Menus & After-work Bar\nLocally sourced produce.",
+        "email": "info@kurioz.ch",
+        "name": "Kurioz Bar & Kitchen",
+        "opening_hours": "Tu-Fr 11:30-14:00,17:00-24:00; Sa 15:00-24:00",
+        "phone": "+41 41 710 01 61",
+        "website": "https://www.kurioz.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7713983902,
+      "lat": 47.1916967,
+      "lon": 8.4778727,
+      "tags": {
+        "addr:city": "Steinhausen",
+        "addr:housenumber": "40",
+        "addr:postcode": "6312",
+        "addr:street": "Hinterbergstrasse",
+        "alt_name": "Coffee & Time Steinhausen",
+        "amenity": "cafe",
+        "branch": "Steinhausen Zugerland",
+        "level": "3",
+        "name": "Coffee & Time Migros",
+        "opening_hours": "Mo-Th 08:30-16:30, Fr 08:30-19:00, Sa 07:30-16:30; PH off",
+        "operator": "Genossenschaft Migros Luzern",
+        "website": "https://filialen.migros.ch/de/coffeeandtime-steinhausen-zugerland"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7756244790,
+      "lat": 47.1333185,
+      "lon": 8.6116892,
+      "tags": {
+        "addr:city": "Oberägeri",
+        "addr:housenumber": "1",
+        "addr:postcode": "6315",
+        "addr:street": "Strandweg",
+        "amenity": "restaurant",
+        "fixme": "Lage des Restaurants bitte kontrollieren.",
+        "name": "Lago",
+        "outdoor_seating": "yes",
+        "website": "https://www.aegeribad.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7982793922,
+      "lat": 47.1974518,
+      "lon": 8.5287431,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Bären"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7982802592,
+      "lat": 47.1963231,
+      "lon": 8.5283399,
+      "tags": {
+        "amenity": "restaurant",
+        "indoor_seating": "yes",
+        "name": "GO4TACOS",
+        "opening_hours": "Mo-Th 11:00-22:00; Fr,Sa 11:00-23:00; Su 12:00-22:00",
+        "outdoor_seating": "yes",
+        "smoking": "outside"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8138027562,
+      "lat": 47.1895254,
+      "lon": 8.512785,
+      "tags": {
+        "amenity": "restaurant",
+        "email": "story@zuwebe.ch",
+        "name": "Story",
+        "opening_hours": "Mo-Fr 07:30-15:30, PH off",
+        "opening_hours:kitchen": "Mo-Fr 11:30-14:00",
+        "phone": "+41 41 781 61 61",
+        "reservation": "yes",
+        "website": "https://www.restaurant-story.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8594304545,
+      "lat": 47.1536301,
+      "lon": 8.5115061,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Mittagstisch Biohof Zug",
+        "opening_hours": "Tu-We 12:00-14:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8687725661,
+      "lat": 47.178286,
+      "lon": 8.5902233,
+      "tags": {
+        "addr:city": "Menzingen",
+        "addr:housenumber": "5",
+        "addr:postcode": "6313",
+        "addr:street": "Alte Landstrasse",
+        "amenity": "restaurant",
+        "cuisine": "pizza;kebab;falafel",
+        "name": "Pizzeria Perfect"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8789523605,
+      "lat": 47.1960105,
+      "lon": 8.5254504,
+      "tags": {
+        "addr:city": "Baar",
+        "addr:housenumber": "8",
+        "addr:postcode": "6340",
+        "addr:street": "Neugasse",
+        "amenity": "restaurant",
+        "cuisine": "thai",
+        "name": "Ruan Siam",
+        "phone": "+41 41 761 84 84",
+        "takeaway": "yes",
+        "website": "https://ruan-siam.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8789549373,
+      "lat": 47.1957678,
+      "lon": 8.5256269,
+      "tags": {
+        "addr:city": "Baar",
+        "addr:housenumber": "4",
+        "addr:postcode": "6340",
+        "addr:street": "Neugasse",
+        "amenity": "fast_food",
+        "cuisine": "kebab;pizza",
+        "delivery": "yes",
+        "drive_through": "no",
+        "name": "Fast Fox",
+        "takeaway": "yes",
+        "website": "https://pizzeria-fastfox.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8828131559,
+      "lat": 47.1372203,
+      "lon": 8.5839862,
+      "tags": {
+        "amenity": "cafe",
+        "cuisine": "ice_cream",
+        "name": "Ägeri Eis",
+        "opening_hours": "Mo-Su 09:00-18:00",
+        "outdoor_seating": "yes",
+        "phone": "+41787170559",
+        "website": "https://aegeri-eis.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8968027741,
+      "lat": 47.1653221,
+      "lon": 8.516293,
+      "tags": {
+        "addr:city": "Zug",
+        "addr:housenumber": "9",
+        "addr:postcode": "6300",
+        "addr:street": "Kirchenstrasse",
+        "amenity": "cafe",
+        "description": "das Café für Begegnung und Beratung Träger: Kath. Kirchgemeinde Stadt Zug, ref. Kirche Kanton Zug, CityKircheZug",
+        "name": "Café d'Bauhütte",
+        "opening_hours": "Tu-Fr 09:30-16:30",
+        "outdoor_seating": "yes",
+        "phone": "+41 41 741 04 41",
+        "website": "https://cafe-bauhuette.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9048396602,
+      "lat": 47.1940176,
+      "lon": 8.5251074,
+      "tags": {
+        "addr:city": "Baar",
+        "addr:housenumber": "13",
+        "addr:postcode": "6340",
+        "addr:street": "Dorfstrasse",
+        "amenity": "cafe",
+        "bar": "yes",
+        "check_date": "2025-01-03",
+        "fax": "041 750 43 36",
+        "name": "Chez Sylia",
+        "opening_hours": "Mo-Th 09:00-20:00; Fr 09:00-24:00",
+        "outdoor_seating": "yes",
+        "payment:cards": "no",
+        "payment:cash": "yes",
+        "payment:credit_cards": "no",
+        "payment:debit_cards": "no",
+        "phone": "041 761 70 20",
+        "smoking": "yes",
+        "toilets": "yes",
+        "website": "https://silviascafebar.ch/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9105300062,
+      "lat": 47.1461894,
+      "lon": 8.5094447,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Cafe Pergola",
+        "opening_hours": "Mo-Su 09:00-17:00",
+        "outdoor_seating": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9129250774,
+      "lat": 47.1375655,
+      "lon": 8.6042215,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Restaurant Aegerisee"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9165622047,
+      "lat": 47.169177,
+      "lon": 8.5154063,
+      "tags": {
+        "addr:city": "Zug",
+        "addr:housenumber": "2",
+        "addr:postcode": "6300",
+        "addr:street": "Schmidgasse",
+        "amenity": "cafe",
+        "cuisine": "bubble_tea",
+        "image": "https://i.imgur.com/SzGKNct.png",
+        "name": "MISS TEA Bubble Tea Zug",
+        "opening_hours": "Tu-Fr 11:30-19:00; Sa 11:00-17:00",
+        "outdoor_seating": "no",
+        "phone": "+41787188366",
+        "website": "https://www.instagram.com/misstea_zug/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9451116517,
+      "lat": 47.1942693,
+      "lon": 8.5263148,
+      "tags": {
+        "addr:city": "Baar",
+        "addr:housenumber": "1",
+        "addr:postcode": "6340",
+        "addr:street": "Dorfstrasse",
+        "amenity": "restaurant",
+        "changing_table": "yes",
+        "check_date": "2025-01-03",
+        "cuisine": "regional;coffee_shop",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "internet_access:ssid": "elefantenne",
+        "name": "Elefant",
+        "opening_hours": "We-Th,Sa 09:00-17:00; Fr 09:00-19:00",
+        "outdoor_seating": "yes",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "no",
+        "phone": "+41 76 730 18 00",
+        "toilets:access": "customers",
+        "toilets:wheelchair": "no",
+        "website": "https://www.elefant.ch/",
+        "wheelchair": "limited",
+        "wheelchair:description": "Ein Eingang ist gut geeignet. Falls Personal nicht reagiert, anrufen"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9530626436,
+      "lat": 47.1963828,
+      "lon": 8.5326599,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Nussbaumer",
+        "website": "https://www.beck-nussbaumer.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9693172821,
+      "lat": 47.1569774,
+      "lon": 8.5187325,
+      "tags": {
+        "addr:city": "Zug",
+        "addr:housenumber": "46",
+        "addr:postcode": "6300",
+        "addr:street": "Zugerbergstrasse",
+        "amenity": "restaurant",
+        "cuisine": "regional;international",
+        "diet:gluten_free": "yes",
+        "diet:meat": "yes",
+        "diet:pescetarian": "yes",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "email": "info@hotel-guggital.ch",
+        "highchair": "yes",
+        "internet_access": "wlan",
+        "name": "Restaurant Guggital",
+        "opening_hours": "Mo-Su 07:00-23:30",
+        "outdoor_seating": "yes",
+        "payment:american_express": "yes",
+        "payment:cash": "yes",
+        "payment:coins": "yes",
+        "payment:contactless": "yes",
+        "payment:credit_cards": "yes",
+        "payment:maestro": "yes",
+        "payment:mastercard": "yes",
+        "payment:notes": "yes",
+        "payment:visa": "yes",
+        "phone": "+41 41 728 74 17",
+        "website": "https://hotel-guggital.ch/",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9880390809,
+      "lat": 47.1785774,
+      "lon": 8.5904354,
+      "tags": {
+        "addr:city": "Menzingen",
+        "addr:housenumber": "2",
+        "addr:postcode": "6313",
+        "addr:street": "Holzhäusernstrasse",
+        "amenity": "restaurant",
+        "name": "Gasthaus Löwen",
+        "website": "https://loewen-menzingen.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9882789131,
+      "lat": 47.1653859,
+      "lon": 8.514105,
+      "tags": {
+        "amenity": "restaurant",
+        "diet:vegetarian": "yes",
+        "name": "La Colombe",
+        "opening_hours": "Tu-Fr 11:30-14:00,18:00-23:00; Sa 18:00-23:00",
+        "website": "https://hotel-lacolombe.com/restaurant-zur-taube/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10089116561,
+      "lat": 47.1781386,
+      "lon": 8.5180189,
+      "tags": {
+        "addr:city": "Zug",
+        "addr:housenumber": "1",
+        "addr:postcode": "6300",
+        "addr:street": "Äussere Güterstrasse",
+        "amenity": "fast_food",
+        "check_date": "2025-05-23",
+        "check_date:opening_hours": "2025-05-23",
+        "cuisine": "pizza",
+        "drive_through": "no",
+        "name": "Dailypizza",
+        "opening_hours": "Fr,Sa 10:30-24:00, Su-Th 10:30-23:00",
+        "phone": "+41412263636",
+        "website": "https://zug.dailypizza.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10223640365,
+      "lat": 47.194182,
+      "lon": 8.5266838,
+      "tags": {
+        "addr:city": "Baar",
+        "addr:housenumber": "2",
+        "addr:postcode": "6340",
+        "addr:street": "Leihgasse",
+        "amenity": "cafe",
+        "description": "Der Räbechäller ist das Zunftlokal der Fasnachtsgesellschaft Baar. Das heimelige Kellergewölbe ist jeden zweiten Freitag im Monat sowie an weiteren ausgewählten Daten geöffnet. Zudem kann das Lokal für Anlässe gemietet werden.",
+        "name": "Räbechäller",
+        "website": "https://raebefasnacht.ch/raebechaeller"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10253042470,
+      "lat": 47.1660636,
+      "lon": 8.5165673,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Brunchfactory Zug",
+        "website": "https://www.brunchfactoryzug.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10775875276,
+      "lat": 47.1431444,
+      "lon": 8.4324835,
+      "tags": {
+        "addr:city": "Rotkreuz",
+        "addr:housenumber": "2",
+        "addr:postcode": "6343",
+        "addr:street": "Suurstoffi",
+        "amenity": "restaurant",
+        "level": "0;1",
+        "name": "Food-Stoffi",
+        "opening_hours": "Mo-Fr 07:00-15:00",
+        "opening_hours:kitchen": "Mo-Fr 11:30-13:30",
+        "operator": "ZFV",
+        "website": "https://www.zfv.ch/de/essen-gehen/hslu-informatik-wirtschaft-restaurant-food-stoffi"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10788120995,
+      "lat": 47.1446943,
+      "lon": 8.4367014,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Sapori’s",
+        "opening_hours": "Mo-Fr 11:30-15:00,18:00-23:00; Sa 18:00-23:00",
+        "toilets:wheelchair": "yes",
+        "website": "https://restaurantsaporis.ch/de/reservation/#Reservation",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10829626402,
+      "lat": 47.1842507,
+      "lon": 8.5203938,
+      "tags": {
+        "addr:city": "Baar",
+        "addr:housenumber": "69",
+        "addr:postcode": "6340",
+        "addr:street": "Zugerstrasse",
+        "amenity": "restaurant",
+        "cuisine": "chinese",
+        "indoor_seating": "no",
+        "name": "Golden Dragon",
+        "opening_hours": "Mo-Fr 11:30-14:30,17:30-21:00",
+        "outdoor_seating": "no",
+        "phone": "+41 41 711 20 10",
+        "takeaway": "only",
+        "website": "https://www.goldendragonzug.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10860473378,
+      "lat": 47.2155747,
+      "lon": 8.572731,
+      "tags": {
+        "amenity": "restaurant",
+        "delivery": "yes",
+        "level": "0",
+        "name": "Delivery Hochgenuss",
+        "opening_hours": "Mo-Su 18:15-22:00; PH closed",
+        "phone": "+41 800 667 711",
+        "takeaway": "only",
+        "website": "https://www.delivery-hochgenuss.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10860473379,
+      "lat": 47.2151768,
+      "lon": 8.5684319,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "steak_house;burger",
+        "level": "0",
+        "name": "Grill-Bill",
+        "opening_hours": "Mo-Th 11:30-14:00,17:30-22:00; Fr-Sa 11:30-14:00,17:30-22:30; PH closed",
+        "opening_hours:kitchen": "Mo-Th 11:30-13:30,17:30-21:30; Fr-Sa 11:30-13:30,17:30-22:00; PH closed",
+        "operator": "Fleisch Discount",
+        "phone": "+41 41 760 95 00",
+        "takeaway": "no",
+        "website": "https://www.grillbill.ch",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10860473384,
+      "lat": 47.2150463,
+      "lon": 8.5729906,
+      "tags": {
+        "amenity": "restaurant",
+        "level": "0",
+        "name": "The Great",
+        "opening_hours": "We-Fr 10:00-14:00,18:00-22:00; Sa 10:00-04:00; Su 10:00-22:00",
+        "phone": "+41 76 201 90 18",
+        "website": "https://thegreatzug.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10914314758,
+      "lat": 47.1768474,
+      "lon": 8.5120959,
+      "tags": {
+        "amenity": "fast_food",
+        "check_date": "2025-06-21",
+        "cuisine": "pizza",
+        "indoor_seating": "yes",
+        "name": "Woody Pizza",
+        "payment:mastercard": "yes",
+        "payment:visa": "yes",
+        "takeaway": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11047608940,
+      "lat": 47.1838124,
+      "lon": 8.5238661,
+      "tags": {
+        "addr:city": "Zug",
+        "addr:housenumber": "70",
+        "addr:postcode": "6300",
+        "addr:street": "Industriestrasse",
+        "amenity": "cafe",
+        "check_date": "2024-12-28",
+        "cuisine": "coffee_shop",
+        "indoor_seating": "yes",
+        "name": "Confiserie-Café Speck Göbli",
+        "opening_hours": "Mo-Fr 07:00-18:30, Sa 08:00-16:00",
+        "outdoor_seating": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "phone": "+41 41 728 07 28",
+        "smoking": "outside",
+        "website": "https://speck.ch/standorte/goebli/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11143865736,
+      "lat": 47.1750602,
+      "lon": 8.5170425,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "sushi",
+        "name": "Tiny Fish"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11219751489,
+      "lat": 47.1946513,
+      "lon": 8.5181178,
+      "tags": {
+        "amenity": "cafe",
+        "check_date": "2023-09-26",
+        "name": "Café Soleil",
+        "opening_hours": "09:00-18:00",
+        "outdoor_seating": "yes",
+        "payment:mastercard": "yes",
+        "payment:visa": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11219757103,
+      "lat": 47.1941804,
+      "lon": 8.5177047,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date": "2023-09-26",
+        "cuisine": "sandwich;coffee_shop;regional",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Restaurant Tango",
+        "opening_hours": "Mo-Fr 07:00-19:00; Sa-Su,PH 08:00-18:00",
+        "payment:mastercard": "yes",
+        "payment:visa": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11358002349,
+      "lat": 47.1725445,
+      "lon": 8.518901,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date": "2023-11-17",
+        "name": "Aigu",
+        "website": "https://www.restaurant-aigu.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11709134776,
+      "lat": 47.1924201,
+      "lon": 8.4453161,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Rosengarten",
+        "opening_hours": "Mo-Fr",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11727148023,
+      "lat": 47.1882688,
+      "lon": 8.5161251,
+      "tags": {
+        "addr:city": "Baar",
+        "addr:housenumber": "8",
+        "addr:postcode": "6340",
+        "addr:street": "Oberneuhofstrasse",
+        "amenity": "restaurant",
+        "email": "info@neuhof-kulinaria.ch",
+        "name": "Neuhof Kulinaria",
+        "opening_hours": "Mo-Fr 08:30-14:00, Th-Fr 16:30+",
+        "phone": "+41 41 761 8125",
+        "reservation": "yes",
+        "website": "https://neuhof-kulinaria.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11727355476,
+      "lat": 47.1783115,
+      "lon": 8.505383,
+      "tags": {
+        "amenity": "restaurant",
+        "bar": "no",
+        "brewery": "no",
+        "check_date": "2025-03-29",
+        "cuisine": "burger;balkan",
+        "indoor_seating": "yes",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "microbrewery": "no",
+        "name": "Burek Bakery & Big Burger",
+        "outdoor_seating": "yes",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "reservation": "yes",
+        "smoking": "outside",
+        "source": "survey",
+        "takeaway": "yes",
+        "toilets": "yes",
+        "toilets:menstrual_products": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11830513872,
+      "lat": 47.1727994,
+      "lon": 8.5147464,
+      "tags": {
+        "addr:city": "Zug",
+        "addr:housenumber": "13",
+        "addr:postcode": "6300",
+        "addr:street": "Alpenstrasse",
+        "air_conditioning": "no",
+        "amenity": "cafe",
+        "food": "no",
+        "indoor_seating": "yes",
+        "name": "Zündhölzli",
+        "opening_hours": "We 17:00-22:00, Th-Fr 14:00-19:00, Sa 12:00-17:00",
+        "outdoor_seating": "no",
+        "payment:credit_cards": "no",
+        "payment:debit_cards": "no",
+        "smoking": "no",
+        "website": "https://www.zündhölzli.org/",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11955402305,
+      "lat": 47.1452161,
+      "lon": 8.4307019,
+      "tags": {
+        "addr:city": "Rotkreuz",
+        "addr:housenumber": "10",
+        "addr:postcode": "6343",
+        "addr:street": "Grundstrasse",
+        "amenity": "restaurant",
+        "name": "Kim's Asian Home Kitchen",
+        "opening_hours": "Mo off; Tu-Fr 11:00-14:30,17:30-22:30; Sa-Su 16:00-22:30",
+        "phone": "+41779478549"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12002039429,
+      "lat": 47.1769896,
+      "lon": 8.5122088,
+      "tags": {
+        "amenity": "fast_food",
+        "check_date": "2024-06-23",
+        "name": "Brisket",
+        "website": "https://www.brisket.ch/zug"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12002039430,
+      "lat": 47.1769648,
+      "lon": 8.5123096,
+      "tags": {
+        "amenity": "fast_food",
+        "check_date": "2024-06-23",
+        "name": "Chao Naa",
+        "website": "https://www.freiruum.ch/genuss"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12002039431,
+      "lat": 47.1769823,
+      "lon": 8.5124019,
+      "tags": {
+        "amenity": "fast_food",
+        "check_date": "2025-05-02",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Chicken Club",
+        "payment:cash": "no",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "website": "https://www.freiruum.ch/genuss",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12002039432,
+      "lat": 47.1769634,
+      "lon": 8.5125006,
+      "tags": {
+        "amenity": "fast_food",
+        "check_date": "2025-05-02",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "level": "0",
+        "name": "Kolins Kitchen",
+        "payment:cash": "no",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "website": "https://www.freiruum.ch/genuss",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12002039433,
+      "lat": 47.1769984,
+      "lon": 8.5125607,
+      "tags": {
+        "amenity": "fast_food",
+        "check_date": "2024-06-23",
+        "name": "Kochatelier Pop Up",
+        "website": "https://www.freiruum.ch/genuss"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12002039434,
+      "lat": 47.1766378,
+      "lon": 8.5122302,
+      "tags": {
+        "amenity": "fast_food",
+        "check_date": "2025-06-21",
+        "cuisine": "mediterranean",
+        "name": "Lekkeray",
+        "payment:cash": "yes",
+        "payment:twint": "yes",
+        "website": "https://www.freiruum.ch/food-staende/lekkeray/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12015549252,
+      "lat": 47.1497317,
+      "lon": 8.4423172,
+      "tags": {
+        "addr:city": "Holzhäusern",
+        "addr:postcode": "6343",
+        "addr:street": "Katharinenhof",
+        "amenity": "restaurant",
+        "name": "Albero",
+        "opening_hours": "Mo-Su 07:00-21:30",
+        "phone": "+41585680703",
+        "website": "https://www.albero-holzhaeusern.ch/das-restaurant/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12049562915,
+      "lat": 47.1721583,
+      "lon": 8.5174242,
+      "tags": {
+        "amenity": "cafe",
+        "cuisine": "coffee_shop"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12117111974,
+      "lat": 47.1816377,
+      "lon": 8.460757,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "chinese",
+        "level": "0",
+        "name": "Bambus",
+        "opening_hours": "Mo-Fr 11:00-14:00,17:30-22:30; Sa 17:30-23:30; PH closed",
+        "phone": "+41 41 780 12 30",
+        "takeaway": "yes",
+        "website": "https://chinarestaurantbambus.ch",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12144909678,
+      "lat": 47.1748213,
+      "lon": 8.4271618,
+      "tags": {
+        "addr:city": "Hünenberg",
+        "addr:housenumber": "4",
+        "addr:postcode": "6331",
+        "addr:street": "Maihölzliweg",
+        "amenity": "restaurant",
+        "cuisine": "pizza;fries;salad;fish;burger",
+        "name": "Restaurant Maihölzli",
+        "opening_hours": "Mo-Sa 09:00-23:00; So 10:00-21:00",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12165514157,
+      "lat": 47.1705804,
+      "lon": 8.5160863,
+      "tags": {
+        "addr:city": "Zug",
+        "addr:housenumber": "32a",
+        "addr:postcode": "6300",
+        "addr:street": "Bahnhofstrasse",
+        "amenity": "restaurant",
+        "cuisine": "sushi",
+        "name": "TakeSushi",
+        "opening_hours": "Mo-Sa 10:00-21:00",
+        "phone": "+41417119994",
+        "website": "https://www.takesushi.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12328760781,
+      "lat": 47.1427924,
+      "lon": 8.4304046,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Perron Nord",
+        "operator": "Hotel Apart"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12437307701,
+      "lat": 47.181919,
+      "lon": 8.5089404,
+      "tags": {
+        "addr:city": "Zug",
+        "addr:housenumber": "26",
+        "addr:postcode": "6300",
+        "addr:street": "Allmendstrasse",
+        "amenity": "restaurant",
+        "contact:facebook": "barakkazug.ch",
+        "contact:instagram": "barakkazug.ch",
+        "cuisine": "mediterranean",
+        "internet_access": "wlan",
+        "name": "Barakka",
+        "opening_hours": "Mo-Th 11:00-14:30, 17:30-23:00; Fr 11:00-14:30, 17:30-00:00; Sa 12:00-00:00; Su 12:00-22:00",
+        "outdoor_seating": "yes",
+        "phone": "078 354 40 44",
+        "website": "https://www.barakkazug.ch",
+        "website:menu": "https://www.barakkazug.ch/speisekarte"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12445436343,
+      "lat": 47.2131773,
+      "lon": 8.5612783,
+      "tags": {
+        "amenity": "cafe",
+        "level": "0"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12471013671,
+      "lat": 47.1942554,
+      "lon": 8.5257103,
+      "tags": {
+        "addr:housenumber": "7",
+        "addr:street": "Dorfstrasse",
+        "amenity": "restaurant",
+        "check_date": "2025-01-03",
+        "cuisine": "pizza",
+        "name": "E'cco",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12471045941,
+      "lat": 47.1935142,
+      "lon": 8.5228488,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date": "2025-01-03",
+        "name": "GamRolls",
+        "opening_hours": "Mo-Fr 11:00-14:00,17:30-21:00; Sa 17:30-21:00",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12505068508,
+      "lat": 47.1679188,
+      "lon": 8.516291,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date": "2025-01-15",
+        "name": "Piu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12507598918,
+      "lat": 47.1422075,
+      "lon": 8.4279821,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Ying's Thai Kitchen"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12540023438,
+      "lat": 47.1822888,
+      "lon": 8.5329449,
+      "tags": {
+        "air_conditioning": "no",
+        "amenity": "restaurant",
+        "check_date": "2024-12-27",
+        "cuisine": "regional",
+        "indoor_seating": "yes",
+        "name": "Gasthof Ebel",
+        "opening_hours": "We-Fr 11:00-14:00,17:00-23:00; Sa,Su 11:00-18:00+",
+        "outdoor_seating": "no",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "phone": "+41 41 761 86 01",
+        "smoking": "yes",
+        "website": "https://ebelbaar.ch/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12590581072,
+      "lat": 47.1474393,
+      "lon": 8.4325753,
+      "tags": {
+        "addr:city": "Rotkreuz",
+        "addr:housenumber": "5",
+        "addr:postcode": "6343",
+        "addr:street": "Lettenstrasse",
+        "amenity": "fast_food",
+        "cuisine": "kebab;burger;fries",
+        "drive_through": "yes",
+        "name": "Abrakebabra",
+        "opening_hours": "Mo-Fr 11:00-14:00,17:00-20:30; Sa 11:00-15:00",
+        "outdoor_seating": "yes",
+        "phone": "+41 78 616 59 42",
+        "takeaway": "yes",
+        "website": "https://www.abrakebabra.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12613397240,
+      "lat": 47.1922781,
+      "lon": 8.4488025,
+      "tags": {
+        "addr:city": "Cham",
+        "addr:housenumber": "16",
+        "addr:postcode": "6330",
+        "addr:street": "Brunnmatt",
+        "amenity": "restaurant",
+        "name": "The Dining Room",
+        "website": "https://the-dining-room.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12619911977,
+      "lat": 47.1344986,
+      "lon": 8.5740554,
+      "tags": {
+        "addr:city": "Unterägeri",
+        "addr:housenumber": "7",
+        "addr:postcode": "6314",
+        "addr:street": "Gewerbestrasse",
+        "amenity": "fast_food",
+        "name": "1982-Foodtruck",
+        "phone": "+41 78 233 87 85",
+        "website": "https://www.1982-foodtruck.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12744203792,
+      "lat": 47.1914587,
+      "lon": 8.4551835,
+      "tags": {
+        "addr:city": "Cham",
+        "addr:housenumber": "15a",
+        "addr:postcode": "6330",
+        "addr:street": "Lorzenparkstrasse",
+        "amenity": "cafe",
+        "cuisine": "coffee_shop",
+        "name": "Latte Stories",
+        "opening_hours": "Mo-Fr 07:30-17:00; Sa-Su 08:00-17:00",
+        "outdoor_seating": "no",
+        "website": "https://lattestories.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12744705401,
+      "lat": 47.1740519,
+      "lon": 8.5155198,
+      "tags": {
+        "addr:postcode": "6300",
+        "addr:street": "Bahnhof Zug PU Nord",
+        "amenity": "cafe",
+        "name": "Lolo Kaffee, Lioris Manufaktur",
+        "opening_hours": "Mo-Fr 06:30-14:30; Sa 06:30-13:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12744712301,
+      "lat": 47.1740519,
+      "lon": 8.5155198,
+      "tags": {
+        "addr:postcode": "6300",
+        "addr:street": "Bahnhof Zug PU Nord",
+        "amenity": "cafe",
+        "contact:instagram": "lolo_kaffee",
+        "cuisine": "coffee_shop",
+        "email": "info@lolo-kaffee.ch",
+        "name": "Lolo Kaffee",
+        "opening_hours": "Mo-Fr 06:30-14:30; Sa 06:30-13:00",
+        "outdoor_seating": "no",
+        "phone": "+41 79 302 42 41",
+        "website": "https://lolo-kaffee.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12830086640,
+      "lat": 47.1888407,
+      "lon": 8.5167945,
+      "tags": {
+        "addr:housenumber": "7",
+        "addr:street": "Oberneuhofstrasse",
+        "amenity": "restaurant",
+        "check_date": "2025-05-12",
+        "cuisine": "thai",
+        "name": "Thai Kitchen and Grill",
+        "opening_hours": "Mo-Fr 11:30-13:30"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12918213418,
+      "lat": 47.1438403,
+      "lon": 8.4348432,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "thai",
+        "name": "Siam Garden",
+        "website": "https://www.siam-garden.info/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12942947149,
+      "lat": 47.177122,
+      "lon": 8.5126619,
+      "tags": {
+        "amenity": "fast_food",
+        "check_date": "2025-06-21",
+        "cuisine": "greek",
+        "name": "Taste of Myconos",
+        "payment:cash": "yes",
+        "payment:twint": "yes",
+        "website": "https://tasteofmykonos.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12961079791,
+      "lat": 47.1422404,
+      "lon": 8.4280689,
+      "tags": {
+        "addr:city": "Rotkreuz",
+        "addr:housenumber": "4",
+        "addr:postcode": "6343",
+        "addr:street": "Chäsimatt",
+        "amenity": "cafe",
+        "changing_table": "yes",
+        "cuisine": "coffee_shop",
+        "diet:healthy": "yes",
+        "diet:lactose_free": "yes",
+        "diet:organic": "yes",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "email": "social@malealimon.ch",
+        "highchair": "yes",
+        "image": "https://malealimon.ch/cafe-malea/",
+        "internet_access": "yes",
+        "internet_access:fee": "no",
+        "name": "Café Malea I Cycling Pit Stop!",
+        "opening_hours": "DI-SO 09-17 Uhr",
+        "outdoor_seating": "yes",
+        "reservation": "yes",
+        "toilets": "yes",
+        "toilets:wheelchair": "yes",
+        "website": "www.malealimon.ch",
+        "website:menu": "https://malealimon.ch/cafe-malea/",
+        "wheelchair": "yes"
+      }
+    }
+  ]
+}

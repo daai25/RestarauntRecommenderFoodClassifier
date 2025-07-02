@@ -1,0 +1,5468 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.7 375dc00a",
+  "osm3s": {
+    "timestamp_osm_base": "2025-07-01T21:03:35Z",
+    "timestamp_areas_base": "2025-06-25T21:32:45Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+    {
+      "type": "node",
+      "id": 264769165,
+      "lat": 47.369004,
+      "lon": 7.8281336,
+      "tags": {
+        "amenity": "restaurant",
+        "created_by": "Merkaartor 0.12",
+        "name": "Bergrestaurant Kallhof",
+        "source": "survey",
+        "website": "https://www.kallhof.ch/?Rpage=kall.html"
+      }
+    },
+    {
+      "type": "node",
+      "id": 274631054,
+      "lat": 47.4802222,
+      "lon": 7.5436866,
+      "tags": {
+        "amenity": "restaurant",
+        "created_by": "Potlatch 0.9c",
+        "name": "Rebstock"
+      }
+    },
+    {
+      "type": "node",
+      "id": 274631468,
+      "lat": 47.4822899,
+      "lon": 7.5449896,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Waage"
+      }
+    },
+    {
+      "type": "node",
+      "id": 274631599,
+      "lat": 47.4835242,
+      "lon": 7.5462806,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Bahnhof"
+      }
+    },
+    {
+      "type": "node",
+      "id": 274637314,
+      "lat": 47.4785568,
+      "lon": 7.5430621,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Ettingerstübli"
+      }
+    },
+    {
+      "type": "node",
+      "id": 274659129,
+      "lat": 47.4909027,
+      "lon": 7.5891607,
+      "tags": {
+        "addr:city": "Reinach BL",
+        "addr:country": "CH",
+        "addr:housenumber": "62",
+        "addr:postcode": "4153",
+        "addr:street": "Hauptstrasse",
+        "amenity": "restaurant",
+        "name": "Zur Waage",
+        "website": "http://www.zurwaage.ch/",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 274673913,
+      "lat": 47.5451433,
+      "lon": 7.5636794,
+      "tags": {
+        "amenity": "restaurant",
+        "created_by": "Potlatch 0.9c",
+        "name": "Gasthof Neubad",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 274678737,
+      "lat": 47.5259654,
+      "lon": 7.6042811,
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "McDonald's",
+        "brand:wikidata": "Q38076",
+        "brand:wikipedia": "en:McDonald's",
+        "cuisine": "burger",
+        "drive_through": "yes",
+        "name": "McDonald's",
+        "operator": "McDonald's",
+        "smoking": "no",
+        "takeaway": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 274682427,
+      "lat": 47.5374984,
+      "lon": 7.5020348,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Restaurant Krone"
+      }
+    },
+    {
+      "type": "node",
+      "id": 275746990,
+      "lat": 47.4691898,
+      "lon": 7.5971688,
+      "tags": {
+        "addr:city": "Aesch BL",
+        "addr:housenumber": "98",
+        "addr:postcode": "4147",
+        "addr:street": "Hauptstrasse",
+        "amenity": "restaurant",
+        "cuisine": "pizza;regional;burger",
+        "name": "Tipo",
+        "phone": "+41 61 751 80 80",
+        "website": "https://tipo-aesch.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 288313037,
+      "lat": 47.4871987,
+      "lon": 7.5975878,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Aruma",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 294930617,
+      "lat": 47.410021,
+      "lon": 7.8449674,
+      "tags": {
+        "amenity": "restaurant",
+        "created_by": "Potlatch 0.10b",
+        "name": "Rest. Mond, Pizzeria Luna"
+      }
+    },
+    {
+      "type": "node",
+      "id": 294931398,
+      "lat": 47.4645111,
+      "lon": 7.8107173,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Löwen"
+      }
+    },
+    {
+      "type": "node",
+      "id": 297189301,
+      "lat": 47.411759,
+      "lon": 7.8351743,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Blume"
+      }
+    },
+    {
+      "type": "node",
+      "id": 298857930,
+      "lat": 47.4131449,
+      "lon": 7.8113697,
+      "tags": {
+        "addr:city": "Diegten",
+        "addr:country": "CH",
+        "addr:housenumber": "2",
+        "addr:postcode": "4457",
+        "addr:street": "Känerkinderstrasse",
+        "amenity": "restaurant",
+        "name": "Landgasthof Hirschen",
+        "website": "https://www.landgasthof-hirschen.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 299031963,
+      "lat": 47.4180642,
+      "lon": 7.810219,
+      "tags": {
+        "amenity": "restaurant",
+        "capacity": "50",
+        "cuisine": "pizza",
+        "delivery": "no",
+        "name": "Weinburg",
+        "opening_hours": "until 24.00 everyday",
+        "smoking": "outside",
+        "takeaway": "yes",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 316693046,
+      "lat": 47.4942066,
+      "lon": 7.5995263,
+      "tags": {
+        "addr:city": "Reinach BL",
+        "addr:country": "CH",
+        "addr:housenumber": "71",
+        "addr:postcode": "4153",
+        "addr:street": "Aumattstrasse",
+        "amenity": "restaurant",
+        "name": "Albatros",
+        "toilets:wheelchair": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 325047338,
+      "lat": 47.5121099,
+      "lon": 7.6210929,
+      "tags": {
+        "addr:city": "Münchenstein",
+        "addr:country": "CH",
+        "addr:housenumber": "31",
+        "addr:postcode": "4142",
+        "addr:street": "Hauptstrasse",
+        "amenity": "restaurant",
+        "cuisine": "greek",
+        "name": "Griechische Taverne",
+        "website": "https://www.griechische-taverne.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 325050965,
+      "lat": 47.5104317,
+      "lon": 7.6210298,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Restaurant Wintergarten"
+      }
+    },
+    {
+      "type": "node",
+      "id": 325054259,
+      "lat": 47.5123714,
+      "lon": 7.6175989,
+      "tags": {
+        "addr:city": "Münchenstein",
+        "addr:country": "CH",
+        "addr:housenumber": "6",
+        "addr:postcode": "4142",
+        "addr:street": "Bahnhofstrasse",
+        "amenity": "restaurant",
+        "name": "Restaurant Birseck"
+      }
+    },
+    {
+      "type": "node",
+      "id": 325054544,
+      "lat": 47.5118206,
+      "lon": 7.6190805,
+      "tags": {
+        "addr:city": "Münchenstein",
+        "addr:country": "CH",
+        "addr:housenumber": "30",
+        "addr:postcode": "4142",
+        "addr:street": "Tramstrasse",
+        "amenity": "restaurant",
+        "name": "Dolce & Piccante"
+      }
+    },
+    {
+      "type": "node",
+      "id": 336581834,
+      "lat": 47.3754318,
+      "lon": 7.7017415,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Seminar Hotel Wasserfallen",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 356781804,
+      "lat": 47.4807917,
+      "lon": 7.8176666,
+      "tags": {
+        "addr:city": "Sissach",
+        "addr:country": "CH",
+        "addr:housename": "Bergwirtschaft",
+        "addr:housenumber": "46",
+        "addr:place": "Sissacher Fluh",
+        "addr:postcode": "4450",
+        "addr:street": "Fluehmatten",
+        "amenity": "restaurant",
+        "description": "Bergwirtschaft",
+        "diet:vegetarian": "yes",
+        "horse": "yes",
+        "name": "Sissacherfluh",
+        "opening_hours": "Tu-Sa 09:30-23:00; Su 09:00-18:00",
+        "phone": "+41 61 971 13 71",
+        "website": "https://www.sissacherfluh.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 364723248,
+      "lat": 47.5205728,
+      "lon": 7.6077332,
+      "tags": {
+        "addr:city": "Münchenstein",
+        "addr:country": "CH",
+        "addr:housenumber": "157",
+        "addr:postcode": "4142",
+        "addr:street": "Emil Frey-Strasse",
+        "amenity": "cafe",
+        "branch": "Münchenstein",
+        "cuisine": "regional",
+        "name": "Buchmann",
+        "operator": "Konditorei Buchmann",
+        "shop": "bakery",
+        "website": "https://www.konditorei-buchmann.ch/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 370661454,
+      "lat": 47.5121017,
+      "lon": 7.7208191,
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "McDonald's",
+        "brand:wikidata": "Q38076",
+        "brand:wikipedia": "en:McDonald's",
+        "cuisine": "burger",
+        "name": "McDonald's",
+        "operator": "McDonald's",
+        "smoking": "no",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 373114872,
+      "lat": 47.4472682,
+      "lon": 7.561098,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Linde"
+      }
+    },
+    {
+      "type": "node",
+      "id": 373116618,
+      "lat": 47.4418965,
+      "lon": 7.588572,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "italian",
+        "name": "Adler"
+      }
+    },
+    {
+      "type": "node",
+      "id": 373116620,
+      "lat": 47.4410826,
+      "lon": 7.5902915,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Zur Brücke",
+        "tourism": "guest_house"
+      }
+    },
+    {
+      "type": "node",
+      "id": 373119355,
+      "lat": 47.4420985,
+      "lon": 7.5889731,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Eggfluh"
+      }
+    },
+    {
+      "type": "node",
+      "id": 373119361,
+      "lat": 47.4434441,
+      "lon": 7.5987171,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Chez George"
+      }
+    },
+    {
+      "type": "node",
+      "id": 381442049,
+      "lat": 47.3818644,
+      "lon": 7.7473403,
+      "tags": {
+        "addr:city": "Waldenburg",
+        "addr:country": "CH",
+        "addr:housenumber": "81",
+        "addr:postcode": "4437",
+        "addr:street": "Hauptstrasse",
+        "amenity": "restaurant",
+        "loc_name": "Leue",
+        "name": "Leue",
+        "name:de": "Löwen",
+        "phone": "061 961 01 21",
+        "website": "https://www.leuewaldenburg.ch/",
+        "website:menu": "https://www.leuewaldenburg.ch/menu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 410685866,
+      "lat": 47.393651,
+      "lon": 7.8574938,
+      "tags": {
+        "amenity": "restaurant"
+      }
+    },
+    {
+      "type": "node",
+      "id": 410745469,
+      "lat": 47.39227,
+      "lon": 7.8566988,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Bahnhöfli"
+      }
+    },
+    {
+      "type": "node",
+      "id": 419262396,
+      "lat": 47.3496693,
+      "lon": 7.7660108,
+      "tags": {
+        "amenity": "restaurant",
+        "indoor_seating": "yes",
+        "name": "Restaurant Jura",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 420832774,
+      "lat": 47.4215593,
+      "lon": 7.5006778,
+      "tags": {
+        "addr:postcode": "4242",
+        "addr:street": "Hauptstrasse",
+        "amenity": "cafe",
+        "name": "Café-Restaurant Träff",
+        "opening_hours": "Mo-Sa 07:30-18:30; Su 07:30-18:30",
+        "phone": "+41614040400",
+        "shop": "bakery",
+        "website": "https://www.traeff-laufen.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 469362779,
+      "lat": 47.4372138,
+      "lon": 7.8119012,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Schlössli"
+      }
+    },
+    {
+      "type": "node",
+      "id": 475727039,
+      "lat": 47.445823,
+      "lon": 7.8881224,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Bahnhof"
+      }
+    },
+    {
+      "type": "node",
+      "id": 475939026,
+      "lat": 47.4511951,
+      "lon": 7.8820521,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Post"
+      }
+    },
+    {
+      "type": "node",
+      "id": 480450372,
+      "lat": 47.4025353,
+      "lon": 7.7795183,
+      "tags": {
+        "amenity": "restaurant"
+      }
+    },
+    {
+      "type": "node",
+      "id": 554957142,
+      "lat": 47.5352826,
+      "lon": 7.7128797,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Ristorante Dolce Vita",
+        "toilets:wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 554968892,
+      "lat": 47.5351279,
+      "lon": 7.7140828,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Salmeck",
+        "toilets:wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 554970129,
+      "lat": 47.5351645,
+      "lon": 7.715487,
+      "tags": {
+        "alt_name": "Restaurant Krone",
+        "amenity": "restaurant",
+        "name": "Gourmet Taxi"
+      }
+    },
+    {
+      "type": "node",
+      "id": 554971929,
+      "lat": 47.5355645,
+      "lon": 7.7179535,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "Murad Imbiss"
+      }
+    },
+    {
+      "type": "node",
+      "id": 565514997,
+      "lat": 47.5291696,
+      "lon": 7.6110416,
+      "tags": {
+        "addr:city": "Münchenstein",
+        "addr:country": "CH",
+        "addr:housenumber": "70",
+        "addr:postcode": "4142",
+        "addr:street": "Emil Frey-Strasse",
+        "amenity": "restaurant",
+        "contact:phone": "+41 61 3310301",
+        "name": "Restaurant Ruchfeld"
+      }
+    },
+    {
+      "type": "node",
+      "id": 565516927,
+      "lat": 47.5266723,
+      "lon": 7.6115345,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Spengler Kantine"
+      }
+    },
+    {
+      "type": "node",
+      "id": 565516938,
+      "lat": 47.5212482,
+      "lon": 7.6073126,
+      "tags": {
+        "amenity": "restaurant",
+        "brand": "Coop Restaurant",
+        "brand:wikidata": "Q432564",
+        "brand:wikipedia": "de:Coop (Schweiz)",
+        "cuisine": "german",
+        "name": "Coop Restaurant",
+        "operator": "Coop Genossenschaft",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 565516945,
+      "lat": 47.5112863,
+      "lon": 7.6027952,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Reinacherhof"
+      }
+    },
+    {
+      "type": "node",
+      "id": 574957473,
+      "lat": 47.3718481,
+      "lon": 7.6841466,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Berghaus Vogelberg",
+        "opening_hours": "Tu-Th 10:00-18:00; Fr, Sa 10:00-22:00; Su 09:00-18:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 595572248,
+      "lat": 47.46564,
+      "lon": 7.5702543,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Klushof"
+      }
+    },
+    {
+      "type": "node",
+      "id": 614262833,
+      "lat": 47.498903,
+      "lon": 7.5514166,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Sternen",
+        "opening_hours": "Mo-Sa 10:00-14:00,17:00-24:00; Su 10:00-22:30"
+      }
+    },
+    {
+      "type": "node",
+      "id": 614262869,
+      "lat": 47.4994769,
+      "lon": 7.5568583,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Bahnhöfli",
+        "opening_hours": "Su-Th 10:00-23:00, Fr,Sa 10:00-24:00",
+        "toilets:wheelchair": "no",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 614262871,
+      "lat": 47.4995355,
+      "lon": 7.5545861,
+      "tags": {
+        "addr:city": "Therwil",
+        "addr:country": "CH",
+        "addr:housenumber": "1a",
+        "addr:postcode": "4106",
+        "addr:street": "Bahnhofstrasse",
+        "amenity": "restaurant",
+        "cuisine": "italian",
+        "name": "Trattoria Antichi Sapori",
+        "phone": "+41 61 722 13 13",
+        "website": "https://www.antichi-sapori.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 614262875,
+      "lat": 47.4991063,
+      "lon": 7.5558821,
+      "tags": {
+        "addr:city": "Therwil",
+        "addr:country": "CH",
+        "addr:housenumber": "26",
+        "addr:postcode": "4106",
+        "addr:street": "Bahnhofstrasse",
+        "amenity": "restaurant",
+        "cuisine": "italian",
+        "name": "Cantina Toscana",
+        "website": "https://restaurant-toscana.business.site/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 633330730,
+      "lat": 47.5148771,
+      "lon": 7.5585983,
+      "tags": {
+        "amenity": "restaurant",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 639123585,
+      "lat": 47.4602878,
+      "lon": 7.860707,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Bistro Gallo"
+      }
+    },
+    {
+      "type": "node",
+      "id": 639124019,
+      "lat": 47.464911,
+      "lon": 7.8545944,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Rössli"
+      }
+    },
+    {
+      "type": "node",
+      "id": 639124023,
+      "lat": 47.4657805,
+      "lon": 7.8548816,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Buergi Beck"
+      }
+    },
+    {
+      "type": "node",
+      "id": 639124026,
+      "lat": 47.4654614,
+      "lon": 7.8545782,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "zum Kreuz"
+      }
+    },
+    {
+      "type": "node",
+      "id": 639124028,
+      "lat": 47.4653353,
+      "lon": 7.8544078,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "Pizza"
+      }
+    },
+    {
+      "type": "node",
+      "id": 639124036,
+      "lat": 47.4642248,
+      "lon": 7.8564133,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Restaurant Brauerei"
+      }
+    },
+    {
+      "type": "node",
+      "id": 639124045,
+      "lat": 47.4654446,
+      "lon": 7.8562479,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Traube"
+      }
+    },
+    {
+      "type": "node",
+      "id": 639124056,
+      "lat": 47.4661692,
+      "lon": 7.8566095,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Cafe Holzofe"
+      }
+    },
+    {
+      "type": "node",
+      "id": 648224178,
+      "lat": 47.4690464,
+      "lon": 7.8754711,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Rössli"
+      }
+    },
+    {
+      "type": "node",
+      "id": 648224181,
+      "lat": 47.468531,
+      "lon": 7.8758902,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Eintracht"
+      }
+    },
+    {
+      "type": "node",
+      "id": 648224183,
+      "lat": 47.4684219,
+      "lon": 7.8781602,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Gasthof Post"
+      }
+    },
+    {
+      "type": "node",
+      "id": 648224185,
+      "lat": 47.468877,
+      "lon": 7.8990004,
+      "tags": {
+        "addr:city": "Rothenfluh",
+        "addr:housenumber": "119",
+        "addr:place": "Säge",
+        "addr:postcode": "4467",
+        "amenity": "restaurant",
+        "name": "Restaurant Säge",
+        "phone": "+41 61 991 90 67",
+        "toilets:wheelchair": "yes",
+        "website": "https://www.restaurant-saege.ch",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 648224262,
+      "lat": 47.4664045,
+      "lon": 7.9311483,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Gasthof zum Bad"
+      }
+    },
+    {
+      "type": "node",
+      "id": 648480567,
+      "lat": 47.4699817,
+      "lon": 7.8740699,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "pizza",
+        "description": "Restaurant ist aktuell geschlossen, respektive nicht verpachtet.",
+        "name": "Schlüssel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 648527633,
+      "lat": 47.4653896,
+      "lon": 7.8502472,
+      "tags": {
+        "addr:city": "Gelterkinden",
+        "addr:country": "CH",
+        "addr:housenumber": "1",
+        "addr:postcode": "4460",
+        "addr:street": "Sissacherstrasse",
+        "amenity": "fast_food",
+        "cuisine": "kebab;pizza",
+        "delivery": "yes",
+        "drive_through": "no",
+        "name": "Food Express",
+        "phone": "+41 61 983 16 40",
+        "takeaway": "yes",
+        "website": "https://www.foodexpress-gelterkinden.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 648527635,
+      "lat": 47.4659387,
+      "lon": 7.8510952,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Roseneck",
+        "website": "https://www.roseneck.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 648527636,
+      "lat": 47.4643917,
+      "lon": 7.8554742,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Ochsen"
+      }
+    },
+    {
+      "type": "node",
+      "id": 674095965,
+      "lat": 47.3952211,
+      "lon": 7.8554266,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "pizza",
+        "name": "Pizzeria Läufelfingen"
+      }
+    },
+    {
+      "type": "node",
+      "id": 708382204,
+      "lat": 47.5093061,
+      "lon": 7.8543864,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Tierpark Waldgrotte",
+        "opening_hours": "Th-Su 11:00-22:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 713079434,
+      "lat": 47.4214593,
+      "lon": 7.5418363,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Q-Stall",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 713087342,
+      "lat": 47.4175319,
+      "lon": 7.5431666,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Zum Kreuz"
+      }
+    },
+    {
+      "type": "node",
+      "id": 713090510,
+      "lat": 47.4178731,
+      "lon": 7.5429199,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Domino"
+      }
+    },
+    {
+      "type": "node",
+      "id": 725910889,
+      "lat": 47.4486332,
+      "lon": 7.518126,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Kreuz"
+      }
+    },
+    {
+      "type": "node",
+      "id": 746993350,
+      "lat": 47.3832539,
+      "lon": 7.6480375,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Stierenberg"
+      }
+    },
+    {
+      "type": "node",
+      "id": 769222556,
+      "lat": 47.5055455,
+      "lon": 7.5178473,
+      "tags": {
+        "addr:city": "Biel-Benken BL",
+        "addr:country": "CH",
+        "addr:housenumber": "4",
+        "addr:postcode": "4105",
+        "addr:street": "Mühlegasse",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Wirtschaft Heyer",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 872461937,
+      "lat": 47.4172201,
+      "lon": 7.5014621,
+      "tags": {
+        "addr:city": "Laufen",
+        "addr:country": "CH",
+        "addr:housenumber": "40",
+        "addr:postcode": "4242",
+        "addr:street": "Ziegeleistrasse",
+        "amenity": "fast_food",
+        "brand": "McDonald's",
+        "brand:wikidata": "Q38076",
+        "brand:wikipedia": "en:McDonald's",
+        "cuisine": "burger",
+        "drive_through": "yes",
+        "name": "McDonald's",
+        "takeaway": "yes",
+        "toilets:wheelchair": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 891971457,
+      "lat": 47.4602994,
+      "lon": 7.5900039,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Rebstock"
+      }
+    },
+    {
+      "type": "node",
+      "id": 913826300,
+      "lat": 47.5310893,
+      "lon": 7.6780968,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Gasthof zur Saline",
+        "opening_hours": "Mo-Fr 06:00-23:00",
+        "phone": "+41 (0) 61 821 61 72",
+        "url": "www.gasthof-saline.ch",
+        "website": "https://www.gasthof-saline.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 929334814,
+      "lat": 47.532107,
+      "lon": 7.6736821,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Solbad",
+        "url": "www.schluesselzunft.ch",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 941860429,
+      "lat": 47.5316546,
+      "lon": 7.611743,
+      "tags": {
+        "addr:city": "Münchenstein",
+        "addr:country": "CH",
+        "addr:housenumber": "37",
+        "addr:postcode": "4142",
+        "addr:street": "Emil Frey-Strasse",
+        "amenity": "restaurant",
+        "name": "Rosticceria Coppa"
+      }
+    },
+    {
+      "type": "node",
+      "id": 941863829,
+      "lat": 47.5321587,
+      "lon": 7.611994,
+      "tags": {
+        "addr:city": "Münchenstein",
+        "addr:country": "CH",
+        "addr:housenumber": "4",
+        "addr:postcode": "4142",
+        "addr:street": "Schwertrainstrasse",
+        "amenity": "restaurant",
+        "name": "La Grotta"
+      }
+    },
+    {
+      "type": "node",
+      "id": 994965853,
+      "lat": 47.441191,
+      "lon": 7.9066073,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Dorfbeizli"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1170699754,
+      "lat": 47.5507567,
+      "lon": 7.5361806,
+      "tags": {
+        "addr:city": "Allschwil",
+        "addr:housenumber": "1",
+        "addr:postcode": "4123",
+        "addr:street": "Dorfplatz",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "indoor_seating": "yes",
+        "name": "Rössli",
+        "outdoor_seating": "yes",
+        "phone": "+41 61 486 9696",
+        "smoking": "outside",
+        "website": "https://www.roessli-allschwil.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1170699814,
+      "lat": 47.5464261,
+      "lon": 7.5532991,
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "McDonald's",
+        "brand:wikidata": "Q38076",
+        "brand:wikipedia": "en:McDonald's",
+        "cuisine": "burger",
+        "indoor_seating": "yes",
+        "internet_access": "wlan",
+        "name": "McDonald's",
+        "outdoor_seating": "yes",
+        "smoking": "no",
+        "takeaway": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1170699818,
+      "lat": 47.5512889,
+      "lon": 7.5364914,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Café Bäckerei am Dorfplatz",
+        "phone": "+41 61 481 45 59",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1170699831,
+      "lat": 47.5578901,
+      "lon": 7.5609404,
+      "tags": {
+        "addr:city": "Allschwil",
+        "addr:country": "CH",
+        "addr:housenumber": "323",
+        "addr:postcode": "4123",
+        "addr:street": "Baslerstrasse",
+        "amenity": "restaurant",
+        "cuisine": "italian",
+        "email": "info@lindenplatz.ch",
+        "indoor_seating": "yes",
+        "name": "Lindenplatz",
+        "outdoor_seating": "yes",
+        "phone": "+41 61 482 07 77",
+        "reservation": "recommended",
+        "smoking": "outside",
+        "takeaway": "yes",
+        "website": "https://www.lindenplatz.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1293814525,
+      "lat": 47.5018889,
+      "lon": 7.560799,
+      "tags": {
+        "amenity": "restaurant",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1312970439,
+      "lat": 47.5229346,
+      "lon": 7.6169742,
+      "tags": {
+        "addr:city": "Münchenstein",
+        "addr:country": "CH",
+        "addr:housenumber": "60",
+        "addr:postcode": "4142",
+        "addr:street": "Baselstrasse",
+        "amenity": "restaurant",
+        "cuisine": "italian",
+        "fax": "+41 61 411 01 29",
+        "name": "Restaurant Bonanza",
+        "phone": "+41 61 411 01 34",
+        "website": "https://www.bonanza-pizzaservice.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1312973255,
+      "lat": 47.5197475,
+      "lon": 7.6181012,
+      "tags": {
+        "addr:city": "Münchenstein",
+        "addr:country": "CH",
+        "addr:housenumber": "88",
+        "addr:postcode": "4142",
+        "addr:street": "Baselstrasse",
+        "amenity": "restaurant",
+        "cuisine": "italian",
+        "name": "Hofmatt",
+        "website": "https://www.hotelhofmatt.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1412260544,
+      "lat": 47.4813527,
+      "lon": 7.7150934,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Sichternhof"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1417351202,
+      "lat": 47.4898477,
+      "lon": 7.7827794,
+      "tags": {
+        "addr:city": "Hersberg",
+        "addr:country": "CH",
+        "addr:housenumber": "2",
+        "addr:postcode": "4423",
+        "addr:street": "Hauptstrasse",
+        "amenity": "restaurant",
+        "name": "Schützenstube",
+        "opening_hours": "We-Su",
+        "phone": "+41 61 921 12 88"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1422954804,
+      "lat": 47.5363828,
+      "lon": 7.6271603,
+      "tags": {
+        "amenity": "restaurant"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1452892885,
+      "lat": 47.376652,
+      "lon": 7.7211134,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Bergwirtschaft Waldweid",
+        "website": "https://www.region-wasserfallen.ch/gastronomie/bergwirtschaft-waldweid/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1497712235,
+      "lat": 47.5350446,
+      "lon": 7.6133863,
+      "tags": {
+        "amenity": "cafe",
+        "contact:phone": "+41 61 311 24 54",
+        "contact:website": "http://www.cafe-merian.ch/",
+        "name": "Café Merian",
+        "opening_hours": "Th-Fr 11:00-18:00; Sa-Su 10:00-18:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1526278480,
+      "lat": 47.5535141,
+      "lon": 7.5620955,
+      "tags": {
+        "addr:city": "Allschwil",
+        "addr:country": "CH",
+        "addr:housenumber": "101",
+        "addr:postcode": "4123",
+        "addr:street": "Merkurstrasse",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Restaurant Bohrerhof",
+        "source": "visit, neighbourhood",
+        "website": "https://www.bohrerhof.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1573221888,
+      "lat": 47.553344,
+      "lon": 7.621097,
+      "tags": {
+        "addr:city": "Birsfelden",
+        "addr:country": "CH",
+        "addr:housenumber": "54",
+        "addr:postcode": "4127",
+        "addr:street": "Hauptstrasse",
+        "amenity": "restaurant",
+        "drive_in": "no",
+        "name": "Mona Lisa",
+        "outdoor_seating": "yes",
+        "smoking": "no",
+        "takeaway": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1573222220,
+      "lat": 47.55339,
+      "lon": 7.622033,
+      "tags": {
+        "addr:city": "Birsfelden",
+        "addr:country": "CH",
+        "addr:housenumber": "53",
+        "addr:postcode": "4127",
+        "addr:street": "Hauptstrasse",
+        "amenity": "fast_food",
+        "cuisine": "burger",
+        "diet:vegetarian": "yes",
+        "indoor_seating": "yes",
+        "name": "Burger King",
+        "outdoor_seating": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1600145427,
+      "lat": 47.553231,
+      "lon": 7.622954,
+      "tags": {
+        "addr:city": "Birsfelden",
+        "addr:country": "CH",
+        "addr:housenumber": "75",
+        "addr:postcode": "4127",
+        "addr:street": "Hauptstrasse",
+        "amenity": "cafe",
+        "indoor_seating": "yes",
+        "name": "Cafe Mesana",
+        "outdoor_seating": "yes",
+        "smoking": "no",
+        "toilets:wheelchair": "no",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1604768854,
+      "lat": 47.3854146,
+      "lon": 7.8209898,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Hotel Bad Eptingen",
+        "website": "https://www.badeptingen.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1615017668,
+      "lat": 47.5543315,
+      "lon": 7.6198671,
+      "tags": {
+        "addr:city": "Birsfelden",
+        "addr:country": "CH",
+        "addr:housenumber": "23",
+        "addr:postcode": "4127",
+        "addr:street": "Hauptstrasse",
+        "amenity": "restaurant",
+        "cuisine": "pizza",
+        "drive_in": "no",
+        "name": "Casablanca",
+        "outdoor_seating": "yes",
+        "smoking": "no",
+        "takeaway": "yes",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1615017684,
+      "lat": 47.5524699,
+      "lon": 7.6237986,
+      "tags": {
+        "addr:city": "Birsfelden",
+        "addr:country": "CH",
+        "addr:housenumber": "2",
+        "addr:postcode": "4127",
+        "addr:street": "Hardstrasse",
+        "amenity": "restaurant",
+        "cuisine": "pizza",
+        "name": "Restaurant Schmiede",
+        "opening_hours": "Mo-Sa 10:00-14:00, Mo-Sa 17:00-23:00, So 10:00-14:00, So 17:00-22:00",
+        "phone": "+41 61 313 89 18",
+        "website": "https://restaurant-schmiede.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1615017685,
+      "lat": 47.5525595,
+      "lon": 7.6240178,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Luxor"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1618048044,
+      "lat": 47.5535785,
+      "lon": 7.6214489,
+      "tags": {
+        "addr:city": "Birsfelden",
+        "addr:country": "CH",
+        "addr:housenumber": "47",
+        "addr:postcode": "4127",
+        "addr:street": "Hauptstrasse",
+        "amenity": "fast_food",
+        "cuisine": "turkish;kebab;italian;pizza",
+        "drive_in": "no",
+        "drive_through": "no",
+        "indoor_seating": "yes",
+        "name": "Birs Grill",
+        "opening_hours": "Mo-Th 10:00-22:00; Fr-Sa 10:00-23:00; Su 13:00-22:00",
+        "outdoor_seating": "yes",
+        "phone": "+41613110782",
+        "website": "https://www.birsgrill.ch/de"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1619733870,
+      "lat": 47.4927585,
+      "lon": 7.5936045,
+      "tags": {
+        "addr:city": "Reinach BL",
+        "addr:country": "CH",
+        "addr:housenumber": "5",
+        "addr:postcode": "4153",
+        "addr:street": "Angensteinerstrasse",
+        "amenity": "restaurant",
+        "cuisine": "greek",
+        "name": "Restaurant im Zentrum",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1639959908,
+      "lat": 47.5183717,
+      "lon": 7.6929895,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Restaurant zum Park"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1652253405,
+      "lat": 47.5139457,
+      "lon": 7.5561373,
+      "tags": {
+        "addr:city": "Oberwil BL",
+        "addr:country": "CH",
+        "addr:housenumber": "41",
+        "addr:postcode": "4104",
+        "addr:street": "Hauptstrasse",
+        "amenity": "restaurant",
+        "check_date": "2024-08-28",
+        "name": "Schlüssel",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "website": "https://www.schluessel-oberwil.ch/",
+        "wheelchair": "yes",
+        "wikidata": "Q90405625"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1654390685,
+      "lat": 47.5503858,
+      "lon": 7.5369971,
+      "tags": {
+        "addr:city": "Allschwil",
+        "addr:housenumber": "8",
+        "addr:postcode": "4123",
+        "addr:street": "Oberwilerstrasse",
+        "amenity": "fast_food",
+        "cuisine": "italian;pizza",
+        "drive_through": "no",
+        "name": "Pico Pizzeria",
+        "phone": "0800 010 102",
+        "website": "https://www.picoo.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1654391550,
+      "lat": 47.5504341,
+      "lon": 7.5369421,
+      "tags": {
+        "addr:city": "Allschwil",
+        "addr:housenumber": "8",
+        "addr:postcode": "4123",
+        "addr:street": "Oberwilerstrasse",
+        "amenity": "restaurant",
+        "name": "Restaurant Eintracht",
+        "website": "https://www.eintrachtallschwil.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1667919914,
+      "lat": 47.4602767,
+      "lon": 7.9151919,
+      "tags": {
+        "addr:city": "Rothenfluh",
+        "addr:country": "CH",
+        "addr:housenumber": "13",
+        "addr:postcode": "4467",
+        "addr:street": "Rössligasse",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "internet_access": "wlan",
+        "name": "Rössli-Historika",
+        "opening_hours": "Su 10:00-21:00; Tu 17:00-23:00; We-Fr 09:00-14:00, 17:00-23:00; Sa 10:00-23:00",
+        "phone": "+41 79 677 54 14",
+        "website": "https://www.roessli-historika.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1748428802,
+      "lat": 47.5092335,
+      "lon": 7.600486,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Wacker",
+        "operator": "Hans-Dieter Wacker",
+        "phone": "+41 61 711 53 20",
+        "toilets:wheelchair": "no",
+        "website": "https://restaurant-wacker.ch/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1768609533,
+      "lat": 47.3856586,
+      "lon": 7.7495342,
+      "tags": {
+        "addr:city": "Waldenburg",
+        "addr:country": "CH",
+        "addr:housenumber": "19",
+        "addr:postcode": "4437",
+        "addr:street": "Hauptstrasse",
+        "amenity": "restaurant",
+        "indoor_seating": "yes",
+        "name": "Bella Sicilia",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1784555588,
+      "lat": 47.5482225,
+      "lon": 7.6299077,
+      "tags": {
+        "addr:city": "Birsfelden",
+        "addr:housenumber": "58",
+        "addr:postcode": "4127",
+        "addr:street": "Rheinfelderstrasse",
+        "amenity": "restaurant",
+        "email": "reservation@restaurant-hard.ch",
+        "indoor_seating": "yes",
+        "name": "Restaurant Hard",
+        "outdoor_seating": "yes",
+        "phone": "+41 61 313 03 40",
+        "website": "https://restauranthard.ch/",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1813871597,
+      "lat": 47.4933407,
+      "lon": 7.5889212,
+      "tags": {
+        "addr:city": "Reinach BL",
+        "addr:country": "CH",
+        "addr:housenumber": "1",
+        "addr:postcode": "4153",
+        "addr:street": "Brunngasse",
+        "amenity": "cafe",
+        "name": "Café Grellinger",
+        "opening_hours": "Tu-Fr 07:30-17:30; Sa 08:00-16:00; Su 08:15-17:00",
+        "website": "https://www.grellinger.ch/cafe"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1813871601,
+      "lat": 47.4927869,
+      "lon": 7.5888236,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Café Storch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1845592275,
+      "lat": 47.5221023,
+      "lon": 7.7255137,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "FGV Luginsland",
+        "opening_hours": "Su 14:00-18:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1940441436,
+      "lat": 47.501142,
+      "lon": 7.5998005,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "pizza",
+        "name": "Restaurant Landhof",
+        "website": "https://landhof.li"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1944744905,
+      "lat": 47.4843076,
+      "lon": 7.7348569,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Bäckerei Ziegler",
+        "old_name": "Strübin",
+        "opening_hours": "Mo-Fr 08:30-12:00,15:00-18:00",
+        "phone": "+41619069206",
+        "website": "https://www.zieglerbrot.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1944744910,
+      "lat": 47.4849521,
+      "lon": 7.735544,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Restaurant Metzgerei Bären",
+        "phone": "+41 61 921 04 97",
+        "website": "https://baeren-liestal.ch",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1951320231,
+      "lat": 47.4011982,
+      "lon": 7.7172871,
+      "tags": {
+        "addr:housenumber": "52",
+        "addr:postcode": "4425",
+        "addr:street": "Hauptstrasse",
+        "amenity": "restaurant",
+        "name": "Sodhus-Beizli"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2035571406,
+      "lat": 47.5094497,
+      "lon": 7.5537997,
+      "tags": {
+        "amenity": "restaurant"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2037406180,
+      "lat": 47.5384687,
+      "lon": 7.5719622,
+      "tags": {
+        "amenity": "cafe",
+        "name": "cent-treize",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2051022004,
+      "lat": 47.5390237,
+      "lon": 7.572172,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Jagerstübli"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2052895402,
+      "lat": 47.4890774,
+      "lon": 7.5966724,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "chinese",
+        "name": "Mister Wong",
+        "opening_hours": "Mo-Fr 11:00-14:00,17:00-20:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2068619650,
+      "lat": 47.459193,
+      "lon": 7.7162414,
+      "tags": {
+        "amenity": "restaurant",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2087692024,
+      "lat": 47.3973206,
+      "lon": 7.6920315,
+      "tags": {
+        "addr:city": "Reigoldswil",
+        "addr:country": "CH",
+        "addr:housenumber": "3",
+        "addr:place": "Dorfplatz",
+        "addr:postcode": "4418",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Bistro am Dorfplatz"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2088366786,
+      "lat": 47.5521086,
+      "lon": 7.5371646,
+      "tags": {
+        "addr:city": "Allschwil",
+        "addr:housenumber": "20",
+        "addr:postcode": "4123",
+        "addr:street": "Hegenheimerstrasse",
+        "amenity": "restaurant",
+        "contact:website": "http://www.elsaesserhof-allschwil.ch/",
+        "cuisine": "regional",
+        "internet_access": "no",
+        "name": "Elsässerhof (Chnoche)",
+        "opening_hours": "Mo-Fr 08:30-23:45; Su 17:00-23:45",
+        "phone": "+41 61 481 02 04",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2088366787,
+      "lat": 47.5515399,
+      "lon": 7.5371579,
+      "tags": {
+        "addr:city": "Allschwil",
+        "addr:housenumber": "11",
+        "addr:postcode": "4123",
+        "addr:street": "Dorfplatz",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "internet_access": "no",
+        "name": "Jägerstube",
+        "opening_hours": "Mo-Sa 08:30-24:00; Su 10:00-22:00",
+        "phone": "+41 61 481 04 10",
+        "website": "https://www.jaegerstube.ch/",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2088844393,
+      "lat": 47.4917834,
+      "lon": 7.5888125,
+      "tags": {
+        "addr:city": "Reinach BL",
+        "addr:country": "CH",
+        "addr:housenumber": "52",
+        "addr:postcode": "4153",
+        "addr:street": "Hauptstrasse",
+        "amenity": "restaurant",
+        "name": "Arcade Restaurant",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2088850131,
+      "lat": 47.491386,
+      "lon": 7.58918,
+      "tags": {
+        "addr:city": "Reinach BL",
+        "addr:country": "CH",
+        "addr:housenumber": "58",
+        "addr:postcode": "4153",
+        "addr:street": "Hauptstrasse",
+        "amenity": "restaurant",
+        "cuisine": "kebab",
+        "name": "Grill Corner Imbiss",
+        "opening_hours": "Mo-Sa 10:00-21:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2088873600,
+      "lat": 47.4918994,
+      "lon": 7.5896171,
+      "tags": {
+        "addr:city": "Reinach BL",
+        "addr:country": "CH",
+        "addr:housenumber": "43",
+        "addr:postcode": "4153",
+        "addr:street": "Hauptstrasse",
+        "amenity": "restaurant",
+        "cuisine": "italian",
+        "name": "Café Schopf"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2088963935,
+      "lat": 47.4935178,
+      "lon": 7.5914866,
+      "tags": {
+        "addr:postcode": "4153",
+        "addr:street": "Hauptstrasse",
+        "amenity": "fast_food",
+        "cuisine": "pizza",
+        "name": "Pizza Capo",
+        "website": "http://pizza-capo.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2089059599,
+      "lat": 47.4922681,
+      "lon": 7.592893,
+      "tags": {
+        "addr:city": "Reinach BL",
+        "addr:country": "CH",
+        "addr:housenumber": "6",
+        "addr:postcode": "4153",
+        "addr:street": "Angensteinerstrasse",
+        "amenity": "restaurant",
+        "cuisine": "pizza",
+        "name": "Cucina-amici Pizzaria",
+        "opening_hours": "Mo-Fr 11:00-14:00, Mo-Sa 17:00-23:00",
+        "website": "https://cucina-amici.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2089542751,
+      "lat": 47.546878,
+      "lon": 7.5531688,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Schützengarten",
+        "opening_hours": "Mo 08:30-14:00, Tu-Th 08:30-14:00,17:00-23:00, Fr 08:30-14:00,16:00-23:00, Sa 17:00-23:00",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2097793486,
+      "lat": 47.4881349,
+      "lon": 7.7215123,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Cafeteria Binetäli",
+        "opening_hours": "Mo-Fr 08:30-17:00; Sa,Su 13:00-16:30"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2097793504,
+      "lat": 47.4245837,
+      "lon": 7.8419161,
+      "tags": {
+        "addr:city": "Wittinsburg",
+        "addr:housenumber": "12",
+        "addr:postcode": "4443",
+        "addr:street": "Unterdorfstrasse",
+        "amenity": "restaurant",
+        "name": "Restaurant Bürgin",
+        "phone": "+41 62 299 12 41",
+        "website": "https://www.buergin-wittinsburg.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2121171809,
+      "lat": 47.5183887,
+      "lon": 7.6944588,
+      "tags": {
+        "amenity": "restaurant"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2131474651,
+      "lat": 47.50306,
+      "lon": 7.7147709,
+      "tags": {
+        "addr:city": "Frenkendorf",
+        "addr:housenumber": "7",
+        "addr:postcode": "4402",
+        "addr:street": "Hauptstrasse",
+        "amenity": "restaurant",
+        "cuisine": "italian",
+        "name": "Central Pizzeria",
+        "phone": "+41 61 901 10 08"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2159692681,
+      "lat": 47.4651038,
+      "lon": 7.8564682,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Magazin"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2179931409,
+      "lat": 47.5335457,
+      "lon": 7.7218059,
+      "tags": {
+        "amenity": "cafe",
+        "cuisine": "ice_cream",
+        "internet_access": "wlan",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2284930127,
+      "lat": 47.4796098,
+      "lon": 7.8064082,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Alpbad"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2306606202,
+      "lat": 47.4833874,
+      "lon": 7.7369897,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Kaserne",
+        "outdoor_seating": "yes",
+        "toilets:wheelchair": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2306851346,
+      "lat": 47.4840459,
+      "lon": 7.7342235,
+      "tags": {
+        "addr:city": "Liestal",
+        "addr:country": "CH",
+        "addr:housenumber": "22",
+        "addr:postcode": "4410",
+        "addr:street": "Mühlegasse",
+        "amenity": "restaurant",
+        "name": "Restaurant zur Stadtmühle",
+        "phone": "+41 61 921 29 33",
+        "website": "https://stadtmuehle-liestal.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2376402867,
+      "lat": 47.3478707,
+      "lon": 7.7691192,
+      "tags": {
+        "addr:city": "Langenbruck",
+        "addr:housenumber": "12",
+        "addr:postcode": "4438",
+        "addr:street": "Hauptstrasse",
+        "amenity": "restaurant",
+        "email": "info@ochsen-langenbruck.ch",
+        "name": "Gasthof zum Ochsen",
+        "phone": "+41 62 390 13 23",
+        "website": "http://www.ochsen-langenbruck.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2419361919,
+      "lat": 47.5537129,
+      "lon": 7.6211824,
+      "tags": {
+        "addr:city": "Birsfelden",
+        "addr:housenumber": "45",
+        "addr:postcode": "4127",
+        "addr:street": "Hauptstrasse",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "drive_in": "no",
+        "indoor_seating": "yes",
+        "name": "Blume",
+        "outdoor_seating": "yes",
+        "phone": "+41 61 311 29 94",
+        "smoking": "no",
+        "takeaway": "no",
+        "website": "https://www.blume-birsfelden.ch/restaurant.htm",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2429003453,
+      "lat": 47.3737134,
+      "lon": 7.7002668,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Heidi Stübli",
+        "website": "https://www.region-wasserfallen.ch/gastronomie/restaurant-heidi-stuebli/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2438052066,
+      "lat": 47.5393467,
+      "lon": 7.5749371,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Schlüssel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2455973885,
+      "lat": 47.495334,
+      "lon": 7.7120513,
+      "tags": {
+        "addr:city": "Liestal",
+        "addr:country": "CH",
+        "addr:housenumber": "84",
+        "addr:postcode": "4410",
+        "addr:street": "Bienenberg",
+        "amenity": "restaurant",
+        "contact:email": "reception@bienenberg.ch",
+        "contact:fax": "+41 61 906 78 01",
+        "contact:phone": "+41 61 906 78 00",
+        "contact:website": "http://www.hotelbienenberg.ch/speisekarte.html",
+        "name": "Hotel Bienenberg",
+        "opening_hours": "Mo-Sa 11:00-22:00; Su 9:00-20:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2456759403,
+      "lat": 47.513356,
+      "lon": 7.554722,
+      "tags": {
+        "amenity": "restaurant"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2456759405,
+      "lat": 47.5075078,
+      "lon": 7.5542258,
+      "tags": {
+        "amenity": "restaurant",
+        "indoor_seating": "yes",
+        "name": "Coop Restaurant",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2456759413,
+      "lat": 47.5333551,
+      "lon": 7.5710137,
+      "tags": {
+        "amenity": "restaurant"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2456759418,
+      "lat": 47.5374314,
+      "lon": 7.5755457,
+      "tags": {
+        "addr:city": "Binningen",
+        "addr:country": "CH",
+        "addr:housenumber": "1",
+        "addr:postcode": "4102",
+        "addr:street": "Bottmingerstrasse",
+        "amenity": "restaurant",
+        "cuisine": "sushi",
+        "name": "Sushi Tenzan",
+        "website": "https://www.sushi-express.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2456759420,
+      "lat": 47.5379517,
+      "lon": 7.5715103,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "thai",
+        "name": "Krone",
+        "opening_hours": "Tu-Fr 11:30-14:00, Tu-Sa 18:30-23:00",
+        "website": "https://www.kittipon-thai-restaurant.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2456759436,
+      "lat": 47.5232374,
+      "lon": 7.5720061,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "Pizzeria La Rotonda",
+        "opening_hours": "Mo-Th 17:00-22:20, Mo-Sa 11:00-14:00, Fr,Sa 17:00-01:45, Su 11:00-23:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2456759438,
+      "lat": 47.5266552,
+      "lon": 7.5721537,
+      "tags": {
+        "amenity": "restaurant",
+        "brand": "Coop Restaurant",
+        "brand:wikidata": "Q432564",
+        "cuisine": "german",
+        "name": "Coop Restaurant"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2520197923,
+      "lat": 47.5174293,
+      "lon": 7.6950226,
+      "tags": {
+        "addr:city": "Pratteln",
+        "addr:country": "CH",
+        "addr:housenumber": "23",
+        "addr:postcode": "4133",
+        "addr:street": "Hauptstrasse",
+        "amenity": "restaurant",
+        "indoor_seating": "yes",
+        "name": "Kaffi Bistro Aldo",
+        "outdoor_seating": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2563387802,
+      "lat": 47.5099645,
+      "lon": 7.6173916,
+      "tags": {
+        "addr:city": "Münchenstein",
+        "addr:country": "CH",
+        "addr:housenumber": "66",
+        "addr:postcode": "4142",
+        "addr:street": "Tramstrasse",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Kantine Werkhalle",
+        "opening_hours": "11:45-13:30",
+        "phone": "+41 61 415 21 70",
+        "smoking": "outside",
+        "website": "http://www.werkhalle.net/kantine/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2569482189,
+      "lat": 47.4819783,
+      "lon": 7.725725,
+      "tags": {
+        "amenity": "restaurant",
+        "diet:vegan": "no",
+        "diet:vegetarian": "yes",
+        "name": "Mensa",
+        "name:de": "Mensa Gym Liestal",
+        "opening_hours": "Mo-Fr 07:30-16:00",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2571668147,
+      "lat": 47.4934453,
+      "lon": 7.6190237,
+      "tags": {
+        "addr:city": "Arlesheim",
+        "addr:country": "CH",
+        "addr:housenumber": "15",
+        "addr:postcode": "4144",
+        "addr:street": "Hauptstrasse",
+        "amenity": "restaurant",
+        "capacity": "25 Braustube, 25 Sitzungszimmer",
+        "description": "Gutbürgerliche, saisonale Küche mit vielen Produkten aus der Region.",
+        "name": "Adler",
+        "website": "http://www.adler-arlesheim.ch/Adler_2013/",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2577144464,
+      "lat": 47.5267647,
+      "lon": 7.6471139,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "Cafe & More"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2577144468,
+      "lat": 47.5276346,
+      "lon": 7.6476003,
+      "tags": {
+        "amenity": "restaurant",
+        "brand": "Coop Restaurant",
+        "brand:wikidata": "Q432564",
+        "brand:wikipedia": "de:Coop (Schweiz)",
+        "cuisine": "german",
+        "name": "Coop Restaurant",
+        "opening_hours": "Mo-Fr 06:30-18:30; Sa 06:30-16:00",
+        "operator": "Coop Genossenschaft"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2577144473,
+      "lat": 47.5224442,
+      "lon": 7.6460993,
+      "tags": {
+        "addr:city": "Muttenz",
+        "addr:country": "CH",
+        "addr:housenumber": "7",
+        "addr:postcode": "4132",
+        "addr:street": "Kirchplatz",
+        "amenity": "restaurant",
+        "contact:phone": "+41 61 461 04 60",
+        "contact:website": "http://www.rebstockmuttenz.ch",
+        "lastcheck": "2016-08-02",
+        "name": "Gasthof zum Rebstock"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2577144563,
+      "lat": 47.5218749,
+      "lon": 7.6454774,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Restaurant zum Wartenberg"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2577144570,
+      "lat": 47.5239672,
+      "lon": 7.6461572,
+      "tags": {
+        "addr:city": "Muttenz",
+        "addr:country": "CH",
+        "addr:housenumber": "22",
+        "addr:postcode": "4132",
+        "addr:street": "Hauptstrasse",
+        "amenity": "restaurant",
+        "contact:phone": "+41 61 461 81 81",
+        "contact:website": "http://www.waagemuttenz.ch/",
+        "lastcheck": "2016-08-02",
+        "name": "Wirtschaft zur Waage"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2579571531,
+      "lat": 47.5522515,
+      "lon": 7.5451593,
+      "tags": {
+        "addr:city": "Allschwil",
+        "addr:housename": "Restaurant La Vita",
+        "addr:housenumber": "126",
+        "addr:postcode": "4123",
+        "addr:street": "Baslerstrasse",
+        "amenity": "restaurant",
+        "cuisine": "mediterranean",
+        "name": "La Vita",
+        "opening_hours": "Mo 10:00-14:30; Tu-Fr 10:00-14:30,18:00-23:30; Sa 18:00-23:30",
+        "phone": "+41 61 482 20 02",
+        "toilets:wheelchair": "yes",
+        "website": "http://www.la-vita.ch/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2605424313,
+      "lat": 47.5319517,
+      "lon": 7.7146929,
+      "tags": {
+        "amenity": "restaurant"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2607692448,
+      "lat": 47.4647323,
+      "lon": 7.8085151,
+      "tags": {
+        "amenity": "cafe"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2609169270,
+      "lat": 47.4674892,
+      "lon": 7.6002346,
+      "tags": {
+        "addr:city": "Aesch BL",
+        "addr:housenumber": "25",
+        "addr:postcode": "4147",
+        "addr:street": "Bahnhofstrasse",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Restaurant Jura",
+        "phone": "+41 61 751 12 11"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2611147146,
+      "lat": 47.4832243,
+      "lon": 7.7333907,
+      "tags": {
+        "addr:city": "Liestal",
+        "addr:country": "CH",
+        "addr:housenumber": "7a",
+        "addr:postcode": "4410",
+        "addr:street": "Poststrasse",
+        "amenity": "fast_food",
+        "cuisine": "kebab;pizza",
+        "indoor_seating": "yes",
+        "name": "Gleis 1",
+        "outdoor_seating": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2611147148,
+      "lat": 47.4839379,
+      "lon": 7.7322201,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "kebab;pizza"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2612498713,
+      "lat": 47.4934114,
+      "lon": 7.5919069,
+      "tags": {
+        "addr:city": "Reinach (BL)",
+        "addr:postcode": "4153",
+        "addr:street": "Hauptstrasse",
+        "amenity": "restaurant"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2619966396,
+      "lat": 47.4826533,
+      "lon": 7.7346195,
+      "tags": {
+        "addr:city": "Liestal",
+        "addr:country": "CH",
+        "addr:housenumber": "6",
+        "addr:postcode": "4410",
+        "addr:street": "Wasserturmplatz",
+        "amenity": "cafe",
+        "contact:phone": "+41 61 534 00 02",
+        "contact:website": "http://www.guggenheimliestal.ch/caffe-mooi",
+        "name": "mooi",
+        "opening_hours": "Mo-Sa 08:30-23:00; Su 11:00-17:00",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2624846037,
+      "lat": 47.4194419,
+      "lon": 7.5001108,
+      "tags": {
+        "addr:city": "Laufen",
+        "addr:country": "CH",
+        "addr:housenumber": "64",
+        "addr:postcode": "4242",
+        "addr:street": "Delsbergerstrasse",
+        "amenity": "restaurant",
+        "cuisine": "pizza",
+        "name": "pazzo napoletano",
+        "opening_hours": "Th-Mo 11:30-14:00, 17:30-22:00",
+        "phone": "+41 61 761 30 88",
+        "website": "https://pazzonapoletano.ch/",
+        "wheelchair": "yes",
+        "wheelchair:description": "Rampe etwas steil"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2624916252,
+      "lat": 47.4206253,
+      "lon": 7.4999124,
+      "tags": {
+        "addr:city": "Laufen",
+        "addr:country": "CH",
+        "addr:housenumber": "3",
+        "addr:postcode": "4242",
+        "addr:street": "Röschenzstrasse",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Restaurant Central",
+        "phone": "+41 61 761 61 03",
+        "website": "https://www.central-laufen.ch/",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2629487828,
+      "lat": 47.5029981,
+      "lon": 7.7232115,
+      "tags": {
+        "addr:city": "Füllinsdorf",
+        "addr:country": "CH",
+        "addr:housenumber": "9",
+        "addr:postcode": "4414",
+        "addr:street": "Parkstrasse",
+        "amenity": "cafe",
+        "cuisine": "regional",
+        "name": "Café-Restaurant Schönthal",
+        "note": "Vermietung von Räumlichkeiten und Catering Unser Sitzungszimmer und unseren Veranstaltungsraum vermieten wir gerne an Vereine, Institutionen und Firmen aus den Gemeinden Füllinsdorf und Frenkendorf.",
+        "opening_hours": "Mo-Su 09:00-18:00",
+        "phone": "+41 61 905 15 44",
+        "website": "https://www.schoenthal-fuellinsdorf.ch/index.php/70.html",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2630856436,
+      "lat": 47.5276845,
+      "lon": 7.7281322,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Schützenstube Rauschenbächlein",
+        "website": "https://www.ssr-rauschenbaechlein.ch/index.php/schuetzenstube"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2735220824,
+      "lat": 47.5220397,
+      "lon": 7.5702955,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Traube",
+        "phone": "+41 61 401 15 16",
+        "smoking": "separated",
+        "website": "www-Restaurant Zur",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2741556250,
+      "lat": 47.4384837,
+      "lon": 7.4908221,
+      "tags": {
+        "addr:city": "Dittingen",
+        "addr:postcode": "4243",
+        "addr:street": "Auf dem Felde",
+        "amenity": "restaurant",
+        "bar": "yes",
+        "capacity": "50",
+        "cuisine": "regional",
+        "ele": "526",
+        "internet_access": "yes",
+        "name": "Flugplatzbeiz Dittingen",
+        "opening_hours": "Sa-Su 09:00-19:00",
+        "outdoor_seating": "yes",
+        "payment:cash": "yes",
+        "payment:twint": "yes",
+        "phone": "+41 61 761 68 06",
+        "website": "https://sg-dittingen.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2786455285,
+      "lat": 47.5242655,
+      "lon": 7.8431887,
+      "tags": {
+        "addr:city": "Maisprach",
+        "addr:housenumber": "3",
+        "addr:postcode": "4464",
+        "addr:street": "Hauptstrasse",
+        "amenity": "restaurant",
+        "name": "Restaurant zum Kloster"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2857563684,
+      "lat": 47.4033177,
+      "lon": 7.5137921,
+      "tags": {
+        "addr:city": "Wahlen b. Laufen",
+        "addr:housenumber": "41",
+        "addr:postcode": "4246",
+        "addr:street": "Laufenstrasse",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Restaurant Traube"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2859544092,
+      "lat": 47.4863466,
+      "lon": 7.731661,
+      "tags": {
+        "addr:city": "Liestal",
+        "addr:country": "CH",
+        "addr:housename": "Restaurant Falken",
+        "addr:housenumber": "21",
+        "addr:postcode": "4410",
+        "addr:street": "Rheinstrasse",
+        "amenity": "restaurant",
+        "diet:vegetarian": "yes",
+        "name": "Restaurant Falken",
+        "takeaway": "yes",
+        "website": "https://www.restaurant-falken.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2878161212,
+      "lat": 47.5163022,
+      "lon": 7.5585081,
+      "tags": {
+        "addr:city": "Oberwil BL",
+        "addr:country": "CH",
+        "addr:housenumber": "57",
+        "addr:postcode": "4104",
+        "addr:street": "Binningerstrasse",
+        "amenity": "fast_food",
+        "name": "V.I.P Kebab"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2888975881,
+      "lat": 47.4783727,
+      "lon": 7.5949291,
+      "tags": {
+        "addr:city": "Aesch",
+        "addr:housenumber": "53",
+        "addr:postcode": "4147",
+        "addr:street": "Neuhofweg",
+        "amenity": "fast_food",
+        "cuisine": "fast_food",
+        "name": "Werni's Grillimbiss",
+        "opening_hours": "09:00-14:30"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2946115188,
+      "lat": 47.4756548,
+      "lon": 7.7414073,
+      "tags": {
+        "addr:city": "Liestal",
+        "addr:country": "CH",
+        "addr:housenumber": "30",
+        "addr:postcode": "4410",
+        "addr:street": "Benzburweg",
+        "amenity": "restaurant",
+        "contact:email": "info@pine.ch",
+        "contact:fax": "+41 61 923 14 83",
+        "contact:phone": "+41 61 923 14 84",
+        "contact:website": "http://www.pine.ch",
+        "cuisine": "pizza",
+        "name": "pine",
+        "opening_hours": "Mo-Fr 10:00-14:00, 17:30-00:00; Sa-Su 17:00-00:00",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3172969134,
+      "lat": 47.4888117,
+      "lon": 7.5997126,
+      "tags": {
+        "addr:city": "Reinach BL",
+        "addr:country": "CH",
+        "addr:housenumber": "2",
+        "addr:postcode": "4153",
+        "addr:street": "Kägenhofweg",
+        "amenity": "restaurant",
+        "name": "Bella Italia",
+        "phone": "+41 61 711 22 00",
+        "website": "https://www.pizzakurierbellaitalia.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3269584478,
+      "lat": 47.5290242,
+      "lon": 7.6142737,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "Neue Welt Take Away"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3273856215,
+      "lat": 47.5389084,
+      "lon": 7.6210099,
+      "tags": {
+        "amenity": "restaurant"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3276507063,
+      "lat": 47.5259425,
+      "lon": 7.6367542,
+      "tags": {
+        "addr:city": "Muttenz",
+        "addr:country": "CH",
+        "addr:housenumber": "89",
+        "addr:postcode": "4132",
+        "addr:street": "Baselstrasse",
+        "amenity": "restaurant",
+        "name": "Café Hallenbad",
+        "website": "https://www.cafehallenbad.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3285714378,
+      "lat": 47.4828963,
+      "lon": 7.7357838,
+      "tags": {
+        "amenity": "cafe",
+        "contact:phone": "+41 61 921 06 74",
+        "contact:website": "http://www.cafe-muehleisen.ch",
+        "name": "Mühleisen",
+        "opening_hours": "Mo-Fr 06:30-18:30;Sa 06:30-18:30;Sa 06:30-17:00; Su 11:00-17:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3294347984,
+      "lat": 47.5331532,
+      "lon": 7.6474504,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Anna's Restaurant",
+        "opening_hours": "Mo-Fr 09:00-23:00; Sa-Su 11:00-23:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3325924283,
+      "lat": 47.5472035,
+      "lon": 7.5531338,
+      "tags": {
+        "addr:city": "Allschwil",
+        "addr:housenumber": "25",
+        "addr:postcode": "4123",
+        "addr:street": "Spitzwaldstrasse",
+        "alt_name": "Migros Restaurant Paradies",
+        "amenity": "restaurant",
+        "branch": "Allschwil Paradies",
+        "name": "Migros Restaurant",
+        "operator": "Genossenschaft Migros Basel",
+        "website": "https://filialen.migros.ch/de/migros-restaurant-allschwil-paradies"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3349738005,
+      "lat": 47.3916452,
+      "lon": 7.7187093,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Tschoppenhof"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3368023932,
+      "lat": 47.5517296,
+      "lon": 7.5398876,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "sushi",
+        "name": "Naruto",
+        "takeaway": "yes",
+        "website": "https://thaitogo.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3421153609,
+      "lat": 47.556635,
+      "lon": 7.6300489,
+      "tags": {
+        "addr:city": "Birsfelden",
+        "addr:housenumber": "24",
+        "addr:postcode": "4127",
+        "addr:street": "Am Stausee",
+        "amenity": "restaurant",
+        "capacity": "100",
+        "cuisine": "swiss",
+        "name": "Restaurant Sternenfeld",
+        "opening_hours": "Tu-Fr 08:00-24:00; Sa 09:00-22:00; Su,Mo off",
+        "smoking": "outside",
+        "takeaway": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3631833001,
+      "lat": 47.5419395,
+      "lon": 7.5774674,
+      "tags": {
+        "addr:city": "Binningen",
+        "addr:housenumber": "7",
+        "addr:postcode": "4102",
+        "addr:street": "Baslerstrasse",
+        "amenity": "restaurant",
+        "capacity": "20",
+        "cuisine": "lebanese",
+        "email": "info@restaurant-habibi.ch",
+        "name": "Restaurant Habibi",
+        "opening_hours": "11:30-14:00,17:30-24:00",
+        "phone": "+41 61 421 42 45",
+        "smoking": "no",
+        "takeaway": "yes",
+        "website": "http://restaurant-habibi.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3679166120,
+      "lat": 47.4203088,
+      "lon": 7.5007153,
+      "tags": {
+        "addr:city": "Laufen",
+        "addr:country": "CH",
+        "addr:housenumber": "6",
+        "addr:postcode": "4242",
+        "addr:street": "Vorstadtplatz",
+        "amenity": "restaurant",
+        "cuisine": "pizza",
+        "name": "Krone",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3679166129,
+      "lat": 47.4220089,
+      "lon": 7.5004001,
+      "tags": {
+        "addr:city": "Laufen",
+        "addr:country": "CH",
+        "addr:housenumber": "23",
+        "addr:postcode": "4242",
+        "addr:street": "Hauptstrasse",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Lamm",
+        "phone": "+41 61 761 63 22",
+        "website": "https://lamm-laufen.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3720011125,
+      "lat": 47.4524401,
+      "lon": 7.4839221,
+      "tags": {
+        "addr:city": "Dittingen",
+        "addr:housenumber": "1",
+        "addr:place": "Bergmattenhof",
+        "addr:postcode": "4243",
+        "amenity": "restaurant",
+        "name": "Bergmattenhof",
+        "phone": "+41 61 7613456",
+        "toilets:wheelchair": "yes",
+        "website": "https://bergmattenhof.ch.verus.ch-meta.net/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3832754277,
+      "lat": 47.5102962,
+      "lon": 7.7649864,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Rodolfo"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3832754676,
+      "lat": 47.5120483,
+      "lon": 7.7654275,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Ochsen"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3905302141,
+      "lat": 47.5577165,
+      "lon": 7.5448148,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Invento",
+        "website": "https://www.wwsag.ch/index.php?id=96"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3905302143,
+      "lat": 47.5578671,
+      "lon": 7.5486555,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Restaurant im Brüel",
+        "opening_hours": "\"an events\""
+      }
+    },
+    {
+      "type": "node",
+      "id": 3910208593,
+      "lat": 47.4627321,
+      "lon": 7.8221704,
+      "tags": {
+        "addr:city": "Sissach",
+        "addr:country": "CH",
+        "addr:postcode": "4450",
+        "addr:street": "Teichweg",
+        "amenity": "fast_food",
+        "cuisine": "burger;sandwich;ice_cream",
+        "drive_through": "no",
+        "name": "Badi Restaurant Sissach",
+        "opening_hours": "Sommermonate 9 - 19 Uhr",
+        "operator": "Sport Sissach AG"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4058709881,
+      "lat": 47.4860231,
+      "lon": 7.7355076,
+      "tags": {
+        "addr:city": "Liestal",
+        "addr:country": "CH",
+        "addr:housenumber": "4",
+        "addr:postcode": "4410",
+        "addr:street": "Gerberstrasse",
+        "amenity": "restaurant",
+        "cuisine": "syrian",
+        "name": "Aleppo Take Away"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4161913613,
+      "lat": 47.3391184,
+      "lon": 7.788863,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Chilchli Bärenwil",
+        "opening_hours": "Mo-Su 08:30-23:00; Tu,We off",
+        "outdoor_seating": "yes",
+        "phone": "+41623901113",
+        "tourism": "guest_house",
+        "website": "http://chilchli.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4190490189,
+      "lat": 47.5355604,
+      "lon": 7.6341281,
+      "tags": {
+        "addr:city": "Muttenz",
+        "addr:country": "CH",
+        "addr:housenumber": "100",
+        "addr:postcode": "4132",
+        "addr:street": "Kriegackerstrasse",
+        "amenity": "restaurant",
+        "cuisine": "mediterranean",
+        "email": "restaurant.alessia@gmx.ch",
+        "name": "Alessia",
+        "opening_hours": "Mo-Fr 08:00-00:00; Sa 09:00-00:00; Su 10:00-00:00",
+        "phone": "+414624040",
+        "website": "https://www.restaurantalessia.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4353558307,
+      "lat": 47.5248793,
+      "lon": 7.6813563,
+      "tags": {
+        "addr:city": "Pratteln",
+        "addr:country": "CH",
+        "addr:housenumber": "55",
+        "addr:postcode": "4133",
+        "addr:street": "Hardstrasse",
+        "amenity": "restaurant",
+        "contact:email": "restaurant@bslcy.ch",
+        "contact:phone": "+41 61 827 18 18",
+        "contact:website": "http://www.marriott.de/hotel-restaurants/bslcy-courtyard-basel/bistro---eat.drink.connect./5002310/home-page.mi",
+        "description": "BISTRO - eat.drink.connect.",
+        "name": "Marriot Courtyard",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4381037345,
+      "lat": 47.5065521,
+      "lon": 7.527974,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Wirtschaft Zihlmann"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4383693013,
+      "lat": 47.5065291,
+      "lon": 7.5257174,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Zum Brunne"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4399094476,
+      "lat": 47.5029917,
+      "lon": 7.5199041,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Hotel-Restaurant Rössli"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4448930022,
+      "lat": 47.5024843,
+      "lon": 7.7260667,
+      "tags": {
+        "addr:city": "Füllinsdorf",
+        "addr:country": "CH",
+        "addr:housenumber": "21",
+        "addr:postcode": "4414",
+        "addr:street": "Mühlerainstrasse",
+        "amenity": "restaurant",
+        "cuisine": "pizza",
+        "name": "Restaurant Pizzeria Schöntal"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4534887990,
+      "lat": 47.5202033,
+      "lon": 7.6066638,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Gartenstadt",
+        "name:de": "Gartenstadt"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4581077494,
+      "lat": 47.3920298,
+      "lon": 7.7486206,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "italian_pizza",
+        "name": "La Stella",
+        "name:de": "La Stella"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4581138389,
+      "lat": 47.405397,
+      "lon": 7.7519589,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Station",
+        "name:de": "Station"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4625773355,
+      "lat": 47.5238541,
+      "lon": 7.6455429,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "italian",
+        "name": "Trattoria Il Nuraghe",
+        "opening_hours": "Mo-Fr 11:00-14:00,17:30-23:00; Sa 17:30-23:00",
+        "website": "http://www.ilnuraghebasel.ch/trattoria"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4840369606,
+      "lat": 47.466355,
+      "lon": 7.577211,
+      "tags": {
+        "amenity": "restaurant"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4843802946,
+      "lat": 47.5416725,
+      "lon": 7.5743503,
+      "tags": {
+        "addr:city": "Binningen",
+        "addr:country": "CH",
+        "addr:housenumber": "67",
+        "addr:postcode": "4102",
+        "addr:street": "Hauptstrasse",
+        "air_conditioning": "no",
+        "alt_name": "Sutter Begg Binningen",
+        "amenity": "cafe",
+        "branch": "Binningen",
+        "cuisine": "sandwich",
+        "diet:vegetarian": "yes",
+        "indoor_seating": "yes",
+        "internet_access": "no",
+        "name": "Sutter Begg",
+        "opening_hours": "Mo-Fr 06:00-18:30; Sa 07:00-13:00",
+        "operator": "Sutter",
+        "outdoor_seating": "no",
+        "shop": "bakery",
+        "smoking": "no",
+        "website": "https://www.sutterbegg.ch/filialen/sutter-begg-binningen"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4866703908,
+      "lat": 47.4549705,
+      "lon": 7.8310012,
+      "tags": {
+        "addr:city": "Thürnen",
+        "addr:housenumber": "9",
+        "addr:postcode": "4441",
+        "addr:street": "Rebgasse",
+        "amenity": "cafe",
+        "cuisine": "regional",
+        "description": "Heimcafe Alters- und Pflegeheim Jakobushaus",
+        "internet_access": "yes",
+        "internet_access:fee": "no",
+        "opening_hours": "Mo-Su 13:30-17:00",
+        "smoking": "outside",
+        "website": "https://www.jakobushaus.ch/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4907542650,
+      "lat": 47.3498336,
+      "lon": 7.7673189,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Ross-Stall"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4947065772,
+      "lat": 47.4221252,
+      "lon": 7.5006721,
+      "tags": {
+        "addr:city": "Laufen",
+        "addr:country": "CH",
+        "addr:housenumber": "26",
+        "addr:postcode": "4242",
+        "addr:street": "Hauptstrasse",
+        "amenity": "cafe",
+        "cuisine": "coffee_shop;breakfast;sandwich",
+        "email": "cafekern@bluewin.ch",
+        "name": "Kern",
+        "opening_hours": "Tu-Fr 6:00-18:30; Sa 6:00-18:00; So 6:30-18:00",
+        "phone": "+41 61 761 62 01",
+        "website": "https://www.cafekern.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4957350029,
+      "lat": 47.4101963,
+      "lon": 7.5148711,
+      "tags": {
+        "addr:city": "Wahlen",
+        "addr:housenumber": "5",
+        "addr:postcode": "4246",
+        "addr:street": "In den Spitzen",
+        "amenity": "restaurant",
+        "craft": "caterer",
+        "description": "Spielplatz und Gehege mit Kleintieren, Dienstleistungen: Anlässe und Veranstaltungen.",
+        "email": "info.neuhof@gmail.com",
+        "name": "Neuhof",
+        "operator": "Christoh und Monika Mathys-Huber",
+        "phone": "+41 61 761 60 39",
+        "source": "https://www.baselland-tourismus.ch/download/4003/Ab_ufs_Land_-_Panoramakarte.pdf",
+        "website": "http://neuhof-schüüre.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5013999504,
+      "lat": 47.5247307,
+      "lon": 7.6970248,
+      "tags": {
+        "amenity": "restaurant",
+        "email": "landhof@sinnenvoll.ch",
+        "name": "BIO Restaurant LANDHOF",
+        "opening_hours": "Mo-Fr 11:00-14:00; Th-Sa 11:00-14:00,18:00-22:00",
+        "phone": "+41 61 511 07 07",
+        "website": "https://landhof-pratteln.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5155201920,
+      "lat": 47.4771995,
+      "lon": 7.6014001,
+      "tags": {
+        "amenity": "restaurant",
+        "outdoor_seating": "yes",
+        "toilets:wheelchair": "no",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5169018282,
+      "lat": 47.5208404,
+      "lon": 7.6932079,
+      "tags": {
+        "addr:city": "Pratteln",
+        "addr:country": "CH",
+        "addr:housenumber": "14",
+        "addr:postcode": "4133",
+        "addr:street": "Burggartenstrasse",
+        "amenity": "fast_food",
+        "cuisine": "kebab;pizza",
+        "name": "City Grill",
+        "opening_hours": "Mo-Sa 11:00-22:00; Su,PH off",
+        "takeaway": "yes",
+        "toilets:wheelchair": "no",
+        "website": "https://www.citygrill-pratteln.ch/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5218885277,
+      "lat": 47.5115835,
+      "lon": 7.7241506,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "regional;burger;coffee;lunch",
+        "delivery": "no",
+        "name": "10W40",
+        "opening_hours": "Mo-Fr 07:30-17:00, Sa 09:00-13:00",
+        "outdoor_seating": "yes",
+        "smoking": "outside",
+        "website": "https://www.10w40.ch/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5259976641,
+      "lat": 47.4932402,
+      "lon": 7.6218914,
+      "tags": {
+        "addr:city": "Arlesheim",
+        "addr:country": "CH",
+        "addr:housenumber": "20",
+        "addr:postcode": "4144",
+        "addr:street": "Ermitagestrasse",
+        "amenity": "restaurant",
+        "cuisine": "italian",
+        "name": "Ristorante Pizzeria Rössli",
+        "phone": "+41 61 701 12 50"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5340531310,
+      "lat": 47.5272607,
+      "lon": 7.7006317,
+      "tags": {
+        "addr:city": "Pratteln",
+        "addr:housenumber": "22",
+        "addr:postcode": "4133",
+        "addr:street": "Götzisbodenweg",
+        "alt_name": "Burger King Pratteln",
+        "amenity": "fast_food",
+        "branch": "A2 Pratteln",
+        "brand": "Burger King",
+        "brand:wikidata": "Q177054",
+        "brand:wikipedia": "de:Burger King",
+        "cuisine": "burger",
+        "name": "Burger King",
+        "operator": "Autogrill Schweiz",
+        "takeaway": "yes",
+        "website": "https://de.burger-king.ch/kingfinder/19499?id=1532"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5370187476,
+      "lat": 47.4203437,
+      "lon": 7.5001157,
+      "tags": {
+        "addr:city": "Laufen",
+        "addr:country": "CH",
+        "addr:housenumber": "12",
+        "addr:postcode": "4242",
+        "addr:street": "Delsbergerstrasse",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Ochsen",
+        "phone": "+41617811222",
+        "website": "https://ochsen.digitalone.site/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5370187481,
+      "lat": 47.4228224,
+      "lon": 7.5006193,
+      "tags": {
+        "addr:city": "Laufen",
+        "addr:country": "CH",
+        "addr:housenumber": "48",
+        "addr:postcode": "4242",
+        "addr:street": "Hauptstrasse",
+        "amenity": "cafe",
+        "name": "Niederberger"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5370187486,
+      "lat": 47.4169635,
+      "lon": 7.5025088,
+      "tags": {
+        "addr:city": "Laufen",
+        "addr:housenumber": "26",
+        "addr:postcode": "4242",
+        "addr:street": "Güterstrasse",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Bistro zur Loki",
+        "opening_hours": "Mo-Fr 07:00-18:30",
+        "phone": "+41 61 761 85 45",
+        "website": "https://www.loki-laufen.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5370187494,
+      "lat": 47.4234515,
+      "lon": 7.5007338,
+      "tags": {
+        "addr:city": "Laufen",
+        "addr:country": "CH",
+        "addr:housenumber": "10",
+        "addr:postcode": "4242",
+        "addr:street": "Baselstrasse",
+        "amenity": "restaurant",
+        "cuisine": "indian",
+        "name": "Curry Corner"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5744122056,
+      "lat": 47.5216065,
+      "lon": 7.6920313,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "italian",
+        "indoor_seating": "yes",
+        "name": "Grotto Gianini",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5744133642,
+      "lat": 47.5183369,
+      "lon": 7.6940751,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Central"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5744140646,
+      "lat": 47.5214778,
+      "lon": 7.6945204,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Endstation"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5744140647,
+      "lat": 47.5209598,
+      "lon": 7.6936352,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Fourteen"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5744140648,
+      "lat": 47.5211809,
+      "lon": 7.6945794,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Tramstübli"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5744148692,
+      "lat": 47.5208494,
+      "lon": 7.6698298,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Lachmatt"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5767577389,
+      "lat": 47.5349185,
+      "lon": 7.6424693,
+      "tags": {
+        "addr:city": "Muttenz",
+        "addr:country": "CH",
+        "addr:housenumber": "30",
+        "addr:postcode": "4132",
+        "addr:street": "Hofackerstrasse",
+        "amenity": "restaurant",
+        "delivery": "no",
+        "name": "Cube",
+        "opening_hours": "11:00-14:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5793703663,
+      "lat": 47.5247632,
+      "lon": 7.6045842,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "pizza"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5811651799,
+      "lat": 47.5225957,
+      "lon": 7.5679903,
+      "tags": {
+        "amenity": "fast_food",
+        "outdoor_seating": "yes",
+        "takeaway": "only"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5817091638,
+      "lat": 47.5385685,
+      "lon": 7.6200822,
+      "tags": {
+        "amenity": "fast_food"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5901464733,
+      "lat": 47.4690984,
+      "lon": 7.8644621,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "pizza",
+        "name": "Altavilla",
+        "phone": "+41 61 981 49 94",
+        "takeaway": "yes",
+        "website": "https://www.altavilla-ormalingen.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5974106294,
+      "lat": 47.4838295,
+      "lon": 7.7349765,
+      "tags": {
+        "addr:city": "Liestal",
+        "addr:country": "CH",
+        "addr:housenumber": "50",
+        "addr:postcode": "4410",
+        "addr:street": "Rathausstrasse",
+        "amenity": "restaurant",
+        "name": "Restaurant Pizzeria Schweizerhof",
+        "opening_hours": "Mo-Fr 10:00-22:00; Sa 09:30-17:00",
+        "outdoor_seating": "yes",
+        "website": "https://www.pizzeria-schweizerhof-liestal.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6042916344,
+      "lat": 47.5236802,
+      "lon": 7.5701697,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Schloss Bottmingen",
+        "opening_hours": "Tu-Su 11:30-15:00,18:30-23:00",
+        "website": "https://www.weiherschloss.ch/",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6053133591,
+      "lat": 47.5367723,
+      "lon": 7.5745771,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Restaurant Schloss Binningen",
+        "website": "https://schlossbinningen.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6057706465,
+      "lat": 47.5268261,
+      "lon": 7.6472043,
+      "tags": {
+        "addr:city": "Muttenz",
+        "addr:country": "CH",
+        "addr:housenumber": "85",
+        "addr:postcode": "4132",
+        "addr:street": "Hauptstrasse",
+        "amenity": "fast_food",
+        "cuisine": "turkish;kebab;international",
+        "name": "Dönerstop",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6074557485,
+      "lat": 47.4949044,
+      "lon": 7.620001,
+      "tags": {
+        "addr:city": "Arlesheim",
+        "addr:country": "CH",
+        "addr:housenumber": "1",
+        "addr:postcode": "4144",
+        "addr:street": "Ermitagestrasse",
+        "amenity": "restaurant",
+        "capacity": "30",
+        "cuisine": "regional",
+        "name": "Gasthaus zum Stärne"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6163854586,
+      "lat": 47.4952761,
+      "lon": 7.6198948,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Restaurant Classico"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6179289029,
+      "lat": 47.4713325,
+      "lon": 7.7598939,
+      "tags": {
+        "addr:city": "Lausen",
+        "addr:country": "CH",
+        "addr:housenumber": "67",
+        "addr:postcode": "4415",
+        "addr:street": "Hauptstrasse",
+        "amenity": "restaurant",
+        "email": "info@restaurant-bernerhof.ch",
+        "name": "Restaurant Bernerhof",
+        "opening_hours": "Mo-Fr 08:00-00:00; Sa 09:00-17:00",
+        "phone": "+41 61 921 91 53",
+        "website": "http://www.restaurant-bernerhof.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6253651395,
+      "lat": 47.4776919,
+      "lon": 7.746858,
+      "tags": {
+        "addr:city": "Liestal",
+        "addr:country": "CH",
+        "addr:housenumber": "3",
+        "addr:postcode": "4410",
+        "addr:street": "Standweg",
+        "amenity": "restaurant",
+        "contact:phone": "+41 61 921 22 67",
+        "name": "Restaurant Altmarkt"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6253697632,
+      "lat": 47.3490785,
+      "lon": 7.7688991,
+      "tags": {
+        "addr:city": "Langenbruck",
+        "addr:country": "CH",
+        "addr:housenumber": "11",
+        "addr:postcode": "4438",
+        "addr:street": "Dorfgasse",
+        "amenity": "restaurant",
+        "contact:fax": "+41 62 530 02 50",
+        "contact:phone": "+41 62 544 67 64",
+        "contact:website": "http://www.hri.ch/de/hidis-beizli-and-restaurant-langenbruck-kanton-basel-land-ch/",
+        "name": "Hidis Beizli & Restaurant",
+        "opening_hours": "Mo-Sa 08:00-24:00; Th 09:00-24:00; Su 10:00-24:00",
+        "outdoor_seating": "yes",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6303792807,
+      "lat": 47.5147913,
+      "lon": 7.5894814,
+      "tags": {
+        "addr:city": "Reinach BL",
+        "addr:country": "CH",
+        "addr:housenumber": "172",
+        "addr:postcode": "4153",
+        "addr:street": "Predigerhofstrasse",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "email": "willkommen@restaurant-predigerhof.ch",
+        "name": "Predigerhof",
+        "opening_hours": "We-Sa 10:00-23:00; Su 10:00-21:00",
+        "outdoor_seating": "yes",
+        "phone": "+41 61 262 21 12",
+        "website": "https://www.restaurant-predigerhof.ch/",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6329169029,
+      "lat": 47.4513289,
+      "lon": 7.7402359,
+      "tags": {
+        "addr:city": "Bubendorf",
+        "addr:country": "CH",
+        "addr:housenumber": "14",
+        "addr:postcode": "4416",
+        "addr:street": "Sonneckstrasse",
+        "amenity": "cafe",
+        "cuisine": "burger",
+        "name": "Lindis Café",
+        "opening_hours": "Mo,Fr 08:30-11:15; Tu-Th 08:30-17:15; Sa 08:00-13:00; Su 10:00-17:00; PH off"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6335222685,
+      "lat": 47.4834704,
+      "lon": 7.7352344,
+      "tags": {
+        "addr:city": "Liestal",
+        "addr:country": "CH",
+        "addr:housenumber": "66",
+        "addr:postcode": "4410",
+        "addr:street": "Rathausstrasse",
+        "amenity": "restaurant",
+        "diet:gluten_free": "yes",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "only",
+        "indoor_seating": "yes",
+        "name": "Herzlich",
+        "outdoor_seating": "yes",
+        "phone": "+41 61 923 05 17",
+        "website": "https://www.herzlich.li/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6404707318,
+      "lat": 47.4851897,
+      "lon": 7.734475,
+      "tags": {
+        "addr:city": "Liestal",
+        "addr:country": "CH",
+        "addr:housenumber": "1",
+        "addr:postcode": "4410",
+        "addr:street": "Amtshausgasse",
+        "amenity": "restaurant",
+        "name": "Restaurant Amtshaus",
+        "phone": "+41 61 262 06 62",
+        "website": "https://www.restaurantamtshausliestal.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6404707319,
+      "lat": 47.485487,
+      "lon": 7.7353843,
+      "tags": {
+        "addr:city": "Liestal",
+        "addr:country": "CH",
+        "addr:housenumber": "15",
+        "addr:postcode": "4410",
+        "addr:street": "Zeughausplatz",
+        "amenity": "restaurant",
+        "cuisine": "spanish",
+        "diet:vegetarian": "yes",
+        "name": "Tapéo Ziegelhof",
+        "phone": "+41 61 922 05 95",
+        "website": "https://www.tapeo.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6404707321,
+      "lat": 47.4851929,
+      "lon": 7.7348923,
+      "tags": {
+        "addr:city": "Liestal",
+        "addr:country": "CH",
+        "addr:housenumber": "14",
+        "addr:postcode": "4410",
+        "addr:street": "Zeughausplatz",
+        "amenity": "restaurant",
+        "name": "Zeughaus",
+        "phone": "+41 61 921 30 30"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6404707327,
+      "lat": 47.4834986,
+      "lon": 7.7343409,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "pizza",
+        "name": "Portofino",
+        "phone": "+41 61 922 06 88",
+        "website": "https://portofinoliestal.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6412067585,
+      "lat": 47.5254538,
+      "lon": 7.6472169,
+      "tags": {
+        "addr:city": "Muttenz",
+        "addr:country": "CH",
+        "addr:housenumber": "1",
+        "addr:postcode": "4132",
+        "addr:street": "Rössligasse",
+        "amenity": "restaurant",
+        "name": "Vicino"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6422090587,
+      "lat": 47.4985994,
+      "lon": 7.6148346,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Arlésienne"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6432961072,
+      "lat": 47.5406171,
+      "lon": 7.5417128,
+      "tags": {
+        "addr:city": "Allschwil",
+        "addr:country": "CH",
+        "addr:housenumber": "130a",
+        "addr:postcode": "4123",
+        "addr:street": "Herrenweg",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Restaurant Spitzwald",
+        "outdoor_seating": "yes",
+        "phone": "+41 61 483 05 09",
+        "website": "https://www.spitzwald.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6462506152,
+      "lat": 47.5165957,
+      "lon": 7.6965357,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Restaurant Engel",
+        "website": "https://www.engel-pratteln.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6476809870,
+      "lat": 47.5174104,
+      "lon": 7.694873,
+      "tags": {
+        "addr:city": "Pratteln",
+        "addr:country": "CH",
+        "addr:housenumber": "21",
+        "addr:postcode": "4133",
+        "addr:street": "Hauptstrasse",
+        "amenity": "restaurant",
+        "cuisine": "regional;swiss;local",
+        "email": "hans.albertin@icloud.com",
+        "indoor_seating": "yes",
+        "level": "0",
+        "name": "Restaurant Klemme",
+        "opening_hours": "Th-Mo 10:00-22:00",
+        "outdoor_seating": "yes",
+        "phone": "+41 61 599 01 13",
+        "smoking": "outside"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6581351087,
+      "lat": 47.5243843,
+      "lon": 7.6932734,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "Anaxo",
+        "opening_hours": "Mo-Fr 07:00-15:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6582034723,
+      "lat": 47.5222964,
+      "lon": 7.6948386,
+      "tags": {
+        "addr:city": "Pratteln",
+        "addr:housenumber": "1",
+        "addr:postcode": "4133",
+        "addr:street": "Schlossstrasse",
+        "amenity": "cafe",
+        "name": "Cafe Auszeit"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6765199916,
+      "lat": 47.4438024,
+      "lon": 7.7328274,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "thai",
+        "outdoor_seating": "yes",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6867188268,
+      "lat": 47.422251,
+      "lon": 7.500686,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Simply Gastro"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6937790909,
+      "lat": 47.5511296,
+      "lon": 7.6241732,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Café Bar Santana"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6995916855,
+      "lat": 47.5013639,
+      "lon": 7.7196274,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Bistro Adventura"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7417536864,
+      "lat": 47.5331074,
+      "lon": 7.6456766,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "pizza;kebab",
+        "name": "Käppeli Imbiss"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7428945410,
+      "lat": 47.4635462,
+      "lon": 7.8524973,
+      "tags": {
+        "addr:city": "Gelterkinden",
+        "addr:country": "CH",
+        "addr:housenumber": "9",
+        "addr:postcode": "4460",
+        "addr:street": "Kapellenweg",
+        "amenity": "fast_food",
+        "cuisine": "sandwich",
+        "name": "Sarah's BRÜGEL & TSCHÜSS",
+        "opening_hours": "Mo,Th,Fr 11:00-13:30,17:00-20:00; Sa 11:00-20:00; Tu,We,Su off",
+        "outdoor_seating": "yes",
+        "phone": "+41 61 983 08 08",
+        "takeaway": "yes",
+        "website": "https://www.bruegel.ch/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7528950965,
+      "lat": 47.5338148,
+      "lon": 7.6297849,
+      "tags": {
+        "addr:city": "Muttenz",
+        "addr:country": "CH",
+        "addr:housenumber": "140",
+        "addr:postcode": "4132",
+        "addr:street": "St. Jakob-Strasse",
+        "alt_name": "Dieci Pizzakurier Muttenz",
+        "amenity": "fast_food",
+        "branch": "Muttenz",
+        "brand": "dieci",
+        "cuisine": "pizza",
+        "delivery": "yes",
+        "name": "Dieci Pizzakurier",
+        "operator": "Dieci",
+        "takeaway": "yes",
+        "website": "https://www.dieci.ch/de/pizzakurier-muttenz"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7687978586,
+      "lat": 47.4832845,
+      "lon": 7.7353418,
+      "tags": {
+        "alt_name": "Schlüssel",
+        "amenity": "restaurant",
+        "name": "Golden Key",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7756655786,
+      "lat": 47.431209,
+      "lon": 7.9364381,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Ochsen"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8107930724,
+      "lat": 47.3511604,
+      "lon": 7.764231,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Taverne",
+        "opening_hours": "We-Sa 18:00-23:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8210826431,
+      "lat": 47.3951932,
+      "lon": 7.8552895,
+      "tags": {
+        "addr:city": "Läufelfingen",
+        "addr:housenumber": "14",
+        "addr:postcode": "4448",
+        "addr:street": "Hauptstrasse",
+        "amenity": "restaurant",
+        "cuisine": "pizza",
+        "name": "Faniuolo",
+        "phone": "+41622990707",
+        "website": "https://pizzastube.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8224479264,
+      "lat": 47.5576005,
+      "lon": 7.5472443,
+      "tags": {
+        "addr:city": "Allschwil",
+        "addr:housenumber": "119a",
+        "addr:postcode": "4123",
+        "addr:street": "Hegenheimermattweg",
+        "amenity": "cafe",
+        "name": "Avatar Billiard Café",
+        "phone": "+41 61 482 06 34",
+        "website": "https://avatarbillard.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8238707929,
+      "lat": 47.5366148,
+      "lon": 7.6244956,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "email": "madoerin59@bluewin.ch",
+        "name": "Schänzli",
+        "phone": "+41 61 312 01 08",
+        "website": "https://www.restaurant-schaenzli.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8262404331,
+      "lat": 47.4901743,
+      "lon": 7.7273805,
+      "tags": {
+        "addr:city": "Liestal",
+        "addr:country": "CH",
+        "addr:housenumber": "60",
+        "addr:postcode": "4410",
+        "addr:street": "Rheinstrasse",
+        "amenity": "restaurant",
+        "cuisine": "pizza",
+        "name": "Lieschtler Pizza Haus",
+        "outdoor_seating": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8305682530,
+      "lat": 47.4589841,
+      "lon": 7.8664157,
+      "tags": {
+        "addr:city": "Gelterkinden",
+        "addr:country": "CH",
+        "addr:housenumber": "22",
+        "addr:postcode": "4460",
+        "addr:street": "Lachmattstrasse",
+        "amenity": "restaurant",
+        "name": "Badi Bistro",
+        "opening_hours": "Mo-Fr 8:45-21:30"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8420151063,
+      "lat": 47.4658341,
+      "lon": 7.8484855,
+      "tags": {
+        "amenity": "cafe",
+        "contact:website": "http://www.trafico.ch/",
+        "name": "Trafico"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8420852736,
+      "lat": 47.4936683,
+      "lon": 7.60966,
+      "tags": {
+        "addr:city": "Arlesheim",
+        "addr:country": "CH",
+        "addr:housenumber": "2",
+        "addr:postcode": "4144",
+        "addr:street": "Altenmatteweg",
+        "amenity": "restaurant",
+        "contact:email": "info@culinarium-bl.ch",
+        "contact:phone": "+41 79 302 5039",
+        "contact:website": "https://www.culinarium-bl.ch/",
+        "cuisine": "swiss",
+        "microbrewery": "yes",
+        "name": "Culinarium",
+        "operator": "Culinarium AG",
+        "operator:type": "business",
+        "outdoor_seating": "yes",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8441449647,
+      "lat": 47.48406,
+      "lon": 7.7323461,
+      "tags": {
+        "addr:city": "Liestal",
+        "addr:country": "CH",
+        "addr:housenumber": "2",
+        "addr:postcode": "4410",
+        "addr:street": "Poststrasse",
+        "amenity": "cafe",
+        "contact:fax": "+41 44 455 56 20",
+        "contact:phone": "+41 61 921 56 70",
+        "contact:website": "https://www.orellfuessli.ch/buchhandlung/1066",
+        "kids_area": "no",
+        "level": "0",
+        "name": "Rapunzel",
+        "shop": "books",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8446939617,
+      "lat": 47.4765976,
+      "lon": 7.5908142,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "vietnamese",
+        "indoor_seating": "no",
+        "name": "Pho 51",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8458915455,
+      "lat": 47.516967,
+      "lon": 7.6950255,
+      "tags": {
+        "amenity": "restaurant"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8492807683,
+      "lat": 47.4518737,
+      "lon": 7.7372952,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Restaurant Frohsinn"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8763642211,
+      "lat": 47.4628413,
+      "lon": 7.8127353,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "pizza",
+        "name": "Wyystube Tschudin"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8905058430,
+      "lat": 47.5457819,
+      "lon": 7.6521043,
+      "tags": {
+        "amenity": "restaurant",
+        "email": "info@restaurant-auhafen.ch",
+        "name": "Restaurant Auhafen",
+        "payment:cards": "no",
+        "phone": "+41 61 313 22 48",
+        "website": "https://www.restaurant-auhafen.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8907418733,
+      "lat": 47.5536737,
+      "lon": 7.5453867,
+      "tags": {
+        "amenity": "cafe",
+        "cuisine": "ice_cream",
+        "name": "Buvette",
+        "outdoor_seating": "yes",
+        "takeaway": "yes",
+        "toilets": "no",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8941942238,
+      "lat": 47.4748075,
+      "lon": 7.7528522,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "pizza;kebab",
+        "name": "Del Fuoco",
+        "opening_hours": "Mo-Sa 11:00-14:00,17:00-22:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8941942249,
+      "lat": 47.4712785,
+      "lon": 7.761635,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "kebab;pizza",
+        "delivery": "yes",
+        "name": "Lausener",
+        "opening_hours": "Mo 16:00-22:30; Tu-Th 10:30-13:30,16:00-22:30; Fr 10:30-13:30,16:00-23:00; Sa 11:00-23:00; Su 11:00-22:00",
+        "outdoor_seating": "yes",
+        "phone": "+41619213711",
+        "survey:date": "2021-07-22",
+        "takeaway": "yes",
+        "website": "https://www.lausener-pizza-kebap-kurier-lausen.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8942630521,
+      "lat": 47.4713406,
+      "lon": 7.7613016,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date": "2024-05-08",
+        "name": "Bären",
+        "opening_hours": "Mo-Su 10:00-23:00",
+        "phone": "+41619210110",
+        "website": "www.baeren-lausen.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8942630723,
+      "lat": 47.4705263,
+      "lon": 7.7602413,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "pizza",
+        "name": "Ben Fatto",
+        "opening_hours": "Mo-Fr 10:00-13:30,16:30-22:00; Sa 16:30-22:00; Su 16:30-21:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8942631217,
+      "lat": 47.4701575,
+      "lon": 7.7646031,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "thai",
+        "name": "Sala Thai",
+        "opening_hours": "Tu-Th 11:30-14:00,18:00-22:00; Fr 11:30-14:00,18:00-23:00; Sa 18:00-23:00",
+        "survey:date": "2021-07-22"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9007091597,
+      "lat": 47.4845567,
+      "lon": 7.734599,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "afghan",
+        "diet:vegetarian": "yes",
+        "name": "Cafe Azizi",
+        "outdoor_seating": "yes",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9007091599,
+      "lat": 47.4855691,
+      "lon": 7.7339378,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Orisbach"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9013910773,
+      "lat": 47.46908,
+      "lon": 7.5971901,
+      "tags": {
+        "addr:city": "Aesch BL",
+        "addr:housenumber": "98",
+        "addr:postcode": "4147",
+        "addr:street": "Hauptstrasse",
+        "amenity": "restaurant",
+        "cuisine": "italian;pizza;kebab",
+        "name": "Pizzeria Fresco",
+        "phone": "+41 61 753 88 88",
+        "website": "https://frescoaesch.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9013910774,
+      "lat": 47.4689868,
+      "lon": 7.5971717,
+      "tags": {
+        "addr:city": "Aesch BL",
+        "addr:housenumber": "96",
+        "addr:postcode": "4147",
+        "addr:street": "Hauptstrasse",
+        "amenity": "restaurant",
+        "cuisine": "mexican;burger",
+        "name": "Bella Vita",
+        "phone": "+41 79 869 02 06",
+        "website": "https://www.just-eat.ch/speisekarte/bella-vita-aesch#info"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9013910776,
+      "lat": 47.4685144,
+      "lon": 7.5972981,
+      "tags": {
+        "addr:city": "Aesch BL",
+        "addr:housenumber": "88",
+        "addr:postcode": "4147",
+        "addr:street": "Hauptstrasse",
+        "amenity": "restaurant",
+        "cuisine": "italian;pizza;kebab",
+        "name": "Spicy Pizza",
+        "phone": "+41 61 751 58 58",
+        "website": "https://spicypizza.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9060536456,
+      "lat": 47.3970291,
+      "lon": 7.6914205,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Rebstock"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9160982197,
+      "lat": 47.485163,
+      "lon": 7.7343636,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Romanos Paninoteca",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9198046615,
+      "lat": 47.4840175,
+      "lon": 7.7348337,
+      "tags": {
+        "amenity": "cafe",
+        "indoor_seating": "yes",
+        "name": "Angolo Dolce",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9198055017,
+      "lat": 47.4853923,
+      "lon": 7.7342556,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Zur Farnsburg",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9448369470,
+      "lat": 47.414391,
+      "lon": 7.8670716,
+      "tags": {
+        "addr:city": "Häfelfingen",
+        "addr:housenumber": "19a",
+        "addr:postcode": "4445",
+        "addr:street": "Hauptstrasse",
+        "amenity": "restaurant",
+        "name": "Alte Latärne",
+        "opening_hours": "Th 16:00-23:00",
+        "website": "https://www.alte-lataerne.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9504291474,
+      "lat": 47.4637041,
+      "lon": 7.8123134,
+      "tags": {
+        "addr:city": "Sissach",
+        "addr:country": "CH",
+        "addr:housenumber": "57",
+        "addr:postcode": "4450",
+        "addr:street": "Hauptstrasse",
+        "amenity": "restaurant",
+        "cuisine": "pizza;italian;regional",
+        "name": "Sternen",
+        "website": "https://www.sternen-sissach.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9505264971,
+      "lat": 47.4657741,
+      "lon": 7.8037719,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "pizza;italian;regional",
+        "name": "Sissaho"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9537793540,
+      "lat": 47.5032124,
+      "lon": 7.7214119,
+      "tags": {
+        "amenity": "cafe",
+        "cuisine": "bistro",
+        "name": "Al Parco"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9562305189,
+      "lat": 47.5478024,
+      "lon": 7.6267679,
+      "tags": {
+        "addr:city": "Birsfelden",
+        "addr:housenumber": "2",
+        "addr:postcode": "4127",
+        "addr:street": "Florastrasse",
+        "amenity": "restaurant",
+        "cuisine": "italian;pizza",
+        "diet:vegan": "no",
+        "diet:vegetarian": "yes",
+        "email": "info@mangiaebevi.ch",
+        "indoor_seating": "yes",
+        "name": "cafe flora mangia e bevi",
+        "opening_hours": "Mo,We-Fr 11:30-13:00, 17:30-22:00; Sa 17:30-22:00; Su 11:30-13:00; Tu off",
+        "outdoor_seating": "yes",
+        "phone": "+41 79 944 29 45",
+        "website": "https://www.mangiaebevi.ch/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9562305190,
+      "lat": 47.5506791,
+      "lon": 7.6243472,
+      "tags": {
+        "addr:city": "Birsfelden",
+        "addr:housenumber": "13",
+        "addr:postcode": "4127",
+        "addr:street": "Muttenzerstrasse",
+        "amenity": "restaurant",
+        "name": "Rebstock",
+        "opening_hours": "Mo-Fr 14:00-23:00",
+        "phone": "+41 61 311 69 26",
+        "website": "https://www.facebook.com/rebstock.birsfelden/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9575887530,
+      "lat": 47.5305797,
+      "lon": 7.6325497,
+      "tags": {
+        "addr:city": "Muttenz",
+        "addr:country": "CH",
+        "addr:housenumber": "10",
+        "addr:postcode": "4132",
+        "addr:street": "Sandgrubenweg",
+        "amenity": "restaurant",
+        "cuisine": "italian",
+        "name": "Pizza David",
+        "opening_hours": "Tu-Fr 11:00-14:00, 17:00-23:45; Sa-Su 17:00-23:45",
+        "phone": "+41 61 691 23 23",
+        "website": "https://www.pizza-david-muttenz.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9702372555,
+      "lat": 47.4640408,
+      "lon": 7.8113537,
+      "tags": {
+        "addr:city": "Sissach",
+        "addr:country": "CH",
+        "addr:housenumber": "77",
+        "addr:postcode": "4450",
+        "addr:street": "Hauptstrasse",
+        "amenity": "cafe",
+        "cuisine": "coffee_shop",
+        "name": "Caprice",
+        "opening_hours": "Mo-Fr 07:00-18:30 Sa 07:00-16:00 So 08:00-17:00",
+        "outdoor_seating": "yes",
+        "phone": "+4161 971 80 69",
+        "website": "https://www.gunzenhauser-beck.ch/cafe-caprice/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9723727287,
+      "lat": 47.4628753,
+      "lon": 7.8118638,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "kebab",
+        "name": "Bahnhof-Imbiss"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9766020697,
+      "lat": 47.4626031,
+      "lon": 7.8158853,
+      "tags": {
+        "addr:city": "Sissach",
+        "addr:country": "CH",
+        "addr:housenumber": "27",
+        "addr:postcode": "4450",
+        "addr:street": "Hauptstrasse",
+        "amenity": "restaurant",
+        "cuisine": "coffee_shop",
+        "name": "Villa 27"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9809571978,
+      "lat": 47.4878588,
+      "lon": 7.5959092,
+      "tags": {
+        "addr:city": "Reinach BL",
+        "addr:country": "CH",
+        "addr:housenumber": "13",
+        "addr:postcode": "4153",
+        "addr:street": "Duggingerstrasse",
+        "amenity": "fast_food",
+        "cuisine": "kebab",
+        "name": "Kägen Imbiss-Café Kocak"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9809571979,
+      "lat": 47.4864108,
+      "lon": 7.595633,
+      "tags": {
+        "addr:city": "Reinach BL",
+        "addr:country": "CH",
+        "addr:housenumber": "20",
+        "addr:postcode": "4153",
+        "addr:street": "Duggingerstrasse",
+        "amenity": "fast_food",
+        "name": "Suppe-Bar zum Suppechasper",
+        "opening_hours": "Mo-Fr 11:15-13:30",
+        "website": "https://www.facebook.com/SuppeBar/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9809571984,
+      "lat": 47.4887484,
+      "lon": 7.5989998,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "Lotus Thai Kitchen Foodtruck",
+        "opening_hours": "Tu-We",
+        "website": "http://www.lotus-thaikitchen.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9809679023,
+      "lat": 47.4866271,
+      "lon": 7.6004939,
+      "tags": {
+        "addr:city": "Reinach BL",
+        "addr:country": "CH",
+        "addr:housenumber": "2",
+        "addr:postcode": "4153",
+        "addr:street": "Nuglarweg",
+        "amenity": "cafe",
+        "name": "Kägen",
+        "opening_hours": "Mo-Fr 06:15-14:00",
+        "operator": "Grellinger Bäckerei",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "shop": "bakery",
+        "takeaway": "yes",
+        "website": "https://www.grellinger.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9812957502,
+      "lat": 47.5078994,
+      "lon": 7.7212237,
+      "tags": {
+        "amenity": "restaurant",
+        "indoor_seating": "yes",
+        "name": "Vogel-Gryff",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9920585717,
+      "lat": 47.4921534,
+      "lon": 7.6214714,
+      "tags": {
+        "addr:city": "Arlesheim",
+        "addr:country": "CH",
+        "addr:housenumber": "4",
+        "addr:postcode": "4144",
+        "addr:street": "Kirchgasse",
+        "amenity": "restaurant",
+        "cuisine": "mediterranean",
+        "name": "Domstübli",
+        "opening_hours": "Mo-Sa 09:00-14:00, 18:00-23:30",
+        "website": "https://www.domstuebli.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10042275897,
+      "lat": 47.5320841,
+      "lon": 7.5732069,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Bottminger Mühle",
+        "website": "https://bottmingermuehle.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10087597918,
+      "lat": 47.4420852,
+      "lon": 7.5889842,
+      "tags": {
+        "addr:city": "Grellingen",
+        "addr:housenumber": "4",
+        "addr:postcode": "4203",
+        "addr:street": "Delsbergstrasse",
+        "amenity": "fast_food",
+        "contact:instagram": "https://www.instagram.com/tacosgrill_grellingen/",
+        "description": "pizza kebab cafe falafel",
+        "diet:vegetarian": "yes",
+        "name": "Tacos grill",
+        "phone": "+41 61 3337000"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10140242705,
+      "lat": 47.4692945,
+      "lon": 7.5965966,
+      "tags": {
+        "amenity": "cafe",
+        "indoor_seating": "yes",
+        "opening_hours": "Mo-Fr 08:00-21:00; Sa 08:00-19:00; Su 09:00-19:00",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10240875541,
+      "lat": 47.5124531,
+      "lon": 7.6165056,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Pizzeria Schützen",
+        "website": "https://www.pizzeria-schuetzen.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10296742426,
+      "lat": 47.3830155,
+      "lon": 7.7483743,
+      "tags": {
+        "amenity": "cafe",
+        "indoor_seating": "yes",
+        "internet_access": "no",
+        "name": "Alte Wacht",
+        "outdoor_seating": "no",
+        "website": "https://www.alte-wacht.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10296857279,
+      "lat": 47.3712,
+      "lon": 7.7485652,
+      "tags": {
+        "addr:city": "Waldenburg",
+        "addr:housenumber": "19",
+        "addr:postcode": "4437",
+        "addr:street": "Hauptsstrasse",
+        "amenity": "restaurant",
+        "name": "Restaurant zum Obern Hauenstein"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10314941501,
+      "lat": 47.5250339,
+      "lon": 7.6944798,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "american",
+        "delivery": "no",
+        "email": "info@jacksgastroevent.com",
+        "name": "Kentucky Saloon & Steakhouse",
+        "opening_hours": "Tu-Sa 17:30-24:00",
+        "operator": "Jack's Gastro & Event GmbH",
+        "phone": "+41 61 821 21 21",
+        "reservation": "required",
+        "takeaway": "no",
+        "website": "www.kentuckysaloon.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10555184829,
+      "lat": 47.5214301,
+      "lon": 7.7036654,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Restaurant Gehrenacker"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10711569501,
+      "lat": 47.5033503,
+      "lon": 7.7140555,
+      "tags": {
+        "amenity": "cafe",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10715600529,
+      "lat": 47.4841515,
+      "lon": 7.7327362,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "asian",
+        "delivery": "Mo-Th 17:00-21:30; Fr 17:00-21:45; Sa 16:45-21:45; Su 16:30-21:30",
+        "disused:amenity": "fast_food",
+        "name": "Fu's Asia Restaurant",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10719195574,
+      "lat": 47.3955157,
+      "lon": 7.7493091,
+      "tags": {
+        "addr:city": "Oberdorf BL",
+        "addr:country": "CH",
+        "addr:housenumber": "70",
+        "addr:postcode": "4436",
+        "addr:street": "Hauptstrasse",
+        "amenity": "restaurant",
+        "name": "Rössli",
+        "opening_hours": "Tu 14:00-24:00,We-Sa 08:30-24:00",
+        "phone": "+41 61 961 03 01",
+        "website": "https://www.roessli-oberdorf.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10818440787,
+      "lat": 47.5374133,
+      "lon": 7.6143203,
+      "tags": {
+        "addr:city": "Basel",
+        "addr:country": "CH",
+        "addr:housenumber": "6",
+        "addr:place": "Vorder Brüglingen",
+        "addr:postcode": "4052",
+        "addr:street": "Vorder Brüglingen",
+        "amenity": "restaurant",
+        "check_date": "2023-04-17",
+        "name": "Iris in den Meriangärten",
+        "phone": "+41 61 311 24 54",
+        "website": "https://restaurant-iris.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10858820981,
+      "lat": 47.4492144,
+      "lon": 7.7359731,
+      "tags": {
+        "addr:city": "Bubendorf",
+        "addr:country": "CH",
+        "addr:housenumber": "80",
+        "addr:postcode": "4416",
+        "addr:street": "Hauptstrasse",
+        "amenity": "restaurant",
+        "name": "Pizza Al Cuore",
+        "opening_hours": "Su 17:00-21:00; Tu 17:00-21:30; We, Th 11:00-13:30, 17:00-21:30; Fr 11:00-13:30, 17:00-22:00; Sa 17:00-22:00",
+        "phone": "+41615255010"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10983694126,
+      "lat": 47.5411913,
+      "lon": 7.5797885,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Restaurant Sunnebeedli",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11017645705,
+      "lat": 47.5503737,
+      "lon": 7.5360512,
+      "tags": {
+        "addr:postcode": "4123",
+        "amenity": "cafe",
+        "name": "RE",
+        "opening_hours": "Th-Su 10:00-17:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11018490009,
+      "lat": 47.4832053,
+      "lon": 7.7354019,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Cafe Lokal"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11093913606,
+      "lat": 47.5037011,
+      "lon": 7.7212066,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Mark's Restaurant",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11113253067,
+      "lat": 47.4633943,
+      "lon": 7.8140006,
+      "tags": {
+        "addr:city": "Sissach",
+        "addr:country": "CH",
+        "addr:housenumber": "46a",
+        "addr:postcode": "4450",
+        "addr:street": "Hauptstrasse",
+        "amenity": "cafe",
+        "cuisine": "coffee_shop",
+        "name": "Caffè Rubino",
+        "opening_hours": "Mo-Fr 07:30 - 19:00",
+        "outdoor_seating": "yes",
+        "phone": "+41 61 971 62 72",
+        "website": "https://www.rubinosissach.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11263972632,
+      "lat": 47.540103,
+      "lon": 7.5762887,
+      "tags": {
+        "addr:city": "Binningen",
+        "addr:country": "CH",
+        "addr:housenumber": "31",
+        "addr:postcode": "4102",
+        "addr:street": "Baslerstrasse",
+        "amenity": "restaurant",
+        "cuisine": "italian;italian_pizza;regional",
+        "full_name": "Schiff Binningen",
+        "internet_access": "wlan",
+        "name": "Schiff",
+        "opening_hours": "Mo-Fr 10:00-14:00,17:00-23:00;Sa 16:00-23:00;Su 11:00-22:30",
+        "phone": "+41614214712",
+        "website": "https://schiffbinningen.ch/restaurant/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11266338401,
+      "lat": 47.5421543,
+      "lon": 7.5743253,
+      "tags": {
+        "addr:city": "Binningen",
+        "addr:country": "CH",
+        "addr:housenumber": "32",
+        "addr:postcode": "4102",
+        "addr:street": "Hauptstrasse",
+        "amenity": "restaurant",
+        "cuisine": "italian_pizza;kebab",
+        "indoor_seating": "yes",
+        "name": "Binni Kebap Pizza",
+        "opening_hours": "Mo-Su 11:00-22:00",
+        "outdoor_seating": "no",
+        "phone": "+41615570199"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11271570453,
+      "lat": 47.4502888,
+      "lon": 7.5185534,
+      "tags": {
+        "addr:city": "Blauen",
+        "addr:housenumber": "13",
+        "addr:postcode": "4223",
+        "addr:street": "Dorfstrasse",
+        "amenity": "cafe",
+        "email": "dorfladenblauen@bluewin.ch",
+        "name": "Dorfladen Blauen",
+        "opening_hours": "Mo-Fr 08:00-11:30,14:30-18:00; Sa 08:00.13:00",
+        "operator": "Valerie Roth",
+        "phone": "+41 61 761 87 00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11517031635,
+      "lat": 47.4840911,
+      "lon": 7.7321291,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "indian",
+        "diet:vegetarian": "yes",
+        "outdoor_seating": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11572438896,
+      "lat": 47.4866317,
+      "lon": 7.7338577,
+      "tags": {
+        "addr:city": "Liestal",
+        "addr:country": "CH",
+        "addr:housenumber": "14",
+        "addr:postcode": "4410",
+        "addr:street": "Gasstrasse",
+        "amenity": "cafe",
+        "bar": "yes",
+        "cuisine": "coffee_shop;italian",
+        "description": "Renn und Gravel Velos, Cervelo, Finna Barcelona, Deda, Radbekleidung Q36,5 und eine Werkstatt wartet auf dich nebst frischem Barista Kaffee",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "internet_access:ssid": "rocket guest",
+        "name": "Rocket Ciclista E Barista",
+        "opening_hours": "We 13:30-18:30; Th,Fr 10:00-18:30; Sa 10:00-17:00; Su 12:00-17:00",
+        "outdoor_seating": "yes",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:mastercard": "yes",
+        "payment:visa": "yes",
+        "phone": "+41 61 55 49 333",
+        "website": "https://rocketcycling.shop/webshop/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11629913838,
+      "lat": 47.5259846,
+      "lon": 7.6888787,
+      "tags": {
+        "addr:city": "Pratteln",
+        "addr:housenumber": "9",
+        "addr:postcode": "4133",
+        "addr:street": "Grüssenweg",
+        "amenity": "fast_food",
+        "brand": "McDonald's",
+        "brand:wikidata": "Q38076",
+        "brand:wikipedia": "en:McDonald's",
+        "cuisine": "burger",
+        "drive_through": "no",
+        "name": "McDonald's",
+        "operator": "McDonald's",
+        "phone": "+41 61 823 70 04",
+        "takeaway": "yes",
+        "website": "https://www.mcdonalds.com/ch/de-ch/location/pratteln/pratteln/gr-ssenweg-9/780190.html"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11697669760,
+      "lat": 47.4561096,
+      "lon": 7.8286871,
+      "tags": {
+        "addr:city": "Thürnen",
+        "addr:country": "CH",
+        "addr:housenumber": "40",
+        "addr:postcode": "4441",
+        "addr:street": "Hauptstrasse",
+        "amenity": "restaurant",
+        "cuisine": "regional;pizza",
+        "name": "Warteck"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11702093223,
+      "lat": 47.5330775,
+      "lon": 7.6440016,
+      "tags": {
+        "addr:city": "Muttenz",
+        "addr:country": "CH",
+        "addr:housenumber": "3",
+        "addr:postcode": "4132",
+        "addr:street": "Im Brüggli",
+        "amenity": "restaurant",
+        "cuisine": "turkish;italian",
+        "diet:meat": "yes",
+        "diet:vegetarian": "yes",
+        "name": "Muttenzer Pizza Kebap Haus",
+        "opening_hours": "Mo-Su 10:00-24:00",
+        "phone": "+41 61 463 70 70"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11733436546,
+      "lat": 47.4834837,
+      "lon": 7.7365624,
+      "tags": {
+        "amenity": "cafe",
+        "cuisine": "coffee_shop",
+        "name": "Kaffi Bücheli",
+        "phone": "+41 79 946 16 75"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11736485416,
+      "lat": 47.4825458,
+      "lon": 7.7367505,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Krone",
+        "website": "http://www.krone-liestal.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11736485417,
+      "lat": 47.4825097,
+      "lon": 7.7369095,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Kanonenkugel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11736485418,
+      "lat": 47.4824867,
+      "lon": 7.7371116,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Alte Braue",
+        "website": "https://restaurant-altebraue.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11931406937,
+      "lat": 47.4948122,
+      "lon": 7.6202482,
+      "tags": {
+        "addr:city": "Arlesheim",
+        "addr:country": "CH",
+        "addr:housenumber": "2",
+        "addr:postcode": "4144",
+        "addr:street": "Gartenweg",
+        "amenity": "restaurant",
+        "email": "info@eremitage.ch",
+        "name": "Restaurant Eremitage",
+        "opening_hours": "Mo-Sa 17:30-21:00",
+        "phone": "+41 61 701 54 20",
+        "stars": "3",
+        "website": "https://www.eremitage.ch/Hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11982901191,
+      "lat": 47.4862849,
+      "lon": 7.7357036,
+      "tags": {
+        "addr:city": "Liestal",
+        "addr:country": "CH",
+        "addr:housenumber": "5",
+        "addr:postcode": "4410",
+        "addr:street": "Gerberstrasse",
+        "amenity": "restaurant",
+        "cuisine": "pizza;italian",
+        "name": "Paradies To Go",
+        "website": "https://www.paradiestogo-liestal.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11999404469,
+      "lat": 47.5580624,
+      "lon": 7.560691,
+      "tags": {
+        "addr:postcode": "4123",
+        "addr:street": "Lindenstrasse",
+        "amenity": "fast_food",
+        "cuisine": "kebab",
+        "name": "The Josef's",
+        "opening_hours": "Tu-Sa 11:00-21:30; Su 12:00-21:30"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12108019822,
+      "lat": 47.4529368,
+      "lon": 7.6050954,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "zum Sternen"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12193210969,
+      "lat": 47.4971134,
+      "lon": 7.6075112,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Chez Würth",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12203546281,
+      "lat": 47.562336,
+      "lon": 7.5551592,
+      "tags": {
+        "addr:city": "Allschwil",
+        "addr:housenumber": "1",
+        "addr:postcode": "4123",
+        "addr:street": "Lachenstrasse",
+        "amenity": "restaurant",
+        "bar": "yes",
+        "cuisine": "italian;coffee_shop;breakfast;pasta;mediterranean;grill;salad;european;bakery;lunch;piadina",
+        "diet:mediterranean": "yes",
+        "email": "info@langolo-eatery.ch",
+        "level": "0",
+        "name": "L'Angolo",
+        "opening_hours": "Mo-Fr 08:00-17:00; PH off",
+        "outdoor_seating": "no",
+        "phone": "+41778103949",
+        "smoking": "no",
+        "start_date": "2024-09-26",
+        "website": "https://www.langolo-eatery.ch/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12208981885,
+      "lat": 47.5317399,
+      "lon": 7.6076878,
+      "tags": {
+        "amenity": "restaurant",
+        "email": "kontakt@schmatzbasel.ch",
+        "level": "1",
+        "name": "schmatz",
+        "opening_hours": "Mo-Fr 11:30-13:30",
+        "opening_hours:url": "https://www.schmatzbasel.ch/restaurant.html",
+        "outdoor_seating": "yes",
+        "phone": "+41 61 337 82 00",
+        "reservation": "yes",
+        "toilets": "yes",
+        "website": "https://www.schmatzbasel.ch/",
+        "website:menu": "https://www.schmatzbasel.ch/print-menu.html"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12266602637,
+      "lat": 47.5328129,
+      "lon": 7.7242637,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Pizzeria Römerhof",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12364255461,
+      "lat": 47.5231122,
+      "lon": 7.7085712,
+      "tags": {
+        "addr:city": "Pratteln",
+        "addr:housenumber": "52",
+        "addr:postcode": "4133",
+        "addr:street": "Krummeneichstrasse",
+        "amenity": "restaurant",
+        "cuisine": "pizza;kebab",
+        "name": "Onkel's Pizza"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12419979744,
+      "lat": 47.4994975,
+      "lon": 7.5547914,
+      "tags": {
+        "amenity": "cafe",
+        "name": "KAFFI-BAR Träumli"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12452797655,
+      "lat": 47.4326833,
+      "lon": 7.7059034,
+      "tags": {
+        "addr:city": "Ziefen",
+        "addr:country": "CH",
+        "addr:housenumber": "34",
+        "addr:postcode": "4417",
+        "addr:street": "Eienstrasse",
+        "amenity": "cafe",
+        "name": "Chesi Kaffi",
+        "opening_hours": "Mo-Sa 08:30-11:00",
+        "outdoor_seating": "yes",
+        "phone": "+41 79 935 22 93"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12455651150,
+      "lat": 47.431059,
+      "lon": 7.707137,
+      "tags": {
+        "addr:city": "Ziefen",
+        "addr:country": "CH",
+        "addr:housenumber": "94",
+        "addr:postcode": "4417",
+        "addr:street": "Hauptstrasse",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Restaurant Tanne",
+        "opening_hours": "Mo 17:00-23:30; Tu off; We-Sa 11:00-14:00, 17:00-23:30; Su 17:00-22:00",
+        "outdoor_seating": "yes",
+        "phone": "+41 61 931 18 58",
+        "website": "https://resttanneziefen.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12475452387,
+      "lat": 47.4177342,
+      "lon": 7.4971647,
+      "tags": {
+        "addr:city": "Laufen",
+        "addr:country": "CH",
+        "addr:housenumber": "11",
+        "addr:postcode": "4242",
+        "addr:street": "Schützenweg",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Restaurant Rosengarten"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12520308836,
+      "lat": 47.4224713,
+      "lon": 7.4989979,
+      "tags": {
+        "addr:city": "Laufen",
+        "addr:country": "CH",
+        "addr:housenumber": "47",
+        "addr:postcode": "4242",
+        "addr:street": "Rennimattstrasse",
+        "amenity": "fast_food",
+        "cuisine": "pizza;kebab",
+        "name": "EAT Point",
+        "opening_hours": "Su-Th 10:30-22:00; Fr-Sa 10:30-23:00",
+        "phone": "+41 61 761 16 14",
+        "website": "https://www.eat-point24.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12533703461,
+      "lat": 47.4211305,
+      "lon": 7.5008082,
+      "tags": {
+        "addr:city": "Laufen",
+        "addr:country": "CH",
+        "addr:housenumber": "6",
+        "addr:postcode": "4242",
+        "addr:street": "Hauptstrasse",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Rathausstübli",
+        "phone": "+41 61 761 66 47",
+        "website": "https://rathausstuebli.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12533771233,
+      "lat": 47.4216327,
+      "lon": 7.4998933,
+      "tags": {
+        "addr:city": "Laufen",
+        "addr:country": "CH",
+        "addr:housenumber": "17",
+        "addr:postcode": "4242",
+        "addr:street": "Viehmarktgasse",
+        "amenity": "fast_food",
+        "cuisine": "pizza;kebab",
+        "name": "Pizza Spicy",
+        "phone": "+41 61 761 47 47",
+        "website": "https://pizza-spicy.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12543510352,
+      "lat": 47.4220775,
+      "lon": 7.5039042,
+      "tags": {
+        "addr:city": "Laufen",
+        "addr:country": "CH",
+        "addr:housenumber": "55",
+        "addr:postcode": "4242",
+        "addr:street": "Seidenweg",
+        "amenity": "restaurant",
+        "name": "nöis",
+        "website": "https://www.noisbistro.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12573777346,
+      "lat": 47.413555,
+      "lon": 7.5063523,
+      "tags": {
+        "addr:city": "Laufen",
+        "addr:housenumber": "81",
+        "addr:postcode": "4242",
+        "addr:street": "Wahlenstrasse",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Le Cocon",
+        "opening_hours": "Mo-Fr 08:00-14:00",
+        "phone": "+41 61 765 20 00",
+        "website": "https://www.lapetitechenille.ch/general-8"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12613607755,
+      "lat": 47.4951359,
+      "lon": 7.6810283,
+      "tags": {
+        "addr:city": "Liestal",
+        "addr:postcode": "4410",
+        "amenity": "restaurant",
+        "name": "Bad Schauenburg Zum Schauenegg",
+        "website": "https://zumschauenegg.ch/startseite"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12613659274,
+      "lat": 47.5227137,
+      "lon": 7.6448957,
+      "tags": {
+        "addr:city": "Muttenz",
+        "addr:country": "CH",
+        "addr:housenumber": "1",
+        "addr:postcode": "4132",
+        "addr:street": "Baselstrasse",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "dr Egge - das restaurant",
+        "website": "https://www.egge-muttenz.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12701609485,
+      "lat": 47.5022234,
+      "lon": 7.720859,
+      "tags": {
+        "addr:city": "Frenkendorf",
+        "addr:housenumber": "22",
+        "addr:postcode": "4402",
+        "addr:street": "Bahnhofstrasse",
+        "amenity": "restaurant",
+        "brand": "Coop Restaurant",
+        "brand:wikidata": "Q432564",
+        "cuisine": "german",
+        "name": "Coop Restaurant",
+        "website": "https://www.coop.ch/de/standorte/coop-supermarkt-frenkendorf"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12728570301,
+      "lat": 47.5573309,
+      "lon": 7.5598757,
+      "tags": {
+        "addr:housenumber": "302",
+        "addr:postcode": "4123",
+        "addr:street": "Baslerstrasse",
+        "amenity": "restaurant",
+        "cuisine": "grill;mediterranean",
+        "name": "Dem",
+        "opening_hours": "Tu-Fr 10:00-14:00, 17:00-23:00; Sa-Su 10:00-00:00",
+        "phone": "+41767154455",
+        "website": "https://demrestaurant.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12800662001,
+      "lat": 47.5142659,
+      "lon": 7.5554832,
+      "tags": {
+        "addr:housenumber": "30",
+        "addr:postcode": "4104",
+        "addr:street": "Hauptstrasse",
+        "amenity": "restaurant",
+        "email": "info@roessli-oberwil.ch",
+        "name": "Restaurant Rössli",
+        "opening_hours": "Su-Fr 11:30-14:30; Sa 18:00-23:00; Su-Fr 18:00-23:00",
+        "phone": "+41 61 401 18 81",
+        "self_service": "no",
+        "website": "https://roessli-oberwil.ch/",
+        "website:menu": "http://roessli-oberwil.ch/menu"
+      }
+    }
+  ]
+}

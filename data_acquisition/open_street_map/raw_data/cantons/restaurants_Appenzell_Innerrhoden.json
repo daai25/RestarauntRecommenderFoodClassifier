@@ -1,0 +1,462 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.7 375dc00a",
+  "osm3s": {
+    "timestamp_osm_base": "2025-07-01T21:03:35Z",
+    "timestamp_areas_base": "2025-06-25T21:32:45Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+    {
+      "type": "node",
+      "id": 290371557,
+      "lat": 47.3428341,
+      "lon": 9.4699322,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date:opening_hours": "2024-09-06",
+        "cuisine": "regional",
+        "name": "Hoher Hirschberg",
+        "opening_hours": "Th-Mo 08:00-22:00",
+        "phone": "+41 71 787 14 67",
+        "tourism": "hotel",
+        "website": "https://www.hoherhirschberg.ch/",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 440806558,
+      "lat": 47.3304699,
+      "lon": 9.4651365,
+      "tags": {
+        "addr:city": "Appenzell Eggerstanden",
+        "addr:housenumber": "56",
+        "addr:postcode": "9050",
+        "addr:street": "Alte Eggerstandenstrasse",
+        "amenity": "restaurant",
+        "contact:email": "info@altesbild.ch",
+        "contact:phone": "+41 71 780 07 07",
+        "name": "Wirtschaft Altes Bild",
+        "website": "https://www.altesbild.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 440806559,
+      "lat": 47.3310921,
+      "lon": 9.4662691,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "german",
+        "fax": "+41 71 787 27 98",
+        "internet_access": "wlan",
+        "name": "Neues Bild",
+        "outdoor_seating": "yes",
+        "phone": "+41 71 787 13 03",
+        "smoking": "no",
+        "tourism": "hotel",
+        "website": "https://neuesbild.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 681286403,
+      "lat": 47.4157908,
+      "lon": 9.5756173,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Grüner Baum",
+        "opening_hours": "Tu-Fr 14:00-17:00; Sa-Su 10:00-17:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 742283754,
+      "lat": 47.4223911,
+      "lon": 9.5518762,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Säntis"
+      }
+    },
+    {
+      "type": "node",
+      "id": 742284069,
+      "lat": 47.4220377,
+      "lon": 9.5529691,
+      "tags": {
+        "amenity": "restaurant",
+        "contact:phone": "+41 71 891 16 82",
+        "contact:website": "https://www.ochsen-oberegg.ch",
+        "indoor_seating": "yes",
+        "name": "Gasthaus Ochsen",
+        "opening_hours": "Tu-Th 08:30-18:30; Fr 08:30-21:00; Sa 11:00-21:00; Su 09:30-14:00; Mo,Su[-1] off",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 742284077,
+      "lat": 47.4224634,
+      "lon": 9.5507728,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Harmonie"
+      }
+    },
+    {
+      "type": "node",
+      "id": 765870054,
+      "lat": 47.2930589,
+      "lon": 9.3763369,
+      "tags": {
+        "addr:city": "Weissbad",
+        "addr:country": "CH",
+        "addr:housenumber": "2",
+        "addr:postcode": "9057",
+        "addr:street": "Ahorn",
+        "amenity": "restaurant",
+        "name": "Berggasthaus Ahorn",
+        "website": "https://www.ahorn.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1150685133,
+      "lat": 47.4359816,
+      "lon": 9.6131047,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Sternen"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1150685136,
+      "lat": 47.4338044,
+      "lon": 9.6074828,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Tobelmühle"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2298135495,
+      "lat": 47.3194019,
+      "lon": 9.3287643,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date": "2025-05-18",
+        "email": "info@kronberg.ch",
+        "name": "Talrestaurant",
+        "opening_hours": "Oct 24-Nov 30 Mo-Fr 10:00-17:30; Oct 24-Nov 30 Sa,Su 09:00-17:30; Dec 01-Mar 05 Sa 10:00-17:30; PH 09:00-17:30; Mar 06-Apr 06 off",
+        "phone": "+41 71 794 12 89",
+        "website": "https://kronberg.ch/de/erlebnisse/gastronomie/talrestaurant.html",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2349506772,
+      "lat": 47.2833952,
+      "lon": 9.4144537,
+      "tags": {
+        "air_conditioning": "no",
+        "amenity": "restaurant",
+        "brewery": "no",
+        "changing_table": "no",
+        "check_date": "2023-08-15",
+        "contact:email": "info@aescher.ch",
+        "contact:phone": "+41 71 799 11 42",
+        "contact:website": "https://aescher.ch",
+        "delivery": "no",
+        "diet:halal": "no",
+        "diet:kosher": "no",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "ele": "1454",
+        "indoor_seating": "yes",
+        "internet_access": "no",
+        "microbrewery": "no",
+        "name": "Berggasthaus Aescher-Wildkirchli",
+        "opening_hours": "May 01-Oct 31 Mo-Su,PH 07:30-20:30; Nov 01-30 Mo-Su,PH 07:30-19:30; Dec 01-Apr 31 closed",
+        "outdoor_seating": "yes",
+        "payment:contactless": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "payment:girocard": "yes",
+        "payment:maestro": "yes",
+        "payment:mastercard": "yes",
+        "payment:visa": "yes",
+        "payment:visa_debit": "yes",
+        "reservation": "yes",
+        "shower": "no",
+        "smoking": "outside",
+        "toilets": "yes",
+        "toilets:wheelchair": "no",
+        "tourism": "alpine_hut",
+        "wheelchair": "no",
+        "wikidata": "Q56239682",
+        "wikipedia": "de:Berggasthaus Aescher-Wildkirchli",
+        "winter_room": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2377224263,
+      "lat": 47.4225845,
+      "lon": 9.5477941,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Traube"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2465449197,
+      "lat": 47.3208885,
+      "lon": 9.4655198,
+      "tags": {
+        "addr:city": "Appenzell Steinegg",
+        "addr:housenumber": "36",
+        "addr:postcode": "9050",
+        "addr:street": "Egglistrasse",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "diet:dairy_free": "no",
+        "diet:lacto_vegetarian": "yes",
+        "diet:pescetarian": "no",
+        "diet:vegan": "no",
+        "diet:vegetarian": "yes",
+        "name": "Eggli",
+        "opening_hours": "Nov-Apr: We-Su 10:00-18:00; May-Oct: We-Su 09:00-18:00",
+        "opening_hours:kitchen": "We-Su 10:00-17:00",
+        "operator": "Eggli Emil",
+        "outdoor_seating": "yes",
+        "phone": "+41 71 787 16 10",
+        "reservation": "recommended",
+        "smoking": "outside",
+        "website": "http://www.eggli-appenzell.ch/",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3619975819,
+      "lat": 47.2854252,
+      "lon": 9.4283851,
+      "tags": {
+        "amenity": "cafe",
+        "indoor_seating": "yes",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3636543737,
+      "lat": 47.3265636,
+      "lon": 9.4209783,
+      "tags": {
+        "amenity": "restaurant"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4197474305,
+      "lat": 47.3339525,
+      "lon": 9.4054389,
+      "tags": {
+        "amenity": "restaurant",
+        "branch": "Appenzell",
+        "brand": "Migros Restaurant",
+        "brand:wikidata": "Q111803848",
+        "cuisine": "international",
+        "name": "Migros Restaurant",
+        "operator": "Genossenschaft Migros Ostschweiz",
+        "outdoor_seating": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4301261592,
+      "lat": 47.3279769,
+      "lon": 9.3458189,
+      "tags": {
+        "addr:city": "Gonten",
+        "addr:housenumber": "52",
+        "addr:postcode": "9108",
+        "addr:street": "Dorfstrasse",
+        "amenity": "restaurant",
+        "name": "Gasthaus Krone"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4303008606,
+      "lat": 47.3327153,
+      "lon": 9.3581072,
+      "tags": {
+        "addr:city": "Gonten",
+        "addr:postcode": "9108",
+        "addr:street": "Gontenstrasse",
+        "amenity": "restaurant",
+        "name": "manser markus"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4303008609,
+      "lat": 47.3285574,
+      "lon": 9.3467571,
+      "tags": {
+        "addr:city": "Gonten",
+        "addr:housenumber": "40",
+        "addr:postcode": "9108",
+        "addr:street": "Dorfstrasse",
+        "amenity": "restaurant",
+        "name": "Gasthaus Bären"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4382964743,
+      "lat": 47.3125778,
+      "lon": 9.3838473,
+      "tags": {
+        "addr:city": "Appenzell",
+        "addr:country": "CH",
+        "addr:housenumber": "183",
+        "addr:postcode": "9050",
+        "addr:street": "Kaustrasse",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Hotel Kaubad",
+        "phone": "+41 71 787 48 44",
+        "tourism": "hotel",
+        "website": "https://www.kaubad.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4756281123,
+      "lat": 47.3306162,
+      "lon": 9.4108868,
+      "tags": {
+        "addr:city": "Appenzell",
+        "addr:country": "CH",
+        "addr:housenumber": "2",
+        "addr:postcode": "9050",
+        "addr:street": "Weissbadstrasse",
+        "amenity": "restaurant",
+        "cuisine": "italian",
+        "name": "Little Italy",
+        "name:de": "Little Italy",
+        "name:en": "Little Italy",
+        "name:fr": "Little Italy",
+        "name:ru": "Little Italy",
+        "phone": "+41 76 368 35 32",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5020326916,
+      "lat": 47.3255477,
+      "lon": 9.4077951,
+      "tags": {
+        "addr:city": "Appenzell",
+        "addr:country": "CH",
+        "addr:housenumber": "14",
+        "addr:postcode": "9050",
+        "addr:street": "Ziegeleistrasse",
+        "amenity": "cafe",
+        "cuisine": "coffee_shop;sandwich;regional",
+        "email": "info@kunsthalleziegelhuette.ch",
+        "fax": "+41 71 788 18 61",
+        "internet_access": "wlan",
+        "name": "Bistro Kunsthalle Ziegelhütte",
+        "opening_hours": "Tu-Fr 10:00-12:00,14:00-17:00; Sa-Su 11:00-17:00",
+        "outdoor_seating": "yes",
+        "phone": "+41 71 788 18 60",
+        "smoking": "outside",
+        "website": "http://www.h-gebertka.ch/haeuser/kunsthalle-ziegelhuette/bistro/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5308475723,
+      "lat": 47.331935,
+      "lon": 9.4081306,
+      "tags": {
+        "addr:city": "Appenzell",
+        "addr:country": "CH",
+        "addr:housenumber": "2",
+        "addr:postcode": "9050",
+        "addr:street": "Zielstrasse",
+        "amenity": "cafe",
+        "name": "Auslese Barbara",
+        "phone": "+41 79 538 85 78",
+        "website": "https://www.auslesebarbara.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6515397235,
+      "lat": 47.4289455,
+      "lon": 9.576205,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Sonne Blatten"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6690871311,
+      "lat": 47.2852588,
+      "lon": 9.4281576,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Gartenbeiz"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12190979791,
+      "lat": 47.3337531,
+      "lon": 9.4073602,
+      "tags": {
+        "addr:city": "Appenzell",
+        "addr:housenumber": "13",
+        "addr:postcode": "9050",
+        "addr:street": "Zielstrasse",
+        "amenity": "cafe",
+        "name": "Böhli",
+        "opening_hours": "Mo-DO 07:30-19:00, Fr 07:30-20:00, Sa 07:30-17:00",
+        "outdoor_seating": "yes",
+        "phone": "+41 71 788 15 89",
+        "website": "https://boehli-appenzell.ch/standorte/cafe-im-coop-center-appenzell/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12613604685,
+      "lat": 47.3093527,
+      "lon": 9.433226,
+      "tags": {
+        "addr:city": "Weissbad",
+        "addr:housenumber": "1",
+        "addr:postcode": "9057",
+        "addr:street": "Im Park",
+        "amenity": "restaurant",
+        "name": "Schotte-Sepp-Stube / Flickflauder",
+        "website": "https://www.hofweissbad.ch/hotel/restaurants-bars/flickflauder/"
+      }
+    }
+  ]
+}

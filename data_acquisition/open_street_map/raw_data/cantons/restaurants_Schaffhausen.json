@@ -1,0 +1,3421 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.7 375dc00a",
+  "osm3s": {
+    "timestamp_osm_base": "2025-07-01T21:06:45Z",
+    "timestamp_areas_base": "2025-06-25T21:32:45Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+    {
+      "type": "node",
+      "id": 56877256,
+      "lat": 47.6669077,
+      "lon": 8.8581363,
+      "tags": {
+        "addr:city": "Stein am Rhein",
+        "addr:country": "CH",
+        "addr:housenumber": "1",
+        "addr:postcode": "8260",
+        "addr:street": "Hohenklingenstrasse",
+        "amenity": "restaurant",
+        "cuisine": "french;regional",
+        "email": "info@burghohenklingen.com",
+        "name": "Restaurant Burg Hohenklingen",
+        "opening_hours": "We-Sa 10:00-23:00; Su 10:00-22:00",
+        "opening_hours:kitchen": "We-Sa 11:30-13:30,18:00-20:30; Su 11:30-13:30,18:00-19:30",
+        "opening_hours:url": "https://burghohenklingen.com/kontakt/",
+        "phone": "+41 52 741 21 37",
+        "toilets:wheelchair": "yes",
+        "tourism": "attraction",
+        "website": "https://burghohenklingen.com/restaurant/",
+        "website:menu": "https://burghohenklingen.com/restaurant/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 202180250,
+      "lat": 47.7054056,
+      "lon": 8.5815234,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "cake;ice_cream;regional",
+        "email": "bollinger.daniel@bluewin.ch",
+        "mobile": "+41 79 291 50 21",
+        "name": "Restaurant Beringer Randenturm",
+        "name:de": "Restaurant Beringer Randenturm",
+        "opening_hours": "Th 13:30-23:30; Fr 17:00-00:00; Sa 00:00-00:30, 13:30-00:00; Su 00:00-00:30, 11:00-18:00",
+        "outdoor_seating": "yes",
+        "phone": "+41 52 685 13 44",
+        "reservation": "recommended",
+        "smoking": "outside",
+        "website": "https://www.randenturm.ch/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 247696691,
+      "lat": 47.6587355,
+      "lon": 8.8591668,
+      "tags": {
+        "addr:city": "Stein am Rhein",
+        "addr:country": "CH",
+        "addr:housenumber": "8",
+        "addr:postcode": "8260",
+        "addr:street": "Rhigass",
+        "amenity": "restaurant",
+        "check_date": "2024-10-18",
+        "cuisine": "fish;fine_dining",
+        "indoor_seating": "yes",
+        "name": "Rheinfels",
+        "outdoor_seating": "yes",
+        "phone": "+41 52 741 21 44",
+        "tourism": "hotel",
+        "website": "https://www.rheinfels.ch/",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 247696710,
+      "lat": 47.6574832,
+      "lon": 8.8582848,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "american",
+        "name": "Western Saloon Weinberg",
+        "website": "https://saloon-weinberg.ch",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 247696932,
+      "lat": 47.6602288,
+      "lon": 8.8570223,
+      "tags": {
+        "addr:city": "Stein am Rhein",
+        "addr:country": "CH",
+        "addr:housenumber": "10",
+        "addr:postcode": "8260",
+        "addr:street": "Schiffländi",
+        "amenity": "restaurant",
+        "check_date": "2025-03-15",
+        "cuisine": "italian",
+        "indoor_seating": "yes",
+        "name": "Schiff",
+        "opening_hours": "off",
+        "outdoor_seating": "yes",
+        "phone": "+41 52 741 22 73",
+        "smoking": "no",
+        "tourism": "hotel",
+        "website": "https://hotel-ristorante-schiff.ch/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 247696933,
+      "lat": 47.6600963,
+      "lon": 8.8572063,
+      "tags": {
+        "addr:city": "Stein am Rhein",
+        "addr:country": "CH",
+        "addr:housenumber": "8",
+        "addr:postcode": "8260",
+        "addr:street": "Schiffländi",
+        "amenity": "restaurant",
+        "cuisine": "italian",
+        "email": "wasserfels1@bluewin.ch",
+        "indoor_seating": "yes",
+        "name": "Wasserfels",
+        "opening_hours": "Su-Th 10:00-22:00; Fr-Sa 10:00-23:00",
+        "outdoor_seating": "yes",
+        "phone": "+41 52 741 22 36",
+        "smoking": "no",
+        "tourism": "yes",
+        "website": "https://wasserfels.ch/",
+        "website:menu": "https://wasserfels.ch/download/speisekarte-11.05.2025.pdf",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 247696939,
+      "lat": 47.6594624,
+      "lon": 8.859654,
+      "tags": {
+        "addr:city": "Stein am Rhein",
+        "addr:country": "CH",
+        "addr:housename": "Zum Adler",
+        "addr:postcode": "8260",
+        "addr:street": "Rathausplatz",
+        "amenity": "restaurant",
+        "name": "Hotel Restaurant Adler",
+        "opening_hours": "PH,We-Mo 09:00-22:00+",
+        "outdoor_seating": "yes",
+        "phone": "+41 52 742 61 61",
+        "tourism": "hotel",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 247697238,
+      "lat": 47.6592985,
+      "lon": 8.8592705,
+      "tags": {
+        "addr:city": "Stein am Rhein",
+        "addr:country": "CH",
+        "addr:housenumber": "9",
+        "addr:postcode": "8260",
+        "addr:street": "Rathausplatz",
+        "amenity": "restaurant",
+        "delivery": "no",
+        "name": "Weinstube Rother Ochsen",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 247697242,
+      "lat": 47.6607026,
+      "lon": 8.859657,
+      "tags": {
+        "addr:city": "Stein am Rhein",
+        "addr:country": "CH",
+        "addr:housenumber": "2",
+        "addr:postcode": "8260",
+        "addr:street": "Fronhof",
+        "amenity": "restaurant",
+        "cuisine": "pizza",
+        "email": "gutenbergsteinamrhein@gmx.ch",
+        "name": "Gutenberg",
+        "opening_hours": "Mo-Su 08:45-23:30",
+        "phone": "+41 52 741 10 12",
+        "website": "http://www.flammeria-steinamrhein.ch",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 274768323,
+      "lat": 47.6955227,
+      "lon": 8.6412581,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "regional;sushi",
+        "indoor_seating": "yes",
+        "name": "Güterhof",
+        "note": "mit Sushi-Bar",
+        "opening_hours": "Su-Th 08:00-24:00; Fr-Sa 08:00+",
+        "outdoor_seating": "yes",
+        "phone": "+41 52 630 40 40",
+        "toilets:wheelchair": "no",
+        "website": "https://www.gueterhof.ch/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 283216746,
+      "lat": 47.7081589,
+      "lon": 8.5738871,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Nevada Range"
+      }
+    },
+    {
+      "type": "node",
+      "id": 283244611,
+      "lat": 47.7339609,
+      "lon": 8.5822868,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Restaurant Frohsinn"
+      }
+    },
+    {
+      "type": "node",
+      "id": 292418975,
+      "lat": 47.6953649,
+      "lon": 8.5756324,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "italian;pizza;regional",
+        "kitchen": "pizza",
+        "name": "Wirtschaft zum Bahnhof",
+        "opening_hours": "Mo-Fr 08:15-23:30; Sa 10:00-23:30; Su 10:00-22:00",
+        "outdoor_seating": "yes",
+        "phone": "+41 52 685 10 57",
+        "smoking": "outside",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 299417626,
+      "lat": 47.6977076,
+      "lon": 8.6336848,
+      "tags": {
+        "addr:city": "Schaffhausen",
+        "addr:country": "CH",
+        "addr:housenumber": "5",
+        "addr:postcode": "8200",
+        "addr:street": "Vorstadt",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Falken",
+        "opening_hours": "Mo-Th 08:00-22:30; Fr,Sa 08:00-24:00; Su 09:00-22:00",
+        "smoking": "separated",
+        "website": "https://www.falken-schaffhausen.ch/",
+        "wheelchair": "limited",
+        "wheelchair:description": "Man kommt ebenerdig rein, Es ist aber der Raucher Bereich. Rollstuhl WC ist nicht vorhanden, Der Lift der in den Nichtraucherbereich geht ist sehr klein.. Schon grössere Handrollstühle werden Probleme haben."
+      }
+    },
+    {
+      "type": "node",
+      "id": 330100672,
+      "lat": 47.6838858,
+      "lon": 8.6219647,
+      "tags": {
+        "addr:city": "Neuhausen am Rheinfall",
+        "addr:country": "CH",
+        "addr:housenumber": "100",
+        "addr:postcode": "8212",
+        "addr:street": "Zentralstrasse",
+        "amenity": "cafe",
+        "contact:email": "info@langs-cafe.ch",
+        "contact:phone": "+41 52 672 32 94",
+        "contact:website": "http://www.langs-cafe.ch/",
+        "description": "Temporärer Umzug ab 2022-02-22 in Restaurant Metropol während Bauphase am Industrieplatz.",
+        "diet:vegan": "no",
+        "diet:vegetarian": "yes",
+        "name": "Lang's Café",
+        "opening_hours": "Mo,Tu 07:00-18:00; Th-Sa 07:00-22:00+; PH,Su 07:30-18:00; We off",
+        "operator": "Familie Lang",
+        "outdoor_seating": "yes",
+        "payment:cash": "yes",
+        "payment:maestro": "yes",
+        "payment:postfinance_card": "yes",
+        "smoking": "no",
+        "takeaway": "yes",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 330440432,
+      "lat": 47.6804669,
+      "lon": 8.617991,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Pizzeria Rebstock",
+        "opening_hours": "Mo-Fr 11:00-14:00,17:30-22:00; Sa,Su 17:00-22:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 365771126,
+      "lat": 47.6597748,
+      "lon": 8.8592046,
+      "tags": {
+        "amenity": "restaurant",
+        "delivery": "no",
+        "internet_access": "no",
+        "internet_access:fee": "no",
+        "name": "Ilge",
+        "outdoor_seating": "yes",
+        "smoking": "no",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 365771682,
+      "lat": 47.6604409,
+      "lon": 8.8582045,
+      "tags": {
+        "amenity": "restaurant",
+        "indoor_seating": "yes",
+        "name": "Salmenstübli",
+        "outdoor_seating": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 365771787,
+      "lat": 47.6594052,
+      "lon": 8.8591488,
+      "tags": {
+        "amenity": "restaurant",
+        "delivery": "no",
+        "name": "Weinstube Sonne",
+        "opening_hours": "closed",
+        "outdoor_seating": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 365772059,
+      "lat": 47.659352,
+      "lon": 8.8592143,
+      "tags": {
+        "alt_name": "Zum Steinernen Trauben",
+        "amenity": "cafe",
+        "name": "Walz",
+        "outdoor_seating": "yes",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 689191668,
+      "lat": 47.7449553,
+      "lon": 8.521522,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Babental",
+        "opening_hours": "Su-Th 09:00-23:30; Fr-Sa 09:00-00:30",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 692848758,
+      "lat": 47.676506,
+      "lon": 8.8324606,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Restaurant Bacchus"
+      }
+    },
+    {
+      "type": "node",
+      "id": 727780371,
+      "lat": 47.7322844,
+      "lon": 8.4910851,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Hohbrugg"
+      }
+    },
+    {
+      "type": "node",
+      "id": 800716748,
+      "lat": 47.6640872,
+      "lon": 8.8510924,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "italian",
+        "name": "Pizzeria Pazza da Gianni"
+      }
+    },
+    {
+      "type": "node",
+      "id": 800720454,
+      "lat": 47.6606878,
+      "lon": 8.8578522,
+      "tags": {
+        "amenity": "fast_food",
+        "drive_through": "no",
+        "indoor_seating": "yes",
+        "name": "Tiergarten",
+        "outdoor_seating": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 803015308,
+      "lat": 47.6978358,
+      "lon": 8.6337653,
+      "tags": {
+        "addr:city": "Schaffhausen",
+        "addr:country": "CH",
+        "addr:housenumber": "9",
+        "addr:postcode": "8200",
+        "addr:street": "Vorstadt",
+        "amenity": "restaurant",
+        "cuisine": "thai",
+        "name": "Bambus",
+        "opening_hours": "Mo-Sa 11:30-14:00, 18:00-22:00",
+        "takeaway": "yes",
+        "website": "https://www.bambus.sh/",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 845054121,
+      "lat": 47.6997923,
+      "lon": 8.6265911,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date": "2023-04-19",
+        "name": "Schützenhaus",
+        "website": "https://www.schuetzenhaus.ch/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 928163532,
+      "lat": 47.6937845,
+      "lon": 8.6321829,
+      "tags": {
+        "amenity": "restaurant",
+        "award:GaultMillau": "13",
+        "name": "Wirtschaft zur Beckenburg",
+        "opening_hours": "Tu-Fr 11:00-14:30,18:00-23:30; Sa 18:00-24:00; Su,Mo off",
+        "phone": "+41 52 625 28 20",
+        "website": "https://www.beckenburg.ch/",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1314330942,
+      "lat": 47.6987203,
+      "lon": 8.5742739,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Restaurant Gemeindehaus",
+        "website": "https://www.gemeindehaus-beringen.ch",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1314330947,
+      "lat": 47.6989657,
+      "lon": 8.5739064,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Restaurant Ochsen",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1452908116,
+      "lat": 47.7612787,
+      "lon": 8.6092069,
+      "tags": {
+        "addr:city": "Merishausen",
+        "addr:housenumber": "78",
+        "addr:postcode": "8232",
+        "addr:street": "Hauptstrasse",
+        "amenity": "restaurant",
+        "cuisine": "regional;burger",
+        "name": "Restaurant Gemeindehaus",
+        "phone": "+41 (0)52 653 11 11",
+        "toilets:wheelchair": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1452911271,
+      "lat": 47.7613063,
+      "lon": 8.60881,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Rest. Kranz"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1452921616,
+      "lat": 47.7591186,
+      "lon": 8.6122486,
+      "tags": {
+        "addr:city": "Merishausen",
+        "addr:country": "CH",
+        "addr:housenumber": "18",
+        "addr:postcode": "8232",
+        "addr:street": "Durachstrasse",
+        "amenity": "cafe",
+        "cuisine": "regional",
+        "name": "Café Durach-Treff"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1454517272,
+      "lat": 47.7233692,
+      "lon": 8.6557001,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Bistro La Résidence",
+        "toilets:wheelchair": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1454517277,
+      "lat": 47.7239249,
+      "lon": 8.6631244,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Rest. Hirschen"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1564487864,
+      "lat": 47.6592481,
+      "lon": 8.8603068,
+      "tags": {
+        "amenity": "cafe",
+        "cuisine": "cake",
+        "internet_access": "no",
+        "name": "Egg's Tea Time and friends",
+        "opening_hours": "Sa 10:00-16:00",
+        "outdoor_seating": "yes",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1579662277,
+      "lat": 47.6596927,
+      "lon": 8.8588979,
+      "tags": {
+        "addr:city": "Stein am Rhein",
+        "addr:country": "CH",
+        "addr:housenumber": "21",
+        "addr:postcode": "8260",
+        "addr:street": "Rathausplatz",
+        "alt_name": "Cafe Zur Hoffnung",
+        "amenity": "cafe",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Ermatingers Café Späth",
+        "operator": "Späth",
+        "outdoor_seating": "yes",
+        "phone": "+41 52 741 21 82",
+        "smoking": "no",
+        "url": "https://www.zuckerbeck.ch/",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1580046169,
+      "lat": 47.6604697,
+      "lon": 8.8584475,
+      "tags": {
+        "amenity": "fast_food",
+        "indoor_seating": "yes",
+        "name": "Pok Thaifood",
+        "opening_hours": "We-Su 11:00-18:00",
+        "outdoor_seating": "yes",
+        "phone": "+41 79 643 88 76",
+        "takeaway": "yes",
+        "website": "https://pokthaifood.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1580046324,
+      "lat": 47.6603916,
+      "lon": 8.8585458,
+      "tags": {
+        "amenity": "cafe",
+        "cuisine": "ice_cream",
+        "indoor_seating": "yes",
+        "name": "il gelato",
+        "outdoor_seating": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1580046347,
+      "lat": 47.6603592,
+      "lon": 8.8586205,
+      "tags": {
+        "amenity": "cafe",
+        "indoor_seating": "yes",
+        "name": "la p'tite crêperie",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1588742357,
+      "lat": 47.6593594,
+      "lon": 8.8600467,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Krippenwelt",
+        "opening_hours": "Tu-Su 10:00-18:00",
+        "outdoor_seating": "yes",
+        "phone": "+41 52 721 00 05",
+        "tourism": "museum",
+        "wheelchair": "limited",
+        "wikidata": "Q95810029",
+        "xmas:feature": "crib_museum"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1639345945,
+      "lat": 47.6988503,
+      "lon": 8.6352191,
+      "tags": {
+        "addr:city": "Schaffhausen",
+        "addr:country": "CH",
+        "addr:housenumber": "27",
+        "addr:postcode": "8200",
+        "addr:street": "Schützengraben",
+        "amenity": "restaurant",
+        "check_date": "2023-06-17",
+        "name": "Schützenstube",
+        "opening_hours": "Mo-Fr 09:30-23:00; Sa \"für Gesellschaften\"",
+        "phone": "+41-52/6254249",
+        "website": "https://www.schuetzenstube.ch/",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1639345953,
+      "lat": 47.6946173,
+      "lon": 8.6473018,
+      "tags": {
+        "addr:city": "Schaffhausen",
+        "addr:country": "CH",
+        "addr:housenumber": "8",
+        "addr:postcode": "8200",
+        "addr:street": "Rheinhaldenstrasse",
+        "amenity": "restaurant",
+        "name": "Sommerlust",
+        "phone": "+41-52/6300060",
+        "website": "https://www.sommerlust.ch/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1708265935,
+      "lat": 47.6573109,
+      "lon": 8.8580709,
+      "tags": {
+        "amenity": "fast_food",
+        "indoor_seating": "no",
+        "name": "Pizza Boys",
+        "outdoor_seating": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1714276604,
+      "lat": 47.6985436,
+      "lon": 8.6346744,
+      "tags": {
+        "amenity": "fast_food",
+        "check_date:opening_hours": "2023-06-17",
+        "cuisine": "chinese",
+        "drive_through": "no",
+        "email": "chinatown@bluewin.ch",
+        "indoor_seating": "yes",
+        "name": "China Town",
+        "opening_hours": "11:00-22:00",
+        "outdoor_seating": "yes",
+        "takeaway": "yes",
+        "website": "https://www.chinatown-sh.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1714276612,
+      "lat": 47.6970579,
+      "lon": 8.6332805,
+      "tags": {
+        "addr:city": "Schaffhausen",
+        "addr:country": "CH",
+        "addr:housenumber": "1",
+        "addr:postcode": "8200",
+        "addr:street": "Schwertstrasse",
+        "alt_name": "Santa Lucia Schaffhausen",
+        "amenity": "restaurant",
+        "branch": "Schaffhausen",
+        "brand": "Santa Lucia",
+        "contact:fax": "+43 52 625 22 67",
+        "contact:phone": "+43 52 625 22 55",
+        "cuisine": "italian",
+        "name": "Santa Lucia",
+        "opening_hours": "Mo-Th 10:00-23:00; Fr-Sa 10:00-24:00; Su 10:00-22:30",
+        "operator": "Bindella",
+        "website": "https://www.bindella.ch/de/santa-lucia-schaffhausen.html",
+        "wheelchair": "limited",
+        "wheelchair:description": "Rollstuhl WC vis-à-vis Depot Interio, Office hours"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1714276615,
+      "lat": 47.698236,
+      "lon": 8.6356144,
+      "tags": {
+        "addr:housenumber": "7",
+        "addr:street": "Rosengässchen",
+        "amenity": "restaurant",
+        "cuisine": "african;ethiopian",
+        "indoor_seating": "yes",
+        "name": "Africana",
+        "outdoor_seating": "yes",
+        "smoking": "yes",
+        "website": "https://www.africana-restaurant.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1714276620,
+      "lat": 47.6951911,
+      "lon": 8.632727,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date:opening_hours": "2023-05-27",
+        "name": "zum Frieden",
+        "opening_hours": "Tu-Fr 11:30-14:30,17:00-23:30; Sa 10:00-14:30,17:00-23:30; Su-Mo off",
+        "phone": "+41 52 625 47 67",
+        "website": "https://wirtschaft-frieden.ch/",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1714276621,
+      "lat": 47.6985004,
+      "lon": 8.6338236,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "mexican",
+        "name": "Cheke's Mexican Food",
+        "opening_hours": "Mo-Sa 11:30-20:30",
+        "self_service": "yes",
+        "takeaway": "only",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1714276622,
+      "lat": 47.6981591,
+      "lon": 8.6339446,
+      "tags": {
+        "addr:city": "Schaffhausen",
+        "amenity": "fast_food",
+        "brand": "McDonald's",
+        "brand:wikidata": "Q38076",
+        "brand:wikipedia": "en:McDonald's",
+        "cuisine": "burger",
+        "name": "McDonald's",
+        "opening_hours": "Mo-Th, Su 09:00-23:00; Fr, Sa 09:00-02:00",
+        "takeaway": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1714276624,
+      "lat": 47.6983955,
+      "lon": 8.636579,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Kastanienbaum",
+        "smoking": "dedicated"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1714276625,
+      "lat": 47.6963918,
+      "lon": 8.6377696,
+      "tags": {
+        "addr:housenumber": "19",
+        "addr:street": "Bachstrasse",
+        "amenity": "restaurant",
+        "check_date": "2025-05-31",
+        "cuisine": "pizza",
+        "level": "0",
+        "name": "Mamma Rosa",
+        "opening_hours": "Mo,We-Sa 11:30-14:00,17:30-22:00; Tu off; Su 17:30-22:00; Dec 24 off",
+        "outdoor_seating": "yes",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "phone": "+41 52 625 24 69",
+        "reservation": "yes",
+        "smoking": "no",
+        "takeaway": "yes",
+        "toilets": "yes",
+        "website": "https://www.pizzeria-mammarosa.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1714276627,
+      "lat": 47.6982276,
+      "lon": 8.635617,
+      "tags": {
+        "amenity": "restaurant",
+        "indoor_seating": "yes",
+        "name": "Africana",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1714276628,
+      "lat": 47.6992061,
+      "lon": 8.6353017,
+      "tags": {
+        "addr:city": "Schaffhausen",
+        "addr:housenumber": "58",
+        "addr:street": "Vorstadt",
+        "amenity": "restaurant",
+        "name": "La Forchetta",
+        "opening_hours": "Mo-Sa 11:30-14:00,17:30-23:30",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1714276634,
+      "lat": 47.696492,
+      "lon": 8.6337033,
+      "tags": {
+        "addr:city": "Solothurn",
+        "addr:housenumber": "86",
+        "addr:postcode": "8200",
+        "addr:street": "Vordergasse",
+        "alt_name": "Caffè Spettacolo Schaffhausen",
+        "amenity": "cafe",
+        "branch": "Schaffhausen Altstadt",
+        "brand": "Caffè Spettacolo",
+        "cuisine": "coffee_shop;cake",
+        "name": "Caffè Spettacolo",
+        "opening_hours": "Mo-Fr 06:30-20:00; Sa 07:00-19:00; Su 08:00-19:00",
+        "operator": "Valora",
+        "website": "https://www.spettacolo.ch/",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1714276638,
+      "lat": 47.6986878,
+      "lon": 8.6339505,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "thai",
+        "name": "Sky Bar & Lounge",
+        "opening_hours": "Mo 15:00-23:30; Tu-Th 11:30-23:30; Fr 11:30-02:30, Sa 15:00-02:30, Su 15:00-23:30",
+        "phone": "+41 52 625 11 35",
+        "takeaway": "yes",
+        "website": "http://www.sky-sh.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1717939873,
+      "lat": 47.6958151,
+      "lon": 8.6405621,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "italian",
+        "name": "Little Italy",
+        "opening_hours": "Mo-Su 06:30-18:30",
+        "website": "https://littleitaly-sh.ch/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1717939875,
+      "lat": 47.6959464,
+      "lon": 8.6389063,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date:opening_hours": "2023-07-04",
+        "cuisine": "thai",
+        "indoor_seating": "yes",
+        "name": "Lemongrass",
+        "opening_hours": "Tu-Sa 11:00-14:00,18:00-22:00; Su off",
+        "outdoor_seating": "yes",
+        "phone": "+41 52 624 62 63",
+        "website": "http://www.lemongrass-sh.ch/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1717939876,
+      "lat": 47.6956058,
+      "lon": 8.6373322,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Hardereck",
+        "opening_hours": "Mo 10:00-14:00; Tu-Th 10:00-22:00; Fr,Sa 10:00-00:30; PH,Su off",
+        "toilets:wheelchair": "no",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1717939878,
+      "lat": 47.695745,
+      "lon": 8.6334402,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Theaterrestaurant",
+        "opening_hours": "Mo-Sa 09:00-23:00; Su 10:00-23:00; We off",
+        "outdoor_seating": "yes",
+        "phone": "+41 52 625 05 58",
+        "website": "https://www.theaterrestaurant.ch/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1717939880,
+      "lat": 47.6956995,
+      "lon": 8.6397655,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "italian",
+        "name": "Casanova",
+        "opening_hours": "11:00-22:30, Oct-Apr: Tu-Fr 14:00-17:00 off, Oct-Apr: Mo off",
+        "website": "https://www.casanova-sh.ch/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1717939885,
+      "lat": 47.6958656,
+      "lon": 8.6395698,
+      "tags": {
+        "addr:city": "Schaffhausen",
+        "addr:housenumber": "18/20",
+        "addr:postcode": "8200",
+        "addr:street": "Unterstadt",
+        "amenity": "restaurant",
+        "capacity": "80",
+        "check_date": "2023-06-28",
+        "cuisine": "italian",
+        "name": "Romana",
+        "opening_hours": "Mo-Su 11:00-23:00",
+        "phone": "+41 52 624 44 89",
+        "takeaway": "yes",
+        "website": "http://romana-schaffhausen.ch/",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1717939887,
+      "lat": 47.6956525,
+      "lon": 8.6355411,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "italian",
+        "diet:vegetarian": "yes",
+        "name": "La Piazza",
+        "opening_hours": "Mo-Sa 09:30-24:00; Su 10:00-24:00",
+        "toilets:wheelchair": "no",
+        "website": "https://www.lapiazza-restaurant.ch/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1717939890,
+      "lat": 47.6958839,
+      "lon": 8.6370533,
+      "tags": {
+        "amenity": "cafe",
+        "check_date:opening_hours": "2024-02-12",
+        "name": "Reber",
+        "opening_hours": "Mo-Fr 07:00-18:30; Sa 07:00-16:30; Su,PH off",
+        "website": "https://www.schaffhauserzungen.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1717939891,
+      "lat": 47.6957247,
+      "lon": 8.6392532,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Schäfli",
+        "opening_hours": "Tu-Sa 11:00-14:30,17:00-22:30, Su-Mo off",
+        "website": "https://www.gastro-tipp.ch/tipps_profile_detail.php?profileIDX=2387"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1797049906,
+      "lat": 47.6970716,
+      "lon": 8.6557003,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Frohsinn"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1806129197,
+      "lat": 47.6957959,
+      "lon": 8.6383149,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "Park Kumpir",
+        "opening_hours": "Mo-Th 09:00-23:00; Fr,Sa 09:00-24:00; Su 11:00-23:00",
+        "website": "http://www.parkkumpir.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1919092765,
+      "lat": 47.6620506,
+      "lon": 8.5144772,
+      "tags": {
+        "addr:city": "Wilchingen",
+        "addr:housenumber": "1",
+        "addr:place": "Rossberg",
+        "addr:postcode": "8217",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "email": "info@rossberghof.ch",
+        "name": "Rossberghof",
+        "phone": "+41 52 681 10 63",
+        "website": "https://www.rossberghof.ch/",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2024381443,
+      "lat": 47.6976459,
+      "lon": 8.6322131,
+      "tags": {
+        "addr:city": "Schaffhausen",
+        "addr:postcode": "8200",
+        "addr:street": "Bahnhofstrasse",
+        "amenity": "cafe",
+        "name": "Raponi",
+        "opening_hours": "Mo-Th 05:30-20:30; Fr 05:30-21:30; PH,Sa-Su 07:00-20:30",
+        "phone": "+41 52 625 65 64"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2024381446,
+      "lat": 47.6981979,
+      "lon": 8.6327394,
+      "tags": {
+        "addr:city": "Schaffhausen",
+        "addr:country": "CH",
+        "addr:housenumber": "43",
+        "addr:postcode": "8200",
+        "addr:street": "Bahnhofstrasse",
+        "alt_name": "Burger King Schaffhausen",
+        "amenity": "fast_food",
+        "branch": "Schaffhausen Bahnhof",
+        "brand": "Carl's Jr.",
+        "cuisine": "burger",
+        "level": "0",
+        "name": "Carl's Jr.",
+        "old_name": "Brasserie Schaffhausen",
+        "takeaway": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2024398494,
+      "lat": 47.6985763,
+      "lon": 8.6334065,
+      "tags": {
+        "addr:city": "Schaffhausen",
+        "addr:postcode": "8200",
+        "amenity": "fast_food",
+        "branch": "Schaffhausen (U-Löwengässchen)",
+        "brand": "Brezelkönig",
+        "brand:wikidata": "Q111728604",
+        "cuisine": "pretzel",
+        "level": "-1",
+        "name": "Brezelkönig",
+        "opening_hours": "Mo-Fr 05:00-20:00; Sa 06:00-18:00; Su off",
+        "operator": "Valora",
+        "shop": "bakery",
+        "takeaway": "only",
+        "website": "https://brezelkoenig.ch/de/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2027939942,
+      "lat": 47.6961353,
+      "lon": 8.6353486,
+      "tags": {
+        "addr:city": "Schaffhausen",
+        "addr:country": "CH",
+        "addr:housenumber": "57",
+        "addr:postcode": "8200",
+        "addr:street": "Vordergasse",
+        "amenity": "cafe",
+        "check_date": "2025-06-07",
+        "fax": "+41 (0)52 625 21 04",
+        "name": "Café Neier",
+        "opening_hours": "Tu-Fr 7:00-18:30;Sa 7:00-16:30",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "website": "https://www.b%C3%A4ckereihoyer.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2031533218,
+      "lat": 47.6965907,
+      "lon": 8.6380733,
+      "tags": {
+        "amenity": "fast_food",
+        "check_date": "2023-06-28",
+        "cuisine": "kebab",
+        "name": "Dürum Take Away",
+        "opening_hours": "Mo-Su 17:30-22:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2034350055,
+      "lat": 47.6989062,
+      "lon": 8.6346745,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Zum Kleinen Käfig",
+        "opening_hours": "Tu-Fr 09:00-21:00; Sa 10:00-18:30"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2034406109,
+      "lat": 47.6996341,
+      "lon": 8.6352703,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Gasthaus zum Adler",
+        "opening_hours": "Tu-Sa 08:30-23:00; Su, PH 09:00-22:00; Mo off",
+        "phone": "+41 52 625 55 15",
+        "website": "https://www.gasthaus-adler.ch/index.php?id=2"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2077709096,
+      "lat": 47.7404065,
+      "lon": 8.7150866,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Treffpunkt"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2104089912,
+      "lat": 47.6994947,
+      "lon": 8.6325886,
+      "tags": {
+        "addr:city": "Schaffhausen",
+        "addr:country": "CH",
+        "addr:housenumber": "2",
+        "addr:postcode": "8200",
+        "addr:street": "Mühlentalstrasse",
+        "amenity": "restaurant",
+        "name": "Brasserie Zikade"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2117630522,
+      "lat": 47.716743,
+      "lon": 8.6481386,
+      "tags": {
+        "addr:city": "Schaffhausen",
+        "addr:country": "CH",
+        "addr:housenumber": "329",
+        "addr:postcode": "8200",
+        "addr:street": "Hochstrasse",
+        "amenity": "restaurant",
+        "name": "Sandlöchli, TTM Gastro"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2246532517,
+      "lat": 47.7512264,
+      "lon": 8.5395838,
+      "tags": {
+        "addr:city": "Schleitheim",
+        "addr:country": "CH",
+        "addr:place": "Schleitheimer Schlossranden",
+        "addr:postcode": "8226",
+        "amenity": "restaurant",
+        "email": "steini@mail.ch",
+        "name": "Waldwirtschaft Schlossranden",
+        "opening_hours": "Mar-Oct: Sa-Su",
+        "outdoor_seating": "yes",
+        "payment:cash": "yes",
+        "phone": "+41799330478",
+        "takeaway": "yes",
+        "website": "https://schaffhauserland.ch/de/index/detail/waldwirtschaft-schlossranden-44020dd8-a115-4b75-9bb6-97582042b1ac.html",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2288101397,
+      "lat": 47.6960548,
+      "lon": 8.6376191,
+      "tags": {
+        "addr:housenumber": "3/5",
+        "addr:postcode": "8200",
+        "addr:street": "Brunnengasse",
+        "amenity": "restaurant",
+        "cuisine": "international",
+        "email": "essen@dchuchi.ch",
+        "name": "D‘Chuchi",
+        "opening_hours": "Tu, Sa 18:00-23:30; We-Fr 11:30-14:00, 18:00-23:30",
+        "phone": "+41 52 620 05 28",
+        "website": "https://www.dchuchi.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2377249284,
+      "lat": 47.695748,
+      "lon": 8.6396928,
+      "tags": {
+        "amenity": "cafe",
+        "check_date:opening_hours": "2023-05-31",
+        "cuisine": "ice_cream",
+        "internet_access": "no",
+        "name": "Gelateria El Bertin",
+        "opening_hours": "Su-Th 12:00-23:00; Fr-Sa 12:00-24:00",
+        "phone": "+41 52 625 60 03",
+        "website": "https://elbertin.ch/",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2440107864,
+      "lat": 47.6981943,
+      "lon": 8.6416322,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Cafeteria Huus Emmersberg"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2440742572,
+      "lat": 47.7211355,
+      "lon": 8.6641386,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Restaurant Herbilo"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2441580525,
+      "lat": 47.6993883,
+      "lon": 8.6501686,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Restaurant Stauffacher",
+        "opening_hours": "Sa-Su off",
+        "website": "https://www.restaurant-stauffacher.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2444086392,
+      "lat": 47.7029291,
+      "lon": 8.6435682,
+      "tags": {
+        "addr:city": "Schaffhausen",
+        "addr:housenumber": "55",
+        "addr:postcode": "8200",
+        "addr:street": "Grubenstrasse",
+        "amenity": "fast_food",
+        "cuisine": "asian",
+        "name": "Mahasia Taste of Asa",
+        "opening_hours": "Fr-Su 17.30-21.00",
+        "phone": "+41 77 267 99 13",
+        "website": "https://mahasia.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2447464061,
+      "lat": 47.6953794,
+      "lon": 8.6445429,
+      "tags": {
+        "amenity": "cafe",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2460185187,
+      "lat": 47.6996481,
+      "lon": 8.6348945,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Adler Gartenwirtschaft",
+        "opening_hours": "Tu-Sa 08:30-23:00; Su, PH 09:00-22:00; Mo off",
+        "outdoor_seating": "yes",
+        "phone": "+41 52 625 55 15",
+        "website": "https://www.gasthaus-adler.ch/index.php?id=2"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2614750997,
+      "lat": 47.6981475,
+      "lon": 8.6590515,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Cafeteria Altersheim"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2941855751,
+      "lat": 47.711,
+      "lon": 8.6501591,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Im Ring-Park"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2946596948,
+      "lat": 47.6788183,
+      "lon": 8.615437,
+      "tags": {
+        "addr:city": "Neuhausen am Rheinfall",
+        "addr:country": "CH",
+        "addr:housenumber": "17",
+        "addr:postcode": "8212",
+        "addr:street": "Laufengasse",
+        "amenity": "restaurant",
+        "capacity": "60 Personen",
+        "cuisine": "snack;grill",
+        "indoor_seating": "yes",
+        "name": "Cafe Mühleradhaus",
+        "opening_hours": "Mo-Su 11:30+",
+        "outdoor_seating": "yes",
+        "smoking": "no",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2949599979,
+      "lat": 47.6871046,
+      "lon": 8.6223447,
+      "tags": {
+        "addr:housenumber": "143",
+        "addr:street": "Zentralstrasse",
+        "amenity": "restaurant",
+        "check_date": "2023-07-30",
+        "name": "Rest. Scheidegg"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2949611714,
+      "lat": 47.6803403,
+      "lon": 8.6188256,
+      "tags": {
+        "addr:housenumber": "10",
+        "addr:street": "Zentralstrasse",
+        "amenity": "fast_food",
+        "cuisine": "kebab",
+        "name": "Rheinfall Imbiss"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2949611731,
+      "lat": 47.6805769,
+      "lon": 8.6190697,
+      "tags": {
+        "addr:housenumber": "16",
+        "addr:street": "Zentralstrasse",
+        "amenity": "cafe",
+        "name": "Susi‘s Bistro"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2951571621,
+      "lat": 47.6959798,
+      "lon": 8.6321366,
+      "tags": {
+        "addr:city": "Schaffhausen",
+        "addr:country": "CH",
+        "addr:housenumber": "73",
+        "addr:postcode": "8200",
+        "addr:street": "Neustadt",
+        "amenity": "restaurant",
+        "cuisine": "chinese",
+        "name": "Fung Ze Yuan",
+        "opening_hours": "Mo-Fr 11:30-14:00, Mo-Sa 17:00-22:00",
+        "phone": "+41 (0)52 625 32 90",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2955574972,
+      "lat": 47.7208371,
+      "lon": 8.6649906,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Tchibo",
+        "opening_hours": "Mo-Fr 09:00-20:00; Sa 08:00-18:00; PH,Su off",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2955574975,
+      "lat": 47.7206221,
+      "lon": 8.6637979,
+      "tags": {
+        "addr:city": "Schaffhausen",
+        "addr:housenumber": "4",
+        "addr:postcode": "8207",
+        "addr:street": "Stüdliackerstrasse",
+        "alt_name": "Migros Restaurant Herblinger-Markt",
+        "amenity": "restaurant",
+        "branch": "Schaffhausen Herblinger-Markt",
+        "name": "Migros Restaurant",
+        "opening_hours": "Mo-Fr 08:30-20:00; Sa 08:00-19:00; PH,Su off",
+        "operator": "Genossenschaft Migros Ostschweiz",
+        "toilets:wheelchair": "yes",
+        "website": "https://filialen.migros.ch/de/migros-restaurant-schaffhausen-herblinger-markt",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2955574985,
+      "lat": 47.7203021,
+      "lon": 8.6646504,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Rest. Sudhuus",
+        "opening_hours": "Mo-Fr 09:00-20:00; Sa 08:00-18:00; PH,Su off"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2955574990,
+      "lat": 47.7212086,
+      "lon": 8.6659935,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Café Munötli"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2955607720,
+      "lat": 47.704789,
+      "lon": 8.6402407,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Schönbühl",
+        "opening_hours": "09:30-17:30",
+        "takeaway": "no",
+        "website": "http://www.restaurant.schoenbuehl-sh.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2959689480,
+      "lat": 47.6976841,
+      "lon": 8.6328962,
+      "tags": {
+        "addr:city": "Schaffhausen",
+        "addr:country": "CH",
+        "addr:housenumber": "28",
+        "addr:postcode": "8200",
+        "addr:street": "Bahnhofstrasse",
+        "amenity": "fast_food",
+        "brand": "Subway",
+        "brand:wikidata": "Q244457",
+        "cuisine": "sandwich",
+        "name": "Subway",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2961456488,
+      "lat": 47.6960248,
+      "lon": 8.632962,
+      "tags": {
+        "addr:city": "Schaffhausen",
+        "addr:country": "CH",
+        "addr:housenumber": "3",
+        "addr:postcode": "8200",
+        "addr:street": "Tanne",
+        "amenity": "restaurant",
+        "cuisine": "swiss",
+        "name": "Tanne Schaffhausen",
+        "opening_hours": "Tu,We 11:30-14:00; Th,Fr 11:30-22:00; Sa 10:00-16:00",
+        "website": "https://www.tanneschaffhausen.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2975311598,
+      "lat": 47.696999,
+      "lon": 8.6354848,
+      "tags": {
+        "addr:city": "Schaffhausen",
+        "addr:country": "CH",
+        "addr:housenumber": "6",
+        "addr:postcode": "8200",
+        "addr:street": "Stadthausgasse",
+        "amenity": "restaurant",
+        "check_date": "2025-05-30",
+        "cuisine": "regional",
+        "name": "Ufenau",
+        "opening_hours": "Tu-Fr 11:30-14:00,18:00-23:00; Sa 18:00-23:00",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "website": "https://restaurant-ufenau.ch/",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2990902038,
+      "lat": 47.6979106,
+      "lon": 8.6258738,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Cafeteria Altersheim Steig",
+        "opening_hours": "13:30-17:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3101310497,
+      "lat": 47.6573128,
+      "lon": 8.8583479,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "indian"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3102498701,
+      "lat": 47.6599269,
+      "lon": 8.8573081,
+      "tags": {
+        "addr:city": "Stein am Rhein",
+        "addr:country": "CH",
+        "addr:housenumber": "10",
+        "addr:postcode": "8260",
+        "addr:street": "Metzggass",
+        "amenity": "cafe",
+        "contact:facebook": "uferlosanderschifflaende",
+        "cuisine": "arab;breakfast;burger;coffee_shop;international;pasta",
+        "indoor_seating": "yes",
+        "name": "Uferlos",
+        "opening_hours": "Mo-We, Su 08:30-18:00; Th-Sa 08:30-22:00",
+        "outdoor_seating": "yes",
+        "phone": "+41 77 466 80 06",
+        "smoking": "outside",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3102498704,
+      "lat": 47.6596633,
+      "lon": 8.8575451,
+      "tags": {
+        "addr:city": "Stein am Rhein",
+        "addr:country": "CH",
+        "addr:housenumber": "5",
+        "addr:postcode": "8260",
+        "addr:street": "Schiffländi",
+        "amenity": "restaurant",
+        "check_date": "2024-10-18",
+        "cuisine": "fish;spanish",
+        "indoor_seating": "yes",
+        "name": "Rheingerbe",
+        "outdoor_seating": "yes",
+        "phone": "+41 52 741 29 91",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3135615201,
+      "lat": 47.7231538,
+      "lon": 8.6622525,
+      "tags": {
+        "addr:city": "Schaffhausen",
+        "addr:country": "CH",
+        "addr:housenumber": "5",
+        "addr:postcode": "8207",
+        "addr:street": "Schlossstrasse",
+        "amenity": "restaurant",
+        "name": "Rest. Adler"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3159216085,
+      "lat": 47.7173144,
+      "lon": 8.642552,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "chinese",
+        "fixme": "Still there? Name is probably Takeawa_y_",
+        "name": "Asia Takeawax"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3159216089,
+      "lat": 47.7063729,
+      "lon": 8.6348065,
+      "tags": {
+        "addr:city": "Schaffhausen",
+        "addr:housenumber": "29",
+        "addr:street": "Wiesenweg",
+        "amenity": "restaurant",
+        "name": "Vrenelisgärtli"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3172484013,
+      "lat": 47.7247188,
+      "lon": 8.6352416,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Rest. Buechbrunnen"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3180398791,
+      "lat": 47.573544,
+      "lon": 8.5644325,
+      "tags": {
+        "addr:city": "Buchberg",
+        "addr:housenumber": "22",
+        "addr:postcode": "8454",
+        "addr:street": "Dorfstrasse",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "email": "info@cafe-rebe.ch",
+        "name": "Café Rebe",
+        "opening_hours": "Mo off; Tu-Sa 09:00-18:00; Su 10:00-18:00",
+        "outdoor_seating": "yes",
+        "phone": "+41 44 867 12 63",
+        "website": "http://www.cafe-rebe.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3186963892,
+      "lat": 47.7117241,
+      "lon": 8.6353212,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Bistro Olive",
+        "opening_hours": "Mo-Fr 06:45-19:00",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3186963915,
+      "lat": 47.7058723,
+      "lon": 8.6256184,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Rest. Mint",
+        "opening_hours": "Mo-Fr 08:30-17:00; Sa-Su 11:30-17:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3186963934,
+      "lat": 47.6992222,
+      "lon": 8.6317983,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Bull & Bonito"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3191532076,
+      "lat": 47.70292,
+      "lon": 8.498251,
+      "tags": {
+        "addr:city": "Gächlingen",
+        "addr:country": "CH",
+        "addr:housenumber": "5",
+        "addr:postcode": "8214",
+        "addr:street": "Dorfstrasse",
+        "amenity": "restaurant",
+        "cuisine": "pizza",
+        "name": "Cucina D’Alfonso Kreuz",
+        "phone": "+41 52 681 10 80",
+        "website": "https://www.cucinakreuz.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3200080286,
+      "lat": 47.6986094,
+      "lon": 8.460892,
+      "tags": {
+        "addr:city": "Hallau",
+        "addr:country": "CH",
+        "addr:housenumber": "8",
+        "addr:postcode": "8215",
+        "addr:street": "Bergstrasse",
+        "amenity": "restaurant",
+        "cuisine": "italian",
+        "delivery": "yes",
+        "name": "Trattoria La Calabrisella",
+        "outdoor_seating": "yes",
+        "takeaway": "yes",
+        "website": "https://www.la-calabrisella.ch/",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3204720024,
+      "lat": 47.7559023,
+      "lon": 8.4978265,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Kaffeestübli",
+        "opening_hours": "14:00-17:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3206147403,
+      "lat": 47.6668243,
+      "lon": 8.4364103,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Boxen-Stop"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3217414495,
+      "lat": 47.6903157,
+      "lon": 8.4992104,
+      "tags": {
+        "addr:city": "Neunkirch",
+        "addr:housenumber": "26",
+        "addr:street": "Vordergasse",
+        "amenity": "restaurant",
+        "name": "Gmaandhuus8213",
+        "website": "https://www.gmaandhuus8213.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3300805727,
+      "lat": 47.6967112,
+      "lon": 8.6356635,
+      "tags": {
+        "addr:city": "Schaffhausen",
+        "addr:country": "CH",
+        "addr:housenumber": "7",
+        "addr:postcode": "8200",
+        "addr:street": "Kirchhofplatz",
+        "amenity": "restaurant",
+        "contact:fax": "+41 52 635 75 65",
+        "contact:website": "http://www.kronenhof.ch",
+        "cuisine": "regional",
+        "name": "Kronenstube",
+        "opening_hours": "Mo-Th 08:00-22:30; Fr,Sa 08:00-23:00; Su 10:00-22:00",
+        "website": "https://www.kronenhof.ch/restaurants"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3311668626,
+      "lat": 47.7010878,
+      "lon": 8.439162,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Egg Beizli",
+        "opening_hours": "Su 11:00-17:00",
+        "operator": "Verein Skilift Egg",
+        "phone": "+41 (0)52 681 46 36",
+        "smoking": "no",
+        "website": "https://www.skilifthallau.ch/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3389531705,
+      "lat": 47.7047094,
+      "lon": 8.6199092,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Randenstübli"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3395993049,
+      "lat": 47.6983639,
+      "lon": 8.6354057,
+      "tags": {
+        "addr:city": "Schaffhausen",
+        "addr:housenumber": "38",
+        "addr:postcode": "8200",
+        "addr:street": "Webergasse",
+        "amenity": "restaurant",
+        "cuisine": "italian",
+        "name": "Neu Sternen",
+        "opening_hours": "Tu-Sa 11:00-14:30, 17:30-23:00",
+        "toilets:wheelchair": "no",
+        "website": "http://neu-sternen.ch",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3678875497,
+      "lat": 47.6976701,
+      "lon": 8.4600362,
+      "tags": {
+        "addr:city": "Hallau",
+        "addr:country": "CH",
+        "addr:housenumber": "48",
+        "addr:postcode": "8215",
+        "addr:street": "Hauptstrasse",
+        "amenity": "restaurant",
+        "name": "Rathauskeller",
+        "opening_hours": "Mo-Fr 08:30-20:00",
+        "website": "https://www.rathauskeller-hallau.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3770409857,
+      "lat": 47.6982183,
+      "lon": 8.6365623,
+      "tags": {
+        "addr:housenumber": "5",
+        "addr:postcode": "8200",
+        "addr:street": "Webergasse",
+        "amenity": "cafe",
+        "cuisine": "regional",
+        "internet_access": "wlan",
+        "name": "Kaffeemacherei Bohnenblühn",
+        "opening_hours": "Tu-Fr 08:00-11:45,14:00-18:00; Sa 08:00-16:00; Su-Mo off",
+        "website": "http://bohnenbluehn.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3802817951,
+      "lat": 47.6566621,
+      "lon": 8.4840378,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "swiss",
+        "name": "Bad Osterfingen",
+        "opening_hours": "We-Su 10:00-23:00",
+        "phone": "+41 52 681 21 21",
+        "restaurant": "single_dish",
+        "website": "https://www.badosterfingen.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3810523825,
+      "lat": 47.7494343,
+      "lon": 8.4847438,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Löwen",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3813154000,
+      "lat": 47.7119847,
+      "lon": 8.6509889,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "pizza",
+        "name": "Casa Mia",
+        "opening_hours": "Mo-Su 10:00-24:00",
+        "website": "https://www.facebook.com/Casa-Mia-Bar-Restaurant-Pizzeria-832887626797825/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3936400738,
+      "lat": 47.6985827,
+      "lon": 8.6318162,
+      "tags": {
+        "amenity": "restaurant",
+        "contact:instagram": "http://www.instagram.com/seldas.ch",
+        "facebook": "https://www.facebook.com/Seldas.ch",
+        "indoor_seating": "yes",
+        "name": "Selda's",
+        "opening_hours": "Tu-Fr 15:00-23:00; Sa 15:00-24:00",
+        "outdoor_seating": "yes",
+        "phone": "+41 52 620 10 00",
+        "smoking": "outside",
+        "website": "https://seldas.ch/restaurantbar/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4089157362,
+      "lat": 47.6816237,
+      "lon": 8.6221371,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Edelweiss",
+        "opening_hours": "Mo-Fr 14:00-23:30, Sa 12:00-00:30, Su 12:00-17:00",
+        "phone": "+41 52 670 10 63",
+        "website": "http://www.hotel-edelweiss-nh.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4150344091,
+      "lat": 47.6844381,
+      "lon": 8.558188,
+      "tags": {
+        "addr:housename": "Sunnegg",
+        "addr:housenumber": "29",
+        "addr:street": "Dorfstrasse",
+        "amenity": "cafe",
+        "internet_access": "wlan",
+        "internet_access:fee": "yes",
+        "level": "0",
+        "name": "Kafi Sunnegg",
+        "opening_hours": "Mo-Su 09:00-22:00",
+        "operator": "Hedi und Kurt Ritzmann",
+        "payment:coins": "no",
+        "payment:notes": "no",
+        "self_service": "yes",
+        "smoking": "outside",
+        "website": "https://kafisunnegg.ch/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4172100473,
+      "lat": 47.7085959,
+      "lon": 8.8098748,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Hirschen",
+        "opening_hours": "We 10:00-13:30,17:00+; Th,Fr 17:30+; Sa 08:30-13:30,17:30+; Su 08:30-14:00",
+        "website": "https://www.hirschen.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4248320889,
+      "lat": 47.6974406,
+      "lon": 8.6337008,
+      "tags": {
+        "addr:city": "Schaffhausen",
+        "addr:country": "CH",
+        "addr:housenumber": "28",
+        "addr:postcode": "8200",
+        "addr:street": "Fronwagplatz",
+        "amenity": "cafe",
+        "name": "Noordlicht",
+        "opening_hours": "Mo-Fr 09:00-18:00; Sa 08:00-17:00; Su 10:00-17:00",
+        "outdoor_seating": "yes",
+        "website": "http://www.noordlicht.ch",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4320199208,
+      "lat": 47.7498697,
+      "lon": 8.4868203,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Gasthaus zur Brauerei",
+        "website": "http://www.a-o.ch/8226-brauerei",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4385050072,
+      "lat": 47.6777408,
+      "lon": 8.6115528,
+      "tags": {
+        "addr:city": "Neuhausen am Rheinfall",
+        "addr:street": "Rheinfallquai",
+        "amenity": "fast_food",
+        "indoor_seating": "no",
+        "name": "Insel Bistro",
+        "outdoor_seating": "no",
+        "takeaway": "only"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4504573274,
+      "lat": 47.6972192,
+      "lon": 8.6325922,
+      "tags": {
+        "addr:city": "Schaffhausen",
+        "addr:country": "CH",
+        "addr:housenumber": "9",
+        "addr:postcode": "8200",
+        "addr:street": "Schwertstrasse",
+        "amenity": "fast_food",
+        "cuisine": "sandwich",
+        "description": "Durchführung Buchsbaum Passage auf Seite der Schwertstrasse",
+        "name": "SandiBox",
+        "opening_hours": "Mo-Fr 06:30-18:30; Sa 06:30-14:30; Su,PH off",
+        "operator": "Ermatinger",
+        "takeaway": "only",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4512385525,
+      "lat": 47.6977271,
+      "lon": 8.6360052,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "Top Asia Mex",
+        "opening_hours": "Mo-Th 11:00-24:00; Fr 11:00-03:00,Sa 17:00-03:00",
+        "takeaway": "only"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4512802692,
+      "lat": 47.6991203,
+      "lon": 8.6422095,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Rest. Alterszentrum Emmersberg",
+        "opening_hours": "Mo-Su 08:30-18:00",
+        "phone": "+41 52 630 46 08",
+        "website": "https://alterszentrum-emmersberg.ch/bei-uns-zu-gast/gastronomie/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4707631847,
+      "lat": 47.7549538,
+      "lon": 8.6696861,
+      "tags": {
+        "addr:city": "Lohn SH",
+        "addr:country": "CH",
+        "addr:housename": "Restaurant Sternen",
+        "addr:housenumber": "5",
+        "addr:postcode": "8235",
+        "addr:street": "Unterdorf",
+        "amenity": "restaurant",
+        "name": "Sternen",
+        "website": "http://sternen-lohn.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4746039524,
+      "lat": 47.6955267,
+      "lon": 8.6325438,
+      "tags": {
+        "alt_name": "Bistro am Herrenacker",
+        "amenity": "restaurant",
+        "cuisine": "international",
+        "email": "bistro@meetingpoint-sh.ch",
+        "name": "Meetingpoint",
+        "opening_hours": "Tu-Sa 09:00-14:00; PH,Su,Mo off",
+        "outdoor_seating": "yes",
+        "phone": "+41 52 550 26 16",
+        "smoking": "outside",
+        "website": "https://www.meetingpoint-sh.ch/bistro/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5022544623,
+      "lat": 47.6955864,
+      "lon": 8.6398566,
+      "tags": {
+        "addr:street": "Läufergässchen",
+        "amenity": "fast_food",
+        "contact:phone": "+41 78 715 35 04",
+        "name": "Sababa Food",
+        "name:de": "Sababa Food",
+        "opening_hours": "Mo-Sa 11:00-14:00,17:00-22:00; Su 14:00-21:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5117030715,
+      "lat": 47.6983671,
+      "lon": 8.6363868,
+      "tags": {
+        "addr:city": "Schaffhausen",
+        "addr:country": "CH",
+        "addr:housenumber": "12",
+        "addr:postcode": "8200",
+        "addr:street": "Webergasse",
+        "amenity": "cafe",
+        "name": "Mohrenkopf"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5154005724,
+      "lat": 47.6969021,
+      "lon": 8.6354269,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "kebab;pizza",
+        "name": "Charisma Imbiss",
+        "name:en": "Charisma"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5315437609,
+      "lat": 47.6803811,
+      "lon": 8.6181756,
+      "tags": {
+        "amenity": "restaurant",
+        "internet_access": "wlan",
+        "name": "Restaurant CM Brauhaus",
+        "toilets:wheelchair": "no",
+        "website": "https://cmbrauhaus.ch/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5632226439,
+      "lat": 47.6999925,
+      "lon": 8.6256757,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Spielvi"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6080736969,
+      "lat": 47.7072501,
+      "lon": 8.8103879,
+      "tags": {
+        "addr:city": "Ramsen",
+        "addr:country": "CH",
+        "addr:housenumber": "260",
+        "addr:postcode": "8262",
+        "addr:street": "Hauptstrasse",
+        "amenity": "restaurant",
+        "name": "Restaurant Leon",
+        "opening_hours": "Mo-Su 11:00-14:00,17:00-23:30"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6133577662,
+      "lat": 47.7027718,
+      "lon": 8.646669,
+      "tags": {
+        "addr:city": "Schaffhausen",
+        "addr:housenumber": "92",
+        "addr:postcode": "8200",
+        "addr:street": "Grubenstrasse",
+        "amenity": "restaurant",
+        "cuisine": "pizza",
+        "name": "Mondo Caffé",
+        "opening_hours": "Mo-Sa 09:00-23:00",
+        "outdoor_seating": "yes",
+        "smoking": "no",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6198098459,
+      "lat": 47.6968918,
+      "lon": 8.6327445,
+      "tags": {
+        "addr:city": "Schaffhausen",
+        "addr:housenumber": "5",
+        "addr:postcode": "8200",
+        "addr:street": "Posthof",
+        "amenity": "restaurant",
+        "check_date": "2023-06-02",
+        "delivery": "no",
+        "name": "Suren's",
+        "opening_hours": "Mo-Tu 10:00-14:00,16:30-23:30; Fr 10:00-14:00,16:30-00:30; Sa 11:00-00:30",
+        "outdoor_seating": "yes",
+        "phone": "+41 52 533 94 02",
+        "website": "https://surens.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6258528119,
+      "lat": 47.7049109,
+      "lon": 8.6222823,
+      "tags": {
+        "addr:housenumber": "117",
+        "addr:street": "Breitenaustrasse",
+        "amenity": "fast_food",
+        "name": "KSS-Restaurant",
+        "phone": "+41 52 633 02 22",
+        "website": "https://www.kss.ch/EssenTrinken/restaurant-timeout.php"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6449982424,
+      "lat": 47.6514276,
+      "lon": 8.8530098,
+      "tags": {
+        "addr:housenumber": "41",
+        "addr:street": "Kaltenbacherstrasse",
+        "amenity": "cafe",
+        "name": "Walz",
+        "opening_hours": "Mo-Fr 07:00-18:30"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6534066486,
+      "lat": 47.5768204,
+      "lon": 8.5718379,
+      "tags": {
+        "addr:city": "Rüdlingen",
+        "addr:country": "CH",
+        "addr:housenumber": "25",
+        "addr:postcode": "8455",
+        "addr:street": "Hinterdorfstrasse",
+        "amenity": "restaurant",
+        "name": "zur Stube",
+        "name:de": "Wirtschaft zur Stube",
+        "phone": "+41 44 867 01 30"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7132233582,
+      "lat": 47.6792367,
+      "lon": 8.6073678,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "burger;international;ice_cream",
+        "delivery": "no",
+        "name": "Otterstall",
+        "outdoor_seating": "yes",
+        "smoking": "outside",
+        "takeaway": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7171510851,
+      "lat": 47.6903991,
+      "lon": 8.5007974,
+      "tags": {
+        "addr:city": "Neuenkirch",
+        "addr:housenumber": "2",
+        "addr:postcode": "8213",
+        "addr:street": "Vordergasse",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "email": "auskunft@klettgauerhof-neunkirch.ch",
+        "name": "Restaurant Weinstube Klettgauerhof",
+        "opening_hours": "Mo-Fr 08:00-14:00, 16:30-00:00",
+        "phone": "+41 52 533 91 79",
+        "website": "https://klettgauerhof-neunkirch.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7283680410,
+      "lat": 47.6838908,
+      "lon": 8.6219358,
+      "tags": {
+        "addr:city": "Neuhausen am Rheinfall",
+        "addr:country": "CH",
+        "addr:housenumber": "100",
+        "addr:postcode": "8212",
+        "addr:street": "Zentralstrasse",
+        "amenity": "restaurant",
+        "diet:vegan": "no",
+        "diet:vegetarian": "yes",
+        "name": "Metropol",
+        "note": "Der Node mit dem Restaurant wird aufgrund der komplizierten Situation noch belassen bis klar ist ob der Charakter eher Restaurant oder Café ist.",
+        "opening_hours": "Mo,Tu 07:00-18:00; Th-Sa 07:00-22:00+; PH,Su 07:30-18:00; We off",
+        "outdoor_seating": "yes",
+        "takeaway": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7418876368,
+      "lat": 47.6603967,
+      "lon": 8.8582822,
+      "tags": {
+        "amenity": "cafe",
+        "cuisine": "coffee_shop",
+        "indoor_seating": "yes",
+        "name": "Kafi und meh",
+        "outdoor_seating": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7450557428,
+      "lat": 47.6962252,
+      "lon": 8.6336291,
+      "tags": {
+        "amenity": "restaurant",
+        "branch": "Schaffhausen",
+        "brand": "Manora",
+        "name": "Manora",
+        "opening_hours": "Mo-Fr 08:00-18:00; Sa 08:00-17:00",
+        "operator": "Restaurants Manora"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7509593796,
+      "lat": 47.7638127,
+      "lon": 8.6403058,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Beiz Büttenhardt",
+        "opening_hours": "Th-Su 11:00-18:00",
+        "website": "https://www.beiz-buettenhardt.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7528938058,
+      "lat": 47.6923448,
+      "lon": 8.6232685,
+      "tags": {
+        "addr:city": "Schaffhausen",
+        "addr:housenumber": "4",
+        "addr:postcode": "8200",
+        "addr:street": "Rheinweg",
+        "alt_name": "Dieci Pizzakurier Schaffhausen",
+        "amenity": "fast_food",
+        "branch": "Schaffhausen",
+        "brand": "dieci",
+        "cuisine": "pizza",
+        "delivery": "yes",
+        "name": "Dieci Pizzakurier",
+        "operator": "Dieci",
+        "takeaway": "yes",
+        "website": "https://www.dieci.ch/de/pizzakurier-schaffhausen"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7536507002,
+      "lat": 47.7069666,
+      "lon": 8.7193896,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Cafeteria im Gwohnte"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7684780638,
+      "lat": 47.6987392,
+      "lon": 8.6341394,
+      "tags": {
+        "addr:city": "Schaffhausen",
+        "addr:housenumber": "56-58",
+        "addr:postcode": "8200",
+        "addr:street": "Bahnhofstrasse",
+        "alt_name": "Migros Restaurant Schaffhausen",
+        "amenity": "restaurant",
+        "branch": "Schaffhausen Vorstadt",
+        "name": "Migros Restaurant",
+        "operator": "Genossenschaft Migros Ostschweiz",
+        "self_service": "yes",
+        "website": "https://filialen.migros.ch/de/migros-restaurant-schaffhausen-vorstadt"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7685287276,
+      "lat": 47.7068723,
+      "lon": 8.8207275,
+      "tags": {
+        "amenity": "cafe",
+        "check_date:opening_hours": "2024-10-20",
+        "name": "Cafe Mojito",
+        "opening_hours": "Mo-Sa 08:00-19:00, Su,PH 09:00-19:00",
+        "operator": "Fam. Rupf AG",
+        "takeaway": "yes",
+        "website": "https://rupfag.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7881154304,
+      "lat": 47.6827493,
+      "lon": 8.620723,
+      "tags": {
+        "addr:city": "Neuhausen am Rheinfall",
+        "addr:housenumber": "73",
+        "addr:postcode": "8212",
+        "addr:street": "Zentralstrasse",
+        "amenity": "restaurant",
+        "name": "Babylon Restaurant",
+        "opening_hours": "Mo-Sa 10:30-14:00,16:45-23:00; Su 14:00-22:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7881159330,
+      "lat": 47.6828103,
+      "lon": 8.6226518,
+      "tags": {
+        "addr:city": "Neuhausen am Rheinfall",
+        "addr:housenumber": "15",
+        "addr:postcode": "8212",
+        "addr:street": "Bahnhofstrasse",
+        "amenity": "restaurant",
+        "cuisine": "tibetan",
+        "name": "Yak House",
+        "opening_hours": "Tu-Su 11:00-14:00,17:00-21:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7900640501,
+      "lat": 47.6947601,
+      "lon": 8.6356551,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Museum zu Allerheiligen",
+        "outdoor_seating": "yes",
+        "smoking": "outside"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7941414559,
+      "lat": 47.6967376,
+      "lon": 8.5752469,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "kebab",
+        "name": "Dorfimbiss Beringen"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7949534258,
+      "lat": 47.6983885,
+      "lon": 8.6351669,
+      "tags": {
+        "addr:housenumber": "46",
+        "addr:street": "Weinbergstrasse",
+        "amenity": "restaurant",
+        "cuisine": "thai",
+        "name": "Aroy Dee",
+        "phone": "+41 79 254 56 26",
+        "website": "suppenglueck.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7949539307,
+      "lat": 47.6793744,
+      "lon": 8.6187537,
+      "tags": {
+        "addr:city": "Neuhausen am Rheinfall",
+        "addr:housenumber": "1",
+        "addr:postcode": "8212",
+        "addr:street": "Heinrich Moser-Platz",
+        "amenity": "restaurant",
+        "bar": "yes",
+        "brewery": "yes",
+        "cuisine": "burger;cake;regional;sandwich;tapas",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "email": "gruenerbaum@gmos.ch",
+        "level": "0",
+        "name": "grünerbaum-gastronomie",
+        "opening_hours": "Mo-Su 08:00-22:00",
+        "operator": "Migros",
+        "outdoor_seating": "yes",
+        "payment:cash": "yes",
+        "payment:contactless": "yes",
+        "payment:credit_cards": "yes",
+        "payment:maestro": "yes",
+        "phone": "+41 58 712 01 80",
+        "ref:vatin": "CHE-456.277.478",
+        "smoking": "outside",
+        "takeaway": "yes",
+        "toilets": "yes",
+        "website": "https://www.restaurant-gruenerbaum.ch/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7949560782,
+      "lat": 47.6959477,
+      "lon": 8.6387788,
+      "tags": {
+        "addr:housenumber": "38",
+        "addr:street": "Unterstadt",
+        "amenity": "cafe",
+        "indoor_seating": "yes",
+        "name": "The_Ke",
+        "opening_hours": "Tu-Th 11:30-14:00,17:00-22:00; Fr 11:30-14:00,17:00-24:00; Sa 10:00-24:00; Su 10:00-20:00",
+        "outdoor_seating": "yes",
+        "website": "https://m.facebook.com/The_ke-243545619886280/",
+        "wheelchair": "limited",
+        "wheelchair:description": "Terasse zugänglich. Die Bar ist über eine relativ schmale Türe mit einem kleinen Absatz erreichbar. Innen ist es zwar eng, aber ohne Stufen. WC ist nicht rollstuhlgerecht und eng."
+      }
+    },
+    {
+      "type": "node",
+      "id": 8108879970,
+      "lat": 47.6593715,
+      "lon": 8.8585942,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Chez Ulrique",
+        "outdoor_seating": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8112296019,
+      "lat": 47.6641684,
+      "lon": 8.4840497,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Bergtrotte Osterfingen"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8403214481,
+      "lat": 47.6959543,
+      "lon": 8.6323849,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "chinese;thai;vietnamese",
+        "name": "Asia-Imbiss Wok",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8495120142,
+      "lat": 47.6957502,
+      "lon": 8.6326519,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Hopfenstube",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8495120143,
+      "lat": 47.6956881,
+      "lon": 8.6326447,
+      "tags": {
+        "addr:city": "Schaffhausen",
+        "addr:housenumber": "18",
+        "addr:postcode": "8200",
+        "addr:street": "Herrenacker",
+        "amenity": "restaurant",
+        "cuisine": "chinese",
+        "name": "Mudan",
+        "opening_hours": "Tu-Sa 11:30-14:00,17:30-22:00",
+        "outdoor_seating": "yes",
+        "payment:american_express": "yes",
+        "payment:maestro": "yes",
+        "payment:mastercard": "yes",
+        "payment:visa": "yes",
+        "phone": "+41 52 624 66 88",
+        "website": "https://restaurantmudan.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8621647085,
+      "lat": 47.6960762,
+      "lon": 8.6360871,
+      "tags": {
+        "addr:city": "Schaffhausen",
+        "addr:housenumber": "43",
+        "addr:postcode": "8200",
+        "addr:street": "Vordergasse",
+        "amenity": "restaurant",
+        "cuisine": "mexican;american",
+        "name": "US-MEX",
+        "phone": "+41 71 626 30 00",
+        "website": "https://www.usmex.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8627051789,
+      "lat": 47.6985939,
+      "lon": 8.8571477,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Hofgut Oberwald",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8736845310,
+      "lat": 47.6783233,
+      "lon": 8.6111572,
+      "tags": {
+        "amenity": "fast_food",
+        "indoor_seating": "no",
+        "name": "Spice bistro",
+        "outdoor_seating": "no",
+        "takeaway": "only"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8780636382,
+      "lat": 47.6806201,
+      "lon": 8.6187886,
+      "tags": {
+        "addr:city": "Neuhausen am Rheinfall",
+        "addr:housenumber": "9",
+        "addr:postcode": "8212",
+        "addr:street": "Zentralstrasse",
+        "amenity": "fast_food",
+        "cuisine": "balkan;kebab;greek;burger",
+        "delivery": "yes",
+        "email": "info@balkan-expres.ch",
+        "name": "Balkan Express",
+        "phone": "+41 52 672 10 01",
+        "smoking": "no",
+        "takeaway": "yes",
+        "website": "http://balkan-expres.ch/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8780636383,
+      "lat": 47.6805838,
+      "lon": 8.6187084,
+      "tags": {
+        "addr:city": "Neuhausen am Rheinfall",
+        "addr:housenumber": "9",
+        "addr:postcode": "8212",
+        "addr:street": "Zentralstrasse",
+        "amenity": "fast_food",
+        "cuisine": "kebab;pasta;pizza",
+        "delivery": "yes",
+        "email": "info@speedypizzakurier.ch",
+        "fax": "+41 52 672 89 90",
+        "level": "0",
+        "name": "Speedy Pizza Neuhausen",
+        "opening_hours": "Mo-Su 11:00-14:00,17:00-23:00",
+        "outdoor_seating": "yes",
+        "phone": "+41 52 672 89 89",
+        "smoking": "outside",
+        "takeaway": "yes",
+        "website": "https://restaurant-speedypizza.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8780636385,
+      "lat": 47.6808334,
+      "lon": 8.61873,
+      "tags": {
+        "addr:city": "Neuhausen am Rheinfall",
+        "addr:housenumber": "1",
+        "addr:postcode": "8212",
+        "addr:street": "Wildenstrasse",
+        "amenity": "restaurant",
+        "cuisine": "thai",
+        "delivery": "Mo-Fr 11:30-13:30",
+        "diet:vegetarian": "yes",
+        "email": "info@yings.ch",
+        "name": "Ying's",
+        "opening_hours": "Mo-Fr 11:30-14:00,18:00-21:00",
+        "outdoor_seating": "yes",
+        "phone": "+41 55 615 55 66",
+        "smoking": "outside",
+        "takeaway": "yes",
+        "toilets:access": "customers",
+        "website": "https://yings.ch/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8832504253,
+      "lat": 47.7049206,
+      "lon": 8.6480655,
+      "tags": {
+        "addr:city": "Schaffhausen",
+        "addr:housenumber": "80",
+        "addr:postcode": "8200",
+        "addr:street": "Klausweg",
+        "amenity": "cafe",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "nik-kafi",
+        "opening_hours": "We,Sa 09:00-12:00,14:00-18:00",
+        "outdoor_seating": "yes",
+        "website": "https://nikpunkt.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9026368641,
+      "lat": 47.7460396,
+      "lon": 8.4836804,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "burger;hot_dog;cake;ice_cream",
+        "name": "Schwimmbad Restaurant",
+        "outdoor_seating": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9070619856,
+      "lat": 47.6976867,
+      "lon": 8.6328603,
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Subway",
+        "brand:wikidata": "Q244457",
+        "brand:wikipedia": "en:Subway (restaurant)",
+        "cuisine": "sandwich",
+        "name": "Subway",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9139651464,
+      "lat": 47.6802722,
+      "lon": 8.6206016,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "mexican",
+        "diet:vegetarian": "yes",
+        "name": "Nuevo Sombrero",
+        "opening_hours": "Mo-Fr 11:00-14:00,17:00-22:30; Sa,Su 11:00-14:00,17:00-23:00",
+        "outdoor_seating": "yes",
+        "takeaway": "yes",
+        "website": "https://www.elsombrero.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9223853644,
+      "lat": 47.7037097,
+      "lon": 8.6304461,
+      "tags": {
+        "addr:city": "Schaffhausen",
+        "addr:country": "CH",
+        "addr:housenumber": "4",
+        "addr:place": "Stahlgiesserei",
+        "addr:postcode": "8200",
+        "addr:street": "Zur Stahlgiesserei",
+        "amenity": "restaurant",
+        "cuisine": "asian",
+        "delivery": "yes",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "email": "restaurant@khawa.ch",
+        "name": "Khawa",
+        "opening_hours": "Mo-Sa 11:00-22:00; Sa-Su 16:00-22:00 open",
+        "outdoor_seating": "yes",
+        "phone": "+41 52 525 11 22",
+        "smoking": "outside",
+        "takeaway": "yes",
+        "toilets": "yes",
+        "toilets:access": "customers",
+        "website": "https://www.khawa.ch/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9277913515,
+      "lat": 47.7276123,
+      "lon": 8.6286781,
+      "tags": {
+        "addr:city": "Schaffhausen",
+        "addr:housenumber": "2",
+        "addr:postcode": "8200",
+        "addr:street": "Längenbergstrasse",
+        "air_conditioning": "yes",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "diet:meat": "yes",
+        "diet:vegetarian": "yes",
+        "email": "info@gasthofziegelhuette.ch",
+        "highchair": "yes",
+        "internet_access": "yes",
+        "name": "Gasthof Ziegelhütte",
+        "opening_hours": "Mo-Sa 09:00-23:00; Su 09:00-21:00",
+        "operator": "Hallauer Gastro GmbH",
+        "outdoor_seating": "yes",
+        "phone": "+41 52 533 10 20",
+        "reservation": "recommended",
+        "smoking": "outside",
+        "website": "https://gasthofziegelhuette.ch",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9589494583,
+      "lat": 47.681385,
+      "lon": 8.6191916,
+      "tags": {
+        "addr:postcode": "8212",
+        "amenity": "fast_food",
+        "cuisine": "kebab",
+        "name": "B Tasty",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9589494586,
+      "lat": 47.6827808,
+      "lon": 8.6223628,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Anna‘s Breakfast"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9589517608,
+      "lat": 47.6805888,
+      "lon": 8.6173119,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Morgensonne"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9668611117,
+      "lat": 47.6957833,
+      "lon": 8.6392091,
+      "tags": {
+        "addr:housenumber": "21",
+        "addr:street": "Unterstadt",
+        "amenity": "restaurant",
+        "name": "AL ANDALUS",
+        "opening_hours": "Tu-Sa 11:00-14:00,17:30-23:00; Su 17:00-23:00",
+        "phone": "+41 52 625 60 98",
+        "website": "https://www.alandalus-sh.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9694330250,
+      "lat": 47.7034398,
+      "lon": 8.6359479,
+      "tags": {
+        "amenity": "restaurant",
+        "contact:city": "Schaffhausen",
+        "contact:email": "info.gassenkueche@vjps.ch",
+        "contact:housenumber": "34",
+        "contact:phone": "+41 52 620 47 72",
+        "contact:postcode": "8200",
+        "contact:street": "Hochstrasse",
+        "contact:website": "https://www.vjps.ch/gassenkueche/",
+        "name": "Gassenküche SH - VJPS",
+        "operator": "VJPS - Verein für Jugendfragen, Prävention und Suchtfragen"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9953496118,
+      "lat": 47.7029677,
+      "lon": 8.4979951,
+      "tags": {
+        "addr:housenumber": "2",
+        "addr:postcode": "8214",
+        "addr:street": "Dorfstrasse",
+        "amenity": "restaurant",
+        "name": "Haumesser",
+        "website": "https://restaurant-haumesser.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10285967783,
+      "lat": 47.7076884,
+      "lon": 8.6457946,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Hombergerhaus",
+        "website": "https://www.hombergerhaus.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10420838619,
+      "lat": 47.67566,
+      "lon": 8.6000048,
+      "tags": {
+        "addr:city": "Neuhausen am Rheinfall",
+        "addr:country": "CH",
+        "addr:housenumber": "93",
+        "addr:postcode": "8212",
+        "addr:street": "Zollstrasse",
+        "amenity": "restaurant",
+        "cuisine": "fish;international;mediterranean",
+        "diet:vegetarian": "yes",
+        "email": "essen@heidys-huettli.ch",
+        "name": "Heidy's Hüttli",
+        "outdoor_seating": "yes",
+        "phone": "+41 52 670 00 83",
+        "takeaway": "yes",
+        "website": "https://www.heidys-huettli.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10580082126,
+      "lat": 47.697519,
+      "lon": 8.6337662,
+      "tags": {
+        "addr:city": "Schaffhausen",
+        "addr:housenumber": "2",
+        "addr:postcode": "8200",
+        "addr:street": "Vorstadt",
+        "amenity": "fast_food",
+        "contact:instagram": "https://www.instagram.com/cibus.sh/",
+        "cuisine": "international;regional;italian",
+        "diet:healthy": "yes",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "drive_through": "no",
+        "name": "Cibus TAKE AWAY",
+        "opening_hours": "Mo-Fr 11:30-14:00",
+        "operator": "CIBUS Bolli",
+        "phone": "+41 79 880 90 90",
+        "takeaway": "only"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10681529136,
+      "lat": 47.6958349,
+      "lon": 8.6396749,
+      "tags": {
+        "addr:city": "Schaffhausen",
+        "addr:country": "CH",
+        "addr:housenumber": "16",
+        "addr:postcode": "8200",
+        "addr:street": "Unterstadt",
+        "amenity": "cafe",
+        "email": "mail@station16.ch",
+        "name": "station16",
+        "opening_hours": "Sa,Su 10:00-17:00; We-Fr 11:00-17:00",
+        "operator": "Katharina Zipf",
+        "phone": "+41 78 352 68 60",
+        "smoking": "no",
+        "takeaway": "yes",
+        "website": "https://www.station16.ch/",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10901678240,
+      "lat": 47.6962159,
+      "lon": 8.6382124,
+      "tags": {
+        "addr:housenumber": "16",
+        "addr:street": "Bachstrasse",
+        "amenity": "restaurant",
+        "check_date": "2025-06-07",
+        "cuisine": "burger",
+        "indoor_seating": "yes",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "level": "0",
+        "name": "Barkada",
+        "opening_hours": "Tu-We 11:30-13:30,17:00-20:00; Th 11:30-13:30,17:00-21:00; Fr 11:30-13:30,17:00-22:00; Sa 17:00-22:00",
+        "outdoor_seating": "yes",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "phone": "+41 52 624 00 80",
+        "takeaway": "yes",
+        "toilets": "yes",
+        "website": "https://www.barkada.ch",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10967821232,
+      "lat": 47.6953761,
+      "lon": 8.6423408,
+      "tags": {
+        "addr:city": "Schaffhausen",
+        "addr:housenumber": "2",
+        "addr:postcode": "8200",
+        "addr:street": "Rheinquai",
+        "amenity": "cafe",
+        "changing_table": "yes",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "level": "0",
+        "name": "Café am Rheinquai",
+        "opening_hours": "We-Su 09:00-18:30; PH 09:00-18:30 open",
+        "outdoor_seating": "yes",
+        "smoking": "outside",
+        "toilets": "yes",
+        "toilets:access": "customers",
+        "toilets:wheelchair": "yes",
+        "website": "https://www.cafe-am-rheinquai.ch/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11035266947,
+      "lat": 47.7558323,
+      "lon": 8.6699047,
+      "tags": {
+        "addr:city": "Lohn SH",
+        "addr:housenumber": "9",
+        "addr:postcode": "8235",
+        "addr:street": "Ausserdorf",
+        "amenity": "restaurant",
+        "cuisine": "styrian",
+        "name": "Buschenschank Kuhstall"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11159922627,
+      "lat": 47.7466053,
+      "lon": 8.7059217,
+      "tags": {
+        "addr:city": "Thayngen",
+        "addr:country": "CH",
+        "addr:housenumber": "14",
+        "addr:postcode": "8240",
+        "addr:street": "Freihofstrasse",
+        "amenity": "restaurant",
+        "name": "Freihof"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11159922629,
+      "lat": 47.7477787,
+      "lon": 8.7102402,
+      "tags": {
+        "addr:city": "Thayngen",
+        "addr:country": "CH",
+        "addr:housenumber": "1",
+        "addr:postcode": "8240",
+        "addr:street": "Schulstrasse",
+        "amenity": "restaurant",
+        "name": "Gemeindehaus"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11161416195,
+      "lat": 47.6795962,
+      "lon": 8.6179514,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Yo Mis Mo"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11172242237,
+      "lat": 47.6962878,
+      "lon": 8.6339335,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Café Vordergasse",
+        "opening_hours": "Mo-Fr 07:30-18:00; Sa 07:30-17:00; Su 10:00-17:00",
+        "website": "https://www.cafe-vordergasse.ch/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11228639921,
+      "lat": 47.7469659,
+      "lon": 8.7069084,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Biber"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11228639926,
+      "lat": 47.7462971,
+      "lon": 8.7064403,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Bar 7"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11513939644,
+      "lat": 47.7205921,
+      "lon": 8.6488252,
+      "tags": {
+        "amenity": "restaurant",
+        "changing_table": "no",
+        "contact:email": "info@notos-bistro.ch",
+        "contact:mobile": "+41 76 231 94 95",
+        "contact:website": "https://www.notos-bistro.ch",
+        "cuisine": "greek",
+        "highchair": "yes",
+        "kids_area": "yes",
+        "kids_area:fee": "no",
+        "kids_area:indoor": "yes",
+        "kids_area:outdoor": "yes",
+        "kids_area:supervised": "no",
+        "level": "0",
+        "name": "Notos Bistro",
+        "opening_hours": "Tu-Fr 16:30-22:00; Sa 10:30-21:00; Su 10:30-18:00 open \"nur bei Spielbetrieb\"; PH unknown",
+        "outdoor_seating": "yes",
+        "smoking": "outside",
+        "toilets": "yes",
+        "toilets:access": "customers",
+        "toilets:wheelchair": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11869981241,
+      "lat": 47.6979397,
+      "lon": 8.6338387,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "kebab",
+        "name": "Tasty Gourmet Imbiss",
+        "outdoor_seating": "yes",
+        "takeaway": "yes",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11886321911,
+      "lat": 47.7012695,
+      "lon": 8.6300671,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "kebab",
+        "name": "Al Beek"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11886321915,
+      "lat": 47.7010957,
+      "lon": 8.6301816,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Centraal"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11886895583,
+      "lat": 47.6969392,
+      "lon": 8.6339633,
+      "tags": {
+        "addr:city": "Schaffhausen",
+        "addr:housenumber": "18",
+        "addr:postcode": "8200",
+        "addr:street": "Stadthausgasse",
+        "amenity": "restaurant",
+        "diet:vegetarian": "yes",
+        "name": "essKultur",
+        "phone": "+41 52 625 18 88",
+        "takeaway": "yes",
+        "website": "https://www.esskultur-welten.ch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11940623893,
+      "lat": 47.6823363,
+      "lon": 8.6136173,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "RIVI Roof",
+        "website": "https://rhyfall-village.ch/roof/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12070412325,
+      "lat": 47.6830302,
+      "lon": 8.6126958,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Héroult"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12875449664,
+      "lat": 47.6956883,
+      "lon": 8.6348786,
+      "tags": {
+        "addr:housenumber": "12",
+        "addr:street": "Münstergasse",
+        "amenity": "cafe",
+        "check_date": "2025-05-30",
+        "contact:facebook": "https://www.instagram.com/kaffeekollektiv",
+        "level": "0",
+        "name": "kaffee kollektiv",
+        "opening_hours": "Sa 09:00-15:00",
+        "outdoor_seating": "yes",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "website": "https://kaffeekollektiv.ch/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12876839970,
+      "lat": 47.6910518,
+      "lon": 8.6532183,
+      "tags": {
+        "amenity": "fast_food",
+        "check_date": "2025-05-30",
+        "cuisine": "crepe",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "drive_through": "no",
+        "name": "Lunas Bistro",
+        "outdoor_seating": "yes",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "phone": "+41 79 873 36 25",
+        "website": "https://www.lunas.sh/",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12895591863,
+      "lat": 47.6962342,
+      "lon": 8.6350129,
+      "tags": {
+        "addr:housenumber": "63",
+        "addr:street": "Vordergasse",
+        "amenity": "restaurant",
+        "check_date": "2025-06-07",
+        "cuisine": "italian",
+        "level": "-1",
+        "name": "Cucina D'Alfonso",
+        "opening_hours": "Mo-Th,Sa-Su 11:30-13:30,17:00-22:00; Fr 11:30-13:30,17:00-23:00",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "website": "https://cucina-dalfonso.ch/",
+        "wheelchair": "limited"
+      }
+    }
+  ]
+}
