@@ -2,7 +2,7 @@
 
 ## Extracting Restaurants, Fast Food and Cafes from OpenStreetMap
 
-For extracting the data from OpenStreetMap, we utilized the Overpass API. The used query is as follow:
+For extracting the data from OpenStreetMap, we utilized the Overpass API. The used query is as follows:
 ```
 [out:json][timeout:180];
 area["name"="{name}"]["boundary"="administrative"]["admin_level"="4"]->.a;
@@ -40,7 +40,8 @@ area["name"="{name}"]["boundary"="administrative"]["admin_level"="4"]->.a;
   * With `admin_level=4` (typically a region/state-level boundary).
 * `->.a;`: Saves the matched area into a variable `.a`.
 
-Note: The area is **not the same** as a polygon in the map. Internally, Overpass assigns IDs to areas derived from OSM relations.
+Note: The area is **not the same** as a polygon in the map. Internally, Overpass assigns IDs to areas derived
+from OSM relations.
 
 ---
 
@@ -70,7 +71,8 @@ out center;
 
 ### Result of the API Query
 
-For our example we extracted all the restaurants from all the cantons in Switzerland. This gives us the following list of JSON files:
+For our example we extracted all the restaurants from all the cantons in Switzerland. This gives us the following list
+of JSON files:
 ```text
 cantons/
 ├── restaurants_Aargau.json
@@ -123,9 +125,11 @@ And only 28% have both. Even with the missing data, the dataset can still be use
 
 #### Extracting Cuisine Types
 
-For the next steps, the cuisine types needs to be extracted from the JSON file. The FoodClassifier will use these cuisine types as labels for the training data and also will be used as result of the module.
+For the next steps, the cuisine types needs to be extracted from the JSON file. The FoodClassifier will use these
+cuisine types as labels for the training data and also will be used as result of the module.
 
-The simplest way to extract the cuisine types is to use a set, which will automatically remove duplicates. The cuisine types are stored in the `cuisines` set.
+The simplest way to extract the cuisine types is to use a set, which will automatically remove duplicates. The cuisine
+types are stored in the `cuisines` set.
 ```python
 import json
 
@@ -227,4 +231,81 @@ bar_and_grill
 ...
 ```
 
-We can still see some cuisine types doesn't really match our expectations, like "alpine_hut" isn't really a cuisine type and could be fused with "alp".
+We can still see some cuisine types doesn't really match our expectations, like "alp", "alpine_hut" isn't really a
+cuisine type.
+
+## Finalizing the Cuisine Types
+
+Like mentioned before, the cuisine types are used as labels for the training data and also will be used as result of the
+module. So we need to finalize the cuisine types and currently the extracted cuisine types from the OpenStreetMap data
+are not really suitable for that.
+1. Define what should be included in the cuisine types.
+2. Gather all the cuisine types and save it to a file.
+
+### Defining the Cuisine Types
+
+For simplicity, we will only include countries. Regions, cities or other types are at the current moment a little bit
+too specific and because of that we will limit ourselves only to the countries.
+
+
+### Gathering the Cuisine Types
+
+The first step to get all the countries, like before we use the Overpass API to extract the countries from OpenStreetMap.
+That way we can use the country names an make an API call to `restcountries.com` to get the matching demonyms.
+```python
+import requests
+
+def get_demonym(country_name):
+    try:
+        response = requests.get(f"https://restcountries.com/v3.1/name/{country_name}")
+        data = response.json()
+        # include small random delay
+        return data[0]["demonyms"]["eng"]["m"]
+    except Exception as e:
+        print(f"Error fetching demonym for {country_name}: {e}")
+        return "Unknown"
+
+
+countries = [] # is filled with the country names
+# remove duplicates and sort the list
+countries = sorted(set(countries))
+
+# get the demonym for each country
+countries_demonyms = [get_demonym(country) for country in countries]
+```
+
+After all the demonyms are gathered, we can use the following code to sanitize and normalize the demonyms:
+```python
+# remove duplicates
+countries_demonyms = list(set(countries_demonyms))
+
+# remove the "Unkown" demonym
+countries_demonyms = [d for d in countries_demonyms if d != "Unknown"]
+
+# split the demonyms by comma
+for cd in countries_demonyms:
+    if "," in cd:
+        parts = cd.split(",")
+        countries_demonyms.remove(cd)
+        countries_demonyms.extend([part.strip() for part in parts if part.strip()])
+
+# normalize the demonyms
+countries_demonyms = [d.replace(" ", "_").lower() for d in countries_demonyms]
+
+# sort the demonyms
+countries_demonyms = sorted(countries_demonyms)
+```
+
+The resulting list of demonyms is as follows:
+```text
+afghan
+albanian
+algerian
+american_islander
+american_samoan
+andorran
+angolan
+anguillian
+antiguan
+...
+```
