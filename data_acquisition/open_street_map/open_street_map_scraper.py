@@ -25,12 +25,12 @@ out center;
 """
 
 for k in kantone:
-    print(f"Abrufe {k} ...")
+    print(f"Gather Restaurants in {k} ...")
     query = template.format(name=k)
     response = requests.post("https://overpass-api.de/api/interpreter", data={"data": query})
     if response.ok:
         with open(f"raw_data/cantons/restaurants_{k.replace(' ', '_')}.json", "w", encoding="utf-8") as f:
             json.dump(response.json(), f, ensure_ascii=False, indent=2)
     else:
-        print(f"Fehler bei {k}: {response.status_code}")
-    time.sleep(10)  # Pausen zur Schonung der API
+        print(f"Error with {k}: {response.status_code}")
+    time.sleep(10)  # small delay to avoid overloading the server
