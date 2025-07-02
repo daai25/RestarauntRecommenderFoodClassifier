@@ -73,25 +73,25 @@ cantons/
 ├── restaurants_Appenzell_Innerrhoden.json
 ├── restaurants_Basel-Landschaft.json
 ├── restaurants_Basel-Stadt.json
-├── restaurants_Bern.json
-├── restaurants_Freiburg.json
-├── restaurants_Genf.json
+├── restaurants_Bern_Berne.json
+├── restaurants_Fribourg_Freiburg.json
+├── restaurants_Genève.json
 ├── restaurants_Glarus.json
-├── restaurants_Graubünden.json
+├── restaurants_Graubünden_Grischun_Grigioni.json
 ├── restaurants_Jura.json
 ├── restaurants_Luzern.json
-├── restaurants_Neuenburg.json
+├── restaurants_Neuchâtel.json
 ├── restaurants_Nidwalden.json
 ├── restaurants_Obwalden.json
 ├── restaurants_Schaffhausen.json
 ├── restaurants_Schwyz.json
 ├── restaurants_Solothurn.json
 ├── restaurants_St._Gallen.json
-├── restaurants_Tessin.json
 ├── restaurants_Thurgau.json
+├── restaurants_Ticino.json
 ├── restaurants_Uri.json
-├── restaurants_Waadt.json
-├── restaurants_Wallis.json
+├── restaurants_Valais_Wallis.json
+├── restaurants_Vaud.json
 ├── restaurants_Zug.json
 └── restaurants_Zürich.json
 ```
@@ -100,15 +100,15 @@ After combing all the JSON into one single JSON file, the data can be analyzed. 
 ```
 Restaurant Statistics – restaurants_Switzerland.json
 
-Total gathered: 10657
-- Restaurants: 7374
-- Fast food: 1544
-- Cafes: 1739
+Total gathered: 20977
+- Restaurants: 14917
+- Fast food: 2710
+- Cafes: 3350
 
 Additional information:
-- With URL: 5138 (48.21%)
-- With cuisine type: 5039 (47.28%)
-- With URL and cuisine type: 2984 (28.00%)
+- With URL: 8924 (42.54%)
+- With cuisine type: 9440 (45.00%)
+- With URL and cuisine type: 5064 (24.14%)
 ```
 
 #### Conclusion of the Analysis
@@ -199,21 +199,27 @@ for element in data.get("elements", []):
         cuisines.update(cleaned_types)
 ```
 
-This leads to the following normalized cuisine types with 208 unique entries:
+This leads to the following normalized cuisine types with 386 unique entries:
 ```
 afghan
 african
+alp
+alpine_hut
 american
 arab
 argentinian
 asian
 austrian
+ayran
+bacon
 bagel
 bakery
+baklawa
 balkan
 bangladeshi
+bar
 bar_and_grill
-barbecue
-bavarian
 ...
 ```
+
+We can still see some cuisine types doesn't really match our expectations, like "alpine_hut" isn't really a cuisine type and could be fused with "alp".

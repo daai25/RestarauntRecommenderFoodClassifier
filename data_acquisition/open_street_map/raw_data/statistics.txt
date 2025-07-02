@@ -1,11 +1,11 @@
 Restaurant Statistics – restaurants_Switzerland.json
 
-Total gathered: 10657
-- Restaurants: 7374
-- Fast food: 1544
-- Cafes: 1739
+Total gathered: 20977
+- Restaurants: 14917
+- Fast food: 2710
+- Cafes: 3350
 
 Additional information:
-- With URL: 5138 (48.21%)
-- With cuisine type: 5039 (47.28%)
-- With URL and cuisine type: 2984 (28.00%)
+- With URL: 8924 (42.54%)
+- With cuisine type: 9440 (45.00%)
+- With URL and cuisine type: 5064 (24.14%)
