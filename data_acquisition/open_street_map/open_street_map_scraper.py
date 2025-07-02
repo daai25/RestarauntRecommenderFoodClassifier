@@ -4,12 +4,14 @@
 import requests
 import json
 import time
+import os
+import random
 
 kantone = [
     "Aargau", "Appenzell Ausserrhoden", "Appenzell Innerrhoden", "Basel-Landschaft",
-    "Basel-Stadt", "Bern", "Freiburg", "Genf", "Glarus", "Graubünden", "Jura", "Luzern",
-    "Neuenburg", "Nidwalden", "Obwalden", "Schaffhausen", "Schwyz", "Solothurn",
-    "St. Gallen", "Tessin", "Thurgau", "Uri", "Waadt", "Wallis", "Zug", "Zürich"
+    "Basel-Stadt", "Bern/Berne", "Fribourg/Freiburg", "Genève", "Glarus", "Graubünden/Grischun/Grigioni", "Jura", "Luzern",
+    "Neuchâtel", "Nidwalden", "Obwalden", "Schaffhausen", "Schwyz", "Solothurn",
+    "St. Gallen", "Ticino", "Thurgau", "Uri", "Vaud", "Valais/Wallis", "Zug", "Zürich"
 ]
 
 # Template to gather all the restaurants, fast food and cafés in each canton in Switzerland
@@ -24,13 +26,24 @@ area["name"="{name}"]["boundary"="administrative"]["admin_level"="4"]->.a;
 out center;
 """
 
+# Ensure the output directory exists
+os.makedirs("raw_data/cantons", exist_ok=True)
+
 for k in kantone:
-    print(f"Gather Restaurants in {k} ...")
+    filename = f"raw_data/cantons/restaurants_{k.replace(' ', '_').replace('/', '_')}.json"
+    if os.path.exists(filename):
+        print(f"Skipping {k}, file already exists.")
+        continue
+
+    print(f"Gathering restaurants in {k} ...")
     query = template.format(name=k)
     response = requests.post("https://overpass-api.de/api/interpreter", data={"data": query})
     if response.ok:
-        with open(f"raw_data/cantons/restaurants_{k.replace(' ', '_')}.json", "w", encoding="utf-8") as f:
+        with open(filename, "w", encoding="utf-8") as f:
             json.dump(response.json(), f, ensure_ascii=False, indent=2)
     else:
         print(f"Error with {k}: {response.status_code}")
-    time.sleep(10)  # small delay to avoid overloading the server
+
+    time_to_sleep = random.randint(1, 20)
+    print(f"Waiting for {time_to_sleep} seconds before next request...")
+    time.sleep(time_to_sleep)
