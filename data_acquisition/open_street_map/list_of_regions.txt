@@ -1,0 +1,26 @@
+Aargau
+Appenzell Ausserrhoden
+Appenzell Innerrhoden
+Basel-Landschaft
+Basel-Stadt
+Bern/Berne
+Fribourg/Freiburg
+Genève
+Glarus
+Graubünden/Grischun/Grigioni
+Jura
+Luzern
+Neuchâtel
+Nidwalden
+Obwalden
+Schaffhausen
+Schwyz
+Solothurn
+St. Gallen
+Ticino
+Thurgau
+Uri
+Vaud
+Valais/Wallis
+Zug
+Zürich
