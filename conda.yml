@@ -12,5 +12,11 @@ dependencies:
     - scikit-plot
     - seaborn
     - pip
+    - json
+    - re
+    - requests
+    - time
+    - os
+    - random
     - pip:
           - python-dotenv

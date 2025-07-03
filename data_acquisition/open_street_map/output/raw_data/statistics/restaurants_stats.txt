@@ -1,4 +1,4 @@
-Restaurant Statistics – restaurants_Switzerland.json
+Restaurant Statistics – restaurants.json
 
 Total gathered: 20977
 - Restaurants: 14917
@@ -9,3 +9,4 @@ Additional information:
 - With URL: 8924 (42.54%)
 - With cuisine type: 9440 (45.00%)
 - With URL and cuisine type: 5064 (24.14%)
+            

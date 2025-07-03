@@ -105,7 +105,8 @@
     "addr:city": "Aarau",
     "cuisine": [
       "french"
-    ]
+    ],
+    "url": "http://www.lacreperie.ch/"
   },
   {
     "id": 382382207,
@@ -4443,7 +4444,8 @@
     "addr:city": "Basel",
     "cuisine": [
       "mexican"
-    ]
+    ],
+    "url": "https://www.cartell.ch/locations"
   },
   {
     "id": 1611634279,
@@ -7243,7 +7245,8 @@
     "addr:city": "Aeschiried",
     "cuisine": [
       "swiss"
-    ]
+    ],
+    "url": "http://www.chemihuette.ch/"
   },
   {
     "id": 885979320,
@@ -9306,7 +9309,8 @@
     "addr:city": "Belp",
     "cuisine": [
       "greek"
-    ]
+    ],
+    "url": "http://taverna-sternen.ch"
   },
   {
     "id": 4041652824,
@@ -16748,7 +16752,8 @@
     "name": "Wirtschaft zum Weissenberg",
     "cuisine": [
       "swiss"
-    ]
+    ],
+    "url": "http://www.wirtschaft-weissenberg.ch/"
   },
   {
     "id": 665543084,
@@ -20061,7 +20066,8 @@
     "name": "Berggasthaus Salwideli",
     "cuisine": [
       "swiss"
-    ]
+    ],
+    "url": "www.berggasthaus-salwideli.ch"
   },
   {
     "id": 506655895,
@@ -24119,7 +24125,8 @@
     "name": "Alpenhof",
     "cuisine": [
       "swiss"
-    ]
+    ],
+    "url": "http://www.restaurant-alpenhof.ch"
   },
   {
     "id": 367076926,
@@ -27793,7 +27800,8 @@
     "cuisine": [
       "mexican"
     ],
-    "website": "https://el-burro.ch/"
+    "website": "https://el-burro.ch/",
+    "url": "http://www.el-burro.ch/"
   },
   {
     "id": 2814861501,
@@ -34114,7 +34122,8 @@
     "addr:city": "Flüelen",
     "cuisine": [
       "swiss"
-    ]
+    ],
+    "url": "https://restaurant-grillhouse.ch/"
   },
   {
     "id": 610419113,
@@ -35397,7 +35406,8 @@
     "name": "Auberge du Godet",
     "cuisine": [
       "swiss"
-    ]
+    ],
+    "url": "https://auberge-du-godet.business.site/"
   },
   {
     "id": 2375399226,
@@ -37957,7 +37967,8 @@
     "addr:city": "Lausanne",
     "cuisine": [
       "swiss"
-    ]
+    ],
+    "url": "http://www.lecygnebrasserie.ch"
   },
   {
     "id": 915323212,
@@ -39976,7 +39987,8 @@
     "cuisine": [
       "pizza",
       "italian"
-    ]
+    ],
+    "url": "https://www.restaurant-le-postillon.ch"
   },
   {
     "id": 5161579822,
@@ -43446,7 +43458,8 @@
       "italian",
       "italian_pizza"
     ],
-    "website": "https://www.pizzeria-romantica.ch/waedenswil/"
+    "website": "https://www.pizzeria-romantica.ch/waedenswil/",
+    "url": "http://www.pizzeria-romantica.ch/"
   },
   {
     "id": 307667861,
@@ -43880,7 +43893,8 @@
     "addr:city": "Maur",
     "cuisine": [
       "italian"
-    ]
+    ],
+    "url": "http://www.doerfli-maur.ch/"
   },
   {
     "id": 336645283,

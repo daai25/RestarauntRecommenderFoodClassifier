@@ -1,0 +1,9 @@
+Filtered Restaurant Statistics – restaurants_filtered.json
+
+Total restaurants before filtering: 20977
+Total restaurants after filtering: 5225
+Filtered percentage: 24.91%
+
+Total of restaurants with URL or website: 3022
+Percentages of restaurants with URL or website: 57.84%
+            

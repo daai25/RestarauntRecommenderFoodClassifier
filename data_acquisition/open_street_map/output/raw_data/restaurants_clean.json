@@ -209,7 +209,8 @@
     "name": "Fauno Pizza",
     "cuisine": [
       "pizza"
-    ]
+    ],
+    "url": "http://faunopizza.ch"
   },
   {
     "id": 312660671,
@@ -348,7 +349,8 @@
     "addr:city": "Aarau",
     "cuisine": [
       "french"
-    ]
+    ],
+    "url": "http://www.lacreperie.ch/"
   },
   {
     "id": 382382206,
@@ -10897,13 +10899,15 @@
     "lat": 47.5310893,
     "lon": 7.6780968,
     "name": "Gasthof zur Saline",
-    "website": "https://www.gasthof-saline.ch/"
+    "website": "https://www.gasthof-saline.ch/",
+    "url": "www.gasthof-saline.ch"
   },
   {
     "id": 929334814,
     "lat": 47.532107,
     "lon": 7.6736821,
-    "name": "Solbad"
+    "name": "Solbad",
+    "url": "www.schluesselzunft.ch"
   },
   {
     "id": 941860429,
@@ -14242,7 +14246,8 @@
     "addr:city": "Basel",
     "cuisine": [
       "mexican"
-    ]
+    ],
+    "url": "https://www.cartell.ch/locations"
   },
   {
     "id": 1598863595,
@@ -22452,7 +22457,8 @@
     "lat": 46.9356283,
     "lon": 7.5057974,
     "name": "Bonapp",
-    "addr:city": "Gümligen"
+    "addr:city": "Gümligen",
+    "url": "http://www.bonapp.ch"
   },
   {
     "id": 736217616,
@@ -22931,7 +22937,8 @@
     "addr:city": "Aeschiried",
     "cuisine": [
       "regional"
-    ]
+    ],
+    "url": "http://www.chemihuette.ch/"
   },
   {
     "id": 885042458,
@@ -24036,7 +24043,8 @@
     "id": 1449355636,
     "lat": 46.5451537,
     "lon": 7.6617981,
-    "name": "Gasthof-Altels"
+    "name": "Gasthof-Altels",
+    "url": "http://www.gasthof-altels.ch"
   },
   {
     "id": 1452875551,
@@ -24449,7 +24457,8 @@
     "lat": 46.6311233,
     "lon": 7.721404,
     "name": "Pintli",
-    "addr:city": "Reichenbach im Kandertal"
+    "addr:city": "Reichenbach im Kandertal",
+    "url": "http://www.pintlifaltschen.ch/"
   },
   {
     "id": 1640307144,
@@ -24538,7 +24547,8 @@
     "lat": 46.5880277,
     "lon": 7.6465018,
     "name": "Leist",
-    "addr:city": "Frutigen"
+    "addr:city": "Frutigen",
+    "url": "http://www.zumleist.ch"
   },
   {
     "id": 1671830085,
@@ -29296,7 +29306,8 @@
     "lat": 46.9017283,
     "lon": 7.50486,
     "name": "Belpmoos",
-    "addr:city": "Belp"
+    "addr:city": "Belp",
+    "url": "http://www.restaurant-belpmoos.ch/"
   },
   {
     "id": 3964778090,
@@ -29306,7 +29317,8 @@
     "addr:city": "Belp",
     "cuisine": [
       "greek"
-    ]
+    ],
+    "url": "http://taverna-sternen.ch"
   },
   {
     "id": 4009432608,
@@ -38041,7 +38053,8 @@
     "lat": 47.1401691,
     "lon": 7.2016171,
     "name": "End der Welt",
-    "addr:city": "Magglingen/Macolin"
+    "addr:city": "Magglingen/Macolin",
+    "url": "https://www.end-der-welt.ch/"
   },
   {
     "id": 11367327293,
@@ -39625,7 +39638,8 @@
     "id": 460924337,
     "lat": 46.6905957,
     "lon": 6.8999993,
-    "name": "L' Union"
+    "name": "L' Union",
+    "url": "http://www.restaurant-union-billens.ch"
   },
   {
     "id": 461616789,
@@ -40067,7 +40081,8 @@
     "id": 866526487,
     "lat": 46.9291754,
     "lon": 7.117606,
-    "name": "Käserei Murten"
+    "name": "Käserei Murten",
+    "url": "http://www.kaeserei-murten.ch"
   },
   {
     "id": 870790446,
@@ -40310,7 +40325,8 @@
     "name": "Guang Dong",
     "cuisine": [
       "chinese"
-    ]
+    ],
+    "url": "http://www.guang-dong.ch"
   },
   {
     "id": 1419909103,
@@ -54910,7 +54926,8 @@
     "name": "Wirtschaft zum Weissenberg",
     "cuisine": [
       "regional"
-    ]
+    ],
+    "url": "http://www.wirtschaft-weissenberg.ch/"
   },
   {
     "id": 665543084,
@@ -57756,7 +57773,8 @@
     "id": 1541326753,
     "lat": 46.4896485,
     "lon": 9.8079835,
-    "name": "El Paradiso"
+    "name": "El Paradiso",
+    "url": "www.el-paradiso.ch"
   },
   {
     "id": 1543088893,
@@ -57814,7 +57832,8 @@
     "lat": 46.5447696,
     "lon": 9.2938947,
     "name": "Walserhof",
-    "addr:city": "Medels im Rheinwald"
+    "addr:city": "Medels im Rheinwald",
+    "url": "http://www.walserhof-spluegen.ch"
   },
   {
     "id": 1588289897,
@@ -59812,7 +59831,8 @@
     "id": 4591068294,
     "lat": 46.5389019,
     "lon": 9.2433011,
-    "name": "Rheinwaldstube"
+    "name": "Rheinwaldstube",
+    "url": "https://rheinwaldstube.ch/"
   },
   {
     "id": 4591086089,
@@ -60084,7 +60104,8 @@
     "id": 4901110776,
     "lat": 46.742547,
     "lon": 8.9854675,
-    "name": "Casa Tödi"
+    "name": "Casa Tödi",
+    "url": "http://www.casa-toedi.ch/"
   },
   {
     "id": 4901119966,
@@ -64348,7 +64369,8 @@
     "id": 1231588382,
     "lat": 47.2555047,
     "lon": 6.997436,
-    "name": "Restaurant de la Gare"
+    "name": "Restaurant de la Gare",
+    "url": "http://www.hotel-la-gare.ch/"
   },
   {
     "id": 1237768519,
@@ -65535,7 +65557,8 @@
     "lat": 47.0838828,
     "lon": 8.3331177,
     "name": "Wirtschaft Trumpf-Buur",
-    "addr:city": "Ebikon"
+    "addr:city": "Ebikon",
+    "url": "http://www.trumpf-buur.ch"
   },
   {
     "id": 377003643,
@@ -65634,7 +65657,8 @@
     "name": "Berggasthaus Salwideli",
     "cuisine": [
       "regional"
-    ]
+    ],
+    "url": "www.berggasthaus-salwideli.ch"
   },
   {
     "id": 430421939,
@@ -66209,7 +66233,8 @@
     "id": 1014207333,
     "lat": 47.0518897,
     "lon": 8.3057843,
-    "name": "Brasserie Bodu"
+    "name": "Brasserie Bodu",
+    "url": "http://www.brasseriebodu.ch/"
   },
   {
     "id": 1030982179,
@@ -66434,7 +66459,8 @@
     "id": 1142784705,
     "lat": 47.0547456,
     "lon": 8.2933946,
-    "name": "Reussfähre"
+    "name": "Reussfähre",
+    "url": "http://www.reussfaehre.ch"
   },
   {
     "id": 1145599854,
@@ -66498,7 +66524,8 @@
     "lat": 47.076946,
     "lon": 8.301163,
     "name": "Sternen",
-    "addr:city": "Emmen"
+    "addr:city": "Emmen",
+    "url": "http://www.sternen-emmen.ch"
   },
   {
     "id": 1223459272,
@@ -66515,7 +66542,8 @@
     "lat": 47.0766183,
     "lon": 8.2997536,
     "name": "Kreuz",
-    "addr:city": "Emmen"
+    "addr:city": "Emmen",
+    "url": "http://www.kreuz-emmen.ch"
   },
   {
     "id": 1234120927,
@@ -66524,7 +66552,8 @@
     "name": "La Bestia - Pizza Pizza",
     "cuisine": [
       "pizza"
-    ]
+    ],
+    "url": "https://labestia-luzern.ch"
   },
   {
     "id": 1236650143,
@@ -78019,7 +78048,8 @@
     "lat": 47.6596927,
     "lon": 8.8588979,
     "name": "Ermatingers Café Späth",
-    "addr:city": "Stein am Rhein"
+    "addr:city": "Stein am Rhein",
+    "url": "https://www.zuckerbeck.ch/"
   },
   {
     "id": 1580046169,
@@ -79602,7 +79632,8 @@
     "lat": 47.1711197,
     "lon": 8.6931356,
     "name": "Gasthaus Rossberg",
-    "addr:city": "Schindellegi"
+    "addr:city": "Schindellegi",
+    "url": "http://www.rossberg-schindellegi.ch/"
   },
   {
     "id": 320634273,
@@ -79669,7 +79700,8 @@
     "name": "Alpenhof",
     "cuisine": [
       "regional"
-    ]
+    ],
+    "url": "http://www.restaurant-alpenhof.ch"
   },
   {
     "id": 367076926,
@@ -87902,7 +87934,8 @@
     "id": 362773316,
     "lat": 47.1457716,
     "lon": 9.4348859,
-    "name": "Berghaus Malbun"
+    "name": "Berghaus Malbun",
+    "url": "http://www.berghaus-malbun.ch/"
   },
   {
     "id": 371596685,
@@ -90836,7 +90869,8 @@
     "cuisine": [
       "mexican"
     ],
-    "website": "https://el-burro.ch/"
+    "website": "https://el-burro.ch/",
+    "url": "http://www.el-burro.ch/"
   },
   {
     "id": 2674896783,
@@ -98790,7 +98824,8 @@
     "name": "El Capone",
     "cuisine": [
       "pizza"
-    ]
+    ],
+    "url": "http://www.elcapone.ch/"
   },
   {
     "id": 3547897092,
@@ -109921,7 +109956,8 @@
     "id": 12883379709,
     "lat": 45.9957225,
     "lon": 8.8987286,
-    "name": "Grotto Reina"
+    "name": "Grotto Reina",
+    "url": "https://www.grotto-reina.ch/"
   },
   {
     "id": 12883379714,
@@ -110165,7 +110201,8 @@
     "addr:city": "Flüelen",
     "cuisine": [
       "swiss"
-    ]
+    ],
+    "url": "https://restaurant-grillhouse.ch/"
   },
   {
     "id": 610419113,
@@ -110221,7 +110258,8 @@
     "id": 775540479,
     "lat": 46.8931276,
     "lon": 8.910129,
-    "name": "Klause Ranch"
+    "name": "Klause Ranch",
+    "url": "http://www.klause-ranch.ch/"
   },
   {
     "id": 841025053,
@@ -113500,19 +113538,22 @@
     "id": 1423125943,
     "lat": 46.2032187,
     "lon": 7.1790004,
-    "name": "Le Chalet"
+    "name": "Le Chalet",
+    "url": "http://www.chamoson.ch/tourisme/index.php?commerce=49&amp;sel=1&amp;Code=2&amp;Rub=1"
   },
   {
     "id": 1423125953,
     "lat": 46.2065903,
     "lon": 7.1854779,
-    "name": "Le Temps de Vivre"
+    "name": "Le Temps de Vivre",
+    "url": "www.letempsdevivre.ch"
   },
   {
     "id": 1423126546,
     "lat": 46.206962,
     "lon": 7.1854515,
-    "name": "Relais des Mayens"
+    "name": "Relais des Mayens",
+    "url": "Le Relais des Mayens"
   },
   {
     "id": 1424281448,
@@ -114058,7 +114099,8 @@
     "lat": 46.3819062,
     "lon": 8.1478277,
     "name": "Jägerheim",
-    "addr:city": "Ausserbinn"
+    "addr:city": "Ausserbinn",
+    "url": "https://www.jaegerheim.ch/"
   },
   {
     "id": 1976199291,
@@ -114438,7 +114480,8 @@
     "name": "Auberge du Godet",
     "cuisine": [
       "regional"
-    ]
+    ],
+    "url": "https://auberge-du-godet.business.site/"
   },
   {
     "id": 2368074959,
@@ -119032,7 +119075,8 @@
     "lat": 46.3984181,
     "lon": 8.1450048,
     "name": "Sport-Café Seiler",
-    "addr:city": "Ernen"
+    "addr:city": "Ernen",
+    "url": "https://www.sport-cafe.ch/"
   },
   {
     "id": 8681221704,
@@ -124548,7 +124592,8 @@
     "addr:city": "Lausanne",
     "cuisine": [
       "regional"
-    ]
+    ],
+    "url": "http://www.lecygnebrasserie.ch"
   },
   {
     "id": 915323212,
@@ -128336,7 +128381,8 @@
     "name": "Etna Pizza",
     "cuisine": [
       "pizza"
-    ]
+    ],
+    "url": "https://etna-pizza.ch"
   },
   {
     "id": 3525927403,
@@ -130545,7 +130591,8 @@
     "cuisine": [
       "pizza",
       "italian"
-    ]
+    ],
+    "url": "https://www.restaurant-le-postillon.ch"
   },
   {
     "id": 5126250921,
@@ -138379,14 +138426,16 @@
     "id": 649063279,
     "lat": 47.1545278,
     "lon": 8.4399759,
-    "name": "Restaurant Tisch Bar Theater"
+    "name": "Restaurant Tisch Bar Theater",
+    "url": "http://www.tischundbar.ch/"
   },
   {
     "id": 649063280,
     "lat": 47.1551146,
     "lon": 8.4400506,
     "name": "Restaurant Engel",
-    "addr:city": "Holzhäusern"
+    "addr:city": "Holzhäusern",
+    "url": "https://engel-restaurant.ch/"
   },
   {
     "id": 660153683,
@@ -142278,7 +142327,8 @@
     "lon": 8.7816724,
     "name": "Brauerei",
     "addr:city": "Pfäffikon ZH",
-    "website": "https://www.braui.com/"
+    "website": "https://www.braui.com/",
+    "url": "http://www.braui.com/"
   },
   {
     "id": 301815421,
@@ -142514,7 +142564,8 @@
       "italian",
       "italian_pizza"
     ],
-    "website": "https://www.pizzeria-romantica.ch/waedenswil/"
+    "website": "https://www.pizzeria-romantica.ch/waedenswil/",
+    "url": "http://www.pizzeria-romantica.ch/"
   },
   {
     "id": 307667861,
@@ -143513,7 +143564,8 @@
     "addr:city": "Maur",
     "cuisine": [
       "italian"
-    ]
+    ],
+    "url": "http://www.doerfli-maur.ch/"
   },
   {
     "id": 336522822,
@@ -144972,7 +145024,8 @@
     "id": 387944422,
     "lat": 47.3332018,
     "lon": 8.6503042,
-    "name": "Wassberg"
+    "name": "Wassberg",
+    "url": "https://www.hotel-wassberg.ch/restaurant/"
   },
   {
     "id": 388054142,
@@ -145260,7 +145313,8 @@
     "lat": 47.2313131,
     "lon": 8.6125954,
     "name": "Landrestaurant Hanegg",
-    "addr:city": "Horgen"
+    "addr:city": "Horgen",
+    "url": "http://www.hanegg.com/"
   },
   {
     "id": 422507344,
