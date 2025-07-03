@@ -18,6 +18,8 @@ def _get_location_of_coordinates(lat: float, lon: float) -> tuple:
     """
     geolocator = Nominatim(user_agent="FoodClassifier")
     location = geolocator.reverse((lat, lon), exactly_one=True, language="en")
+    if location is None:
+        return None, None
     address = location.raw['address']
     city = (address.get('city') or
             (address.get('town') or
