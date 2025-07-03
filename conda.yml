@@ -3,6 +3,7 @@ channels:
     - anaconda
     - conda-forge
     - defaults
+    - conda-forge
 dependencies:
     - bokeh
     - jupyterlab
@@ -12,12 +13,10 @@ dependencies:
     - scikit-plot
     - seaborn
     - pip
-    - json
-    - re
     - requests
-    - time
-    - os
-    - random
     - pip:
           - python-dotenv
           - torch
+          - torchvision
+          - torchaudio
+          - --index-url=https://download.pytorch.org/whl/cu118 # this needs to be allways at the end
