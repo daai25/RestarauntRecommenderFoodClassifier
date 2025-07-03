@@ -11,6 +11,7 @@ dependencies:
     - scikit-learn
     - scikit-plot
     - seaborn
+    - geopy
     - pip
     - json
     - re
@@ -20,3 +21,4 @@ dependencies:
     - random
     - pip:
           - python-dotenv
+          - duckduckgo_search
