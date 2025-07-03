@@ -61,11 +61,8 @@ class RestarauntcontentspiderSpider(scrapy.Spider):
         Args:
             data (dict): Parsed JSON content
         """
-        #for element in data: #Use this line
-        for element in data.get("elements", []): #get rid of this line
-            tags = element.get("tags", {}) #get rid of this line
-            website = tags.get("website") #get rid of this line
-            #website = element.get("website") #Use this line
+        for element in data:
+            website = element.get("website")
             
             #TODO: Instead of only doing this when there is a website, call x-tr4ce's function that gets that url
             if website and website.startswith("http"):
