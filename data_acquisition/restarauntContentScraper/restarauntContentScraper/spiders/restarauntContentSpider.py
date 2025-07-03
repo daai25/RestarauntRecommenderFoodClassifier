@@ -22,6 +22,7 @@ class RestarauntcontentspiderSpider(scrapy.Spider):
         'RETRY_HTTP_CODES': [500, 502, 503, 504, 408, 429],
         'DOWNLOAD_DELAY': 0.5,
         'RANDOMIZE_DOWNLOAD_DELAY': True,
+        'CONCURRENT_REQUESTS': 50,
     }
 
     def __init__(self, *args, **kwargs):
@@ -48,8 +49,7 @@ class RestarauntcontentspiderSpider(scrapy.Spider):
             dict: Parsed JSON object
         """
         project_root = Path(__file__).resolve().parents[4]
-        json_path = os.path.join(project_root, 'data_acquisition', 'open_street_map', 'raw_data', 'restaurants_Switzerland.json')
-        #json_path = os.path.join(project_root, 'data_acquisition', 'open_street_map', 'restaurants_compact.json')
+        json_path = os.path.join(project_root, 'data_acquisition', 'open_street_map', 'restaurants_filtered.json')
         with open(json_path, 'r', encoding='utf-8') as f:
             return json.load(f)
 
