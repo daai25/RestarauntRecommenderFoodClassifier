@@ -65,11 +65,10 @@ def get_missing_url(rest_name: str, lat: float, lon: float) -> str | None:
 
     potential_url = _get_url_of_coordinates_and_name(rest_name, location[0], location[1])
     if potential_url:
-        print("For restaurant:", rest_name,
-              "located in:", location[0], location[1])
-        print(f"Found URL: {potential_url}")
+        logging.info("For restaurant: %s located in: %s, %s", rest_name, location[0], location[1])
+        logging.info("Found URL: %s", potential_url)
     else:
-        print("No URL found for the restaurant.")
+        logging.warning("No URL found for the restaurant.")
 
     return potential_url
 
