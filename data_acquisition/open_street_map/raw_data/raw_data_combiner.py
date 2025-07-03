@@ -1,7 +1,7 @@
 import os
 import json
 
-input_dir = "cantons"
+input_dir = "regions"
 output_file = "restaurants_Switzerland.json"
 
 combined = {
