@@ -11,6 +11,8 @@ dependencies:
     - scikit-learn
     - scikit-plot
     - seaborn
+    - geopy
     - pip
     - pip:
           - python-dotenv
+          - duckduckgo_search
