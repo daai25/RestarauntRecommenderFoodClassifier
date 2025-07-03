@@ -56,7 +56,6 @@ if __name__ == "__main__":
         print("Using GPU")
     else:
         print("Using CPU")
-        exit(1)
 
     device = torch.device("cuda" if use_gpu else "cpu")
     model.to(device)

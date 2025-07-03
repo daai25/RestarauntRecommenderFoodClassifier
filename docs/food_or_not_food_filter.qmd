@@ -1,0 +1,587 @@
+# Food or Not-Food Filter
+
+## Why do we need this filter?
+
+During our scraping of images of the different restaurant websites,
+we discover a lot of the scrapped images are not food images. Which means:
+1. They are not relevant for our classification task (cuisine type classification)
+2. They fill up our storage space (for Example: restaurants without any food images can be removed)
+
+## Which data do we use?
+
+To train our "filter" we need to have a dataset with labeled images of food and not-food.
+
+Luckily, we have a dataset of food images from the [Food or not dataset](https://www.kaggle.com/datasets/sciencelabwork/food-or-not-dataset) which contains a Total of 50'000 images:
+- 20'000 training food images
+- 20'000 training not-food images
+- 5'000 testing food images
+- 5'000 testing not-food images
+
+This will be our training and testing dataset for training our model.
+
+## How do we train the model?
+
+The following is the used code to train the model, after that step-by-step the code is explained:
+
+```python
+import os
+import torch
+import torch.nn as nn
+import torch.optim as optim
+from torchvision import datasets, transforms
+from torchvision.models import resnet18, ResNet18_Weights
+from torch.utils.data import DataLoader
+
+if __name__ == "__main__":
+    # food or not food dataset archive with training and testing data
+    train_dir = os.path.abspath("C:/nfr/food_or_not_food_data/archive/food_data/train")
+    test_dir = os.path.abspath( "C:/nfr/food_or_not_food_data/archive/food_data/test")
+
+    # check if the directories exist and exit the program
+    if not os.path.exists(train_dir):
+        print(f"Training directory {train_dir} does not exist.")
+        exit(1)
+    if not os.path.exists(test_dir):
+        print(f"Testing directory {test_dir} does not exist.")
+        exit(1)
+
+    # prepare the data transformations
+    transform = transforms.Compose([
+        transforms.Resize((224, 224)),
+        transforms.ToTensor(),
+        transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
+    ])
+
+    train_data = datasets.ImageFolder(train_dir, transform=transform)
+    test_data = datasets.ImageFolder(test_dir, transform=transform)
+
+    # prepare the data loaders
+    train_loader = DataLoader(train_data, batch_size=32, shuffle=True)
+    test_loader = DataLoader(test_data, batch_size=32)
+
+    # define number of classes
+    num_classes = len(train_data.classes)
+
+    # load the pre-trained ResNet18 model
+    weights = ResNet18_Weights.DEFAULT
+    model = resnet18(weights=weights)
+
+    # apply the transformations from the weights
+    transform = weights.transforms()
+    # replace the final layer
+    model.fc = nn.Linear(model.fc.in_features, num_classes)
+
+    # optimizer and the loss function
+    criterion = nn.CrossEntropyLoss()
+    optimizer = optim.Adam(model.parameters(), lr=0.001)
+
+    # use GPU if available
+    use_gpu = torch.cuda.is_available()
+    if use_gpu:
+        print("Using GPU")
+    else:
+        print("Using CPU")
+
+    device = torch.device("cuda" if use_gpu else "cpu")
+    model.to(device)
+
+    # training
+    epochs = 5
+    for epoch in range(epochs):
+        model.train()
+        running_loss = 0.0
+        for inputs, labels in train_loader:
+            inputs, labels = inputs.to(device), labels.to(device)
+
+            optimizer.zero_grad()
+            outputs = model(inputs)
+            loss = criterion(outputs, labels)
+            loss.backward()
+            optimizer.step()
+
+            running_loss += loss.item()
+
+        print(f"Epoch {epoch + 1}/{epochs}, Loss: {running_loss / len(train_loader):.4f}")
+
+    # evaluation of the model
+    model.eval()
+    correct = 0
+    total = 0
+    with torch.no_grad():
+        for inputs, labels in test_loader:
+            inputs, labels = inputs.to(device), labels.to(device)
+            outputs = model(inputs)
+            _, predicted = torch.max(outputs, 1)
+            correct += (predicted == labels).sum().item()
+            total += labels.size(0)
+
+    accuracy = correct / total
+    print(f"Test Accuracy: {accuracy * 100:.2f}%")
+
+    # save the model
+    torch.save(model.state_dict(), "food_or_not_food_model.pth")
+    print("Modell gespeichert unter food_or_not_food_model.pth")
+```
+
+### Step-by-Step Code Explanation
+
+This section now explains each part of the code used to train the classifier using a pre-trained ResNet18 model from PyTorch.
+
+---
+
+#### 1. **Import Required Libraries**
+
+```python
+import os
+import torch
+import torch.nn as nn
+import torch.optim as optim
+from torchvision import datasets, transforms
+from torchvision.models import resnet18, ResNet18_Weights
+from torch.utils.data import DataLoader
+```
+
+* **`os`**: Used for file path handling and checking if directories exist.
+* **`torch`, `torch.nn`, `torch.optim`**: Core PyTorch modules for building and training neural networks.
+* **`torchvision.datasets`**: Provides tools to load image datasets from folders.
+* **`torchvision.transforms`**: Used to preprocess images before feeding them into the model.
+* **`torchvision.models`**: Provides access to pretrained models like `resnet18`.
+* **`torch.utils.data.DataLoader`**: Wraps datasets for easy iteration during training/testing.
+
+---
+
+#### 2. **Set Paths for Training and Testing Datasets**
+
+```python
+train_dir = os.path.abspath("C:/nfr/food_or_not_food_data/archive/food_data/train")
+test_dir = os.path.abspath("C:/nfr/food_or_not_food_data/archive/food_data/test")
+```
+
+* Converts the dataset directories into absolute paths for reliable access.
+
+---
+
+#### 3. **Check if Directories Exist**
+
+```python
+if not os.path.exists(train_dir):
+    print(f"Training directory {train_dir} does not exist.")
+    exit(1)
+if not os.path.exists(test_dir):
+    print(f"Testing directory {test_dir} does not exist.")
+    exit(1)
+```
+
+* Prevents runtime errors by ensuring that both the training and testing directories are present.
+
+---
+
+#### 4. **Define Image Transformations**
+
+```python
+transform = transforms.Compose([
+    transforms.Resize((224, 224)),
+    transforms.ToTensor(),
+    transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
+])
+```
+
+* Resizes all images to `224x224` pixels (input size for ResNet18).
+* Converts images to PyTorch tensors.
+* Normalizes image pixel values using the mean and standard deviation used for ImageNet models.
+
+---
+
+#### 5. **Load Datasets**
+
+```python
+train_data = datasets.ImageFolder(train_dir, transform=transform)
+test_data = datasets.ImageFolder(test_dir, transform=transform)
+```
+
+* Loads the images and automatically assigns labels based on folder names (e.g., `food`, `not_food`).
+
+---
+
+#### 6. **Prepare Data Loaders**
+
+```python
+train_loader = DataLoader(train_data, batch_size=32, shuffle=True)
+test_loader = DataLoader(test_data, batch_size=32)
+```
+
+* Organizes data into batches of size 32.
+* `shuffle=True` ensures that training data is shuffled every epoch.
+
+---
+
+#### 7. **Get Number of Classes**
+
+```python
+num_classes = len(train_data.classes)
+```
+
+* Determines the number of output classes (should be 2: `food` and `not_food`).
+
+---
+
+#### 8. **Load Pretrained ResNet18 Model**
+
+```python
+weights = ResNet18_Weights.DEFAULT
+model = resnet18(weights=weights)
+```
+
+* Loads the ResNet18 architecture pre-trained on ImageNet for feature extraction.
+
+---
+
+#### 9. **Apply Default Weights Transforms (Optional)**
+
+```python
+transform = weights.transforms()
+```
+
+* Applies the default input normalization for ResNet18. (Note: this **overwrites** the earlier transform — adjust as needed.)
+
+---
+
+#### 10. **Replace Final Fully Connected Layer**
+
+```python
+model.fc = nn.Linear(model.fc.in_features, num_classes)
+```
+
+* Replaces the last classification layer to match our number of classes (2).
+
+---
+
+#### 11. **Define Loss Function and Optimizer**
+
+```python
+criterion = nn.CrossEntropyLoss()
+optimizer = optim.Adam(model.parameters(), lr=0.001)
+```
+
+* **Loss function**: Measures how far the predictions are from the actual labels.
+* **Optimizer**: Updates model weights using Adam optimizer.
+
+---
+
+#### 12. **Move Model to GPU if Available**
+
+```python
+use_gpu = torch.cuda.is_available()
+device = torch.device("cuda" if use_gpu else "cpu")
+model.to(device)
+```
+
+* Uses a GPU for faster training if available, otherwise falls back to CPU.
+
+---
+
+#### 13. **Train the Model**
+
+```python
+epochs = 5
+for epoch in range(epochs):
+    model.train()
+    running_loss = 0.0
+    for inputs, labels in train_loader:
+        inputs, labels = inputs.to(device), labels.to(device)
+
+        optimizer.zero_grad()
+        outputs = model(inputs)
+        loss = criterion(outputs, labels)
+        loss.backward()
+        optimizer.step()
+
+        running_loss += loss.item()
+
+    print(f"Epoch {epoch + 1}/{epochs}, Loss: {running_loss / len(train_loader):.4f}")
+```
+
+* Runs the training loop for 5 epochs.
+* For each batch:
+
+  * Moves input data and labels to the appropriate device.
+  * Computes predictions and loss.
+  * Performs backpropagation and updates the model.
+  * Tracks the average loss per epoch.
+
+---
+
+#### 14. **Evaluate the Model**
+
+```python
+model.eval()
+correct = 0
+total = 0
+with torch.no_grad():
+    for inputs, labels in test_loader:
+        inputs, labels = inputs.to(device), labels.to(device)
+        outputs = model(inputs)
+        _, predicted = torch.max(outputs, 1)
+        correct += (predicted == labels).sum().item()
+        total += labels.size(0)
+
+accuracy = correct / total
+print(f"Test Accuracy: {accuracy * 100:.2f}%")
+```
+
+* Turns off gradient calculation with `torch.no_grad()` for efficiency.
+* Evaluates the model on the test set.
+* Computes and prints the **accuracy** of the model.
+
+---
+
+#### 15. **Save the Trained Model**
+
+```python
+torch.save(model.state_dict(), "food_or_not_food_model.pth")
+print("Modell gespeichert unter food_or_not_food_model.pth")
+```
+
+* Saves the model parameters (weights) to a `.pth` file for later use or deployment.
+
+---
+
+## How do we use the model?
+
+To use the trained model for inference, you can load the saved model and apply it to new images. Here’s a simple example of how to do that:
+
+```python
+import torch
+import torch.nn as nn
+from torchvision.models import resnet18, ResNet18_Weights
+from PIL import Image
+import os
+
+class FoodOrNotFood:
+    def __init__(self, model_path="food_or_not_food_model.pth", device=None):
+        # Set device to GPU if available, else CPU
+        self.device = device or ("cuda" if torch.cuda.is_available() else "cpu")
+        print(f"Using device: {self.device}")
+
+        # Load pre-trained ResNet18 weights and transform
+        self.weights = ResNet18_Weights.DEFAULT
+        self.transform = self.weights.transforms()
+
+        # Initialize the model
+        self.model = resnet18(weights=self.weights)
+        self.model.fc = nn.Linear(self.model.fc.in_features, 2)  # food / not food = 2 classes
+
+        # Load trained weights
+        if not os.path.exists(model_path):
+            raise FileNotFoundError(f"Model file not found: {model_path}")
+        self.model.load_state_dict(torch.load(model_path, map_location=self.device))
+        self.model.to(self.device)
+        self.model.eval()
+
+        # Class labels
+        self.class_names = ["not food", "food"]
+
+    def predict(self, image_path):
+        # Check if image file exists
+        if not os.path.exists(image_path):
+            raise FileNotFoundError(f"Image file not found: {image_path}")
+
+        # Load and transform the image
+        image = Image.open(image_path).convert("RGB")
+        input_tensor = self.transform(image).unsqueeze(0).to(self.device)  # Add batch dimension
+
+        # Perform inference
+        with torch.no_grad():
+            outputs = self.model(input_tensor)
+            _, predicted = torch.max(outputs, 1)
+
+        # Return the class label
+        return self.class_names[predicted.item()]
+```
+
+---
+
+### Step-by-Step Code Explanation
+
+#### 1. **Import Required Libraries**
+
+```python
+import torch
+import torch.nn as nn
+from torchvision.models import resnet18, ResNet18_Weights
+from PIL import Image
+import os
+```
+
+* **`torch`** and **`torch.nn`**: Required for using PyTorch models and layers.
+* **`torchvision.models.resnet18`**: Imports the ResNet18 architecture.
+* **`ResNet18_Weights`**: Loads the pre-trained weights and associated image transformations.
+* **`PIL.Image`**: Used to open and manipulate image files.
+* **`os`**: Provides file path and existence checking.
+
+---
+
+#### 2. **Define the `FoodOrNotFood` Class**
+
+```python
+class FoodOrNotFood:
+```
+
+This class encapsulates the full prediction workflow:
+
+* Loads the trained model
+* Prepares image input
+* Performs inference
+* Returns prediction result
+
+---
+
+#### 3. **Constructor (`__init__` method)**
+
+```python
+def __init__(self, model_path="food_or_not_food_model.pth", device=None):
+```
+
+* Initializes the class with a default path to the model file.
+* Optional argument `device` lets the user specify CPU or GPU manually.
+
+---
+
+#### 4. **Select Device (CPU or GPU)**
+
+```python
+self.device = device or ("cuda" if torch.cuda.is_available() else "cpu")
+print(f"Using device: {self.device}")
+```
+
+* Automatically selects GPU if available, otherwise falls back to CPU.
+* Allows manual override via `device` argument.
+
+---
+
+#### 5. **Load Pretrained Weights and Transformations**
+
+```python
+self.weights = ResNet18_Weights.DEFAULT
+self.transform = self.weights.transforms()
+```
+
+* Loads the standard ImageNet weights and image transformation pipeline (resize, normalize, etc.) required by ResNet18.
+
+---
+
+#### 6. **Initialize and Modify ResNet18 Model**
+
+```python
+self.model = resnet18(weights=self.weights)
+self.model.fc = nn.Linear(self.model.fc.in_features, 2)
+```
+
+* Loads the ResNet18 model.
+* Replaces the final layer with a new one that outputs **2 classes**: `food` and `not food`.
+
+---
+
+#### 7. **Load the Trained Weights**
+
+```python
+if not os.path.exists(model_path):
+    raise FileNotFoundError(f"Model file not found: {model_path}")
+self.model.load_state_dict(torch.load(model_path, map_location=self.device))
+```
+
+* Loads the `.pth` model file containing the weights trained earlier.
+* Ensures compatibility with CPU or GPU.
+
+---
+
+#### 8. **Move Model to Device and Set to Eval Mode**
+
+```python
+self.model.to(self.device)
+self.model.eval()
+```
+
+* Transfers the model to the selected device (CPU or GPU).
+* Sets the model to **evaluation mode**, disabling dropout/batchnorm behavior specific to training.
+
+---
+
+#### 9. **Define Class Labels**
+
+```python
+self.class_names = ["not food", "food"]
+```
+
+* Maps output indices to human-readable labels.
+* `0 → not food`, `1 → food`
+
+---
+
+#### 10. **Prediction Method: `predict()`**
+
+```python
+def predict(self, image_path):
+```
+
+This method takes a path to an image and returns whether it's food or not.
+
+---
+
+#### 11. **Check If Image Exists**
+
+```python
+if not os.path.exists(image_path):
+    raise FileNotFoundError(f"Image file not found: {image_path}")
+```
+
+* Validates the image path to avoid runtime errors.
+
+---
+
+#### 12. **Load and Preprocess Image**
+
+```python
+image = Image.open(image_path).convert("RGB")
+input_tensor = self.transform(image).unsqueeze(0).to(self.device)
+```
+
+* Loads the image and ensures it's in RGB format.
+* Applies the same preprocessing used during training (resize, normalize, etc.).
+* Adds a **batch dimension** so the model can process it.
+
+---
+
+#### 13. **Perform Inference**
+
+```python
+with torch.no_grad():
+    outputs = self.model(input_tensor)
+    _, predicted = torch.max(outputs, 1)
+```
+
+* Turns off gradient computation for efficiency.
+* Passes the image through the model.
+* Gets the class with the highest predicted probability.
+
+---
+
+#### 14. **Return Prediction Label**
+
+```python
+return self.class_names[predicted.item()]
+```
+
+* Converts the numeric class index to a readable label (`"food"` or `"not food"`).
+
+---
+
+####  Example Usage
+
+```python
+classifier = FoodOrNotFood()
+result = classifier.predict("example_image.jpg")
+print("Prediction:", result)
+```
+
+---
