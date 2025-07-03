@@ -13,6 +13,12 @@ dependencies:
     - seaborn
     - geopy
     - pip
+    - json
+    - re
+    - requests
+    - time
+    - os
+    - random
     - pip:
           - python-dotenv
           - duckduckgo_search
