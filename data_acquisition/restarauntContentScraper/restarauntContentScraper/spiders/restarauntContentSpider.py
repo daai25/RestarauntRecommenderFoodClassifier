@@ -1,12 +1,14 @@
+from bs4 import BeautifulSoup
+from io import BytesIO
 import json
 import mimetypes
 import os
 import re
 from pathlib import Path
-from urllib.parse import urljoin, urlparse
+from PIL import Image
 import requests
 import scrapy
-from bs4 import BeautifulSoup
+from urllib.parse import urljoin, urlparse
 
 
 class RestarauntcontentspiderSpider(scrapy.Spider):
@@ -22,7 +24,9 @@ class RestarauntcontentspiderSpider(scrapy.Spider):
         'RETRY_HTTP_CODES': [500, 502, 503, 504, 408, 429],
         'DOWNLOAD_DELAY': 0.5,
         'RANDOMIZE_DOWNLOAD_DELAY': True,
-        'CONCURRENT_REQUESTS': 50,
+        'DOWNLOAD_TIMEOUT': 10,
+        'CONCURRENT_REQUESTS': 16,
+        'MAX_DEPTH': 3,
     }
 
     def __init__(self, *args, **kwargs):
@@ -40,6 +44,9 @@ class RestarauntcontentspiderSpider(scrapy.Spider):
         self.url_to_element_id = {}
         self.page_counters = {}
         self.visited_links = {}
+        self.image_urls_downloaded = {}
+        self.ignored_domains = set()
+        self.set_ignored_domains()
 
     def get_restaurant_json(self):
         """
@@ -65,9 +72,27 @@ class RestarauntcontentspiderSpider(scrapy.Spider):
             website = element.get("website")
             
             #TODO: Instead of only doing this when there is a website, call x-tr4ce's function that gets that url
-            if website and website.startswith("http"):
-                self.start_urls.append(website)
-                self.url_to_element_id[website] = element["id"]
+            if not website or not website.startswith("http"):
+                continue
+
+            domain = urlparse(website).netloc.lower()
+            if any(bad in domain for bad in self.ignored_domains):
+                continue
+            
+            self.start_urls.append(website)
+            self.url_to_element_id[website] = element["id"]
+
+    def set_ignored_domains(self):
+        """
+        There are some domains that cause problems for some reason or another. The leading reason is usually poor site design,
+        or it not really being a restaurant (such as a movie theater with a restaurant attached to it)
+        """
+        self.ignored_domains = {
+        "heartbeat-aarau.ch",
+        "grandcasinobaden.ch",
+        "psi.ch/",
+        "impro.usercontent.one"
+        }
 
     def start_requests(self):
         """
@@ -77,10 +102,11 @@ class RestarauntcontentspiderSpider(scrapy.Spider):
         for url in self.start_urls:
             element_id = self.url_to_element_id[url]
             self.visited_links[element_id] = set()
+            self.image_urls_downloaded[element_id] = set()
             self.page_counters[element_id] = 0
             if os.path.exists(f"scraped-data/{element_id}"):
                 continue
-            yield scrapy.Request(url=url, callback=self.parse, meta={'element_id': element_id})
+            yield scrapy.Request(url=url,  callback=self.parse, meta={'element_id': element_id})
 
     def parse(self, response):
         """
@@ -90,11 +116,14 @@ class RestarauntcontentspiderSpider(scrapy.Spider):
         Args:
             response (scrapy.http.Response): The HTTP response to parse
         """
+        if response.status == 403:
+            return
+
         if "text/html" not in response.headers.get("Content-Type", b"").decode("utf-8"):
             return
         element_id = response.meta['element_id']
         element_path = f"scraped-data/{element_id}"
-        visited = self.visited_links[element_id]
+        visited = response.meta.get('visited') or self.visited_links[element_id]
         
         #Create the direcotires for that site
         self.create_directories(element_path)
@@ -158,18 +187,34 @@ class RestarauntcontentspiderSpider(scrapy.Spider):
             visited (set): Set of previously visited URLs for this element
             element_id (str or int): Unique ID for the element from OpenStreetMap
         """
+        if self.page_counters[element_id] >= 20:
+            return
+        skip_extensions = (
+            '.jpg', '.jpeg', '.png', '.gif', '.bmp', '.webp',
+            '.svg', '.ico', '.pdf', ".tiff", '.doc', '.docx', '.xls', '.xlsx',
+            '.zip', '.rar', '.7z', '.tar', '.gz', '.mp3', '.mp4', '.avi', '.mov', '.wmv'
+        )
+        skip_keywords = ['login', 'logout', 'register', 'returnurl', 'wp-login', 'wp-admin']
+
         # Find and follow internal links
         for link in response.css('a::attr(href)').getall():
+            if self.page_counters[element_id] >= 20:
+                break
             absolute_url = urljoin(response.url, link)
+            if "squarespace" in absolute_url:
+                continue
             parsed = urlparse(absolute_url)
             # There are some sites that will go to login pages or something to that effect, and we should avoid those
-            skip_keywords = ['login', 'logout', 'register', 'returnurl', 'wp-login', 'wp-admin']
             if any(keyword in absolute_url.lower() for keyword in skip_keywords):
                 continue
+            if any(extension in absolute_url.lower() for extension in skip_extensions):
+                continue
+
             if parsed.netloc == urlparse(response.url).netloc and absolute_url not in visited:
                 self.visited_links[element_id].add(absolute_url)
                 yield scrapy.Request(
                     url=absolute_url,
+                    headers={'Referer': response.url},
                     callback=self.parse,
                     meta={'element_id': element_id, 'visited': visited}
                 )
@@ -188,6 +233,7 @@ class RestarauntcontentspiderSpider(scrapy.Spider):
         soup = BeautifulSoup(html, features="lxml")
         img_tags = soup.find_all("img")
         seen_urls = set()
+        downloaded_set = self.image_urls_downloaded[element_id]
 
         image_folder = os.path.join(element_path, "images")
         current_count = len(os.listdir(image_folder))
@@ -195,6 +241,8 @@ class RestarauntcontentspiderSpider(scrapy.Spider):
         for img in img_tags:
             src = img.get("src") or img.get("data-src")
             if not src:
+                continue
+            if src in seen_urls or image_url in downloaded_set:
                 continue
 
             # Skip base64 encoded images or duplicates
@@ -206,14 +254,24 @@ class RestarauntcontentspiderSpider(scrapy.Spider):
             # Resolve absolute URL
             image_url = urljoin(base_url, src)
 
-            response = requests.get(image_url, timeout=10)
+            try:
+                response = requests.get(image_url, timeout=10)
+            except Exception:
+                continue
 
             # Guess file extension
             content_type = response.headers.get("Content-Type", "")
             extension = mimetypes.guess_extension(content_type.split(";")[0].strip()) or ".jpg"
 
+            try:
+                image = Image.open(BytesIO(response.content))
+                image = image.convert("RGB")
+                image = image.resize((512, 512), Image.LANCZOS)
+            except Exception:
+                continue
+
             # Save image
             image_path = os.path.join(image_folder, f"{current_count}{extension}")
-            with open(image_path, "wb") as f:
-                f.write(response.content)
+            image.save(image_path, format="JPEG", quality=85)
+            downloaded_set.add(image_url)
             current_count += 1
