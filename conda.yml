@@ -14,6 +14,7 @@ dependencies:
     - seaborn
     - pip
     - requests
+    - pillow
     - pip:
           - python-dotenv
           - torch
