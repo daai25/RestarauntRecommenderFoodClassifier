@@ -28,12 +28,12 @@ if __name__ == "__main__":
         print(f"Testing directory {test_dir} does not exist.")
         exit(1)
 
-    # prepare the data transformations
-    transform = transforms.Compose([
-        transforms.Resize((224, 224)),
-        transforms.ToTensor(),
-        transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
-    ])
+    # load the pre-trained ResNet18 model
+    weights = ResNet18_Weights.DEFAULT
+    model = resnet18(weights=weights)
+
+    # apply the transformations from the weights
+    transform = weights.transforms()
 
     train_data = datasets.ImageFolder(train_dir, transform=transform)
     test_data = datasets.ImageFolder(test_dir, transform=transform)
@@ -45,12 +45,6 @@ if __name__ == "__main__":
     # define number of classes
     num_classes = len(train_data.classes)
 
-    # load the pre-trained ResNet18 model
-    weights = ResNet18_Weights.DEFAULT
-    model = resnet18(weights=weights)
-
-    # apply the transformations from the weights
-    transform = weights.transforms()
     # replace the final layer
     model.fc = nn.Linear(model.fc.in_features, num_classes)
 
@@ -103,6 +97,6 @@ if __name__ == "__main__":
 
     # save the model
     torch.save(model.state_dict(), "food_or_not_food_model.pth")
-    print("Modell gespeichert unter food_or_not_food_model.pth")
+    print("Model saved to food_or_not_food_model.pth")
 
 
