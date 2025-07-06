@@ -32,7 +32,7 @@ if __name__ == "__main__":
     weights = ResNet18_Weights.DEFAULT
     model = resnet18(weights=weights)
 
-    # apply the transformations from the weights
+    # get the transformations from the weights
     transform = weights.transforms()
 
     train_data = datasets.ImageFolder(train_dir, transform=transform)
@@ -44,7 +44,6 @@ if __name__ == "__main__":
 
     # define number of classes
     num_classes = len(train_data.classes)
-
     # replace the final layer
     model.fc = nn.Linear(model.fc.in_features, num_classes)
 
