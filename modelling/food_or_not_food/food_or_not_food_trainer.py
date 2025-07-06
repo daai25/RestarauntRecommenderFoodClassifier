@@ -1,4 +1,5 @@
 import os
+import argparse
 import torch
 import torch.nn as nn
 import torch.optim as optim
@@ -6,11 +7,18 @@ from torchvision import datasets, transforms
 from torchvision.models import resnet18, ResNet18_Weights
 from torch.utils.data import DataLoader
 
+# command line example:
+# python food_or_not_food_trainer.py --train_dir C:/nfr/food_or_not_food_data/archive/food_data/train --test_dir C:/nfr/food_or_not_food_data/archive/food_data/test
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Train a model to classify food or not food images.")
+    parser.add_argument("--train_dir", type=str, required=True, help="Path to the training data directory")
+    parser.add_argument("--test_dir", type=str, required=True, help="Path to the testing data directory")
+    args = parser.parse_args()
+
     # food or not food dataset archive with training and testing data
-    train_dir = os.path.abspath("C:/nfr/food_or_not_food_data/archive/food_data/train")
-    test_dir = os.path.abspath( "C:/nfr/food_or_not_food_data/archive/food_data/test")
+    train_dir = os.path.abspath(args.train_dir)
+    test_dir = os.path.abspath(args.test_dir)
 
     # check if the directories exist and exit the program
     if not os.path.exists(train_dir):
