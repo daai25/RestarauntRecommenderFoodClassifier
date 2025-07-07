@@ -45,8 +45,8 @@ if __name__ == "__main__":
     test_data = datasets.ImageFolder(test_dir, transform=transform)
 
     # prepare the data loaders
-    train_loader = DataLoader(train_data, batch_size=32, shuffle=True)
-    test_loader = DataLoader(test_data, batch_size=32)
+    train_loader = DataLoader(train_data, batch_size=64, shuffle=True, num_workers=4, pin_memory=True)
+    test_loader = DataLoader(test_data, batch_size=64)
 
     # define number of classes
     num_classes = len(train_data.classes)
