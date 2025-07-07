@@ -45,7 +45,7 @@ if __name__ == "__main__":
     test_data = datasets.ImageFolder(test_dir, transform=transform)
 
     # prepare the data loaders
-    train_loader = DataLoader(train_data, batch_size=64, shuffle=True, num_workers=4, pin_memory=True)
+    train_loader = DataLoader(train_data, batch_size=64, shuffle=True, num_workers=8, pin_memory=True)
     test_loader = DataLoader(test_data, batch_size=64)
 
     # define number of classes
@@ -60,9 +60,9 @@ if __name__ == "__main__":
     # use GPU if available
     use_gpu = torch.cuda.is_available()
     if use_gpu:
-        print(f"{datetime.now()}: using GPU (cuda)")
+        print(f"{datetime.now()}: Using GPU (cuda)")
     else:
-        print(f"{datetime.now()}: using CPU")
+        print(f"{datetime.now()}: Using CPU")
 
     device = torch.device("cuda" if use_gpu else "cpu")
     model.to(device)
@@ -109,6 +109,9 @@ if __name__ == "__main__":
         if avg_val_loss < best_loss:
             best_loss = avg_val_loss
             epochs_no_improve = 0
+            # save the model
+            print(f"{datetime.now()}: Validation loss improved, saving model...")
+            torch.save(model.state_dict(), "food_or_not_food_model.pth")
         else:
             epochs_no_improve += 1
             print(f"{datetime.now()}: No improvement for {epochs_no_improve} epoch(s)")
@@ -118,7 +121,12 @@ if __name__ == "__main__":
             early_stop = True
             break
 
-    # calculate accuracy on the test set, with the best model
+    # calculate accuracy of the best model
+    # load the best model
+    model.load_state_dict(torch.load("food_or_not_food_model.pth"))
+    model.to(device)
+    print(f"{datetime.now()}: Evaluating the best model on the test set...")
+
     model.eval()
     correct = 0
     total = 0
@@ -132,9 +140,3 @@ if __name__ == "__main__":
 
     accuracy = correct / total
     print(f"{datetime.now()}: Test Accuracy: {accuracy * 100:.2f}%")
-
-    # save the model
-    torch.save(model.state_dict(), "food_or_not_food_model.pth")
-    print(f"{datetime.now()}: Model saved to food_or_not_food_model.pth")
-
-
