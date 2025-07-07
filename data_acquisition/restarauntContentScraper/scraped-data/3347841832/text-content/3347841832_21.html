@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to Restaurant TandoorHaus</title>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport"/>
+<link href="https://fonts.googleapis.com/css?family=Arsenal:400,700|Libre+Franklin:500" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Abel|Permanent+Marker&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Hind:700|Merienda+One|Quattrocento+Sans:400,700|Montserrat|Architects+Daughter&amp;display=swap" rel="stylesheet"/>
+<link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet"/>
+<link href="index.css" rel="stylesheet"/>
+<link href="../menu.css" rel="stylesheet"/>
+
+
+
+</head>
+<body onload="runSlideShow()">
+<div class="headerDesktop">
+<div id="logoSectionDesktop">
+<video autoplay="" height="100" id="logoVid" loop="" muted="" playsinline="" width="390">
+<source src="../images/tr3.mp4" type="video/mp4">
+</source></video>
+<video autoplay="" height="70" id="logoVidMobile" loop="" muted="" playsinline="" width="270">
+<source src="../images/tr3.mp4" type="video/mp4">
+</source></video>
+</div>
+<div class="navBarMenuIcon" id="navMenuIcon" onclick="showMobileMenu()">
+				=
+			</div>
+<div class="navBarMenuCloseIcon" id="navMenuCloseIcon" onclick="hideMobileMenu()">
+				x
+			</div>
+<div class="remainingMenu">
+<div class="menuItem">
+<a class="menuLink" href="../index.html"><span>HOME</span></a>
+</div>
+<div class="menuItem">
+<a class="menuLink" href="../lunchMenu"><span>LUNCH MENU</span></a>
+</div>
+<div class="menuItem">
+<a class="menuLink" href="../onlineOrders"><span>ONLINE ORDERS</span></a>
+</div>
+<div class="menuItem">
+<a class="menuLink" href="../reservations"><span>RESERVATIONS</span></a>
+</div>
+<div class="menuItem">
+<a class="menuLink" href="../lunchBuffet"><span>BUFFET</span></a>
+</div>
+<div class="menuItem">
+<a class="navBarMenuItemsBorderDesktop" href="./offers"><span>OFFERS</span></a>
+</div>
+<!--<div class='menuItem'>
+					<a class="menuLink" href = './homeDelivery'><span>HOME DELIVERY</span></a>
+				</div> -->
+<div class="menuItem">
+<a class="menuLink" href="../contact"><span>CONTACT</span></a>
+</div>
+</div>
+</div>
+<div class="navBarMobile">
+<div class="navBarMenuContainer" id="navBarMenuContainerID">
+<div class="navBarTitle">
+						MENU
+					</div>
+<div class="navBarMenu">
+<a class="menuLink navBarMenuItemsBorder" href="../index.html"><span>Home</span></a>
+<a class="menuLink navBarMenuItemsBorder" href="../lunchMenu"><span>Lunch Menu </span></a>
+<a class="menuLink navBarMenuItemsBorder" href="../onlineOrders"><span>Online Orders</span></a>
+<a class="menuLink navBarMenuItemsBorder" href="../reservations"><span>Reservations</span></a>
+<a class="menuLink navBarMenuItemsBorder" href="../lunchBuffet"><span>Buffet</span></a>
+<a class="menuLink navBarMenuItemsBorder" href="./offers"><span>Offers </span></a>
+<!-- <a class="menuLink navBarMenuItemsBorder" href = '../homeDelivery'><span>Home Delivery</span></a> -->
+<a class="menuLink navBarMenuItemsBorder" href="../contact"><span>Contact</span></a>
+</div>
+</div>
+</div>
+<div id="imageSlideShowContainer">
+<div id="slideShowImage">
+<img id="imageElement" src="images/topImage.jpg"/>
+</div>
+</div>
+<!-- Catering Container -->
+<div class="tandoorContainer">
+<div class="tandoorTitle">
+				CATERING SERVICES
+			</div>
+<div class="tanParent">
+<div class="tanImage" data-aos="slide-right" data-aos-duration="1000">
+<img src="images/occassion.jpg"/>
+</div>
+<div class="tanDesc" data-aos="slide-left" data-aos-duration="1000">
+					We provide Catering Services for <br/>
+<ul>
+<li>
+							Weddings
+						</li>
+<li>
+							Birthdays
+						</li>
+<li>
+							Any other Special Occassion.
+						</li>
+</ul>
+</div>
+</div>
+<div class="tanParent2">
+<div class="tanDesc" data-aos="slide-right" data-aos-duration="1000">
+<ul>
+<li>
+							From 15 people we will be happy to serve you in your localities
+						</li>
+<li>
+							From 50 people we associate with the tandoor oven and cook to your liking.
+						</li>
+</ul>
+</div>
+<div class="tanImage" data-aos="slide-left" data-aos-duration="1000">
+<img src="images/people.jpg"/>
+</div>
+</div>
+<div class="tanParent">
+<div class="tanImage" data-aos="slide-right" data-aos-duration="1000">
+<img src="images/food.jpg"/>
+</div>
+<div class="tanDesc" data-aos="slide-left" data-aos-duration="1000">
+					You have a choice of
+					<ul>
+<li>
+							Fish
+						</li>
+<li>
+							Lamb
+						</li>
+<li>
+							Meat
+						</li>
+<li>
+							Vegetables
+						</li>
+<li>
+							Appetizers
+						</li>
+<li>
+							Side Dishes
+						</li>
+<li>
+							Home made Desserts
+						</li>
+</ul>
+</div>
+</div>
+<div class="tanParent2">
+<div class="tanDesc" data-aos="slide-right" data-aos-duration="1000">
+<ul>
+<li>
+							Please call us for a personal interview or contact us
+						</li>
+<li>
+							Phone : 043 299 94 40
+						</li>
+<li>
+							Email : info@tandoorhaus.com
+						</li>
+</ul>
+</div>
+<div class="tanImage" data-aos="slide-left" data-aos-duration="1000">
+<img src="images/contact.jpg"/>
+</div>
+</div>
+</div>
+<!-- footers section  -->
+<div class="footersContainer">
+<div class="footersMenu">
+<a class="menuLink footerMenuColor" href="../index.html"><span>  Home  |</span></a>
+<!--<a class="menuLink footerMenuColor" href = '../menu'><span>&nbsp;&nbsp;Menu &nbsp;&nbsp;|</span></a>-->
+<a class="menuLink footerMenuColor" href="../onlineOrders"><span>  Online Orders   |</span></a>
+<a class="menuLink footerMenuColor" href="../reservations"><span>  Reservations   |</span></a>
+<a class="menuLink footerMenuColor" href="../lunchBuffet"><span>  Buffet   |</span></a>
+<a class="menuLink footerMenuColor" href=""><span>  Contact  </span></a>
+</div>
+<div class="footersTitle">
+<br/>
+<h1 class="footerHotelName"> TandoorHaus Restaurant </h1>
+
+				© 2021 TandoorHaus Restaurant
+				<br/>
+<br/>
+				Maintained By <a class="menuLink footerMenuColor" href="./contact">SNS INFOGRAPHICS</a>
+<br/>
+</div>
+</div>
+
+
+</body>
+</html>

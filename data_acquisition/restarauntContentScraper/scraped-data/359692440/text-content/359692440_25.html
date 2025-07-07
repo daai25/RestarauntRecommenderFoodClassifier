@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="" name="description"/>
+<title>Bellevue Pizzeria Winterthur</title>
+<link href="/vendors/common/css/lib.min.css?v=LVrD68dLRUcWzncsuLAum7AHF7T27KYDmSYA0HRlp30" rel="stylesheet"/>
+<link href="/bundles/css/layout.min.css?v=3kwAyxdiWNy26G44zjUHRzeTWxPJObsikU-Vt9mTagI" rel="stylesheet"/>
+</head>
+<body>
+<!-- Cart Sidebar Start -->
+<div class="cart-sidebar-wrapper">
+<aside class="cart-sidebar">
+<div class="cart-sidebar-header">
+<h3 data-localize-html="Cart"></h3>
+<div class="close-btn cart-trigger close-dark">
+<span></span>
+<span></span>
+</div>
+</div>
+<div class="cart-sidebar-body">
+<div class="cart-sidebar-scroll" id="basketItemsMainContainer">
+</div>
+</div>
+<div class="cart-sidebar-footer">
+<div style="padding-left: 20px;">
+<div data-localize-html="DiscountAppliedCheckoutScreen" style="color:grey;font-style:italic;font-size: 13px;margin-bottom: 0;"></div>
+<div id="basketTotalMainContainer"></div>
+</div>
+<div class="cart-sidebar-footer-button">
+<a class="btn-custom" data-localize-html="Checkout" href="/checkout" id="cart-sidebar-checkout-button"></a>
+</div>
+</div>
+</aside>
+<div class="cart-sidebar-overlay cart-trigger">
+</div>
+</div>
+<!-- Cart Sidebar End -->
+<!-- Aside (Mobile Navigation) -->
+<aside class="main-aside">
+<a class="navbar-brand" href="/Home">
+<img alt="logo" src="/img/logo.png"/>
+</a>
+<div class="aside-scroll">
+<ul class="submenu">
+<li class="menu-item">
+<a data-localize-html="Home" href="/"></a>
+</li>
+<li class="menu-item">
+<a data-localize-html="OrderOnline" href="/order-online"></a>
+</li>
+<li class="menu-item">
+<a data-localize-html="Agb" href="/agb"></a>
+</li>
+<li class="menu-item">
+<a data-localize-html="Impressum" href="/impressum"></a>
+</li>
+<li class="menu-item">
+<a data-localize-html="Contact" href="/contact"></a>
+</li>
+<li class="menu-item">
+<a data-localize-html="Info" href="/info"></a>
+</li>
+<li class="menu-item">
+<a data-localize-html="Checkout" onclick="Restaurant.Common.OpenCheckoutPage()" style="cursor:pointer"></a>
+</li>
+</ul>
+</div>
+</aside>
+<div class="aside-overlay aside-trigger"></div>
+<!-- Header Start -->
+<header class="main-header header-1 header-absolute header-light">
+<div class="top-header">
+<div class="container">
+<div class="top-header-inner">
+<div class="top-header-contacts">
+<ul class="top-header-nav">
+<li id="contentClosedMessage"></li>
+</ul>
+</div>
+<ul class="top-header-nav header-cta">
+<li id="topHeaderButton1"></li>
+<li id="topHeaderButton2"></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="container">
+<nav class="navbar">
+<!-- Logo -->
+<a class="navbar-brand" href="/Home">
+<img alt="logo" src="/img/logo.png"/>
+</a>
+<!-- Menu -->
+<ul class="navbar-nav">
+<li class="menu-item menu-item-has-children">
+<a data-localize-html="Home" href="/"></a>
+</li>
+<li class="menu-item menu-item-has-children">
+<a data-localize-html="OrderOnline" href="/order-online"></a>
+</li>
+<li class="menu-item menu-item-has-children">
+<a data-localize-html="Contact" href="/contact"></a>
+</li>
+<li class="menu-item menu-item-has-children">
+<a data-localize-html="Info" href="/info"></a>
+</li>
+<li class="menu-item menu-item-has-children">
+<a data-localize-html="Checkout" onclick="Restaurant.Common.OpenCheckoutPage()" style="cursor:pointer"></a>
+</li>
+</ul>
+<div class="header-controls">
+<ul class="header-controls-inner" id="cartIcon">
+<li class="cart-dropdown-wrapper cart-trigger">
+<span class="cart-item-count" id="cartItemCount" style="display:none"></span>
+<i class="flaticon-shopping-bag"></i>
+</li>
+</ul>
+<!-- Toggler -->
+<div class="aside-toggler aside-trigger">
+<span></span>
+<span></span>
+<span></span>
+</div>
+</div>
+</nav>
+</div>
+</header>
+<!-- Header End -->
+<link href="/bundles/css/index.min.css?v=ZAoX5fruJInEL4BRdsr8cnTiZ7f3kCxjpdI1Km01570" rel="stylesheet"/>
+<!-- Subheader Start -->
+<div class="subheader dark-overlay dark-overlay-2" style="background-image: url('/img/homeBanner.jpg')">
+<div class="container">
+<div class="subheader-inner">
+</div>
+</div>
+</div>
+<!-- Subheader End -->
+<!-- Menu Categories Start -->
+<div class="ct-menu-categories menu-filter" id="categoryHeader" style="padding:0">
+<div class="closedBar"></div>
+<div class="container" style="padding:20px 20px 0 20px">
+<div class="menu-category-slider" id="categoriesContainer">
+</div>
+</div>
+</div>
+<!-- Menu Categories End -->
+<div class="service-type-container" id="divDeliveryPickupSelection">
+</div>
+<!-- Menu Wrapper Start -->
+<div class="section section-padding">
+<div class="container">
+<div class="menu-container row overflow-hidden" id="productsContainer">
+</div>
+</div>
+</div>
+<!-- Menu Wrapper End -->
+<!-- Customize Modal Start -->
+<div aria-hidden="true" class="modal fade" id="productDetailModal" role="dialog" tabindex="-1">
+<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+<div class="modal-content">
+<div class="modal-header modal-bg product-detail-header" style="">
+<button aria-label="Close" class="close-btn" data-dismiss="modal" type="button">
+<span></span>
+<span></span>
+</button>
+</div>
+<div class="modal-body">
+<div class="customize-meta">
+<h4 class="customize-title">
+<span id="productDetailProductName" style="word-break:break-word"></span>
+<span class="custom-primary" id="productDetailProductPrice" style="flex-shrink:0;align-self:flex-start"></span>
+</h4>
+<p id="productDetailProductDescription">
+</p>
+</div>
+<div class="customize-variations">
+<div class="customize-size-wrapper" id="productDetailSizesContainer">
+<h5 data-localize-html="Sizes"></h5>
+</div>
+<div class="row" id="productDetailToppingGroupsContainer" style="max-height: 306px;overflow: auto;-webkit-overflow-scrolling: touch;">
+</div>
+<div style="margin:10px 0">
+<input class="form-control" data-localize-placeholder="Instructions" id="inputProductDetailInstruction" maxlength="500" type="text"/>
+</div>
+</div>
+<div class="customize-controls" id="productDetailQuantityTotal">
+<div class="qty">
+<span class="qty-subtract" onclick="decreaseProductDetailQuantity()">
+<i class="fas fa-minus"></i>
+</span>
+<input id="inputProductDetailQuantity" readonly="" type="text" value="1"/>
+<span class="qty-add" onclick="increaseProductDetailQuantity()">
+<i class="fas fa-plus"></i>
+</span>
+</div>
+<div class="customize-total">
+<h5>
+<span data-localize-html="Total"></span>:
+                            <span class="detailPriceContent" id="productDetailTotalPricePre"> </span>
+<span class="final-price custom-primary" id="productDetailTotalPrice"> </span>
+</h5>
+</div>
+</div>
+<button class="btn-custom shadow-none btn-block" data-localize-html="AddToCart" onclick="addProductToCart()" type="button"></button>
+</div>
+</div>
+</div>
+</div>
+<!-- Customize Modal End -->
+<div class="cart-badge cart-trigger">
+<i class="flaticon-shopping-bag"></i>
+</div>
+
+
+
+
+
+
+<!-- Footer Start -->
+<footer class="ct-footer footer-dark">
+<!-- Top Footer -->
+<div class="container">
+<div class="footer-top">
+<div class="footer-logo">
+<select class="form-control" id="selectLanguage" onchange="selectLanguageChanged(this)" style="height:40px">
+<option value="en">English</option>
+<option selected="" value="de">Deutsche</option>
+</select>
+</div>
+<div class="footer-buttons">
+<a onclick="openAppAndroid()" style="cursor:pointer">
+<img alt="download it on the app store" src="/img/android.png"/>
+</a>
+<a onclick="openAppIos()" style="cursor:pointer">
+<img alt="download it on the app store" src="/img/ios.png"/>
+</a>
+</div>
+</div>
+</div>
+<!-- Middle Footer -->
+<div class="footer-middle">
+<div class="container">
+<div class="row">
+<div class="col-xl-2 col-lg-3 col-md-4 col-sm-12 footer-widget">
+<img alt="logo" src="/img/logo.png" style="width:85px"/>
+</div>
+<div class="col-xl-2 col-lg-3 col-md-4 col-sm-12 footer-widget">
+<ul>
+<li>
+<a data-localize-html="Home" href="/"></a>
+</li>
+<li>
+<a data-localize-html="OrderOnline" href="/order-online"></a>
+</li>
+</ul>
+</div>
+<div class="col-xl-2 col-lg-3 col-md-4 col-sm-12 footer-widget">
+<ul>
+<li>
+<a data-localize-html="Contact" href="/contact"></a>
+</li>
+<li>
+<a data-localize-html="Info" href="/info"></a>
+</li>
+</ul>
+</div>
+<div class="col-xl-3 col-lg-3 col-md-4 col-sm-12 footer-widget">
+<ul>
+<li>
+<a data-localize-html="Agb" href="/agb"></a>
+</li>
+<li>
+<a data-localize-html="Impressum" href="/impressum"> </a>
+</li>
+</ul>
+</div>
+<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 footer-widget">
+</div>
+</div>
+</div>
+</div>
+<!-- Footer Bottom -->
+<div class="footer-bottom">
+<div class="container">
+<div class="footer-copyright">
+<a class="back-to-top" href="#">
+<i class="fas fa-chevron-up"></i>
+</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- Footer End -->
+<!-- Vendor Scripts -->
+<!-- Slices Scripts -->
+
+
+
+<!-- LIB -->
+
+<!-- LIB -->
+
+<!-- LAYOUT -->
+
+<!-- LAYOUT -->
+
+</body>
+</html>

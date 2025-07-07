@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<base href="https://www.roessli-schwarzenberg.ch/reservation"/>
+<meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+<meta content="rössli, schwarzenberg, gastronomie, spezialitäten, speisen, cabrio" name="keywords"/>
+<meta content="Super User" name="author"/>
+<meta content="Restaurant Rössli, Schwarzenberg" name="description"/>
+<meta content="Joomla! - Open Source Content Management" name="generator"/>
+<title>Restaurant Rössli - Reservation</title>
+<link href="/templates/roessli/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon"/>
+<link href="/cache/widgetkit/widgetkit-52db4fcf.css" rel="stylesheet" type="text/css"/>
+<link href="/media/jui/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+<link href="/media/jui/css/bootstrap-responsive.css" rel="stylesheet" type="text/css"/>
+<link href="/templates/roessli/css/layout.css" rel="stylesheet" type="text/css"/>
+<link href="/templates/roessli/css/typographie.css" rel="stylesheet" type="text/css"/>
+<link href="/templates/roessli/css/extensions.css" rel="stylesheet" type="text/css"/>
+<link href="/templates/roessli/css/responsive.css" rel="stylesheet" type="text/css"/>
+
+
+
+
+
+
+
+<!-- Skalierung-ResponsiveDesign -->
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<!-- GoogleFonts-Integration -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="https://fonts.googleapis.com/css?family=Lobster+Two:400,700,400italic,700italic" rel="stylesheet" type="text/css"/>
+<!-- Google Analytics -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+</head>
+<body>
+<!-- main Wrapper -->
+<div class="relative" id="mainWrapper">
+<!-- Menu Top mobile -->
+<div class="absolute justMobile" id="respButton">
+<button class="dpButton" data-target=".nav-collapse" data-toggle="collapse" type="button"></button>
+</div>
+<!-- Firmenlogo -->
+<a href="/index.php">
+<div class="span12 w100 noMobile" id="marke"> </div>
+</a>
+<!-- Firmenlogo -->
+<a href="/index.php">
+<div class="w100 justMobile" id="markeMobile"> </div>
+</a>
+<div class="container" id="containerMiddle">
+<div class="span12" id="containerMiddleInner">
+<!-- Menu Top Mobile -->
+<div class="span2 nav-collapse collapse justMobile" id="mainMenu">
+<ul class="nav menu mod-list">
+<li class="item-113 parent"><a href="/aktuelles/agenda">Aktuelles</a></li><li class="item-114"><a href="/raeumlichkeiten">Räumlichkeiten</a></li><li class="item-121"><a href="/gastronomie">Gastronomie</a></li><li class="item-122 parent"><a href="/unternehmen/kontakt">Unternehmen</a></li><li class="item-126"><a href="/gutschein">Gutschein</a></li><li class="item-131 current active"><a href="/reservation">Reservation</a></li><li class="item-127"><a href="/freizeit">Freizeit</a></li></ul>
+</div>
+<!-- Menu Top -->
+<div class="span2 noMobile" id="mainMenu">
+<ul class="nav menu mod-list">
+<li class="item-113 parent"><a href="/aktuelles/agenda">Aktuelles</a></li><li class="item-114"><a href="/raeumlichkeiten">Räumlichkeiten</a></li><li class="item-121"><a href="/gastronomie">Gastronomie</a></li><li class="item-122 parent"><a href="/unternehmen/kontakt">Unternehmen</a></li><li class="item-126"><a href="/gutschein">Gutschein</a></li><li class="item-131 current active"><a href="/reservation">Reservation</a></li><li class="item-127"><a href="/freizeit">Freizeit</a></li></ul>
+</div>
+<!-- Inhalt -->
+<div class="span10" id="content">
+<div class="item-page" itemscope="" itemtype="https://schema.org/Article">
+<meta content="de-DE" itemprop="inLanguage"/>
+<div itemprop="articleBody">
+<div class="span4 marginR3"><img alt="Tischreservation" src="/images/reservation/Tischreservation.jpg"/></div>
+<div class="span6">
+<h1><strong>Herzlichen Dank</strong></h1>
+<h1>für Ihre Reservation im Rössli</h1>
+<p><strong><br/>Bitte 4h vorher reservieren ansonsten per Telefon 041 497 00 22.</strong></p>
+<p> </p>
+<div class="moduletable">
+<div class="custom">
+
+<form action="https://www.roessli-schwarzenberg.ch/formReservation.php" id="newsletterOrder" method="post" name="contactForm" onsubmit="return pruefen()">
+<table cellpadding="0" cellspacing="0" class="couponForm" style="width: 584px;">
+<!-- Unsichtbare Felder – Start -->
+<tr>
+<td class="displayNone">Homepage*</td>
+<td class="displayNone"><input id="homepage" name="homepage" style="width:100%" type="text"/></td>
+</tr>
+<tr>
+<td class="displayNone">URL*</td>
+<td class="displayNone"><input id="url" name="url" style="width:100%" type="text"/></td>
+</tr>
+<!-- Unsichtbare Felder – Ende -->
+<tr>
+<td class="contactLabel">Firma</td>
+<td class="contactInput"><input class="formInputField" id="firma" name="firma" style="width:100%;" type="text"/></td>
+</tr>
+<tr>
+<td class="contactLabel">Vorname*</td>
+<td class="contactInput"><input class="formInputField" id="vorname" name="vorname" style="width:100%;" type="text"/></td>
+</tr>
+<tr>
+<td class="contactLabel">Name*</td>
+<td class="contactInput"><input class="formInputField" id="nachname" name="nachname" style="width:100%;" type="text"/></td>
+</tr>
+<tr>
+<td class="contactLabel">Telefon*</td>
+<td class="contactInput"><input class="formInputField" id="telefon" name="telefon" style="width:100%;" type="text"/></td>
+</tr>
+<tr>
+<td class="contactLabel">E-Mail*</td>
+<td class="contactInput"><input class="formInputField" id="email" name="email" style="width:100%;" type="text"/></td>
+</tr>
+<tr>
+<td class="contactLabel">Zeit und Datum*</td>
+<td class="contactInput"><input class="formInputField" id="datum" name="datum" style="width:100%;" type="text"/></td>
+</tr>
+<tr>
+<td class="contactLabel">Anzahl Personen*</td>
+<td class="contactInput"><input class="formInputField" id="personen" name="personen" style="width:100%;" type="text"/></td>
+</tr>
+<tr>
+<td class="contactLabel">Anzahl Kindersitze</td>
+<td class="contactInput"><input class="formInputField" id="kindersitze" name="kindersitze" style="width:100%;" type="text"/></td>
+</tr>
+<tr>
+<td class="contactLabel">Bemerkung</td>
+<td class="contactInput"><input class="formInputField" id="bemerkung" name="bemerkung" style="width:100%;" type="text"/></td>
+</tr>
+<tr>
+<td class="contactLabel">Verifizierung</td>
+<td class="contactInput"><img border="0" src="/captcha/captcha.php" style="width: 40%; height: 40px;" title="sicherheitscode"/></td>
+</tr>
+<tr>
+<td class="contactLabel">Eingabefeld*</td>
+<td class="contactInput"><input id="sicherheitscode" name="sicherheitscode" style="width:40%" type="text"/></td>
+</tr>
+<tr>
+<td class="contactLabel"></td>
+<td class="contactInput"><input id="submit" name="submit" style="width:40%" type="submit" value="Senden"/></td>
+</tr>
+</table>
+</form>
+</div>
+</div>
+</div> </div>
+</div>
+</div>
+</div>
+</div>
+<!-- bottom container -->
+<div class="fixed w100" id="bottomContainer">
+<div class="container">
+<!-- Fusszeile -->
+<div class="span9" id="footer">
+<div class="custom">
+<p><strong>Restaurant Rössli</strong> | Rafael Wicki<br/>Dorfstrasse 13 | 6103 Schwarzenberg | Fon 041 497 00 22 | Fax 041 497 00 23 | <a href="mailto:info@roessli-schwarzenberg.ch">info@roessli-schwarzenberg.ch</a></p>
+<p><a href="/impressum">Impressum</a></p></div>
+</div>
+<!-- Icons Reputation -->
+<div class="span2 floatRight" id="modRep">
+<div class="custom">
+<div>
+<a href="https://www.facebook.com/roessli.schwarzenberg" target="_blank"><img alt="facebook" height="23" src="/images/facebook.png" width="30"/></a>  
+<a href="https://www.instagram.com/roessli_schwarzenberg" target="_blank"><img alt="facebook" height="23" src="/images/instagram.png" width="30"/></a>  
+<a href="http://www.tripadvisor.de/Restaurant_Review-g3485272-d7185287-Reviews-Restaurant_Rossli_Schwarzenberg-Schwarzenberg.html" target="_blank"><img alt="tripAdvisor" height="20" src="/images/tripAdvisor.png" width="30"/></a>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

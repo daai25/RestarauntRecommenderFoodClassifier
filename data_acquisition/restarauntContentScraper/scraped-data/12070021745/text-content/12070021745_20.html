@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html class="no-js" lang="de">
+<head>
+<meta charset="utf-8"/>
+<meta content="ie=edge" http-equiv="x-ua-compatible"/>
+<title>Restaurant Enjoy Schlieren</title>
+<meta content="" name="description"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<link href="img/logo/logo-footer.png" rel="shortcut icon" type="image/x-icon"/>
+<link href="css/bootstrap.min.css" rel="stylesheet"/>
+<link href="css/animate.min.css" rel="stylesheet"/>
+<link href="css/magnific-popup.css" rel="stylesheet"/>
+<link href="fontawesome/css/all.min.css" rel="stylesheet"/>
+<link href="css/dripicons.css" rel="stylesheet"/>
+<link href="css/slick.css" rel="stylesheet"/>
+<link href="css/meanmenu.css" rel="stylesheet"/>
+<link href="css/default.css" rel="stylesheet"/>
+<link href="css/style.css" rel="stylesheet"/>
+<link href="css/responsive.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="header-area header-two">
+<div class="header-top second-header d-none d-md-block">
+<div class="container">
+<div class="row align-items-center">
+<div class="col-lg-6 col-md-6 d-none d-lg-block">
+<div class="header-social">
+<span>
+<a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+<a href="#" title="LinkedIn"><i class="fab fa-instagram"></i></a>
+</span>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 d-none d-lg-block mt-10 mb-10 text-right">
+<div class="header-cta">
+<ul>
+<li>
+<i class="fas fa-clock"></i>
+<span>Sonntag: 9:00 - 22:00 durchgehend</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="menu-area" id="header-sticky">
+<div class="container">
+<div class="second-menu">
+<div class="row align-items-center justify-content-between">
+<div class="col-xl-2 col-lg-2">
+<div class="logo">
+<a href="index.php"><img alt="logo" src="img/logo/logo-schwarz.png"/></a>
+</div>
+</div>
+<div class="col-xl-9 col-lg-10">
+<div class="main-menu text-right text-xl-right">
+<nav id="mobile-menu">
+<ul>
+<li><a href="index.php">Home</a></li>
+<li><a href="uber-uns.php">Über uns</a></li>
+<li><a href="menu.php">Menü</a></li>
+<li><a href="tagesmenu.php">Tagesmenu</a></li>
+<li><a href="events.php">Events</a></li>
+<li><a href="galerie.php">Galerie</a></li>
+<li><a href="kontakt.php">Kontakt</a></li>
+<li><a class="btn ss-btn active" href="reservation.php" style="padding:20px 20px;">Reservierung</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<div class="col-12">
+<div class="mobile-menu"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<main>
+<section class="breadcrumb-area d-flex align-items-center" style="background-image:url(img/bread-2.jpg); background-position: center;">
+<div class="container">
+<div class="row align-items-center">
+<div class="col-xl-12 col-lg-12">
+<div class="breadcrumb-wrap text-center">
+<div class="breadcrumb-title pt-100">
+<h2>Reservierung</h2>
+<div class="breadcrumb-wrap">
+<nav aria-label="breadcrumb">
+<ol class="breadcrumb">
+<li class="breadcrumb-item"><a href="index.php">Home</a></li>
+<li aria-current="page" class="breadcrumb-item active">Reservierung</li>
+</ol>
+</nav>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="contact-area after-none contact-bg pt-120 pb-120 p-relative fix" id="contact">
+<div class="animations-01"><img alt="contact-bg-an-01" src="img/bg/an-img-01.png"/></div>
+<div class="animations-02"><img alt="contact-bg-an-01" src="img/bg/an-img-04.png"/></div>
+<div class="container">
+<div class="row justify-content-center align-items-center">
+<div class="col-lg-12 order-2">
+<div class="contact-bg02">
+<div class="section-title center-align mb-40 text-center wow fadeInDown animated" data-animation="fadeInDown" data-delay=".4s">
+<h3>
+
+                                    Reservierung
+
+                                </h3>
+<p>Reservieren Sie noch heute Ihren Tisch bei Enjoy Schlieren! <br/> Wir werden Ihre
+
+                                    Buchung per E-Mail bestätigen. </p>
+</div>
+<form action="mailphp/angebot.php" class="contact-form mt-30" id="myForm" method="post">
+<div class="row">
+<!--
+
+                                    <div class="col-lg-12">
+
+                                        <div class=" p-relative c-name mb-20">
+
+                                            <input type="radio" id="her">
+
+                                            <label for="her"><strong>Herr</strong></label>
+
+                                            <input type="radio" id="her">
+
+                                            <label for="her"><strong>Frau</strong></label>
+
+                                        </div>
+
+                                    </div>-->
+<div class="col-lg-6">
+<div class="contact-field p-relative c-name mb-20">
+<input id="nameInput" name="kullanici_ad" placeholder="Name*" required="" type="text"/>
+</div>
+</div>
+<div class="col-lg-6">
+<div class="contact-field p-relative c-name mb-20">
+<input id="surnameInput" name="kullanici_soyad" placeholder="Vorname*" required="" type="text"/>
+</div>
+</div>
+<div class="col-lg-6">
+<div class="contact-field p-relative c-subject mb-20">
+<input id="emailInput" name="kullanici_mail" placeholder="E-mail*" required="" type="email"/>
+</div>
+</div>
+<div class="col-lg-6">
+<div class="contact-field p-relative c-subject mb-20">
+<input id="telInput" name="kullanici_gsm" placeholder="Tel*" required="" type="text"/>
+</div>
+</div>
+<div class="col-lg-6">
+<div class="contact-field p-relative c-subject mb-20">
+<label class="text-left text-capitalize" for="">Datum*</label>
+<input id="dateInput" min="2025-07-06" name="reserv_date" placeholder="tt.mm.jjjj" required="" style="width:100% !important;" type="date"/>
+</div>
+</div>
+<div class="col-lg-6">
+<div class="contact-field p-relative c-subject mb-20">
+<label class="text-left text-capitalize" for="">Uhrzeit*</label>
+<select class="" id="timeInput" name="reserv_time" required="">
+<option disabled="" selected="" value="">Uhrzeit</option>
+<option value="09:00">09:00</option><option value="09:15">09:15</option><option value="09:30">09:30</option><option value="09:45">09:45</option><option value="10:00">10:00</option><option value="10:15">10:15</option><option value="10:30">10:30</option><option value="10:45">10:45</option><option value="11:00">11:00</option><option value="11:15">11:15</option><option value="11:30">11:30</option><option value="11:45">11:45</option><option value="12:00">12:00</option><option value="12:15">12:15</option><option value="12:30">12:30</option><option value="12:45">12:45</option><option value="13:00">13:00</option><option value="13:15">13:15</option><option value="13:30">13:30</option><option value="17:30">17:30</option><option value="17:45">17:45</option><option value="18:00">18:00</option><option value="18:15">18:15</option><option value="18:30">18:30</option><option value="18:45">18:45</option><option value="19:00">19:00</option><option value="19:15">19:15</option><option value="19:30">19:30</option><option value="19:45">19:45</option><option value="20:00">20:00</option><option value="20:15">20:15</option><option value="20:30">20:30</option><option value="20:45">20:45</option><option value="21:00">21:00</option><option value="21:15">21:15</option><option value="21:30">21:30</option><option value="21:45">21:45</option><option value="22:00">22:00</option>
+</select>
+</div>
+</div>
+<div class="col-lg-6">
+<div class="contact-field p-relative c-subject mb-20">
+<label class="text-left text-capitalize" for="">Anzahl Personen*</label>
+<select class="" id="personInput" name="person" required="">
+<option disabled="" selected="" value="">Anzahl Personen*</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+</select>
+</div>
+</div>
+<div class="col-lg-6">
+<div class="contact-field p-relative c-subject mb-20">
+<label class="text-left text-capitalize" for="">Tischposition*</label>
+<select class="" id="location" name="location" required="">
+<option disabled="" selected="" value="">Tischposition</option>
+<option value="Restaurant">Restaurant</option>
+<option value="Terrasse">Terrasse</option>
+</select>
+</div>
+</div>
+<div class="col-lg-12">
+<div class="contact-field p-relative c-message mb-20">
+<textarea cols="30" id="textInput" name="kullanici_msg" placeholder="Nachricht" rows="10"></textarea>
+</div>
+</div>
+<div class="col-lg-12">
+<label style="font-size:20px; font-weight: 600">8 + 4 = ?</label>
+<input id="captchaInput" name="captcha" required="" type="number"/>
+<input id="captchaResult" type="hidden" value="12"/>
+</div>
+<div class="col-lg-12 mt-3">
+<div class="slider-btn">
+<button class="btn ss-btn" data-animation="fadeInRight" data-delay=".8s"><span>Senden</span></button>
+</div>
+</div>
+</div>
+</form></div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="footer-bg footer-p">
+<div class="footer-top pt-90 pb-40" style="background-color: #4f0909;">
+<div class="container">
+<div class="row justify-content-between">
+<div class="col-xl-3 col-lg-3 col-sm-6">
+<div class="footer-widget mb-30">
+<div class="f-widget-title mb-30">
+<img alt="img" src="img/logo/logo-footer.png"/>
+</div>
+<div class="f-contact">
+</div>
+</div>
+</div>
+<div class="col-xl-2 col-lg-2 col-sm-6">
+<div class="footer-widget mb-30">
+<div class="f-widget-title">
+<h2>Navigation</h2>
+</div>
+<div class="footer-link">
+<ul>
+<li><a href="index.php">Home</a></li>
+<li><a href="uber-uns.php"> Über uns</a></li>
+<li><a href="menu.php">Menü </a></li>
+<li><a href="events.php"> Events</a></li>
+<li><a href="galerie.php"> Galerie</a></li>
+<li><a href="kontakt.php"> Kontakt</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-xl-4 col-lg-2 col-sm-6">
+<div class="footer-widget mb-30">
+<div class="f-widget-title">
+<h2>Öffnungszeiten</h2>
+</div>
+<div class="f-contact">
+<ul>
+<li class="row">
+<span class="text--bold col-lg-3 col-3">Mo - Do:</span>
+<span class="col-lg-9 col-9">9:00 - 14:00 / 17:00 - 22:30</span>
+</li>
+<li class="row">
+<span class="text--bold col-lg-3 col-3">Frei:</span>
+<span class="col-lg-9 col-9">9:00 - 14:00 / 17:00 - 22:30</span>
+</li>
+<li class="row">
+<span class="text--bold col-lg-3 col-3">Sa:</span>
+<span class="col-lg-9 col-9">9:00
+                                        - 00:30 durchgehend</span>
+</li>
+<li class="row">
+<span class="text--bold col-lg-3 col-3">So:</span>
+<span class="col-lg-9 col-9">9:00
+                                        - 22:00 durchgehend</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-xl-3 col-lg-4 col-sm-6">
+<div class="footer-widget mb-30">
+<div class="f-widget-title">
+<h2>Kontaktinformationen</h2>
+</div>
+<div class="f-contact">
+<ul>
+<li class="d-flex align-items-center">
+<i class="icon fal fa-phone"></i>
+<span> <a href="tel:044 730 24 32">044 730 24 32</a> </span>
+</li>
+<li class="d-flex align-items-center">
+<i class="icon fal fa-envelope"></i>
+<span> info@enjoyschlieren.ch</span>
+</li>
+<li class="d-flex align-items-center">
+<i class="icon fal fa-map-marker-check"></i>
+<span>Wagistrasse 23 <br/>8952 Schlieren - ZH</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="copyright-wrap">
+<div class="container">
+<div class="row align-items-center">
+<div class="col-lg-6 text-left">
+                    © Enjoy Schlieren  . Alle Rechte vorbehalten.
+                </div>
+<div class="col-lg-6 text-right">
+<a href="impressum.php">Impressum | </a>
+<a href="datenschutzerklaerung.php">Datenschutzerklärung </a>
+</div>
+</div>
+</div>
+</div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

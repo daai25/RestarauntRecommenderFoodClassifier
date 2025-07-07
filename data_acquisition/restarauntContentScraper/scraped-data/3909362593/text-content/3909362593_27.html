@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="" name="description"/>
+<title></title>
+<!-- Vendor Stylesheets -->
+<link href="/assets/css/plugins/bootstrap.min.css" rel="stylesheet"/>
+<link href="/assets/css/plugins/animate.min.css" rel="stylesheet"/>
+<link href="/assets/css/plugins/magnific-popup.css" rel="stylesheet"/>
+<link href="/assets/css/plugins/slick.css" rel="stylesheet"/>
+<link href="/assets/css/plugins/slick-theme.css" rel="stylesheet"/>
+<!-- Icon Fonts -->
+<link href="/assets/fonts/flaticon/flaticon.css" rel="stylesheet"/>
+<link href="/assets/fonts/font-awesome/css/all.min.css" rel="stylesheet"/>
+<link href="/assets/css/plugins/toastr.min.css" rel="stylesheet"/>
+<!-- Slices Style sheet -->
+<link href="/assets/css/style.css" rel="stylesheet"/>
+<!-- Favicon -->
+<link href="/shared/css/common.css" rel="stylesheet"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+<!-- Preloader Start -->
+<div class="ct-preloader">
+<div class="ct-preloader-inner">
+<div class="lds-ripple">
+<div></div>
+<div></div>
+</div>
+</div>
+</div>
+<!-- Preloader End -->
+<!-- Cart Sidebar Start -->
+<div class="cart-sidebar-wrapper">
+<aside class="cart-sidebar">
+<div class="cart-sidebar-header">
+<h3>Warenkorb</h3>
+<div class="close-btn cart-trigger close-dark">
+<span></span>
+<span></span>
+</div>
+</div>
+<div class="cart-sidebar-body">
+<div class="cart-sidebar-scroll" id="basketItemsMainContainer">
+</div>
+</div>
+<div class="cart-sidebar-footer">
+<div id="basketTotalMainContainer" style="padding-left: 20px;">
+</div>
+<div class="cart-sidebar-footer-button">
+<a class="btn-custom" href="/checkout">zur Kasse</a>
+</div>
+</div>
+</aside>
+<div class="cart-sidebar-overlay cart-trigger">
+</div>
+</div>
+<!-- Cart Sidebar End -->
+<!-- Aside (Mobile Navigation) -->
+<aside class="main-aside">
+<a class="navbar-brand" href="/Home">
+<img alt="logo" src="/shared/img/logo.png"/>
+</a>
+<div class="aside-scroll">
+<ul class="submenu">
+<li class="menu-item">
+<a href="/home">Home</a>
+</li>
+<li class="menu-item">
+<a href="/orderonline">Online Bestellen</a>
+</li>
+<li class="menu-item">
+<a href="/agb">AGB</a>
+</li>
+<li class="menu-item">
+<a href="/impressum">Impressum</a>
+</li>
+<li class="menu-item">
+<a href="/contact">Kontakt</a>
+</li>
+<li class="menu-item">
+<a href="/info">Infos</a>
+</li>
+<li class="menu-item">
+<a href="/checkout">zur Kasse</a>
+</li>
+</ul>
+</div>
+</aside>
+<div class="aside-overlay aside-trigger"></div>
+<!-- Header Start -->
+<header class="main-header header-1 header-absolute header-light">
+<div class="top-header">
+<div class="container">
+<div class="top-header-inner">
+<div class="top-header-contacts">
+<ul class="top-header-nav">
+<li id="contentClosedMessage"></li>
+</ul>
+</div>
+<ul class="top-header-nav header-cta">
+<li id="topHeaderButton1"></li>
+<li id="topHeaderButton2"></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="container">
+<nav class="navbar">
+<!-- Logo -->
+<a class="navbar-brand" href="/Home">
+<img alt="logo" src="/shared/img/logo.png"/>
+</a>
+<!-- Menu -->
+<ul class="navbar-nav">
+<li class="menu-item menu-item-has-children">
+<a href="/home">Home</a>
+</li>
+<li class="menu-item menu-item-has-children">
+<a href="/orderonline">Online Bestellen</a>
+</li>
+<li class="menu-item menu-item-has-children">
+<a href="/agb">AGB</a>
+</li>
+<li class="menu-item menu-item-has-children">
+<a href="/impressum">Impressum</a>
+</li>
+<li class="menu-item menu-item-has-children">
+<a href="/contact">Kontakt</a>
+</li>
+<li class="menu-item menu-item-has-children">
+<a href="/info">Infos</a>
+</li>
+<li class="menu-item menu-item-has-children">
+<a href="/checkout">zur Kasse</a>
+</li>
+</ul>
+<div class="header-controls">
+<ul class="header-controls-inner" id="cartIcon">
+<li class="cart-dropdown-wrapper cart-trigger">
+<span class="cart-item-count" id="cartItemCount"></span>
+<i class="flaticon-shopping-bag"></i>
+</li>
+</ul>
+<!-- Toggler -->
+<div class="aside-toggler aside-trigger">
+<span></span>
+<span></span>
+<span></span>
+</div>
+</div>
+</nav>
+</div>
+</header>
+<!-- Header End -->
+<link href="/pages/css/checkout.css" rel="stylesheet"/>
+
+<!-- Subheader Start -->
+<div class="subheader dark-overlay dark-overlay-2" style="background-image: url('/shared/img/homeBanner.jpg')">
+<div class="container">
+<div class="subheader-inner">
+<h1>Zur Kasse</h1>
+</div>
+</div>
+</div>
+<!-- Subheader End -->
+<!-- Checkout Start -->
+<section class="section">
+<div class="container">
+<form method="post">
+<div class="row">
+<div class="col-xl-7">
+<div class="checkoutOptions-main-container">
+<div class="checkout-options-main-container" id="checkoutOptionsMainContainer">
+<div class="addresses-main-container" id="contentSelectAddress">
+<div class="title">
+<span class="withLogin">ein Adresse Wählen!</span>
+<span class="withoutLogin">Adresse</span>
+</div>
+<div class="combo">
+<select class="form-control withLogin" id="checkoutAddress" onchange="checkoutAddressChanged()">
+</select>
+<p class="withoutLogin" id="labelCheckoutAddress"></p>
+</div>
+<div class="edit">
+<a class="withLogin" href="/address?r=checkout">
+<i class="fas fa-edit"></i>
+</a>
+<a class="withoutLogin" href="/guestcustomer?r=checkout">
+<i class="fas fa-edit"></i>
+</a>
+</div>
+</div>
+<div class="alert alert-danger" id="divCheckoutOptionsAddressError" role="alert" style="display:none; margin-top:5px;">
+</div>
+<div class="delivery-types-main-container">
+<div class="title">
+                                    Liefermethode wählen!
+                                </div>
+<div class="main-box">
+<div class="box-row" id="checkedDeliveryTypeNow" onclick="checkedDeliveryTypeSelectedChanged(1)">
+<div class="check">
+<i class="far fa-circle"></i>
+</div>
+<div class="label">
+                                            Ich will es Sofort
+                                        </div>
+</div>
+<div class="box-row" id="checkedDeliveryTypeLater" onclick="checkedDeliveryTypeSelectedChanged(2)">
+<div class="check">
+<i class="far fa-circle"></i>
+</div>
+<div class="label">
+                                            Ich will vorbestellen
+                                        </div>
+<div class="time-combo-container">
+<table>
+<tr>
+<td>
+<select class="combo" id="cmbDeliveryHours" onchange="deliveryHoursSelectedChanged()">
+</select>
+</td>
+<td></td>
+<td>
+<select class="combo" id="cmbDeliveryMinutes" onchange="deliveryMuniteSelectedChanged()">
+</select>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="box-row" id="checkedDeliveryTypePickup" onclick="checkedDeliveryTypeSelectedChanged(3)">
+<div class="check">
+<i class="far fa-circle"></i>
+</div>
+<div class="label">
+                                            Ich will Selbstabholen
+                                        </div>
+<div class="time-combo-container">
+<table>
+<tr>
+<td>
+<select class="combo" id="cmbPickupHours" onchange="pickupHoursSelectedChanged()">
+</select>
+</td>
+<td></td>
+<td>
+<select class="combo" id="cmbPickupMinutes" onchange="pickupMinuteSelectedChanged()">
+</select>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="payment-types-main-container" id="paymentTypesMainContainer" style="display:none;">
+<div class="title">
+                                    Zahlungsmethode wählen!
+                                </div>
+<div class="main-box invalid-main-box" id="paymentTypesMainbox">
+<div class="box-row invalid" id="checkedPaymentTypeCash" onclick="checkedPaymentTypeSelectedChanged(1)" style="display:none;">
+<div class="check">
+<i class="far fa-circle"></i>
+</div>
+<div class="label">
+                                            Bar
+                                        </div>
+</div>
+<div class="box-row invalid" id="checkedPaymentTypeCreditCard" onclick="checkedPaymentTypeSelectedChanged(2)" style="display:none;">
+<div class="check">
+<i class="far fa-circle"></i>
+</div>
+<div class="label">
+                                            Kreditkarte
+                                        </div>
+</div>
+<div class="box-row invalid" id="checkedPaymentTypeOnline" onclick="checkedPaymentTypeSelectedChanged(3)">
+<div class="check">
+<i class="far fa-circle"></i>
+</div>
+<div class="label">
+                                            Online Zahlung
+                                        </div>
+</div>
+</div>
+</div>
+<div class="contract-main-container" id="contractMainContainer" style="display:none;">
+<div class="title" onclick="getContentAndDisplayPopup(1)">
+                                    AGB (Weiterlesen...)
+                                </div>
+<div class="main-box invalid-main-box">
+<div class="box-row invalid" id="checkedTermAndConditions" onclick="checkedTermAndConditionsSelectedChanged(true)">
+<div class="check">
+<i class="far fa-circle"></i>
+</div>
+<div class="label">
+                                            Ich habe die AGB gelesen und akzeptiert und bin damit einverstanden
+                                        </div>
+</div>
+</div>
+</div>
+<div class="instructions-main-container">
+<input class="form-control" id="txtCheckoutOptionsInstructions" placeholder="Ihr Nachricht an uns" type="text"/>
+</div>
+</div>
+<div class="alert alert-danger" id="checkoutOptionsMainInfoContainer" role="alert" style="display:none; margin-top:5px;">
+</div>
+</div>
+</div>
+<div class="col-xl-5 checkout-billing">
+<!-- Order Details Start -->
+<table class="ct-responsive-table" style="margin: 0px;">
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody id="checkoutBasketContainer">
+</tbody>
+</table>
+<table id="checkoutTotalContainer" style="margin: 0px; margin-bottom: 15px;">
+</table>
+<div class="alert alert-danger" id="checkoutButtonError" role="alert" style="display: none;">
+                        Bestellung ist zurzeit nicht möglich
+                    </div>
+<button class="btn-custom primary btn-block" id="checkoutButton" onclick="insertOrder()" style="" type="button">Bestellung Abschicken</button>
+<!-- Order Details End -->
+</div>
+</div>
+<input name="__RequestVerificationToken" type="hidden" value="CfDJ8LypR6f5eSxCprXvOZS-y9D4FhANkqUwMLb1x632mNnT-MuPTp8CcHnowdblYz1tzeuLj-ersehYB2Ub9RPFj1brOQiFJzCJd2XHAIhvIfGzMKRbhWj3OEOsXgEJY5ykaffk3qptB5FE5oFs3q7mPmY"/></form>
+</div>
+</section>
+<!-- Checkout End -->
+
+
+
+
+<!-- Footer Start -->
+<footer class="ct-footer footer-dark">
+<!-- Top Footer -->
+<div class="container">
+<div class="footer-top">
+<div class="footer-logo">
+</div>
+<div class="footer-buttons">
+<a href="https://play.google.com/store/apps/details?id=com.orderstar.seebachtreff">
+<img alt="download it on the app store" src="/assets/img/android.png"/>
+</a>
+<a href="https://apps.apple.com/us/app/seebach-treff/id1561489193">
+<img alt="download it on the app store" src="/assets/img/ios.png"/>
+</a>
+</div>
+</div>
+</div>
+<!-- Middle Footer -->
+<div class="footer-middle">
+<div class="container">
+<div class="row">
+<div class="col-xl-2 col-lg-3 col-md-4 col-sm-12 footer-widget">
+<img alt="logo" src="/shared/img/logo.png" style="width:85px"/>
+</div>
+<div class="col-xl-2 col-lg-3 col-md-4 col-sm-12 footer-widget">
+<ul>
+<li>
+<a href="/home">Home</a>
+</li>
+<li>
+<a href="/orderonline">Online Bestellen</a>
+</li>
+</ul>
+</div>
+<div class="col-xl-2 col-lg-3 col-md-4 col-sm-12 footer-widget">
+<ul>
+<li>
+<a href="/contact">Kontakt</a>
+</li>
+<li>
+<a href="/info">Infos</a>
+</li>
+</ul>
+</div>
+<div class="col-xl-3 col-lg-3 col-md-4 col-sm-12 footer-widget">
+<ul>
+<li>
+<a href="/agb">AGB</a>
+</li>
+<li>
+<a href="/impressum">Impressum </a>
+</li>
+</ul>
+</div>
+<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 footer-widget">
+</div>
+</div>
+</div>
+</div>
+<!-- Footer Bottom -->
+<div class="footer-bottom">
+<div class="container">
+<div class="footer-copyright">
+<a class="back-to-top" href="#">
+<i class="fas fa-chevron-up"></i>
+</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- Footer End -->
+<!-- Vendor Scripts -->
+<!-- Slices Scripts -->
+
+
+
+
+
+</body>
+</html>

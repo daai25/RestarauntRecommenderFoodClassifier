@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<title>Ciao Bella Pizza Sins</title>
+<meta content="Ciao Bella Pizza Sins" name="description"/>
+<meta content="Lieferzone Team" name="author"/>
+<meta content="" name="generator"/>
+<link href="https://www.lieferzonen.ch/uploads/favicon/67/" rel="icon" type="image/png"/>
+<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+<link href="assets/css/custom.css" rel="stylesheet" type="text/css"/>
+<link href="assets/font/webfont.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- HEADER --->
+<header class="header">
+<nav class="navbar navbar-expand-xl navbar-dark">
+<a class="navbar-brand" href="">
+<button class="btn btn-transparent text-white fs-18 mr-1 p-0" onclick="location.href=''"><i class="dripicons-chevron-left"></i></button>
+<img class="skeleton-effect-wave" src="https://www.lieferzonen.ch/uploads/dealers/67/ciao-bella-pizza-16263517485778.png"/></a>
+<div class="collapse navbar-collapse" id="lieferzone">
+<ul class="navbar-nav custom-nav mr-auto">
+<li class="nav-item active">
+<a class="nav-link" href="./">HOME                        <span class="sr-only">(current)</span></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="lieferzone.php">LIEFERGEBIETE</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="impressum/">IMPRESSUM</a>
+</li>
+</ul>
+</div>
+<div class="d-sm-block d-xl-none language">
+</div>
+<div aria-label="Customers Menu" class="btn-group skeleton-effect-wave" role="group">
+<button class="btn btn-success text-white mx-md-2 px-3 fs-13 rounded-sm" data-id="odeme" data-target="#Login" data-toggle="modal" id="odemeLogin">
+<i class="dripicons-user float-left mr-md-2"></i><span class="float-left d-block"><b class="d-none d-md-block">LOGIN</b></span>
+</button>
+<div class="d-xl-block" id="cartTotal">
+<button class="btn btn-sm btn-warning text-dark p-0 px-2 m-0 d-none d-md-block float-right font-weight-bold" type="button">
+<span class="dripicons-cart p-1 m-0 fs-20 d-block float-left"></span>
+<span class="p-2 d-inline-block">Warenkorb ist leer</span>
+</button>
+</div>
+<button aria-controls="lieferzone" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler1 btn btn-danger ml-1 rounded-sm px-3 d-inline-block d-xl-none" data-target="#lieferzone" data-toggle="collapse" type="button">
+<i class="dripicons-menu"></i>
+</button>
+</div>
+</nav>
+</header>
+<!-- / END HEADER --->
+<!-- MODAL LOGIN -->
+<div aria-labelledby="LoginForm" aria-modal="true" class="modal" id="Login" role="dialog" tabindex="-1">
+<div class="modal-dialog custom-modal-login" role="document">
+<div class="modal-content">
+<form class="needs-validation" id="loginForm" method="POST" novalidate="">
+<div class="modal-header bg-gray-200">
+<h5 class="modal-title font-weight-bold" id="LoginForm">
+                        Login                    </h5>
+<button aria-label="Close" class="close" data-dismiss="modal" type="button">
+<span aria-hidden="true">×</span>
+</button>
+</div>
+<div class="modal-body p-4">
+<div class="form-row">
+<div class="col-12 mb-2">
+<label><b>Email</b>
+                                * </label>
+<div class="input-group">
+<div class="input-group-prepend">
+<span class="input-group-text p-0 px-3 custom-input-group-text text-center" id="inputGroupPrepend"><i class="dripicons-mail w-100"></i></span>
+</div>
+<input aria-describedby="inputGroupPrepend" class="form-control" id="userNameinput" name="userName" placeholder="Gib deine E-Mail-Adresse ein" required="" type="text"/>
+<div class="invalid-feedback" id="userName">
+<div class="alert alert-danger">
+<i class="dripicons-information mr-2 float-left"></i>Bitte gib eine gültige E-Mail-Adresse ein                                    </div>
+</div>
+</div>
+</div>
+<div class="col-12">
+<label><b>Passwort</b>
+                                * </label>
+<div class="input-group">
+<div class="input-group-prepend">
+<span class="input-group-text p-0 px-3 custom-input-group-text" id="inputGroupPrepend"><i class="dripicons-lock w-100"></i></span>
+</div>
+<input aria-describedby="inputGroupPrepend" autocomplete="off" class="form-control" id="userPasswordinput" name="userPassword" placeholder="Gib dein Passwort" required="" type="password" value=""/>
+<div class="invalid-feedback" id="userPassword">
+<div class="alert alert-danger">
+<i class="dripicons-information mr-2 float-left"></i>Gib dein Passwort                                    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="modal-footer">
+<div class="invalid-feedback" id="girisDurumu">
+<div class="alert alert-danger">
+<i class="dripicons-information mr-2 float-left"></i>Gib dein Passwort                        </div>
+</div>
+<div class="invalid-feedback" id="uyelikDurumu">
+<div class="alert alert-danger">
+<i class="dripicons-information mr-2 float-left"></i>Die eingegebenen E-Mail-Adresse  ist mit keinem Konto verknüpft. Neues Konto erstellen.                        </div>
+</div>
+<button class="btn btn-warning font-weight-bold" data-target="#Registrieren" data-toggle="modal" type="button">
+                        Registrieren</button>
+<button class="btn btn-success font-weight-bold" onclick="loginControl()" type="button">Einloggen
+</button>
+<button class="btn btn-pill px-0 font-weight-bold" onclick="sifreResetleme()" type="button">Passwort vergessen!                    </button>
+<div class="invalid-feedback">
+<div class="alert alert-danger">
+<i class="dripicons-information mr-2 float-left h-100"></i>Bitte überprüfe deine Daten!                        </div>
+</div>
+</div>
+<input name="loginKullanici" type="hidden" value="Üye Olmayan"/>
+<input name="kullaniciid" type="hidden" value=""/>
+</form>
+<form id="sifreresetform" method="post">
+<div class="alert alert-danger m-0 mx-3" id="uyariGirisi" role="alert" style="display: none;"></div>
+<div class="modal-body">
+<div class="form-row passContent" style="display:none">
+<div class="col-12 mb-3">
+<label><b>Email</b>
+                                * </label>
+<div class="input-group">
+<div class="input-group-prepend">
+<span class="input-group-text p-0 px-3 custom-input-group-text text-center" id="inputGroupPrepend"><i class="dripicons-mail w-100"></i></span>
+</div>
+<input class="form-control" name="userName" placeholder="Gib deine E-Mail-Adresse ein" type="text"/>
+<div class="invalid-feedback" id="userName">
+                                    Bestellzeit wählen                                </div>
+</div>
+</div>
+<div class="col-12">
+<button class="btn btn-success font-weight-bold float-right" onclick="sifreSifirla()" type="button">Passwort Senden</button>
+</div>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+<!-- / END MODAL LOGIN -->
+<!-- Üye Ol Modal -->
+<div aria-hidden="true" aria-labelledby="RegistrierenForm" class="modal" id="Registrieren" role="dialog" tabindex="-1">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<form class="needs-validation" id="registerForm" method="post" novalidate="">
+<div class="modal-header bg-gray-200">
+<h5 class="modal-title font-weight-bold" id="RegistrierenForm">
+                        Mitgliedsregistrierung                    </h5>
+<button aria-label="Close" class="close" data-dismiss="modal" type="button">
+<span aria-hidden="true">×</span>
+</button>
+</div>
+<div class="modal-body p-4" id="registerResult" style="display: none;">
+<div class="alert alert-danger">
+<i class="dripicons-alarm float-left mr-2"></i><span id="alertRegisterControl"></span>
+</div>
+<div class="alert alert-danger">
+<i class="dripicons-alarm float-left mr-2"></i>Überprüfen Sie Ihre E-Mail, um Ihre Mitgliedschaft zu bestätigen.                    </div>
+</div>
+<div class="modal-body p-4" id="registerControl">
+<div class="form-row">
+<div class="col-md-6 mb-3">
+<input class="form-control" name="uyeAdi" placeholder="Dein Name *" required="" type="text" value=""/>
+<div class="invalid-feedback alertUser" id="uyeAdi">
+                                Vorname
+                            </div>
+</div>
+<div class="col-md-6 mb-3">
+<input class="form-control" name="uyeSoyadi" placeholder="Dein Nachnahme *" required="" type="text" value=""/>
+<div class="invalid-feedback alertUser" id="uyeSoyadi">
+                                Nachname                            </div>
+</div>
+<div class="col-md-12 mb-3">
+<input aria-describedby="inputGroupPrepend" class="form-control" name="uyeFirma" placeholder="Firmenname" type="text"/>
+<div class="invalid-feedback">
+                                bitte e-Mail Adresse eingeben                            </div>
+</div>
+<div class="col-md-12 mb-3">
+<input aria-describedby="inputGroupPrepend" class="form-control" name="uyeMail" placeholder="Email *" required="" type="text"/>
+<div class="invalid-feedback alertUser" id="uyeMail">
+                                Bitte gib eine gültige E-Mail-Adresse ein                            </div>
+<div class="invalid-feedback alertUser" id="uyeMail2">
+                                Diese E-Mail-Adresse ist bereits registriert.                            </div>
+</div>
+<div class="col-2">
+<input aria-describedby="inputGroupPrepend" class="form-control text-center" disabled="" name="bolgeKodu" required="" type="tel" value="+41"/>
+<div class="invalid-feedback alertUser" id="uyeGsm">
+                                Gib die Telefonnummer ein                            </div>
+</div>
+<div class="col-10">
+<input aria-describedby="inputGroupPrepend" class="form-control" name="uyeGsm" onkeypress="if(this.value.length==10) return false;" pattern="/^-?\d+\.?\d*$/" placeholder="Telefonnummer *" required="" type="number"/>
+<div class="invalid-feedback alertUser" id="uyeGsm">
+                                bitte Telefonnummer eingeben                            </div>
+</div>
+</div>
+<div class="form-row border-top border-bottom border-gray-200 py-4 my-3">
+<div class="col-md-6">
+<input autocomplete="off" class="form-control" name="uyeSifre" placeholder="Neue Password *" required="" type="password" value=""/>
+<div class="invalid-feedback alertUser" id="uyeSifre">
+                                Gib Dein Passwort ein                            </div>
+</div>
+<div class="col-md-6">
+<input autocomplete="off" class="form-control" name="uyeSifreTekrar" placeholder="Passwort wiederholen *" required="" type="password" value=""/>
+<div class="invalid-feedback alertUser" id="uyeSifreTekrar">
+                                Passwort wiederholen                            </div>
+</div>
+</div>
+<div class="form-row">
+<div class="col-md-6 mb-3">
+<input class="form-control" name="uyePostaKodu" placeholder="PLZ *" required="" type="text"/>
+<div class="invalid-feedback alertUser" id="uyePostaKodu">
+                                Gib PLZ ein                            </div>
+</div>
+<div class="col-md-6 mb-3">
+<input class="form-control" name="uyeOrt" placeholder="Ort *" required="" type="text"/>
+<div class="invalid-feedback alertUser" id="uyeOrt">
+                                	Ort. eingeben                            </div>
+</div>
+<div class="col-md-6 mb-3">
+<input class="form-control" name="uyeStrasse" placeholder="Strasse *" required="" type="text"/>
+<div class="invalid-feedback alertUser" id="uyeStrasse">
+                                Strasse eingeben                            </div>
+</div>
+<div class="col-md-6 mb-3">
+<input class="form-control" name="uyeHausnr" placeholder="Hausnummer *" required="" type="text"/>
+<div class="invalid-feedback alertUser" id="uyeHausnr">
+                                Hausnr eingeben                            </div>
+</div>
+</div>
+<div class="form-group mb-0">
+<div class="form-check">
+<input class="form-check-input" id="invalidCheck" name="uyeSozlesme" required="" type="checkbox" value="on"/>
+<label class="form-check-label" for="invalidCheck">
+                                Ich habe die AGB gelesen und akzeptiert!                            </label>
+<div class="invalid-feedback alertUser" id="uyeSozlesme">
+                                Markieren Sie den Felder                            </div>
+</div>
+<div class="form-check">
+<input class="form-check-input" id="uyeKampanya" name="uyeKampanya" type="checkbox" value="on"/>
+<label class="form-check-label" for="uyeKampanya">
+                                Ich möchte per E-Mail über Neuigkeiten informiert werden.                            </label>
+</div>
+<div class="form-check">
+<input class="form-check-input" id="uyeBulten" name="uyeBulten" type="checkbox" value="on"/>
+<label class="form-check-label" for="uyeBulten">
+                                Newsletter                            </label>
+</div>
+</div>
+</div>
+<div class="modal-footer py-2" id="modalFooter">
+<input id="uyelikBasarili" type="hidden" value="Neue Password"/>
+<button class="btn btn-lg btn-block btn-warning font-weight-bold" onclick="userControl()" type="button">Registrieren</button>
+<div class="invalid-feedback" id="uyelikSonuc">
+                        Deine Registrierung wurde erfolgreich abgeschlossen                    </div>
+</div>
+</form>
+</div>
+</div>
+</div>
+<!-- Üye Ol Modal -->
+<div class="alert alert-dismissible fade text-center show overflow-hidden border-0 loading uyariRegisterControl" id="uyariRegisterControl" style="display: none;">
+<div class="d-flex justify-content-center py-2">
+<div class="spinner-grow text-success" role="status">
+<span class="sr-only">Wird geladen...</span>
+</div>
+</div>
+<h4 id="uyariRegisterControlContent">
+        Deine Registrierung wurde erfolgreich abgeschlossen    </h4>
+</div>
+<div class="alert alert-dismissible fade text-center show overflow-hidden border-0 loading uyariPaymentControl" id="uyariPaymentControl" style="display: none;">
+<div class="d-flex justify-content-center py-2">
+<div class="spinner-grow text-success" role="status">
+<span class="sr-only">Wird geladen...</span>
+</div>
+</div>
+<h4 id="uyariPaymentControlContent">
+        Wird geladen    </h4>
+</div>
+<!-- SEARCH / BANNER --->
+<div class="carousel slide">
+<div class="carousel-inner">
+<div class="carousel-item active">
+<img class="d-xl-block" height="100%" src="https://www.lieferzonen.ch/assets/images/slide_noimage.jpg" width="100%"/>
+<img class="d-xl-none" height="100%" src="https://www.lieferzonen.ch/assets/images/slide_noimage_m.jpg" width="100%"/>
+<div class="container">
+<div class="carousel-caption pt-sm-5 pt-xl-0 text-center">
+<h1 class="p-0 mt-5 mt-xl-0" style="letter-spacing:.5rem">
+                        CIAO BELLA PIZZA                    </h1>
+<h2>
+                        Online Bestellung                    </h2>
+<form id="aramaFormu" method="post" onsubmit="return false">
+<div class="search">
+<div class="row">
+<div class="col px-0 px-md-4">
+<div class="switch-field">
+<input checked="" class="switch" id="lieferung" name="kurierType" onclick="changeCourier('1')" type="radio" value="1"/>
+<label for="lieferung"><svg fill="#000000" height="800px" viewbox="0 0 50 50" width="800px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<path d="M37.164062 9C35.776026 9 34.510655 9.3013275 33.511719 9.859375C32.988328 10.151763 32.515961 10.541523 32.181641 11.013672 A 1.0001 1.0001 0 0 0 32 11L27 11 A 1.0001 1.0001 0 1 0 27 13L31.744141 13C31.8002 13.266576 31.898056 13.517555 32.03125 13.75 A 1.0001 1.0001 0 0 0 32.015625 14.179688C32.988434 19.530138 32.72952 25.149528 31.335938 29.306641C30.639146 31.385197 29.661456 33.087325 28.478516 34.234375C27.295576 35.381425 25.942196 36 24.267578 36C23.14423 36 22.237532 35.240694 21.890625 33.435547C21.543718 31.6304 21.955647 28.844708 23.869141 25.496094 A 1.0001 1.0001 0 0 0 23.931641 25.361328C24.316967 25.240604 24.678959 25.104473 24.994141 24.916016C25.478772 24.626238 26.005859 24.113335 26.005859 23.367188C26.005859 22.669659 25.835925 21.975755 25.525391 21.353516C25.370124 21.042396 25.180417 20.748361 24.902344 20.490234C24.62427 20.232108 24.213494 19.994141 23.716797 19.994141L14.28125 19.994141C14.182933 19.994141 14.091091 20.010399 14 20.027344L14 14 A 1.0001 1.0001 0 0 0 13 13L2 13 A 1.0001 1.0001 0 0 0 1 14L1 24 A 1.0001 1.0001 0 1 0 1 26L9.6640625 26C5.5053486 28.756038 4.0507813 32.683594 4.0507812 32.683594 A 1.0001 1.0001 0 0 0 4.7246094 33.960938L6.9023438 34.583984C6.3345384 35.595724 6 36.761065 6 38C6 41.854334 9.1456661 45 13 45C16.854334 45 20 41.854334 20 38L24.267578 38L32.060547 38C32.179715 38.986751 32.484448 39.717662 32.982422 40.226562C33.636252 40.89474 34.488004 41 35 41C35.218658 41 35.425951 40.949517 35.623047 40.876953C36.723498 43.307626 39.169773 45 42 45C45.853698 45 49 41.853698 49 38C49 37.195185 48.849318 36.425861 48.597656 35.703125C48.954075 35.603867 49.335495 35.406193 49.599609 35.060547C49.900433 34.666813 50 34.186166 50 33.720703C50 33.240869 49.875943 32.847389 49.623047 32.275391C49.370151 31.703392 48.970149 31.038348 48.363281 30.400391C47.229681 29.208715 45.34262 28.162063 42.585938 28.027344C42.525187 22.544809 39.819751 18.179454 38.097656 15.943359C38.396238 15.902164 38.671967 15.836607 38.927734 15.740234C39.428973 15.551366 39.862484 15.206717 40.117188 14.791016C40.626593 13.959613 40.509766 13.158415 40.509766 12.498047C40.509766 11.839768 40.626373 11.04221 40.117188 10.210938C39.862595 9.7953008 39.429108 9.4488016 38.927734 9.2597656C38.426361 9.0707297 37.857706 8.9997194 37.164062 9 z M 37.164062 11 A 1.0001 1.0001 0 0 0 37.166016 11C37.708372 10.999781 38.050639 11.068691 38.220703 11.132812C38.390767 11.196933 38.389452 11.216922 38.412109 11.253906C38.457419 11.327886 38.509766 11.778326 38.509766 12.498047C38.509766 13.219679 38.457209 13.672497 38.412109 13.746094C38.389559 13.782894 38.390899 13.803054 38.220703 13.867188C38.050459 13.931319 37.706618 14 37.164062 14C36.621082 14 36.10646 13.936107 35.650391 13.828125C35.642762 13.826319 35.636502 13.824096 35.628906 13.822266L34.865234 13.566406C34.732587 13.510803 34.597787 13.456831 34.486328 13.394531C33.865379 13.047451 33.6875 12.70423 33.6875 12.498047C33.6875 12.293566 33.865264 11.952421 34.486328 11.605469C35.107392 11.258516 36.0781 11 37.164062 11 z M 3 15L12 15L12 23.269531C11.999257 23.302165 11.994141 23.334532 11.994141 23.367188C11.994141 23.383055 11.999522 23.398228 12 23.414062L12 24L3 24L3 15 z M 34.095703 15.419922L34.164062 15.443359C34.419392 15.547893 34.687824 15.635542 34.966797 15.710938L35.400391 15.855469C35.603266 16.064068 40.416852 21.211285 40.486328 28.125C36.33626 28.755066 32.596901 31.894476 32.066406 36L29.382812 36C29.534032 35.871631 29.727656 35.810961 29.871094 35.671875C31.36306 34.225175 32.462588 32.239803 33.232422 29.943359C34.626475 25.784844 34.808484 20.562233 34.095703 15.419922 z M 14.439453 22.005859L23.560547 22.005859C23.598267 22.047929 23.658837 22.120163 23.724609 22.251953C23.854125 22.511473 23.92226 22.886315 23.951172 23.193359C23.762075 23.304956 23.361888 23.460906 22.830078 23.585938C21.757049 23.83821 20.167583 23.994141 18.435547 23.994141C16.704636 23.994141 15.413577 23.831872 14.671875 23.603516C14.308545 23.491653 14.096642 23.361921 14.021484 23.298828C14.034504 22.980653 14.131328 22.540778 14.275391 22.251953C14.341151 22.120114 14.401762 22.047935 14.439453 22.005859 z M 14.193359 26L18.15625 26C18.252521 26.000837 18.336896 26.005859 18.435547 26.005859C18.534824 26.005859 18.628203 26.000868 18.726562 26L21.527344 26C20.112855 29.001093 19.524751 31.727674 19.925781 33.814453C20.087601 34.656491 20.441432 35.36725 20.867188 36L19.140625 36L6.484375 32.384766C7.0140076 31.131905 8.7498356 27.597205 14.193359 26 z M 42 30C44.618246 30 46.053799 30.874962 46.914062 31.779297C47.344195 32.231464 47.624615 32.703202 47.792969 33.083984C47.961323 33.464767 48 33.840037 48 33.720703C48 33.812653 48.007306 33.76497 48.003906 33.78125C47.812448 33.81052 47.200239 33.77275 46.392578 33.65625C44.730245 33.416369 42.244663 33.027822 39.628906 34.070312 A 1.0001 1.0001 0 0 0 39.628906 34.072266C37.384303 34.968985 36.320563 36.506059 35.734375 37.640625C35.441281 38.207908 35.232494 38.674093 35.091797 38.880859C34.951106 39.087577 35.072978 39 35 39C34.701996 39 34.553826 38.974948 34.410156 38.828125C34.267292 38.682125 34.00296 38.227374 34 37.017578C34.042301 35.545163 34.61662 34.207109 35.513672 33.095703C37.040517 31.251351 39.519935 30 42 30 z M 8.8339844 35.134766L11.113281 35.787109C10.461821 36.339358 10 37.088037 10 38C10 39.64497 11.35503 41 13 41C14.64497 41 16 39.64497 16 38C16 37.639611 15.73216 37.393621 15.613281 37.072266L17.980469 37.748047C17.984719 37.832637 18 37.914271 18 38C18 40.773666 15.773666 43 13 43C10.226334 43 8 40.773666 8 38C8 37.054661 8.2605192 36.177234 8.7128906 35.425781 A 1.0001 1.0001 0 0 0 8.8339844 35.134766 z M 43.441406 35.390625C44.388158 35.394776 45.289306 35.518661 46.107422 35.636719C46.216447 35.652451 46.312533 35.661776 46.417969 35.677734C46.78446 36.372266 47 37.156089 47 38C47 40.772302 44.772302 43 42 43C39.661758 43 37.727993 41.399855 37.173828 39.246094C37.28571 39.017046 37.391354 38.787779 37.509766 38.558594C37.914189 37.775833 38.400152 36.996821 39.5 36.355469C39.185732 36.829379 39 37.394292 39 38C39 39.64497 40.35503 41 42 41C43.64497 41 45 39.64497 45 38C45 36.878997 44.362894 35.905249 43.441406 35.390625 z M 13 37C13.56503 37 14 37.43497 14 38C14 38.56503 13.56503 39 13 39C12.43497 39 12 38.56503 12 38C12 37.43497 12.43497 37 13 37 z M 42 37C42.56503 37 43 37.43497 43 38C43 38.56503 42.56503 39 42 39C41.43497 39 41 38.56503 41 38C41 37.43497 41.43497 37 42 37 z"></path>
+</svg>
+<div class="switch-text">
+<span><b>
+                                                        Lieferung                                                    </b></span>
+<span>
+                                                    30-50                                                    Min.
+                                                </span>
+</div>
+</label>
+<input class="switch" id="abholung" name="kurierType" onclick="changeCourier('2')" type="radio" value="2"/>
+<label for="abholung"><svg fill="#000000" height="800px" id="Flat" viewbox="0 0 256 256" width="800px" xmlns="http://www.w3.org/2000/svg">
+<path d="M216,68H171.81006a43.99152,43.99152,0,0,0-87.62012,0H40A12.01312,12.01312,0,0,0,28,80V208a12.01312,12.01312,0,0,0,12,12H216a12.01312,12.01312,0,0,0,12-12V80A12.01312,12.01312,0,0,0,216,68ZM128,36a36.04775,36.04775,0,0,1,35.77246,32H92.22754A36.04775,36.04775,0,0,1,128,36Zm92,172a4.004,4.004,0,0,1-4,4H40a4.004,4.004,0,0,1-4-4V80a4.004,4.004,0,0,1,4-4H84v28a4,4,0,0,0,8,0V76h72v28a4,4,0,0,0,8,0V76h44a4.004,4.004,0,0,1,4,4Z"></path>
+</svg>
+<div class="switch-text">
+<span><b>
+                                                        Abholung                                                    </b></span>
+<span>
+                                                    10-30                                                    Min.
+                                                </span>
+</div>
+</label>
+</div>
+</div>
+</div>
+<div class="row mt-2 overflow-hidden rounded-lg">
+<div class="col-9 p-0 m-0">
+<input class="form-control h-100 fs-22 rounded-0 border-0 pl-4" data-html="true" data-original-title="&lt;span class='fs-16 py-4 px-2 d-block width:100%;'&gt;Bitte Gib die Postleitzahl ein&lt;/span&gt;" data-placement="top" data-toggle="tooltip" id="aramaAlani" name="postaKodu" onkeyup="enterSearch()" pattern="[0-9]*" placeholder="Gib PLZ ein" title="" type="tel" value=""/>
+</div>
+<div class="col-3 p-0 m-0">
+<button class="btn btn-block h-100 btn-success p-1 rounded-0" onclick="searchPostal()" type="button"><i class="dripicons-search text-white fs-28"></i></button>
+</div>
+<div class="col-12 m-0 p-0">
+</div>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+<div class="alert alert-warning alert-dismissible rounded-sm position-fixed w-100 fade show m-0 fs-16 p-3 cookie-alert border" role="alert">
+<b>Cookies Warnung</b><br/>
+<span class="d-block fs-12" style="line-height:100%">
+                Diese Website verwendet Cookies, damit wir erkennen können, wie die Website genutzt wird. Wir speichern keine personenbezogenen Daten. Wenn Sie diese Website weiterhin verwenden, gehen wir davon aus, dass Sie damit einverstanden sind.            </span>
+<button aria-label="Close" class="close" data-dismiss="alert" style="right:-5px; top:-5px" type="button">
+<span aria-hidden="true">×</span>
+</button>
+</div>
+</div>
+<!-- / END SEARCH / BANNER --->
+<!-- FEED ANIMATION -->
+<div class="container-fluid position-relative feed-wrapper">
+<div class="feed">
+<img src="https://lieferzonen.ch/assets/icon/hot-dish.png"/>
+<img src="https://lieferzonen.ch/assets/icon/brochette.png"/>
+<img src="https://lieferzonen.ch/assets/icon/burger.png"/>
+<img src="https://lieferzonen.ch/assets/icon/drink.png"/>
+<img src="https://lieferzonen.ch/assets/icon/french-fries.png"/>
+<img src="https://lieferzonen.ch/assets/icon/hamburger.png"/>
+<img src="https://lieferzonen.ch/assets/icon/pizza-slice.png"/>
+<img src="https://lieferzonen.ch/assets/icon/motorbike.png"/>
+</div>
+</div>
+<div aria-hidden="true" aria-labelledby="aramaPostauyari" class="modal fade mt-md-5 pt-md-5" id="aramaPostauyari" role="dialog" tabindex="1">
+<div class="modal-dialog modal-index" role="document">
+<div class="modal-content">
+<div class="modal-header border-0">
+<h5 class="modal-title">
+<b class="badge badge-danger"><i class="dripicons-warning float-left mr-2"></i>
+                        Benachrichtigung!
+                    </b>
+</h5>
+<button aria-label="Close" class="close" data-dismiss="modal" type="button">
+<span aria-hidden="true">×</span>
+</button>
+</div>
+<div class="modal-body" id="aramaUyariAlani">
+</div>
+</div>
+</div>
+</div>
+<div class="container-fluid border-top border-bottom pt-4">
+<div class="container indexStyle">
+<div class="card-columns my-3">
+<div class="card border-0 bg-transparent">
+<div class="card-body p-0 border-0 bg-transparent">
+<h3 class="card-title text-center bg-dark text-white py-2 rounded overflow-hidden" id="teslimatSecimi">
+                        Lieferzeiten                    </h3>
+<span class="card-text">
+<table class="table table-striped table-borderless text-uppercase border">
+<tbody>
+<tr>
+<th><b>Montag</b>
+</th>
+<td>
+<span class="d-block clearfix">
+<i class="dripicons-stopwatch mr-2 float-left"></i>11:00-13:30                                        </span>
+<span class="d-block">
+<i class="dripicons-stopwatch mr-2 float-left"></i>17:00-22:15                                        </span>
+</td>
+</tr>
+<tr>
+<th><b>Dienstag</b>
+</th>
+<td>
+<span class="d-block clearfix">
+<i class="dripicons-stopwatch mr-2 float-left"></i>11:00-13:30                                        </span>
+<span class="d-block">
+<i class="dripicons-stopwatch mr-2 float-left"></i>17:00-22:15                                        </span>
+</td>
+</tr>
+<tr>
+<th><b>Mittwoch</b>
+</th>
+<td>
+<span class="d-block clearfix">
+<i class="dripicons-stopwatch mr-2 float-left"></i>11:00-13:30                                        </span>
+<span class="d-block">
+<i class="dripicons-stopwatch mr-2 float-left"></i>17:00-22:15                                        </span>
+</td>
+</tr>
+<tr>
+<th><b>Donnerstag</b>
+</th>
+<td>
+<span class="d-block clearfix">
+<i class="dripicons-stopwatch mr-2 float-left"></i>11:00-13:30                                        </span>
+<span class="d-block">
+<i class="dripicons-stopwatch mr-2 float-left"></i>17:00-22:15                                            <persemben>
+</persemben></span></td>
+</tr>
+<tr>
+<th><b>Freitag</b>
+</th>
+<td>
+<span class="d-block clearfix">
+<i class="dripicons-stopwatch mr-2 float-left"></i>11:00-13:30                                        </span>
+<span class="d-block">
+<i class="dripicons-stopwatch mr-2 float-left"></i>17:00-22:15                                        </span>
+</td>
+</tr>
+<tr>
+<th><b>Samstag</b>
+</th>
+<td>
+<span class="d-block clearfix">
+<i class="dripicons-stopwatch mr-2 float-left"></i>11:00                                        </span>
+<span class="d-block">
+<i class="dripicons-stopwatch mr-2 float-left"></i>22:45                                        </span>
+</td>
+</tr>
+<tr>
+<th><b>Sonntag</b>
+</th>
+<td>
+<span class="d-block clearfix">
+<i class="dripicons-stopwatch mr-2 float-left"></i>11:00                                        </span>
+<span class="d-block">
+<i class="dripicons-stopwatch mr-2 float-left"></i>
+                                            21:45                                        </span>
+</td>
+</tr>
+</tbody>
+</table>
+</span>
+</div>
+</div>
+<div class="card bg-light text-dark px-3 pt-3 rounded locationPrince">
+<h3 class="card-title text-center"><small class="clearfix font-weight-lighter">CIAO BELLA PIZZA</small>Mindestbestellung                </h3>
+<div class="row py-2 border-bottom">
+<span class="col-8" title="">
+<b>5643</b> Sins                    </span>
+<span class="col-4 text-right fs-22" title=""><b>15</b><sup><small>CHF</small></sup></span> </div>
+<div class="row py-2 border-bottom">
+<span class="col-8" title="">
+<b>5646</b> Abtwil, <b>5645</b> Aettenschwil, <b>5644</b> Auw, <b>5642</b> Mühlau, <b>5647</b> Oberrüti                    </span>
+<span class="col-4 text-right fs-22" title=""><b>20</b><sup><small>CHF</small></sup></span> </div>
+<div class="row py-2 border-bottom">
+<span class="col-8" title="">
+<b>5645</b> Alikon, <b>6042</b> Dietwil, <b>5645</b> Fenkrieden, <b>6332</b> Hagendorn, <b>5634</b> Hagnau, <b>6330</b> Lindencham, <b>8933</b> Maschwanden, <b>5634</b> Merenschwand, <b>5644</b> Rüstenschwil, <b>5644</b> Wallenschwil, <b>6331</b> Hünenberg                    </span>
+<span class="col-4 text-right fs-22" title=""><b>30</b><sup><small>CHF</small></sup></span> </div>
+<div class="row py-2 border-bottom">
+<span class="col-8" title="">
+<b>6275</b> Ballwil, <b>5637</b> Beinwil, <b>5636</b> Benzenschwil, <b>5628</b> Birri, <b>5630</b> Muri, <b>8912</b> Obfelden, <b>6343</b> Rotkreuz, <b>6330</b> Cham                    </span>
+<span class="col-4 text-right fs-22" title=""><b>40</b><sup><small>CHF</small></sup></span> </div>
+</div>
+<div class="card rounded">
+<div class="card-body">
+<h3 class="card-title"><small class="clearfix font-weight-lighter">CIAO BELLA PIZZA</small>Fleischdeklaration                    </h3>
+<p class="card-text">
+</p><p>
+Fisch - Vietnam/Thailand<br/>
+Crevette - Vietnam/Thailand<br/>
+Thunfisch - Vietnam/Thailand<br/>
+Meeresfrüchte - Vietnam/Thailand<br/>
+Rind - Schweiz<br/>
+Poulet - Schweiz/Brasilien<br/>
+Lamm - Schweiz<br/>
+Schwein - Schweiz
+</p>
+</div>
+</div>
+<div class="card rounded">
+<div class="card-body">
+<h3 class="card-title">
+                        Impressum                    </h3>
+<p class="card-text">
+<span class="clearfix"><b>CIAO BELLA PIZZA</b></span>
+<span class="clearfix">Bremgartenstrasse 1, 5643 Sins</span>
+<span class="clearfix">041 787 34 34</span>
+</p>
+</div>
+</div>
+<!-- Store Uygulama Linkleri -->
+<!-- / END Store Uygulama Linkleri -->
+</div>
+</div>
+</div>
+<div class="container-fluid bg-light border-top border-bottom">
+<div class="container">
+<footer class="pt-4 my-md-4 py-md-2 text-center text-md-left">
+<div class="row">
+<div class="col-12 col-md mb-3 mb-md-0 px-0 px-md-3">
+<h5><b>KUNDE</b>
+</h5>
+<ul class="list-unstyled text-small">
+<li><a class="text text-secondary fs-14" href="agb/">AGB</a></li>
+<li><a class="text text-secondary fs-14" href="agb2/">Häufig gestellte Fragen</a></li>
+<li><a class="text text-secondary fs-14" href="agb3/">Fleischdeklaration</a></li>
+</ul>
+</div>
+<div class="col-12 col-md mb-3 mb-md-0 px-0 px-md-3">
+<h5><b>FOLGEN SIE UNS!</b>
+</h5>
+<a class="btn btn-secondary p-1" data-placement="top" data-toggle="tooltip" href="" title="facebook">
+<img class="p-0 m-0 d-block" src="assets/svg/facebook.svg" width="18"/></a>
+<a class="btn btn-secondary p-1" data-placement="top" data-toggle="tooltip" href="" title="instagram">
+<img class="p-0 m-0 d-block" src="assets/svg/instagram.svg" width="18"/></a>
+<a class="btn btn-secondary p-1" data-placement="top" data-toggle="tooltip" href="" title="youtube">
+<img class="p-0 m-0 d-block" src="assets/svg/youtube.svg" width="18"/></a>
+<a class="btn btn-success p-1" data-placement="top" data-toggle="tooltip" href="https://wa.me/" title="whatsapp">
+<img class="p-0 m-0 d-block" src="assets/svg/whatsapp.svg" width="18"/></a>
+</div>
+<div class="col-12 col-md mt-3 mt-md-1 px-0 px-md-3">
+<a href="https://www.lieferzone.ch/"><img alt="" class="mb-2" src="assets/images/lieferzone.png" width="125"/></a>
+<small class="d-block mb-3 text-muted"><b>© 2018-2025</b> | v.2.3</small>
+</div>
+</div>
+<a class="btn btn-sm btn-dark rounded-circle fs-12 position-fixed" data-toggle="tooltip" id="upBtn" onclick="topFunction()" style="bottom:1rem; right:1rem;display:none" title="nach oben"><i class="dripicons-arrow-thin-up"></i></a>
+</footer>
+</div>
+</div>
+
+
+
+
+ 
+</body>
+</html>

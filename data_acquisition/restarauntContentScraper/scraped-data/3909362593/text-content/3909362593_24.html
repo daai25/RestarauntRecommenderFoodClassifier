@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="" name="description"/>
+<title></title>
+<!-- Vendor Stylesheets -->
+<link href="/assets/css/plugins/bootstrap.min.css" rel="stylesheet"/>
+<link href="/assets/css/plugins/animate.min.css" rel="stylesheet"/>
+<link href="/assets/css/plugins/magnific-popup.css" rel="stylesheet"/>
+<link href="/assets/css/plugins/slick.css" rel="stylesheet"/>
+<link href="/assets/css/plugins/slick-theme.css" rel="stylesheet"/>
+<!-- Icon Fonts -->
+<link href="/assets/fonts/flaticon/flaticon.css" rel="stylesheet"/>
+<link href="/assets/fonts/font-awesome/css/all.min.css" rel="stylesheet"/>
+<link href="/assets/css/plugins/toastr.min.css" rel="stylesheet"/>
+<!-- Slices Style sheet -->
+<link href="/assets/css/style.css" rel="stylesheet"/>
+<!-- Favicon -->
+<link href="/shared/css/common.css" rel="stylesheet"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+<!-- Preloader Start -->
+<div class="ct-preloader">
+<div class="ct-preloader-inner">
+<div class="lds-ripple">
+<div></div>
+<div></div>
+</div>
+</div>
+</div>
+<!-- Preloader End -->
+<!-- Cart Sidebar Start -->
+<div class="cart-sidebar-wrapper">
+<aside class="cart-sidebar">
+<div class="cart-sidebar-header">
+<h3>Warenkorb</h3>
+<div class="close-btn cart-trigger close-dark">
+<span></span>
+<span></span>
+</div>
+</div>
+<div class="cart-sidebar-body">
+<div class="cart-sidebar-scroll" id="basketItemsMainContainer">
+</div>
+</div>
+<div class="cart-sidebar-footer">
+<div id="basketTotalMainContainer" style="padding-left: 20px;">
+</div>
+<div class="cart-sidebar-footer-button">
+<a class="btn-custom" href="/checkout">zur Kasse</a>
+</div>
+</div>
+</aside>
+<div class="cart-sidebar-overlay cart-trigger">
+</div>
+</div>
+<!-- Cart Sidebar End -->
+<!-- Aside (Mobile Navigation) -->
+<aside class="main-aside">
+<a class="navbar-brand" href="/Home">
+<img alt="logo" src="/shared/img/logo.png"/>
+</a>
+<div class="aside-scroll">
+<ul class="submenu">
+<li class="menu-item">
+<a href="/home">Home</a>
+</li>
+<li class="menu-item">
+<a href="/orderonline">Online Bestellen</a>
+</li>
+<li class="menu-item">
+<a href="/agb">AGB</a>
+</li>
+<li class="menu-item">
+<a href="/impressum">Impressum</a>
+</li>
+<li class="menu-item">
+<a href="/contact">Kontakt</a>
+</li>
+<li class="menu-item">
+<a href="/info">Infos</a>
+</li>
+<li class="menu-item">
+<a href="/checkout">zur Kasse</a>
+</li>
+</ul>
+</div>
+</aside>
+<div class="aside-overlay aside-trigger"></div>
+<!-- Header Start -->
+<header class="main-header header-1 header-absolute header-light">
+<div class="top-header">
+<div class="container">
+<div class="top-header-inner">
+<div class="top-header-contacts">
+<ul class="top-header-nav">
+<li id="contentClosedMessage"></li>
+</ul>
+</div>
+<ul class="top-header-nav header-cta">
+<li id="topHeaderButton1"></li>
+<li id="topHeaderButton2"></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="container">
+<nav class="navbar">
+<!-- Logo -->
+<a class="navbar-brand" href="/Home">
+<img alt="logo" src="/shared/img/logo.png"/>
+</a>
+<!-- Menu -->
+<ul class="navbar-nav">
+<li class="menu-item menu-item-has-children">
+<a href="/home">Home</a>
+</li>
+<li class="menu-item menu-item-has-children">
+<a href="/orderonline">Online Bestellen</a>
+</li>
+<li class="menu-item menu-item-has-children">
+<a href="/agb">AGB</a>
+</li>
+<li class="menu-item menu-item-has-children">
+<a href="/impressum">Impressum</a>
+</li>
+<li class="menu-item menu-item-has-children">
+<a href="/contact">Kontakt</a>
+</li>
+<li class="menu-item menu-item-has-children">
+<a href="/info">Infos</a>
+</li>
+<li class="menu-item menu-item-has-children">
+<a href="/checkout">zur Kasse</a>
+</li>
+</ul>
+<div class="header-controls">
+<ul class="header-controls-inner" id="cartIcon">
+<li class="cart-dropdown-wrapper cart-trigger">
+<span class="cart-item-count" id="cartItemCount"></span>
+<i class="flaticon-shopping-bag"></i>
+</li>
+</ul>
+<!-- Toggler -->
+<div class="aside-toggler aside-trigger">
+<span></span>
+<span></span>
+<span></span>
+</div>
+</div>
+</nav>
+</div>
+</header>
+<!-- Header End -->
+<link href="/pages/css/index.css" rel="stylesheet"/>
+
+<!-- Subheader Start -->
+<div class="subheader dark-overlay dark-overlay-2" style="background-image: url('/shared/img/homeBanner.jpg')">
+<div class="container">
+<div class="subheader-inner">
+<h1 class="headerRestaurantName"></h1>
+</div>
+</div>
+</div>
+<!-- Subheader End -->
+<!-- Menu Categories Start -->
+<div class="ct-menu-categories menu-filter" id="categoryHeader">
+<div class="container">
+<div class="menu-category-slider" id="categoriesContainer">
+</div>
+</div>
+</div>
+<!-- Menu Categories End -->
+<div class="service-type-container">
+<button class="service-type-button delivery active" id="deliveryOption" onclick="setDelivery()" style="width:160px;">Lieferung</button>
+<button class="service-type-button pickup" id="pickupOption" onclick="setPickup()" style="width:160px;">ABHOLUNG </button>
+</div>
+<!-- Menu Wrapper Start -->
+<div class="section section-padding">
+<div class="container">
+<div class="menu-container row overflow-hidden" id="productsContainer">
+</div>
+</div>
+</div>
+<!-- Menu Wrapper End -->
+<!-- Customize Modal Start -->
+<div aria-hidden="true" class="modal fade" id="productDetailModal" role="dialog" tabindex="-1">
+<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+<div class="modal-content">
+<div class="modal-header modal-bg product-detail-header" style="">
+<button aria-label="Close" class="close-btn" data-dismiss="modal" type="button">
+<span></span>
+<span></span>
+</button>
+</div>
+<div class="modal-body">
+<div class="customize-meta">
+<h4 class="customize-title">
+<span id="productDetailProductName"></span>
+<span class="custom-primary" id="productDetailProductPrice"></span>
+</h4>
+<p id="productDetailProductDescription">
+</p>
+</div>
+<div class="customize-variations">
+<div class="customize-size-wrapper" id="productDetailSizesContainer">
+<h5>Grösse: </h5>
+</div>
+<div class="row" id="productDetailToppingGroupsContainer" style="max-height: 300px;overflow: auto;-webkit-overflow-scrolling: touch;">
+</div>
+</div>
+<div class="customize-controls" id="productDetailQuantityTotal">
+<div class="qty">
+<span class="qty-subtract" onclick="decreaseProductDetailQuantity()">
+<i class="fas fa-minus"></i>
+</span>
+<input id="inputProductDetailQuantity" type="text" value="1"/>
+<span class="qty-add" onclick="increaseProductDetailQuantity()">
+<i class="fas fa-plus"></i>
+</span>
+</div>
+<div class="customize-total">
+<h5>Total: <span class="final-price custom-primary" id="productDetailTotalPrice"> </span> </h5>
+</div>
+</div>
+<button class="btn-custom shadow-none btn-block" onclick="addProductToCart()" type="button">Hinzufügen</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Customize Modal End -->
+<div class="cart-badge cart-trigger">
+<i class="flaticon-shopping-bag"></i>
+</div>
+
+
+
+
+
+
+<!-- Footer Start -->
+<footer class="ct-footer footer-dark">
+<!-- Top Footer -->
+<div class="container">
+<div class="footer-top">
+<div class="footer-logo">
+</div>
+<div class="footer-buttons">
+<a href="https://play.google.com/store/apps/details?id=com.orderstar.seebachtreff">
+<img alt="download it on the app store" src="/assets/img/android.png"/>
+</a>
+<a href="https://apps.apple.com/us/app/seebach-treff/id1561489193">
+<img alt="download it on the app store" src="/assets/img/ios.png"/>
+</a>
+</div>
+</div>
+</div>
+<!-- Middle Footer -->
+<div class="footer-middle">
+<div class="container">
+<div class="row">
+<div class="col-xl-2 col-lg-3 col-md-4 col-sm-12 footer-widget">
+<img alt="logo" src="/shared/img/logo.png" style="width:85px"/>
+</div>
+<div class="col-xl-2 col-lg-3 col-md-4 col-sm-12 footer-widget">
+<ul>
+<li>
+<a href="/home">Home</a>
+</li>
+<li>
+<a href="/orderonline">Online Bestellen</a>
+</li>
+</ul>
+</div>
+<div class="col-xl-2 col-lg-3 col-md-4 col-sm-12 footer-widget">
+<ul>
+<li>
+<a href="/contact">Kontakt</a>
+</li>
+<li>
+<a href="/info">Infos</a>
+</li>
+</ul>
+</div>
+<div class="col-xl-3 col-lg-3 col-md-4 col-sm-12 footer-widget">
+<ul>
+<li>
+<a href="/agb">AGB</a>
+</li>
+<li>
+<a href="/impressum">Impressum </a>
+</li>
+</ul>
+</div>
+<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 footer-widget">
+</div>
+</div>
+</div>
+</div>
+<!-- Footer Bottom -->
+<div class="footer-bottom">
+<div class="container">
+<div class="footer-copyright">
+<a class="back-to-top" href="#">
+<i class="fas fa-chevron-up"></i>
+</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- Footer End -->
+<!-- Vendor Scripts -->
+<!-- Slices Scripts -->
+
+
+
+
+
+</body>
+</html>
