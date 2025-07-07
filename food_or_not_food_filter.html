@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>project_charta – Food Classifier</title>
+<title>food_or_not_food_filter – Food Classifier</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -81,7 +116,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./project_charta.html">Room for new Information again!!! AHHHHH</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./food_or_not_food_filter.html">Food or Not-Food Filter</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -114,7 +149,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./project_charta.html" class="sidebar-item-text sidebar-link active">
+  <a href="./project_charta.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Room for new Information again!!! AHHHHH</span></a>
   </div>
 </li>
@@ -138,7 +173,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./food_or_not_food_filter.html" class="sidebar-item-text sidebar-link">
+  <a href="./food_or_not_food_filter.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Food or Not-Food Filter</span></a>
   </div>
 </li>
@@ -152,9 +187,20 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#room-for-new-information-again-ahhhhh" id="toc-room-for-new-information-again-ahhhhh" class="nav-link active" data-scroll-target="#room-for-new-information-again-ahhhhh">Room for new Information again!!! AHHHHH</a></li>
+  <li><a href="#food-or-not-food-filter" id="toc-food-or-not-food-filter" class="nav-link active" data-scroll-target="#food-or-not-food-filter">Food or Not-Food Filter</a>
+  <ul class="collapse">
+  <li><a href="#why-do-we-need-this-filter" id="toc-why-do-we-need-this-filter" class="nav-link" data-scroll-target="#why-do-we-need-this-filter">Why do we need this filter?</a></li>
+  <li><a href="#which-data-do-we-use" id="toc-which-data-do-we-use" class="nav-link" data-scroll-target="#which-data-do-we-use">Which data do we use?</a></li>
+  <li><a href="#which-model-do-we-use" id="toc-which-model-do-we-use" class="nav-link" data-scroll-target="#which-model-do-we-use">Which model do we use?</a></li>
+  <li><a href="#what-needs-to-be-fine-tuned-or-defined-on-our-side" id="toc-what-needs-to-be-fine-tuned-or-defined-on-our-side" class="nav-link" data-scroll-target="#what-needs-to-be-fine-tuned-or-defined-on-our-side">What needs to be fine-tuned or defined on our side?</a>
+  <ul class="collapse">
+  <li><a href="#required-customizations" id="toc-required-customizations" class="nav-link" data-scroll-target="#required-customizations">🔧 Required Customizations</a></li>
+  <li><a href="#optional-configurable-parameters-in-cli-or-code" id="toc-optional-configurable-parameters-in-cli-or-code" class="nav-link" data-scroll-target="#optional-configurable-parameters-in-cli-or-code">Optional / Configurable Parameters in CLI or Code</a></li>
+  </ul></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a></li>
+  </ul></li>
   </ul>
-<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="project_charta.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="food_or_not_food_filter.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
@@ -162,10 +208,66 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="room-for-new-information-again-ahhhhh" class="level1">
-<h1>Room for new Information again!!! AHHHHH</h1>
+<section id="food-or-not-food-filter" class="level1">
+<h1>Food or Not-Food Filter</h1>
+<section id="why-do-we-need-this-filter" class="level2">
+<h2 class="anchored" data-anchor-id="why-do-we-need-this-filter">Why do we need this filter?</h2>
+<p>During our scraping of images from various restaurant websites, we discovered that many of the images are <strong>not food-related</strong>. This is problematic because:</p>
+<ol type="1">
+<li>They are <strong>irrelevant</strong> for our actual classification task (e.g.&nbsp;predicting cuisine type).</li>
+<li>They <strong>waste storage space</strong> (e.g.&nbsp;restaurants with no food images can be ignored entirely).</li>
+</ol>
+<p>By filtering out non-food images early in the pipeline, we improve both <strong>accuracy</strong> and <strong>efficiency</strong>.</p>
+</section>
+<section id="which-data-do-we-use" class="level2">
+<h2 class="anchored" data-anchor-id="which-data-do-we-use">Which data do we use?</h2>
+<p>To train our filter, we need a dataset with labeled images of <strong>food</strong> and <strong>not-food</strong>.</p>
+<p>Luckily, we can use the <a href="https://www.kaggle.com/datasets/sciencelabwork/food-or-not-dataset">Food or Not dataset</a>, which contains a total of <strong>50,000 images</strong>:</p>
+<ul>
+<li>20,000 training images labeled as <em>food</em></li>
+<li>20,000 training images labeled as <em>not food</em></li>
+<li>5,000 test images labeled as <em>food</em></li>
+<li>5,000 test images labeled as <em>not food</em></li>
+</ul>
+<p>This dataset provides a solid and balanced base for training and evaluating our model.</p>
+</section>
+<section id="which-model-do-we-use" class="level2">
+<h2 class="anchored" data-anchor-id="which-model-do-we-use">Which model do we use?</h2>
+<p>Our task is <strong>binary image classification</strong>: determine whether an image shows food or not.</p>
+<p>The most suitable model type for image classification is a <strong>Convolutional Neural Network (CNN)</strong>. However, training a CNN from scratch requires large amounts of data and computational resources. To address this, we use <strong>transfer learning</strong>: we start with a model pre-trained on a large dataset (ImageNet) and adapt it to our specific task.</p>
+<p>We use <strong>ResNet18</strong>, an 18-layer deep <strong>Residual Network</strong>, which is a well-known and efficient CNN architecture. It is a good trade-off between model size, inference speed, and performance, and works well even on smaller datasets.</p>
+</section>
+<section id="what-needs-to-be-fine-tuned-or-defined-on-our-side" class="level2">
+<h2 class="anchored" data-anchor-id="what-needs-to-be-fine-tuned-or-defined-on-our-side">What needs to be fine-tuned or defined on our side?</h2>
+<p>Although we start with a pre-trained model (<code>resnet18(weights=ResNet18_Weights.DEFAULT)</code>), some adjustments are necessary to tailor it to our binary classification task:</p>
+<section id="required-customizations" class="level3">
+<h3 class="anchored" data-anchor-id="required-customizations">🔧 Required Customizations</h3>
+<ol type="1">
+<li><p><strong>Final Layer Replacement</strong> The original ResNet18 is trained for 1,000 ImageNet classes. We replace the final fully connected layer with a new one that outputs exactly <strong>2 classes</strong>: <em>food</em> and <em>not food</em>.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>model.fc <span class="op">=</span> nn.Linear(model.fc.in_features, <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p><strong>Loss Function</strong> Since this is a classification task, we use <code>CrossEntropyLoss</code>, which is standard for multi-class problems (including binary classification with logits).</p></li>
+<li><p><strong>Optimizer</strong> We use the <strong>Adam optimizer</strong> with a learning rate of 0.001 to efficiently update weights during training.</p></li>
+<li><p><strong>Input Transformations</strong> The input images need to match the expected format for the pre-trained model. We use the transform pipeline provided by the weights:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>transform <span class="op">=</span> weights.transforms()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p><strong>Early Stopping</strong> To prevent overfitting, we implement a simple early stopping mechanism. If the validation loss does not improve for 3 consecutive epochs, training stops.</p></li>
+<li><p><strong>Data Loaders</strong> We use <code>torchvision.datasets.ImageFolder</code> and <code>DataLoader</code> to handle the directory structure of our training and test data efficiently.</p></li>
+</ol>
+</section>
+<section id="optional-configurable-parameters-in-cli-or-code" class="level3">
+<h3 class="anchored" data-anchor-id="optional-configurable-parameters-in-cli-or-code">Optional / Configurable Parameters in CLI or Code</h3>
+<ul>
+<li><code>--train_dir</code> and <code>--test_dir</code>: Paths to the dataset folders.</li>
+<li><code>--max_epochs</code>: Number of training epochs (default: 30).</li>
+<li><code>batch_size</code>, <code>num_workers</code>, etc. can be tuned for performance on specific hardware.</li>
+</ul>
+</section>
+</section>
+<section id="summary" class="level2">
+<h2 class="anchored" data-anchor-id="summary">Summary</h2>
+<p>By fine-tuning a pre-trained ResNet18 on our labeled food/not-food dataset, we can build a highly effective and computationally efficient filter to clean up our restaurants dataset before running more complex classification tasks (e.g.&nbsp;cuisine detection). This improves both <strong>model accuracy downstream</strong> and <strong>data management overall</strong>.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
