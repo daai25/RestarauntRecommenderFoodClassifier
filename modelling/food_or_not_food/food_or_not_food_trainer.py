@@ -1,5 +1,7 @@
 import os
 import argparse
+from datetime import datetime
+
 import torch
 import torch.nn as nn
 import torch.optim as optim
@@ -14,11 +16,15 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Train a model to classify food or not food images.")
     parser.add_argument("--train_dir", type=str, required=True, help="Path to the training data directory")
     parser.add_argument("--test_dir", type=str, required=True, help="Path to the testing data directory")
+    parser.add_argument("--max_epochs", type=int, required=False, help="Number of epochs to train")
     args = parser.parse_args()
 
     # food or not food dataset archive with training and testing data
     train_dir = os.path.abspath(args.train_dir)
     test_dir = os.path.abspath(args.test_dir)
+
+    # get max_epochs from command line argument or set default
+    max_epochs = args.max_epochs if args.max_epochs else 30
 
     # check if the directories exist and exit the program
     if not os.path.exists(train_dir):
@@ -54,16 +60,22 @@ if __name__ == "__main__":
     # use GPU if available
     use_gpu = torch.cuda.is_available()
     if use_gpu:
-        print("Using GPU")
+        print(f"{datetime.now()}: using GPU (cuda)")
     else:
-        print("Using CPU")
+        print(f"{datetime.now()}: using CPU")
 
     device = torch.device("cuda" if use_gpu else "cpu")
     model.to(device)
 
-    # training
-    epochs = 5
-    for epoch in range(epochs):
+    # early stopping settings
+    patience = 3
+    best_loss = float('inf')
+    epochs_no_improve = 0
+    early_stop = False
+
+    print(f"{datetime.now()}: Starting training for {max_epochs} epochs...")
+
+    for epoch in range(max_epochs):
         model.train()
         running_loss = 0.0
         for inputs, labels in train_loader:
@@ -77,9 +89,36 @@ if __name__ == "__main__":
 
             running_loss += loss.item()
 
-        print(f"Epoch {epoch + 1}/{epochs}, Loss: {running_loss / len(train_loader):.4f}")
+        avg_train_loss = running_loss / len(train_loader)
+        print(f"{datetime.now()}: Epoch {epoch + 1}, Training Loss: {avg_train_loss:.4f}")
 
-    # evaluation of the model
+        # evaluate on test set for early stopping
+        model.eval()
+        val_loss = 0.0
+        with torch.no_grad():
+            for inputs, labels in test_loader:
+                inputs, labels = inputs.to(device), labels.to(device)
+                outputs = model(inputs)
+                loss = criterion(outputs, labels)
+                val_loss += loss.item()
+
+        avg_val_loss = val_loss / len(test_loader)
+        print(f"{datetime.now()}: Epoch {epoch + 1}, Validation Loss: {avg_val_loss:.4f}")
+
+        # Check for improvement
+        if avg_val_loss < best_loss:
+            best_loss = avg_val_loss
+            epochs_no_improve = 0
+        else:
+            epochs_no_improve += 1
+            print(f"{datetime.now()}: No improvement for {epochs_no_improve} epoch(s)")
+
+        if epochs_no_improve >= patience:
+            print(f"{datetime.now()}: Early stopping triggered.")
+            early_stop = True
+            break
+
+    # calculate accuracy on the test set, with the best model
     model.eval()
     correct = 0
     total = 0
@@ -92,10 +131,10 @@ if __name__ == "__main__":
             total += labels.size(0)
 
     accuracy = correct / total
-    print(f"Test Accuracy: {accuracy * 100:.2f}%")
+    print(f"{datetime.now()}: Test Accuracy: {accuracy * 100:.2f}%")
 
     # save the model
     torch.save(model.state_dict(), "food_or_not_food_model.pth")
-    print("Model saved to food_or_not_food_model.pth")
+    print(f"{datetime.now()}: Model saved to food_or_not_food_model.pth")
 
 
