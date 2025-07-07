@@ -112,6 +112,7 @@ if __name__ == "__main__":
             # save the model
             print(f"{datetime.now()}: Validation loss improved, saving model...")
             torch.save(model.state_dict(), "food_or_not_food_model.pth")
+            print(f"{datetime.now()}: Model saved as food_or_not_food_model.pth")
         else:
             epochs_no_improve += 1
             print(f"{datetime.now()}: No improvement for {epochs_no_improve} epoch(s)")
