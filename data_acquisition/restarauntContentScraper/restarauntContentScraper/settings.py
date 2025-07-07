@@ -13,7 +13,13 @@ SPIDER_MODULES = ["restarauntContentScraper.spiders"]
 NEWSPIDER_MODULE = "restarauntContentScraper.spiders"
 
 ADDONS = {}
+HTTPERROR_ALLOWED_CODES = [403]
 
+DEFAULT_REQUEST_HEADERS = {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) '
+                  'AppleWebKit/537.36 (KHTML, like Gecko) '
+                  'Chrome/114.0.0.0 Safari/537.36'
+}
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = "restarauntContentScraper (+http://www.yourdomain.com)"

@@ -1,4 +1,5 @@
 from bs4 import BeautifulSoup
+import csv
 from io import BytesIO
 import json
 import mimetypes
@@ -20,9 +21,9 @@ class RestarauntcontentspiderSpider(scrapy.Spider):
     name = "restarauntContentSpider"
 
     custom_settings={
-        'RETRY_TIMES': 3,
+        'RETRY_TIMES': 2,
         'RETRY_HTTP_CODES': [500, 502, 503, 504, 408, 429],
-        'DOWNLOAD_DELAY': 0.5,
+        'DOWNLOAD_DELAY': 1,
         'RANDOMIZE_DOWNLOAD_DELAY': True,
         'DOWNLOAD_TIMEOUT': 10,
         'CONCURRENT_REQUESTS': 16,
@@ -46,6 +47,8 @@ class RestarauntcontentspiderSpider(scrapy.Spider):
         self.visited_links = {}
         self.image_urls_downloaded = {}
         self.ignored_domains = set()
+        self.status_csv = "scrape_status.csv"
+        self.init_scraped_csv_file()
         self.set_ignored_domains()
 
     def get_restaurant_json(self):
@@ -56,7 +59,7 @@ class RestarauntcontentspiderSpider(scrapy.Spider):
             dict: Parsed JSON object
         """
         project_root = Path(__file__).resolve().parents[4]
-        json_path = os.path.join(project_root, 'data_acquisition', 'open_street_map', 'restaurants_filtered.json')
+        json_path = os.path.join(project_root, 'data_acquisition', 'open_street_map', 'output', 'raw_data', 'restaurants_filtered.json')
         with open(json_path, 'r', encoding='utf-8') as f:
             return json.load(f)
 
@@ -68,19 +71,32 @@ class RestarauntcontentspiderSpider(scrapy.Spider):
         Args:
             data (dict): Parsed JSON content
         """
+        rows = []
         for element in data:
+            element_id = element["id"]
             website = element.get("website")
-            
-            #TODO: Instead of only doing this when there is a website, call x-tr4ce's function that gets that url
-            if not website or not website.startswith("http"):
-                continue
+            domain_valid = website and website.startswith("http")
 
-            domain = urlparse(website).netloc.lower()
-            if any(bad in domain for bad in self.ignored_domains):
-                continue
-            
-            self.start_urls.append(website)
-            self.url_to_element_id[website] = element["id"]
+            if domain_valid:
+                domain = urlparse(website).netloc.lower()
+                if any(bad in domain for bad in self.ignored_domains):
+                    domain_valid = False
+
+            if domain_valid:
+                self.start_urls.append(website)
+                self.url_to_element_id[website] = element_id
+
+    def write_status_csv(self, rows):
+        with open(self.status_csv, "a", newline='', encoding='utf-8') as f:
+            writer = csv.DictWriter(f, fieldnames=["id", "has_website", "is_scraped", "is_filtered"])
+            for row in rows:
+                writer.writerow(row)
+
+    def init_scraped_csv_file(self):
+        if not os.path.exists(self.status_csv):
+            with open(self.status_csv, "w", newline='', encoding='utf-8') as f:
+                writer = csv.DictWriter(f, fieldnames=["id", "has_website", "is_scraped", "is_filtered"])
+                writer.writeheader()
 
     def set_ignored_domains(self):
         """
@@ -91,7 +107,9 @@ class RestarauntcontentspiderSpider(scrapy.Spider):
         "heartbeat-aarau.ch",
         "grandcasinobaden.ch",
         "psi.ch/",
-        "impro.usercontent.one"
+        "impro.usercontent.one",
+        "bindella.ch",
+        "losteria.net",
         }
 
     def start_requests(self):
@@ -129,6 +147,23 @@ class RestarauntcontentspiderSpider(scrapy.Spider):
         self.create_directories(element_path)
         self.save_site_content(response, element_path, element_id)
         yield from self.follow_child_links(response, visited, element_id)
+        self.update_csv_status(element_id, "is_scraped", True)
+
+    def update_csv_status(self, element_id, field, new_value):
+        # Read all rows
+        with open(self.status_csv, "r", newline='', encoding='utf-8') as f:
+            rows = list(csv.DictReader(f))
+
+        # Update the field for the correct row
+        for row in rows:
+            if row["id"] == str(element_id):
+                row[field] = str(new_value).lower()
+
+        # Write back
+        with open(self.status_csv, "w", newline='', encoding='utf-8') as f:
+            writer = csv.DictWriter(f, fieldnames=["id", "has_website", "is_scraped", "is_filtered"])
+            writer.writeheader()
+            writer.writerows(rows)
 
     def create_directories(self, element_path):
         """
@@ -200,6 +235,7 @@ class RestarauntcontentspiderSpider(scrapy.Spider):
         for link in response.css('a::attr(href)').getall():
             if self.page_counters[element_id] >= 20:
                 break
+            self.page_counters[element_id] += 1
             absolute_url = urljoin(response.url, link)
             if "squarespace" in absolute_url:
                 continue
@@ -242,8 +278,6 @@ class RestarauntcontentspiderSpider(scrapy.Spider):
             src = img.get("src") or img.get("data-src")
             if not src:
                 continue
-            if src in seen_urls or image_url in downloaded_set:
-                continue
 
             # Skip base64 encoded images or duplicates
             if src.startswith("data:") or src in seen_urls:
@@ -253,6 +287,8 @@ class RestarauntcontentspiderSpider(scrapy.Spider):
 
             # Resolve absolute URL
             image_url = urljoin(base_url, src)
+            if src in seen_urls or image_url in downloaded_set:
+                continue
 
             try:
                 response = requests.get(image_url, timeout=10)
