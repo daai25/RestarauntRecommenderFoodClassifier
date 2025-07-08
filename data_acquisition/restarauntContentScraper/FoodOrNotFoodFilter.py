@@ -154,7 +154,7 @@ if __name__ == "__main__":
         stats = {
             "total_food_images": total_food_images,
             "total_removed_images": total_removed_images,
-            "number_of_res_without_images": number_of_res_without_images
+            "number_of_res_without_images": number_of_res_without_images,
             "errors": errors
         }
 
