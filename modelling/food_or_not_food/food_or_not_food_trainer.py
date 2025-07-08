@@ -5,7 +5,7 @@ from datetime import datetime
 import torch
 import torch.nn as nn
 import torch.optim as optim
-from torchvision import datasets, transforms
+from torchvision import datasets
 from torchvision.models import resnet18, ResNet18_Weights
 from torch.utils.data import DataLoader
 
