@@ -143,7 +143,7 @@ class RestarauntcontentspiderSpider(scrapy.Spider):
         element_path = f"scraped-data/{element_id}"
         visited = response.meta.get('visited') or self.visited_links[element_id]
         
-        #Create the direcotires for that site
+        #Create the directories for that site
         self.create_directories(element_path)
         self.save_site_content(response, element_path, element_id)
         yield from self.follow_child_links(response, visited, element_id)
