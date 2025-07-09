@@ -1,4 +1,4 @@
-# Room for new Information
+# Data Report
 
 ## Extracting Restaurants, Fast Food and Cafes from OpenStreetMap
 
