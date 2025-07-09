@@ -98,7 +98,20 @@ Fried shao mai
 Shredded potatoes with salad
 Glutinous rice balls with peanuts and sesame seed
 Fried potato chips with spicy cabbage
-Crab stick nigiri sushi
+
+Enoki mushroom
+Lotus root box
+Simmered dry noodles
+Pigeon soup
+Duck belly
+Beef jerky
+Chestnut cream soup
+Plum kidney bean
+Red bean sago
+Lemon sauerkraut fish
+Sauce chili
+Squid crisp
+SCrab stick nigiri sushi
 Steamed pumpkin with red dates
 Coconut jelly
 Fried edamame with pickled vegetables
@@ -197,20 +210,7 @@ Crispy radish skin
 Fried tofu
 Salted chicken
 Baked pig brain with tin foil
-Sour and spicy fish meal with grain
-Enoki mushroom
-Lotus root box
-Simmered dry noodles
-Pigeon soup
-Duck belly
-Beef jerky
-Chestnut cream soup
-Plum kidney bean
-Red bean sago
-Lemon sauerkraut fish
-Sauce chili
-Squid crisp
-Spicy korean noodles
+Sour and spicy fish meal with grainpicy korean noodles
 Steamed rice with mei cai meatloaf
 King crab
 Beef noodle soup

@@ -1,3 +1,5 @@
+i'm looking to make a dictionary mapping food dishes to their respective cuisine(s). i will give you the list of 100 foods and the full list of cuisines you can map to. do NOT under any circumstances use any cuisines that are not provided on the list. if a cuisine maps to a generalized cuisine type such as middle eastern, include all cuisines from the list that fall under the middle eastern umbrella. if you include any cuisines that are not on the provided list, i will be extremely sad, and we don't want that now do we? in addition, be absolutely maximally generous when mapping to cuisines, even if it means certain foods map to hundreds of different cuisines. only leave comments when you are uncertain or taking a guess. have the dictionary be single spaced. here's the list of cuisines: 
+
 afghan
 albanian
 algerian
@@ -209,3 +211,6 @@ virgin_islander
 yemeni
 zambian
 zimbabwean
+
+and here's the list of foods:
+
