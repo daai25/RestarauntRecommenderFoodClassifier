@@ -3,7 +3,6 @@ channels:
     - anaconda
     - conda-forge
     - defaults
-    - conda-forge
 dependencies:
     - bokeh
     - jupyterlab
