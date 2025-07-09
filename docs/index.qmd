@@ -1,4 +1,8 @@
 ---
 title: "About This Documentation"
 ---
-Well... currently there is nothing... so I dunno
+The purpose of this documentation is to provide insight into the decisions that we made in the planning and execution of this project. 
+
+On the left you will find a directory of pages that describe the major working parts of the project, as well as some overview files.
+
+On any given page you may click on the "PDF" button on the right to view the document as a downloadable PDF.
