@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Pizza, Salat oder Vegetarische Gerichte Online bestellen. Pizzakurier in Basel, Allschwil, und Umgebung. Essen online bestellen pico Pizza, Kinder Pizza bestellen 1 meter pizza online bestellen" name="description"/>
+<meta content="Pico Pizza Allschwil" name="author"/>
+<title>Pico Pizzeria Allschwil</title>
+<link href="/vendors/common/css/lib.min.css?v=LVrD68dLRUcWzncsuLAum7AHF7T27KYDmSYA0HRlp30" rel="stylesheet"/>
+<link href="/bundles/css/layout.min.css?v=NRoldquuRMgaaX517Wt0dA-SZHrndMF24qPpLdIyqCs" rel="stylesheet"/>
+<!-- Google Tag Manager -->
+
+<!-- End Google Tag Manager -->
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-5X39Q2Q" style="display:none;visibility:hidden" width="0"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<!-- Cart Sidebar Start -->
+<div class="cart-sidebar-wrapper">
+<aside class="cart-sidebar">
+<div class="cart-sidebar-header">
+<h3 data-localize-html="Cart"></h3>
+<div class="close-btn cart-trigger close-dark">
+<span></span>
+<span></span>
+</div>
+</div>
+<div class="cart-sidebar-body">
+<div class="cart-sidebar-scroll" id="basketItemsMainContainer">
+</div>
+</div>
+<div class="cart-sidebar-footer">
+<div style="padding-left: 20px;">
+<div data-localize-html="DiscountAppliedCheckoutScreen" style="color:grey;font-style:italic;font-size: 13px;margin-bottom: 0;"></div>
+<div id="basketTotalMainContainer"></div>
+</div>
+<div class="cart-sidebar-footer-button">
+<a class="btn-custom" data-localize-html="Checkout" href="/checkout" id="cart-sidebar-checkout-button"></a>
+</div>
+</div>
+</aside>
+<div class="cart-sidebar-overlay cart-trigger">
+</div>
+</div>
+<!-- Cart Sidebar End -->
+<!-- Aside (Mobile Navigation) -->
+<aside class="main-aside">
+<a class="navbar-brand" href="/Home">
+<img alt="logo" src="/img/logo.png"/>
+</a>
+<div class="aside-scroll">
+<ul class="submenu">
+<li class="menu-item">
+<a data-localize-html="Home" href="/"></a>
+</li>
+<li class="menu-item">
+<a data-localize-html="OrderOnline" href="/order-online"></a>
+</li>
+<li class="menu-item">
+<a data-localize-html="Agb" href="/agb"></a>
+</li>
+<li class="menu-item">
+<a data-localize-html="Impressum" href="/impressum"></a>
+</li>
+<li class="menu-item">
+<a data-localize-html="Contact" href="/contact"></a>
+</li>
+<li class="menu-item">
+<a data-localize-html="Info" href="/info"></a>
+</li>
+<li class="menu-item">
+<a data-localize-html="Checkout" onclick="Restaurant.Common.OpenCheckoutPage()" style="cursor:pointer"></a>
+</li>
+</ul>
+</div>
+</aside>
+<div class="aside-overlay aside-trigger"></div>
+<!-- Header Start -->
+<header class="main-header header-1 header-absolute header-light">
+<div class="top-header">
+<div class="container">
+<div class="top-header-inner">
+<div class="top-header-contacts">
+<ul class="top-header-nav">
+<li id="contentClosedMessage"></li>
+</ul>
+</div>
+<ul class="top-header-nav header-cta">
+<li id="topHeaderButton1"></li>
+<li id="topHeaderButton2"></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="container">
+<nav class="navbar">
+<!-- Logo -->
+<a class="navbar-brand" href="/Home">
+<img alt="logo" src="/img/logo.png"/>
+</a>
+<!-- Menu -->
+<ul class="navbar-nav">
+<li class="menu-item menu-item-has-children">
+<a data-localize-html="Home" href="/"></a>
+</li>
+<li class="menu-item menu-item-has-children">
+<a data-localize-html="OrderOnline" href="/order-online"></a>
+</li>
+<li class="menu-item menu-item-has-children">
+<a data-localize-html="Contact" href="/contact"></a>
+</li>
+<li class="menu-item menu-item-has-children">
+<a data-localize-html="Info" href="/info"></a>
+</li>
+<li class="menu-item menu-item-has-children">
+<a data-localize-html="Checkout" onclick="Restaurant.Common.OpenCheckoutPage()" style="cursor:pointer"></a>
+</li>
+</ul>
+<div class="header-controls">
+<ul class="header-controls-inner" id="cartIcon">
+<li class="cart-dropdown-wrapper cart-trigger">
+<span class="cart-item-count" id="cartItemCount" style="display:none"></span>
+<i class="flaticon-shopping-bag"></i>
+</li>
+</ul>
+<!-- Toggler -->
+<div class="aside-toggler aside-trigger">
+<span></span>
+<span></span>
+<span></span>
+</div>
+</div>
+</nav>
+</div>
+</header>
+<!-- Header End -->
+<link href="/bundles/css/checkout.min.css?v=ivRBrh2QABydKXKQxP2yf4ByKOHnpifuAduaTmSOMH0" rel="stylesheet"/>
+<!-- Subheader Start -->
+<div class="subheader dark-overlay dark-overlay-2" style="background-image: url('/img/homeBanner.jpg')">
+<div class="container">
+<div class="subheader-inner">
+<h1 data-localize-html="Checkout"></h1>
+</div>
+</div>
+</div>
+<!-- Subheader End -->
+<!-- Checkout Start -->
+<section class="section">
+<div class="container">
+<form method="post">
+<div class="row">
+<div class="col-xl-7">
+<div class="checkoutOptions-main-container">
+<div class="checkout-options-main-container" id="checkoutOptionsMainContainer">
+<div class="addresses-main-container" id="contentSelectAddress">
+<div class="title">
+<span class="withLogin" data-localize-html="SelectAnAddress"></span>
+<span class="withoutLogin" data-localize-html="Address"></span>
+</div>
+<div class="combo">
+<select class="form-control withLogin" id="checkoutAddress" onchange="checkoutAddressChanged()">
+</select>
+<p class="withoutLogin" id="labelCheckoutAddress" style="color:gray;font-style:italic;line-height:43px"></p>
+</div>
+<div class="edit">
+<a class="withLogin" href="/address?r=checkout">
+<i class="fas fa-edit"></i>
+</a>
+<a class="withoutLogin" href="/guest-customer?r=checkout">
+<i class="fas fa-edit"></i>
+</a>
+</div>
+</div>
+<div class="alert alert-danger" id="divCheckoutOptionsAddressError" role="alert" style="display:none; margin-top:5px;">
+</div>
+<div class="delivery-types-main-container">
+<div class="title" data-localize-html="SelectDeliveryType">
+</div>
+<div class="alert alert-secondary" data-localize-html="PleaseSaveYourAddressToSeeOtherOptions" id="divWarningForNoAddressAndOnlyPickup" style="display:none"></div>
+<div class="main-box">
+<div class="box-row" id="checkedDeliveryTypeNow" onclick="checkedDeliveryTypeSelectedChanged(1)">
+<div class="check">
+<i class="far fa-circle"></i>
+</div>
+<div class="label" data-localize-html="IWillOrderNow">
+</div>
+</div>
+<div class="box-row" id="checkedDeliveryTypeLater" onclick="checkedDeliveryTypeSelectedChanged(2)">
+<div class="check">
+<i class="far fa-circle"></i>
+</div>
+<div class="label" data-localize-html="IWillOrderForLater">
+</div>
+<div class="time-combo-container">
+<table>
+<tr>
+<td>
+<select class="combo cmbDeliveryCombo" id="cmbDeliveryHours" onchange="deliveryHoursSelectedChanged()">
+</select>
+</td>
+<td></td>
+<td>
+<select class="combo cmbDeliveryCombo" id="cmbDeliveryMinutes" onchange="deliveryMuniteSelectedChanged()">
+</select>
+</td>
+</tr>
+<tr id="deliveryNextDayWarning" style="display: none;">
+<td class="next-day-container text-right" colspan="3" data-localize-html="NextDay">
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="box-row" id="checkedDeliveryTypePickup" onclick="checkedDeliveryTypeSelectedChanged(3)">
+<div class="check">
+<i class="far fa-circle"></i>
+</div>
+<div class="label" data-localize-html="IWillPickUp">
+</div>
+<div class="time-combo-container">
+<table>
+<tr>
+<td>
+<select class="combo cmbPickupCombo" id="cmbPickupHours" onchange="pickupHoursSelectedChanged()">
+</select>
+</td>
+<td></td>
+<td>
+<select class="combo cmbPickupCombo" id="cmbPickupMinutes" onchange="pickupMinuteSelectedChanged()">
+</select>
+</td>
+</tr>
+<tr id="pickupNextDayWarning" style="display: none;">
+<td class="next-day-container text-right" colspan="3" data-localize-html="NextDay">
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="payment-types-main-container" id="paymentTypesMainContainer" style="display:none;">
+<div class="title" data-localize-html="SelectPaymentType">
+</div>
+<div class="main-box invalid-main-box" id="paymentTypesMainbox">
+<div class="box-row invalid" id="checkedPaymentTypeCash" onclick="checkedPaymentTypeSelectedChanged(1)" style="display:none;">
+<div class="check">
+<i class="far fa-circle"></i>
+</div>
+<div class="label" data-localize-html="Cash">
+</div>
+</div>
+<div class="box-row invalid" id="checkedPaymentTypeCreditCard" onclick="checkedPaymentTypeSelectedChanged(2)" style="display:none;">
+<div class="check">
+<i class="far fa-circle"></i>
+</div>
+<div class="label" data-localize-html="CreditCard">
+</div>
+</div>
+<div class="box-row invalid" id="checkedPaymentTypeOnline" onclick="checkedPaymentTypeSelectedChanged(3)">
+<div class="check">
+<i class="far fa-circle"></i>
+</div>
+<div class="label" data-localize-html="OnlinePayment">
+</div>
+</div>
+</div>
+</div>
+<div class="payment-tools-main-container" id="paymentToolsSavedCardIdContainer" style="display:none">
+<div class="main-box main-box-without-actions">
+<div class="box-row cc-combo-container">
+<div class="combo-label" style="padding-right:10px">
+<select class="combo" id="selectPaymentToolsSavedCardId" onchange="selectPaymentToolsSavedCardIdChanged()">
+<option data-localize-html="PleaseSelectACreditCard" selected="" value="0"></option>
+</select>
+</div>
+</div>
+</div>
+</div>
+<div class="payment-tools-main-container" id="paymentToolsSaveCardContainer" style="display:none">
+<div class="main-box">
+<div class="box-row" id="checkedPaymentToolsSaveCard" onclick="checkedPaymentToolSelectedChanged()">
+<div class="check">
+<i class="far fa-circle"></i>
+</div>
+<div class="label" data-localize-html="IWantToSaveMyCreditCardInformation">
+</div>
+</div>
+</div>
+</div>
+<div class="contract-main-container" id="contractMainContainer" style="display:none;">
+<div class="title" data-localize-html="OnlinePaymentContractTitle" onclick="getContentAndDisplayPopup(1)">
+</div>
+<div class="main-box invalid-main-box">
+<div class="box-row invalid" id="checkedTermAndConditions" onclick="checkedTermAndConditionsSelectedChanged(true)">
+<div class="check">
+<i class="far fa-circle"></i>
+</div>
+<div class="label" data-localize-html="IAgreeTermsAndConditions">
+</div>
+</div>
+</div>
+</div>
+<div class="instructions-main-container">
+<input class="form-control" data-localize-placeholder="Instructions" id="txtCheckoutOptionsInstructions" maxlength="500" type="text"/>
+</div>
+</div>
+<div class="alert alert-danger" id="checkoutOptionsMainInfoContainer" role="alert" style="display:none; margin-top:5px;">
+</div>
+</div>
+</div>
+<div class="col-xl-5 checkout-billing">
+<!-- Order Details Start -->
+<table style="margin: 0px; margin-bottom: 15px;">
+<tbody id="checkoutOtherTotalContainer"></tbody>
+<tfoot id="checkoutTotalContainer"></tfoot>
+</table>
+<div class="alert alert-danger" data-localize-html="OrderIsCurrentlyNotAvailable" id="checkoutButtonError" role="alert" style="display: none;">
+</div>
+<button class="btn-custom primary btn-block" data-localize-html="CompleteOrder" id="checkoutButton" onclick="insertOrder()" style="" type="button"></button>
+<!-- Order Details End -->
+</div>
+</div>
+<input name="__RequestVerificationToken" type="hidden" value="CfDJ8CN-o9FT4E9JjrVWFevfvVcAS3REm3A40GH8FRFmgIIods7aR_MSJ84qJ5ACuQcp_ksm7dLcEJfQY_SY6vzHDXkHKgs5sYH0iGKm9U-ZLTGQk9q8Hr9gfmYjJR8IcMl-Ju9Yzkn_us_8samUSBojyZg"/></form>
+</div>
+</section>
+<!-- Checkout End -->
+
+
+
+<!-- Footer Start -->
+<footer class="ct-footer footer-dark">
+<!-- Top Footer -->
+<div class="container">
+<div class="footer-top">
+<div class="footer-logo">
+<select class="form-control" id="selectLanguage" onchange="selectLanguageChanged(this)" style="height:40px">
+<option value="en">English</option>
+<option selected="" value="de">Deutsche</option>
+</select>
+</div>
+<div class="footer-buttons">
+<a onclick="openAppAndroid()" style="cursor:pointer">
+<img alt="download it on the app store" src="/img/android.png"/>
+</a>
+<a onclick="openAppIos()" style="cursor:pointer">
+<img alt="download it on the app store" src="/img/ios.png"/>
+</a>
+</div>
+</div>
+</div>
+<!-- Middle Footer -->
+<div class="footer-middle">
+<div class="container">
+<div class="row">
+<div class="col-xl-2 col-lg-3 col-md-4 col-sm-12 footer-widget">
+<img alt="logo" src="/img/logo.png" style="width:85px"/>
+</div>
+<div class="col-xl-2 col-lg-3 col-md-4 col-sm-12 footer-widget">
+<ul>
+<li>
+<a data-localize-html="Home" href="/"></a>
+</li>
+<li>
+<a data-localize-html="OrderOnline" href="/order-online"></a>
+</li>
+</ul>
+</div>
+<div class="col-xl-2 col-lg-3 col-md-4 col-sm-12 footer-widget">
+<ul>
+<li>
+<a data-localize-html="Contact" href="/contact"></a>
+</li>
+<li>
+<a data-localize-html="Info" href="/info"></a>
+</li>
+</ul>
+</div>
+<div class="col-xl-3 col-lg-3 col-md-4 col-sm-12 footer-widget">
+<ul>
+<li>
+<a data-localize-html="Agb" href="/agb"></a>
+</li>
+<li>
+<a data-localize-html="Impressum" href="/impressum"> </a>
+</li>
+</ul>
+</div>
+<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 footer-widget">
+</div>
+</div>
+</div>
+</div>
+<!-- Footer Bottom -->
+<div class="footer-bottom">
+<div class="container">
+<div class="footer-copyright">
+<a class="back-to-top" href="#">
+<i class="fas fa-chevron-up"></i>
+</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- Footer End -->
+<!-- Vendor Scripts -->
+<!-- Slices Scripts -->
+
+
+
+<!-- LIB -->
+
+<!-- LIB -->
+
+<!-- LAYOUT -->
+
+<!-- LAYOUT -->
+
+</body>
+</html>

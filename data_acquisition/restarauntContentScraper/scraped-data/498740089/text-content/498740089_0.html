@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="" name="description"/>
+<title>Restaurant il Castello</title>
+<link href="/vendors/common/css/lib.min.css?v=LVrD68dLRUcWzncsuLAum7AHF7T27KYDmSYA0HRlp30" rel="stylesheet"/>
+<link href="/bundles/css/layout.min.css?v=NRoldquuRMgaaX517Wt0dA-SZHrndMF24qPpLdIyqCs" rel="stylesheet"/>
+</head>
+<body>
+<!-- Cart Sidebar Start -->
+<div class="cart-sidebar-wrapper">
+<aside class="cart-sidebar">
+<div class="cart-sidebar-header">
+<h3 data-localize-html="Cart"></h3>
+<div class="close-btn cart-trigger close-dark">
+<span></span>
+<span></span>
+</div>
+</div>
+<div class="cart-sidebar-body">
+<div class="cart-sidebar-scroll" id="basketItemsMainContainer">
+</div>
+</div>
+<div class="cart-sidebar-footer">
+<div style="padding-left: 20px;">
+<div data-localize-html="DiscountAppliedCheckoutScreen" style="color:grey;font-style:italic;font-size: 13px;margin-bottom: 0;"></div>
+<div id="basketTotalMainContainer"></div>
+</div>
+<div class="cart-sidebar-footer-button">
+<a class="btn-custom" data-localize-html="Checkout" href="/checkout" id="cart-sidebar-checkout-button"></a>
+</div>
+</div>
+</aside>
+<div class="cart-sidebar-overlay cart-trigger">
+</div>
+</div>
+<!-- Cart Sidebar End -->
+<!-- Aside (Mobile Navigation) -->
+<aside class="main-aside">
+<a class="navbar-brand" href="/Home">
+<img alt="logo" src="/img/logo.png"/>
+</a>
+<div class="aside-scroll">
+<ul class="submenu">
+<li class="menu-item">
+<a data-localize-html="Home" href="/"></a>
+</li>
+<li class="menu-item">
+<a data-localize-html="OrderOnline" href="/order-online"></a>
+</li>
+<li class="menu-item">
+<a data-localize-html="Agb" href="/agb"></a>
+</li>
+<li class="menu-item">
+<a data-localize-html="Impressum" href="/impressum"></a>
+</li>
+<li class="menu-item">
+<a data-localize-html="ContactReservation" href="/contact"></a>
+</li>
+<li class="menu-item">
+<a data-localize-html="Info" href="/info"></a>
+</li>
+<li class="menu-item">
+<a data-localize-html="Checkout" onclick="Restaurant.Common.OpenCheckoutPage()" style="cursor:pointer"></a>
+</li>
+</ul>
+</div>
+</aside>
+<div class="aside-overlay aside-trigger"></div>
+<!-- Header Start -->
+<header class="main-header header-1 header-absolute header-light">
+<div class="top-header">
+<div class="container">
+<div class="top-header-inner">
+<div class="top-header-contacts">
+<ul class="top-header-nav">
+<li id="contentClosedMessage"></li>
+</ul>
+</div>
+<ul class="top-header-nav header-cta">
+<li id="topHeaderButton1"></li>
+<li id="topHeaderButton2"></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="container">
+<nav class="navbar">
+<!-- Logo -->
+<a class="navbar-brand" href="/Home">
+<img alt="logo" src="/img/logo.png"/>
+</a>
+<!-- Menu -->
+<ul class="navbar-nav">
+<li class="menu-item menu-item-has-children">
+<a data-localize-html="Home" href="/"></a>
+</li>
+<li class="menu-item menu-item-has-children">
+<a data-localize-html="OrderOnline" href="/order-online"></a>
+</li>
+<li class="menu-item menu-item-has-children">
+<a data-localize-html="ContactReservation" href="/contact"></a>
+</li>
+<li class="menu-item menu-item-has-children">
+<a data-localize-html="Info" href="/info"></a>
+</li>
+<li class="menu-item menu-item-has-children">
+<a data-localize-html="Checkout" onclick="Restaurant.Common.OpenCheckoutPage()" style="cursor:pointer"></a>
+</li>
+</ul>
+<div class="header-controls">
+<ul class="header-controls-inner" id="cartIcon">
+<li class="cart-dropdown-wrapper cart-trigger">
+<span class="cart-item-count" id="cartItemCount" style="display:none"></span>
+<i class="flaticon-shopping-bag"></i>
+</li>
+</ul>
+<!-- Toggler -->
+<div class="aside-toggler aside-trigger">
+<span></span>
+<span></span>
+<span></span>
+</div>
+</div>
+</nav>
+</div>
+</header>
+<!-- Header End -->
+<link href="/bundles/css/home.min.css?v=usFqcm-IPWu6ifp8ji6s9yZZrK5LIGLAJ_F47G4kqdA" rel="stylesheet"/>
+<!-- Subheader Start -->
+<div class="subheader dark-overlay dark-overlay-2" style="background-image: url('/img/homeBanner.jpg')">
+<div class="container">
+<div class="subheader-inner">
+<h1 class="headerRestaurantName"></h1>
+</div>
+</div>
+</div>
+<!-- Subheader End -->
+<!-- Icons Start -->
+<div class="section">
+<div class="container">
+<div class="section-title-wrap section-header text-center" id="deliveryPickupSelection">
+<h5 class="custom-primary" id="contentType1Title"></h5>
+<h2 class="title" id="contentType2Title"></h2>
+<p class="subtitle" id="contentType2Text">
+</p>
+</div>
+<div class="row infographics-2">
+<div class="col-lg-3 col-md-6 col-sm-6">
+<div class="ct-infographic-item">
+<i class="flaticon-online-booking"></i>
+<h4 id="contentType3Title"></h4>
+<p id="contentType3Text">
+</p>
+</div>
+</div>
+<div class="col-lg-3 col-md-6 col-sm-6">
+<div class="ct-infographic-item">
+<i class="flaticon-calories"></i>
+<h4 id="contentType4Title"></h4>
+<p id="contentType4Text"></p>
+</div>
+</div>
+<div class="col-lg-3 col-md-6 col-sm-6">
+<div class="ct-infographic-item">
+<i class="flaticon-delivery-man"></i>
+<h4 id="contentType5Title"></h4>
+<p id="contentType5Text">
+</p>
+</div>
+</div>
+<div class="col-lg-3 col-md-6 col-sm-6">
+<div class="ct-infographic-item">
+<i class="flaticon-food-tray"></i>
+<h4 id="contentType6Title"></h4>
+<p id="contentType6Text"></p>
+</div>
+</div>
+</div>
+<div class="section-btn">
+<a class="btn-custom" data-localize-html="OrderOnline" href="/order-online"></a>
+</div>
+</div>
+</div>
+<!-- Icons End -->
+<!-- Instagram Start -->
+<div class="section pt-0">
+<div class="container">
+<div class="section-title-wrap section-header text-center">
+<h2 class="title"></h2>
+<p class="subtitle">
+</p>
+</div>
+<div class="row">
+<div class="col-lg-4 col-md-4 col-sm-4 col-12 containerImage">
+<a>
+<img alt="ig" src="/img/homeSmall1.jpg"/>
+</a>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-4 col-12 containerImage">
+<a>
+<img alt="ig" src="/img/homeSmall2.jpg"/>
+</a>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-4 col-12 containerImage">
+<a>
+<img alt="ig" src="/img/homeSmall3.jpg"/>
+</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Instagram End -->
+<!-- Modal -->
+<div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="modal-dialog" role="dialog" tabindex="-1">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="exampleModalLabel"><span id="productDetailProductName">Info</span></h5>
+<button aria-label="Close" class="close" data-dismiss="modal" type="button">
+<span aria-hidden="true">×</span>
+</button>
+</div>
+<div class="modal-body">
+<div class="content">
+                    There are mobile application for using ios
+                </div>
+</div>
+<div class="modal-footer">
+<button class="btn btn-secondary" data-dismiss="modal" data-localize-html="Continue" onclick="Restaurant.Home.ContinueNormal()" type="button">Continue</button>
+<button class="btn btn-primary" data-localize-html="Download" onclick="Restaurant.Home.DownloadApp()" type="button">Download</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer Start -->
+<footer class="ct-footer footer-dark">
+<!-- Top Footer -->
+<div class="container">
+<div class="footer-top">
+<div class="footer-logo">
+<select class="form-control" id="selectLanguage" onchange="selectLanguageChanged(this)" style="height:40px">
+<option value="en">English</option>
+<option selected="" value="de">Deutsche</option>
+</select>
+</div>
+<div class="footer-buttons">
+<a onclick="openAppAndroid()" style="cursor:pointer">
+<img alt="download it on the app store" src="/img/android.png"/>
+</a>
+<a onclick="openAppIos()" style="cursor:pointer">
+<img alt="download it on the app store" src="/img/ios.png"/>
+</a>
+</div>
+</div>
+</div>
+<!-- Middle Footer -->
+<div class="footer-middle">
+<div class="container">
+<div class="row">
+<div class="col-xl-2 col-lg-3 col-md-4 col-sm-12 footer-widget">
+<img alt="logo" src="/img/logo.png" style="width:85px"/>
+</div>
+<div class="col-xl-2 col-lg-3 col-md-4 col-sm-12 footer-widget">
+<ul>
+<li>
+<a data-localize-html="Home" href="/"></a>
+</li>
+<li>
+<a data-localize-html="OrderOnline" href="/order-online"></a>
+</li>
+</ul>
+</div>
+<div class="col-xl-2 col-lg-3 col-md-4 col-sm-12 footer-widget">
+<ul>
+<li>
+<a data-localize-html="Contact" href="/contact"></a>
+</li>
+<li>
+<a data-localize-html="Info" href="/info"></a>
+</li>
+</ul>
+</div>
+<div class="col-xl-3 col-lg-3 col-md-4 col-sm-12 footer-widget">
+<ul>
+<li>
+<a data-localize-html="Agb" href="/agb"></a>
+</li>
+<li>
+<a data-localize-html="Impressum" href="/impressum"> </a>
+</li>
+</ul>
+</div>
+<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 footer-widget">
+</div>
+</div>
+</div>
+</div>
+<!-- Footer Bottom -->
+<div class="footer-bottom">
+<div class="container">
+<div class="footer-copyright">
+<a class="back-to-top" href="#">
+<i class="fas fa-chevron-up"></i>
+</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- Footer End -->
+<!-- Vendor Scripts -->
+<!-- Slices Scripts -->
+
+
+
+<!-- LIB -->
+
+<!-- LIB -->
+
+<!-- LAYOUT -->
+
+<!-- LAYOUT -->
+
+</body>
+</html>

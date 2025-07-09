@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to Restaurant TandoorHaus</title>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport"/>
+<link href="https://fonts.googleapis.com/css?family=Arsenal:400,700|Libre+Franklin:500" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Abel|Permanent+Marker&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Hind:700|Merienda+One|Quattrocento+Sans:400,700|Montserrat|Architects+Daughter&amp;display=swap" rel="stylesheet"/>
+<link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet"/>
+<link href="index.css" rel="stylesheet"/>
+<link href="../menu.css" rel="stylesheet"/>
+
+
+
+</head>
+<body onload="runSlideShow()">
+<div class="headerDesktop">
+<div id="logoSectionDesktop">
+<video autoplay="" height="100" id="logoVid" loop="" muted="" playsinline="" width="390">
+<source src="../images/tr3.mp4" type="video/mp4">
+</source></video>
+<video autoplay="" height="70" id="logoVidMobile" loop="" muted="" playsinline="" width="270">
+<source src="../images/tr3.mp4" type="video/mp4">
+</source></video>
+</div>
+<div class="navBarMenuIcon" id="navMenuIcon" onclick="showMobileMenu()">
+				=
+			</div>
+<div class="navBarMenuCloseIcon" id="navMenuCloseIcon" onclick="hideMobileMenu()">
+				x
+			</div>
+<div class="remainingMenu">
+<div class="menuItem">
+<a class="menuLink" href="../index.html"><span>HOME</span></a>
+</div>
+<div class="menuItem">
+<a class="navBarMenuItemsBorderDesktop"><span>LUNCH MENU</span></a>
+</div>
+<div class="menuItem">
+<a class="menuLink" href="../onlineOrders"><span>ONLINE ORDERS</span></a>
+</div>
+<div class="menuItem">
+<a class="menuLink" href="../reservations"><span>RESERVATIONS</span></a>
+</div>
+<div class="menuItem">
+<a class="menuLink" href="../buffet"><span>BUFFET</span></a>
+</div>
+<div class="menuItem">
+<a class="menuLink" href="../offers"><span>OFFERS</span></a>
+</div>
+<!--<div class='menuItem'>
+					<a class="menuLink" href = './homeDelivery'><span>HOME DELIVERY</span></a>
+				</div> -->
+<div class="menuItem">
+<a class="menuLink" href="../contact"><span>CONTACT</span></a>
+</div>
+</div>
+</div>
+<div class="navBarMobile">
+<div class="navBarMenuContainer" id="navBarMenuContainerID">
+<div class="navBarTitle">
+						MENU
+					</div>
+<div class="navBarMenu">
+<a class="menuLink navBarMenuItemsBorder" href="../index.html"><span>Home</span></a>
+<a class="menuLink navBarMenuItemsBorder" href="./lunchMenu"><span>Lunch Menu </span></a>
+<a class="menuLink navBarMenuItemsBorder" href="../onlineOrders"><span>Online Orders</span></a>
+<a class="menuLink navBarMenuItemsBorder" href="../reservations"><span>Reservations</span></a>
+<a class="menuLink navBarMenuItemsBorder" href="../lunchBuffet"><span>Buffet</span></a>
+<a class="menuLink navBarMenuItemsBorder" href="../offers"><span>Offers </span></a>
+<!-- <a class="menuLink navBarMenuItemsBorder" href = '../homeDelivery'><span>Home Delivery</span></a> -->
+<a class="menuLink navBarMenuItemsBorder" href="../contact"><span>Contact</span></a>
+</div>
+</div>
+</div>
+<div class="carousel-caption">
+<p></p>
+</div>
+<br/><br/><br/>
+<!-- Slideshow container -->
+<div class="slideshow-container">
+<!-- Full-width images with number and caption text -->
+<div class="mySlides">
+<img src="images/MenuMonday.jpg" style="width:100%"/>
+<div class="text">Page 1</div>
+</div>
+<div class="mySlides">
+<img src="images/MenuWednesday.jpg" style="width:100%"/>
+<div class="text">Page 2</div>
+</div>
+<div class="mySlides">
+<img src="images/MenuFriday.jpg" style="width:100%"/>
+<div class="text">Page 3</div>
+</div>
+<!-- Next and previous buttons -->
+<a class="prev" onclick="plusSlides(-1)"><br/><br/><br/>❮❮ Prev</a>
+<a class="next" onclick="plusSlides(1)"><br/><br/><br/>Next ❯❯ </a>
+</div>
+<br/>
+<!-- The dots/circles -->
+<div style="text-align:center">
+<span class="dot" onclick="currentSlide(1)"></span>
+<span class="dot" onclick="currentSlide(2)"></span>
+<span class="dot" onclick="currentSlide(3)"></span>
+<span class="dot" onclick="currentSlide(4)"></span>
+<span class="dot" onclick="currentSlide(5)"></span>
+<span class="dot" onclick="currentSlide(6)"></span>
+<span class="dot" onclick="currentSlide(7)"></span>
+<span class="dot" onclick="currentSlide(8)"></span>
+<span class="dot" onclick="currentSlide(9)"></span>
+<span class="dot" onclick="currentSlide(10)"></span>
+</div>
+<!-- footers section  -->
+<div class="footersContainer">
+<div class="footersMenu">
+<a class="menuLink footerMenuColor" href="../index.html"><span>  Home  |</span></a>
+<!--<a class="menuLink footerMenuColor" href = '../menu'><span>&nbsp;&nbsp;Menu &nbsp;&nbsp;|</span></a>-->
+<a class="menuLink footerMenuColor" href="../onlineOrders"><span>  Online Orders   |</span></a>
+<a class="menuLink footerMenuColor" href="../reservations"><span>  Reservations   |</span></a>
+<a class="menuLink footerMenuColor" href=""><span>  Buffet   |</span></a>
+<a class="menuLink footerMenuColor" href="../contact"><span>  Contact  </span></a>
+</div>
+<div class="footersTitle">
+<br/>
+<h1 class="footerHotelName"> TandoorHaus Restaurant </h1>
+
+				© 2021 TandoorHaus Restaurant
+				<br/>
+<br/>
+				Maintained By <a class="menuLink footerMenuColor" href="./contact">SNS INFOGRAPHICS</a>
+<br/>
+</div>
+</div>
+
+
+</body>
+</html>

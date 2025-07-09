@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="fr">
+<head>
+<link href="http://www.w3.org/1999/xhtml/vocab" rel="profile"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<link href="/sites/default/files/favicons/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+<link href="/sites/default/files/favicons/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="/sites/default/files/favicons/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+<link href="/sites/default/files/favicons/site.webmanifest" rel="manifest"/>
+<link color="#dc1f33" href="/sites/default/files/favicons/safari-pinned-tab.svg" rel="mask-icon"/>
+<link href="/sites/default/files/favicons/favicon.ico" rel="shortcut icon"/>
+<meta content="#000000" name="msapplication-TileColor"/>
+<meta content="/browserconfig.xml" name="msapplication-config"/>
+<meta content="#ffffff" name="theme-color"/>
+<link href="https://francesca.com/sites/all/themes/francesca/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon"/>
+<meta content="Trouvez le restaurant Francesca le plus proche de chez vous ! Retrouvez-nous dans nos restaurants pour déguster de bons plats cuisinés avec nos sauces maisons Francesca." name="description"/>
+<meta content="Drupal 7 (http://drupal.org)" name="generator"/>
+<link href="https://francesca.com/fr/restaurants" rel="canonical"/>
+<link href="https://francesca.com/fr/node/22" rel="shortlink"/>
+<title>Restaurants | Francesca</title>
+<link href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css" rel="stylesheet"/>
+
+
+
+
+
+
+
+
+<link href="https://fonts.googleapis.com/css?family=Titillium+Web:regular&amp;subset=latin-ext" media="all" rel="stylesheet" type="text/css"/>
+<!-- HTML5 element support for IE6-8 -->
+<!--[if lt IE 9]>
+    <script src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-22 node-type-vue i18n-fr">
+<div id="skip-link">
+<a class="element-invisible element-focusable" href="#main-content">Aller au contenu principal</a>
+</div>
+<header class="navbar navbar-default" id="navbar" role="banner">
+<div class="container-fluid">
+<div class="navbar-header">
+<a class="logo navbar-btn" href="/fr" title="Accueil">
+<img alt="Accueil" src="https://francesca.com/sites/default/files/logo.png"/>
+</a>
+<button class="navbar-toggle" data-target="#navbar-collapse" data-toggle="collapse" type="button">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<div class="content-langue visible-xs">
+</div>
+</div>
+<div class="navbar-collapse collapse" id="navbar-collapse">
+<div class="content-langue hidden-xs">
+</div>
+<nav role="navigation">
+<ul class="menu nav navbar-nav"><li class="first leaf"><a href="/fr/decouvrez-notre-histoire">Notre histoire</a></li>
+<li class="leaf active-trail active"><a class="active-trail active" href="/fr/restaurants">Restaurants</a></li>
+<li class="leaf"><a href="/fr/vous-souhaitez-rejoindre-notre-aventure">Devenir partenaire</a></li>
+<li class="leaf"><a href="/fr/suivez-toutes-nos-actualites-en-un-coup-doeil">Actualités</a></li>
+<li class="last leaf"><a href="/fr/faites-la-difference-dites-nous-tout">Contact</a></li>
+</ul> </nav>
+</div>
+</div>
+</header>
+<div class="main-container">
+<header id="page-header" role="banner">
+<div class="region region-header">
+<section class="block block-views clearfix" id="block-views-header-page-block">
+<div class="view view-header-page view-id-header_page view-display-id-block view-dom-id-60e1301a7d01708e9cebeb56c3ec1ac5">
+<div class="view-content">
+<div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+<div class="views-field views-field-field-photo-header"> <div class="field-content"><div class="bg-hearder-page" style="background-image:url('');">
+<img class="img-responsive" height="500" src="https://francesca.com/sites/default/files/img-header/header-store-locator.jpg" width="1520"/></div>
+</div> </div> </div>
+</div>
+</div>
+</section>
+</div>
+<h1 class="page-header">Restaurants</h1>
+</header> <!-- /#page-header -->
+<div class="container-fluid">
+<div class="row">
+<section class="col-sm-12">
+<a id="main-content"></a>
+<div class="region region-content">
+<section class="block block-system clearfix" id="block-system-main">
+<div class="node node-vue view-mode-full">
+<div class="row">
+<div class="col-sm-12">
+<div class="field field-name-field-vue field-type-viewfield field-label-hidden"><div class="field-items"><div class="field-item even"><div class="view view-nos-restaurants view-id-nos_restaurants view-display-id-block_1 view-dom-id-10fb52dbbd7c03b4bc0d26f3c274fd5e">
+<div class="view-header">
+<section class="block block-block block-text-page-restaurants clearfix" id="block-block-6">
+<h3 class="rtecenter"><strong>TROUVEZ LE RESTAURANT LE PLUS PROCHE DE CHEZ VOUS EN UN CLIC ! </strong></h3>
+</section>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="view-left">
+<div class="view-filters">
+<form accept-charset="UTF-8" action="/fr/restaurants" id="views-exposed-form-nos-restaurants-block-1" method="get"><div><div class="views-exposed-form">
+<div class="views-exposed-widgets clearfix">
+<div class="views-exposed-widget views-widget-filter-field_geofield_distance" id="edit-field-geofield-distance-wrapper">
+<label for="edit-field-geofield-distance">
+            gps (field_test2) - proximity          </label>
+<div class="views-widget">
+<div class="geofield-proximity-field-wrapper clearfix"><div class="form-item form-type-geofield-proximity form-group"><div class="clearfix" id="edit-field-geofield-distance"><div class="form-item form-item-field-geofield-distance-distance form-type-textfield form-group"><input class="form-control form-text" id="edit-field-geofield-distance-distance" maxlength="128" name="field_geofield_distance[distance]" size="60" type="text" value="250"/> <label class="control-label element-invisible" for="edit-field-geofield-distance-distance">Distance</label>
+</div><div class="form-item form-item-field-geofield-distance-unit form-type-select form-group"><select class="form-control form-select" id="edit-field-geofield-distance-unit" name="field_geofield_distance[unit]"><option selected="selected" value="6371">Kilomètres</option><option value="6371000">Mètres</option><option value="3959">Miles</option><option value="6975175">Verges</option><option value="20925525">Pieds</option><option value="3444">Nautical Miles</option></select> <label class="control-label element-invisible" for="edit-field-geofield-distance-unit">Unité</label>
+</div><span class="geofield-proximity-origin-from">Expéditeur</span><div class="form-item form-item-field-geofield-distance-origin form-type-textfield form-group"><input class="geofield-proximity-origin form-control form-text" id="edit-field-geofield-distance-origin" maxlength="128" name="field_geofield_distance[origin]" size="60" type="text" value=""/> <label class="control-label element-invisible" for="edit-field-geofield-distance-origin">Origine</label>
+</div></div></div></div> </div>
+</div>
+<div class="views-exposed-widget views-widget-filter-field_type_de_restauration_tid" id="edit-service-wrapper">
+<label for="edit-service">
+            Type de restauration :           </label>
+<div class="views-widget">
+<div class="form-item form-item-service form-type-select form-group"><div class="ctools-auto-submit form-control form-checkboxes bef-select-as-checkboxes"><div class="bef-checkboxes"><div class="form-item form-item-edit-service-22 form-type-bef-checkbox form-group"><input class="ctools-auto-submit form-control" id="edit-service-22" name="service[]" type="checkbox" value="22"/> <label class="option" for="edit-service-22">Click &amp; Collect</label></div><div class="form-item form-item-edit-service-28 form-type-bef-checkbox form-group"><input class="ctools-auto-submit form-control" id="edit-service-28" name="service[]" type="checkbox" value="28"/> <label class="option" for="edit-service-28">Sur place</label></div><div class="form-item form-item-edit-service-2 form-type-bef-checkbox form-group"><input class="ctools-auto-submit form-control" id="edit-service-2" name="service[]" type="checkbox" value="2"/> <label class="option" for="edit-service-2">à emporter</label></div><div class="form-item form-item-edit-service-3 form-type-bef-checkbox form-group"><input class="ctools-auto-submit form-control" id="edit-service-3" name="service[]" type="checkbox" value="3"/> <label class="option" for="edit-service-3">en livraison</label></div></div></div></div> </div>
+</div>
+<div class="views-exposed-widget views-submit-button">
+<button class="ctools-use-ajax ctools-auto-submit-click btn btn-info form-submit" id="edit-submit-nos-restaurants" name="" type="submit" value="Appliquer">Appliquer</button>
+</div>
+</div>
+</div>
+</div></form> </div>
+<div class="view-content">
+<div class="views-row views-row-1 views-row-odd views-row-first">
+<div class="views-field views-field-field-geofield-distance"> <span class="field-content"></span> </div>
+<div class="infos">
+<div class="views-field views-field-title"> <span class="field-content"><a href="/fr/restaurants/francesca-strasbourg">Francesca Strasbourg</a></span> </div>
+<div class="views-field views-field-street"> <span class="field-content">14 Avenue de la Marseillaise</span> </div>
+<div class="views-field views-field-city"> <span class="field-content">67000 Strasbourg </span> </div>
+<div class="views-field views-field-field-type-de-restauration"> <div class="field-content">Sur place | à emporter | en livraison</div> </div>
+</div>
+<div class="views-field views-field-view-node"> <span class="field-content"><a href="/fr/restaurants/francesca-strasbourg">infos</a></span> </div> </div>
+<div class="views-row views-row-2 views-row-even">
+<div class="views-field views-field-field-geofield-distance"> <span class="field-content"></span> </div>
+<div class="infos">
+<div class="views-field views-field-title"> <span class="field-content"><a href="/fr/restaurants/francesca-angers">Francesca Angers </a></span> </div>
+<div class="views-field views-field-street"> <span class="field-content">75 Avenue Montaigne</span> </div>
+<div class="views-field views-field-city"> <span class="field-content">49000 ANGERS </span> </div>
+<div class="views-field views-field-field-type-de-restauration"> <div class="field-content">Sur place | à emporter | en livraison</div> </div>
+</div>
+<div class="views-field views-field-view-node"> <span class="field-content"><a href="/fr/restaurants/francesca-angers">infos</a></span> </div> </div>
+<div class="views-row views-row-3 views-row-odd">
+<div class="views-field views-field-field-geofield-distance"> <span class="field-content"></span> </div>
+<div class="infos">
+<div class="views-field views-field-title"> <span class="field-content"><a href="/fr/restaurants/francesca-beauvais">Francesca Beauvais</a></span> </div>
+<div class="views-field views-field-street"> <span class="field-content">1 Avenue Descartes <br/>Galerie Marchande AUCHAN n° 115</span> </div>
+<div class="views-field views-field-city"> <span class="field-content">60000 BEAUVAIS </span> </div>
+<div class="views-field views-field-field-type-de-restauration"> <div class="field-content">Sur place | à emporter | en livraison</div> </div>
+</div>
+<div class="views-field views-field-view-node"> <span class="field-content"><a href="/fr/restaurants/francesca-beauvais">infos</a></span> </div> </div>
+<div class="views-row views-row-4 views-row-even">
+<div class="views-field views-field-field-geofield-distance"> <span class="field-content"></span> </div>
+<div class="infos">
+<div class="views-field views-field-title"> <span class="field-content"><a href="/fr/restaurants/francesca-meyrin">Francesca Meyrin</a></span> </div>
+<div class="views-field views-field-street"> <span class="field-content">Avenue de Feuillasse 24</span> </div>
+<div class="views-field views-field-city"> <span class="field-content">1217 MEYRIN </span> </div>
+<div class="views-field views-field-field-type-de-restauration"> <div class="field-content">Sur place | à emporter</div> </div>
+</div>
+<div class="views-field views-field-view-node"> <span class="field-content"><a href="/fr/restaurants/francesca-meyrin">infos</a></span> </div> </div>
+<div class="views-row views-row-5 views-row-odd">
+<div class="views-field views-field-field-geofield-distance"> <span class="field-content"></span> </div>
+<div class="infos">
+<div class="views-field views-field-title"> <span class="field-content"><a href="/fr/restaurants/francesca-geispolsheim">Francesca Geispolsheim</a></span> </div>
+<div class="views-field views-field-street"> <span class="field-content">4 rue du Fort</span> </div>
+<div class="views-field views-field-city"> <span class="field-content">67118 GEISPOLSHEIM </span> </div>
+<div class="views-field views-field-field-type-de-restauration"> <div class="field-content">Sur place | à emporter | en livraison</div> </div>
+</div>
+<div class="views-field views-field-view-node"> <span class="field-content"><a href="/fr/restaurants/francesca-geispolsheim">infos</a></span> </div> </div>
+<div class="views-row views-row-6 views-row-even">
+<div class="views-field views-field-field-geofield-distance"> <span class="field-content"></span> </div>
+<div class="infos">
+<div class="views-field views-field-title"> <span class="field-content"><a href="/fr/restaurants/francesca-geneve">Francesca Genève</a></span> </div>
+<div class="views-field views-field-street"> <span class="field-content">Charmilles Promenade de l'Europe 11</span> </div>
+<div class="views-field views-field-city"> <span class="field-content">1203 GENEVE </span> </div>
+<div class="views-field views-field-field-type-de-restauration"> <div class="field-content">Sur place | à emporter</div> </div>
+</div>
+<div class="views-field views-field-view-node"> <span class="field-content"><a href="/fr/restaurants/francesca-geneve">infos</a></span> </div> </div>
+<div class="views-row views-row-7 views-row-odd">
+<div class="views-field views-field-field-geofield-distance"> <span class="field-content"></span> </div>
+<div class="infos">
+<div class="views-field views-field-title"> <span class="field-content"><a href="/fr/restaurants/francesca-la-defense">Francesca La défense</a></span> </div>
+<div class="views-field views-field-street"> <span class="field-content">32 Passage de l'Arche, Puteaux</span> </div>
+<div class="views-field views-field-city"> <span class="field-content">92800 Paris </span> </div>
+<div class="views-field views-field-field-type-de-restauration"> <div class="field-content">Sur place | à emporter</div> </div>
+</div>
+<div class="views-field views-field-view-node"> <span class="field-content"><a href="/fr/restaurants/francesca-la-defense">infos</a></span> </div> </div>
+<div class="views-row views-row-8 views-row-even">
+<div class="views-field views-field-field-geofield-distance"> <span class="field-content"></span> </div>
+<div class="infos">
+<div class="views-field views-field-title"> <span class="field-content"><a href="/fr/restaurants/francesca-le-havre">Francesca Le Havre</a></span> </div>
+<div class="views-field views-field-street"> <span class="field-content">159 quai Georges V</span> </div>
+<div class="views-field views-field-city"> <span class="field-content">76600 LE HAVRE </span> </div>
+<div class="views-field views-field-field-type-de-restauration"> <div class="field-content">Sur place | à emporter | en livraison</div> </div>
+</div>
+<div class="views-field views-field-view-node"> <span class="field-content"><a href="/fr/restaurants/francesca-le-havre">infos</a></span> </div> </div>
+<div class="views-row views-row-9 views-row-odd">
+<div class="views-field views-field-field-geofield-distance"> <span class="field-content"></span> </div>
+<div class="infos">
+<div class="views-field views-field-title"> <span class="field-content"><a href="/fr/restaurants/francesca-nantes-1">Francesca Nantes 1 </a></span> </div>
+<div class="views-field views-field-street"> <span class="field-content">3, rue de l’échelle</span> </div>
+<div class="views-field views-field-city"> <span class="field-content">44000 NANTES </span> </div>
+<div class="views-field views-field-field-type-de-restauration"> <div class="field-content">Sur place | à emporter</div> </div>
+</div>
+<div class="views-field views-field-view-node"> <span class="field-content"><a href="/fr/restaurants/francesca-nantes-1">infos</a></span> </div> </div>
+<div class="views-row views-row-10 views-row-even">
+<div class="views-field views-field-field-geofield-distance"> <span class="field-content"></span> </div>
+<div class="infos">
+<div class="views-field views-field-title"> <span class="field-content"><a href="/fr/restaurants/francesca-nantes-2">Francesca Nantes 2</a></span> </div>
+<div class="views-field views-field-street"> <span class="field-content">25 Mail Pablo Picasso</span> </div>
+<div class="views-field views-field-city"> <span class="field-content">44300 NANTES </span> </div>
+<div class="views-field views-field-field-type-de-restauration"> <div class="field-content">Sur place | à emporter</div> </div>
+</div>
+<div class="views-field views-field-view-node"> <span class="field-content"><a href="/fr/restaurants/francesca-nantes-2">infos</a></span> </div> </div>
+<div class="views-row views-row-11 views-row-odd">
+<div class="views-field views-field-field-geofield-distance"> <span class="field-content"></span> </div>
+<div class="infos">
+<div class="views-field views-field-title"> <span class="field-content"><a href="/fr/restaurants/francesca-grands-boulevards">Francesca Grands Boulevards</a></span> </div>
+<div class="views-field views-field-street"> <span class="field-content">20 boulevard poissonnière</span> </div>
+<div class="views-field views-field-city"> <span class="field-content">75009 PARIS </span> </div>
+<div class="views-field views-field-field-type-de-restauration"> <div class="field-content">Sur place | à emporter | en livraison</div> </div>
+</div>
+<div class="views-field views-field-view-node"> <span class="field-content"><a href="/fr/restaurants/francesca-grands-boulevards">infos</a></span> </div> </div>
+<div class="views-row views-row-12 views-row-even">
+<div class="views-field views-field-field-geofield-distance"> <span class="field-content"></span> </div>
+<div class="infos">
+<div class="views-field views-field-title"> <span class="field-content"><a href="/fr/restaurants/francesca-sion">Francesca Sion</a></span> </div>
+<div class="views-field views-field-street"> <span class="field-content">Rue de Pré-Fleuri 2, C</span> </div>
+<div class="views-field views-field-city"> <span class="field-content">1950 SION </span> </div>
+<div class="views-field views-field-field-type-de-restauration"> <div class="field-content">Sur place | à emporter</div> </div>
+</div>
+<div class="views-field views-field-view-node"> <span class="field-content"><a href="/fr/restaurants/francesca-sion">infos</a></span> </div> </div>
+<div class="views-row views-row-13 views-row-odd">
+<div class="views-field views-field-field-geofield-distance"> <span class="field-content"></span> </div>
+<div class="infos">
+<div class="views-field views-field-title"> <span class="field-content"><a href="/fr/restaurants/francesca-toulouse">Francesca Toulouse</a></span> </div>
+<div class="views-field views-field-street"> <span class="field-content">8 Rue Louis Courtois de Viçose</span> </div>
+<div class="views-field views-field-city"> <span class="field-content">31100 TOULOUSE </span> </div>
+<div class="views-field views-field-field-type-de-restauration"> <div class="field-content">Sur place | à emporter | en livraison</div> </div>
+</div>
+<div class="views-field views-field-view-node"> <span class="field-content"><a href="/fr/restaurants/francesca-toulouse">infos</a></span> </div> </div>
+<div class="views-row views-row-14 views-row-even">
+<div class="views-field views-field-field-geofield-distance"> <span class="field-content"></span> </div>
+<div class="infos">
+<div class="views-field views-field-title"> <span class="field-content"><a href="/fr/restaurants/francesca-dommartin-les-cuiseaux">Francesca Dommartin les cuiseaux</a></span> </div>
+<div class="views-field views-field-street"> <span class="field-content">Aire du Poulet de Bresse - Autoroute A39</span> </div>
+<div class="views-field views-field-city"> <span class="field-content">71480 DOMMARTIN LES CUISEAUX </span> </div>
+<div class="views-field views-field-field-type-de-restauration"> <div class="field-content">Sur place | à emporter</div> </div>
+</div>
+<div class="views-field views-field-view-node"> <span class="field-content"><a href="/fr/restaurants/francesca-dommartin-les-cuiseaux">infos</a></span> </div> </div>
+<div class="views-row views-row-15 views-row-odd">
+<div class="views-field views-field-field-geofield-distance"> <span class="field-content"></span> </div>
+<div class="infos">
+<div class="views-field views-field-title"> <span class="field-content"><a href="/fr/restaurants/francesca-houssen">Francesca Houssen</a></span> </div>
+<div class="views-field views-field-street"> <span class="field-content">1 Rue du Buehlfeld<br/>Centre commercial Carrefour</span> </div>
+<div class="views-field views-field-city"> <span class="field-content">68000 Houssen </span> </div>
+<div class="views-field views-field-field-type-de-restauration"> <div class="field-content">Sur place | à emporter | en livraison</div> </div>
+</div>
+<div class="views-field views-field-view-node"> <span class="field-content"><a href="/fr/restaurants/francesca-houssen">infos</a></span> </div> </div>
+<div class="views-row views-row-16 views-row-even">
+<div class="views-field views-field-field-geofield-distance"> <span class="field-content"></span> </div>
+<div class="infos">
+<div class="views-field views-field-title"> <span class="field-content"><a href="/fr/restaurants/francesca-etampes">Francesca Etampes</a></span> </div>
+<div class="views-field views-field-street"> <span class="field-content">50 rue du Lys</span> </div>
+<div class="views-field views-field-city"> <span class="field-content">91150 Etampes </span> </div>
+<div class="views-field views-field-field-type-de-restauration"> <div class="field-content">Sur place | à emporter</div> </div>
+</div>
+<div class="views-field views-field-view-node"> <span class="field-content"><a href="/fr/restaurants/francesca-etampes">infos</a></span> </div> </div>
+<div class="views-row views-row-17 views-row-odd">
+<div class="views-field views-field-field-geofield-distance"> <span class="field-content"></span> </div>
+<div class="infos">
+<div class="views-field views-field-title"> <span class="field-content"><a href="/fr/restaurants/francesca-aix-en-provence">Francesca Aix-en-Provence</a></span> </div>
+<div class="views-field views-field-street"> <span class="field-content">15 cr Gambetta</span> </div>
+<div class="views-field views-field-city"> <span class="field-content">13100 Aix-en-Provence </span> </div>
+<div class="views-field views-field-field-type-de-restauration"> <div class="field-content">Sur place | à emporter</div> </div>
+</div>
+<div class="views-field views-field-view-node"> <span class="field-content"><a href="/fr/restaurants/francesca-aix-en-provence">infos</a></span> </div> </div>
+<div class="views-row views-row-18 views-row-even">
+<div class="views-field views-field-field-geofield-distance"> <span class="field-content"></span> </div>
+<div class="infos">
+<div class="views-field views-field-title"> <span class="field-content"><a href="/fr/restaurants/francesca-angers-centre-ville">Francesca Angers centre ville - Fleur d'eau</a></span> </div>
+<div class="views-field views-field-street"> <span class="field-content">5 place mondain Chanlouineau</span> </div>
+<div class="views-field views-field-city"> <span class="field-content">49000 Angers </span> </div>
+<div class="views-field views-field-field-type-de-restauration"> <div class="field-content">Sur place | à emporter</div> </div>
+</div>
+<div class="views-field views-field-view-node"> <span class="field-content"><a href="/fr/restaurants/francesca-angers-centre-ville">infos</a></span> </div> </div>
+<div class="views-row views-row-19 views-row-odd">
+<div class="views-field views-field-field-geofield-distance"> <span class="field-content"></span> </div>
+<div class="infos">
+<div class="views-field views-field-title"> <span class="field-content"><a href="/fr/restaurants/restaurant-francesca-beauvais-2">Restaurant Francesca Beauvais ZAC</a></span> </div>
+<div class="views-field views-field-street"> <span class="field-content">1 Rue de Pinconlieu</span> </div>
+<div class="views-field views-field-city"> <span class="field-content">60000 Beauvais </span> </div>
+<div class="views-field views-field-field-type-de-restauration"> <div class="field-content">Sur place | à emporter</div> </div>
+</div>
+<div class="views-field views-field-view-node"> <span class="field-content"><a href="/fr/restaurants/restaurant-francesca-beauvais-2">infos</a></span> </div> </div>
+<div class="views-row views-row-20 views-row-even">
+<div class="views-field views-field-field-geofield-distance"> <span class="field-content"></span> </div>
+<div class="infos">
+<div class="views-field views-field-title"> <span class="field-content"><a href="/fr/restaurants/francesca-schiltigheim">Francesca Schiltigheim </a></span> </div>
+<div class="views-field views-field-street"> <span class="field-content">23 rue du Tribunal</span> </div>
+<div class="views-field views-field-city"> <span class="field-content">67300 Schiltigheim </span> </div>
+<div class="views-field views-field-field-type-de-restauration"> <div class="field-content">Sur place | à emporter</div> </div>
+</div>
+<div class="views-field views-field-view-node"> <span class="field-content"><a href="/fr/restaurants/francesca-schiltigheim">infos</a></span> </div> </div>
+<div class="views-row views-row-21 views-row-odd views-row-last">
+<div class="views-field views-field-field-geofield-distance"> <span class="field-content"></span> </div>
+<div class="infos">
+<div class="views-field views-field-title"> <span class="field-content"><a href="/fr/restaurants/francesca-le-thuit-de-loison">Francesca Le Thuit de l'Oison</a></span> </div>
+<div class="views-field views-field-street"> <span class="field-content">185 Voie Romaine</span> </div>
+<div class="views-field views-field-city"> <span class="field-content">27370 Le Thuit-de-l'Oison </span> </div>
+<div class="views-field views-field-field-type-de-restauration"> <div class="field-content">Click &amp; Collect | Sur place | à emporter</div> </div>
+</div>
+<div class="views-field views-field-view-node"> <span class="field-content"><a href="/fr/restaurants/francesca-le-thuit-de-loison">infos</a></span> </div> </div>
+</div>
+</div>
+</div>
+<div class="col-md-8">
+<div class="attachment attachment-after">
+<div class="view view-nos-restaurants view-id-nos_restaurants view-display-id-attachment_1">
+<div class="view-content">
+<div class="ip-geoloc-map leaflet-view custom">
+<div id="ip-geoloc-map-of-view-nos_restaurants-attachment_1-9c3ef446df7392a404c6284a02ef7af0" style="height:500px"></div>
+</div>
+</div>
+</div> </div>
+</div>
+</div>
+</div></div></div></div> </div>
+</div>
+</div>
+<!-- Needed to activate display suite support on forms -->
+</section>
+</div>
+</section>
+</div>
+</div>
+</div>
+<a href="#" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a>
+<div class="prefooter">
+<div class="container-fluid">
+<div class="row">
+<div class="region region-prefooter">
+<section class="block block-views clearfix" id="block-views-bloc-avec-image-de-fond-block">
+<div class="view-content">
+<div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+<div class="bloc_avec_img_de_fond hasbg" style="background-image:url(https://francesca.com/sites/default/files/boutique-en-ligne-francesca.jpg);"><div class="content">
+<div class="content-text"><p class="title">Découvrez notre boutique en ligne</p><div class="text"><p>Faîtes entrer les saveurs de l'Italie à la maison avec les pots de sauces Francesca !</p>
+</div><div class="link"><div><a href="https://francescasalsa.com/">Accédez à la boutique</a></div></div></div></div></div> </div>
+</div>
+</section>
+<section class="block block-webform form-rejoindre clearfix" id="block-webform-client-block-3">
+<h2 class="block-title">VOUS SOUHAITEZ REJOINDRE NOTRE AVENTURE ?</h2>
+<div id="webform-ajax-wrapper-3"><form accept-charset="UTF-8" action="/fr/restaurants" class="webform-client-form webform-client-form-3" id="webform-client-form-3" method="post"><div><fieldset class="webform-component-fieldset col col-md-6 webform-component--left panel panel-default form-wrapper" id="bootstrap-panel--5">
+<div class="panel-body" id="bootstrap-panel-5-body">
+<fieldset class="webform-component-fieldset col col2 webform-component--left--ligne-1 panel panel-default form-wrapper" id="bootstrap-panel">
+<div class="panel-body" id="bootstrap-panel-body">
+<div class="form-item webform-component webform-component-textfield webform-component--left--ligne-1--Nom form-group form-item form-item-submitted-left-ligne-1-nom form-type-textfield form-group"><input class="form-control form-text required" id="edit-submitted-left-ligne-1-nom" maxlength="128" name="submitted[left][ligne_1][Nom]" placeholder="Nom" required="required" size="60" type="text" value=""/> <label class="control-label element-invisible" for="edit-submitted-left-ligne-1-nom">Nom <span class="form-required" title="Ce champ est requis.">*</span></label>
+</div><div class="form-item webform-component webform-component-textfield webform-component--left--ligne-1--Prenom form-group form-item form-item-submitted-left-ligne-1-prenom form-type-textfield form-group"><input class="form-control form-text" id="edit-submitted-left-ligne-1-prenom" maxlength="128" name="submitted[left][ligne_1][Prenom]" placeholder="Prénom" size="60" type="text" value=""/> <label class="control-label element-invisible" for="edit-submitted-left-ligne-1-prenom">Prénom</label>
+</div> </div>
+</fieldset>
+<div class="form-item webform-component webform-component-textfield webform-component--left--Adresse form-group form-item form-item-submitted-left-adresse form-type-textfield form-group"><input class="form-control form-text" id="edit-submitted-left-adresse" maxlength="128" name="submitted[left][Adresse]" placeholder="Adresse" size="60" type="text" value=""/> <label class="control-label element-invisible" for="edit-submitted-left-adresse">Adresse</label>
+</div><div class="form-item webform-component webform-component-email webform-component--left--email form-group form-item form-item-submitted-left-email form-type-webform-email form-group"><input class="email form-control form-text form-email required" id="edit-submitted-left-email" name="submitted[left][email]" placeholder="E-mail" required="required" size="60" type="email"/> <label class="control-label element-invisible" for="edit-submitted-left-email">email <span class="form-required" title="Ce champ est requis.">*</span></label>
+</div><fieldset class="webform-component-fieldset col col2 webform-component--left--ligne-2 panel panel-default form-wrapper" id="bootstrap-panel--2">
+<div class="panel-body" id="bootstrap-panel-2-body">
+<div class="form-item webform-component webform-component-textfield webform-component--left--ligne-2--telephone form-group form-item form-item-submitted-left-ligne-2-telephone form-type-textfield form-group"><input class="form-control form-text required" id="edit-submitted-left-ligne-2-telephone" maxlength="128" name="submitted[left][ligne_2][telephone]" placeholder="Téléphone" required="required" size="60" type="text" value=""/> <label class="control-label element-invisible" for="edit-submitted-left-ligne-2-telephone">téléphone <span class="form-required" title="Ce champ est requis.">*</span></label>
+</div><div class="form-item webform-component webform-component-textfield webform-component--left--ligne-2--horaire-de-contact form-group form-item form-item-submitted-left-ligne-2-horaire-de-contact form-type-textfield form-group"><input class="form-control form-text" id="edit-submitted-left-ligne-2-horaire-de-contact" maxlength="128" name="submitted[left][ligne_2][horaire_de_contact]" placeholder="Horaire de contact" size="60" type="text" value=""/> <label class="control-label element-invisible" for="edit-submitted-left-ligne-2-horaire-de-contact">horaire de contact</label>
+</div> </div>
+</fieldset>
+<fieldset class="webform-component-fieldset col col2 webform-component--left--ligne-3 panel panel-default form-wrapper" id="bootstrap-panel--3">
+<div class="panel-body" id="bootstrap-panel-3-body">
+<div class="form-item webform-component webform-component-textfield webform-component--left--ligne-3--mon-apport form-group form-item form-item-submitted-left-ligne-3-mon-apport form-type-textfield form-group"><input class="form-control form-text" id="edit-submitted-left-ligne-3-mon-apport" maxlength="128" name="submitted[left][ligne_3][mon_apport]" placeholder="Mon apport" size="60" type="text" value=""/> <label class="control-label element-invisible" for="edit-submitted-left-ligne-3-mon-apport">mon apport</label>
+</div><div class="form-item webform-component webform-component-textfield webform-component--left--ligne-3--echeance-du-projet form-group form-item form-item-submitted-left-ligne-3-echeance-du-projet form-type-textfield form-group"><input class="form-control form-text" id="edit-submitted-left-ligne-3-echeance-du-projet" maxlength="128" name="submitted[left][ligne_3][echeance_du_projet]" placeholder="Echéance du projet" size="60" type="text" value=""/> <label class="control-label element-invisible" for="edit-submitted-left-ligne-3-echeance-du-projet">échéance du projet</label>
+</div> </div>
+</fieldset>
+<fieldset class="webform-component-fieldset col col2 webform-component--left--ligne-4 panel panel-default form-wrapper" id="bootstrap-panel--4">
+<div class="panel-body" id="bootstrap-panel-4-body">
+<div class="form-item webform-component webform-component-textfield webform-component--left--ligne-4--local form-group form-item form-item-submitted-left-ligne-4-local form-type-textfield form-group"><input class="form-control form-text" id="edit-submitted-left-ligne-4-local" maxlength="128" name="submitted[left][ligne_4][local]" placeholder="Local" size="60" type="text" value=""/> <label class="control-label element-invisible" for="edit-submitted-left-ligne-4-local">local</label>
+</div><div class="form-item webform-component webform-component-textfield webform-component--left--ligne-4--region-souhaitee form-group form-item form-item-submitted-left-ligne-4-region-souhaitee form-type-textfield form-group"><input class="form-control form-text" id="edit-submitted-left-ligne-4-region-souhaitee" maxlength="128" name="submitted[left][ligne_4][region_souhaitee]" placeholder="Région souhaitée" size="60" type="text" value=""/> <label class="control-label element-invisible" for="edit-submitted-left-ligne-4-region-souhaitee">Région souhaitée</label>
+</div> </div>
+</fieldset>
+</div>
+</fieldset>
+<fieldset class="webform-component-fieldset col col-md-6 webform-component--right panel panel-default form-wrapper" id="bootstrap-panel--6">
+<div class="panel-body" id="bootstrap-panel-6-body">
+<div class="form-item webform-component webform-component-textarea webform-component--right--votre-projet form-group form-item form-item-submitted-right-votre-projet form-type-textarea form-group"><div class="form-textarea-wrapper"><textarea class="form-control form-textarea" cols="60" id="edit-submitted-right-votre-projet" name="submitted[right][votre_projet]" placeholder="Votre projet" rows="12"></textarea></div> <label class="control-label element-invisible" for="edit-submitted-right-votre-projet">votre projet</label>
+</div> </div>
+</fieldset>
+<div class="form-item webform-component webform-component-checkboxes webform-component--rgpd form-group form-item form-item-submitted-rgpd form-type-checkboxes form-group"><div class="form-checkboxes" id="edit-submitted-rgpd"><div class="form-item form-item-submitted-rgpd-rgpd form-type-checkbox checkbox"> <label class="control-label" for="edit-submitted-rgpd-1"><input class="form-checkbox" id="edit-submitted-rgpd-1" name="submitted[rgpd][rgpd]" required="required" type="checkbox" value="rgpd"/>En soumettant ce formulaire j'accepte que les informations soient enregistrées</label>
+</div></div> <label class="control-label element-invisible" for="edit-submitted-rgpd">RGPD <span class="form-required" title="Ce champ est requis.">*</span></label>
+</div><input name="details[sid]" type="hidden"/>
+<input name="details[page_num]" type="hidden" value="1"/>
+<input name="details[page_count]" type="hidden" value="1"/>
+<input name="details[finished]" type="hidden" value="0"/>
+<input name="form_build_id" type="hidden" value="form-ehlNXUuFg_e185P500eTqmbz1OkqhSmtJWenY8nhJYA"/>
+<input name="form_id" type="hidden" value="webform_client_form_3"/>
+<input name="honeypot_time" type="hidden" value="1751547160|tHHyzEKGbB0_tguLTUAf-Qt_Gv3SrSlfx_Dcx7ayDNM"/>
+<input name="webform_ajax_wrapper_id" type="hidden" value="webform-ajax-wrapper-3"/>
+<div class="url-textfield"><div class="form-item form-item-url form-type-textfield form-group"> <label class="control-label" for="edit-url">Laisser ce champ vide</label>
+<input autocomplete="off" class="form-control form-text" id="edit-url" maxlength="128" name="url" size="20" type="text" value=""/></div></div><div class="form-actions"><button class="webform-submit button-primary btn btn-default form-submit" id="edit-webform-ajax-submit-3" name="op" type="submit" value="c'est parti">c'est parti</button>
+</div></div></form></div>
+</section>
+</div>
+</div>
+</div>
+</div>
+<footer class="footer">
+<div class="container">
+<div class="row">
+<div class="region region-footer">
+<section class="block block-menu clearfix" id="block-menu-menu-reseaux-sociaux">
+<ul class="menu nav"><li class="first leaf"><a class="fa fa-facebook" href="https://www.facebook.com/francesca.restaurants/" target="_blank">facebook</a></li>
+<li class="last leaf"><a class="fa fa-instagram" href="https://www.instagram.com/francesca.restaurants/" target="_blank">instagram</a></li>
+</ul>
+</section>
+<section class="block block-block block-copyright clearfix" id="block-block-5">
+<p>©2021 FRANCESCA®, Tous droits réservés.</p>
+<p>Pour votre santé, évitez de manger entre les repas, <a href="https://www.mangerbouger.fr/" title="Mangerbouger.fr">www.mangerbouger.fr</a></p>
+</section>
+<section class="block block-menu clearfix" id="block-menu-menu-footer">
+<ul class="menu nav"><li class="first leaf"><a href="/fr/faites-la-difference-dites-nous-tout">Contact</a></li>
+<li class="leaf"><a href="/fr/mentions-legales">Mentions légales</a></li>
+<li class="last leaf"><a href="/fr/sitemap">sitemap</a></li>
+</ul>
+</section>
+<section class="block block-block clearfix" id="block-block-12">
+<div style="text-align:center; margin-top:2rem;">
+<div style="display:inline-block;background:white; padding:1rem; border-radius: 20px;">
+<div id="_obsTop782">
+<iframe frameborder="0" height="130" id="_obsFrame782" name="_obsFrame782" scrolling="no" src="https://www.observatoiredelafranchise.fr/top-votes-compter/2C252181242A2A23212B00782-100-1635162653" width="400"></iframe><p><a href="https://www.observatoiredelafranchise.fr/creation-entreprise/franchise-francesca-782.htm" target="_blank"><img alt="Francesca" id="_obsImgTop782" src="https://www.observatoiredelafranchise.fr/images/tpvt/logo.png"/></a></p></div>
+</div>
+</div>
+
+</section>
+</div>
+</div>
+</div>
+</footer>
+<ul class="menu nav" id="nav-fixed-left">
+<li class="first leaf"><a class="fa fa-facebook" href="https://www.facebook.com/francesca.restaurants/" target="_blank">facebook</a></li>
+<li class="second leaf"><a class="fa fa-instagram" href="https://www.instagram.com/francesca.restaurants/" target="_blank">instagram</a></li>
+<li class="last leaf li-commander"><a class="link-commander" href="https://francesca.com/fr/restaurants" target="_blank"><span class="start"><span class="char1">C</span><span class="char2">o</span><span class="char3">m</span><span class="char4">m</span><span class="char5">a</span><span class="char6">n</span><span class="char7">d</span><span class="char8">e</span><span class="char9">r</span></span><span class="middle"><span class="char1">e</span><span class="char2">n</span></span><span class="end"><span class="char1">l</span><span class="char2">i</span><span class="char3">g</span><span class="char4">n</span><span class="char5">e</span></span></a></li>
+</ul> 
+
+
+
+</body>
+</html>

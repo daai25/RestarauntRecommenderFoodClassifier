@@ -40,7 +40,7 @@ class FoodOrNotFood:
         self.model.eval()
 
         # Class labels
-        self.class_names = ["not food", "food"]
+        self.class_names = ["food", "not food"]
 
     def predict(self, image_path):
         """
@@ -68,5 +68,5 @@ class FoodOrNotFood:
             outputs = self.model(input_tensor)
             _, predicted = torch.max(outputs, 1)
 
-        # Return the class label
+        # Return the predicted class label
         return self.class_names[predicted.item()]

@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, height=device-height" name="viewport"/>
+<title>Warenkorb – Yoyo Pizza</title>
+<meta content="max-image-preview:large, noindex, follow" name="robots"/>
+
+<link href="//fonts.googleapis.com" rel="dns-prefetch"/>
+<link href="https://www.yoyo-pizza.ch/feed/" rel="alternate" title="Yoyo Pizza » Feed" type="application/rss+xml"/>
+<link href="https://www.yoyo-pizza.ch/comments/feed/" rel="alternate" title="Yoyo Pizza » Kommentar-Feed" type="application/rss+xml"/>
+
+
+<link href="https://www.yoyo-pizza.ch/wp-includes/css/dist/block-library/style.min.css?ver=6.8.1" id="wp-block-library-css" media="all" rel="stylesheet" type="text/css"/>
+
+<link href="https://www.yoyo-pizza.ch/wp-content/plugins/woofood-blocks/build/style.css?ver=2.6.5" id="wf-block-style-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://www.yoyo-pizza.ch/wp-content/plugins/woofood-plugin//inc/blocks/allcategories/style.css?ver=1696420099" id="woofood-block-01-basic-frontend-css" media="all" rel="stylesheet" type="text/css"/>
+
+<link href="https://www.yoyo-pizza.ch/wp-content/plugins/woocommerce/assets/css/select2.css?ver=9.9.5" id="select2-css" media="all" rel="stylesheet" type="text/css"/>
+
+<link href="https://www.yoyo-pizza.ch/wp-content/plugins/woofood-plugin/css/default.css?ver=2.7.6" id="woofood_css_plugin-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://www.yoyo-pizza.ch/wp-content/plugins/woofood-plugin/css/accordion.css?ver=2.7.6" id="woofood_plugin_css_accordion-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://www.yoyo-pizza.ch/wp-content/plugins/woofood-plugin/css/tabs.css?ver=2.7.6" id="woofood_css_tabs-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://www.yoyo-pizza.ch/wp-content/plugins/woofood-plugin/css/icons.css?ver=2.7.6" id="woofood_plugin_icons-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://www.yoyo-pizza.ch/wp-content/plugins/woofood-plugin/css/toastify.min.css?ver=2.7.6" id="toastify-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://www.yoyo-pizza.ch/wp-content/plugins/woofood-plugin/css/flatpickr.min.css?ver=2.7.6" id="flatpickr-css-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://www.yoyo-pizza.ch/wp-content/plugins/woofood-plugin/css/wf_address_changer.css?ver=2.7.6" id="wf-addres-changer-css-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://www.yoyo-pizza.ch/wp-content/plugins/woofood-plugin/css/wf_ajax_quickview.css?ver=2.7.6" id="wf_quickview_css-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://www.yoyo-pizza.ch/wp-content/plugins/woocommerce/assets/css/brands.css?ver=9.9.5" id="brands-styles-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://www.yoyo-pizza.ch/wp-content/themes/woofood/style.css?ver=6.8.1" id="woofood-style-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://www.yoyo-pizza.ch/wp-content/themes/woofood-child/style.css?ver=2.6.5" id="woofood-child-style-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://fonts.googleapis.com/css?family=Lato%3A400%2C700%2C400italic%2C700italic&amp;ver=6.8.1" id="linje-headings-fonts-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://fonts.googleapis.com/css?family=Lato%3A400%2C700%2C400italic%2C700italic&amp;ver=6.8.1" id="linje-body-fonts-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://www.yoyo-pizza.ch/wp-content/themes/woofood/css/bootstrap4/bootstrap.min.css?ver=2.6.5" id="bootstrap-css-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://www.yoyo-pizza.ch/wp-content/themes/woofood/css/bsnav/bsnav.min.css?ver=2.6.5" id="bsnav-css-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://www.yoyo-pizza.ch/wp-content/themes/woofood/css/niceselect/nice-select.css?ver=2.6.5" id="niceselect-css-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://www.yoyo-pizza.ch/wp-content/themes/woofood/css/icons.css?ver=2.6.5" id="woofood-icons-theme-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://www.yoyo-pizza.ch/wp-content/themes/woofood/css/main.css?ver=2.6.5" id="woofood-theme-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://www.yoyo-pizza.ch/wp-content/themes/woofood/css/woocommerce.css?ver=2.6.5" id="woocommerce-theme-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://www.yoyo-pizza.ch/wp-content/themes/woofood/css/user-login.rtl.css" id="user-login-css" media="all" rel="stylesheet" type="text/css"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="https://www.yoyo-pizza.ch/wp-json/" rel="https://api.w.org/"/><link href="https://www.yoyo-pizza.ch/wp-json/wp/v2/pages/28" rel="alternate" title="JSON" type="application/json"/><link href="https://www.yoyo-pizza.ch/xmlrpc.php?rsd" rel="EditURI" title="RSD" type="application/rsd+xml"/>
+<meta content="WordPress 6.8.1" name="generator"/>
+<meta content="WooCommerce 9.9.5" name="generator"/>
+<link href="https://www.yoyo-pizza.ch/warenkorb/" rel="canonical"/>
+<link href="https://www.yoyo-pizza.ch/?p=28" rel="shortlink"/>
+<link href="https://www.yoyo-pizza.ch/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.yoyo-pizza.ch%2Fwarenkorb%2F" rel="alternate" title="oEmbed (JSON)" type="application/json+oembed"/>
+<link href="https://www.yoyo-pizza.ch/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.yoyo-pizza.ch%2Fwarenkorb%2F&amp;format=xml" rel="alternate" title="oEmbed (XML)" type="text/xml+oembed"/>
+
+ <noscript></noscript>
+
+
+</head>
+<body class="wp-singular page-template-default page page-id-28 custom-background wp-custom-logo wp-theme-woofood wp-child-theme-woofood-child theme-woofood woocommerce-cart woocommerce-page woocommerce-no-js">
+<div class="top-bar">
+<div class="container">
+<div class="row">
+<div class="col-6 text-left">
+<span class="woofood-top-open-msg">Wir haben offen!</span>
+</div>
+<div class="col-6 text-right woofood-social-icons">
+
+							
+				Annahme von Liefer-/Abholaufträgen!!
+		
+			
+		
+		
+
+
+</div>
+</div>
+</div>
+</div>
+<header class="header" role="banner">
+<div class="container">
+<div class="navbar navbar-expand-sm bsnav">
+<button class="navbar-toggler toggler-spring"><span class="navbar-toggler-icon"></span></button>
+<a class="navbar-brand mx-auto" href="https://www.yoyo-pizza.ch/" id="site-logo" rel="home" title="Yoyo Pizza">
+<img alt="Yoyo Pizza" src="https://v2.yoyo-pizza.ch/wp-content/uploads/2018/05/cropped-yoyo.png"/>
+</a>
+<div class="collapse navbar-collapse">
+<ul class="navbar-nav navbar-mobile mr-auto" id="primary-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-10752 nav-item" id="menu-item-10752" itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"><a class="nav-link" href="https://www.yoyo-pizza.ch/" title="Essen bestellen">Essen bestellen</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10992 nav-item" id="menu-item-10992" itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"><a class="nav-link" href="https://www.yoyo-pizza.ch/oeffnungszeiten/" title="Öffnungszeiten">Öffnungszeiten</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-620 nav-item" id="menu-item-620" itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"><a class="nav-link" href="https://www.yoyo-pizza.ch/agb/" title="ABG">ABG</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-630 nav-item" id="menu-item-630" itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"><a class="nav-link" href="https://www.yoyo-pizza.ch/impressum/" title="Impressum">Impressum</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-749 nav-item" id="menu-item-749" itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"><a class="nav-link" href="https://www.yoyo-pizza.ch/kontakt/" title="Kontakt">Kontakt</a></li>
+<li class="menu-item login-link"><a class="nav-link" href="#pt-login">Login/Register</a></li></ul>
+</div>
+<a href="https://www.yoyo-pizza.ch/warenkorb/">
+<div class="header-cart">
+<div class="d-flex align-items-center justify-content-center">
+<div class="cart-icon">
+<i class="woofood-icon-cart-3"><div class="header-cart-count">0</div></i>
+</div>
+<span class="m-3 p-0 float-left">   0 items in cart </span>
+</div>
+</div>
+</a>
+</div>
+</div>
+</header>
+
+<div class="bsnav-mobile">
+<div class="bsnav-mobile-overlay"></div>
+<div class="navbar"></div>
+</div>
+<div class="main side-collapse-container" id="main">
+<div class="main-inner">
+<div class="container">
+<div class="col-md-12">
+<article class="post-28 page type-page status-publish hentry" id="post-28">
+<header class="entry-header">
+<h1 class="entry-title">Warenkorb</h1> </header><!-- .entry-header -->
+<div class="entry-content">
+<div class="woocommerce"><div class="woocommerce-notices-wrapper"></div><div class="wc-empty-cart-message">
+<div class="cart-empty woocommerce-info">
+		Dein Warenkorb ist gegenwärtig leer.	</div>
+</div> <p class="return-to-shop">
+<a class="button wc-backward" href="https://www.yoyo-pizza.ch/shop/">
+			Zurück zum Shop		</a>
+</p>
+</div>
+</div><!-- .entry-content -->
+</article><!-- #post-28 -->
+</div><!-- #container -->
+</div>
+</div><!-- #main-inner -->
+</div><!-- #main -->
+<footer class="footer side-collapse-container">
+<div class="container">
+<div class="row">
+<div class="col-sm-3">
+<aside class="widget widget_block widget_text" id="block-5">
+<p></p>
+</aside> </div>
+<div class="col-sm-3">
+</div>
+<div class="col-sm-3">
+</div>
+<div class="col-sm-3 info">
+</div>
+</div>
+<div class="footer-bottom">
+<div class="footer-bottom-left col-md-6 col-xs-6 col-sm-6 float-left">
+			© 2021 - 2023 yoyo-pizza.ch ● all rights reserved		</div><!-- .footer-bottom-right -->
+<div class="footer-bottom-right col-md-6 col-xs-6 col-sm-6 float-left">
+			powered by <a href="https://www.netcomplete.ch">netcomplete.ch</a> </div><!-- .footer-bottom-right -->
+</div>
+</div>
+</footer><!-- #colophon -->
+
+<div aria-hidden="true" class="modal fade pt-user-modal" id="pt-user-modal" role="dialog" tabindex="-1">
+<div class="modal-dialog" data-active-tab="">
+<div class="modal-content">
+<div class="modal-body">
+<button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">×</span></button>
+<!-- Register form -->
+<div class="pt-register">
+<h3>Join Yoyo Pizza</h3>
+<hr/>
+<form action="https://www.yoyo-pizza.ch/" id="pt_registration_form" method="POST">
+<div class="form-field required">
+<input class="form-control input-lg" name="user_login" placeholder="Your email address" type="text"/>
+</div>
+<div class="form-field required">
+<input class="form-control input-lg" name="user_pass" placeholder="Password" type="password"/>
+</div>
+<div class="form-field">
+<input class="form-control input-lg" name="billing_first_name" placeholder="First Name" type="text"/>
+</div>
+<div class="form-field">
+<input class="form-control input-lg" name="billing_last_name" placeholder="Last Name" type="text"/>
+</div>
+<div class="form-field">
+<input class="form-control input-lg" name="billing_phone" placeholder="Phone Number" type="text"/>
+</div>
+<div class="form-field">
+<input class="form-control input-lg" name="billing_address_1" placeholder="Address" type="text"/>
+</div>
+<div class="form-field">
+<input class="form-control input-lg" name="billing_city" placeholder="City" type="text"/>
+</div>
+<div class="form-field">
+<input class="form-control input-lg" name="billing_postcode" placeholder="Postal Code" type="text"/>
+</div>
+<div class="form-field">
+<select class="form-control input-lg" name="billing_country" type="select">
+<option value="AF">Afghanistan</option>
+<option value="EG">Ägypten</option>
+<option value="AX">Åland</option>
+<option value="AL">Albanien</option>
+<option value="DZ">Algerien</option>
+<option value="AS">Amerikanisch-Samoa</option>
+<option value="VI">Amerikanische Jungferninseln</option>
+<option value="AD">Andorra</option>
+<option value="AO">Angola</option>
+<option value="AI">Anguilla</option>
+<option value="AQ">Antarktika</option>
+<option value="AG">Antigua und Barbuda</option>
+<option value="GQ">Äquatorialguinea</option>
+<option value="AR">Argentinien</option>
+<option value="AM">Armenien</option>
+<option value="AW">Aruba</option>
+<option value="AZ">Aserbaidschan</option>
+<option value="ET">Äthiopien</option>
+<option value="AU">Australien</option>
+<option value="BS">Bahamas</option>
+<option value="BH">Bahrain</option>
+<option value="BD">Bangladesch</option>
+<option value="BB">Barbados</option>
+<option value="PW">Belau</option>
+<option value="BE">Belgien</option>
+<option value="BZ">Belize</option>
+<option value="BJ">Benin</option>
+<option value="BM">Bermuda</option>
+<option value="BT">Bhutan</option>
+<option value="BO">Bolivien</option>
+<option value="BQ">Bonaire, Saint Eustatius and Saba</option>
+<option value="BA">Bosnien und Herzegowina</option>
+<option value="BW">Botswana</option>
+<option value="BV">Bouvetinsel</option>
+<option value="BR">Brasilien</option>
+<option value="VG">Britische Jungferninseln</option>
+<option value="IO">Britisches Territorium im Indischen Ozean</option>
+<option value="BN">Brunei</option>
+<option value="BG">Bulgarien</option>
+<option value="BF">Burkina Faso</option>
+<option value="BI">Burundi</option>
+<option value="CL">Chile</option>
+<option value="CN">China</option>
+<option value="CK">Cookinseln</option>
+<option value="CR">Costa Rica</option>
+<option value="CW">CuraÇao</option>
+<option value="DK">Dänemark</option>
+<option value="DE">Deutschland</option>
+<option value="DM">Dominica</option>
+<option value="DO">Dominikanische Republik</option>
+<option value="DJ">Dschibuti</option>
+<option value="EC">Ecuador</option>
+<option value="SV">El Salvador</option>
+<option value="CI">Elfenbeinküste</option>
+<option value="ER">Eritrea</option>
+<option value="EE">Estland</option>
+<option value="SZ">Eswatini</option>
+<option value="FK">Falklandinseln</option>
+<option value="FO">Färöer</option>
+<option value="FJ">Fidschi</option>
+<option value="FI">Finnland</option>
+<option value="FR">Frankreich</option>
+<option value="GF">Französisch-Guayana</option>
+<option value="PF">Französisch-Polynesien</option>
+<option value="TF">Französische Süd- und Antarktisgebiete</option>
+<option value="GA">Gabun</option>
+<option value="GM">Gambia</option>
+<option value="GE">Georgien</option>
+<option value="GH">Ghana</option>
+<option value="GI">Gibraltar</option>
+<option value="GD">Grenada</option>
+<option value="GR">Griechenland</option>
+<option value="GL">Grönland</option>
+<option value="GP">Guadeloupe</option>
+<option value="GU">Guam</option>
+<option value="GT">Guatemala</option>
+<option value="GG">Guernsey</option>
+<option value="GN">Guinea</option>
+<option value="GW">Guinea-Bissau</option>
+<option value="GY">Guyana</option>
+<option value="HT">Haiti</option>
+<option value="HM">Heard und McDonaldinseln</option>
+<option value="HN">Honduras</option>
+<option value="HK">Hongkong</option>
+<option value="IN">Indien</option>
+<option value="ID">Indonesien</option>
+<option value="IQ">Irak</option>
+<option value="IR">Iran</option>
+<option value="IE">Irland</option>
+<option value="IS">Island</option>
+<option value="IM">Isle of Man</option>
+<option value="IL">Israel</option>
+<option value="IT">Italien</option>
+<option value="JM">Jamaika</option>
+<option value="JP">Japan</option>
+<option value="YE">Jemen</option>
+<option value="JE">Jersey</option>
+<option value="JO">Jordanien</option>
+<option value="KY">Kaimaninseln</option>
+<option value="KH">Kambodscha</option>
+<option value="CM">Kamerun</option>
+<option value="CA">Kanada</option>
+<option value="CV">Kap Verde</option>
+<option value="KZ">Kasachstan</option>
+<option value="QA">Katar</option>
+<option value="KE">Kenia</option>
+<option value="KG">Kirgisistan</option>
+<option value="KI">Kiribati</option>
+<option value="CC">Kokosinseln (Keelinginseln)</option>
+<option value="CO">Kolumbien</option>
+<option value="KM">Komoren</option>
+<option value="CG">Kongo-Brazzaville</option>
+<option value="CD">Kongo-Kinshasa</option>
+<option value="HR">Kroatien</option>
+<option value="CU">Kuba</option>
+<option value="KW">Kuwait</option>
+<option value="LA">Laos</option>
+<option value="LS">Lesotho</option>
+<option value="LV">Lettland</option>
+<option value="LB">Libanon</option>
+<option value="LR">Liberia</option>
+<option value="LY">Libyen</option>
+<option value="LI">Liechtenstein</option>
+<option value="LT">Litauen</option>
+<option value="LU">Luxemburg</option>
+<option value="MO">Macau</option>
+<option value="MG">Madagaskar</option>
+<option value="MW">Malawi</option>
+<option value="MY">Malaysia</option>
+<option value="MV">Malediven</option>
+<option value="ML">Mali</option>
+<option value="MT">Malta</option>
+<option value="MA">Marokko</option>
+<option value="MH">Marshallinseln</option>
+<option value="MQ">Martinique</option>
+<option value="MR">Mauretanien</option>
+<option value="MU">Mauritius</option>
+<option value="YT">Mayotte</option>
+<option value="MX">Mexiko</option>
+<option value="FM">Mikronesien</option>
+<option value="MD">Moldawien</option>
+<option value="MC">Monaco</option>
+<option value="MN">Mongolei</option>
+<option value="ME">Montenegro</option>
+<option value="MS">Montserrat</option>
+<option value="MZ">Mosambik</option>
+<option value="MM">Myanmar</option>
+<option value="NA">Namibia</option>
+<option value="NR">Nauru</option>
+<option value="NP">Nepal</option>
+<option value="NC">Neukaledonien</option>
+<option value="NZ">Neuseeland</option>
+<option value="NI">Nicaragua</option>
+<option value="NL">Niederlande</option>
+<option value="NE">Niger</option>
+<option value="NG">Nigeria</option>
+<option value="NU">Niue</option>
+<option value="KP">Nordkorea</option>
+<option value="MP">Nördliche Marianen</option>
+<option value="MK">Nordmazedonien</option>
+<option value="NF">Norfolkinsel</option>
+<option value="NO">Norwegen</option>
+<option value="OM">Oman</option>
+<option value="AT">Österreich</option>
+<option value="TL">Osttimor</option>
+<option value="PK">Pakistan</option>
+<option value="PS">Palästinensische Autonomiegebiete</option>
+<option value="PA">Panama</option>
+<option value="PG">Papua-Neuguinea</option>
+<option value="PY">Paraguay</option>
+<option value="PE">Peru</option>
+<option value="PH">Philippinen</option>
+<option value="PN">Pitcairninseln</option>
+<option value="PL">Polen</option>
+<option value="PT">Portugal</option>
+<option value="PR">Puerto Rico</option>
+<option value="RE">Réunion</option>
+<option value="RW">Ruanda</option>
+<option value="RO">Rumänien</option>
+<option value="RU">Russland</option>
+<option value="ST">São Tomé and Príncipe</option>
+<option value="BL">Saint Barthélemy</option>
+<option value="SX">Saint Martin (Dutch part)</option>
+<option value="PM">Saint-Pierre und Miquelon</option>
+<option value="SB">Salomonen</option>
+<option value="ZM">Sambia</option>
+<option value="WS">Samoa</option>
+<option value="SM">San Marino</option>
+<option value="SA">Saudi-Arabien</option>
+<option value="SE">Schweden</option>
+<option value="CH">Schweiz</option>
+<option value="SN">Senegal</option>
+<option value="RS">Serbien</option>
+<option value="SC">Seychellen</option>
+<option value="SL">Sierra Leone</option>
+<option value="ZW">Simbabwe</option>
+<option value="SG">Singapur</option>
+<option value="SK">Slowakei</option>
+<option value="SI">Slowenien</option>
+<option value="SO">Somalia</option>
+<option value="ES">Spanien</option>
+<option value="LK">Sri Lanka</option>
+<option value="SH">St. Helena</option>
+<option value="KN">St. Kitts und Nevis</option>
+<option value="LC">St. Lucia</option>
+<option value="MF">St. Martin (französischer Teil)</option>
+<option value="VC">St. Vincent und die Grenadinen</option>
+<option value="ZA">Südafrika</option>
+<option value="SD">Sudan</option>
+<option value="GS">Südgeorgien / Sandwich-Inseln</option>
+<option value="KR">Südkorea</option>
+<option value="SS">Südsudan</option>
+<option value="SR">Suriname</option>
+<option value="SJ">Svalbard und Jan Mayen</option>
+<option value="SY">Syrien</option>
+<option value="TJ">Tadschikistan</option>
+<option value="TW">Taiwan</option>
+<option value="TZ">Tansania</option>
+<option value="TH">Thailand</option>
+<option value="TG">Togo</option>
+<option value="TK">Tokelau</option>
+<option value="TO">Tonga</option>
+<option value="TT">Trinidad und Tobago</option>
+<option value="TD">Tschad</option>
+<option value="CZ">Tschechien</option>
+<option value="TN">Tunesien</option>
+<option value="TR">Türkei</option>
+<option value="TM">Turkmenistan</option>
+<option value="TC">Turks- und Caicosinseln</option>
+<option value="TV">Tuvalu</option>
+<option value="UG">Uganda</option>
+<option value="UA">Ukraine</option>
+<option value="HU">Ungarn</option>
+<option value="UM">United States (US) Minor Outlying Islands</option>
+<option value="UY">Uruguay</option>
+<option value="UZ">Usbekistan</option>
+<option value="VU">Vanuatu</option>
+<option value="VA">Vatikanstadt</option>
+<option value="VE">Venezuela</option>
+<option value="AE">Vereinigte Arabische Emirate</option>
+<option value="US">Vereinigte Staaten von Amerika (USA)</option>
+<option value="GB">Vereinigtes Königreich</option>
+<option value="VN">Vietnam</option>
+<option value="WF">Wallis und Futuna</option>
+<option value="CX">Weihnachtsinsel</option>
+<option value="BY">Weißrussland</option>
+<option value="EH">Westsahara</option>
+<option value="CF">Zentralafrikanische Republik</option>
+<option value="CY">Zypern</option>
+</select>
+</div>
+<div class="form-actions">
+<input name="action" type="hidden" value="pt_register_member"/>
+<button class="btn btn-theme btn-lg" data-loading-text="Loading..." type="submit">Sign up</button>
+</div>
+<input id="register-security" name="register-security" type="hidden" value="338a3b7b68"/><input name="_wp_http_referer" type="hidden" value="/warenkorb/"/> </form>
+<div class="pt-errors"></div>
+</div>
+<!-- Login form -->
+<div class="pt-login">
+<form action="https://www.yoyo-pizza.ch/" id="pt_login_form" method="post">
+<div class="form-field">
+<input class="form-control input-lg required" name="user_login" placeholder="username/email" type="text"/>
+</div>
+<div class="form-field">
+<input class="form-control input-lg required" id="pt_user_pass" name="user_pass" placeholder="password" type="password"/>
+</div>
+<div class="form-actions">
+<input name="action" type="hidden" value="pt_login_member"/>
+<button class="btn btn-theme btn-lg" data-loading-text="Loading..." type="submit">Login</button>
+<a class="lost-password" href="https://www.yoyo-pizza.ch/mein-konto/lost-password/">Lost Password?</a>
+</div>
+<input id="login-security" name="login-security" type="hidden" value="338a3b7b68"/><input name="_wp_http_referer" type="hidden" value="/warenkorb/"/> </form>
+<div class="pt-errors"></div>
+</div>
+<div class="pt-loading">
+<p><i class="fa fa-refresh fa-spin"></i><br/>Loading...</p>
+</div> </div>
+<div class="modal-footer">
+<span class="pt-register-footer">Don't have an account? <a class="btn btn-theme" href="#pt-register">Sign Up</a></span>
+<span class="pt-login-footer">Already have an account? <a class="btn btn-theme" href="#pt-login">Login</a></span>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Matomo -->
+
+<!-- End Matomo Code --> 
+
+<div aria-hidden="true" class="modal micromodal-slide wf_address_change_modal" id="wf_address_change_modal">
+<div class="modal__overlay" data-micromodal-close="" tabindex="-1">
+<div class="content">
+<div aria-labelledby="modal-1-title" aria-modal="true" class="modal__container" role="dialog">
+<header class="modal__header">
+<h2 class="modal__title" id="modal-1-title">
+          Change Address          </h2>
+<button aria-label="Close modal" class="modal__close" data-micromodal-close=""></button>
+</header>
+<main class="modal__content" id="modal-1-content">
+<div class="wf_address_changer_edit">
+<form action="https://www.yoyo-pizza.ch/" id="wf_address_form" method="POST">
+
+
+<div class="woofood_order_type">
+<label class="wf_field_wrapper wf_order_type_radio_50">Delivery<input checked="checked" id="order_type" name="order_type" type="radio" value="delivery"/><span class="checkmark"></span></label><label class="wf_field_wrapper wf_order_type_radio_50">Pickup<input id="order_type" name="order_type" type="radio" value="pickup"/><span class="checkmark"></span></label></div>
+
+<div class="wf_address_field">
+<input class="wf_address_input" name="first_name" placeholder="First Name" type="text" value=""/>
+</div>
+<div class="wf_address_field">
+<input class="wf_address_input" name="last_name" placeholder="Last Name" type="text" value=""/>
+</div>
+<div class="wf_address_field">
+<input class="wf_address_input woofood-autocomplete-address billing_address_1" id="billing_address_1" name="billing_address_1" placeholder="Address" type="text" value=""/>
+</div>
+<div class="wf_address_field">
+<input class="wf_address_input billing_city" id="billing_city" name="billing_city" placeholder="City" type="text" value=""/>
+</div>
+<div class="wf_address_field">
+<input class="wf_address_input billing_postcode" id="billing_postcode" name="billing_postcode" placeholder="Postal Code" type="text" value=""/>
+</div>
+<div class="wf_address_field">
+<input class="wf_address_input" id="doorbell" name="doorbell" placeholder="Name on Doorbell" type="text" value=""/>
+</div>
+<p class="form-row billing_country form-group" data-priority="" id="billing_country_field"><span class="woocommerce-input-wrapper"><select class="select form-control" data-placeholder="Select Country" id="billing_country" name="billing_country">
+<option value="AF">Afghanistan</option><option value="EG">Ägypten</option><option value="AX">Åland</option><option value="AL">Albanien</option><option value="DZ">Algerien</option><option value="AS">Amerikanisch-Samoa</option><option value="VI">Amerikanische Jungferninseln</option><option value="AD">Andorra</option><option value="AO">Angola</option><option value="AI">Anguilla</option><option value="AQ">Antarktika</option><option value="AG">Antigua und Barbuda</option><option value="GQ">Äquatorialguinea</option><option value="AR">Argentinien</option><option value="AM">Armenien</option><option value="AW">Aruba</option><option value="AZ">Aserbaidschan</option><option value="ET">Äthiopien</option><option value="AU">Australien</option><option value="BS">Bahamas</option><option value="BH">Bahrain</option><option value="BD">Bangladesch</option><option value="BB">Barbados</option><option value="PW">Belau</option><option value="BE">Belgien</option><option value="BZ">Belize</option><option value="BJ">Benin</option><option value="BM">Bermuda</option><option value="BT">Bhutan</option><option value="BO">Bolivien</option><option value="BQ">Bonaire, Saint Eustatius and Saba</option><option value="BA">Bosnien und Herzegowina</option><option value="BW">Botswana</option><option value="BV">Bouvetinsel</option><option value="BR">Brasilien</option><option value="VG">Britische Jungferninseln</option><option value="IO">Britisches Territorium im Indischen Ozean</option><option value="BN">Brunei</option><option value="BG">Bulgarien</option><option value="BF">Burkina Faso</option><option value="BI">Burundi</option><option value="CL">Chile</option><option value="CN">China</option><option value="CK">Cookinseln</option><option value="CR">Costa Rica</option><option value="CW">CuraÇao</option><option value="DK">Dänemark</option><option value="DE">Deutschland</option><option value="DM">Dominica</option><option value="DO">Dominikanische Republik</option><option value="DJ">Dschibuti</option><option value="EC">Ecuador</option><option value="SV">El Salvador</option><option value="CI">Elfenbeinküste</option><option value="ER">Eritrea</option><option value="EE">Estland</option><option value="SZ">Eswatini</option><option value="FK">Falklandinseln</option><option value="FO">Färöer</option><option value="FJ">Fidschi</option><option value="FI">Finnland</option><option value="FR">Frankreich</option><option value="GF">Französisch-Guayana</option><option value="PF">Französisch-Polynesien</option><option value="TF">Französische Süd- und Antarktisgebiete</option><option value="GA">Gabun</option><option value="GM">Gambia</option><option value="GE">Georgien</option><option value="GH">Ghana</option><option value="GI">Gibraltar</option><option value="GD">Grenada</option><option value="GR">Griechenland</option><option value="GL">Grönland</option><option value="GP">Guadeloupe</option><option value="GU">Guam</option><option value="GT">Guatemala</option><option value="GG">Guernsey</option><option value="GN">Guinea</option><option value="GW">Guinea-Bissau</option><option value="GY">Guyana</option><option value="HT">Haiti</option><option value="HM">Heard und McDonaldinseln</option><option value="HN">Honduras</option><option value="HK">Hongkong</option><option value="IN">Indien</option><option value="ID">Indonesien</option><option value="IQ">Irak</option><option value="IR">Iran</option><option value="IE">Irland</option><option value="IS">Island</option><option value="IM">Isle of Man</option><option value="IL">Israel</option><option value="IT">Italien</option><option value="JM">Jamaika</option><option value="JP">Japan</option><option value="YE">Jemen</option><option value="JE">Jersey</option><option value="JO">Jordanien</option><option value="KY">Kaimaninseln</option><option value="KH">Kambodscha</option><option value="CM">Kamerun</option><option value="CA">Kanada</option><option value="CV">Kap Verde</option><option value="KZ">Kasachstan</option><option value="QA">Katar</option><option value="KE">Kenia</option><option value="KG">Kirgisistan</option><option value="KI">Kiribati</option><option value="CC">Kokosinseln (Keelinginseln)</option><option value="CO">Kolumbien</option><option value="KM">Komoren</option><option value="CG">Kongo-Brazzaville</option><option value="CD">Kongo-Kinshasa</option><option value="HR">Kroatien</option><option value="CU">Kuba</option><option value="KW">Kuwait</option><option value="LA">Laos</option><option value="LS">Lesotho</option><option value="LV">Lettland</option><option value="LB">Libanon</option><option value="LR">Liberia</option><option value="LY">Libyen</option><option value="LI">Liechtenstein</option><option value="LT">Litauen</option><option value="LU">Luxemburg</option><option value="MO">Macau</option><option value="MG">Madagaskar</option><option value="MW">Malawi</option><option value="MY">Malaysia</option><option value="MV">Malediven</option><option value="ML">Mali</option><option value="MT">Malta</option><option value="MA">Marokko</option><option value="MH">Marshallinseln</option><option value="MQ">Martinique</option><option value="MR">Mauretanien</option><option value="MU">Mauritius</option><option value="YT">Mayotte</option><option value="MX">Mexiko</option><option value="FM">Mikronesien</option><option value="MD">Moldawien</option><option value="MC">Monaco</option><option value="MN">Mongolei</option><option value="ME">Montenegro</option><option value="MS">Montserrat</option><option value="MZ">Mosambik</option><option value="MM">Myanmar</option><option value="NA">Namibia</option><option value="NR">Nauru</option><option value="NP">Nepal</option><option value="NC">Neukaledonien</option><option value="NZ">Neuseeland</option><option value="NI">Nicaragua</option><option value="NL">Niederlande</option><option value="NE">Niger</option><option value="NG">Nigeria</option><option value="NU">Niue</option><option value="KP">Nordkorea</option><option value="MP">Nördliche Marianen</option><option value="MK">Nordmazedonien</option><option value="NF">Norfolkinsel</option><option value="NO">Norwegen</option><option value="OM">Oman</option><option value="AT">Österreich</option><option value="TL">Osttimor</option><option value="PK">Pakistan</option><option value="PS">Palästinensische Autonomiegebiete</option><option value="PA">Panama</option><option value="PG">Papua-Neuguinea</option><option value="PY">Paraguay</option><option value="PE">Peru</option><option value="PH">Philippinen</option><option value="PN">Pitcairninseln</option><option value="PL">Polen</option><option value="PT">Portugal</option><option value="PR">Puerto Rico</option><option value="RE">Réunion</option><option value="RW">Ruanda</option><option value="RO">Rumänien</option><option value="RU">Russland</option><option value="ST">São Tomé and Príncipe</option><option value="BL">Saint Barthélemy</option><option value="SX">Saint Martin (Dutch part)</option><option value="PM">Saint-Pierre und Miquelon</option><option value="SB">Salomonen</option><option value="ZM">Sambia</option><option value="WS">Samoa</option><option value="SM">San Marino</option><option value="SA">Saudi-Arabien</option><option value="SE">Schweden</option><option selected="selected" value="CH">Schweiz</option><option value="SN">Senegal</option><option value="RS">Serbien</option><option value="SC">Seychellen</option><option value="SL">Sierra Leone</option><option value="ZW">Simbabwe</option><option value="SG">Singapur</option><option value="SK">Slowakei</option><option value="SI">Slowenien</option><option value="SO">Somalia</option><option value="ES">Spanien</option><option value="LK">Sri Lanka</option><option value="SH">St. Helena</option><option value="KN">St. Kitts und Nevis</option><option value="LC">St. Lucia</option><option value="MF">St. Martin (französischer Teil)</option><option value="VC">St. Vincent und die Grenadinen</option><option value="ZA">Südafrika</option><option value="SD">Sudan</option><option value="GS">Südgeorgien / Sandwich-Inseln</option><option value="KR">Südkorea</option><option value="SS">Südsudan</option><option value="SR">Suriname</option><option value="SJ">Svalbard und Jan Mayen</option><option value="SY">Syrien</option><option value="TJ">Tadschikistan</option><option value="TW">Taiwan</option><option value="TZ">Tansania</option><option value="TH">Thailand</option><option value="TG">Togo</option><option value="TK">Tokelau</option><option value="TO">Tonga</option><option value="TT">Trinidad und Tobago</option><option value="TD">Tschad</option><option value="CZ">Tschechien</option><option value="TN">Tunesien</option><option value="TR">Türkei</option><option value="TM">Turkmenistan</option><option value="TC">Turks- und Caicosinseln</option><option value="TV">Tuvalu</option><option value="UG">Uganda</option><option value="UA">Ukraine</option><option value="HU">Ungarn</option><option value="UM">United States (US) Minor Outlying Islands</option><option value="UY">Uruguay</option><option value="UZ">Usbekistan</option><option value="VU">Vanuatu</option><option value="VA">Vatikanstadt</option><option value="VE">Venezuela</option><option value="AE">Vereinigte Arabische Emirate</option><option value="US">Vereinigte Staaten von Amerika (USA)</option><option value="GB">Vereinigtes Königreich</option><option value="VN">Vietnam</option><option value="WF">Wallis und Futuna</option><option value="CX">Weihnachtsinsel</option><option value="BY">Weißrussland</option><option value="EH">Westsahara</option><option value="CF">Zentralafrikanische Republik</option><option value="CY">Zypern</option>
+</select></span></p> <div class="wf_addres_changer_btn_wrapper">
+<input name="action" type="hidden" value="wf_address_changer"/>
+<button class="wf_address_changer_btn" type="submit">Change Address</button>
+</div>
+<input id="register-security" name="register-security" type="hidden" value="338a3b7b68"/><input name="_wp_http_referer" type="hidden" value="/warenkorb/"/> </form>
+<div class="wf-errors"></div>
+</div>
+<div class="wf_address_loading">
+<p><i class="fa fa-refresh fa-spin"></i><br/>Loading...</p>
+</div>
+</main></div>
+</div>
+</div>
+</div>
+
+<div aria-hidden="true" class="modal micromodal-slide wf_product_view" id="product_view">
+<div class="modal__overlay" data-micromodal-close="" tabindex="-1">
+<div class="content">
+</div>
+</div>
+</div>
+<div aria-hidden="true" class="modal micromodal-slide wf_category_view" id="category_view">
+<div class="modal__overlay" data-micromodal-close="" tabindex="-1">
+<div class="content">
+</div>
+<footer class="modal__footer">
+</footer>
+</div>
+</div>
+
+
+ 
+<div class="wf_quickview_loading"> 
+<div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+</div>
+
+
+
+
+
+<link href="https://www.yoyo-pizza.ch/wp-content/plugins/woocommerce/assets/client/blocks/wc-blocks.css?ver=wc-9.9.5" id="wc-blocks-style-css" media="all" rel="stylesheet" type="text/css"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

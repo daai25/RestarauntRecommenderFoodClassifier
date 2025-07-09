@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html class="h-100" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" name="Content-type" type="equiv"/>
+<meta content="IE=edge" name="X-UA-Compatible" type="equiv"/>
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" type="name"/>
+<meta content="iQKgkXCjxttKmMg7cKEn6nLLV1NKBiGhrRECMdWl" name="csrf-token"/>
+<link href="https://ventipizzeria.ch/assets/media/uploads/logo.png" rel="shortcut icon" type="image/ico"/>
+<title>Online-Bestellung! - Ventipizzeria in Wohlen</title>
+<link href="//fonts.googleapis.com/css?family=Amaranth|Titillium+Web:200,200i,400,400i,600,600i,700,700i|Droid+Sans+Mono" rel="stylesheet"/>
+<link href="https://ventipizzeria.ch/themes/tastyigniter-orange/assets/css/app.css" name="app-css" rel="stylesheet" type="text/css"/>
+<link href="https://ventipizzeria.ch/extensions/igniter/frontend/assets/css/featured_menus.css" name="featured_menus-css" rel="stylesheet" type="text/css"/>
+</head>
+<body class="d-flex flex-column h-100">
+<header class="header">
+
+<nav class="navbar navbar-light navbar-top navbar-expand-md fixed-top custom_navbar">
+<div class="container">
+<a class="navbar-brand" href="https://ventipizzeria.ch">
+<img alt="Ventipizzeria in Wohlen" class="img-logo" src="https://ventipizzeria.ch/assets/media/uploads/logo.png"/>
+</a>
+<span class="text-white d-flex justify-content-center w-50">
+<a href="tel: 056 610 56 10" style="color:white"><i class="fa fa-phone mr-2"></i> <span> 056 610 56 10</span></a>
+</span>
+<button aria-controls="navbarMainHeader" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler border-0" data-target="#navbarMainHeader" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+<div class="justify-content-end collapse navbar-collapse w-100" id="navbarMainHeader">
+<ul class="nav navbar-nav">
+<li class="nav-item">
+<a class="nav-link" href="https://ventipizzeria.ch/venti/menus">Menü anzeigen </a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://ventipizzeria.ch/venti/reservation">Reservierung </a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://ventipizzeria.ch/login">Anmelden </a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://ventipizzeria.ch/register">Registrieren </a>
+</li>
+</ul>
+</div>
+</div>
+</nav> </header>
+<main role="main">
+<div id="page-wrapper">
+<div class="carousel slide" data-ride="carousel" id="slider-home-slider">
+<ol class="carousel-indicators">
+<li class="active" data-slide-to="slider-home-slider" data-target="#slider-home-slider"></li>
+<li class="" data-slide-to="slider-home-slider" data-target="#slider-home-slider"></li>
+<li class="" data-slide-to="slider-home-slider" data-target="#slider-home-slider"></li>
+</ol>
+<div class="carousel-inner">
+<div class="carousel-item active" style="max-height:60vh;">
+<img alt="" class="d-block w-100" src="https://ventipizzeria.ch/assets/media/attachments/public/61a/a84/860/thumb_6_0_0_contain_48a4b15e.jpg"/>
+</div>
+<div class="carousel-item" style="max-height:60vh;">
+<img alt="" class="d-block w-100" src="https://ventipizzeria.ch/assets/media/attachments/public/61a/a84/9c6/thumb_7_0_0_contain_48a4b15e.jpg"/>
+</div>
+<div class="carousel-item" style="max-height:60vh;">
+<img alt="" class="d-block w-100" src="https://ventipizzeria.ch/assets/media/attachments/public/61a/a84/c77/thumb_8_0_0_contain_48a4b15e.jpg"/>
+</div>
+</div>
+<a class="carousel-control-prev" data-slide="prev" href="#slider-home-slider" role="button"><span aria-hidden="true" class="carousel-control-prev-icon"></span></a>
+<a class="carousel-control-next" data-slide="next" href="#slider-home-slider" role="button"><span aria-hidden="true" class="carousel-control-next-icon"></span></a>
+</div>
+<div class="local-box-fluid" id="local-box">
+<div class="panel panel-local local-search">
+<div class="panel-body">
+<h2 class="text-center text-primary">Bestellen Sie köstliche Speisen online</h2>
+<span class="search-label sr-only">Geben Sie Ihre Adresse/Postleitzahl zur Bestellung ein</span>
+<div id="local-search-container">
+<div class="" id="local-search-form">
+<form data-request="localSearch::onSearchNearby" id="location-search" method="POST" role="form">
+<div class="input-group postcode-group">
+<div class="input-group-prepend">
+<span class="input-group-text"><i class="fa fa-map-marker"></i></span>
+</div>
+<input class="form-control text-center" id="search-query" name="search_query" placeholder="Geben Sie Ihre Adresse/Postleitzahl zur Bestellung ein" type="text" value=""/>
+<div class="input-group-append">
+<button class="btn btn-light" data-control="search-local" data-replace-loading="fa fa-spinner fa-spin" type="button"><i class="fa fa-check"></i></button>
+</div>
+</div>
+</form>
+</div>
+<p class="help-block text-center mt-1 mb-0"><span class="text-danger">Sorry, aber dieses Restaurant liefert nicht an Ihren Standort</span></p>
+</div>
+</div>
+</div>
+</div>
+<div class="module-box py-5" id="featured-menu-box">
+<div class="container text-center">
+<div class="row">
+<div class="col-12">
+<h2 class="display-5 mb-3">Beliebte Gerichte bei Ventipizzeria Wohlen</h2>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-3 mb-3 mb-sm-0">
+<div class="card h-100">
+<img alt="Gemischter Salat" class="card-img-top" src="https://ventipizzeria.ch/assets/media/attachments/public/625/8a1/0aa/thumb_52_400_300_contain_6789e440.png"/>
+<div class="card-body">
+<h4 class="card-title">
+                                    Gemischter Salat
+                                    <small>8.50</small>
+</h4>
+<p class="card-text">Gemischter Salat</p>
+</div>
+</div>
+</div>
+<div class="col-sm-3 mb-3 mb-sm-0">
+<div class="card h-100">
+<img alt="Svizzera Ø 32cm" class="card-img-top" src="https://ventipizzeria.ch/assets/media/attachments/public/625/8a1/428/thumb_53_400_300_contain_6789e440.png"/>
+<div class="card-body">
+<h4 class="card-title">
+                                    Svizzera Ø 32cm
+                                    <small>21.00</small>
+</h4>
+<p class="card-text">Tomatensauce, Mozzarella, Oregano, Speck, Salami, Vorderschinken, Zwiebeln</p>
+</div>
+</div>
+</div>
+<div class="col-sm-3 mb-3 mb-sm-0">
+<div class="card h-100">
+<img alt="Hamburger" class="card-img-top" src="https://ventipizzeria.ch/assets/media/attachments/public/625/8a1/7b0/thumb_54_400_300_contain_6789e440.png"/>
+<div class="card-body">
+<h4 class="card-title">
+                                    Hamburger
+                                    <small>19.00</small>
+</h4>
+<p class="card-text">Rindfleisch (200g), Röstzwiebeln, Salat, Essiggurken, Special Pommes</p>
+</div>
+</div>
+</div>
+<div class="col-sm-3 mb-3 mb-sm-0">
+<div class="card h-100">
+<img alt="Merlot 0.5l" class="card-img-top" src="https://ventipizzeria.ch/assets/media/attachments/public/625/8a1/967/thumb_55_400_300_contain_6789e440.png"/>
+<div class="card-body">
+<h4 class="card-title">
+                                    Merlot 0.5l
+                                    <small>13.50</small>
+</h4>
+<p class="card-text">Merlot 0.5l Rotwein</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="footer mt-auto">
+
+<div class="py-5">
+<div class="container">
+<div class="row">
+<div class="col-sm-3">
+<div class="footer-links">
+<h6 class="footer-title d-none d-sm-block">Ventipizzeria Wohlen</h6>
+<ul>
+<li>
+<a href="https://ventipizzeria.ch/venti/menus">Menü anzeigen</a>
+</li>
+<li>
+<a href="https://ventipizzeria.ch/venti/reservation">Reservierung</a>
+</li>
+<li>
+<a href="https://ventipizzeria.ch/locations">Unsere Standorte</a>
+</li>
+<li>
+<a href="https://ventipizzeria.ch/contact">Kontakieren Sie uns</a>
+</li>
+<li>
+<a href="https://ventipizzeria.ch/admin">Administrator</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="col-sm-3">
+<div class="footer-links">
+<h6 class="footer-title d-none d-sm-block">Informationen</h6>
+<ul>
+<li>
+<a href="https://ventipizzeria.ch/about-us">Über uns</a>
+</li>
+<li>
+<a href="https://ventipizzeria.ch/fleischdeklaration">Fleischdeklaration</a>
+</li>
+<li>
+<a href="https://ventipizzeria.ch/sofindensieuns">So finden Sie uns</a>
+</li>
+<li>
+<a href="https://ventipizzeria.ch/zeiten">Liefer und Öffnungszeiten</a>
+</li>
+</ul>
+</div>
+</div>
+<!--Start here in images add url -->
+<div class="col-sm-3 mt-3 mt-sm-0">
+<div>
+<a href="https://apps.apple.com/ch/app/ventipizzeria/id1522388237">
+<img src="https://ventipizzeria.ch/apps-link/apple-store.svg"/>
+</a>
+</div>
+</div>
+<div class="col-sm-3 mt-3 mt-sm-0">
+<a href="https://play.google.com/store/apps/details?id=com.ventipizzeria.app.a9c4&amp;gl=CH">
+<img class="google_button w-100" src="https://ventipizzeria.ch/apps-link/google-play.png"/>
+</a>
+</div>
+<!--End here -->
+</div>
+</div>
+<div class="container">
+<div class="row">
+<div class="col">
+<hr class="mb-3"/>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row">
+<div class="col p-2">
+                © 2025 Ventipizzeria in Wohlen - <a href="http://magentex.ch" target="_blank">Powered by Magentex</a>
+</div>
+</div>
+</div>
+</div> </footer>
+<div id="notification">
+</div>
+<div data-active="1" data-control="cookie-banner" id="euCookieBanner" style="display:none;">
+<div style="background-color: #FFFFFF; color: #000000;">
+<div class="container">
+<div class="d-flex align-items-center">
+<p class="mb-0" id="eu-cookie-message">
+<span>We use own and third party cookies to improve our services. If you continue to browse, consider accepting its use</span>
+<a href="https://ventipizzeria.ch/sofindensieuns">More Information</a>
+</p>
+<a class="btn btn-secondary ml-auto" href="javascript:void(0);" id="eu-cookie-action">OK</a>
+</div>
+</div>
+</div>
+</div> 
+
+
+
+
+
+
+</body>
+</html>
