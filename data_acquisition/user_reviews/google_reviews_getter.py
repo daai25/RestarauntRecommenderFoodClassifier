@@ -4,7 +4,7 @@ import csv
 
 API_KEY = 'AIzaSyCRdL4t6Ldd0Pjm6bFRjBWa_v3cChvBI3Y'
 CITY = 'Winterthur'
-INPUT_FILE = 'restaurants.txt'
+INPUT_FILE = 'restaurant_list.txt'
 OUTPUT_FILE = 'google_reviews.csv'
 
 def find_place_id(restaurant_name):
