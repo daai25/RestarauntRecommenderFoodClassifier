@@ -7,8 +7,12 @@ import torch.nn as nn
 import torch.optim as optim
 from torchvision import datasets, transforms
 from torchvision.models import resnet18, ResNet18_Weights
+from torchvision.datasets import ImageFolder
+from torch.utils.data import ConcatDataset
 from torch.utils.data import DataLoader
 from sklearn.metrics import precision_recall_fscore_support, classification_report
+
+from tqdm import tqdm
 
 # command line example:
 # python food_or_not_food_trainer.py --train_dir C:/nfr/food_or_not_food_data/archive/food_data/train --test_dir C:/nfr/food_or_not_food_data/archive/food_data/test --validation_dir C:/nfr/food_or_not_food_data/archive/food_data/validation
@@ -68,7 +72,17 @@ if __name__ == "__main__":
         transforms.Normalize(mean=weights.meta["mean"], std=weights.meta["std"]),
     ])
 
-    train_data = datasets.ImageFolder(train_dir, transform=train_transform)
+    # number of augmentations per image
+    augmentations_per_image = 10
+
+    # repeat the training dataset with augmentations
+    augmented_datasets = [datasets.ImageFolder(train_dir, transform=train_transform)
+                          for _ in tqdm(
+                              range(augmentations_per_image),
+                              desc="Augmenting training data",
+                              unit="augmentation")
+                          ]
+    train_data = ConcatDataset(augmented_datasets)
     test_data = datasets.ImageFolder(test_dir, transform=test_transform)
     validation_data = datasets.ImageFolder(validation_dir, transform=test_transform)
 
@@ -78,7 +92,7 @@ if __name__ == "__main__":
     validation_loader = DataLoader(validation_data, batch_size=64)
 
     # define number of classes
-    num_classes = len(train_data.classes)
+    num_classes = len(test_data.classes)
     # replace the final layer
     model.fc = nn.Linear(model.fc.in_features, num_classes)
 
