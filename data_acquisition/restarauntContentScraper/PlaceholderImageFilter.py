@@ -31,6 +31,7 @@ def is_monochrome_image(image_path, verbose=False):
         if verbose: print(f"Error opening {image_path}: {e}")
         return False
 
+    # Calculate the standard deviation of pixel values
     std_dev = np.std(arr)
 
     if verbose:

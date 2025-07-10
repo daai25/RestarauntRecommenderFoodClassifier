@@ -92,5 +92,8 @@ class RestaurantImageExporter:
 
 
 if __name__ == "__main__":
-    exporter = RestaurantImageExporter("scraped-data", "C:/nfr/food_or_not_food_data/archive")
+    exporter = RestaurantImageExporter(
+        input_dir="scraped-data",
+        output_dir="C:/nfr/food_or_not_food_data/archive"
+    )
     exporter.export_images()
