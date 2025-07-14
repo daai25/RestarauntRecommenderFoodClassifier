@@ -47,8 +47,9 @@ def main():
                 continue
             name, reviews = get_reviews(place_id)
             for review in reviews:
-                author = review.get("author_name", "UnknownUser")
-                rating = review.get("rating", "")
+                author = review.get("author_name", "UnknownUser") # get rid of commas in author names, it obliterates everything
+                if review["rating"]:  # check this idk man
+                    rating = review.get("rating", "")
                 timestamp = review.get("time", 0)
                 date = time.strftime('%Y-%m-%d', time.localtime(timestamp))
                 writer.writerow([name, author, rating, date])
