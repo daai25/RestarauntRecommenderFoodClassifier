@@ -7,15 +7,14 @@ import torch.nn as nn
 import torch.optim as optim
 from torchvision import datasets, transforms
 from torchvision.models import resnet18, ResNet18_Weights
-from torchvision.datasets import ImageFolder
 from torch.utils.data import ConcatDataset
 from torch.utils.data import DataLoader
-from sklearn.metrics import precision_recall_fscore_support, classification_report
+from sklearn.metrics import precision_recall_fscore_support
 
 from tqdm import tqdm
 
 # command line example:
-# python food_or_not_food_trainer.py --train_dir C:/nfr/food_or_not_food_data/archive/food_data/train --test_dir C:/nfr/food_or_not_food_data/archive/food_data/test --validation_dir C:/nfr/food_or_not_food_data/archive/food_data/validation
+# python food_or_not_food_trainer.py --train_dir C:/nfr/food_or_not_food_data/dataset/train --test_dir C:/nfr/food_or_not_food_data/dataset/test --validation_dir C:/nfr/food_or_not_food_data/dataset/validation
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Train a model to classify food or not food images.")
@@ -51,6 +50,9 @@ if __name__ == "__main__":
     weights = ResNet18_Weights.DEFAULT
     model = resnet18(weights=weights)
 
+    default_mean = weights.transforms().mean
+    default_std = weights.transforms().std
+
     # define the transformations for the training data
     train_transform = transforms.Compose([
         transforms.RandomResizedCrop(224), # random resized and crop to 224x224
@@ -61,7 +63,7 @@ if __name__ == "__main__":
         transforms.RandomVerticalFlip(p=0.1), # random vertical flip
         transforms.RandomGrayscale(p=0.1), # random grayscale conversion
         transforms.ToTensor(),
-        transforms.Normalize(mean=weights.meta["mean"], std=weights.meta["std"]),
+        transforms.Normalize(mean=default_mean, std=default_std),
     ])
 
     # define the transformations for the testing data
@@ -69,7 +71,7 @@ if __name__ == "__main__":
         transforms.Resize(256),
         transforms.CenterCrop(224),
         transforms.ToTensor(),
-        transforms.Normalize(mean=weights.meta["mean"], std=weights.meta["std"]),
+        transforms.Normalize(mean=default_mean, std=default_std),
     ])
 
     # number of augmentations per image
