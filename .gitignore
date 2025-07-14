@@ -136,3 +136,5 @@ dmypy.json
 
 # exclude pycharm idea directory
 .idea
+
+data_acquisition/restarauntContentScraper/scraped-data
