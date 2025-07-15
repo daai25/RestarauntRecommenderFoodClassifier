@@ -4,7 +4,7 @@ import os
 import hashlib
 import numpy as np
 
-def compute_file_hash(path, block_size=65536):
+def compute_file_hash_sha256(path, block_size=65536):
     hasher = hashlib.sha256()
     with open(path, 'rb') as f:
         while chunk := f.read(block_size):
@@ -34,6 +34,33 @@ class ImageFilter:
         self.blur_threshold = blur_threshold
         self.uniform_tolerance = uniform_tolerance
         self.image_hash_map = {} # to store hashes of processed images
+        self.statistics = {
+            "total_images": 0,
+            "total_blurry_images": 0,
+            "total_uniform_images": 0,
+            "total_duplicate_images": 0,
+            "total_filtered": {ext.__class__.__name__: 0 for ext in filter_extensions},
+            "filtered_image_paths": set(), # saves all the paths of filtered images, if delete is False
+            "total_valid_images": 0,
+            "num_of_errors": 0,
+            "captured_errors": [] # to store error messages
+        }
+
+    def _reset_statistics(self):
+        """
+        Reset the statistics dictionary to its initial state.
+        """
+        self.statistics = {
+            "total_images": 0,
+            "total_blurry_images": 0,
+            "total_uniform_images": 0,
+            "total_duplicate_images": 0,
+            "total_filtered": {ext.__class__.__name__: 0 for ext in self.filter_extensions},
+            "filtered_image_paths": set(),  # saves all the paths of filtered images, if delete is False
+            "total_valid_images": 0,
+            "num_of_errors": 0,
+            "captured_errors": []  # to store error messages
+        }
 
     def _is_blurry(self, image_path: str) -> bool:
         """
@@ -98,18 +125,19 @@ class ImageFilter:
         if not os.path.exists(image_path):
             raise FileNotFoundError(f"Image file not found: {image_path}")
 
-        file_hash = compute_file_hash(image_path)
+        file_hash = compute_file_hash_sha256(image_path)
         if file_hash in self.image_hash_map:
             return True
         else:
             self.image_hash_map[file_hash] = image_path
             return False
 
-    def filter_images(self, directory: str, is_relative: bool=True) -> dict:
+    def filter_images(self, directory: str, is_relative: bool=True, delete: bool=True) -> dict:
         """
 
         """
         self.image_hash_map = {}  # reset the hash map for each filtering operation
+        self._reset_statistics() # reset statistics for each new filtering operation
 
         if is_relative:
             directory = os.path.relpath(directory)
@@ -119,4 +147,56 @@ class ImageFilter:
         if not os.path.exists(directory):
             raise FileNotFoundError(f"Directory does not exist: {directory}")
 
-        return {}
+        # first walk through the directory and gather all the blurry and uniform images
+        for root, _, files in os.walk(directory):
+            for filename in files:
+                if not filename.lower().endswith(('.png', '.jpg', '.jpeg', '.bmp', '.gif')):
+                    continue
+
+                image_path = os.path.join(root, filename)
+                self.statistics["total_images"] += 1
+
+                if self._is_blurry(image_path):
+                    self.statistics["total_blurry_images"] += 1
+                    if delete:
+                        os.remove(image_path)
+                    else:
+                        self.statistics["filtered_image_paths"].add(image_path)
+                elif self._is_uniform(image_path):
+                    self.statistics["total_uniform_images"] += 1
+                    if delete:
+                        os.remove(image_path)
+                    else:
+                        self.statistics["filtered_image_paths"].add(image_path)
+
+        # secondly walk through the directory and gather all the duplicate images
+        # if delete is False, checks if the image is already in the filtered_image_paths set
+        for root, _, files in os.walk(directory):
+            for filename in files:
+                if not filename.lower().endswith(('.png', '.jpg', '.jpeg', '.bmp', '.gif')):
+                    continue
+
+                image_path = os.path.join(root, filename)
+
+                # check if the image is already in the filtered_image_paths set
+                if image_path in self.statistics["filtered_image_paths"]:
+                    continue
+
+                if self._is_duplicate(image_path):
+                    self.statistics["total_duplicate_images"] += 1
+                    if delete:
+                        os.remove(image_path)
+                    else:
+                        self.statistics["filtered_image_paths"].add(image_path)
+
+        # finally apply all the filter extensions
+        for ext in self.filter_extensions:
+            try:
+                self.statistics = ext.filter_images(directory, self.statistics, is_relative, delete)
+            except Exception as e:
+                if ext.verbose:
+                    print(f"Error processing with {ext.__class__.__name__}: {e}")
+                self.statistics["num_of_errors"] += 1
+                self.statistics["captured_errors"].append(str(e))
+
+        return self.statistics

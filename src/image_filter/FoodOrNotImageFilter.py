@@ -4,10 +4,9 @@ from torchvision import transforms
 from PIL import Image
 from torchvision.models import ResNet18_Weights
 
-import ImageFilterExtensionInterface
+from ImageFilterExtensionInterface import ImageFilterExtensionInterface
 
-
-class FoodOrNotImageFilter(ImageFilterExtensionInterface.ImageFilterExtensionInterface):
+class FoodOrNotImageFilter(ImageFilterExtensionInterface):
     """
     A filter that classifies images as "food" or "not food" using a pre-trained ResNet18 model.
     This filter scans a directory for images, classifies them, and deletes those that are not food.
@@ -65,24 +64,18 @@ class FoodOrNotImageFilter(ImageFilterExtensionInterface.ImageFilterExtensionInt
 
         return self.class_names[predicted.item()]
 
-    def filter_images(self, directory: str, is_relative: bool=True, delete: bool=True) -> dict:
+    def filter_images(self, directory: str, statistics: dict, is_relative: bool=True, delete: bool=True) -> dict:
         """
         Scan the directory for images and classify them as food or not food.
         If they are not food, they will be deleted.
 
         Args:
             directory (str): Path to the directory containing images.
+            statistics (dict): A dictionary to store statistics about the filtering process.
             is_relative (bool): Whether the path is relative or absolute. Defaults to True.
             delete (bool): If True, non-food images will be deleted. Defaults to True.
         Returns:
-            dict: A dictionary containing statistics about the processed images.
-                - total_files: Total number of files processed.
-                - total_images: Total number of images processed.
-                - food_images: Number of images classified as food.
-                - not_food_images: Number of images classified as not food (and deleted).
-                - not_food_images_path: List of paths of non-food images if delete is False.
-                - total_errors: Total number of errors encountered during processing.
-                - captured_errors: List of error messages encountered during processing.
+            dict: Updated statistics including counts of food and not food images, and any errors encountered.
         Raises:
             FileNotFoundError: If the specified directory does not exist.
         """
@@ -96,44 +89,34 @@ class FoodOrNotImageFilter(ImageFilterExtensionInterface.ImageFilterExtensionInt
         if os.path.exists(directory):
             raise FileNotFoundError(f"Directory does not exist: {directory}")
 
-        # prepare statistics structure
-        statistics = {
-            "total_files": 0,
-            "total_images": 0,
-            "food_images": 0,
-            "not_food_images": 0,
-            "not_food_images_path": [], # store paths of non-food images if delete is False
-            "total_errors": 0,
-            "captured_errors": [] # store any errors encountered during processing
-        }
-
         # walk through the directory and process each image
         for root, _, files in os.walk(directory):
             # go through each file in the directory
             for filename in files:
-                statistics["total_files"] += 1
                 if not filename.lower().endswith(('.png', '.jpg', '.jpeg', '.bmp', '.gif')):
                     continue
 
                 image_path = os.path.join(root, filename)
-                statistics["total_images"] += 1
+
+                # check if the image is already in the filtered_image_paths set
+                if image_path in statistics["filtered_image_paths"]:
+                    continue
+
                 try:
                     # classify the image
                     result = self._classify_image(image_path)
-                    if result == "food":
-                        statistics["food_images"] += 1
-                    else:
+                    if result != "food":
+                        statistics["total_filtered"][self.__class__.__name__] += 1
                         # remove non-food images if the delete flag is set
                         if delete:
                             os.remove(image_path)
                         else:
                             # only stores the path of non-food images, when the delete flag is False
-                            statistics["not_food_images_path"].append(image_path)
-                        statistics["not_food_images"] += 1
+                            statistics["filtered_image_paths"].add(image_path)
                 except Exception as e:
                     if self.verbose:
                         print(f"Error processing {image_path}: {e}")
-                    statistics["total_errors"] += 1
+                    statistics["num_of_errors"] += 1
                     statistics["captured_errors"].append(str(e))
 
         return statistics
