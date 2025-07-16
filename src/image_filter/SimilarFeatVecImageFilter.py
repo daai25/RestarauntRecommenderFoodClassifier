@@ -7,7 +7,7 @@ from torchvision.models import resnet18, ResNet18_Weights
 from sklearn.metrics.pairwise import cosine_similarity
 import networkx as nx
 
-from ImageFilterExtensionInterface import ImageFilterExtensionInterface
+from ImageFilterExtension import ImageFilterExtension
 
 _weights = ResNet18_Weights.DEFAULT
 
@@ -21,7 +21,7 @@ def _get_transform():
         )
     ])
 
-class SimilarFeatVecImageFilter(ImageFilterExtensionInterface):
+class SimilarFeatVecImageFilter(ImageFilterExtension):
     """
     A image filter extension that identifies and removes images that are similar based on feature vectors.
     """
@@ -34,6 +34,7 @@ class SimilarFeatVecImageFilter(ImageFilterExtensionInterface):
             verbose (bool): If True, print detailed information during processing.
             threshold (float): Cosine similarity threshold for grouping similar images.
         """
+        super().__init__(verbose=verbose)
         self.verbose = verbose
         self.threshold = threshold
 
@@ -118,28 +119,18 @@ class SimilarFeatVecImageFilter(ImageFilterExtensionInterface):
 
         return images, list(nx.connected_components(G))
 
-    def filter_images(self, directory: str, statistics: dict, is_relative: bool, delete: bool) -> dict:
+    def _do_filtering(self, directory: str, statistics: dict, delete: bool=True) -> dict:
         """
-        Scan the directory for images and group similar images based on feature vectors.
+        Scan the directory for images and filter out similar images based on feature vectors.
 
         Args:
             directory (str): Path to the directory containing images.
             statistics (dict): A dictionary to store statistics about the filtering process.
-            is_relative (bool): If True, the directory path is relative; otherwise, it is absolute.
-            delete (bool): If True, delete images that do not meet the criteria directly.
+            delete (bool): If True, images that do not meet the criteria will be deleted; otherwise,
+                           they will be added to filtered_image_paths. Defaults to True.
         Returns:
             dict: Updated statistics including counts of filtered images, and any errors encountered.
-        Raises:
-            FileNotFoundError: If the specified directory does not exist.
         """
-        if is_relative:
-            directory = os.path.relpath(directory)
-        else:
-            directory = os.path.abspath(directory)
-
-        if not os.path.exists(directory):
-            raise FileNotFoundError(f"Directory does not exist: {directory}")
-
         images, groups = self._create_groups(directory)
 
         for group in groups:

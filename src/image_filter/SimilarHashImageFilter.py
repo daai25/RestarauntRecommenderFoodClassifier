@@ -1,5 +1,5 @@
 import os
-from ImageFilterExtensionInterface import  ImageFilterExtensionInterface
+from ImageFilterExtension import  ImageFilterExtension
 import imagehash
 from PIL import Image
 
@@ -18,7 +18,7 @@ def _compute_file_hash_phash(path):
     with Image.open(path) as img:
         return imagehash.phash(img)
 
-class SimilarHashImageFilter(ImageFilterExtensionInterface):
+class SimilarHashImageFilter(ImageFilterExtension):
     """
     A filter that identifies and removes images that are similar based on perceptual hashing.
     This filter scans a directory for images, computes their hashes, and deletes those that are similar.
@@ -31,33 +31,23 @@ class SimilarHashImageFilter(ImageFilterExtensionInterface):
             verbose (bool): If True, print detailed information during processing.
             hamming_distance (int): Size of the hash to be computed for each image.
         """
+        super().__init__(verbose=verbose)
         self.verbose = verbose
         self.hamming_distance = hamming_distance
         self.hash_map = {}  # to store hashes of processed images
 
-    def filter_images(self, directory: str, statistics: dict, is_relative: bool, delete: bool) -> dict:
+    def _do_filtering(self, directory: str, statistics: dict, delete: bool=True) -> dict:
         """
-        Scan the directory for images and apply filtering criteria based on perceptual hashing.
+        Scan the directory for images and filter out similar images based on perceptual hashing.
 
         Args:
             directory (str): Directory path to scan for images.
             statistics (dict): A dictionary to store statistics about the filtering process.
-            is_relative (bool): If True, the directory path is relative; otherwise, it is absolute.
-            delete (bool): If True, delete images that do not meet the criteria directly.
+            delete (bool): If True, delete images that are similar. Default is True.
         Returns:
-            dict: Updated statistics including counts of food and not food images, and any errors encountered.
-        Raises:
-            FileNotFoundError: If the specified directory does not exist.
+            dict: A dictionary containing diverse statistics about the processed images.
         """
-        if is_relative:
-            directory = os.path.relpath(directory)
-        else:
-            directory = os.path.abspath(directory)
-
-        if not os.path.exists(directory):
-            raise FileNotFoundError(f"Directory does not exist: {directory}")
-
-        self.hash_map = {} # reset the hash map for each filtering operation
+        self.hash_map = {}  # reset the hash map for each filtering operation
 
         for root, _, files in os.walk(directory):
             for filename in files:

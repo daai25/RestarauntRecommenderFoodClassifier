@@ -1,12 +1,12 @@
 import ImageFilter
-import ImageFilterExtensionInterface
+import ImageFilterExtension
 import FoodOrNotImageFilter
 import SimilarHashImageFilter
 import SimilarFeatVecImageFilter
 
 __all__ = [
     "ImageFilter",
-    "ImageFilterExtensionInterface",
+    "ImageFilterExtension",
     "FoodOrNotImageFilter",
     "SimilarHashImageFilter",
     "SimilarFeatVecImageFilter"
