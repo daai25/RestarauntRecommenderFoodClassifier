@@ -1,8 +1,9 @@
 import os
 import torch
+import torch.nn as nn
 from torchvision import transforms
 from PIL import Image
-from torchvision.models import ResNet18_Weights
+from torchvision.models import resnet18, ResNet18_Weights
 
 from .ImageFilterExtension import ImageFilterExtension
 
@@ -30,11 +31,21 @@ class FoodOrNotImageFilter(ImageFilterExtension):
         self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
         # load the classifier model
-        self.model = torch.load(model_path, map_location=self.device)
-        self.model.to(self.device)
-        self.model.eval()
-
+        # load the pre-trained ResNet18 model
         weights = ResNet18_Weights.DEFAULT
+        model = resnet18(weights=None)  # kein vortrainiertes Weight-Loading hier!
+
+        # replace the final fully connected layer to match the number of classes (2: food, not food)
+        model.fc = nn.Linear(model.fc.in_features, 2)
+
+        # load the model state dictionary from the specified path
+        model.load_state_dict(torch.load(model_path, map_location=self.device))
+
+        # move the model to the appropriate device (GPU or CPU)
+        model.to(self.device)
+        model.eval()
+        self.model = model
+
         default_mean = weights.transforms().mean
         default_std = weights.transforms().std
 
