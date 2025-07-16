@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>modelling_report – Food Classifier</title>
+<title>restaraunt_scraper – Food Classifier</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,23 +23,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-a986a95301e671fce2c6472dffc862a1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-a986a95301e671fce2c6472dffc862a1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -69,7 +69,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-sidebar floating quarto-light">
@@ -81,9 +81,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
-      Food Classifier
-      </li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./restaraunt_scraper.html">Restaurant Website Content Extraction</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -98,7 +96,7 @@ ul.task-list li input[type="checkbox"] {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="../">Food Classifier</a> 
+      <a href="./">Food Classifier</a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -110,43 +108,43 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../index.html" class="sidebar-item-text sidebar-link">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">About This Documentation</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../project_charta.html" class="sidebar-item-text sidebar-link">
+  <a href="./project_charta.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Project Charta</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../data_report.html" class="sidebar-item-text sidebar-link">
+  <a href="./data_report.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Data Report</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../restaraunt_scraper.html" class="sidebar-item-text sidebar-link">
+  <a href="./restaraunt_scraper.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Restaurant Website Content Extraction</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../modelling_report.html" class="sidebar-item-text sidebar-link">
+  <a href="./modelling_report.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Modelling Report</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../evaluation.html" class="sidebar-item-text sidebar-link">
+  <a href="./evaluation.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Evaluation</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../food_or_not_food_filter.html" class="sidebar-item-text sidebar-link">
+  <a href="./food_or_not_food_filter.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Food or Not-Food Filter</span></a>
   </div>
 </li>
@@ -160,16 +158,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#sample-project---modelling-report" id="toc-sample-project---modelling-report" class="nav-link active" data-scroll-target="#sample-project---modelling-report"><code>Sample Project</code> - Modelling Report</a>
-  <ul class="collapse">
-  <li><a href="#initial-situation" id="toc-initial-situation" class="nav-link" data-scroll-target="#initial-situation">Initial situation</a></li>
-  <li><a href="#model-descriptions" id="toc-model-descriptions" class="nav-link" data-scroll-target="#model-descriptions">Model Descriptions</a></li>
-  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results">Results</a></li>
-  <li><a href="#model-interpretation" id="toc-model-interpretation" class="nav-link" data-scroll-target="#model-interpretation">Model Interpretation</a></li>
-  <li><a href="#conclusions-and-next-steps" id="toc-conclusions-and-next-steps" class="nav-link" data-scroll-target="#conclusions-and-next-steps">Conclusions and next steps</a></li>
-  </ul></li>
+  <li><a href="#restaurant-website-content-extraction" id="toc-restaurant-website-content-extraction" class="nav-link active" data-scroll-target="#restaurant-website-content-extraction">Restaurant Website Content Extraction</a></li>
   </ul>
-<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="modelling_report.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="restaraunt_scraper.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
@@ -177,55 +168,99 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="sample-project---modelling-report" class="level1">
-<h1><code>Sample Project</code> - Modelling Report</h1>
-<p>The report should summarise the details of the modelling activities, e.g.&nbsp;machine learning experiments.</p>
-<section id="initial-situation" class="level2">
-<h2 class="anchored" data-anchor-id="initial-situation">Initial situation</h2>
+<section id="restaurant-website-content-extraction" class="level1">
+<h1>Restaurant Website Content Extraction</h1>
+<section id="overview" class="level4">
+<h4 class="anchored" data-anchor-id="overview">1. <strong>Overview</strong></h4>
+<p>To get the HTML content and images from restaurant websites, we utilized a relatively simple spider using Scrapy. This was gathered using the OpenStreetMap data, with the <a href="./data_report.html">documentation for that here</a>.</p>
+<p>The raw HTML was gathered for future general use rather than any particular function. This HTML has had some unneeded content removed to save on storage and to increase readability. The images were gathered primarily for the purpose of recognizing and classifying cousine types of the restaurant based on their foods.</p>
+<p>Ultimately this serves the purpose of giving us information on the websites of Switzerland, as well as their images to be used during classification later in this project.</p>
+</section>
+<section id="requirements" class="level4">
+<h4 class="anchored" data-anchor-id="requirements">2. <strong>Requirements</strong></h4>
+<p>Relies on <code>restaurants_filtered.json</code> to parse out the list of available websites on <em>OpenStreetMap.</em> While these URLs are valid in format, many are no longer active, point to non-restaurant domains, or are inaccessible to scrapers. Sites may:</p>
 <ul>
-<li>Aim of the modelling - consistent with <em>Data Mining Goals</em> in the project charta</li>
-<li>Data set(s) and/or feature set used (references to the data report)</li>
-<li>Description of the independent variables and (if applicable) the target variable</li>
-<li>Type of model used or developed</li>
+<li>Have expired domains</li>
+<li>Block bots entirely</li>
+<li>Redirect to unrelated businesses</li>
+<li>Not be restaurants at all</li>
 </ul>
 </section>
-<section id="model-descriptions" class="level2">
-<h2 class="anchored" data-anchor-id="model-descriptions">Model Descriptions</h2>
-<p>Overview of the models used and/or implemented and their configurations</p>
+<section id="spider-behavior" class="level4">
+<h4 class="anchored" data-anchor-id="spider-behavior">3. <strong>Spider Behavior</strong></h4>
+<p>The spider first scrapes the html and images off of the main page that is found from the <em>OpenStreetMap</em> data. After this, the spider will recursively crawl through the child sites on that domain. The spider handles requests rapidly to allow for managing the many websites in a timely manner. However, there are two caveats to this crawling:</p>
 <ul>
-<li>Detailed description of the model used (e.g.&nbsp;literature references, specification of the software library, exact module, version or other implementation details etc.)</li>
-<li>Graphical representation of the modelling pipeline</li>
-<li>If applicable: link to the code of the modelling pipeline, version information in code repository, configuration files</li>
-<li>If possible, links to the artefacts of the executed modelling pipeline (training experiment)</li>
-<li>Link to the literature in which the model/method is described</li>
-<li>Hyperparameters</li>
+<li>Only 20 internal links are followed on any given page. There are sites that contain an unreasonable number of sub-pages, and trying to navigate through those stops the spider for far too long, and seldom provides greater insight on the restaurant.</li>
+<li>There are a short list of domains that we have opted to skip. These are sites that we ran into that cause problems that are not actually restaurants. These are businesses that range from movie theaters to research centers that have an attached cafe, which pull in unneeded information.</li>
 </ul>
 </section>
-<section id="results" class="level2">
-<h2 class="anchored" data-anchor-id="results">Results</h2>
-<p>Key figures dependent on the model and modelling objective</p>
+<section id="filefolder-structure" class="level4">
+<h4 class="anchored" data-anchor-id="filefolder-structure">4. <strong>File/Folder Structure</strong></h4>
+<p>For saving the information of the sites, we opted to save them directly in our files rather than setting up a database. This was primarily for the ease of access to images, as well as the scale of the information, which may have been difficult to store in a database. The file structure for storage is as follows:</p>
+<pre class="text"><code>scraped-data/
+  └── {element_id}/
+        ├── text-content/
+        ├── images/
+        └── screenshot/
+scrape_status.csv</code></pre>
+<p>The content of these folders and files:</p>
 <ul>
-<li>RMSD, ROC/Lift-Charts, AUC, Confusion Matrix, Accuracy, Precision, Recall</li>
-<li>Coherence, Perplexity, …</li>
-<li>If applicable: analyses/plots of (hyper)parameter screenings</li>
+<li>scraped-data: Contains a list of folders that each contain the HTML and images from scraped restaurants</li>
+<li>{element_id}: The ID of the restaurant provided by <em>OpenStreetMap</em></li>
+<li>text-content: A list of HTML files that contain all non-script, non-style HTML from the page</li>
+<li>images: Contains all of the image files present in that domain</li>
+<li>screenshot: A placeholder file for screenshots, which may be removed if we decide screenshots are unnecessary</li>
+<li>scrape_status.csv: Contains information that helps us maintain the status of what has been scraped from a website, as well as whether or not there is a URL provided</li>
 </ul>
 </section>
-<section id="model-interpretation" class="level2">
-<h2 class="anchored" data-anchor-id="model-interpretation">Model Interpretation</h2>
-<ul>
-<li>If applicable: Results from the application of “explanatory models”</li>
-<li>Were the modelling objectives achieved?</li>
-<li>The findings resulting from the modelling phase: can the project objective be achieved with the results from the modelling phase?</li>
-<li>How can the findings be used? Are there any limitations?</li>
-</ul>
+<section id="csv-status-tracker" class="level4">
+<h4 class="anchored" data-anchor-id="csv-status-tracker">5. <strong>CSV Status Tracker</strong></h4>
+<p>This .csv file tracks the status of scraped restaurant websites. The schema is as follows:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 8%">
+<col style="width: 76%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Column Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>id</code></td>
+<td>string</td>
+<td>The unique OpenStreetMap ID for the restaurant</td>
+</tr>
+<tr class="even">
+<td><code>has_website</code></td>
+<td>boolean</td>
+<td>Whether the original JSON entry included a valid website URL</td>
+</tr>
+<tr class="odd">
+<td><code>is_scraped</code></td>
+<td>boolean</td>
+<td>Whether the website was successfully scraped (HTML and image data gathered)</td>
+</tr>
+<tr class="even">
+<td><code>is_filtered</code></td>
+<td>boolean</td>
+<td>Whether the site was filtered out due to lacking food-related images</td>
+</tr>
+</tbody>
+</table>
+<p>This is updated in the spider such that newly scraped websites set <em>is_scraped</em> to true.</p>
 </section>
-<section id="conclusions-and-next-steps" class="level2">
-<h2 class="anchored" data-anchor-id="conclusions-and-next-steps">Conclusions and next steps</h2>
+<section id="limitations" class="level4">
+<h4 class="anchored" data-anchor-id="limitations">6. <strong>Limitations</strong></h4>
+<p>There are some limitations that are inherent in scraping this much information from this many sites. The biggest issues that we ran into are as follows:</p>
 <ul>
-<li>Conclusions of the key findings from the modelling phase</li>
-<li>Discussion about limitations</li>
-<li>Proposal for extensions and further work</li>
-<li>Proposal for the deployment of the generated insights/model</li>
+<li>JavaScript Heavy Sites: Sites that utilize a large amount JavaScript are not rendered prior to being scraped. This leads to some sites only having partial information.</li>
+<li>Sites With No Relevant Images: Some sites contain no images, or contain no images that relate to the food they serve, which make the information scraped from them not useful.</li>
+<li>Non Scrape-Friendly Sites: Some sites block scraping altogether or prevent reading of content while scraping. This leads to some sites that work and have images on them when navigating with a browser, but have no images downloaded.</li>
 </ul>
 
 
