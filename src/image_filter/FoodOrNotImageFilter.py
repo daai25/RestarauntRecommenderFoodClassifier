@@ -8,12 +8,14 @@ from torchvision.models import resnet18, ResNet18_Weights
 from .ImageFilterExtension import ImageFilterExtension
 
 class FoodOrNotImageFilter(ImageFilterExtension):
-    _valid_model_versions = ["v1", "v2", "v3"]
-
     """
     A filter that classifies images as "food" or "not food" using a pre-trained ResNet18 model.
     This filter scans a directory for images, classifies them, and deletes those that are not food.
     """
+
+    # valid model versions
+    _valid_model_versions = ["v1", "v2", "v3"]
+
     def __init__(self, verbose: bool=False, version: str= "v2"):
         """
         Initialize the FoodOrNotImageFilter with a directory to scan for images.
