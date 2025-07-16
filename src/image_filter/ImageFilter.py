@@ -4,7 +4,16 @@ import os
 import hashlib
 import numpy as np
 
-def compute_file_hash_sha256(path, block_size=65536):
+def _compute_file_hash_sha256(path, block_size=65536):
+    """
+    Compute the SHA-256 hash of a file.
+
+    Args:
+        path (str): Full path to the file.
+        block_size (int): Size of the block to read from the file at a time.
+    Returns:
+        str: The SHA-256 hash of the file as a hexadecimal string.
+    """
     hasher = hashlib.sha256()
     with open(path, 'rb') as f:
         while chunk := f.read(block_size):
@@ -125,7 +134,7 @@ class ImageFilter:
         if not os.path.exists(image_path):
             raise FileNotFoundError(f"Image file not found: {image_path}")
 
-        file_hash = compute_file_hash_sha256(image_path)
+        file_hash = _compute_file_hash_sha256(image_path)
         if file_hash in self.image_hash_map:
             return True
         else:
@@ -134,7 +143,18 @@ class ImageFilter:
 
     def filter_images(self, directory: str, is_relative: bool=True, delete: bool=True) -> dict:
         """
+        Filter images in the specified directory based on various criteria:
+        - Blurry images (Laplacian variance below a threshold)
+        - Uniform images (standard deviation of pixel values below a tolerance)
+        - Duplicate images (using SHA-256 hash comparison)
+        Additionally, it applies all the filter extensions provided during initialization.
 
+        Args:
+            directory (str): Path to the directory containing images.
+            is_relative (bool): If True, the path is treated as relative; otherwise, it is absolute.
+            delete (bool): If True, images that do not meet the criteria will be deleted; otherwise, they will be added to filtered_image_paths.
+        Returns:
+            dict: Updated statistics including counts of filtered images, and any errors encountered.
         """
         self.image_hash_map = {}  # reset the hash map for each filtering operation
         self._reset_statistics() # reset statistics for each new filtering operation

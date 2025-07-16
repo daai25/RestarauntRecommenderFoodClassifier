@@ -3,7 +3,18 @@ from ImageFilterExtensionInterface import  ImageFilterExtensionInterface
 import imagehash
 from PIL import Image
 
-def compute_file_hash_phash(path):
+def _compute_file_hash_phash(path):
+    """
+    Compute the perceptual hash of an image file.
+
+    Args:
+        path (str): Full path to the image file.
+    Returns:
+        imagehash.ImageHash: The perceptual hash of the image.
+    Raises:
+        FileNotFoundError: If the image file does not exist.
+        PIL.UnidentifiedImageError: If the file is not a valid image.
+    """
     with Image.open(path) as img:
         return imagehash.phash(img)
 
@@ -12,7 +23,6 @@ class SimilarHashImageFilter(ImageFilterExtensionInterface):
     A filter that identifies and removes images that are similar based on perceptual hashing.
     This filter scans a directory for images, computes their hashes, and deletes those that are similar.
     """
-
     def __init__(self, verbose: bool=False, hamming_distance: int=5):
         """
         Initialize the SimilarHashImageFilter with a directory to scan for images.
@@ -36,7 +46,17 @@ class SimilarHashImageFilter(ImageFilterExtensionInterface):
             delete (bool): If True, delete images that do not meet the criteria directly.
         Returns:
             dict: Updated statistics including counts of food and not food images, and any errors encountered.
+        Raises:
+            FileNotFoundError: If the specified directory does not exist.
         """
+        if is_relative:
+            directory = os.path.relpath(directory)
+        else:
+            directory = os.path.abspath(directory)
+
+        if not os.path.exists(directory):
+            raise FileNotFoundError(f"Directory does not exist: {directory}")
+
         self.hash_map = {} # reset the hash map for each filtering operation
 
         for root, _, files in os.walk(directory):
@@ -52,7 +72,7 @@ class SimilarHashImageFilter(ImageFilterExtensionInterface):
 
                 # calculate the hashes of the images and store it in the hash_map with the respective image path
                 try:
-                    image_hash = compute_file_hash_phash(image_path)
+                    image_hash = _compute_file_hash_phash(image_path)
                     similar_found = False
                     # if the hamming distance is less than or equal to the specified threshold, consider the images similar
                     for existing_hash, existing_path in self.hash_map.items():
