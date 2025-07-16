@@ -8,25 +8,30 @@ from torchvision.models import resnet18, ResNet18_Weights
 from .ImageFilterExtension import ImageFilterExtension
 
 class FoodOrNotImageFilter(ImageFilterExtension):
+    _valid_model_versions = ["v1", "v2", "v3"]
+
     """
     A filter that classifies images as "food" or "not food" using a pre-trained ResNet18 model.
     This filter scans a directory for images, classifies them, and deletes those that are not food.
     """
-    def __init__(self, verbose: bool=False, use_new_model: bool=True):
+    def __init__(self, verbose: bool=False, version: str= "v2"):
         """
         Initialize the FoodOrNotImageFilter with a directory to scan for images.
 
         Args:
             verbose (bool): If True, print detailed information during processing.
-            use_new_model (bool): If True, use the new model; otherwise, use the old model.
+            version (str): Version of the model to use for classification. Default is "v2".
         """
         super().__init__(verbose=verbose)
 
         current_dir = os.path.dirname(os.path.abspath(__file__))
-        if use_new_model:
-            model_path = os.path.join(current_dir, 'food_or_not_model.pth')
-        else:
-            model_path = os.path.join(current_dir, 'food_or_not_model_old.pth')
+
+        # validate the model version
+        if version not in self._valid_model_versions:
+            raise ValueError(f"Invalid model version: {version}. Valid versions are: {self._valid_model_versions}")
+        model_name = "food_or_not_model_" + version + ".pth"
+
+        model_path = os.path.join(current_dir, model_name)
 
         self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
