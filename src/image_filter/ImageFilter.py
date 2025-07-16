@@ -163,7 +163,7 @@ class ImageFilter:
             directory = os.path.abspath(directory)
 
         if not os.path.exists(directory):
-            raise FileNotFoundError(f"Directory does not exist: {directory}")
+            raise FileNotFoundError(f"ImageFilter: Directory does not exist: {directory}")
 
         # first walk through the directory and gather all the blurry and uniform images
         for root, _, files in os.walk(directory):
@@ -210,11 +210,16 @@ class ImageFilter:
         # finally apply all the filter extensions
         for ext in self.filter_extensions:
             try:
-                self.statistics = ext.filter_images(directory, self.statistics, is_relative, delete)
+                self.statistics = ext.filter_images(directory, self.statistics, delete=delete)
             except Exception as e:
                 if ext.verbose:
                     print(f"Error processing with {ext.__class__.__name__}: {e}")
                 self.statistics["num_of_errors"] += 1
                 self.statistics["captured_errors"].append(str(e))
+
+        # update the total valid images count
+        self.statistics["total_valid_images"] =(
+                self.statistics["total_images"] - len(self.statistics["filtered_image_paths"])
+        )
 
         return self.statistics
