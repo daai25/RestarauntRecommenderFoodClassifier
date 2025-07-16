@@ -22,8 +22,18 @@ def _get_transform():
     ])
 
 class SimilarFeatVecImageFilter(ImageFilterExtensionInterface):
+    """
+    A image filter extension that identifies and removes images that are similar based on feature vectors.
+    """
 
     def __init__(self, verbose: bool=False, threshold: float=0.97):
+        """
+        Initialize the SimilarFeatVecImageFilter with a threshold for cosine similarity.
+
+        Args:
+            verbose (bool): If True, print detailed information during processing.
+            threshold (float): Cosine similarity threshold for grouping similar images.
+        """
         self.verbose = verbose
         self.threshold = threshold
 

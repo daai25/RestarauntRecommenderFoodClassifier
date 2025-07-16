@@ -23,8 +23,6 @@ def _compute_file_hash_sha256(path, block_size=65536):
 class ImageFilter:
     """
     A class that applies various standard image filtering methods and also allows for custom extensions.
-
-    All the filtered images will be deleted from the directory.
     """
     def __init__(self, filter_extensions: list, blur_threshold: float=100.0, uniform_tolerance: float=0.01):
         """

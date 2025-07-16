@@ -15,6 +15,10 @@ class FoodOrNotImageFilter(ImageFilterExtensionInterface):
     def __init__(self, verbose: bool=False, use_new_model: bool=True):
         """
         Initialize the FoodOrNotImageFilter with a directory to scan for images.
+
+        Args:
+            verbose (bool): If True, print detailed information during processing.
+            use_new_model (bool): If True, use the new model; otherwise, use the old model.
         """
         self.verbose = verbose
 
