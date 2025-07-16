@@ -1,5 +1,5 @@
 import os
-from ImageFilterExtension import  ImageFilterExtension
+from .ImageFilterExtension import  ImageFilterExtension
 import imagehash
 from PIL import Image
 

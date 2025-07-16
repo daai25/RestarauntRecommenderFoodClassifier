@@ -1,4 +1,4 @@
-import ImageFilterExtension
+from .ImageFilterExtension import ImageFilterExtension
 import cv2
 import os
 import hashlib
@@ -34,7 +34,7 @@ class ImageFilter:
             TypeError: If any of the provided filter extensions do not implement the ImageFilterExtensionInterface.
         """
         for ext in filter_extensions:
-            if not isinstance(ext, ImageFilterExtensionInterface.ImageFilterExtension):
+            if not isinstance(ext, ImageFilterExtension):
                 raise TypeError(f"Expected an instance of ImageFilterExtensionInterface, got {type(ext)}")
 
         self.filter_extensions = filter_extensions

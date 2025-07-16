@@ -7,7 +7,7 @@ from torchvision.models import resnet18, ResNet18_Weights
 from sklearn.metrics.pairwise import cosine_similarity
 import networkx as nx
 
-from ImageFilterExtension import ImageFilterExtension
+from .ImageFilterExtension import ImageFilterExtension
 
 _weights = ResNet18_Weights.DEFAULT
 

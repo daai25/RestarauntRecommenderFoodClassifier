@@ -4,7 +4,7 @@ from torchvision import transforms
 from PIL import Image
 from torchvision.models import ResNet18_Weights
 
-from ImageFilterExtension import ImageFilterExtension
+from .ImageFilterExtension import ImageFilterExtension
 
 class FoodOrNotImageFilter(ImageFilterExtension):
     """

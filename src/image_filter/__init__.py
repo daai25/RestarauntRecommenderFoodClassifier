@@ -1,13 +1,5 @@
-import ImageFilter
-import ImageFilterExtension
-import FoodOrNotImageFilter
-import SimilarHashImageFilter
-import SimilarFeatVecImageFilter
-
-__all__ = [
-    "ImageFilter",
-    "ImageFilterExtension",
-    "FoodOrNotImageFilter",
-    "SimilarHashImageFilter",
-    "SimilarFeatVecImageFilter"
-]
+from .ImageFilter import ImageFilter
+from .ImageFilterExtension import ImageFilterExtension
+from .FoodOrNotImageFilter import FoodOrNotImageFilter
+from .SimilarHashImageFilter import SimilarHashImageFilter
+from .SimilarFeatVecImageFilter import SimilarFeatVecImageFilter
