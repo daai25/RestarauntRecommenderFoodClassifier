@@ -3,7 +3,6 @@ channels:
     - anaconda
     - conda-forge
     - defaults
-    - conda-forge
 dependencies:
     - bokeh
     - jupyterlab
@@ -13,9 +12,12 @@ dependencies:
     - scikit-plot
     - seaborn
     - geopy
+    - numpy<2.0
+    - opencv  # kompatible with numpy<2.0
     - pip
     - requests
     - pillow
+    - tqdm
     - pip:
           - python-dotenv
           - duckduckgo_search

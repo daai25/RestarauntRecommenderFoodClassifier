@@ -71,7 +71,7 @@ class RestarauntcontentspiderSpider(scrapy.Spider):
         Args:
             data (dict): Parsed JSON content
         """
-        rows = []
+
         for element in data:
             element_id = element["id"]
             website = element.get("website")
@@ -87,12 +87,21 @@ class RestarauntcontentspiderSpider(scrapy.Spider):
                 self.url_to_element_id[website] = element_id
 
     def write_status_csv(self, rows):
+        """
+        Writes a list of rows to the status_csv file
+
+        Args:
+            rows (dict): List of rows following the [id, has_website, is_scraped, is_filtered] schema
+        """
         with open(self.status_csv, "a", newline='', encoding='utf-8') as f:
             writer = csv.DictWriter(f, fieldnames=["id", "has_website", "is_scraped", "is_filtered"])
             for row in rows:
                 writer.writerow(row)
 
     def init_scraped_csv_file(self):
+        """
+        If the scraped_csv file does not exist, create one
+        """
         if not os.path.exists(self.status_csv):
             with open(self.status_csv, "w", newline='', encoding='utf-8') as f:
                 writer = csv.DictWriter(f, fieldnames=["id", "has_website", "is_scraped", "is_filtered"])
@@ -143,13 +152,21 @@ class RestarauntcontentspiderSpider(scrapy.Spider):
         element_path = f"scraped-data/{element_id}"
         visited = response.meta.get('visited') or self.visited_links[element_id]
         
-        #Create the direcotires for that site
+        #Create the directories for that site
         self.create_directories(element_path)
         self.save_site_content(response, element_path, element_id)
         yield from self.follow_child_links(response, visited, element_id)
         self.update_csv_status(element_id, "is_scraped", True)
 
     def update_csv_status(self, element_id, field, new_value):
+        """
+        Reads the rows of the CSV and updates the element at the given ID's field with the new value
+
+        Args:
+            element_id (int): ID of the website you are updating
+            field (str): Field to be updated from fields [id, has_website, is_scraped, is_filtered]
+            new_value (str): New value to be inserted at element_id in the specified field
+        """
         # Read all rows
         with open(self.status_csv, "r", newline='', encoding='utf-8') as f:
             rows = list(csv.DictReader(f))

@@ -1,0 +1,225 @@
+from .ImageFilterExtension import ImageFilterExtension
+import cv2
+import os
+import hashlib
+import numpy as np
+
+def _compute_file_hash_sha256(path, block_size=65536):
+    """
+    Compute the SHA-256 hash of a file.
+
+    Args:
+        path (str): Full path to the file.
+        block_size (int): Size of the block to read from the file at a time.
+    Returns:
+        str: The SHA-256 hash of the file as a hexadecimal string.
+    """
+    hasher = hashlib.sha256()
+    with open(path, 'rb') as f:
+        while chunk := f.read(block_size):
+            hasher.update(chunk)
+    return hasher.hexdigest()
+
+class ImageFilter:
+    """
+    A class that applies various standard image filtering methods and also allows for custom extensions.
+    """
+    def __init__(self, filter_extensions: list, blur_threshold: float=100.0, uniform_tolerance: float=0.01):
+        """
+        Initialize the ImageFilter with a list of filter extensions.
+
+        Args:
+            filter_extensions (list): List of filter extension instances.
+        Raises:
+            TypeError: If any of the provided filter extensions do not implement the ImageFilterExtensionInterface.
+        """
+        for ext in filter_extensions:
+            if not isinstance(ext, ImageFilterExtension):
+                raise TypeError(f"Expected an instance of ImageFilterExtensionInterface, got {type(ext)}")
+
+        self.filter_extensions = filter_extensions
+        self.blur_threshold = blur_threshold
+        self.uniform_tolerance = uniform_tolerance
+        self.image_hash_map = {} # to store hashes of processed images
+        self.statistics = {
+            "total_images": 0,
+            "total_blurry_images": 0,
+            "total_uniform_images": 0,
+            "total_duplicate_images": 0,
+            "total_filtered": {ext.__class__.__name__: 0 for ext in filter_extensions},
+            "filtered_image_paths": set(), # saves all the paths of filtered images, if delete is False
+            "total_valid_images": 0,
+            "num_of_errors": 0,
+            "captured_errors": [] # to store error messages
+        }
+
+    def _reset_statistics(self):
+        """
+        Reset the statistics dictionary to its initial state.
+        """
+        self.statistics = {
+            "total_images": 0,
+            "total_blurry_images": 0,
+            "total_uniform_images": 0,
+            "total_duplicate_images": 0,
+            "total_filtered": {ext.__class__.__name__: 0 for ext in self.filter_extensions},
+            "filtered_image_paths": set(),  # saves all the paths of filtered images, if delete is False
+            "total_valid_images": 0,
+            "num_of_errors": 0,
+            "captured_errors": []  # to store error messages
+        }
+
+    def _is_blurry(self, image_path: str) -> bool:
+        """
+        Calculate the blur score of an image using Laplacian variance.
+
+        Args:
+            image_path (str): Full path to the image file.
+        Returns:
+            bool: True if the image is considered blurred (Laplacian variance below the threshold), False otherwise.
+        Raises:
+            FileNotFoundError: If the image file does not exist.
+            ValueError: If the image cannot be read or is not a valid image file.
+        """
+        # check if the image file exists
+        if not os.path.exists(image_path):
+            raise FileNotFoundError(f"Image file not found: {image_path}")
+
+        image = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)
+        if image is None:
+            raise ValueError("Image could not be read or is not a valid image file.")
+        laplacian_var = cv2.Laplacian(image, cv2.CV_64F).var()
+        return laplacian_var < self.blur_threshold
+
+    def _is_uniform(self, image_path: str) -> bool:
+        """
+        Check if the image is uniform by calculating the standard deviation of pixel values.
+
+        Args:
+            image_path (str): Full path to the image file.
+        Returns:
+            bool: True if the image is considered uniform (standard deviation below the tolerance), False otherwise.
+        Raises:
+            FileNotFoundError: If the image file does not exist.
+            ValueError: If the image cannot be read or is not a valid image file.
+        """
+        # check if the image file exists
+        if not os.path.exists(image_path):
+            raise FileNotFoundError(f"Image file not found: {image_path}")
+
+        img = cv2.imread(image_path, cv2.IMREAD_COLOR)
+        if img is None:
+            raise ValueError("Image could not be read or is not a valid image file.")
+
+        # normalize to range [0.0, 1.0]
+        img = img.astype(np.float32) / 255.0
+
+        # calculate the standard deviation across all channels
+        std_per_channel = img.std(axis=(0, 1))
+
+        return bool(np.all(std_per_channel < self.uniform_tolerance))
+
+    def _is_duplicate(self, image_path: str) -> bool:
+        """
+        Check if the image is a duplicate by comparing its hash with previously processed images.
+        Args:
+            image_path (str): Full path to the image file.
+        Returns:
+            bool: True if the image is a duplicate, False otherwise.
+        Raises:
+            FileNotFoundError: If the image file does not exist.
+        """
+        if not os.path.exists(image_path):
+            raise FileNotFoundError(f"Image file not found: {image_path}")
+
+        file_hash = _compute_file_hash_sha256(image_path)
+        if file_hash in self.image_hash_map:
+            return True
+        else:
+            self.image_hash_map[file_hash] = image_path
+            return False
+
+    def filter_images(self, directory: str, is_relative: bool=True, delete: bool=True) -> dict:
+        """
+        Filter images in the specified directory based on various criteria:
+        - Blurry images (Laplacian variance below a threshold)
+        - Uniform images (standard deviation of pixel values below a tolerance)
+        - Duplicate images (using SHA-256 hash comparison)
+        Additionally, it applies all the filter extensions provided during initialization.
+
+        Args:
+            directory (str): Path to the directory containing images.
+            is_relative (bool): If True, the path is treated as relative; otherwise, it is absolute.
+            delete (bool): If True, images that do not meet the criteria will be deleted; otherwise, they will be added to filtered_image_paths.
+        Returns:
+            dict: Updated statistics including counts of filtered images, and any errors encountered.
+        """
+        self.image_hash_map = {}  # reset the hash map for each filtering operation
+        self._reset_statistics() # reset statistics for each new filtering operation
+
+        if is_relative:
+            directory = os.path.relpath(directory)
+        else:
+            directory = os.path.abspath(directory)
+
+        if not os.path.exists(directory):
+            raise FileNotFoundError(f"ImageFilter: Directory does not exist: {directory}")
+
+        # first walk through the directory and gather all the blurry and uniform images
+        for root, _, files in os.walk(directory):
+            for filename in files:
+                if not filename.lower().endswith(('.png', '.jpg', '.jpeg', '.bmp', '.gif')):
+                    continue
+
+                image_path = os.path.join(root, filename)
+                self.statistics["total_images"] += 1
+
+                if self._is_blurry(image_path):
+                    self.statistics["total_blurry_images"] += 1
+                    if delete:
+                        os.remove(image_path)
+                    else:
+                        self.statistics["filtered_image_paths"].add(image_path)
+                elif self._is_uniform(image_path):
+                    self.statistics["total_uniform_images"] += 1
+                    if delete:
+                        os.remove(image_path)
+                    else:
+                        self.statistics["filtered_image_paths"].add(image_path)
+
+        # secondly walk through the directory and gather all the duplicate images
+        # if delete is False, checks if the image is already in the filtered_image_paths set
+        for root, _, files in os.walk(directory):
+            for filename in files:
+                if not filename.lower().endswith(('.png', '.jpg', '.jpeg', '.bmp', '.gif')):
+                    continue
+
+                image_path = os.path.join(root, filename)
+
+                # check if the image is already in the filtered_image_paths set
+                if image_path in self.statistics["filtered_image_paths"]:
+                    continue
+
+                if self._is_duplicate(image_path):
+                    self.statistics["total_duplicate_images"] += 1
+                    if delete:
+                        os.remove(image_path)
+                    else:
+                        self.statistics["filtered_image_paths"].add(image_path)
+
+        # finally apply all the filter extensions
+        for ext in self.filter_extensions:
+            try:
+                self.statistics = ext.filter_images(directory, self.statistics, delete=delete)
+            except Exception as e:
+                if ext.verbose:
+                    print(f"Error processing with {ext.__class__.__name__}: {e}")
+                self.statistics["num_of_errors"] += 1
+                self.statistics["captured_errors"].append(str(e))
+
+        # update the total valid images count
+        self.statistics["total_valid_images"] =(
+                self.statistics["total_images"] - len(self.statistics["filtered_image_paths"])
+        )
+
+        return self.statistics
