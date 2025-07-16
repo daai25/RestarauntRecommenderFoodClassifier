@@ -14,23 +14,23 @@ from sklearn.metrics import precision_recall_fscore_support
 from tqdm import tqdm
 
 # command line example:
-# python food_or_not_food_trainer.py --train_dir C:/nfr/food_or_not_food_data/dataset/train --test_dir C:/nfr/food_or_not_food_data/dataset/test --validation_dir C:/nfr/food_or_not_food_data/dataset/validation
+# python food_or_not_food_resnet18_trainer.py --train_dir dataset/train --test_dir dataset/test --validation_dir dataset/validation
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Train a model to classify food or not food images.")
     parser.add_argument("--train_dir", type=str, required=True, help="Path to the training data directory")
     parser.add_argument("--test_dir", type=str, required=True, help="Path to the testing data directory")
     parser.add_argument("--validation_dir", type=str, required=False, help="Path to the validation data directory (optional)")
-    parser.add_argument("--max_epochs", type=int, default=30, required=False, help="Number of epochs to train (default: 30) (optional)")
+    parser.add_argument("--max_epochs", type=int, default=50, required=False, help="Number of epochs to train (default: 50) (optional)")
     args = parser.parse_args()
 
     # food or not food dataset archive with training and testing data
-    train_dir = os.path.abspath(args.train_dir)
-    test_dir = os.path.abspath(args.test_dir)
+    train_dir = os.path.relpath(args.train_dir)
+    test_dir = os.path.relpath(args.test_dir)
 
     # check if validation_dir is provided, if not, set it to the test_dir
     if args.validation_dir:
-        validation_dir = os.path.abspath(args.validation_dir)
+        validation_dir = os.path.relpath(args.validation_dir)
     else:
         print("No validation directory provided, using test directory for validation.")
         validation_dir = test_dir
@@ -78,20 +78,20 @@ if __name__ == "__main__":
     augmentations_per_image = 10
 
     # repeat the training dataset with augmentations
-    augmented_datasets = [datasets.ImageFolder(train_dir, transform=train_transform)
+    augmented_datasets = [datasets.ImageFolder(str(train_dir), transform=train_transform)
                           for _ in tqdm(
                               range(augmentations_per_image),
                               desc="Augmenting training data",
                               unit="augmentation")
                           ]
     train_data = ConcatDataset(augmented_datasets)
-    test_data = datasets.ImageFolder(test_dir, transform=test_transform)
-    validation_data = datasets.ImageFolder(validation_dir, transform=test_transform)
+    test_data = datasets.ImageFolder(str(test_dir), transform=test_transform)
+    validation_data = datasets.ImageFolder(str(validation_dir), transform=test_transform)
 
     # prepare the data loaders
     train_loader = DataLoader(train_data, batch_size=64, shuffle=True, num_workers=8, pin_memory=True)
-    test_loader = DataLoader(test_data, batch_size=64)
-    validation_loader = DataLoader(validation_data, batch_size=64)
+    test_loader = DataLoader(test_data, batch_size=64, num_workers=8, pin_memory=True)
+    validation_loader = DataLoader(validation_data, batch_size=64, num_workers=8, pin_memory=True)
 
     # define number of classes
     num_classes = len(test_data.classes)
@@ -113,7 +113,7 @@ if __name__ == "__main__":
     model.to(device)
 
     # early stopping settings
-    patience = 3
+    patience = 5
     best_loss = float('inf')
     epochs_no_improve = 0
     early_stop = False
