@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to Tandoor - Winterthur</title>
+<meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport"/>
+<link href="https://fonts.googleapis.com/css?family=Arsenal:400,700|Libre+Franklin:500" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Abel|Permanent+Marker&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Hind:700|Merienda+One|Montserrat&amp;display=swap" rel="stylesheet"/>
+<link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet"/>
+<link href="index.css" rel="stylesheet"/>
+<!-- popup files -->
+<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">  -->
+<!--Google Font-->
+<!-- <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Open+Sans:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">  -->
+<!--Bootstrap Link-->
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" rel="stylesheet"/>
+<link crossorigin="anonymous" href="https://dishbutler.ch/user/new_design/css/bootstrap.css" rel="stylesheet"/>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.3.0/dropzone.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.3.0/basic.css" rel="stylesheet"/>
+<link href="https://dishbutler.ch/user/new_design/css/forms.css" rel="stylesheet"/>
+
+
+<!-- popup files  -->
+
+</head>
+<body onload="makeWidthSame()">
+<div class="navBarDesktop">
+<a class="menuLink headerMenuColor underlineSelectedOption" style="font-weight: bold"><span class="">  HOME  </span></a>
+<a class="menuLink headerMenuColor" href="./lunchMenu"><span>  LUNCH MENUS   </span></a>
+<a class="menuLink headerMenuColor" href="./menu"><span>  ONLINE ORDERS   </span></a>
+<a class="menuLink headerMenuColor" href="./offers"><span>  OFFERS   </span></a>
+<a class="menuLink headerMenuColor" href="./reservations"><span>  RESERVATIONS  </span></a>
+<a class="menuLink headerMenuColor" href="./gallery"><span>  GALLERY  </span></a>
+<a class="menuLink headerMenuColor" href="./contact"><span>  CONTACT  </span></a>
+<a class="menuLink headerMenuColor" href="http://www.indian-supermarket.ch/indian/supermarket"><span>  TANDOOR SHOP  </span></a>
+</div>
+<div class="navBarMobile">
+<div class="navBarTop">
+<div class="navBarHotelName">
+							TANDOOR - WINTERTHUR
+					</div>
+<div class="navBarMenuIcon" id="navMenuIcon" onclick="showMobileMenu()">
+						=
+					</div>
+<div class="navBarMenuCloseIcon" id="navMenuCloseIcon" onclick="hideMobileMenu()">
+						x
+					</div>
+</div>
+<div class="navBarMenuContainer" id="navBarMenuContainerID">
+<div class="navBarTitle">
+						MENU
+					</div>
+<div class="navBarMenu">
+<a class="menuLink navBarMenuItemsBorder"><span>Home</span></a>
+<a class="menuLink navBarMenuItemsBorder" href="./lunchMenu"><span>Lunch Menus </span></a>
+<a class="menuLink navBarMenuItemsBorder" href="./menu"><span>Online Orders </span></a>
+<a class="menuLink navBarMenuItemsBorder" href="./offers"><span>Offers</span></a>
+<a class="menuLink navBarMenuItemsBorder" href="./reservations"><span>Reservations </span></a>
+<a class="menuLink navBarMenuItemsBorder" href="./gallery"><span>Gallery</span></a>
+<a class="menuLink navBarMenuItemsBorder" href="./contact"><span>Contact</span></a>
+<a class="menuLink navBarMenuItemsBorder" href="http://www.indian-supermarket.ch/indian/supermarket"><span>Tandoor Shop</span></a>
+</div>
+</div>
+</div>
+<!-- Top Banner -->
+<div class="topBanner">
+<div class="topBannerImage" data-aos="fade-in" data-aos-duration="1000" id="topBannerPic">
+<img src="images/homePageBackground2.jpg"/>
+</div>
+<div class="topBannerImageMobile" data-aos="fade-in" data-aos-duration="1000" id="topBannerPicMobile">
+<img src="images/homePageBackgroundMobile.jpg"/>
+</div>
+<div class="topBannerLayer" id="topBannerLayerID">
+</div>
+<div class="topBannerTextContainer">
+<div class="topBannerTopText" data-aos="slide-right" data-aos-delay="1200" data-aos-duration="1000">Willkommen im Restaurant Tandoor</div><br/>
+<!-- <div class='topBannerMiddleText' data-aos="slide-left" data-aos-duration="1000" data-aos-delay="1200">Get Ready for a Feast from the East!</div><br /><br /> -->
+<div class="topBannerBottomText" data-aos="slide-right" data-aos-delay="1200" data-aos-duration="1000">
+				Wir begrüssen Sie herzlich in unserem Restaurant Tandoor
+			<br/>
+				an der Schützenstrasse 43, 8400 Winterthur</div><br/><br/><br/><br/><br/>
+<div class="buttonsContainer">
+<!-- popup   href = './menu'-->
+<div class="setup_box">
+<!--a href = "https://dishbutler.ch/tandoor/index.php" class="menuLink" target="_blank">
+				<span class='buttonSelection'>
+					Order Food
+				</span>
+			</a-->
+<a class="menuLink" href="http://www.restaurant-tandoor.ch/menu/">
+<span class="buttonSelection">
+					Bestellung
+				</span>
+</a>
+<!--/div-->
+<a class="menuLink mobileBook" href="./reservations">
+<span class="buttonSelection">
+					Reservation
+				</span>
+</a>
+</div>
+</div>
+</div>
+<!-- End of Top Banner -->
+<!--  Timings Container -->
+<div class="timingsContainer">
+<div class="timingsInfo">
+<div class="timingsTitle">
+				Oeffnungszeiten
+		</div>
+<br/> <br/>
+<div class="timingDetails">
+<div class="timingDetailsWeekdays">
+<h3>Montag bis Freitag</h3>
+<p>
+					Mittags : 11:00 - 14:00 
+				</p>
+<p>
+					Abends : 17:30 - 24:00
+				</p>
+<p> Küche Abends bis 22:00 offen </p>
+</div>
+<div class="timingDetailsWeekends">
+<h3>Samstag &amp; Sonntag</h3>
+<p>
+					Mittags : geschlossen 
+				</p>
+<p>
+
+					Abends : 17:30 - 24:00
+				</p>
+<p> Küche Abends bis 22:00 offen </p>
+</div>
+</div>
+</div>
+</div>
+<!-- End of Timings Contianer -->
+<!-- Top Banner Mobile -->
+<!--
+	<div class="topBannerMobile">
+
+		<div class="topBannerImage" data-aos="fade-in" data-aos-duration="1000">
+			<img src="images/homePageBackgroundMobile.jpg" />
+		</div>
+
+		<div class='topBannerLayer'>
+		</div>
+		<div class="topBannerTextContainer">
+			<div class='topBannerTopText' data-aos="slide-right" data-aos-duration="1000" data-aos-delay="1200">Welcome To Restaurant Tandoor</div><br />
+			<div class='topBannerMiddleText' data-aos="slide-left" data-aos-duration="1000" data-aos-delay="1200">Get Ready for a Feast from the East!</div><br /><br />
+			<div class='topBannerBottomText' data-aos="slide-right" data-aos-duration="1000" data-aos-delay="1200">We believe our restaurant is a place where people come together to celebrate Life, Passions and Occassions!</div><br /><br /><br /><br /><br />
+			<div class='buttonsContainer' >
+				<span class='buttonSelection'>
+					Order Food
+				</span>
+				<span class='buttonSelection'>
+						Book Table
+				</span>
+			</div>
+		</div>
+
+	</div> -->
+<!-- End of Top Banner Mobile -->
+<!-- Covid Notice container -->
+<!-- <div class="covidContainer">
+	Note : Due to the Coronavirus Pandemic, we are currently only accepting online orders and take away orders. We assure you that we follow the strictest hygiene and sanitisation guidelines for our hotel staff.
+</div> -->
+<!-- End of Covid Notice container -->
+<!-- About Container -->
+<div id="aboutContainer">
+<div class="aboutTitle">
+<p>Speziell am Montag und Mittwoch Abend gibt es ein Buffet à discretion</p>
+<p>und am Dienstag gibt es ein schönes Mittagsbuffet</p>
+</div>
+<div class="aboutDesc">
+<!--div class="aboutImg" data-aos="slide-right">
+			<img src="images/aboutPic.jpg" />
+		</div>
+		<div class="aboutInfo" data-aos="slide-left">
+			<p>
+					..... 
+			</p>
+			<p>
+					.....
+			</p>
+		</div-->
+</div>
+</div>
+<!-- End of About Contianer -->
+<!-- Menu Container -->
+<!--div id="menuContainer" class="menuCont">
+
+		<div class="vid" id="videoContainer">
+			<video playsinline autoplay muted loop preload="none" id="videoContainerTag">
+				<source src="videoclips/finalMenuClip.mp4" type="video/mp4" />
+			</video>
+		</div>
+		<div class="vidMobile" id="videoContainer2">
+			<video playsinline autoplay muted loop preload="none" id="videoContainerTag2">
+				<source src="videoclips/finalMenuClipMobile.mp4" type="video/mp4" />
+			</video>
+		</div>
+		<div class="menuContent" id="menuContentContainer" data-aos="zoom-in" data-aos-duration="2000">
+				What Food ?
+		</div>
+
+		<div class='foodItemDescMobile'>
+			We offer a wide range of Starters, Tandooris, Biryanis and Vegetarian food. Tap the button below to explore our Sumptous menu.<br  /><br />
+			<a href = './menu' class="menuLink">
+				<span class='exploreMenuButtonMobile'>
+					Explore Menu
+				</span>
+			</a>
+		</div>
+
+		<div class="foodItemParent starters animate-flicker1">
+			<div class="foodItemTitle">
+				Scrumptious Starters
+			</div>
+			<div class="foodItemDesc">
+				<br />Seekh Tak-A-Tak, Milla Julla, <br />Cocktail Samosa
+			</div>
+		</div>
+
+		<div class="foodItemParent tandoori animate-flicker2">
+			<div class="foodItemTitle">
+				Lipsmacking Tandooris!
+			</div>
+			<div class="foodItemDesc">
+				<br />Jhinga Tandoori, Maans ke Sule, <br />Paneer Tikka Shashlik
+			</div>
+		</div>
+
+				<div class="foodItemParent biryani animate-flicker3">
+					<div class="foodItemTitle">
+						Aromatic Biryanis!
+					</div>
+					<div class="foodItemDesc">
+						<br />Chicken Biryani, Lamb Biryani, <br />Vegetable Biryani
+					</div>
+				</div>
+
+				<div class="foodItemParent vegivore animate-flicker4">
+					<div class="foodItemTitle">
+						Vegivore Platter!
+					</div>
+					<div class="foodItemDesc">
+						<br />Paneer Pasanda, Pindi Chana, <br />Navrattan Kurma
+					</div>
+				</div>
+
+
+				<div class="foodItemParent curry animate-flicker5">
+					<div class="foodItemTitle">
+						Delectable Curries!
+					</div>
+					<div class="foodItemDesc">
+						<br />Chicken Curry, Jhinga Vindaloo <br />Malabar Fish Curry
+					</div>
+				</div>
+
+				<div class="foodItemParent breads animate-flicker3">
+					<div class="foodItemTitle">
+						Smoking Hot Breads!
+					</div>
+					<div class="foodItemDesc">
+						<br />Lhasuni Naan, Laccha Paratha <br />Tandoori Roti
+					</div>
+				</div-->
+<!--div id="menuContainer" class="menuCont">
+				<a href = './menu' class="menuLink">
+					<div class='exploreMenuButton'>
+						Explore Menu
+					</div>
+				</a>
+	</div-->
+<!-- End of Menu Contianer -->
+<!-- Menu Container Mobile -->
+<div id="menuContainerMobile">
+</div>
+<!-- End of Menu Contianer Mobile -->
+<!-- Shops -->
+<div id="aboutContainer">
+<div class="aboutTitle">
+		VISIT OUR ONLINE SUPERMARKET
+	</div>
+<div class="aboutDesc">
+<div class="aboutImg" data-aos="slide-right">
+<img src="images/superMarketLogo.jpg"/>
+</div>
+<div class="aboutInfo" data-aos="slide-left">
+<p>
+				The Indian supermarket and takeaway you find at the corner Neuwiesenstrasse No. 6 and Paulstrasse in 8400 Winterthur, right behind the mainstation.
+			</p>
+<a class="menuLink" href="http://www.indian-supermarket.ch/indian/supermarket" target="_blank">
+<div class="shopButton">
+<div class="">
+								More Info
+							</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+<!-- End of About Contianer -->
+<!-- End of Order Contianer -->
+<!--  Timings Container -->
+<!--div class="timingsContainer">
+
+
+	<div class="timingsInfo">
+		<div class="timingsTitle">
+				RESTAURANT TIMINGS
+		</div>
+		<br />				<br />
+
+
+		<div class="timingDetails">
+
+			<div class="timingDetailsWeekdays">
+				<h3>Monday to Friday</h3>
+				<p>
+					LUNCH : 11:00 AM - 02:00 PM
+				</p>
+				<p>
+					DINNER : 05:30 PM - 12:00 PM
+				</p>
+			</div>
+			<div class="timingDetailsWeekends">
+				<h3>Saturday & Sunday</h3>
+				<p>
+						LUNCH : --
+				</p>
+				<p>
+
+					DINNER : 05:30 PM - 12:00 PM
+				</p>
+
+			</div>
+		</div>
+	</div>
+</div-->
+<!-- End of Timings Contianer -->
+<!-- Reservations Container -->
+<div id="reservationsContainer">
+<img class="reservationsBackgroundImage" src="images/reservationBackground2.jpg"/>
+<img class="reservationsBackgroundImageMobile" src="images/reservationBackgroundMobile.jpg"/>
+<div class="reservationsTitle">
+		RESERVATIONS
+	</div>
+<div class="reservationsContent">
+<div class="reservationContentInfo" data-aos="fade-up" data-aos-duration="1000">
+<h2>
+					READY ON ARRIVAL
+				</h2>
+<p class="reservationInfoPadding">
+					Our restaurant does get crowded
+during meal times and we
+recommend you to make prior
+table reservations.
+
+				</p>
+<p class="reservationInfoPadding">
+
+					We will make sure you don't have
+to play the waiting list game!
+Your table will be ready on
+arrival!
+				</p>
+</div>
+<div class="reservationContentInfo" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+<h2>
+					A SPECIAL OCCASSION
+				</h2>
+<p class="reservationInfoPadding">
+					A first date, An anniversary,
+	A promotion party, we all have
+	our special occasions
+
+				</p>
+<p class="reservationInfoPadding">
+
+					Just inform us about it and we
+	would be delighted to make
+	them more special.
+				</p>
+</div>
+<div class="reservationContentInfo" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000">
+<h2>
+					SPECIAL REQUESTS
+				</h2>
+<p class="reservationInfoPadding">
+					You may need to make some
+special requests.
+				</p>
+<p class="reservationInfoPadding">
+					- Finding a corner table
+				</p>
+<p class="reservationInfoPadding">
+					- Quieter table for toddlers
+
+				</p>
+<p class="reservationInfoPadding">
+					- Make arrangements for  a
+  larger number of people
+				</p>
+<p class="reservationInfoPadding">
+
+					Our reservation system enables
+you to make such request, so
+we can make the necessary
+arrangements before you arrive
+				</p>
+</div>
+</div>
+<!-- content for mobile -->
+<div class="reservationsContentMobile">
+<div class="reservationContentInfoMobile" data-aos="fade-right" data-aos-duration="1000">
+<h2>
+					READY ON ARRIVAL
+				</h2>
+</div>
+<div class="reservationContentInfoMobile" data-aos="fade-right" data-aos-delay="400" data-aos-duration="1000">
+<h2>
+					FOR A SPECIAL OCCASSION
+				</h2>
+</div>
+<div class="reservationContentInfoMobile" data-aos="fade-right" data-aos-delay="800" data-aos-duration="1000">
+<h2>
+					FOR SPECIAL REQUESTS
+				</h2>
+</div>
+</div>
+<!-- end of content for mobile -->
+<div class="reserveTableButtonContainer">
+<a class="menuLink" href="./reservations">
+<div class="reserveTableButton">
+				Reserve Your Table
+			</div>
+</a>
+</div>
+</div>
+<!-- End of Reservations Contianer -->
+<!-- footers section  -->
+<div class="footersContainer">
+<div class="footersMenu">
+<a class="menuLink footerMenuColor" href=""><span>  Home  |</span></a>
+<a class="menuLink footerMenuColor" href="./lunchMenu"><span>  Lunch Menu   |</span></a>
+<a class="menuLink footerMenuColor" href="./menu"><span>  Online Orders   |</span></a>
+<a class="menuLink footerMenuColor" href="./offers"><span>  Offers   |</span></a>
+<a class="menuLink footerMenuColor" href="./reservations"><span>  Reservations  |</span></a>
+<a class="menuLink footerMenuColor" href="./gallery"><span>  Gallery  |</span></a>
+<a class="menuLink footerMenuColor" href="./contact"><span>  Contact  |</span></a>
+<a class="menuLink footerMenuColor" href="http://www.indian-supermarket.ch/indian/supermarket"><span>  Tandoor Shop  |</span></a>
+</div>
+<div class="footersTitle">
+<br/>
+<h1 class="footerHotelName"> Restaurant Tandoor - Winterthur </h1>
+
+		© 2020 Restaurant Tandoor - Winterthur
+		<br/>
+<br/>
+<br/>
+</div>
+</div>
+<!-- popup -->
+<div class="popup_container"></div>
+<!-- poopup  -->
+
+
+
+</div></body>
+</html>

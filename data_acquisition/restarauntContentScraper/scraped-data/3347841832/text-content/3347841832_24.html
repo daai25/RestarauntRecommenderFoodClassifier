@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Order Online</title>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport"/>
+<link href="https://fonts.googleapis.com/css?family=Arsenal:400,700|Libre+Franklin:500" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Abel|Permanent+Marker&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Hind:700|Merienda+One|Quattrocento+Sans:400,700|Montserrat|Architects+Daughter&amp;display=swap" rel="stylesheet"/>
+<link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet"/>
+<link href="menu_style.css" rel="stylesheet"/>
+<link href="../menu.css" rel="stylesheet"/>
+
+
+
+</head>
+<body onload="select_menu(1)">
+<div class="headerDesktop">
+<div id="logoSectionDesktop">
+<video autoplay="" height="100" id="logoVid" loop="" muted="" playsinline="" width="390">
+<source src="../images/tr3.mp4" type="video/mp4">
+</source></video>
+<video autoplay="" height="70" id="logoVidMobile" loop="" muted="" playsinline="" width="270">
+<source src="../images/tr3.mp4" type="video/mp4">
+</source></video>
+</div>
+<div class="navBarMenuIcon" id="navMenuIcon" onclick="showMobileMenu()">
+				=
+			</div>
+<div class="navBarMenuCloseIcon" id="navMenuCloseIcon" onclick="hideMobileMenu()">
+				x
+			</div>
+<div class="remainingMenu">
+<div class="menuItem">
+<a class="menuLink" href="../index.html"><span>HOME</span></a>
+</div>
+<div class="menuItem">
+<a class="menuLink" href="../lunchMenu"><span>LUNCH MENU</span></a>
+</div>
+<!--<div class='menuItem' >
+					<a class="menuLink" href = '../menu'><span>MENU</span></a>
+				</div> -->
+<div class="menuItem">
+<a class="navBarMenuItemsBorderDesktop" href="./onlineOrders"><span>ONLINE ORDERS</span></a>
+</div>
+<div class="menuItem">
+<a class="menuLink" href="../reservations"><span>RESERVATIONS</span></a>
+</div>
+<div class="menuItem">
+<a class="menuLink" href="../lunchBuffet"><span>BUFFET</span></a>
+</div>
+<div class="menuItem">
+<a class="menuLink" href="../offers"><span>OFFERS</span></a>
+</div>
+<!--<div class='menuItem'>
+					<a class="menuLink" href = './homeDelivery'><span>HOME DELIVERY</span></a>
+				</div> -->
+<div class="menuItem">
+<a class="menuLink" href="../contact"><span>CONTACT</span></a>
+</div>
+</div>
+</div>
+<div class="navBarMobile">
+<div class="navBarMenuContainer" id="navBarMenuContainerID">
+<div class="navBarTitle">
+						MENU
+					</div>
+<div class="navBarMenu">
+<a class="menuLink navBarMenuItemsBorder" href="../index.html"><span>Home</span></a>
+<!-- <a class="menuLink navBarMenuItemsBorder" href = './takeaway'><span>Take Away </span></a> -->
+<a class="menuLink navBarMenuItemsBorder" href="../lunchMenu"><span>Lunch Menu </span></a>
+<a class="menuLink navBarMenuItemsBorder" href="./onlineOrders"><span>Online Orders</span></a>
+<a class="menuLink navBarMenuItemsBorder" href="../reservations"><span>Reservations</span></a>
+<a class="menuLink navBarMenuItemsBorder" href="../lunchBuffet"><span>Buffet</span></a>
+<a class="menuLink navBarMenuItemsBorder" href="../offers"><span>Offers </span></a>
+<!-- <a class="menuLink navBarMenuItemsBorder" href = '../homeDelivery'><span>Home Delivery</span></a> -->
+<a class="menuLink navBarMenuItemsBorder" href="../contact"><span>Contact</span></a>
+</div>
+</div>
+</div>
+<div class="title_over_the_banner">
+<span>Order Online</span>
+</div>
+<div class="sub_cat_and_orders_container" id="sub_cat_and_orders_container">
+</div>
+<div class="allergyNotice">
+<h2>Allergeninformation</h2>
+<p>Bitte melden Sie uns Ihre Allergien am Anfang der Bestellung</p>
+<p>Naan enthält Eier, Milch und Mehl.</p>
+<p>Die Salatsauce enthält Mayonnaise und Ketchup.</p>
+<p>Diverse Speisen enthalten Zwiebeln, Knoblauch oder Koriander.</p>
+<p>Diverse Speisen enthalten Kurkuma und andere Gewürze im Curry.</p>
+<p>Diverse Speisen enthalten Nüsse.</p>
+<p>Diverse Speisen enthalten Rahm und Butter.</p>
+<p>Bitte sagen Sie uns explizit, falls Sie vegan essen möchten oder eine Lebensmittelallergie haben.</p>
+<p>Wir nehmen Rücksicht auf Sie und kochen dementsprechend für Sie.</p>
+<p>Fleisch:</p>
+<p>Poulet aus Brasilien (kann mit nichthormonellen Leistungsförderer wie Antibiotika erzeugt worden sein) und Schweiz.</p>
+<p>Lamm von Neuseeland/Australien</p>
+<p>Fisch aus Vietnam/Amerika</p>
+<p>Crevetten aus Amerika/Vietnam/Indien/Bangladesh/etc.</p>
+</div>
+<!-- footers section  -->
+<div class="footersContainer">
+<div class="footersMenu">
+<a class="menuLink footerMenuColor" href="../index.html"><span>  Home  |</span></a>
+<!-- <a class="menuLink footerMenuColor" href = '../takeaway'><span>&nbsp;&nbsp;Take Away &nbsp;&nbsp;|</span></a> -->
+<!--<a class="menuLink footerMenuColor" href = '../menu'><span>&nbsp;&nbsp;Menu &nbsp;&nbsp;|</span></a>-->
+<a class="menuLink footerMenuColor" href="../onlineOrders"><span>  Online Orders   |</span></a>
+<a class="menuLink footerMenuColor" href="../reservations"><span>  Reservations   |</span></a>
+<a class="menuLink footerMenuColor" href="../lunchBuffet"><span>  Buffet   |</span></a>
+<!-- <a class="menuLink footerMenuColor" href = './partyOrders'><span>&nbsp;&nbsp;Party Order&nbsp;&nbsp;|</span></a> -->
+<a class="menuLink footerMenuColor" href="../contact"><span>  Contact  </span></a>
+</div>
+<div class="footersTitle">
+<br/>
+<h1 class="footerHotelName"> TandoorHaus Restaurant </h1>
+
+				© 2021 TandoorHaus Restaurant
+				<br/>
+<br/>
+				Maintained By <a class="menuLink footerMenuColor" href="./contact">SNS INFOGRAPHICS</a>
+<br/>
+</div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Best Restautant Indian food Swiss Franc" name="description"/>
+<meta content="restaurant,food,reservation" name="keywords"/>
+<title>Maharani Restaurant</title>
+<link href="https://maharanirestaurant.ch/assets/img/icons/2023-03-25/1.jpeg" rel="shortcut icon" type="image/ico"/>
+<!--====== Plugins CSS Files =======-->
+<link href="https://maharanirestaurant.ch/application/views/themes/defaults/assets_web/plugins/bootstrap-4.1.3-dist/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://maharanirestaurant.ch/application/views/themes/defaults/assets_web/plugins/fontawesome/css/font-awesome.min.css" rel="stylesheet"/>
+<link href="https://maharanirestaurant.ch/application/views/themes/defaults/assets_web/plugins/themify-icons/themify-icons.css" rel="stylesheet"/>
+<link href="https://maharanirestaurant.ch/application/views/themes/defaults/assets_web/plugins/animate-css/animate.css" rel="stylesheet"/>
+<link href="https://maharanirestaurant.ch/application/views/themes/defaults/assets_web/plugins/owl-carousel/owl.carousel.min.css" rel="stylesheet"/>
+<link href="https://maharanirestaurant.ch/application/views/themes/defaults/assets_web/plugins/metismenu/metisMenu.min.css" rel="stylesheet"/>
+<link href="https://maharanirestaurant.ch/application/views/themes/defaults/assets_web/plugins/bootstrap-datepicker/bootstrap-datepicker.min.css" rel="stylesheet"/>
+<link href="https://maharanirestaurant.ch/application/views/themes/defaults/assets_web/plugins/clockpicker/clockpicker.min.css" rel="stylesheet"/>
+<!--====== Custom CSS Files ======-->
+<link href="https://maharanirestaurant.ch/application/views/themes/defaults/assets_web/css/style.css" rel="stylesheet"/>
+<link href="https://maharanirestaurant.ch/application/views/themes/defaults/assets_web/css/responsive.css" rel="stylesheet"/>
+<link href="https://maharanirestaurant.ch/application/views/themes/defaults/assets_web/css/custome.css" rel="stylesheet"/>
+<link href="https://maharanirestaurant.ch/application/views/themes/defaults/assets_web/css/jquery.rateyo.min.css" rel="stylesheet"/>
+<link href="https://maharanirestaurant.ch/assets/sweetalert/sweetalert.css" rel="stylesheet" type="text/css"/>
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900|Niconne" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Great+Vibes|Poppins:200,300,400,500,600,700,800,900" rel="stylesheet"/>
+
+
+
+
+
+
+<!-- for whatsapp modules -->
+<!-- end whatsapp modules -->
+</head>
+<body>
+<!-- Preloader -->
+<div class="preloader"></div>
+<!--START HEADER TOP-->
+<header class="header_top_area">
+<div class="header_top">
+<div class="container">
+<nav class="navbar navbar-expand-lg">
+<a class="" href="https://maharanirestaurant.ch/">
+<img alt="logo" src="https://maharanirestaurant.ch/assets/img/2023-03-25/2.jpeg"/>
+</a>
+<div class="sidebar-toggle-btn">
+<a class="nav-link nav_link_in" href="https://maharanirestaurant.ch/cart" id="navbarDropdown3">
+<i class="ti-shopping-cart"></i><span class="badge badge-notify my-cart-badge badge_color_in">0</span>
+</a>
+<button class="btn" id="sidebarCollapse" type="button">
+<i class="ti-menu"></i>
+</button>
+</div>
+<div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+<ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+<li class="nav-item active">
+<a class="nav-link" href="https://maharanirestaurant.ch/home">Home</a>
+<div aria-labelledby="navbarDropdown" class="dropdown-menu">
+</div>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://maharanirestaurant.ch/reservation">Reservation</a>
+<div aria-labelledby="navbarDropdown" class="dropdown-menu">
+</div>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://maharanirestaurant.ch/menu">Order Online / Takeaway</a>
+<div aria-labelledby="navbarDropdown" class="dropdown-menu">
+</div>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://maharanirestaurant.ch/about">About Us</a>
+<div aria-labelledby="navbarDropdown" class="dropdown-menu">
+</div>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://maharanirestaurant.ch/contact">Contact Us</a>
+<div aria-labelledby="navbarDropdown" class="dropdown-menu">
+</div>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://maharanirestaurant.ch/mylogin">Login</a>
+<div aria-labelledby="navbarDropdown" class="dropdown-menu">
+</div>
+</li>
+<li class="nav-item">
+<a aria-expanded="false" aria-haspopup="true" class="nav-link" data-toggle="dropdown" href="#" id="navbarDropdown2" role="button">
+<i class="fa fa-search"></i>
+</a>
+<div aria-labelledby="navbarDropdown2" class="dropdown-menu search_box">
+<form accept-charset="utf-8" action="https://maharanirestaurant.ch/menu" class="card card-sm" method="post">
+<input name="csrf_test_name" type="hidden" value="e1770078d0fc03166456d61a24c8cd2f"/>
+<div class="card-body row no-gutters align-items-center">
+<div class="col">
+<input aria-required="true" autocomplete="off" class="form-control productSelection" id="product_name" name="product_name" onkeypress="producstList();" placeholder="Search topics or keywords" type="text"/> <input class="autocomplete_hidden_value" id="SchoolHiddenId" name="product_id" type="hidden"/>
+</div>
+<!--end of col-->
+<div class="col-auto">
+<button class="btn btn-lg btn-success" type="submit">Search</button>
+</div>
+<!--end of col-->
+</div>
+</form>
+</div>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://maharanirestaurant.ch/cart" id="navbarDropdown3">
+<i class="ti-shopping-cart"></i><span class="badge badge-notify my-cart-badge" id="itemnum">0</span>
+</a>
+</li>
+</ul>
+</div>
+</nav>
+<!-- /. Navbar -->
+<nav class="sidebar-nav" id="sidebar">
+<div id="dismiss">
+<i class="ti-close"></i>
+</div>
+<ul class="metismenu list-unstyled" id="mobile-menu">
+<li>
+<a href="https://maharanirestaurant.ch/home">Home </a>
+</li>
+<li>
+<a href="https://maharanirestaurant.ch/reservation">Reservation </a>
+</li>
+<li>
+<a href="https://maharanirestaurant.ch/menu">Order Online / Takeaway </a>
+</li>
+<li>
+<a href="https://maharanirestaurant.ch/about">About Us </a>
+</li>
+<li>
+<a href="https://maharanirestaurant.ch/contact">Contact Us </a>
+</li>
+<li>
+<a href="https://maharanirestaurant.ch/myprofile">Login </a>
+</li>
+</ul>
+</nav>
+<div class="overlay"></div>
+</div>
+</div>
+<!--START SLIDER PART-->
+<div class="main_slider owl-carousel">
+<div class="item">
+<img alt="Exclusive" src="https://maharanirestaurant.ch/assets/img/banner/2023-03-26/1.jpeg"/>
+<div class="item_caption animated_caption">
+<h3 class="curve_title">Exclusive</h3>
+<h2>Coffee <span>Shop</span></h2>
+<a class="btn1" href="#">See More</a>
+</div>
+</div>
+<div class="item">
+<img alt="Find Your" src="https://maharanirestaurant.ch/assets/img/banner/2023-03-25/1.jpeg"/>
+<div class="item_caption animated_caption">
+<h3 class="curve_title">Find Your</h3>
+<h2>Best <span>Cafe</span> Deals</h2>
+<a class="btn1" href="#">See More</a>
+</div>
+</div>
+<div class="item">
+<img alt="Welcome To" src="https://maharanirestaurant.ch/assets/img/banner/2023-03-25/.jpeg"/>
+<div class="item_caption animated_caption">
+<h3 class="curve_title">Welcome To</h3>
+<h2>Book <span>Your</span> Table</h2>
+<a class="btn1" href="#">See More</a>
+</div>
+</div>
+</div>
+<!--END SLIDER PART -->
+</header>
+<!--END HEADER TOP-->
+<div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="closenotice" role="dialog" tabindex="-1">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="exampleModalLabel">Restaurant is Closed!!</h5>
+<button aria-label="Close" class="close" data-dismiss="modal" type="button">
+<span aria-hidden="true">×</span>
+</button>
+</div>
+<div class="modal-body">
+<p>You order Only when restaurant is open. Our opening and closing Time is: 9:00AM- 10:00PM</p>
+</div>
+</div>
+</div>
+</div>
+<div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="addons" role="dialog" tabindex="-1">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="exampleModalLabel">Food Details</h5>
+<button aria-label="Close" class="close" data-dismiss="modal" type="button">
+<span aria-hidden="true">×</span>
+</button>
+</div>
+<div class="modal-body addonsinfo">
+</div>
+</div>
+</div>
+</div>
+<div class="search_box mt-5 mt-lg-0">
+<div class="container">
+<div class="search_box_inner">
+<form accept-charset="utf-8" action="https://maharanirestaurant.ch/menu" method="post">
+<input name="csrf_test_name" type="hidden" value="e1770078d0fc03166456d61a24c8cd2f"/>
+<div class="form-row">
+<div class="col-md-6 mb-3 mb-md-0">
+<label class="sr-only" for="itemsearch">Food Name</label>
+<div class="input-group">
+<div class="input-group-prepend">
+<div class="input-group-text">
+<i class="ti-search"></i>
+</div>
+</div>
+<input aria-required="true" class="form-control productSelection" id="product_name" name="product_name" onkeypress="producstList();" placeholder="Search Food Item" type="text"/> <input class="autocomplete_hidden_value" id="SchoolHiddenId" name="product_id" type="hidden"/>
+</div>
+</div>
+<div class="col-md-4 mb-3 mb-md-0">
+<label class="sr-only" for="location">Category</label>
+<div class="input-group">
+<div class="input-group-prepend">
+<div class="input-group-text">
+<i class="fa fa-cutlery"></i>
+</div>
+</div>
+<input class="form-control categorySelection" id="category_name" name="category_name" onkeypress="allcategoryList();" placeholder="Search Category" type="text"/><input class="autocomplete_hidden_value2" id="SchoolHiddenId2" name="category_id" type="hidden"/>
+</div>
+</div>
+<div class="col-md-2">
+<button class="btn btn-success" type="submit">Search</button>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+<!--Start About Us-->
+<section class="about_us sect_pad bg_img_area">
+<div class="bg_img_left wow fadeIn" data-wow-delay="0.5s"></div>
+<div class="container">
+<div class="row about_inner">
+<div class="col-lg-5 col-xl-6 text-center wow fadeIn">
+<div class="sect_title mb-4">
+<h2 class="curve_title">Discover</h2>
+<h3 class="big_title">OUR STORY</h3>
+</div>
+<div class="aboutus_text mb-lg-0 mb-5">
+<p class="mb-4"> </p><p class="p1" xss="removed"><strong>Namaste</strong></p>
+<p class="p1"> </p>
+<p class="p1">Willkommen im Restaurant Maharani Palace mit seiner exklusiven</p>
+<p class="p1">indischen Küche. Nehmen Sie sich Zeit, entspannen Sie</p>
+<p class="p1">sich und geniessen Sie unsere Auswahl der Nord- und südindischen</p>
+<p class="p1">Küche. Damit Sie verschiedene Menüs geniessen können,</p>
+<p class="p1">bereiten wir täglich neue und frische Variationen</p>
+<p class="p1">von Gemüse-, Chicken-, Fisch- oder Lamm-Curry zu.</p>
+<p class="p1">Mit unserer Küche entdecken Sie Indien, wo die Küche würzig und</p>
+<p class="p1">traditionell ist. Möchten Sie Ihr Essen gerne «indisch-scharf» (extrem</p>
+<p class="p1">scharf!) geniessen, dann lassen Sie dies bitte die Bedienung bei der Bestellaufnahme</p>
+<p class="p1">wissen.</p>
+<a class="simple_btn" href="#">Read more</a>
+</div>
+</div>
+<div class="col-lg-7 col-xl-6">
+<div class="row">
+<div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
+<div class="img_part mb-4 mb-sm-0 wow fadeIn" data-wow-delay="0.4s">
+<img alt="Discover" class="img-fluid" src="https://maharanirestaurant.ch/assets/img/banner/2023-03-26/B.jpg"/>
+</div>
+</div>
+<div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
+<div class="img_part mb-4 mb-sm-0 wow fadeIn" data-wow-delay="0.4s">
+<img alt="Discover" class="img-fluid" src="https://maharanirestaurant.ch/assets/img/banner/2023-03-26/a.jpg"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!--End About Us-->
+<!--Start Offer Area-->
+<section class="offer_area bg_two sect_pad">
+<div class="container">
+<div class="sect_title mb-5 text-center wow fadeIn">
+<h2 class="curve_title">Exclusive</h2>
+<h3 class="big_title">Best Offer</h3>
+</div>
+<div class="row offer_inner wow fadeIn" data-wow-delay="0.5s">
+<div class="offer_slider owl-carousel">
+</div>
+</div>
+</div>
+</section>
+<!--End Offer Area -->
+<!-- Start About Us Area-->
+<section class="about_us sect_pad bg_img_area">
+<div class="bg_img_right bg_overlay"></div>
+<div class="container">
+<div class="row about_inner">
+<div class="col-xl-6 col-lg-7 mb-lg-0 wow fadeIn">
+<div class="row">
+<div class="col-sm-6">
+<div class="img_part mb-4 mb-md-0">
+<a href="#"><img alt="Discover" class="img-fluid" src="https://maharanirestaurant.ch/assets/img/banner/2023-03-26/3.jpeg"/></a>
+</div>
+</div>
+<div class="col-sm-6">
+<div class="img_part mb-4"><a href="#"><img alt="Discover" class="img-fluid" src="https://maharanirestaurant.ch/assets/img/banner/2023-03-26/2.jpeg"/></a></div><div class="img_part mb-4"><a href="#"><img alt="Discover" class="img-fluid" src="https://maharanirestaurant.ch/assets/img/banner/2023-03-26/.jpeg"/></a></div> </div>
+</div>
+</div>
+<div class="col-xl-6 col-lg-5 text-center pl-lg-5 px-3 wow fadeIn" data-wow-delay="0.5s">
+<div class="sect_title my-4">
+<h2 class="curve_title">Discover</h2>
+<h3 class="big_title">OUR MENU</h3>
+</div>
+<div class="aboutus_text">
+<p class="mb-4"> </p><p class="p1">Für den Jugendschutz: Das Gesetz verbietet den Verkauf von Wein, Bier und Apfelwein an unter 16- Jährige. Spirituosen,</p>
+<p class="p1">Aperitifs und Alcopops an unter 18-Jährige. Das Personal darf einen Ausweis verlangen.</p>
+<a class="simple_btn" href="#">View Full Menu</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!--End About Us Area-->
+<!--Reservation Area-->
+<section class="reservation-area sect_pad bg_two">
+<div class="container">
+<div class="sect_title mb-5 text-center">
+<h2 class="curve_title">Reservation</h2>
+<h3 class="mb-3 big_title">BOOK YOUR TABLE</h3>
+</div>
+<div class="row">
+<div class="col-lg-12 text-center">
+<form accept-charset="utf-8" action="https://maharanirestaurant.ch/#" class="main-reservaton-form" method="post">
+<input name="csrf_test_name" type="hidden" value="e1770078d0fc03166456d61a24c8cd2f"/>
+<div class="row">
+<div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+<label for="reservation_person"><i class="ti-face-smile"></i></label>
+<input autocomplete="off" id="reservation_person" name="reservation_person" placeholder="Total Person" type="number"/>
+</div>
+<div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+<label for="reservation_date"><i class="ti-calendar"></i></label>
+<input autocomplete="off" class="datepickerreserve" id="reservation_date" name="reservation_date" placeholder="Expected Date" type="text"/>
+</div>
+<div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+<label for="reservation_time"><i class="ti-alarm-clock"></i></label>
+<input autocomplete="off" id="reservation_time" name="reservation_time" placeholder="Expected Time" type="text"/>
+</div>
+<div class="col-lg-3 col-md-6">
+<input id="checkurl" name="checkurl" type="hidden" value="https://maharanirestaurant.ch/hungry/checkavailablity"/>
+<button class="simple_btn" onclick="checkavailablity()" type="button">Check Availability</button>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</section>
+<div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="edit" role="dialog" tabindex="-1">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="exampleModalLabel">Reserve Table</h5>
+<button aria-label="Close" class="close" data-dismiss="modal" type="button">
+<span aria-hidden="true">×</span>
+</button>
+</div>
+<div class="modal-body editinfo">
+</div>
+</div>
+</div>
+</div>
+<!--End Reservation Area-->
+<!--Start Table Chart-->
+<section class="table_chart" id="searchreservation">
+<div class="container">
+<div class="row table_chart_inner py-5">
+</div>
+</div>
+</section>
+<!--End Table Chart-->
+<!--Menu AREA-->
+<section class="menu_area sect_pad3 bg_img_area">
+<div class="bg_img_left img_2 bg_overlay"></div>
+<div class="container">
+<div class="row">
+<div class="col-lg-4 wow fadeIn">
+<div class="sect_title mt-lg-5 mt-0">
+<h2 class="curve_title">Specials</h2>
+<h3 class="big_title">FOOD MENU</h3>
+</div>
+</div>
+<div class="col-lg-8 wow fadeIn">
+<div class="menu_slider owl-carousel">
+<div class="menu_item">
+<div class="menu_info">
+<a class="h1 d-block mb-3" href="https://maharanirestaurant.ch/details/3/1">Gulab Jamun</a>
+<p>2 Stk. Frittierte Milchteigkugel in Zuckersirup 2 pcs made mainly from milk solids, traditionally from freshly curdled milk</p>
+<h2>chf7.00</h2>
+<a class="simple_btn" href="#"><i class="ti-shopping-cart"></i><span>add to cart</span></a>
+</div>
+<div class="menu_img">
+<img alt="Gulab Jamun" src="https://maharanirestaurant.ch/application/modules/itemmanage/assets/images/small/gulab-jamun-3856052_640.jpg"/>
+</div>
+</div>
+<div class="menu_item">
+<div class="menu_info">
+<a class="h1 d-block mb-3" href="https://maharanirestaurant.ch/details/3/2">Gulab Jamun</a>
+<p>2 Stk. Frittierte Milchteigkugel in Zuckersirup 2 pcs made mainly from milk solids, traditionally from freshly curdled milk</p>
+<h2>chf70.00</h2>
+<a class="simple_btn" href="#"><i class="ti-shopping-cart"></i><span>add to cart</span></a>
+</div>
+<div class="menu_img">
+<img alt="Gulab Jamun" src="https://maharanirestaurant.ch/application/modules/itemmanage/assets/images/small/gulab-jamun-3856052_640.jpg"/>
+</div>
+</div>
+<div class="menu_item">
+<div class="menu_info">
+<a class="h1 d-block mb-3" href="https://maharanirestaurant.ch/details/9/11">Samosa</a>
+<p>Teigtaschen gefüllt mit Gemüse, serviert mit Chutney Patties filled with vegetables, served with Chutney sauce</p>
+<h2>chf8.00</h2>
+<a class="simple_btn" href="#"><i class="ti-shopping-cart"></i><span>add to cart</span></a>
+</div>
+<div class="menu_img">
+<img alt="Samosa" src="https://maharanirestaurant.ch/application/modules/itemmanage/assets/images/small/pexels-karthikeyan-anand-14477873.jpg"/>
+</div>
+</div>
+<div class="menu_item">
+<div class="menu_info">
+<a class="h1 d-block mb-3" href="https://maharanirestaurant.ch/details/9/12">Samosa</a>
+<p>Teigtaschen gefüllt mit Gemüse, serviert mit Chutney Patties filled with vegetables, served with Chutney sauce</p>
+<h2>chf16.00</h2>
+<a class="simple_btn" href="#"><i class="ti-shopping-cart"></i><span>add to cart</span></a>
+</div>
+<div class="menu_img">
+<img alt="Samosa" src="https://maharanirestaurant.ch/application/modules/itemmanage/assets/images/small/pexels-karthikeyan-anand-14477873.jpg"/>
+</div>
+</div>
+<div class="menu_item">
+<div class="menu_info">
+<a class="h1 d-block mb-3" href="https://maharanirestaurant.ch/details/10/13">Gemüse Pakora</a>
+<p>Gemüse im Kirchererbsenteig frittiert, serviert mit Chutney Fried vegetables in chickpea batter, served with chutney sauce</p>
+<h2>chf8.00</h2>
+<a class="simple_btn" href="#"><i class="ti-shopping-cart"></i><span>add to cart</span></a>
+</div>
+<div class="menu_img">
+<img alt="Gemüse Pakora" src="https://maharanirestaurant.ch/application/modules/itemmanage/assets/images/small/grilled-chicken-nuggets-bowl-crackers-spices-sauce-side-view.jpg"/>
+</div>
+</div>
+<div class="menu_item">
+<div class="menu_info">
+<a class="h1 d-block mb-3" href="https://maharanirestaurant.ch/details/8/14">Indian Masala Chai</a>
+<p>Schwarztee, Milch, Nelken, Zimt, Ingwer, Zucker, Kardamon</p>
+<h2>chf4.80</h2>
+<a class="simple_btn" href="#"><i class="ti-shopping-cart"></i><span>add to cart</span></a>
+</div>
+<div class="menu_img">
+<img alt="Indian Masala Chai" src="https://maharanirestaurant.ch/application/modules/itemmanage/assets/images/small/chai-3681248_640.jpg"/>
+</div>
+</div>
+<div class="menu_item">
+<div class="menu_info">
+<a class="h1 d-block mb-3" href="https://maharanirestaurant.ch/details/11/15">Chicken Pakora</a>
+<p>Poulet im Kirchererbsenteig frittiert, serviert mit Chutney Sauce Fried boneless Chicken in chickpea batter, served with chutney sauce</p>
+<h2>chf12.00</h2>
+<a class="simple_btn" href="#"><i class="ti-shopping-cart"></i><span>add to cart</span></a>
+</div>
+<div class="menu_img">
+<img alt="Chicken Pakora" src="https://maharanirestaurant.ch/application/modules/itemmanage/assets/images/small/pexels-lukas-1352270.jpg"/>
+</div>
+</div>
+<div class="menu_item">
+<div class="menu_info">
+<a class="h1 d-block mb-3" href="https://maharanirestaurant.ch/details/12/16">Crevetten Pakora</a>
+<p>Crevetten im Kichererbsenteig frittiert, serviert mit Chutney Sau-ce Fried prawns in chickpea batter, served with chutney sauce</p>
+<h2>chf12.00</h2>
+<a class="simple_btn" href="#"><i class="ti-shopping-cart"></i><span>add to cart</span></a>
+</div>
+<div class="menu_img">
+<img alt="Crevetten Pakora" src="https://maharanirestaurant.ch/application/modules/itemmanage/assets/images/small/Crevetten_Pakora.png"/>
+</div>
+</div>
+<div class="menu_item">
+<div class="menu_info">
+<a class="h1 d-block mb-3" href="https://maharanirestaurant.ch/details/17/21">Grüner Salat | Green salad</a>
+<p>mit französischem, italienischem oder indischem Dressing with french, Italian or Indian Sauce</p>
+<h2>chf8.00</h2>
+<a class="simple_btn" href="#"><i class="ti-shopping-cart"></i><span>add to cart</span></a>
+</div>
+<div class="menu_img">
+<img alt="Grüner Salat | Green salad" src="https://maharanirestaurant.ch/application/modules/itemmanage/assets/images/small/salad-791891_640.jpg"/>
+</div>
+</div>
+<div class="menu_item">
+<div class="menu_info">
+<a class="h1 d-block mb-3" href="https://maharanirestaurant.ch/details/25/29">Daal Tadka</a>
+<p>Linsen-Curry, serviert mit Basmatireis Lentils served with Basmati Rice</p>
+<h2>chf22.00</h2>
+<a class="simple_btn" href="#"><i class="ti-shopping-cart"></i><span>add to cart</span></a>
+</div>
+<div class="menu_img">
+<img alt="Daal Tadka" src="https://maharanirestaurant.ch/application/modules/itemmanage/assets/images/small/Dal_Tadka.jpeg"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!--Menu AREA END-->
+<!--TEAM AREA-->
+<!--TEAM AREA END-->
+<!--start for hidden cart-->
+<div class="cartlist_display_none" id="cartitem"></div>
+<!-- Newsletter -->
+<section class="newsletter_area sect_pad">
+<div class="container">
+<div class="row">
+<div class="col-lg-6 offset-lg-3 text-center">
+<h2 class="mb-2">Subscribe to Newsletter</h2>
+<p class="mb-4">Subscribe to Receive Our Weekly Promotion</p>
+<div class="newsletter-form">
+<input class="form-control" id="youremail" name="youremail" placeholder="Enter Your Email" type="text"/>
+<button class="btn" onclick="subscribeemail()" type="button">subscribe</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- End Newsletter -->
+<!-- Map Area -->
+<section class="map_area">
+<div class="container-fluid">
+<div class="row map_area">
+<div class="map"><p><iframe allowfullscreen="" height="450" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2501.06175833045!2d7.434573712774113!3d46.93771780752883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478e39f2e94ca345:0xec4456a359f2c6da!2sMaharani Palace!5e0!3m2!1sen!2sin!4v1679756773522!5m2!1sen!2sin" style="border:0;" width="600"></iframe></p></div>
+<div class="office_address wow fadeIn" data-wow-delay="0.3s">
+<h2 class="mb-4">Our address</h2>
+<address>
+<p>Maharani Palace<br/>Sulgenauweg 38<br/>3007 BERN</p>
+<p><br/><a class="__cf_email__" data-cfemail="f598949d9487949b9c8594999496909790879bb59298949c99db969a98" href="/cdn-cgi/l/email-protection">[email protected]</a></p>
+<p><br/>+41782625199<br/>+41764927902</p>
+</address> <button class="simple_btn"><span>Get Directions</span></button>
+</div>
+</div>
+</div>
+</section>
+<!-- End Map Area -->
+<!--Footer Area-->
+<div class="footer-area">
+<div class="container">
+<div class="row footer-inner">
+<div class="col-lg-4">
+<div class="footer-logo-area mb-5 mb-lg-0">
+<div class="footer-logo">
+<a href="https://maharanirestaurant.ch/"><img alt="footer logo" src="https://maharanirestaurant.ch/assets/img/2023-03-25/2.jpeg"/></a>
+</div>
+<div class="footer-init">
+<p class="p1">Willkommen im Restaurant Maharani Palace mit seiner exklusiven</p>
+<p class="p1">indischen Küche. Nehmen Sie sich Zeit, entspannen Sie</p>
+<p class="p1">sich und geniessen Sie unsere Auswahl der Nord- und südindischen</p>
+<p class="p1">Küche. Damit Sie verschiedene Menüs geniessen können,</p>
+<p class="p1">bereiten wir täglich neue und frische Variationen</p>
+<p class="p1">von Gemüse-, Chicken-, Fisch- oder Lamm-Curry zu.</p> </div>
+<div class="footer-social-bookmark">
+<ul>
+<li><a href="https://www.facebook.com/people/Maharani-Palace/pfbid02UFiJvJPkZoMjDzhPwCsnz6giAXKwnAMq5UP34YrnYnQze73kVnoh8mPo3mKjAL3yl/"><i class="fa fa-facebook"></i></a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-lg-4">
+<div class="footer_widget mb-5 mb-lg-0">
+<h4>Available On</h4>
+<div class="footer_widget_body">
+<p>Montag - Freitag</p>
+<p>10:00 - 11:00<br/>17:00 23:00</p>
+<p>Samstag   17:00 - 23:00<br/>Sontag     17:00 - 23:00</p>
+<p> </p> </div>
+</div>
+</div>
+<div class="col-lg-4">
+<div class="footer_widget">
+<h4>Contact Us</h4>
+<div class="footer_widget_body">
+<div class="footer-address">
+<p>Maharani Palace<br/>Sulgenauweg 38<br/>3007 BERN</p>
+<p><br/><a class="__cf_email__" data-cfemail="472a262f263526292e37262b2624222522352907202a262e2b6924282a" href="/cdn-cgi/l/email-protection">[email protected]</a></p>
+<p><br/>+41782625199<br/>+41764927902</p> </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer_bottom">
+<div class="container">
+<div class="row">
+<div class="col-xl-6">
+<div class="footer-copyright">
+							2025 Maharani Restaurant  | Website By  <a href="https://wa.me/917014296654">Raghvendra</a> </div>
+</div>
+<div class="col-xl-6">
+<div class="footer-menu">
+<ul>
+<li><a href="https://maharanirestaurant.ch/terms">Teams of use</a></li>
+<li><a href="https://maharanirestaurant.ch/privacy">Privacy Policy</a></li>
+<li><a href="https://maharanirestaurant.ch/contact">Contact</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--End Footer Area-->
+<a class="cd-top" href="#0">
+<i class="ti-arrow-up"></i>
+</a>
+<!-- end whatsapp modules -->
+<!--====== SCRIPTS JS ======-->
+
+<link href="https://maharanirestaurant.ch/assets/css/jquery-ui.min.css" rel="stylesheet" type="text/css"/>
+
+
+
+
+
+
+
+
+<!--===== ACTIVE JS=====-->
+
+
+
+</body>
+</html>

@@ -41,14 +41,14 @@ $ conda env create -f conda.yml
 1. modify template.yml
 2. run `conda env update`:
 ```sh
-$ conda env update --name sample --file conda.yml --prune
+$ conda env update --name restaurant-recommend-classifier --file conda.yml --prune
 ```
-`prune` uninstalls dependencies which were removed from sample.yml
+`prune` uninstalls dependencies which were removed from conda.yml
 
 **Use** environment:
 before working on the project always make sure you have the environment activated:
 ```sh
-$ conda activate sample
+$ conda activate restaurant-recommend-classifier
 ```
 
 **Check the version** of a specific package (e.g. `html5lib`) in the environment:
@@ -70,6 +70,7 @@ $ conda info --envs
 
 **Remove** environment:
 ```sh
+$ conda env remove -n restaurant-recommend-classifier
 $ conda env remove -n sample
 ```
 
