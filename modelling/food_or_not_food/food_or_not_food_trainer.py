@@ -5,26 +5,38 @@ from datetime import datetime
 import torch
 import torch.nn as nn
 import torch.optim as optim
-from torchvision import datasets
+from torchvision import datasets, transforms
 from torchvision.models import resnet18, ResNet18_Weights
+from torch.utils.data import ConcatDataset
 from torch.utils.data import DataLoader
+from sklearn.metrics import precision_recall_fscore_support
+
+from tqdm import tqdm
 
 # command line example:
-# python food_or_not_food_trainer.py --train_dir C:/nfr/food_or_not_food_data/archive/food_data/train --test_dir C:/nfr/food_or_not_food_data/archive/food_data/test
+# python food_or_not_food_trainer.py --train_dir C:/nfr/food_or_not_food_data/dataset/train --test_dir C:/nfr/food_or_not_food_data/dataset/test --validation_dir C:/nfr/food_or_not_food_data/dataset/validation
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Train a model to classify food or not food images.")
     parser.add_argument("--train_dir", type=str, required=True, help="Path to the training data directory")
     parser.add_argument("--test_dir", type=str, required=True, help="Path to the testing data directory")
-    parser.add_argument("--max_epochs", type=int, required=False, help="Number of epochs to train")
+    parser.add_argument("--validation_dir", type=str, required=False, help="Path to the validation data directory (optional)")
+    parser.add_argument("--max_epochs", type=int, default=30, required=False, help="Number of epochs to train (default: 30) (optional)")
     args = parser.parse_args()
 
     # food or not food dataset archive with training and testing data
     train_dir = os.path.abspath(args.train_dir)
     test_dir = os.path.abspath(args.test_dir)
 
-    # get max_epochs from command line argument or set default
-    max_epochs = args.max_epochs if args.max_epochs else 30
+    # check if validation_dir is provided, if not, set it to the test_dir
+    if args.validation_dir:
+        validation_dir = os.path.abspath(args.validation_dir)
+    else:
+        print("No validation directory provided, using test directory for validation.")
+        validation_dir = test_dir
+
+    # get max_epochs from command line argument
+    max_epochs = args.max_epochs
 
     # check if the directories exist and exit the program
     if not os.path.exists(train_dir):
@@ -38,18 +50,51 @@ if __name__ == "__main__":
     weights = ResNet18_Weights.DEFAULT
     model = resnet18(weights=weights)
 
-    # get the transformations from the weights
-    transform = weights.transforms()
+    default_mean = weights.transforms().mean
+    default_std = weights.transforms().std
 
-    train_data = datasets.ImageFolder(train_dir, transform=transform)
-    test_data = datasets.ImageFolder(test_dir, transform=transform)
+    # define the transformations for the training data
+    train_transform = transforms.Compose([
+        transforms.RandomResizedCrop(224), # random resized and crop to 224x224
+        transforms.RandomHorizontalFlip(), # random horizontal flip
+        transforms.RandomRotation(15), # random rotation
+        transforms.ColorJitter(brightness=0.2, contrast=0.2, saturation=0.2, hue=0.1), # random color jitter
+        transforms.RandomAffine(degrees=0, translate=(0.1, 0.1)),  # random translation
+        transforms.RandomVerticalFlip(p=0.1), # random vertical flip
+        transforms.RandomGrayscale(p=0.1), # random grayscale conversion
+        transforms.ToTensor(),
+        transforms.Normalize(mean=default_mean, std=default_std),
+    ])
+
+    # define the transformations for the testing data
+    test_transform = transforms.Compose([
+        transforms.Resize(256),
+        transforms.CenterCrop(224),
+        transforms.ToTensor(),
+        transforms.Normalize(mean=default_mean, std=default_std),
+    ])
+
+    # number of augmentations per image
+    augmentations_per_image = 10
+
+    # repeat the training dataset with augmentations
+    augmented_datasets = [datasets.ImageFolder(train_dir, transform=train_transform)
+                          for _ in tqdm(
+                              range(augmentations_per_image),
+                              desc="Augmenting training data",
+                              unit="augmentation")
+                          ]
+    train_data = ConcatDataset(augmented_datasets)
+    test_data = datasets.ImageFolder(test_dir, transform=test_transform)
+    validation_data = datasets.ImageFolder(validation_dir, transform=test_transform)
 
     # prepare the data loaders
     train_loader = DataLoader(train_data, batch_size=64, shuffle=True, num_workers=8, pin_memory=True)
     test_loader = DataLoader(test_data, batch_size=64)
+    validation_loader = DataLoader(validation_data, batch_size=64)
 
     # define number of classes
-    num_classes = len(train_data.classes)
+    num_classes = len(test_data.classes)
     # replace the final layer
     model.fc = nn.Linear(model.fc.in_features, num_classes)
 
@@ -96,13 +141,13 @@ if __name__ == "__main__":
         model.eval()
         val_loss = 0.0
         with torch.no_grad():
-            for inputs, labels in test_loader:
+            for inputs, labels in validation_loader:
                 inputs, labels = inputs.to(device), labels.to(device)
                 outputs = model(inputs)
                 loss = criterion(outputs, labels)
                 val_loss += loss.item()
 
-        avg_val_loss = val_loss / len(test_loader)
+        avg_val_loss = val_loss / len(validation_loader)
         print(f"{datetime.now()}: Epoch {epoch + 1}, Validation Loss: {avg_val_loss:.4f}")
 
         # Check for improvement
@@ -129,15 +174,25 @@ if __name__ == "__main__":
     print(f"{datetime.now()}: Evaluating the best model on the test set...")
 
     model.eval()
-    correct = 0
-    total = 0
+    all_predictions = []
+    all_labels = []
     with torch.no_grad():
         for inputs, labels in test_loader:
             inputs, labels = inputs.to(device), labels.to(device)
             outputs = model(inputs)
             _, predicted = torch.max(outputs, 1)
-            correct += (predicted == labels).sum().item()
-            total += labels.size(0)
+            all_predictions.extend(predicted.cpu().numpy())
+            all_labels.extend(labels.cpu().numpy())
 
-    accuracy = correct / total
+    # calculate the accuracy
+    accuracy = sum([p == t for p, t in zip(all_predictions, all_labels)]) / len(all_labels)
     print(f"{datetime.now()}: Test Accuracy: {accuracy * 100:.2f}%")
+
+    # calculate precision, recall, and F1-score
+    precision, recall, f1, _ = precision_recall_fscore_support(
+        all_labels, all_predictions, average="binary" if len(set(all_labels)) == 2 else "macro"
+    )
+
+    print(f"{datetime.now()}: Precision: {precision:.4f}")
+    print(f"{datetime.now()}: Recall:    {recall:.4f}")
+    print(f"{datetime.now()}: F1-Score:  {f1:.4f}")
