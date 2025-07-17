@@ -12,6 +12,7 @@ website:
             - index.qmd
             - project_charta.qmd
             - data_report.qmd
+            - restaraunt_scraper.qmd
             - modelling_report.qmd
             - evaluation.qmd
             - food_or_not_food_filter.qmd

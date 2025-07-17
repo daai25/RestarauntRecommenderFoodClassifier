@@ -14,7 +14,7 @@ def get_demonym(country_name):
 
 if __name__ == "__main__":
     input_file = "all_osm_countries.json"
-    output_file = "cuisine_types.txt"
+    output_file = "../cuisine_types.txt"
 
     # if the output file was already created, do not run the script again
     if os.path.exists(output_file):
