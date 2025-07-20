@@ -8,6 +8,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 import networkx as nx
 
 from .ImageFilterExtension import ImageFilterExtension
+from .FilterStatistics import FilterStatistics
 
 _weights = ResNet18_Weights.DEFAULT
 
@@ -119,17 +120,17 @@ class SimilarFeatVecImageFilter(ImageFilterExtension):
 
         return images, list(nx.connected_components(G))
 
-    def _do_filtering(self, directory: str, statistics: dict, delete: bool=True) -> dict:
+    def _do_filtering(self, directory: str, statistics: FilterStatistics, delete: bool=True) -> FilterStatistics:
         """
         Scan the directory for images and filter out similar images based on feature vectors.
 
         Args:
             directory (str): Path to the directory containing images.
-            statistics (dict): A dictionary to store statistics about the filtering process.
+            statistics (FilterStatistics): A data class to store statistics about the filtering process.
             delete (bool): If True, images that do not meet the criteria will be deleted; otherwise,
                            they will be added to filtered_image_paths. Defaults to True.
         Returns:
-            dict: Updated statistics including counts of filtered images, and any errors encountered.
+            FilterStatistics: Updated statistics including counts of filtered images, and any errors encountered.
         """
         images, groups = self._create_groups(directory)
 
@@ -145,21 +146,21 @@ class SimilarFeatVecImageFilter(ImageFilterExtension):
             for i in selected:
                 image_path = images[i]
 
-                if image_path in statistics["filtered_image_paths"]:
+                if image_path in statistics.filtered_image_paths:
                     # Skip if the image is already in the filtered paths
                     continue
 
-                statistics["total_filtered"][self.__class__.__name__] += 1
+                statistics.total_filtered[self.__class__.__name__] += 1
                 if delete:
                     try:
                         os.remove(image_path)
                     except Exception as e:
                         if self.verbose:
                             print(f"Error processing {image_path}: {e}")
-                        statistics["num_of_errors"] += 1
-                        statistics["captured_errors"].append(str(e))
+                        statistics.num_of_errors += 1
+                        statistics.captured_errors.append(str(e))
                 else:
                     # Add to filtered paths if not deleting
-                    statistics["filtered_image_paths"].add(image_path)
+                    statistics.filtered_image_paths.add(image_path)
 
         return statistics

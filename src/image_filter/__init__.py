@@ -3,3 +3,4 @@ from .ImageFilterExtension import ImageFilterExtension
 from .FoodOrNotImageFilter import FoodOrNotImageFilter
 from .SimilarHashImageFilter import SimilarHashImageFilter
 from .SimilarFeatVecImageFilter import SimilarFeatVecImageFilter
+from .FilterStatistics import FilterStatistics

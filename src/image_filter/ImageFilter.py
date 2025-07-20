@@ -1,4 +1,5 @@
 from .ImageFilterExtension import ImageFilterExtension
+from .FilterStatistics import FilterStatistics
 import cv2
 import os
 import hashlib
@@ -41,33 +42,17 @@ class ImageFilter:
         self.blur_threshold = blur_threshold
         self.uniform_tolerance = uniform_tolerance
         self.image_hash_map = {} # to store hashes of processed images
-        self.statistics = {
-            "total_images": 0,
-            "total_blurry_images": 0,
-            "total_uniform_images": 0,
-            "total_duplicate_images": 0,
-            "total_filtered": {ext.__class__.__name__: 0 for ext in filter_extensions},
-            "filtered_image_paths": set(), # saves all the paths of filtered images, if delete is False
-            "total_valid_images": 0,
-            "num_of_errors": 0,
-            "captured_errors": [] # to store error messages
-        }
+        self.statistics = FilterStatistics(
+            total_filtered={ext.__class__.__name__: 0 for ext in filter_extensions}
+        )
 
     def _reset_statistics(self):
         """
         Reset the statistics dictionary to its initial state.
         """
-        self.statistics = {
-            "total_images": 0,
-            "total_blurry_images": 0,
-            "total_uniform_images": 0,
-            "total_duplicate_images": 0,
-            "total_filtered": {ext.__class__.__name__: 0 for ext in self.filter_extensions},
-            "filtered_image_paths": set(),  # saves all the paths of filtered images, if delete is False
-            "total_valid_images": 0,
-            "num_of_errors": 0,
-            "captured_errors": []  # to store error messages
-        }
+        self.statistics = FilterStatistics(
+            total_filtered={ext.__class__.__name__: 0 for ext in self.filter_extensions}
+        )
 
     def _is_blurry(self, image_path: str) -> bool:
         """
@@ -139,7 +124,7 @@ class ImageFilter:
             self.image_hash_map[file_hash] = image_path
             return False
 
-    def filter_images(self, directory: str, is_relative: bool=True, delete: bool=True) -> dict:
+    def filter_images(self, directory: str, is_relative: bool=True, delete: bool=True) -> FilterStatistics:
         """
         Filter images in the specified directory based on various criteria:
         - Blurry images (Laplacian variance below a threshold)
@@ -152,7 +137,7 @@ class ImageFilter:
             is_relative (bool): If True, the path is treated as relative; otherwise, it is absolute.
             delete (bool): If True, images that do not meet the criteria will be deleted; otherwise, they will be added to filtered_image_paths.
         Returns:
-            dict: Updated statistics including counts of filtered images, and any errors encountered.
+            FilterStatistics: The filtering statistics including counts of filtered images, and any errors encountered.
         """
         self.image_hash_map = {}  # reset the hash map for each filtering operation
         self._reset_statistics() # reset statistics for each new filtering operation
@@ -172,20 +157,20 @@ class ImageFilter:
                     continue
 
                 image_path = os.path.join(root, filename)
-                self.statistics["total_images"] += 1
+                self.statistics.total_images += 1
 
                 if self._is_blurry(image_path):
-                    self.statistics["total_blurry_images"] += 1
+                    self.statistics.total_blurry_images += 1
                     if delete:
                         os.remove(image_path)
                     else:
-                        self.statistics["filtered_image_paths"].add(image_path)
+                        self.statistics.filtered_image_paths.add(image_path)
                 elif self._is_uniform(image_path):
-                    self.statistics["total_uniform_images"] += 1
+                    self.statistics.total_uniform_images += 1
                     if delete:
                         os.remove(image_path)
                     else:
-                        self.statistics["filtered_image_paths"].add(image_path)
+                        self.statistics.filtered_image_paths.add(image_path)
 
         # secondly walk through the directory and gather all the duplicate images
         # if delete is False, checks if the image is already in the filtered_image_paths set
@@ -197,15 +182,15 @@ class ImageFilter:
                 image_path = os.path.join(root, filename)
 
                 # check if the image is already in the filtered_image_paths set
-                if image_path in self.statistics["filtered_image_paths"]:
+                if image_path in self.statistics.filtered_image_paths:
                     continue
 
                 if self._is_duplicate(image_path):
-                    self.statistics["total_duplicate_images"] += 1
+                    self.statistics.total_duplicate_images += 1
                     if delete:
                         os.remove(image_path)
                     else:
-                        self.statistics["filtered_image_paths"].add(image_path)
+                        self.statistics.filtered_image_paths.add(image_path)
 
         # finally apply all the filter extensions
         for ext in self.filter_extensions:
@@ -214,12 +199,12 @@ class ImageFilter:
             except Exception as e:
                 if ext.verbose:
                     print(f"Error processing with {ext.__class__.__name__}: {e}")
-                self.statistics["num_of_errors"] += 1
-                self.statistics["captured_errors"].append(str(e))
+                self.statistics.num_of_errors += 1
+                self.statistics.captured_errors.append(str(e))
 
         # update the total valid images count
-        self.statistics["total_valid_images"] =(
-                self.statistics["total_images"] - len(self.statistics["filtered_image_paths"])
+        self.statistics.total_valid_images =(
+                self.statistics.total_images - len(self.statistics.filtered_image_paths)
         )
 
         return self.statistics

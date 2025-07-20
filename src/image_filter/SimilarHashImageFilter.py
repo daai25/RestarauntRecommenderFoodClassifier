@@ -1,7 +1,9 @@
 import os
-from .ImageFilterExtension import  ImageFilterExtension
 import imagehash
 from PIL import Image
+
+from .ImageFilterExtension import  ImageFilterExtension
+from .FilterStatistics import FilterStatistics
 
 def _compute_file_hash_phash(path):
     """
@@ -36,16 +38,16 @@ class SimilarHashImageFilter(ImageFilterExtension):
         self.hamming_distance = hamming_distance
         self.hash_map = {}  # to store hashes of processed images
 
-    def _do_filtering(self, directory: str, statistics: dict, delete: bool=True) -> dict:
+    def _do_filtering(self, directory: str, statistics: FilterStatistics, delete: bool=True) -> FilterStatistics:
         """
         Scan the directory for images and filter out similar images based on perceptual hashing.
 
         Args:
             directory (str): Directory path to scan for images.
-            statistics (dict): A dictionary to store statistics about the filtering process.
+            statistics (FilterStatistics): A data class to store statistics about the filtering process.
             delete (bool): If True, delete images that are similar. Default is True.
         Returns:
-            dict: A dictionary containing diverse statistics about the processed images.
+            FilterStatistics: Updated statistics including counts of filtered images, and any errors encountered.
         """
         self.hash_map = {}  # reset the hash map for each filtering operation
 
@@ -57,7 +59,7 @@ class SimilarHashImageFilter(ImageFilterExtension):
                 image_path = os.path.join(root, filename)
 
                 # if the image is already in the filtered_image_paths set, skip it
-                if image_path in statistics["filtered_image_paths"]:
+                if image_path in statistics.filtered_image_paths:
                     continue
 
                 # calculate the hashes of the images and store it in the hash_map with the respective image path
@@ -67,12 +69,12 @@ class SimilarHashImageFilter(ImageFilterExtension):
                     # if the hamming distance is less than or equal to the specified threshold, consider the images similar
                     for existing_hash, existing_path in self.hash_map.items():
                         if image_hash - existing_hash <= self.hamming_distance:
-                            statistics["total_filtered"][self.__class__.__name__] += 1
+                            statistics.total_filtered[self.__class__.__name__] += 1
                             similar_found = True
                             if delete:
                                 os.remove(image_path)
                             else:
-                                statistics["filtered_image_paths"].add(image_path)
+                                statistics.filtered_image_paths.add(image_path)
                             break
 
                     if not similar_found:
@@ -81,7 +83,7 @@ class SimilarHashImageFilter(ImageFilterExtension):
                 except Exception as e:
                     if self.verbose:
                         print(f"Error processing {image_path}: {e}")
-                    statistics["num_of_errors"] += 1
-                    statistics["captured_errors"].append(str(e))
+                    statistics.num_of_errors += 1
+                    statistics.captured_errors.append(str(e))
 
         return statistics

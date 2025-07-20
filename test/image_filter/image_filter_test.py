@@ -132,37 +132,37 @@ def test_image_filter():
     stats = img_filter.filter_images(_test_images_directory, is_relative=True, delete=False)
 
     # assert if the total number of images is correct
-    assert stats["total_images"] == len(_test_images), \
-        f"Total number of images is incorrect: {stats['total_images']}"
+    assert stats.total_images == len(_test_images), \
+        f"Total number of images is incorrect: {stats.total_images}"
 
     # assert if the number of blurry images is correct
     # it should detect 25 blurry images, 20 from blurry not food images and 5 from uniform images
-    assert stats["total_blurry_images"] == 25, \
-        f"Number of blurry images is incorrect: {stats['total_blurry_images']}"
+    assert stats.total_blurry_images == 25, \
+        f"Number of blurry images is incorrect: {stats.total_blurry_images}"
 
     # assert if the number of uniform images is correct
     # no more images are detected as uniform images, because it was already detected as blurry images
-    assert stats["total_uniform_images"] == 0, \
-        f"Number of uniform images is incorrect: {stats['total_uniform_images']}"
+    assert stats.total_uniform_images == 0, \
+        f"Number of uniform images is incorrect: {stats.total_uniform_images}"
 
     # assert if the number of duplicate images is correct
     # it should detect 15 duplicated images, 10 from not food and 5 from food images
-    assert stats["total_duplicate_images"] == 15, \
-        f"Number of duplicate images is incorrect: {stats['total_duplicate_images']}"
+    assert stats.total_duplicate_images == 15, \
+        f"Number of duplicate images is incorrect: {stats.total_duplicate_images}"
 
     # assert if the errors were correctly captured and if the number of errors is zero
-    assert stats["num_of_errors"] == len(stats["captured_errors"]), f"Errors were not captured correctly: {stats['captured_errors']}"
-    assert stats["num_of_errors"] == 0, f"Errors were captured: {stats['captured_errors']}"
+    assert stats.num_of_errors == len(stats.captured_errors), f"Errors were not captured correctly: {stats.captured_errors}"
+    assert stats.num_of_errors == 0, f"Errors were captured: {stats.captured_errors}"
 
     # assert if the number of filtered images is correct
-    assert stats["total_filtered"][food_filter.__class__.__name__] == 10, \
-        f"Number of filtered images is incorrect: {stats['total_filtered'][food_filter.__class__.__name__]}"
+    assert stats.total_filtered[food_filter.__class__.__name__] == 10, \
+        f"Number of filtered images is incorrect: {stats.total_filtered[food_filter.__class__.__name__]}"
 
     # check if at least all the images_paths are included in the filtered image paths
     for image in _filter_images:
         image = os.path.join(_test_images_directory, image)
         found = False
-        for filtered_image in stats["filtered_image_paths"]:
+        for filtered_image in stats.filtered_image_paths:
             if image == filtered_image:
                 found = True
                 break
@@ -170,5 +170,5 @@ def test_image_filter():
         assert found, f"Image {image} is not filtered correctly, it is still in the filtered image paths"
 
     # check if the number of valid images is correct
-    assert stats["total_valid_images"] == 10, \
-        f"Number of valid images is incorrect: {stats['total_valid_images']}"
+    assert stats.total_valid_images == 10, \
+        f"Number of valid images is incorrect: {stats.total_valid_images}"

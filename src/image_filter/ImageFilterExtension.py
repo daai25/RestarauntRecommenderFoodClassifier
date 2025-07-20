@@ -1,4 +1,4 @@
-import os
+from .FilterStatistics import FilterStatistics
 from abc import ABC, abstractmethod
 
 class ImageFilterExtension(ABC):
@@ -15,27 +15,29 @@ class ImageFilterExtension(ABC):
         self.verbose = verbose
 
     @abstractmethod
-    def _do_filtering(self, directory: str, statistics: dict, delete: bool=True) -> dict:
+    def _do_filtering(self, directory: str, statistics: FilterStatistics, delete: bool=True) -> FilterStatistics:
         """
         Abstract method to filter images based on specific criteria.
 
         Args:
             directory (str): Directory path to scan for images.
-            statistics (dict): A dictionary to store statistics about the filtering process.
+            statistics (FilterStatistics): A data class to store statistics about the filtering process.
             delete (bool): If True, delete images that do not meet the criteria directly. Default is True.
+        Returns:
+            FilterStatistics: The updated statistics including counts of filtered images, and any errors encountered.
         """
         pass
 
-    def filter_images(self, directory: str, statistics: dict, delete: bool=True) -> dict:
+    def filter_images(self, directory: str, statistics: FilterStatistics, delete: bool=True) -> FilterStatistics:
         """
         Scan the directory for images and apply filtering criteria.
 
         Args:
             directory (str): Directory path to scan for images.
-            statistics (dict): A dictionary to store statistics about the filtering process.
+            statistics (FilterStatistics): A data class to store statistics about the filtering process.
             delete (bool): If True, delete images that do not meet the criteria directly. Default is True.
         Returns:
-            A dictionary containing diverse statistics about the processed images.
+            FilterStatistics: The updated statistics including counts of filtered images, and any errors encountered.
         """
         # check if the directory exists
         # if os.path.exists(directory):
