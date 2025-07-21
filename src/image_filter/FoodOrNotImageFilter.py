@@ -3,7 +3,7 @@ import torch
 import torch.nn as nn
 from torchvision import transforms
 from PIL import Image
-from torchvision.models import resnet18, ResNet18_Weights
+from torchvision.models import resnet18, resnet50, ResNet18_Weights, ResNet50_Weights
 
 from .ImageFilterExtension import ImageFilterExtension
 from .FilterStatistics import FilterStatistics
@@ -23,7 +23,7 @@ class FoodOrNotImageFilter(ImageFilterExtension):
 
         Args:
             verbose (bool): If True, print detailed information during processing.
-            version (str): Version of the model to use for classification. Default is "v2".
+            version (str): Version of the model to use for classification. Default is "v3".
         """
         super().__init__(verbose=verbose)
 
@@ -39,12 +39,29 @@ class FoodOrNotImageFilter(ImageFilterExtension):
         self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
         # load the classifier model
-        # load the pre-trained ResNet18 model
-        weights = ResNet18_Weights.DEFAULT
-        model = resnet18(weights=None)  # kein vortrainiertes Weight-Loading hier!
+        if version == "v3":
+            # load the pre-trained ResNet50 model
+            weights = ResNet50_Weights.DEFAULT
+            model = resnet50(weights=None)
+        else:
+            # load the pre-trained ResNet18 model
+            weights = ResNet18_Weights.DEFAULT
+            model = resnet18(weights=None)
 
-        # replace the final fully connected layer to match the number of classes (2: food, not food)
-        model.fc = nn.Linear(model.fc.in_features, 2)
+        if version == "v3":
+            model.fc = nn.Sequential(
+                nn.Dropout(0.5),
+                nn.Linear(
+                    in_features=int(model.fc.in_features),
+                    out_features=2
+                )
+            )
+        else:
+            # replace the final fully connected layer to match the number of classes (2: food, not food)
+            model.fc = nn.Linear(
+                in_features=int(model.fc.in_features),
+                out_features=2
+            )
 
         # load the model state dictionary from the specified path
         model.load_state_dict(torch.load(model_path, map_location=self.device))
