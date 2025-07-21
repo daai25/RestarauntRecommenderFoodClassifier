@@ -13,15 +13,15 @@ dependencies:
     - seaborn
     - geopy
     - numpy<2.0
-    - opencv  # kompatible with numpy<2.0
+    - opencv # kompatible with numpy<2.0
     - pip
     - requests
     - pillow
     - tqdm
     - pip:
           - python-dotenv
-          - duckduckgo_search
+          - duckduckgo-search
+          - --extra-index-url=https://download.pytorch.org/whl/cu118
           - torch
           - torchvision
           - torchaudio
-          - --index-url=https://download.pytorch.org/whl/cu118 # this needs to be always at the end
