@@ -14,26 +14,58 @@ from sklearn.metrics import precision_recall_fscore_support
 from tqdm import tqdm
 
 # command line example:
+# python food_or_not_food_resnet18_trainer.py --train_dir C:/nfr/food_or_not_food_data/archive/food_data/train --test_dir C:/nfr/food_or_not_food_data/archive/food_data/test --use_rel_paths False --use_argumentation False
+# python food_or_not_food_resnet18_trainer.py --train_dir C:/nfr/food_or_not_food_data/archive/food_data/train --test_dir C:/nfr/food_or_not_food_data/archive/food_data/test --use_rel_paths False
 # python food_or_not_food_resnet18_trainer.py --train_dir dataset/train --test_dir dataset/test --validation_dir dataset/validation
+
+def str2bool(v):
+    if isinstance(v, bool):
+        return v
+    if v.lower() in ("yes", "true", "t", "1"):
+        return True
+    elif v.lower() in ("no", "false", "f", "0"):
+        return False
+    else:
+        raise argparse.ArgumentTypeError("Boolean value expected.")
+
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Train a model to classify food or not food images.")
     parser.add_argument("--train_dir", type=str, required=True, help="Path to the training data directory")
     parser.add_argument("--test_dir", type=str, required=True, help="Path to the testing data directory")
     parser.add_argument("--validation_dir", type=str, required=False, help="Path to the validation data directory (optional)")
-    parser.add_argument("--max_epochs", type=int, default=50, required=False, help="Number of epochs to train (default: 50) (optional)")
+    parser.add_argument("--use_rel_paths", type=str2bool, default=True, help="Whether to use relative paths (default: True)")
+    parser.add_argument("--max_epochs", type=int, default=50, help="Number of epochs to train the model (default: 50)")
+    parser.add_argument("--patience", type=int, default=5, help="Number of epochs to wait before early stopping (default: 5)")
+    parser.add_argument("--use_argumentation", type=str2bool, default=True, help="Whether to use data augmentation during training (default: True)")
     args = parser.parse_args()
+    print(f"{datetime.now()}: Starting food or not food classification training\nwith Arguments: {args}")
 
     # food or not food dataset archive with training and testing data
-    train_dir = os.path.relpath(args.train_dir)
-    test_dir = os.path.relpath(args.test_dir)
+    if args.use_rel_paths:
+        train_dir = os.path.relpath(args.train_dir)
+        test_dir = os.path.relpath(args.test_dir)
+    else:
+        train_dir = os.path.abspath(args.train_dir)
+        test_dir = os.path.abspath(args.test_dir)
 
     # check if validation_dir is provided, if not, set it to the test_dir
     if args.validation_dir:
-        validation_dir = os.path.relpath(args.validation_dir)
+        if args.use_rel_paths:
+            validation_dir = os.path.relpath(args.validation_dir)
+        else:
+            validation_dir = os.path.abspath(args.validation_dir)
     else:
         print("No validation directory provided, using test directory for validation.")
         validation_dir = test_dir
+
+    # check if the directories exist
+    if not os.path.exists(train_dir):
+        raise FileNotFoundError(f"Training directory {train_dir} does not exist. Please provide a valid path.")
+    if not os.path.exists(test_dir):
+        raise FileNotFoundError(f"Testing directory {test_dir} does not exist. Please provide a valid path.")
+    if not os.path.exists(validation_dir):
+        raise FileNotFoundError(f"Validation directory {validation_dir} does not exist. Please provide a valid path.")
 
     # get max_epochs from command line argument
     max_epochs = args.max_epochs
@@ -74,17 +106,20 @@ if __name__ == "__main__":
         transforms.Normalize(mean=default_mean, std=default_std),
     ])
 
-    # number of augmentations per image
-    augmentations_per_image = 10
+    if args.use_argumentation:
+        # number of augmentations per image
+        augmentations_per_image = 10
 
-    # repeat the training dataset with augmentations
-    augmented_datasets = [datasets.ImageFolder(str(train_dir), transform=train_transform)
-                          for _ in tqdm(
-                              range(augmentations_per_image),
-                              desc="Augmenting training data",
-                              unit="augmentation")
-                          ]
-    train_data = ConcatDataset(augmented_datasets)
+        # repeat the training dataset with augmentations
+        augmented_datasets = [datasets.ImageFolder(str(train_dir), transform=train_transform)
+                              for _ in tqdm(
+                                  range(augmentations_per_image),
+                                  desc="Augmenting training data",
+                                  unit="augmentation")
+                              ]
+        train_data = ConcatDataset(augmented_datasets)
+    else:
+        train_data = datasets.ImageFolder(str(train_dir), transform=train_transform)
     test_data = datasets.ImageFolder(str(test_dir), transform=test_transform)
     validation_data = datasets.ImageFolder(str(validation_dir), transform=test_transform)
 
@@ -113,7 +148,7 @@ if __name__ == "__main__":
     model.to(device)
 
     # early stopping settings
-    patience = 5
+    patience = args.patience
     best_loss = float('inf')
     epochs_no_improve = 0
     early_stop = False
