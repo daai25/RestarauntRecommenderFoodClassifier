@@ -105,19 +105,18 @@ food_to_cuisines = {
 '''print(len(food_to_cuisines))
 
 cuisine_count = dict()
-for food in food_to_cuisines.keys():
+cuisine_set = set()
+mapping_sum = 0
+for food in food_to_cuisines:
+    mapping_sum += len(food_to_cuisines[food])
     for cuisine in food_to_cuisines[food]:
         if cuisine not in cuisine_count:
             cuisine_count[cuisine] = 1
+            cuisine_set.add(cuisine)
         else:
             cuisine_count[cuisine] += 1
+
 print(cuisine_count)
-
-cuisine_set = set()
-for food in food_to_cuisines:
-    for cuisine in food_to_cuisines[food]:
-        if cuisine not in cuisine_set:
-            cuisine_set.add(cuisine)
-
 for cuisine in cuisine_set:
-    print(cuisine)'''
+    print(cuisine)
+print(f"Number of Mappings: {mapping_sum}")'''
