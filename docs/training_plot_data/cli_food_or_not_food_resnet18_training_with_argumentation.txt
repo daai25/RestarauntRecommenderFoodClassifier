@@ -1,0 +1,46 @@
+2025-07-21 11:17:17.917221: Starting food or not food classification training
+with Arguments: Namespace(train_dir='C:/nfr/food_or_not_food_data/archive/food_data/train', test_dir='C:/nfr/food_or_not_food_data/archive/food_data/test', validation_dir=None, use_rel_paths=False, max_epochs=50, patience=5, use_argumentation=True)
+No validation directory provided, using test directory for validation.
+Augmenting training data: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:01<00:00,  6.12augmentation/s]
+2025-07-21 11:17:21.033523: Using GPU (cuda)
+2025-07-21 11:17:21.124576: Starting training for 50 epochs...
+2025-07-21 11:33:37.482337: Epoch 1, Training Loss: 0.1906
+2025-07-21 11:34:39.377403: Epoch 1, Validation Loss: 0.2062
+2025-07-21 11:34:39.377403: Validation loss improved, saving model...
+2025-07-21 11:34:39.434201: Model saved as food_or_not_food_model.pth
+2025-07-21 11:51:00.716298: Epoch 2, Training Loss: 0.1271
+2025-07-21 11:52:07.877564: Epoch 2, Validation Loss: 0.1453
+2025-07-21 11:52:07.877564: Validation loss improved, saving model...
+2025-07-21 11:52:07.940467: Model saved as food_or_not_food_model.pth
+2025-07-21 12:08:26.403688: Epoch 3, Training Loss: 0.1008
+2025-07-21 12:09:30.218265: Epoch 3, Validation Loss: 0.1805
+2025-07-21 12:09:30.218265: No improvement for 1 epoch(s)
+2025-07-21 12:25:47.867422: Epoch 4, Training Loss: 0.0857
+2025-07-21 12:26:51.860993: Epoch 4, Validation Loss: 0.1420
+2025-07-21 12:26:51.860993: Validation loss improved, saving model...
+2025-07-21 12:26:51.919017: Model saved as food_or_not_food_model.pth
+2025-07-21 12:43:10.244353: Epoch 5, Training Loss: 0.0762
+2025-07-21 12:44:14.376782: Epoch 5, Validation Loss: 0.1300
+2025-07-21 12:44:14.376782: Validation loss improved, saving model...
+2025-07-21 12:44:14.429462: Model saved as food_or_not_food_model.pth
+2025-07-21 13:00:33.833174: Epoch 6, Training Loss: 0.0694
+2025-07-21 13:01:41.107234: Epoch 6, Validation Loss: 0.1498
+2025-07-21 13:01:41.107234: No improvement for 1 epoch(s)
+2025-07-21 13:18:34.687743: Epoch 7, Training Loss: 0.0624
+2025-07-21 13:19:45.479986: Epoch 7, Validation Loss: 0.1662
+2025-07-21 13:19:45.479986: No improvement for 2 epoch(s)
+2025-07-21 13:36:06.356870: Epoch 8, Training Loss: 0.0592
+2025-07-21 13:37:13.033693: Epoch 8, Validation Loss: 0.1913
+2025-07-21 13:37:13.033693: No improvement for 3 epoch(s)
+2025-07-21 13:53:49.582143: Epoch 9, Training Loss: 0.0562
+2025-07-21 13:55:01.741204: Epoch 9, Validation Loss: 0.1537
+2025-07-21 13:55:01.741204: No improvement for 4 epoch(s)
+2025-07-21 14:11:40.535568: Epoch 10, Training Loss: 0.0513
+2025-07-21 14:12:47.013557: Epoch 10, Validation Loss: 0.1634
+2025-07-21 14:12:47.013557: No improvement for 5 epoch(s)
+2025-07-21 14:12:47.013557: Early stopping triggered.
+2025-07-21 14:12:47.089926: Evaluating the best model on the test set...
+2025-07-21 14:13:49.443857: Test Accuracy: 96.22%
+2025-07-21 14:13:49.473488: Precision: 0.9477
+2025-07-21 14:13:49.473488: Recall:    0.9784
+2025-07-21 14:13:49.473488: F1-Score:  0.9628
