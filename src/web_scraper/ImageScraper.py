@@ -38,6 +38,7 @@ class ImageScraper:
         os.makedirs(output_dir, exist_ok=True)
 
         settings = get_project_settings()
+        # Set the output directory for images
         settings.set('IMAGES_STORE', output_dir, priority='cmdline')
         settings.set('LOG_LEVEL', 'ERROR')  # optional
 
