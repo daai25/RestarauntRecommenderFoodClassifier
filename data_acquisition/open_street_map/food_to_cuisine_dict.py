@@ -31,11 +31,11 @@ food_to_cuisines = {
     "cup_cakes": ["american"],
     "deviled_eggs": ["american", "british", "dutch"],
     "donuts": ["american", "dutch", "canadian"],
-    "dumplings": ["chinese", "japanese", "korean", "mongolian", "nepalese", "russian", "polish", "ukrainian"],
+    "dumplings": ["chinese", "japanese", "south_korean", "north_korean", "mongolian", "nepalese", "russian", "polish", "ukrainian"],
     "edamame": ["japanese"],
     "eggs_benedict": ["american"],
     "escargots": ["french"],
-    "falafel": ["egyptian", "israeli", "jordanian", "lebanese", "palestinian", "syrian", "yemeni"],
+    "falafel": ["egyptian", "israeli", "jordanian", "lebanese", "syrian", "yemeni"],
     "filet_mignon": ["french", "american"],
     "fish_and_chips": ["british", "australian", "new_zealander"],
     "foie_gras": ["french"],
@@ -56,7 +56,7 @@ food_to_cuisines = {
     "hot_and_sour_soup": ["chinese"],
     "hot_dog": ["american", "german"],
     "huevos_rancheros": ["mexican"],
-    "hummus": ["egyptian", "israeli", "jordanian", "lebanese", "palestinian", "syrian", "yemeni"],
+    "hummus": ["egyptian", "israeli", "jordanian", "lebanese", "syrian", "yemeni"],
     "ice_cream": ["american", "italian", "french", "turkish"],
     "lasagna": ["italian"],
     "lobster_bisque": ["french"],
@@ -102,7 +102,7 @@ food_to_cuisines = {
     "waffles": ["belgian", "american"]
 }
 
-'''print(len(food_to_cuisines))
+print(len(food_to_cuisines))
 
 cuisine_count = dict()
 for food in food_to_cuisines.keys():
@@ -120,4 +120,4 @@ for food in food_to_cuisines:
             cuisine_set.add(cuisine)
 
 for cuisine in cuisine_set:
-    print(cuisine)'''
+    print(cuisine)
