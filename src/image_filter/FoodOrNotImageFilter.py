@@ -17,7 +17,7 @@ class FoodOrNotImageFilter(ImageFilterExtension):
     # valid model versions
     _valid_model_versions = ["v1", "v2", "v3"]
 
-    def __init__(self, verbose: bool=False, version: str= "v2"):
+    def __init__(self, verbose: bool=False, version: str= "v3"):
         """
         Initialize the FoodOrNotImageFilter with a directory to scan for images.
 
