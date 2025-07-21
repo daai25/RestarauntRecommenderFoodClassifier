@@ -102,7 +102,7 @@ food_to_cuisines = {
     "waffles": ["belgian", "american"]
 }
 
-print(len(food_to_cuisines))
+'''print(len(food_to_cuisines))
 
 cuisine_count = dict()
 for food in food_to_cuisines.keys():
@@ -120,4 +120,4 @@ for food in food_to_cuisines:
             cuisine_set.add(cuisine)
 
 for cuisine in cuisine_set:
-    print(cuisine)
+    print(cuisine)'''
