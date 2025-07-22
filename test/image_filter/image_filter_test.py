@@ -126,7 +126,7 @@ def test_image_filter():
         ), f"Image {image} not found in {_test_images_directory}"
 
     # create an instance of the FoodOrNotFoodImageFilter
-    food_filter = image_filter.FoodOrNotImageFilter()
+    food_filter = image_filter.FoodOrNotImageFilter(version="v2")
 
     # create an instance of the ImageFilter
     img_filter = image_filter.ImageFilter(filter_extensions=[food_filter])
