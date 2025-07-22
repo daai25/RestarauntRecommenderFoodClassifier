@@ -18,9 +18,12 @@ dependencies:
     - requests
     - pillow
     - tqdm
+    - pytest
+    - tldextract
+    - imagehash
     - pip:
           - python-dotenv
-          - duckduckgo-search
+          - ddgs
           - --extra-index-url=https://download.pytorch.org/whl/cu118
           - torch
           - torchvision
