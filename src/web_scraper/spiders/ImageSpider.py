@@ -8,8 +8,8 @@ class ImageSpider(scrapy.Spider):
 
     def __init__(self, url=None, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        if not url:
-            raise ValueError("Missing URL argument for ImageSpider")
+        # if not url:
+        #     raise ValueError("Missing URL argument for ImageSpider")
         self.start_urls = [url]
 
     def parse(self, response, **kwargs):

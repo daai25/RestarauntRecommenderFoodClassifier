@@ -1,12 +1,38 @@
-# import os
-# from scrapy.crawler import CrawlerProcess
-# from scrapy.utils.project import get_project_settings
-# from urllib.parse import urlparse
+import os
+from scrapy.crawler import CrawlerProcess
+from scrapy.utils.project import get_project_settings
+from urllib.parse import urlparse
 #
 # import src.image_filter as im_filter
 #
 class ImageScraper:
-    pass
+
+    def run(self, urls: list[str]=None, output_dir: str=None):
+        if urls:
+            os.makedirs(output_dir, exist_ok=True)
+            settings = get_project_settings()
+            # Set the output directory for images
+            settings.set('IMAGES_STORE', output_dir, priority='cmdline')
+
+            process = CrawlerProcess(settings)
+
+            for url in urls:
+                domain = urlparse(url).netloc
+                # replace all the special characters in the domain name with underscores
+                domain = (domain
+                    .replace('.', '_')
+                    .replace('-', '_')
+                    .replace(':', '_')
+                )
+
+                domain_dir = os.path.join(output_dir, domain)
+                os.makedirs(domain_dir, exist_ok=True)
+
+                # Start one spider per URL
+                process.crawl("image_spider", urls=[url], output_dir=domain_dir)
+
+            # Will block until all spiders are done
+            process.start()
 #
 #     def __init__(self, image_filter: im_filter.ImageFilter=None):
 #         # create an instances of the food image filter extensions

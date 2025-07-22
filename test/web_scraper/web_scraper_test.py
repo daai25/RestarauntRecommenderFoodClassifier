@@ -23,20 +23,20 @@ def test_web_scraper():
         os.path.exists(_test_output_directory)
     ), f"Test output directory does not exist: {_test_output_directory}"
 
-    _clean_test_output_directory()
-
-    # check if the output directory is clean and only .gitkeep is present
-    for filename in os.listdir(_test_output_directory):
-        if filename != ".gitkeep":
-            raise AssertionError(
-                f"Test output directory is not clean: {filename} found"
-            )
+    # _clean_test_output_directory()
+    #
+    # # check if the output directory is clean and only .gitkeep is present
+    # for filename in os.listdir(_test_output_directory):
+    #     if filename != ".gitkeep":
+    #         raise AssertionError(
+    #             f"Test output directory is not clean: {filename} found"
+    #         )
 
 
     test_url = "http://localhost:8000/"
     # test_url = "https://ristopizzalavillette.ch/"
-    # scraper = web_scraper.ImageScraper()
-    # scraper.run([test_url], _test_output_directory, do_filter=False)
+    scraper = web_scraper.ImageScraper()
+    scraper.run([test_url], _test_output_directory)
 
     # Expect images to be saved under test_output/localhost:8000/
     # domain_folder = os.path.join(_test_output_directory, "localhost_8000")

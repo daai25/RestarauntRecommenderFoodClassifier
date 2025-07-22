@@ -9,12 +9,12 @@ def index():
     """
     return send_from_directory('.', 'index.html')
 
-@app.route('/img/<path:filename>')
+@app.route('/images/<path:filename>')
 def images(filename):
     """
     Serve images from the 'img' directory.
     """
-    return send_from_directory('img', filename)
+    return send_from_directory('images', filename)
 
 if __name__ == '__main__':
     app.run(port=8000)
