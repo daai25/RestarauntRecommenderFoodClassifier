@@ -1,5 +1,6 @@
 import os
 import src.image_filter as image_filter
+import pytest
 
 _test_images_directory = os.path.join(os.path.dirname(__file__), "test_images")
 
@@ -117,6 +118,49 @@ _filter_images = [
     "uniform_white (5).png",
 ]
 
+def _assert_filter_stats(stats):
+    """
+    Asserts all the basic stats in the FilterStatistics object. This includes:
+    - total_images
+    - total_blurry_images
+    - total_uniform_images
+    - total_duplicate_images
+    - num_of_errors
+    - captured_errors
+
+    Args:
+        stats (FilterStatistics): The statistics object to assert.
+    """
+
+    # assert if the total number of images is correct
+    assert stats.total_images == len(
+        _test_images
+    ), f"Total number of images is incorrect: {stats.total_images}"
+
+    # assert if the number of blurry images is correct
+    # it should detect 25 blurry images, 20 from blurry not food images and 5 from uniform images
+    assert (
+            stats.total_blurry_images == 25
+    ), f"Number of blurry images is incorrect: {stats.total_blurry_images}"
+
+    # assert if the number of uniform images is correct
+    # no more images are detected as uniform images, because it was already detected as blurry images
+    assert (
+            stats.total_uniform_images == 0
+    ), f"Number of uniform images is incorrect: {stats.total_uniform_images}"
+
+    # assert if the number of duplicate images is correct
+    # it should detect 15 duplicated images, 10 from not food and 5 from food images
+    assert (
+            stats.total_duplicate_images == 15
+    ), f"Number of duplicate images is incorrect: {stats.total_duplicate_images}"
+
+    # assert if the errors were correctly captured and if the number of errors is zero
+    assert stats.num_of_errors == len(
+        stats.captured_errors
+    ), f"Errors were not captured correctly: {stats.captured_errors}"
+    assert stats.num_of_errors == 0, f"Errors were captured: {stats.captured_errors}"
+
 
 def test_image_filter_v2():
     # check if all the images are included in the test images directory
@@ -136,34 +180,7 @@ def test_image_filter_v2():
         _test_images_directory, is_relative=True, delete=False
     )
 
-    # assert if the total number of images is correct
-    assert stats.total_images == len(
-        _test_images
-    ), f"Total number of images is incorrect: {stats.total_images}"
-
-    # assert if the number of blurry images is correct
-    # it should detect 25 blurry images, 20 from blurry not food images and 5 from uniform images
-    assert (
-        stats.total_blurry_images == 25
-    ), f"Number of blurry images is incorrect: {stats.total_blurry_images}"
-
-    # assert if the number of uniform images is correct
-    # no more images are detected as uniform images, because it was already detected as blurry images
-    assert (
-        stats.total_uniform_images == 0
-    ), f"Number of uniform images is incorrect: {stats.total_uniform_images}"
-
-    # assert if the number of duplicate images is correct
-    # it should detect 15 duplicated images, 10 from not food and 5 from food images
-    assert (
-        stats.total_duplicate_images == 15
-    ), f"Number of duplicate images is incorrect: {stats.total_duplicate_images}"
-
-    # assert if the errors were correctly captured and if the number of errors is zero
-    assert stats.num_of_errors == len(
-        stats.captured_errors
-    ), f"Errors were not captured correctly: {stats.captured_errors}"
-    assert stats.num_of_errors == 0, f"Errors were captured: {stats.captured_errors}"
+    _assert_filter_stats(stats)
 
     # assert if the number of filtered images is correct
     assert (
@@ -198,4 +215,16 @@ def test_image_filter_v3():
 
     # create an instance of the ImageFilter
     img_filter = image_filter.ImageFilter(filter_extensions=[food_filter])
+
+    # filter the images in the test images directory
+    stats = img_filter.filter_images(
+        _test_images_directory, is_relative=True, delete=False
+    )
+
+    _assert_filter_stats(stats)
+
+    # TODO: add test for filtered images
+
+if __name__ == "__main__":
+    pytest.main()
 
