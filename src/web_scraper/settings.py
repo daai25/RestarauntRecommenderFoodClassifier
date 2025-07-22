@@ -1,3 +1,9 @@
+# root/src/web_scraper/settings.py
+BOT_NAME = 'web_scraper'
+
+SPIDER_MODULES = ['src.web_scraper.spiders']
+NEWSPIDER_MODULE = 'src.web_scraper.spiders'
+
 DEFAULT_REQUEST_HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) '
                   'AppleWebKit/537.36 (KHTML, like Gecko) '
