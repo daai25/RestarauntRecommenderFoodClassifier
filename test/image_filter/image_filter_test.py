@@ -172,11 +172,9 @@ def test_image_filter():
 
     # check if at least all the images_paths are included in the filtered image paths
     for image in _filter_images:
-        # image = os.path.join(_test_images_directory, image)
         found = False
         for filtered_image in stats.filtered_image_paths:
             filtered_image = os.path.basename(filtered_image)
-            # normalized_filtered_image = os.path.normpath(filtered_image)
             if image == filtered_image:
                 found = True
                 break
