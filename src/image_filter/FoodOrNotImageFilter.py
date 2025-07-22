@@ -1,9 +1,8 @@
+# src/image_filter/FoodOrNotImageFilter.py
 import os
 import torch
-import torch.nn as nn
-from torchvision import transforms
 from PIL import Image
-from torchvision.models import resnet18, resnet50, ResNet18_Weights, ResNet50_Weights
+import src.resnet_loader as resnet_loader
 
 from .ImageFilterExtension import ImageFilterExtension
 from .FilterStatistics import FilterStatistics
@@ -36,51 +35,23 @@ class FoodOrNotImageFilter(ImageFilterExtension):
 
         model_path = os.path.join(current_dir, model_name)
 
-        self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-
         # load the classifier model
         if version == "v3":
             # load the pre-trained ResNet50 model
-            weights = ResNet50_Weights.DEFAULT
-            model = resnet50(weights=None)
-        else:
-            # load the pre-trained ResNet18 model
-            weights = ResNet18_Weights.DEFAULT
-            model = resnet18(weights=None)
-
-        if version == "v3":
-            model.fc = nn.Sequential(
-                nn.Dropout(0.5),
-                nn.Linear(
-                    in_features=int(model.fc.in_features),
+            self.model, self.device, self.transform =(
+                resnet_loader.load_resnet50_model(
+                    model_path=model_path,
                     out_features=2
                 )
             )
         else:
-            # replace the final fully connected layer to match the number of classes (2: food, not food)
-            model.fc = nn.Linear(
-                in_features=int(model.fc.in_features),
-                out_features=2
+            # load the pre-trained ResNet18 model
+            self.model, self.device, self.transform = (
+                resnet_loader.load_resnet18_model(
+                    model_path=model_path,
+                    out_features=2
+                )
             )
-
-        # load the model state dictionary from the specified path
-        model.load_state_dict(torch.load(model_path, map_location=self.device))
-
-        # move the model to the appropriate device (GPU or CPU)
-        model.to(self.device)
-        model.eval()
-        self.model = model
-
-        default_mean = weights.transforms().mean
-        default_std = weights.transforms().std
-
-        # define the transformation pipeline
-        self.transform = transforms.Compose([
-            transforms.Resize(256),
-            transforms.CenterCrop(224),
-            transforms.ToTensor(),
-            transforms.Normalize(mean=default_mean, std=default_std),
-        ])
 
         self.class_names = ["food", "not food"]
 

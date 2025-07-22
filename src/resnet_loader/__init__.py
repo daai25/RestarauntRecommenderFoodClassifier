@@ -1,0 +1,2 @@
+from .resnet18_loader import load_resnet18_model
+from .resnet50_loader import load_resnet50_model
