@@ -226,5 +226,5 @@ def test_image_filter_v3():
     # TODO: add test for filtered images
 
 if __name__ == "__main__":
-    pytest.main()
+    pytest.main(__file__)
 
