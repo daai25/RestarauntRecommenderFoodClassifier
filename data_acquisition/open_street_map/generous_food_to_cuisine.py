@@ -1,19 +1,15 @@
 food_to_cuisines = {
-    "apple_pie": ["american", "canadian", "british", "australian", "new_zealander", "german", "dutch"],
-    "baby_back_ribs": ["american", "canadian", "australian", "argentine", "brazilian", "mexican", "south_african"],
     "baklava": ["albanian", "armenian", "azerbaijani", "cypriot", "greek", "iranian", "iraqi", "jordanian", "lebanese", "syrian", "turkish", "egyptian", "saudi_arabian", "emirati", "bahraini", "kuwaiti", "qatari", "yemeni", "afghan"],
     "beef_carpaccio": ["italian", "french", "argentine", "brazilian", "american", "german", "austrian", "spanish"],
     "beef_tartare": ["french", "belgian", "german", "swiss", "american", "austrian", "canadian"],
     "beet_salad": ["russian", "polish", "ukrainian", "belarusian", "german", "american", "french", "italian", "swedish", "lithuanian"],
     "beignets": ["french", "american", "belgian", "canadian"],
     "bibimbap": ["south_korean", "japanese", "chinese", "american"],
-    "bread_pudding": ["british", "american", "canadian", "australian", "jamaican"],
     "breakfast_burrito": ["american", "mexican", "canadian"],
     "bruschetta": ["italian", "american", "french", "spanish"],
     "caesar_salad": ["mexican", "american", "canadian", "australian", "british"],
     "cannoli": ["italian", "american", "argentine"],
     "caprese_salad": ["italian", "american", "french", "greek"],
-    "carrot_cake": ["american", "british", "canadian", "australian", "german"],
     "ceviche": ["peruvian", "ecuadorean", "mexican", "chilean", "colombian", "panamanian", "costa_rican", "venezuelan"],
     "cheese_plate": ["french", "swiss", "italian", "dutch", "german", "american", "british", "belgian"],
     "cheesecake": ["american", "german", "greek", "polish", "japanese", "french", "italian"],
@@ -22,15 +18,11 @@ food_to_cuisines = {
     "chicken_wings": ["american", "canadian", "jamaican", "south_korean", "chinese", "filipino", "thai"],
     "chocolate_cake": ["american", "german", "austrian", "swiss", "british", "french", "canadian"],
     "chocolate_mousse": ["french", "american", "swiss", "belgian"],
-    "churros": ["spanish", "mexican", "portuguese", "filipino", "argentine", "chilean", "colombian", "venezuelan"],
     "clam_chowder": ["american", "british", "canadian", "australian"],
     "club_sandwich": ["american", "british", "canadian", "australian", "new_zealander"],
     "crab_cakes": ["american", "canadian", "filipino", "vietnamese", "thai", "french"],
     "creme_brulee": ["french", "american", "canadian", "belgian", "swiss"],
     "croque_madame": ["french", "belgian", "canadian"],
-    "cup_cakes": ["american", "canadian", "british", "australian"],
-    "deviled_eggs": ["american", "british", "dutch", "german", "swedish", "austrian"],
-    "donuts": ["american", "canadian", "dutch", "australian", "french", "japanese", "filipino", "indonesian"],
     "dumplings": ["chinese", "japanese", "south_korean", "north_korean", "mongolian", "nepalese", "russian", "polish", "ukrainian", "thai", "indonesian", "filipino", "vietnamese"],
     "edamame": ["japanese", "chinese", "south_korean"],
     "eggs_benedict": ["american", "canadian", "australian", "british"],
@@ -44,7 +36,6 @@ food_to_cuisines = {
     "french_toast": ["french", "american", "canadian", "british"],
     "fried_calamari": ["italian", "greek", "spanish", "portuguese", "american", "filipino"],
     "fried_rice": ["chinese", "indonesian", "filipino", "thai", "vietnamese", "malaysian", "japanese", "south_korean", "north_korean"],
-    "frozen_yogurt": ["american", "greek", "turkish", "israeli"],
     "garlic_bread": ["italian", "american", "french", "greek", "argentine"],
     "gnocchi": ["italian", "argentine", "american"],
     "greek_salad": ["greek", "cypriot", "american", "lebanese", "turkish"],
@@ -53,22 +44,17 @@ food_to_cuisines = {
     "guacamole": ["mexican", "american", "guatemalan", "colombian"],
     "gyoza": ["japanese", "chinese", "south_korean"],
     "hamburger": ["american", "german", "canadian", "australian", "argentine", "brazilian"],
-    "hot_and_sour_soup": ["chinese", "thai", "indonesian"],
     "hot_dog": ["american", "german", "canadian", "australian"],
     "huevos_rancheros": ["mexican", "guatemalan", "american"],
     "hummus": ["egyptian", "israeli", "jordanian", "lebanese", "syrian", "yemeni", "iraqi", "saudi_arabian", "kuwaiti", "bahraini", "emirati", "qatari"],
-    "ice_cream": ["american", "italian", "french", "turkish", "japanese", "thai", "filipino", "indian"],
     "lasagna": ["italian", "american", "argentine", "brazilian"],
     "lobster_bisque": ["french", "american", "canadian"],
-    "lobster_roll_sandwich": ["american", "canadian"],
     "macaroni_and_cheese": ["american", "british", "canadian", "jamaican"],
-    "macarons": ["french", "belgian", "american"],
     "miso_soup": ["japanese"],
     "mussels": ["belgian", "french", "spanish", "dutch", "american"],
     "nachos": ["mexican", "american", "canadian"],
     "omelette": ["french", "american", "british", "spanish"],
     "onion_rings": ["american", "canadian", "british"],
-    "oysters": ["french", "american", "british", "australian", "japanese"],
     "pad_thai": ["thai"],
     "paella": ["spanish"],
     "pancakes": ["american", "dutch", "british", "russian", "french", "canadian", "swedish", "norwegian"],
@@ -78,11 +64,9 @@ food_to_cuisines = {
     "pizza": ["italian", "american", "argentine", "brazilian", "canadian", "french", "turkish"],
     "pork_chop": ["american", "german", "austrian", "chinese", "filipino", "polish"],
     "poutine": ["canadian"],
-    "prime_rib": ["american", "british", "canadian"],
     "pulled_pork_sandwich": ["american"],
     "ramen": ["japanese", "south_korean", "chinese", "american"],
     "ravioli": ["italian", "argentine", "american"],
-    "red_velvet_cake": ["american"],
     "risotto": ["italian", "american", "argentine"],
     "samosa": ["indian", "pakistani", "nepalese", "bangladeshi", "kenyan", "tanzanian", "fijian"],
     "sashimi": ["japanese"],
@@ -90,15 +74,12 @@ food_to_cuisines = {
     "seaweed_salad": ["japanese", "south_korean", "chinese"],
     "shrimp_and_grits": ["american"],
     "spaghetti_bolognese": ["italian", "argentine", "american"],
-    "spaghetti_carbonara": ["italian", "american"],
     "spring_rolls": ["chinese", "vietnamese", "filipino", "thai", "indonesian"],
     "steak": ["american", "argentine", "brazilian", "australian", "british", "french", "german"],
-    "strawberry_shortcake": ["american", "british", "canadian"],
     "sushi": ["japanese"],
     "tacos": ["mexican", "american", "guatemalan"],
     "takoyaki": ["japanese"],
     "tiramisu": ["italian", "argentine", "american"],
-    "tuna_tartare": ["french", "japanese", "american", "peruvian"],
     "waffles": ["belgian", "american", "french", "dutch"]
 }
 
@@ -116,7 +97,23 @@ for food in food_to_cuisines:
         else:
             cuisine_count[cuisine] += 1
 
-print(cuisine_count)
-for cuisine in cuisine_set:
-    print(cuisine)
-print(f"Number of Mappings: {mapping_sum}")'''
+# print(cuisine_count)
+#for cuisine in cuisine_set:
+#    print(cuisine)
+print(f"Number of Mappings: {mapping_sum}")
+
+def extra_dumb_sort(dict):
+    cuisine_list = list()
+    for cuisine in dict:
+        cuisine_list.append([cuisine, dict[cuisine]])
+    for i in range(len(cuisine_list)):
+        for j in range(i + 1, len(cuisine_list)):
+            if cuisine_list[i][1] > cuisine_list[j][1]:
+                temp = cuisine_list[i]
+                cuisine_list[i] = cuisine_list[j]
+                cuisine_list[j] = temp
+    return cuisine_list
+
+cuisine_list = extra_dumb_sort(cuisine_count)
+for item in cuisine_list:
+    print(f"{item[0]}: {item[1]}")'''
