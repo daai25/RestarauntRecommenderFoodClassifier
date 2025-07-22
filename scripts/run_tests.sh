@@ -22,9 +22,4 @@ else
     PYTHON_CMD="python3"
 fi
 
-echo "Running URL-Finder tests..."
-$PYTHON_CMD -m pytest test/url_finder/url_finder_test.py -s
-
-echo "URL-Finder tests completed."
-echo "\n\nRunning Image-Filter tests..."
-$PYTHON_CMD -m pytest test/image_filter/image_filter_test.py -s
+$PYTHON_CMD -m pytest test/
