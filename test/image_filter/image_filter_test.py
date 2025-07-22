@@ -117,7 +117,7 @@ _filter_images = [
     "uniform_white (5).png"
 ]
 
-def test_image_filter():
+def test_image_filter_v2():
     # check if all the images are included in the test images directory
     for image in _test_images:
         assert image in os.listdir(_test_images_directory), f"Image {image} not found in {_test_images_directory}"
@@ -172,3 +172,15 @@ def test_image_filter():
     # check if the number of valid images is correct
     assert stats.total_valid_images == 10, \
         f"Number of valid images is incorrect: {stats.total_valid_images}"
+
+def test_image_filter_v3():
+    # check if all the images are included in the test images directory
+    for image in _test_images:
+        assert image in os.listdir(_test_images_directory), f"Image {image} not found in {_test_images_directory}"
+
+    # create an instance of the FoodOrNotFoodImageFilter
+    food_filter = image_filter.FoodOrNotImageFilter(version="v3")
+
+    # create an instance of the ImageFilter
+    img_filter = image_filter.ImageFilter(filter_extensions=[food_filter])
+
