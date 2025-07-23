@@ -1,106 +1,83 @@
 import os
-from scrapy.crawler import CrawlerProcess
-from scrapy.utils.project import get_project_settings
-from urllib.parse import urlparse
-#
-# import src.image_filter as im_filter
-#
+import requests
+from bs4 import BeautifulSoup
+from urllib.parse import urljoin, urlparse
+
+import src.image_filter as im_filter
+
 class ImageScraper:
+    """
+    A class to scrape images from given URLs and save them to a specified directory.
+    """
+    def __init__(self):
+        """
+        Initializes the ImageScraper with image filters.
+        """
+        self.filter_extensions = [
+            im_filter.FoodOrNotImageFilter(version="v3"),
+            im_filter.SimilarHashImageFilter(hamming_distance=5)
+        ]
 
-    def run(self, urls: list[str]=None, output_dir: str=None):
-        if urls:
-            os.makedirs(output_dir, exist_ok=True)
-            settings = get_project_settings()
-            # Set the output directory for images
-            settings.set('IMAGES_STORE', output_dir, priority='cmdline')
+        self.image_filter = im_filter.ImageFilter(self.filter_extensions)
 
-            process = CrawlerProcess(settings)
 
-            for url in urls:
-                domain = urlparse(url).netloc
-                # replace all the special characters in the domain name with underscores
-                domain = (domain
-                    .replace('.', '_')
-                    .replace('-', '_')
-                    .replace(':', '_')
-                )
+    def scrape_images(self, urls: list[str]=None, base_dir: str=None, do_filtering: bool=True):
+        """
+        Scrapes images from the provided URLs and saves them to the specified base directory.
+        Each URL's images are saved in a subdirectory named after the domain of the URL.
 
-                domain_dir = os.path.join(output_dir, domain)
-                os.makedirs(domain_dir, exist_ok=True)
+        Args:
+            urls (list[str]): List of URLs to scrape images from.
+            base_dir (str): Base directory where images will be saved.
+            do_filtering (bool): If True, applies image filtering after scraping.
+        Raises:
+            ValueError: If no URLs are provided or if the base directory is not specified.
+            OSError: If there is an issue creating the base directory.
+        """
 
-                # Start one spider per URL
-                process.crawl("image_spider", urls=[url], output_dir=domain_dir)
+        if urls is None or len(urls) == 0:
+            raise ValueError("No URLs provided for scraping.")
+        if base_dir is None:
+            raise ValueError("Base directory for saving images is not provided.")
 
-            # Will block until all spiders are done
-            process.start()
-#
-#     def __init__(self, image_filter: im_filter.ImageFilter=None):
-#         # create an instances of the food image filter extensions
-#         if image_filter is not None:
-#             if not isinstance(image_filter, im_filter.ImageFilter):
-#                 raise TypeError("Expected an instance of ImageFilter, got {}".format(type(image_filter)))
-#             self.image_filter = image_filter
-#         else:
-#             filter_extensions = [
-#                 im_filter.FoodOrNotImageFilter(verbose=False, version="v2"),
-#                 im_filter.SimilarFeatVecImageFilter(verbose=False, threshold=0.97),
-#                 im_filter.SimilarHashImageFilter(verbose=False, hamming_distance=5),
-#             ]
-#
-#             # create an instance of the image filter
-#             self.image_filter = im_filter.ImageFilter(
-#                 filter_extensions=filter_extensions,
-#                 blur_threshold=100.0,
-#                 uniform_tolerance=0.01
-#             )
-#
-#
-#     def run(self, url: list=None, output_dir: str=None, do_filter: bool=True):
-#         """
-#         Run the image scraper to download images from the provided URLs and optionally filter them.
-#
-#         Args:
-#             url (list): List of URLs to scrape images from. If None, no scraping will be performed.
-#             output_dir (str): Directory where the images will be saved. If None, defaults to "scraped_images" in the current working directory.
-#             do_filter (bool): If True, apply image filters after scraping. Default is True.
-#         Raises:
-#             ValueError: If no URL is provided.
-#             TypeError: If the provided image_filter is not an instance of ImageFilter.
-#         """
-#         if not url:
-#             raise ValueError("No URL provided")
-#
-#         if output_dir is None:
-#             output_dir = os.path.join(os.getcwd(), "scraped_images")
-#
-#         os.makedirs(output_dir, exist_ok=True)
-#
-#         settings = get_project_settings()
-#         # Set the output directory for images
-#         settings.set('IMAGES_STORE', output_dir, priority='cmdline')
-#         settings.set('LOG_LEVEL', 'ERROR')  # optional
-#
-#         process = CrawlerProcess(settings)
-#
-#         for u in url:
-#             domain = urlparse(u).netloc
-#             # replace all the special characters in the domain name with underscores
-#             domain = (domain
-#                 .replace('.', '_')
-#                 .replace('-', '_')
-#                 .replace(':', '_')
-#             )
-#
-#             domain_dir = os.path.join(output_dir, domain)
-#             os.makedirs(domain_dir, exist_ok=True)
-#
-#             # Start one spider per URL
-#             process.crawl("image_spider", urls=[u])
-#
-#         # Will block until all spiders are done
-#         process.start()
-#
-#         if do_filter:
-#             print("[ImageScraper] All scraping jobs finished, applying image filters...")
-#             self.image_filter.filter_images(output_dir)
-#             print("[ImageScraper] Filtering done.")
+        # Create the base directory if it does not exist
+        if not os.path.exists(base_dir):
+            os.makedirs(base_dir)
+
+        for url in urls:
+            domain = urlparse(url).netloc
+
+            image_dir = os.path.join(
+                base_dir,
+                domain.lower().replace(":", "_")
+            )
+
+            os.makedirs(image_dir, exist_ok=True)
+
+            response = requests.get(url)
+            soup = BeautifulSoup(response.text, "html.parser")
+
+            img_tags = soup.find_all("img")
+
+            for i, img in enumerate(img_tags):
+                img_url = img.get("src")
+                if not img_url:
+                    continue
+
+                full_url = urljoin(url, img_url)
+
+                try:
+                    img_data = requests.get(full_url).content
+                    image_path = os.path.join(image_dir, f"image_{i+1}.jpg")
+                    with open(image_path, "wb") as image:
+                        image.write(img_data)
+                except Exception as e:
+                    print(f"Failed to download image from {full_url}: {e}")
+                    continue
+
+        # filter images if do_filtering is True
+        if do_filtering:
+            self.image_filter.filter_images(
+                directory=base_dir,
+                delete=True,
+            )
