@@ -1,0 +1,55 @@
+Training on device: mps
+Epoch 01: Train Loss=0.4037, Train Acc=0.876 | Val Acc=0.966
+Model saved with validation accuracy: 0.966
+Epoch 02: Train Loss=0.3242, Train Acc=0.937 | Val Acc=0.974
+Model saved with validation accuracy: 0.974
+Epoch 03: Train Loss=0.3089, Train Acc=0.946 | Val Acc=0.975
+Model saved with validation accuracy: 0.975
+Epoch 04: Train Loss=0.2982, Train Acc=0.949 | Val Acc=0.977
+Model saved with validation accuracy: 0.977
+Epoch 05: Train Loss=0.2872, Train Acc=0.957 | Val Acc=0.979
+Model saved with validation accuracy: 0.979
+Epoch 06: Train Loss=0.2822, Train Acc=0.957 | Val Acc=0.979
+Epoch 07: Train Loss=0.2770, Train Acc=0.961 | Val Acc=0.978
+Epoch 08: Train Loss=0.2743, Train Acc=0.962 | Val Acc=0.979
+Epoch 09: Train Loss=0.2685, Train Acc=0.964 | Val Acc=0.979
+Epoch 10: Train Loss=0.2615, Train Acc=0.967 | Val Acc=0.981
+Model saved with validation accuracy: 0.981
+Epoch 11: Train Loss=0.2631, Train Acc=0.966 | Val Acc=0.980
+Epoch 12: Train Loss=0.2579, Train Acc=0.968 | Val Acc=0.981
+Epoch 13: Train Loss=0.2554, Train Acc=0.972 | Val Acc=0.980
+Epoch 14: Train Loss=0.2535, Train Acc=0.973 | Val Acc=0.981
+Model saved with validation accuracy: 0.981
+Epoch 15: Train Loss=0.2513, Train Acc=0.973 | Val Acc=0.980
+Epoch 16: Train Loss=0.2520, Train Acc=0.973 | Val Acc=0.981
+Epoch 17: Train Loss=0.2505, Train Acc=0.972 | Val Acc=0.981
+Epoch 18: Train Loss=0.2475, Train Acc=0.975 | Val Acc=0.982
+Model saved with validation accuracy: 0.982
+Epoch 19: Train Loss=0.2453, Train Acc=0.976 | Val Acc=0.980
+Epoch 20: Train Loss=0.2434, Train Acc=0.978 | Val Acc=0.981
+Epoch 21: Train Loss=0.2434, Train Acc=0.977 | Val Acc=0.978
+Epoch 22: Train Loss=0.2421, Train Acc=0.977 | Val Acc=0.983
+Model saved with validation accuracy: 0.983
+Epoch 23: Train Loss=0.2407, Train Acc=0.978 | Val Acc=0.979
+Epoch 24: Train Loss=0.2406, Train Acc=0.980 | Val Acc=0.981
+Epoch 25: Train Loss=0.2377, Train Acc=0.981 | Val Acc=0.981
+Epoch 26: Train Loss=0.2376, Train Acc=0.980 | Val Acc=0.981
+Epoch 27: Train Loss=0.2371, Train Acc=0.981 | Val Acc=0.983
+Model saved with validation accuracy: 0.983
+Epoch 28: Train Loss=0.2379, Train Acc=0.980 | Val Acc=0.983
+Epoch 29: Train Loss=0.2362, Train Acc=0.981 | Val Acc=0.981
+Epoch 30: Train Loss=0.2338, Train Acc=0.983 | Val Acc=0.983
+Model saved with validation accuracy: 0.983
+Epoch 31: Train Loss=0.2321, Train Acc=0.983 | Val Acc=0.983
+Epoch 32: Train Loss=0.2312, Train Acc=0.984 | Val Acc=0.986
+Model saved with validation accuracy: 0.986
+Epoch 33: Train Loss=0.2315, Train Acc=0.984 | Val Acc=0.981
+Epoch 34: Train Loss=0.2305, Train Acc=0.985 | Val Acc=0.983
+Epoch 35: Train Loss=0.2294, Train Acc=0.985 | Val Acc=0.983
+Epoch 36: Train Loss=0.2289, Train Acc=0.985 | Val Acc=0.984
+Epoch 37: Train Loss=0.2290, Train Acc=0.986 | Val Acc=0.983
+Early stopping at epoch 37
+####################
+
+
+Final Test Accuracy: 0.979498861047836
