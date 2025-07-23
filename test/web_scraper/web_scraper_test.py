@@ -2,6 +2,7 @@
 import os
 import pytest
 import src.web_scraper as web_scraper
+from test_site.test_server import run_server
 
 _test_output_directory = os.path.join(os.path.dirname(__file__), "test_output")
 
@@ -38,6 +39,7 @@ def test_web_scraper():
                 f"Test output directory is not clean: {filename} found"
             )
 
+    test_server = run_server(port=8000)
 
     test_url = "http://localhost:8000/"
     # test_url = "https://ristopizzalavillette.ch/"
@@ -59,6 +61,8 @@ def test_web_scraper():
     assert (
             len(files) == 14
     ), f"Expected 14 image files, but found {len(files)} files in {domain_folder}"
+
+    test_server.shutdown()
 
 if __name__ == "__main__":
     pytest.main([__file__])
