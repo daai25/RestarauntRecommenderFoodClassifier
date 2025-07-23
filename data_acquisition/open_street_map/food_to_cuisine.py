@@ -1,0 +1,119 @@
+food_to_cuisines = {
+    "baklava": ["albanian", "armenian", "azerbaijani", "cypriot", "greek", "iranian", "iraqi", "jordanian", "lebanese", "syrian", "turkish", "egyptian", "saudi_arabian", "emirati", "bahraini", "kuwaiti", "qatari", "yemeni", "afghan"],
+    "beef_carpaccio": ["italian", "french", "argentine", "brazilian", "american", "german", "austrian", "spanish"],
+    "beef_tartare": ["french", "belgian", "german", "swiss", "american", "austrian", "canadian"],
+    "beet_salad": ["russian", "polish", "ukrainian", "belarusian", "german", "american", "french", "italian", "swedish", "lithuanian"],
+    "beignets": ["french", "american", "belgian", "canadian"],
+    "bibimbap": ["south_korean", "japanese", "chinese", "american"],
+    "breakfast_burrito": ["american", "mexican", "canadian"],
+    "bruschetta": ["italian", "american", "french", "spanish"],
+    "caesar_salad": ["mexican", "american", "canadian", "australian", "british"],
+    "cannoli": ["italian", "american", "argentine"],
+    "caprese_salad": ["italian", "american", "french", "greek"],
+    "ceviche": ["peruvian", "ecuadorean", "mexican", "chilean", "colombian", "panamanian", "costa_rican", "venezuelan"],
+    "cheese_plate": ["french", "swiss", "italian", "dutch", "german", "american", "british", "belgian"],
+    "cheesecake": ["american", "german", "greek", "polish", "japanese", "french", "italian"],
+    "chicken_curry": ["indian", "pakistani", "bangladeshi", "sri_lankan", "nepalese", "malaysian", "thai", "indonesian", "british", "jamaican", "trinidadian", "kenyan", "fijian"],
+    "chicken_quesadilla": ["mexican", "american", "guatemalan"],
+    "chicken_wings": ["american", "canadian", "jamaican", "south_korean", "chinese", "filipino", "thai"],
+    "chocolate_cake": ["american", "german", "austrian", "swiss", "british", "french", "canadian"],
+    "chocolate_mousse": ["french", "american", "swiss", "belgian"],
+    "clam_chowder": ["american", "british", "canadian", "australian"],
+    "club_sandwich": ["american", "british", "canadian", "australian", "new_zealander"],
+    "crab_cakes": ["american", "canadian", "filipino", "vietnamese", "thai", "french"],
+    "creme_brulee": ["french", "american", "canadian", "belgian", "swiss"],
+    "croque_madame": ["french", "belgian", "canadian"],
+    "dumplings": ["chinese", "japanese", "south_korean", "north_korean", "mongolian", "nepalese", "russian", "polish", "ukrainian", "thai", "indonesian", "filipino", "vietnamese"],
+    "edamame": ["japanese", "chinese", "south_korean"],
+    "eggs_benedict": ["american", "canadian", "australian", "british"],
+    "escargots": ["french", "belgian"],
+    "falafel": ["egyptian", "israeli", "jordanian", "lebanese", "syrian", "yemeni", "iraqi", "saudi_arabian", "kuwaiti", "bahraini", "emirati", "qatari", "turkish"],
+    "filet_mignon": ["french", "american", "argentine", "brazilian", "australian", "canadian"],
+    "fish_and_chips": ["british", "australian", "new_zealander", "american", "canadian"],
+    "foie_gras": ["french", "belgian"],
+    "french_fries": ["belgian", "french", "american", "canadian", "dutch"],
+    "french_onion_soup": ["french", "american", "canadian"],
+    "french_toast": ["french", "american", "canadian", "british"],
+    "fried_calamari": ["italian", "greek", "spanish", "portuguese", "american", "filipino"],
+    "fried_rice": ["chinese", "indonesian", "filipino", "thai", "vietnamese", "malaysian", "japanese", "south_korean", "north_korean"],
+    "garlic_bread": ["italian", "american", "french", "greek", "argentine"],
+    "gnocchi": ["italian", "argentine", "american"],
+    "greek_salad": ["greek", "cypriot", "american", "lebanese", "turkish"],
+    "grilled_cheese_sandwich": ["american", "british", "canadian", "australian"],
+    "grilled_salmon": ["norwegian", "american", "canadian", "japanese", "french", "russian"],
+    "guacamole": ["mexican", "american", "guatemalan", "colombian"],
+    "gyoza": ["japanese", "chinese", "south_korean"],
+    "hamburger": ["american", "german", "canadian", "australian", "argentine", "brazilian"],
+    "hot_dog": ["american", "german", "canadian", "australian"],
+    "huevos_rancheros": ["mexican", "guatemalan", "american"],
+    "hummus": ["egyptian", "israeli", "jordanian", "lebanese", "syrian", "yemeni", "iraqi", "saudi_arabian", "kuwaiti", "bahraini", "emirati", "qatari"],
+    "lasagna": ["italian", "american", "argentine", "brazilian"],
+    "lobster_bisque": ["french", "american", "canadian"],
+    "macaroni_and_cheese": ["american", "british", "canadian", "jamaican"],
+    "miso_soup": ["japanese"],
+    "mussels": ["belgian", "french", "spanish", "dutch", "american"],
+    "nachos": ["mexican", "american", "canadian"],
+    "omelette": ["french", "american", "british", "spanish"],
+    "onion_rings": ["american", "canadian", "british"],
+    "pad_thai": ["thai"],
+    "paella": ["spanish"],
+    "pancakes": ["american", "dutch", "british", "russian", "french", "canadian", "swedish", "norwegian"],
+    "panna_cotta": ["italian"],
+    "peking_duck": ["chinese"],
+    "pho": ["vietnamese"],
+    "pizza": ["italian", "american", "argentine", "brazilian", "canadian", "french", "turkish"],
+    "pork_chop": ["american", "german", "austrian", "chinese", "filipino", "polish"],
+    "poutine": ["canadian"],
+    "pulled_pork_sandwich": ["american"],
+    "ramen": ["japanese", "south_korean", "chinese", "american"],
+    "ravioli": ["italian", "argentine", "american"],
+    "risotto": ["italian", "american", "argentine"],
+    "samosa": ["indian", "pakistani", "nepalese", "bangladeshi", "kenyan", "tanzanian", "fijian"],
+    "sashimi": ["japanese"],
+    "scallops": ["french", "american", "japanese", "spanish"],
+    "seaweed_salad": ["japanese", "south_korean", "chinese"],
+    "shrimp_and_grits": ["american"],
+    "spaghetti_bolognese": ["italian", "argentine", "american"],
+    "spring_rolls": ["chinese", "vietnamese", "filipino", "thai", "indonesian"],
+    "steak": ["american", "argentine", "brazilian", "australian", "british", "french", "german"],
+    "sushi": ["japanese"],
+    "tacos": ["mexican", "american", "guatemalan"],
+    "takoyaki": ["japanese"],
+    "tiramisu": ["italian", "argentine", "american"],
+    "waffles": ["belgian", "american", "french", "dutch"]
+}
+
+'''print(len(food_to_cuisines))
+
+cuisine_count = dict()
+cuisine_set = set()
+mapping_sum = 0
+for food in food_to_cuisines:
+    mapping_sum += len(food_to_cuisines[food])
+    for cuisine in food_to_cuisines[food]:
+        if cuisine not in cuisine_count:
+            cuisine_count[cuisine] = 1
+            cuisine_set.add(cuisine)
+        else:
+            cuisine_count[cuisine] += 1
+
+# print(cuisine_count)
+#for cuisine in cuisine_set:
+#    print(cuisine)
+print(f"Number of Mappings: {mapping_sum}")
+
+def extra_dumb_sort(dict):
+    cuisine_list = list()
+    for cuisine in dict:
+        cuisine_list.append([cuisine, dict[cuisine]])
+    for i in range(len(cuisine_list)):
+        for j in range(i + 1, len(cuisine_list)):
+            if cuisine_list[i][1] > cuisine_list[j][1]:
+                temp = cuisine_list[i]
+                cuisine_list[i] = cuisine_list[j]
+                cuisine_list[j] = temp
+    return cuisine_list
+
+cuisine_list = extra_dumb_sort(cuisine_count)
+for item in cuisine_list:
+    print(f"{item[0]}: {item[1]}")'''
