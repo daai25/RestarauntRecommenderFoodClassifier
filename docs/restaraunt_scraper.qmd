@@ -70,3 +70,11 @@ There are some limitations that are inherent in scraping this much information f
 * JavaScript Heavy Sites: Sites that utilize a large amount JavaScript are not rendered prior to being scraped. This leads to some sites only having partial information.
 * Sites With No Relevant Images: Some sites contain no images, or contain no images that relate to the food they serve, which make the information scraped from them not useful.
 * Non Scrape-Friendly Sites: Some sites block scraping altogether or prevent reading of content while scraping. This leads to some sites that work and have images on them when navigating with a browser, but have no images downloaded.
+
+#### 7. Restaurants without a provided Link
+
+Some restaurants in the *OpenStreetMap* data do not have a provided link to their website.
+For that we developed a script that uses **Nominatim** from Geopy and **DuckDuckGo_Search** to find the website of the restaurant based on its name and location.
+It uses the coordinates, which are always provided to get the name of the city.
+Then together with the name and the city it searches for the website.
+It may not be perfect, but is sufficient for our purposes.
