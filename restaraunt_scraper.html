@@ -262,6 +262,10 @@ scrape_status.csv</code></pre>
 <li>Sites With No Relevant Images: Some sites contain no images, or contain no images that relate to the food they serve, which make the information scraped from them not useful.</li>
 <li>Non Scrape-Friendly Sites: Some sites block scraping altogether or prevent reading of content while scraping. This leads to some sites that work and have images on them when navigating with a browser, but have no images downloaded.</li>
 </ul>
+</section>
+<section id="restaurants-without-a-provided-link" class="level4">
+<h4 class="anchored" data-anchor-id="restaurants-without-a-provided-link">7. Restaurants without a provided Link</h4>
+<p>Some restaurants in the <em>OpenStreetMap</em> data do not have a provided link to their website. For that we developed a script that uses <strong>Nominatim</strong> from Geopy and <strong>DuckDuckGo_Search</strong> to find the website of the restaurant based on its name and location. It uses the coordinates, which are always provided to get the name of the city. Then together with the name and the city it searches for the website. It may not be perfect, but is sufficient for our purposes.</p>
 
 
 </section>
