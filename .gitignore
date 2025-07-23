@@ -138,3 +138,6 @@ dmypy.json
 .idea
 
 data_acquisition/restarauntContentScraper/scraped-data
+
+# exclude subdirectories of test/web_scraper/test_output
+test/web_scraper/test_output/*
