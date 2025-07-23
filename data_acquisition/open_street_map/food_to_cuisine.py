@@ -82,38 +82,3 @@ food_to_cuisines = {
     "tiramisu": ["italian", "argentine", "american"],
     "waffles": ["belgian", "american", "french", "dutch"]
 }
-
-'''print(len(food_to_cuisines))
-
-cuisine_count = dict()
-cuisine_set = set()
-mapping_sum = 0
-for food in food_to_cuisines:
-    mapping_sum += len(food_to_cuisines[food])
-    for cuisine in food_to_cuisines[food]:
-        if cuisine not in cuisine_count:
-            cuisine_count[cuisine] = 1
-            cuisine_set.add(cuisine)
-        else:
-            cuisine_count[cuisine] += 1
-
-# print(cuisine_count)
-#for cuisine in cuisine_set:
-#    print(cuisine)
-print(f"Number of Mappings: {mapping_sum}")
-
-def extra_dumb_sort(dict):
-    cuisine_list = list()
-    for cuisine in dict:
-        cuisine_list.append([cuisine, dict[cuisine]])
-    for i in range(len(cuisine_list)):
-        for j in range(i + 1, len(cuisine_list)):
-            if cuisine_list[i][1] > cuisine_list[j][1]:
-                temp = cuisine_list[i]
-                cuisine_list[i] = cuisine_list[j]
-                cuisine_list[j] = temp
-    return cuisine_list
-
-cuisine_list = extra_dumb_sort(cuisine_count)
-for item in cuisine_list:
-    print(f"{item[0]}: {item[1]}")'''
