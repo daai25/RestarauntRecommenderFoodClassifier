@@ -1,6 +1,7 @@
 afghan
 albanian
 algerian
+american
 american_islander
 american_samoan
 andorran
