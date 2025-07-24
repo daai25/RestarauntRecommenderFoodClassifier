@@ -13,7 +13,7 @@ We identify two primary user groups:
 
 * Mapping and data improvement communities: Volunteers or professionals contributing to OSM.
 
-    * Need: A scalable way to improve metadata (like cuisine type) for under-described restaurants.
+    * Need: A scalable way to improve cuisine type information for under-described restaurants.
 
 Users want an intuitive tool that helps them explore, discover, and trust the information about restaurants — ideally through a visual and preference-based interface.
 
@@ -48,11 +48,13 @@ We will be utilizing multiple models to accomplish our tasks. We will need the f
 **Goal**: Automatically detect whether an image scraped from a restaurant website depicts food or not.
 
 **Dataset**:
-- The *Food vs Not Food* dataset (publicly available)
-- Supplemented with manually validated scraped images from restaurant websites
+
+* The *Food vs Not Food* dataset (publicly available)
+* Supplemented with manually validated scraped images from restaurant websites
 
 **Metric**:
-- *F1-score ≥ 0.90*, to ensure strong balance between precision and recall
+
+* *F1-score ≥ 0.90*, to ensure strong balance between precision and recall
 
 **Purpose**:  
 Filter out irrelevant or non-food images, improving the accuracy and cleanliness of data passed into downstream models.
@@ -65,12 +67,14 @@ Filter out irrelevant or non-food images, improving the accuracy and cleanliness
 **Goal**: Predict the cuisine type (e.g., Italian, Chinese, Swiss) of a restaurant based on a collection of its food images.
 
 **Dataset**:
-- Labeled cuisine image datasets (e.g., Food-101)
-- Validated food images scraped from restaurant websites, optionally labeled by matching known cuisine types
+
+* Labeled cuisine image datasets (e.g., Food2k)
+* Validated food images scraped from restaurant websites, optionally labeled by matching known cuisine types
 
 **Metric**:
-- *Top-1 Accuracy ≥ 0.75*
-- *Top-3 Accuracy ≥ 0.90* (to allow for multiple plausible cuisine matches)
+
+* *Top-1 Accuracy ≥ 0.75*
+* *Top-3 Accuracy ≥ 0.90* (to allow for multiple plausible cuisine matches)
 
 **Purpose**:  
 Assign cuisine labels to OpenStreetMap restaurants that lack this metadata, enhancing search and filtering within the application.
@@ -80,19 +84,21 @@ Assign cuisine labels to OpenStreetMap restaurants that lack this metadata, enha
 ### 3. Restaurant Recommender System
 
 **Type of Task**: Hybrid Recommender System (Collaborative + Content-Based)  
-**Goal**: Recommend a shortlist of relevant restaurants to users based on review text or declared preferences.
+**Goal**: Recommend a short list of relevant restaurants to users based on reviews or declared preferences.
 
 **Dataset**:
-- TripAdvisor restaurant reviews (includes restaurant metadata and user-generated review text)
-- Optionally: Simulated or real user input preferences for evaluation
+
+* TripAdvisor restaurant reviews (includes restaurant metadata and user-generated review text)
+* Simulated or real user input preferences for evaluation
 
 **Metric**:
-- *Precision@5 ≥ 0.80* (4 of 5 suggestions should be considered relevant)
-- *MAP (Mean Average Precision)* may also be calculated to assess ranking performance
+
+* *Precision@5 ≥ 0.80* (4 of 5 suggestions should be considered relevant)
+* *MAP (Mean Average Precision)* may also be calculated to assess ranking performance
 
 **Approach**:
-- Embed user review text via Sentence-BERT or similar model
-- Compare similarity with restaurant reviews to generate personalized suggestions
+
+* Compare similarity with restaurant reviews to generate personalized suggestions
 
 **Purpose**:  
 Enable personalized restaurant discovery based on user intent and experience narratives, beyond just metadata filtering.
@@ -111,47 +117,47 @@ There are four primary phases to this project that will mostly be done in the or
 ## Roles and Contact Details
 
 ### Adam Opperman
-- **Role**: *Data Acquisition/Structurer*
-- **Tasks**:  
-  - Collect image datasets for use of cuisine classification.
-  - Clean and label image cuisine types.
-- **Contact**:  
-  - Email: oppermaa@mail.gvsu.edu 
-  - GitHub: [oppermaa](https://github.com/oppermaa)
+* **Role**: *Data Acquisition/Structurer*
+* **Tasks**:  
+  * Collect image datasets for use of cuisine classification.
+  * Clean and label image cuisine types.
+* **Contact**:  
+  * Email: oppermaa@mail.gvsu.edu 
+  * GitHub: [oppermaa](https://github.com/oppermaa)
 
 ---
 
 ### Moritz Feuchter
-- **Role**: *Developer, Project Structure Lead*
-- **Tasks**:  
-  - Designed and developed the cuisine classification pipeline  
-  - Constructed the layout and environment of the project
-  - Develop process for getting missing site URLs for *OpenStreetMap*
-- **Contact**:  
-  - Email: feuchmor@students.zhaw.ch  
-  - GitHub: [x-tr4ce](https://github.com/x-tr4ce)
+* **Role**: *Developer, Project Structure Lead*
+* **Tasks**:  
+  * Designed and developed the cuisine classification pipeline  
+  * Constructed the layout and environment of the project
+  * Develop process for getting missing site URLs for *OpenStreetMap*
+* **Contact**:  
+  * Email: feuchmor@students.zhaw.ch  
+  * GitHub: [x-tr4ce](https://github.com/x-tr4ce)
 
 ---
 
 ### Nino Frei
-- **Role**: *Developer, Data Structurer*
-- **Tasks**:  
-  - Scrape *OpenStreetMap* data for restaurants/cafes in Switzerland.
-  - Clean and sort image data.
-  - Train Food/Not Food model.
-- **Contact**:  
-  - Email: freinin1@students.zhaw.ch 
-  - GitHub: [shinarove](https://github.com/shinarove)
+* **Role**: *Developer, Data Structurer*
+* **Tasks**:  
+  * Scrape *OpenStreetMap* data for restaurants/cafes in Switzerland.
+  * Clean and sort image data.
+  * Train Food/Not Food model.
+* **Contact**:  
+  * Email: freinin1@students.zhaw.ch 
+  * GitHub: [shinarove](https://github.com/shinarove)
 
 ---
 
 ### Sawyer Rogers
-- **Role**: *Developer, Documenter*
-- **Tasks**:  
-  - Design and implement the restaurant scraping spider.  
-  - Manag CSV-based status tracking and image processing.  
-  - Support integration with downstream classification systems.  
-  - Document project charta.
-- **Contact**:  
-  - Email: rogersaw@mail.gvsu.edu  
-  - GitHub: [rogersaw711](https://github.com/rogersaw711)
+* **Role**: *Developer, Documenter*
+* **Tasks**:  
+  * Design and implement the restaurant scraping spider.  
+  * Manag CSV-based status tracking and image processing.  
+  * Support integration with downstream classification systems.  
+  * Document project charta.E
+* **Contact**:  
+  * Email: rogersaw@mail.gvsu.edu  
+  * GitHub: [rogersaw711](https://github.com/rogersaw711)
