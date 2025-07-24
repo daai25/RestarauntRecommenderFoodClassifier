@@ -78,18 +78,17 @@ def classify_images(image_directory: str, model_path: str, out_features: int = 7
         cuisine_type_count.items(), key=lambda x: x[1], reverse=True
     )
     top_cuisines = sorted_cuisines[:3] if len(sorted_cuisines) >= 3 else sorted_cuisines
-    
+
     guess_1 = top_cuisines[0][0] if len(top_cuisines) > 0 else None
     guess_2 = top_cuisines[1][0] if len(top_cuisines) > 1 else None
     guess_3 = top_cuisines[2][0] if len(top_cuisines) > 2 else None
-    
+
     print("\nTop cuisine type guesses:")
     print(f"1. {guess_1} ({cuisine_type_count.get(guess_1, 0)})")
     print(f"2. {guess_2} ({cuisine_type_count.get(guess_2, 0)})")
-    print(f"3. {guess_3} ({cuisine_type_count.get(guess_3, 0))})")  
-    
+    print(f"3. {guess_3} ({cuisine_type_count.get(guess_3, 0)})")
+
     return guess_1, guess_2, guess_3
-    
 
 
 def load_classifier(
