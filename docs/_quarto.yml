@@ -13,8 +13,10 @@ website:
             - project_charta.qmd
             - data_report_open_street_map_cuisine_types.qmd
             - food_or_not_food_filter.qmd
+            - restaurant_recommender.qmd
             - restaurant_scraper.qmd
             - classification_pipeline.qmd
+            - webapp.qmd
 
 bibliography: refs.bib
 csl: vancouver-brackets.csl
