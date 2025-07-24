@@ -1,10 +1,12 @@
 # evaluation/food_or_not_food/model_evaluation.py
+from typing import Any
 import os
 import torch
 import torch.nn as nn
 from torchvision import transforms
 from torchvision.datasets import ImageFolder
 from torch.utils.data import DataLoader
+from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
 from sklearn.metrics import precision_recall_fscore_support
 import numpy as np
 import matplotlib.pyplot as plt
@@ -66,7 +68,7 @@ def load_data(transform: transforms.Compose, directory: str) -> DataLoader:
     return DataLoader(dataset, batch_size=64, num_workers=8, shuffle=False)
 
 
-def evaluate_model(model: nn.Module, device: torch.device, dataloader: DataLoader) -> dict[str, float]:
+def evaluate_model(model: nn.Module, device: torch.device, dataloader: DataLoader) -> dict[str, float | Any]:
     all_predictions = []
     all_labels = []
     with torch.no_grad():
@@ -86,14 +88,18 @@ def evaluate_model(model: nn.Module, device: torch.device, dataloader: DataLoade
         all_labels, all_predictions, average="binary" if len(set(all_labels)) == 2 else "macro"
     )
 
+    # calculate the confusion matrix
+    cm = confusion_matrix(all_labels, all_predictions)
+
     return {
         "accuracy": accuracy,
         "precision": precision,
         "recall": recall,
-        "f1_score": f1
+        "f1_score": f1,
+        "confusion_matrix": cm,
     }
 
-def plot_results(results: list[dict[str, float]], model_names: list[str]):
+def plot_results(results: list[dict[str, float | Any]], model_names: list[str]):
     """
     Plot the evaluation results of multiple models.
 
@@ -137,65 +143,94 @@ def plot_results(results: list[dict[str, float]], model_names: list[str]):
     plt.grid(axis='y')
     plt.show()
 
+def plot_confusion_matrix(eval_results: dict, title: str, labels=None):
+    if labels is None:
+        labels = ["Food", "Not Food"]
 
-def main():
-    # print("Loading models...")
-    # list_of_models = load_models()
-    #
-    # (resnet18_base_no_aug_model,
-    #  resnet18_device,
-    #  resnet18_transform) = list_of_models[0]
-    #
-    # resnet18_base_aug_model = list_of_models[1][0]
-    # resnet18_improved_aug_model = list_of_models[2][0]
-    # resnet50_improved_aug_model, resnet50_device, resnet50_transform = list_of_models[3]
-    #
-    # print("Loading data...")
-    # test_data = os.path.relpath("test_data")
-    # resnet18_loader = load_data(resnet18_transform, test_data)
-    # resnet50_loader = load_data(resnet50_transform, test_data)
+    cm = eval_results["confusion_matrix"]
+    disp = ConfusionMatrixDisplay(confusion_matrix=cm)
+    disp.plot(cmap=plt.cm.Blues)
+    plt.xticks(ticks=np.arange(len(labels)), labels=labels, rotation=45)
+    plt.yticks(ticks=np.arange(len(labels)), labels=labels)
+    plt.title(f"Confusion Matrix: {title}")
+    plt.show()
 
-    # print("Evaluating models...")
-    # results = [evaluate_model(resnet18_base_no_aug_model, resnet18_device, resnet18_loader),
-    #            evaluate_model(resnet18_base_aug_model, resnet18_device, resnet18_loader),
-    #            evaluate_model(resnet18_improved_aug_model_run1, resnet18_device, resnet18_loader),
-    #            evaluate_model(resnet50_improved_aug_model, resnet50_device, resnet50_loader)]
-    #
-    # print(f"Results: {results}")
+def main(evaluated_results: list[dict[str, float | Any]]=None):
+    if evaluated_results is None:
+        print("Loading models...")
+        list_of_models = load_models()
 
-    # these are the already calculated results from the evaluation
-    results = [{
-        'accuracy': 0.9502657555049354,
-        'precision': 0.9749001711351968,
-        'recall': 0.9515590200445434,
-        'f1_score': 0.9630881938574246
-    }, {
-        'accuracy': 0.9582384206529992,
-        'precision': 0.9647188533627343,
-        'recall': 0.9743875278396437,
-        'f1_score': 0.9695290858725761
-    }, {
-        'accuracy': 0.9688686408504176,
-        'precision': 0.9766407119021134,
-        'recall': 0.977728285077951,
-        'f1_score': 0.9771841958820257
-    }, {
-        'accuracy': 0.9768413059984814,
-        'precision': 0.9806094182825484,
-        'recall': 0.9855233853006682,
-        'f1_score': 0.9830602610386003
-    }]
+        (resnet18_base_no_aug_model,
+         resnet18_device,
+         resnet18_transform) = list_of_models[0]
+
+        resnet18_base_aug_model = list_of_models[1][0]
+        resnet18_improved_aug_model = list_of_models[2][0]
+        resnet50_improved_aug_model, resnet50_device, resnet50_transform = list_of_models[3]
+
+        print("Loading data...")
+        test_data = os.path.relpath("test_data")
+        resnet18_loader = load_data(resnet18_transform, test_data)
+        resnet50_loader = load_data(resnet50_transform, test_data)
+
+        print("Evaluating models...")
+        evaluated_results = [evaluate_model(resnet18_base_no_aug_model, resnet18_device, resnet18_loader),
+                   evaluate_model(resnet18_base_aug_model, resnet18_device, resnet18_loader),
+                   evaluate_model(resnet18_improved_aug_model, resnet18_device, resnet18_loader),
+                   evaluate_model(resnet50_improved_aug_model, resnet50_device, resnet50_loader)]
+
+        print(f"Results: {evaluated_results}")
 
     print("Plotting results...")
-    plot_results(results, [
+    plot_results(evaluated_results, [
         "Resnet18 on Base without Aug",
         "Resnet18 on Base with Aug",
         "Resnet18 on Improved with Aug",
         "Resnet50 on Improved with Aug"
     ])
 
+    print("Plotting confusion matrices...")
+    plot_confusion_matrix(evaluated_results[0], "Resnet18 on Base without Aug")
+    plot_confusion_matrix(evaluated_results[1], "Resnet18 on Base with Aug")
+    plot_confusion_matrix(evaluated_results[2], "Resnet18 on Improved with Aug")
+    plot_confusion_matrix(evaluated_results[3], "Resnet50 on Improved with Aug")
 
 if __name__ == "__main__":
-    main()
+    # these are the already calculated results from the evaluation
+    last_results = [{
+        'accuracy': 0.9502657555049354,
+        'precision': 0.9749001711351968,
+        'recall': 0.9515590200445434,
+        'f1_score': 0.9630881938574246,
+        'confusion_matrix': np.array(
+            [[ 794,   44],
+             [  87, 1709]])
+    }, {
+        'accuracy': 0.9582384206529992,
+        'precision': 0.9647188533627343,
+        'recall': 0.9743875278396437,
+        'f1_score': 0.9695290858725761,
+        'confusion_matrix': np.array(
+            [[ 774,   64],
+             [  46, 1750]])
+    }, {
+        'accuracy': 0.9688686408504176,
+        'precision': 0.9766407119021134,
+        'recall': 0.977728285077951,
+        'f1_score': 0.9771841958820257,
+        'confusion_matrix': np.array(
+            [[ 796,   42],
+             [  40, 1756]])
+    }, {
+        'accuracy': 0.9768413059984814,
+        'precision': 0.9806094182825484,
+        'recall': 0.9855233853006682,
+        'f1_score': 0.9830602610386003,
+        'confusion_matrix': np.array(
+            [[ 803,   35],
+             [  26, 1770]])
+    }]
+
+    main(evaluated_results=last_results)
 
 
