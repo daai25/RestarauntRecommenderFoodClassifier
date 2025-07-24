@@ -51,6 +51,8 @@ The recommendation pipeline follows these steps:
 
 This workflow keeps the logic transparent and immediate, while remaining efficient on our small dataset.
 
+The results of this are indeterminate as well, as we do not have a defined random state for the recommender. If we apply a defined random state, the output will be consistent, but we wanted to allow for some randomness so the recommendations are more varied.
+
 ## 4. Performance
 
 The performance of this recommender is consistent, though not incredibly accurate. The method by which I found the current performance was through Surprises [GridSearchCV](https://surprise.readthedocs.io/en/stable/model_selection.html#parameter-search). This allows us to give a list of parameters, and test for which combination has the best results:
