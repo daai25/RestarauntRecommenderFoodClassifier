@@ -5,14 +5,13 @@ import pandas as pd
 from PIL import Image
 import requests
 import streamlit as st
+from surprise import Dataset, Reader, SVD
 from urllib.parse import urljoin
 
-# Simulated Magic() and TurboScraper()
-def Magic(list_of_image_bytes):
-    return f"Processed {len(list_of_image_bytes)} images."
+def Predict(images):
+    return f"Processed {len(images)} images."
 
-
-def TurboScraper(url):
+def ScrapeImagesFromUrl(url):
     """
     Takes a single URL, scrapes images, and returns them as a list of image byte objects.
     """
@@ -66,33 +65,50 @@ def GenerateClassifierTab():
         uploaded_files = st.file_uploader("Upload one or more images", type=["jpg", "jpeg", "png"], accept_multiple_files=True)
     
         if uploaded_files:
-            images_bytes = [file.read() for file in uploaded_files]
-    
-            # Optionally preview images
-            for img in images_bytes:
-                st.image(img, use_container_width=True)
-    
-            # Process with Magic()
-            result = Magic(images_bytes)
+            result = Predict(uploaded_files)
             st.success(result)
     
     elif mode == "Submit Link":     
         url_input = st.text_input("Enter a URL to scrape images from")
     
-        if url_input:
-            if st.button("Scrape and Process"):
-                scraped_images_bytes = TurboScraper(url_input)
-                for img_bytes in scraped_images_bytes:
-                        st.image(img_bytes, use_container_width=True)
-                result = Magic(scraped_images_bytes)
+        if st.button("Scrape and Process"):
+            scraped_images_bytes = ScrapeImagesFromUrl(url_input)
+            if len(scraped_images_bytes) > 0:
+                result = Predict(scraped_images_bytes)
                 st.success(result)
-
+            else:
+                st.error("Found no images at URL")
 def GenerateRecommenderTab():
-    def Recommender(user_reviews):
-    # Recommend the restaurant with fewest user reviews as dummy logic
-        reviewed_names = set(r for r, _ in user_reviews)
-        remaining = [r for r in restaurant_names if r not in reviewed_names]
-        return remaining[0] if remaining else "You've reviewed everything!"
+    def Recommender(user_id, csv_path="combined_reviews.csv"):
+        df = pd.read_csv(csv_path, delimiter="|")
+        df = df.rename(columns={
+            "restaurantName": "item",
+            "reviewerId": "user",
+            "rating": "rating"
+        })
+
+        # Prepare surprise dataset
+        reader = Reader(rating_scale=(1, 5))
+        data = Dataset.load_from_df(df[["user", "item", "rating"]], reader)
+        trainset = data.build_full_trainset()
+
+        # Train SVD model
+        model = SVD()
+        model.fit(trainset)
+
+        # Find restaurants the user hasn't reviewed yet
+        all_items = df["item"].unique()
+        reviewed = df[df["user"] == user_id]["item"].unique()
+        not_reviewed = [item for item in all_items if item not in reviewed]
+
+        if not not_reviewed:
+            return "You've reviewed everything!"
+
+        # Predict ratings for unreviewed items
+        predictions = [(item, model.predict(user_id, item).est) for item in not_reviewed]
+        predictions.sort(key=lambda x: x[1], reverse=True)
+
+        return predictions[0][0]  # Return top predicted restaurant
 
     # Load CSV at app start
     @st.cache_data
@@ -101,11 +117,18 @@ def GenerateRecommenderTab():
         return df, sorted(df["restaurantName"].drop_duplicates())
     
     def append_review_to_csv(csv_path, restaurant, user_id, rating):
+        df = pd.read_csv(csv_path, delimiter="|")
+        already_reviewed = not df[(df["restaurantName"] == restaurant) & (df["reviewerId"] == user_id)].empty
+    
+        if already_reviewed:
+            return False  # Skip writing
         today = datetime.today().strftime('%Y-%m-%d')
         new_row = f"{restaurant}|{user_id}|{rating}|{today},\n"
 
         with open(csv_path, "a", encoding="utf-8") as f:
             f.write(new_row)
+        return True
+        
 
     df_reviews, restaurant_names = load_restaurant_data("combined_reviews.csv")
     
@@ -115,11 +138,13 @@ def GenerateRecommenderTab():
     # Simple login
     username = st.text_input("Enter your username to get started:")
     if username:
-        if f"{username}_reviews" not in st.session_state:
-            user_df = df_reviews[df_reviews["reviewerId"] == username][["restaurantName", "rating"]]
-            st.session_state[f"{username}_reviews"] = list(user_df.itertuples(index=False, name=None))
+        user_reviews_df = df_reviews[df_reviews["reviewerId"] == username][["restaurantName", "rating"]]
 
-        # From now on, same logic as before:
+        if not user_reviews_df.empty:
+            st.subheader("Your Reviews")
+            st.table(user_reviews_df.rename(columns={"restaurantName": "Restaurant", "rating": "Rating"}))
+        else:
+            st.info("You haven't reviewed any restaurants yet.")
 
         # Review interface
         st.header("Submit a Review")
@@ -128,35 +153,31 @@ def GenerateRecommenderTab():
         rating_choice = st.slider("Your rating:", 1, 5, 3)
 
         if st.button("Submit Review"):
-            reviews = st.session_state[f"{username}_reviews"]
-            reviews_dict = dict(reviews)
-            reviews_dict[restaurant_choice] = rating_choice
-            st.session_state[f"{username}_reviews"] = list(reviews_dict.items())
-        
-            # Append to CSV (optionally skip if it's a duplicate)
-            append_review_to_csv("combined_reviews.csv", restaurant_choice, username, rating_choice)
-            st.success(f"Review added for {restaurant_choice}")
+            added = append_review_to_csv("combined_reviews.csv", restaurant_choice, username, rating_choice)
 
-        # Show existing reviews
-        user_reviews = st.session_state[f"{username}_reviews"]
-        if user_reviews:
-            st.subheader("Your Reviews")
-            st.table(pd.DataFrame(user_reviews, columns=["Restaurant", "Rating"]))
-        else:
-            st.info("You haven't reviewed any restaurants yet.")
+            if added:
+                st.success(f"Review added for {restaurant_choice}")
+                st.cache_data.clear()
+                st.rerun()
+            else:
+                st.warning(f"You've already reviewed {restaurant_choice}")
 
         # Recommendation logic
-        if len(user_reviews) >= 2:
-            recommended = Recommender(user_reviews)
+        if len(user_reviews_df) >= 2:
+            recommended = Recommender(username)
             st.header("Recommended Restaurant")
             st.success(f"We recommend you try: **{recommended}**")
         else:
             st.warning("Please review at least **two restaurants** to get a recommendation.")
 
-# Streamlit App
 st.set_page_config(
-    layout="wide"
+    page_title="Forkcast",
+    page_icon="favicon.png",
+    layout="wide",
 )
+
+st.image("ForkCast.png", width=200)
+
 classifierTab, recommenderTab = st.tabs(["Image Classifier", "Recommender"])
 
 with classifierTab:
