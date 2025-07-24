@@ -132,6 +132,12 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./restaurant_recommender.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Overview</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./restaurant_scraper.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Restaurant Website Content Extraction</span></a>
   </div>
@@ -140,6 +146,12 @@ ul.task-list li input[type="checkbox"] {
   <div class="sidebar-item-container"> 
   <a href="./classification_pipeline.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Image Classification Pipeline</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./webapp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Overview</span></a>
   </div>
 </li>
     </ul>
@@ -199,7 +211,7 @@ ul.task-list li input[type="checkbox"] {
 </ul></li>
 <li><p>Mapping and data improvement communities: Volunteers or professionals contributing to OSM.</p>
 <ul>
-<li>Need: A scalable way to improve metadata (like cuisine type) for under-described restaurants.</li>
+<li>Need: A scalable way to improve cuisine type information for under-described restaurants.</li>
 </ul></li>
 </ul>
 <p>Users want an intuitive tool that helps them explore, discover, and trust the information about restaurants — ideally through a visual and preference-based interface.</p>
@@ -258,8 +270,15 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="foodnot-food-classifier">1. Food/Not Food Classifier</h3>
 <p><strong>Type of Task</strong>: Binary Classification<br>
 <strong>Goal</strong>: Automatically detect whether an image scraped from a restaurant website depicts food or not.</p>
-<p><strong>Dataset</strong>: - The <em>Food vs Not Food</em> dataset (publicly available) - Supplemented with manually validated scraped images from restaurant websites</p>
-<p><strong>Metric</strong>: - <em>F1-score ≥ 0.90</em>, to ensure strong balance between precision and recall</p>
+<p><strong>Dataset</strong>:</p>
+<ul>
+<li>The <em>Food vs Not Food</em> dataset (publicly available)</li>
+<li>Supplemented with manually validated scraped images from restaurant websites</li>
+</ul>
+<p><strong>Metric</strong>:</p>
+<ul>
+<li><em>F1-score ≥ 0.90</em>, to ensure strong balance between precision and recall</li>
+</ul>
 <p><strong>Purpose</strong>:<br>
 Filter out irrelevant or non-food images, improving the accuracy and cleanliness of data passed into downstream models.</p>
 <hr>
@@ -268,8 +287,16 @@ Filter out irrelevant or non-food images, improving the accuracy and cleanliness
 <h3 class="anchored" data-anchor-id="cuisine-predictor">2. Cuisine Predictor</h3>
 <p><strong>Type of Task</strong>: Multi-class Classification<br>
 <strong>Goal</strong>: Predict the cuisine type (e.g., Italian, Chinese, Swiss) of a restaurant based on a collection of its food images.</p>
-<p><strong>Dataset</strong>: - Labeled cuisine image datasets (e.g., Food-101) - Validated food images scraped from restaurant websites, optionally labeled by matching known cuisine types</p>
-<p><strong>Metric</strong>: - <em>Top-1 Accuracy ≥ 0.75</em> - <em>Top-3 Accuracy ≥ 0.90</em> (to allow for multiple plausible cuisine matches)</p>
+<p><strong>Dataset</strong>:</p>
+<ul>
+<li>Labeled cuisine image datasets (e.g., Food2k)</li>
+<li>Validated food images scraped from restaurant websites, optionally labeled by matching known cuisine types</li>
+</ul>
+<p><strong>Metric</strong>:</p>
+<ul>
+<li><em>Top-1 Accuracy ≥ 0.75</em></li>
+<li><em>Top-3 Accuracy ≥ 0.90</em> (to allow for multiple plausible cuisine matches)</li>
+</ul>
 <p><strong>Purpose</strong>:<br>
 Assign cuisine labels to OpenStreetMap restaurants that lack this metadata, enhancing search and filtering within the application.</p>
 <hr>
@@ -277,10 +304,21 @@ Assign cuisine labels to OpenStreetMap restaurants that lack this metadata, enha
 <section id="restaurant-recommender-system" class="level3">
 <h3 class="anchored" data-anchor-id="restaurant-recommender-system">3. Restaurant Recommender System</h3>
 <p><strong>Type of Task</strong>: Hybrid Recommender System (Collaborative + Content-Based)<br>
-<strong>Goal</strong>: Recommend a shortlist of relevant restaurants to users based on review text or declared preferences.</p>
-<p><strong>Dataset</strong>: - TripAdvisor restaurant reviews (includes restaurant metadata and user-generated review text) - Optionally: Simulated or real user input preferences for evaluation</p>
-<p><strong>Metric</strong>: - <em>Precision@5 ≥ 0.80</em> (4 of 5 suggestions should be considered relevant) - <em>MAP (Mean Average Precision)</em> may also be calculated to assess ranking performance</p>
-<p><strong>Approach</strong>: - Embed user review text via Sentence-BERT or similar model - Compare similarity with restaurant reviews to generate personalized suggestions</p>
+<strong>Goal</strong>: Recommend a short list of relevant restaurants to users based on reviews or declared preferences.</p>
+<p><strong>Dataset</strong>:</p>
+<ul>
+<li>TripAdvisor restaurant reviews (includes restaurant metadata and user-generated review text)</li>
+<li>Simulated or real user input preferences for evaluation</li>
+</ul>
+<p><strong>Metric</strong>:</p>
+<ul>
+<li><em>Precision@5 ≥ 0.80</em> (4 of 5 suggestions should be considered relevant)</li>
+<li><em>MAP (Mean Average Precision)</em> may also be calculated to assess ranking performance</li>
+</ul>
+<p><strong>Approach</strong>:</p>
+<ul>
+<li>Compare similarity with restaurant reviews to generate personalized suggestions</li>
+</ul>
 <p><strong>Purpose</strong>:<br>
 Enable personalized restaurant discovery based on user intent and experience narratives, beyond just metadata filtering.</p>
 </section>
@@ -374,7 +412,7 @@ Figure&nbsp;1: Project Plan
 </li>
 <li>Support integration with downstream classification systems.<br>
 </li>
-<li>Document project charta.</li>
+<li>Document project charta.E</li>
 </ul></li>
 <li><strong>Contact</strong>:
 <ul>

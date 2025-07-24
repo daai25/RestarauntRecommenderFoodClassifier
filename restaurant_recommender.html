@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>data_report_open_street_map_cuisine_types – Food Classifier</title>
+<title>restaurant_recommender – Food Classifier</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -116,7 +116,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./data_report_open_street_map_cuisine_types.html">Data Report: OpenStreetMap - Cuisine Types</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./restaurant_recommender.html">Overview</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -155,7 +155,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./data_report_open_street_map_cuisine_types.html" class="sidebar-item-text sidebar-link active">
+  <a href="./data_report_open_street_map_cuisine_types.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Data Report: OpenStreetMap - Cuisine Types</span></a>
   </div>
 </li>
@@ -167,7 +167,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./restaurant_recommender.html" class="sidebar-item-text sidebar-link">
+  <a href="./restaurant_recommender.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Overview</span></a>
   </div>
 </li>
@@ -199,21 +199,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#data-report-openstreetmap---cuisine-types" id="toc-data-report-openstreetmap---cuisine-types" class="nav-link active" data-scroll-target="#data-report-openstreetmap---cuisine-types">Data Report: OpenStreetMap - Cuisine Types</a>
-  <ul class="collapse">
-  <li><a href="#extracting-restaurants-fast-food-and-cafes-from-openstreetmap" id="toc-extracting-restaurants-fast-food-and-cafes-from-openstreetmap" class="nav-link" data-scroll-target="#extracting-restaurants-fast-food-and-cafes-from-openstreetmap">Extracting Restaurants, Fast Food and Cafes from OpenStreetMap</a>
-  <ul class="collapse">
-  <li><a href="#explanation-of-the-query" id="toc-explanation-of-the-query" class="nav-link" data-scroll-target="#explanation-of-the-query">Explanation of the query:</a></li>
-  <li><a href="#result-of-the-api-query" id="toc-result-of-the-api-query" class="nav-link" data-scroll-target="#result-of-the-api-query">Result of the API Query</a></li>
-  </ul></li>
-  <li><a href="#finalizing-the-cuisine-types" id="toc-finalizing-the-cuisine-types" class="nav-link" data-scroll-target="#finalizing-the-cuisine-types">Finalizing the Cuisine Types</a>
-  <ul class="collapse">
-  <li><a href="#defining-the-cuisine-types" id="toc-defining-the-cuisine-types" class="nav-link" data-scroll-target="#defining-the-cuisine-types">Defining the Cuisine Types</a></li>
-  <li><a href="#gathering-the-cuisine-types" id="toc-gathering-the-cuisine-types" class="nav-link" data-scroll-target="#gathering-the-cuisine-types">Gathering the Cuisine Types</a></li>
-  </ul></li>
-  </ul></li>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#review-data-format" id="toc-review-data-format" class="nav-link" data-scroll-target="#review-data-format">1. Review Data Format</a></li>
+  <li><a href="#svd-model-training" id="toc-svd-model-training" class="nav-link" data-scroll-target="#svd-model-training">2. SVD Model Training</a></li>
+  <li><a href="#logic" id="toc-logic" class="nav-link" data-scroll-target="#logic">3. Logic</a></li>
+  <li><a href="#performance" id="toc-performance" class="nav-link" data-scroll-target="#performance">4. Performance</a></li>
+  <li><a href="#model-persistence" id="toc-model-persistence" class="nav-link" data-scroll-target="#model-persistence">5. Model Persistence</a></li>
+  <li><a href="#future-improvements" id="toc-future-improvements" class="nav-link" data-scroll-target="#future-improvements">6. Future Improvements</a></li>
   </ul>
-<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="data_report_open_street_map_cuisine_types.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="restaurant_recommender.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
@@ -221,270 +215,95 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<section id="data-report-openstreetmap---cuisine-types" class="level1">
-<h1>Data Report: OpenStreetMap - Cuisine Types</h1>
-<section id="extracting-restaurants-fast-food-and-cafes-from-openstreetmap" class="level2">
-<h2 class="anchored" data-anchor-id="extracting-restaurants-fast-food-and-cafes-from-openstreetmap">Extracting Restaurants, Fast Food and Cafes from OpenStreetMap</h2>
-<p>For extracting the data from OpenStreetMap, we utilized the Overpass API. The used query is as follows:</p>
-<pre><code>[out:json][timeout:180];
-area["name"="{name}"]["boundary"="administrative"]["admin_level"="4"]-&gt;.a;
-(
-  node["amenity"="restaurant"](area.a);
-  node["amenity"="cafe"](area.a);
-  node["amenity"="fast_food"](area.a);
-);
-out center;</code></pre>
-<section id="explanation-of-the-query" class="level3">
-<h3 class="anchored" data-anchor-id="explanation-of-the-query">Explanation of the query:</h3>
-<hr>
-<section id="query-output-and-timeout-settings" class="level4">
-<h4 class="anchored" data-anchor-id="query-output-and-timeout-settings">1. <strong>Query Output and Timeout Settings</strong></h4>
-<pre><code>[out:json][timeout:180];</code></pre>
-<ul>
-<li><code>out:json</code>: Sets the output format to <strong>JSON</strong>.</li>
-<li><code>timeout:180</code>: Sets a <strong>timeout limit of 180 seconds</strong> for the query to run, useful for large or slow queries.</li>
-</ul>
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>The <strong>ForkCast Recommender</strong> is a collaborative filtering engine that suggests restaurants to users based on their review history. It uses the <a href="https://surpriselib.com/">Surprise</a> library’s Singular Value Decomposition (SVD) implementation to generate predictions from user-item rating data.</p>
 <hr>
 </section>
-<section id="select-the-area" class="level4">
-<h4 class="anchored" data-anchor-id="select-the-area">2. <strong>Select the Area</strong></h4>
-<pre><code>area["name"="{name}"]["boundary"="administrative"]["admin_level"="4"]-&gt;.a;</code></pre>
+<section id="review-data-format" class="level2">
+<h2 class="anchored" data-anchor-id="review-data-format">1. Review Data Format</h2>
+<p>All review data is stored in a single CSV file named <code>combined_reviews.csv</code>, with the following format (pipe-delimited):</p>
+<p>restaurantName|reviewerId|rating|reviewDate</p>
+<p>Each row represents one review by a specific user of a specific restaurant, along with a numeric rating (1–5) and the date of review.</p>
 <ul>
-<li>This finds an <strong>administrative area</strong>:
-<ul>
-<li>With name <code>{name}</code> (e.g.&nbsp;“Germany” or “Zurich” – replace with the actual name).</li>
-<li>With <code>boundary=administrative</code> (only administrative boundaries).</li>
-<li>With <code>admin_level=4</code> (typically a region/state-level boundary).</li>
-</ul></li>
-<li><code>-&gt;.a;</code>: Saves the matched area into a variable <code>.a</code>.</li>
-</ul>
-<p>Note: The area is <strong>not the same</strong> as a polygon in the map. Internally, Overpass assigns IDs to areas derived from OSM relations.</p>
-<hr>
-</section>
-<section id="find-nodes-within-that-area" class="level4">
-<h4 class="anchored" data-anchor-id="find-nodes-within-that-area">3. <strong>Find Nodes Within That Area</strong></h4>
-<pre><code>(
-  node["amenity"="restaurant"](area.a);
-  node["amenity"="cafe"](area.a);
-  node["amenity"="fast_food"](area.a);
-);</code></pre>
-<ul>
-<li>This block fetches <strong>nodes</strong> (points) that:
-<ul>
-<li>Have <code>amenity=restaurant</code>, <code>amenity=cafe</code>, or <code>amenity=fast_food</code>.</li>
-<li>Are <strong>located within the area <code>.a</code></strong> defined above.</li>
-</ul></li>
-<li>Parentheses group the different queries together so the result includes all three types.</li>
-</ul>
-<hr>
-</section>
-<section id="output-the-results" class="level4">
-<h4 class="anchored" data-anchor-id="output-the-results">4. <strong>Output the Results</strong></h4>
-<pre><code>out center;</code></pre>
-<ul>
-<li><code>out center</code>: Outputs each matching object with its <strong>center coordinates</strong>.
-<ul>
-<li><code>center</code> is typically used for areas (ways/relations), but if only nodes are returned, the output is similar to <code>out body</code>.</li>
-</ul></li>
+<li>Users may review multiple restaurants<br>
+</li>
+<li>Restaurants may receive reviews from multiple users<br>
+</li>
+<li>Duplicate reviews are prevented at submission time</li>
 </ul>
 </section>
+<section id="svd-model-training" class="level2">
+<h2 class="anchored" data-anchor-id="svd-model-training">2. SVD Model Training</h2>
+<p>The core of the recommendation logic is built using Surprise’s matrix factorization algorithm (SVD). This model is retrained every time a new review is submitted and accepted.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> surprise <span class="im">import</span> Dataset, Reader, SVD</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>reader <span class="op">=</span> Reader(rating_scale<span class="op">=</span>(<span class="dv">1</span>, <span class="dv">5</span>))</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> Dataset.load_from_df(df[[<span class="st">"user"</span>, <span class="st">"item"</span>, <span class="st">"rating"</span>]], reader)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>trainset <span class="op">=</span> data.build_full_trainset()</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> SVD()</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>model.fit(trainset)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>After training, predictions can be made using:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>model.predict(user_id, restaurant_name).est</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Predicted scores are used to rank unseen restaurants and generate recommendations.</p>
 </section>
-<section id="result-of-the-api-query" class="level3">
-<h3 class="anchored" data-anchor-id="result-of-the-api-query">Result of the API Query</h3>
-<p>For our example we extracted all the restaurants from all the cantons in Switzerland. This gives us the following list of JSON files:</p>
-<pre class="text"><code>cantons/
-├── restaurants_Aargau.json
-├── restaurants_Appenzell_Ausserrhoden.json
-├── restaurants_Appenzell_Innerrhoden.json
-├── restaurants_Basel-Landschaft.json
-├── restaurants_Basel-Stadt.json
-├── restaurants_Bern_Berne.json
-├── restaurants_Fribourg_Freiburg.json
-├── restaurants_Genève.json
-├── restaurants_Glarus.json
-├── restaurants_Graubünden_Grischun_Grigioni.json
-├── restaurants_Jura.json
-├── restaurants_Luzern.json
-├── restaurants_Neuchâtel.json
-├── restaurants_Nidwalden.json
-├── restaurants_Obwalden.json
-├── restaurants_Schaffhausen.json
-├── restaurants_Schwyz.json
-├── restaurants_Solothurn.json
-├── restaurants_St._Gallen.json
-├── restaurants_Thurgau.json
-├── restaurants_Ticino.json
-├── restaurants_Uri.json
-├── restaurants_Valais_Wallis.json
-├── restaurants_Vaud.json
-├── restaurants_Zug.json
-└── restaurants_Zürich.json</code></pre>
-<p>After combing all the JSON into one single JSON file, the data can be analyzed. The following statistics were generated:</p>
-<pre><code>Restaurant Statistics – restaurants_Switzerland.json
-
-Total gathered: 20977
-- Restaurants: 14917
-- Fast food: 2710
-- Cafes: 3350
-
-Additional information:
-- With URL: 8924 (42.54%)
-- With cuisine type: 9440 (45.00%)
-- With URL and cuisine type: 5064 (24.14%)</code></pre>
-<section id="conclusion-of-the-analysis" class="level4">
-<h4 class="anchored" data-anchor-id="conclusion-of-the-analysis">Conclusion of the Analysis</h4>
-<p>Based on the analysis it is visible that only 50% percent of all the restaurants e.g.&nbsp;have an URL or a cuisine type. And only 28% have both. Even with the missing data, the dataset can still be used to test or verify the FoodClassifier.</p>
+<section id="logic" class="level2">
+<h2 class="anchored" data-anchor-id="logic">3. Logic</h2>
+<p>Users must submit at least two reviews to receive recommendations. This ensures that the system has a minimal amount of information to begin making predictions.</p>
+<p>The recommendation pipeline follows these steps:</p>
+<ol type="1">
+<li>Review is submitted via the web interface</li>
+<li>The system checks for duplicates in combined_reviews.csv</li>
+<li>If the review is new, it is appended to the CSV</li>
+<li>The recommender model is retrained on the updated data</li>
+<li>A new recommendation is generated for the user, excluding any restaurants they have already reviewed</li>
+</ol>
+<p>This workflow keeps the logic transparent and immediate, while remaining efficient on our small dataset.</p>
+<p>The results of this are indeterminate as well, as we do not have a defined random state for the recommender. If we apply a defined random state, the output will be consistent, but we wanted to allow for some randomness so the recommendations are more varied.</p>
 </section>
-<section id="extracting-cuisine-types" class="level4">
-<h4 class="anchored" data-anchor-id="extracting-cuisine-types">Extracting Cuisine Types</h4>
-<p>For the next steps, the cuisine types needs to be extracted from the JSON file. The FoodClassifier will use these cuisine types as labels for the training data and also will be used as result of the module.</p>
-<p>The simplest way to extract the cuisine types is to use a set, which will automatically remove duplicates. The cuisine types are stored in the <code>cuisines</code> set.</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> json</span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">"restaurants_Switzerland.json"</span>, <span class="st">"r"</span>, encoding<span class="op">=</span><span class="st">"utf-8"</span>) <span class="im">as</span> f:</span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>    data <span class="op">=</span> json.load(f)</span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="co"># prepare set for the cuisine type</span></span>
-<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>cuisines <span class="op">=</span> <span class="bu">set</span>()</span>
-<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> element <span class="kw">in</span> data.get(<span class="st">"elements"</span>, []):</span>
-<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>    tags <span class="op">=</span> element.get(<span class="st">"tags"</span>, {})</span>
-<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>    cuisine <span class="op">=</span> tags.get(<span class="st">"cuisine"</span>)</span>
-<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> cuisine:</span>
-<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>        <span class="co"># split multiple types</span></span>
-<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>        types <span class="op">=</span> [c.strip() <span class="cf">for</span> c <span class="kw">in</span> cuisine.split(<span class="st">";"</span>)]</span>
-<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a>        cuisines.update(types)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Now we take a look at the extracted cuisine types:</p>
-<pre><code>Central American
-Gourmet
-Grill
-Pains
-Pizza &amp; Grill
-Schnitzel
-Southern_BBQ
-Texas_Barbecue
-afghan
-african
-american
-...
-homemade
-hot_dog
-https://labelfaitmaison.ch/de/restaurant/roba-buona-2/
-ice_cream
-indian
-...</code></pre>
-<p>We see the cuisine types are not really normalized. For example: * Uppercase vs.&nbsp;lowercase * Spaces vs.&nbsp;underscores * Types seperated with ‘&amp;’ * URLs in the cuisine type</p>
-<p>Now we need to update the python code to normalize the cuisine types, with the following rules: * Convert to lowercase * Replace spaces with underscores * Additionally, split types separated by ‘&amp;’ and add them as separate entries * Remove URLs from the cuisine type</p>
-<p>This leads to the following updated code:</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> re</span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> json</span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">"restaurants_Switzerland.json"</span>, <span class="st">"r"</span>, encoding<span class="op">=</span><span class="st">"utf-8"</span>) <span class="im">as</span> f:</span>
-<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>    data <span class="op">=</span> json.load(f)</span>
-<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a><span class="co"># prepare set for the cuisine type</span></span>
-<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>cuisines <span class="op">=</span> <span class="bu">set</span>()</span>
-<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> element <span class="kw">in</span> data.get(<span class="st">"elements"</span>, []):</span>
-<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>    tags <span class="op">=</span> element.get(<span class="st">"tags"</span>, {})</span>
-<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a>    cuisine <span class="op">=</span> tags.get(<span class="st">"cuisine"</span>)</span>
-<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> cuisine:</span>
-<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a>        <span class="co"># split multiple types</span></span>
-<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a>        types <span class="op">=</span> [c.strip() <span class="cf">for</span> c <span class="kw">in</span> re.split(<span class="vs">r'</span><span class="pp">[;&amp;]</span><span class="vs">'</span>, cuisine)]</span>
-<span id="cb10-16"><a href="#cb10-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-17"><a href="#cb10-17" aria-hidden="true" tabindex="-1"></a>        cleaned_types <span class="op">=</span> [</span>
-<span id="cb10-18"><a href="#cb10-18" aria-hidden="true" tabindex="-1"></a>            t.replace(<span class="st">" "</span>, <span class="st">"_"</span>).replace(<span class="st">"-"</span>, <span class="st">"_"</span>).lower() <span class="co"># clean up the types</span></span>
-<span id="cb10-19"><a href="#cb10-19" aria-hidden="true" tabindex="-1"></a>            <span class="cf">for</span> t <span class="kw">in</span> types</span>
-<span id="cb10-20"><a href="#cb10-20" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> <span class="kw">not</span> t.strip().lower().startswith(<span class="st">"http"</span>) <span class="co"># filter out URLs</span></span>
-<span id="cb10-21"><a href="#cb10-21" aria-hidden="true" tabindex="-1"></a>        ]</span>
-<span id="cb10-22"><a href="#cb10-22" aria-hidden="true" tabindex="-1"></a>        cuisines.update(cleaned_types)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>This leads to the following normalized cuisine types with 386 unique entries:</p>
-<pre><code>afghan
-african
-alp
-alpine_hut
-american
-arab
-argentinian
-asian
-austrian
-ayran
-bacon
-bagel
-bakery
-baklawa
-balkan
-bangladeshi
-bar
-bar_and_grill
-...</code></pre>
-<p>We can still see some cuisine types doesn’t really match our expectations, like “alp”, “alpine_hut” isn’t really a cuisine type.</p>
+<section id="performance" class="level2">
+<h2 class="anchored" data-anchor-id="performance">4. Performance</h2>
+<p>The performance of this recommender is consistent, though not incredibly accurate. The method by which I found the current performance was through Surprises <a href="https://surprise.readthedocs.io/en/stable/model_selection.html#parameter-search">GridSearchCV</a>. This allows us to give a list of parameters, and test for which combination has the best results:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> surprise.model_selection <span class="im">import</span> GridSearchCV</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> surprise <span class="im">import</span> SVD</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>param_grid <span class="op">=</span> {</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">'n_factors'</span>: [<span class="dv">120</span>, <span class="dv">140</span>, <span class="dv">160</span>, <span class="dv">180</span>, <span class="dv">200</span>],</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">'lr_all'</span>: [<span class="fl">0.004</span>, <span class="fl">0.006</span>, <span class="fl">0.008</span>, <span class="fl">0.01</span>],</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    <span class="st">'reg_all'</span>: [<span class="fl">0.03</span>, <span class="fl">0.04</span>, <span class="fl">0.05</span>, <span class="fl">0.06</span>],</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>    <span class="st">'n_epochs'</span>: [<span class="dv">20</span>, <span class="dv">30</span>, <span class="dv">40</span>]</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>gs <span class="op">=</span> GridSearchCV(SVD, param_grid, measures<span class="op">=</span>[<span class="st">'rmse'</span>], cv<span class="op">=</span><span class="dv">5</span>, joblib_verbose<span class="op">=</span><span class="dv">2</span>)</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>gs.fit(data)</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Best RMSE:"</span>, gs.best_score[<span class="st">'rmse'</span>])</span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Best Params:"</span>, gs.best_params[<span class="st">'rmse'</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This allows us to both see what the best parameters are, as well as what the performance is. Performance metrics are as follows:</p>
+<ul>
+<li>The best performance using KNN had an RMSE of 1.09. This tells us that with KNN, the model should be somewhere +/- 1.09 stars of the true rating. This takes into account that predictions that are more incorrect are weighted more heavily, as well.</li>
+<li>SVD had slightly better performance, with or best performance having an RMSE of 0.85. This is not much better, given the range is only 1-5. This does leave a lot of room for improvement, but it does give us a good idea of how they would rate something, making it better than guessing.</li>
+</ul>
+<p>This lack of performance is likely due to the sparseness of the data. There are 261 restaurants, and most users only review 1-5 restaurants, with us having a total of 7668 reviews. This leaves an incredibly sparse dataset, meaning finding a model that can accurately fill in the gaps of the reviews is very difficult. The best way of improving this would be to introduce more dense reviews, or to reduce the number of restaurants.</p>
 </section>
+<section id="model-persistence" class="level2">
+<h2 class="anchored" data-anchor-id="model-persistence">5. Model Persistence</h2>
+<p>To keep the application lightweight, the model is not saved between sessions. Since training is fast and the dataset is relatively small, we retrain the model on each update. This eliminates the need for managing model versioning or state between users. Additionally, the model should be retrained after every new review, so saving the model will achieve little to nothing.</p>
 </section>
-</section>
-<section id="finalizing-the-cuisine-types" class="level2">
-<h2 class="anchored" data-anchor-id="finalizing-the-cuisine-types">Finalizing the Cuisine Types</h2>
-<p>Like mentioned before, the cuisine types are used as labels for the training data and also will be used as result of the module. So we need to finalize the cuisine types and currently the extracted cuisine types from the OpenStreetMap data are not really suitable for that. 1. Define what should be included in the cuisine types. 2. Gather all the cuisine types and save it to a file.</p>
-<section id="defining-the-cuisine-types" class="level3">
-<h3 class="anchored" data-anchor-id="defining-the-cuisine-types">Defining the Cuisine Types</h3>
-<p>For simplicity, we will only include countries. Regions, cities or other types are at the current moment a little bit too specific and because of that we will limit ourselves only to the countries.</p>
-</section>
-<section id="gathering-the-cuisine-types" class="level3">
-<h3 class="anchored" data-anchor-id="gathering-the-cuisine-types">Gathering the Cuisine Types</h3>
-<p>The first step to get all the countries, like before we use the Overpass API to extract the countries from OpenStreetMap. That way we can use the country names an make an API call to <code>restcountries.com</code> to get the matching demonyms.</p>
-<div class="sourceCode" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> requests</span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> get_demonym(country_name):</span>
-<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">try</span>:</span>
-<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>        response <span class="op">=</span> requests.get(<span class="ss">f"https://restcountries.com/v3.1/name/</span><span class="sc">{</span>country_name<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>        data <span class="op">=</span> response.json()</span>
-<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>        <span class="co"># include small random delay</span></span>
-<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> data[<span class="dv">0</span>][<span class="st">"demonyms"</span>][<span class="st">"eng"</span>][<span class="st">"m"</span>]</span>
-<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">except</span> <span class="pp">Exception</span> <span class="im">as</span> e:</span>
-<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"Error fetching demonym for </span><span class="sc">{</span>country_name<span class="sc">}</span><span class="ss">: </span><span class="sc">{</span>e<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="st">"Unknown"</span></span>
-<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-14"><a href="#cb12-14" aria-hidden="true" tabindex="-1"></a>countries <span class="op">=</span> [] <span class="co"># is filled with the country names</span></span>
-<span id="cb12-15"><a href="#cb12-15" aria-hidden="true" tabindex="-1"></a><span class="co"># remove duplicates and sort the list</span></span>
-<span id="cb12-16"><a href="#cb12-16" aria-hidden="true" tabindex="-1"></a>countries <span class="op">=</span> <span class="bu">sorted</span>(<span class="bu">set</span>(countries))</span>
-<span id="cb12-17"><a href="#cb12-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-18"><a href="#cb12-18" aria-hidden="true" tabindex="-1"></a><span class="co"># get the demonym for each country</span></span>
-<span id="cb12-19"><a href="#cb12-19" aria-hidden="true" tabindex="-1"></a>countries_demonyms <span class="op">=</span> [get_demonym(country) <span class="cf">for</span> country <span class="kw">in</span> countries]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>After all the demonyms are gathered, we can use the following code to sanitize and normalize the demonyms:</p>
-<div class="sourceCode" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># remove duplicates</span></span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>countries_demonyms <span class="op">=</span> <span class="bu">list</span>(<span class="bu">set</span>(countries_demonyms))</span>
-<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="co"># remove the "Unkown" demonym</span></span>
-<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>countries_demonyms <span class="op">=</span> [d <span class="cf">for</span> d <span class="kw">in</span> countries_demonyms <span class="cf">if</span> d <span class="op">!=</span> <span class="st">"Unknown"</span>]</span>
-<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a><span class="co"># split the demonyms by comma</span></span>
-<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> cd <span class="kw">in</span> countries_demonyms:</span>
-<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="st">","</span> <span class="kw">in</span> cd:</span>
-<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a>        parts <span class="op">=</span> cd.split(<span class="st">","</span>)</span>
-<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a>        countries_demonyms.remove(cd)</span>
-<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a>        countries_demonyms.extend([part.strip() <span class="cf">for</span> part <span class="kw">in</span> parts <span class="cf">if</span> part.strip()])</span>
-<span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-14"><a href="#cb13-14" aria-hidden="true" tabindex="-1"></a><span class="co"># normalize the demonyms</span></span>
-<span id="cb13-15"><a href="#cb13-15" aria-hidden="true" tabindex="-1"></a>countries_demonyms <span class="op">=</span> [d.replace(<span class="st">" "</span>, <span class="st">"_"</span>).lower() <span class="cf">for</span> d <span class="kw">in</span> countries_demonyms]</span>
-<span id="cb13-16"><a href="#cb13-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-17"><a href="#cb13-17" aria-hidden="true" tabindex="-1"></a><span class="co"># sort the demonyms</span></span>
-<span id="cb13-18"><a href="#cb13-18" aria-hidden="true" tabindex="-1"></a>countries_demonyms <span class="op">=</span> <span class="bu">sorted</span>(countries_demonyms)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>The resulting list of demonyms is as follows:</p>
-<pre class="text"><code>afghan
-albanian
-algerian
-american_islander
-american_samoan
-andorran
-angolan
-anguillian
-antiguan
-...</code></pre>
+<section id="future-improvements" class="level2">
+<h2 class="anchored" data-anchor-id="future-improvements">6. Future Improvements</h2>
+<p>There are multiple areas for this recommender that could be improved:</p>
+<ul>
+<li>Use hybrid recommendation (collaborative + content-based filtering) to improve performance</li>
+<li>Store data in a persistent database (e.g., SQLite or PostgreSQL) rather than a .csv</li>
+<li>Add a login/authentication system for user identity validation, rather than just having a username input</li>
+<li>Incorporate contextual metadata like cuisine type, price range, or location, since the data is not very descriptive as is</li>
+<li>If the dataset scales upwards and there are more users, saving the model may be required, which would be retrained regularly</li>
+<li>Add time weighting so newer reviews are prioritized</li>
+</ul>
 
 
-</section>
-</section>
 </section>
 
 </main> <!-- /main -->
