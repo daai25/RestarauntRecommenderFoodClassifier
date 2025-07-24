@@ -21,6 +21,7 @@ dependencies:
     - pytest
     - tldextract
     - imagehash
+    - streamlit
     - pip:
           - python-dotenv
           - ddgs
@@ -28,3 +29,4 @@ dependencies:
           - torch
           - torchvision
           - torchaudio
+          - surprise

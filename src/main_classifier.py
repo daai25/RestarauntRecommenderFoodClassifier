@@ -10,7 +10,7 @@ import src.image_filter as image_filter
 import src.classify_pipeline as classify_pipeline
 
 
-def classify_restarant(image_path):
+def classify_restaurant(image_path):
 
     print(f"Classifying images in directory: {image_path}")
 
@@ -30,7 +30,7 @@ def classify_restarant(image_path):
         filter_extensions=[food_filter, similarity_filter], blur_threshold=80
     )
 
-    filter_image_path = os.path.join("src", "test_images")
+    filter_image_path = image_path
 
     # filter the images in the test images directory
     stats = img_filter.filter_images(filter_image_path, is_relative=False, delete=True)
@@ -42,7 +42,17 @@ def classify_restarant(image_path):
     # ----------------------------------
 
     # classify the images in the directory
-    model_path = "src/classify_pipeline/food_classifier_RESNET50.pth"
+    # Use absolute path for the model file
+    project_root = Path(__file__).resolve().parents[1]
+    model_path = str(
+        project_root / "src" / "classify_pipeline" / "food_classifier_RESNET50.pth"
+    )
+
+    # Verify the model file exists
+    if not os.path.exists(model_path):
+        print(f"Model file not found at: {model_path}")
+        return ["Model file not found"]
+
     out_features = 78  # Number of output features for the model
     cuisine_guesses = classifier.classify_images(
         image_directory=filter_image_path,
