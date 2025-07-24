@@ -1,4 +1,4 @@
-# Data Report
+# Data Report: OpenStreetMap - Cuisine Types
 
 ## Extracting Restaurants, Fast Food and Cafes from OpenStreetMap
 
