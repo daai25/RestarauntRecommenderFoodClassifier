@@ -20,41 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -155,32 +120,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./data_report.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Data Report</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./restaraunt_scraper.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Restaurant Website Content Extraction</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./modelling_report.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Modelling Report</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./evaluation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Evaluation</span></a>
+  <a href="./data_report_open_street_map_cuisine_types.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data Report: OpenStreetMap - Cuisine Types</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./food_or_not_food_filter.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Food or Not-Food Filter</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./restaurant_scraper.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Restaurant Website Content Extraction</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -202,14 +155,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#food-or-not-food-filter" id="toc-food-or-not-food-filter" class="nav-link active" data-scroll-target="#food-or-not-food-filter">Food or Not-Food Filter</a>
   <ul class="collapse">
   <li><a href="#why-do-we-need-this-filter" id="toc-why-do-we-need-this-filter" class="nav-link" data-scroll-target="#why-do-we-need-this-filter">Why do we need this filter?</a></li>
-  <li><a href="#which-data-do-we-use" id="toc-which-data-do-we-use" class="nav-link" data-scroll-target="#which-data-do-we-use">Which data do we use?</a></li>
-  <li><a href="#which-model-do-we-use" id="toc-which-model-do-we-use" class="nav-link" data-scroll-target="#which-model-do-we-use">Which model do we use?</a></li>
-  <li><a href="#what-needs-to-be-fine-tuned-or-defined-on-our-side" id="toc-what-needs-to-be-fine-tuned-or-defined-on-our-side" class="nav-link" data-scroll-target="#what-needs-to-be-fine-tuned-or-defined-on-our-side">What needs to be fine-tuned or defined on our side?</a>
+  <li><a href="#which-data-do-we-use" id="toc-which-data-do-we-use" class="nav-link" data-scroll-target="#which-data-do-we-use">Which data do we use?</a>
   <ul class="collapse">
-  <li><a href="#required-customizations" id="toc-required-customizations" class="nav-link" data-scroll-target="#required-customizations">🔧 Required Customizations</a></li>
-  <li><a href="#optional-configurable-parameters-in-cli-or-code" id="toc-optional-configurable-parameters-in-cli-or-code" class="nav-link" data-scroll-target="#optional-configurable-parameters-in-cli-or-code">Optional / Configurable Parameters in CLI or Code</a></li>
+  <li><a href="#base-dataset" id="toc-base-dataset" class="nav-link" data-scroll-target="#base-dataset">Base Dataset</a></li>
+  <li><a href="#insight-of-the-dataset" id="toc-insight-of-the-dataset" class="nav-link" data-scroll-target="#insight-of-the-dataset">Insight of the Dataset</a></li>
+  <li><a href="#improved-dataset" id="toc-improved-dataset" class="nav-link" data-scroll-target="#improved-dataset">Improved Dataset</a></li>
   </ul></li>
-  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a></li>
+  <li><a href="#training-of-the-cnn-model" id="toc-training-of-the-cnn-model" class="nav-link" data-scroll-target="#training-of-the-cnn-model">Training of the CNN Model</a>
+  <ul class="collapse">
+  <li><a href="#training-overview" id="toc-training-overview" class="nav-link" data-scroll-target="#training-overview">Training Overview</a></li>
+  <li><a href="#required-customizations" id="toc-required-customizations" class="nav-link" data-scroll-target="#required-customizations">Required Customizations</a></li>
+  <li><a href="#model-performance-during-training" id="toc-model-performance-during-training" class="nav-link" data-scroll-target="#model-performance-during-training">Model Performance during Training</a></li>
+  <li><a href="#model-performance-on-testing-data" id="toc-model-performance-on-testing-data" class="nav-link" data-scroll-target="#model-performance-on-testing-data">Model Performance on Testing Data</a></li>
+  <li><a href="#confusion-matrix" id="toc-confusion-matrix" class="nav-link" data-scroll-target="#confusion-matrix">Confusion Matrix</a></li>
+  </ul></li>
   </ul></li>
   </ul>
 <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="food_or_not_food_filter.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
@@ -233,6 +192,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="which-data-do-we-use" class="level2">
 <h2 class="anchored" data-anchor-id="which-data-do-we-use">Which data do we use?</h2>
+<section id="base-dataset" class="level3">
+<h3 class="anchored" data-anchor-id="base-dataset">Base Dataset</h3>
 <p>To train our filter, we need a dataset with labeled images of <strong>food</strong> and <strong>not-food</strong>.</p>
 <p>Luckily, we can use the <a href="https://www.kaggle.com/datasets/sciencelabwork/food-or-not-dataset">Food or Not dataset</a>, which contains a total of <strong>50,000 images</strong>:</p>
 <ul>
@@ -241,44 +202,244 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>5,000 test images labeled as <em>food</em></li>
 <li>5,000 test images labeled as <em>not food</em></li>
 </ul>
-<p>This dataset provides a solid and balanced base for training and evaluating our model.</p>
 </section>
-<section id="which-model-do-we-use" class="level2">
-<h2 class="anchored" data-anchor-id="which-model-do-we-use">Which model do we use?</h2>
-<p>Our task is <strong>binary image classification</strong>: determine whether an image shows food or not.</p>
-<p>The most suitable model type for image classification is a <strong>Convolutional Neural Network (CNN)</strong>. However, training a CNN from scratch requires large amounts of data and computational resources. To address this, we use <strong>transfer learning</strong>: we start with a model pre-trained on a large dataset (ImageNet) and adapt it to our specific task.</p>
-<p>We use <strong>ResNet18</strong>, an 18-layer deep <strong>Residual Network</strong>, which is a well-known and efficient CNN architecture. It is a good trade-off between model size, inference speed, and performance, and works well even on smaller datasets.</p>
-</section>
-<section id="what-needs-to-be-fine-tuned-or-defined-on-our-side" class="level2">
-<h2 class="anchored" data-anchor-id="what-needs-to-be-fine-tuned-or-defined-on-our-side">What needs to be fine-tuned or defined on our side?</h2>
-<p>Although we start with a pre-trained model (<code>resnet18(weights=ResNet18_Weights.DEFAULT)</code>), some adjustments are necessary to tailor it to our binary classification task:</p>
-<section id="required-customizations" class="level3">
-<h3 class="anchored" data-anchor-id="required-customizations">🔧 Required Customizations</h3>
-<ol type="1">
-<li><p><strong>Final Layer Replacement</strong> The original ResNet18 is trained for 1,000 ImageNet classes. We replace the final fully connected layer with a new one that outputs exactly <strong>2 classes</strong>: <em>food</em> and <em>not food</em>.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>model.fc <span class="op">=</span> nn.Linear(model.fc.in_features, <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
-<li><p><strong>Loss Function</strong> Since this is a classification task, we use <code>CrossEntropyLoss</code>, which is standard for multi-class problems (including binary classification with logits).</p></li>
-<li><p><strong>Optimizer</strong> We use the <strong>Adam optimizer</strong> with a learning rate of 0.001 to efficiently update weights during training.</p></li>
-<li><p><strong>Input Transformations</strong> The input images need to match the expected format for the pre-trained model. We use the transform pipeline provided by the weights:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>transform <span class="op">=</span> weights.transforms()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
-<li><p><strong>Early Stopping</strong> To prevent overfitting, we implement a simple early stopping mechanism. If the validation loss does not improve for 3 consecutive epochs, training stops.</p></li>
-<li><p><strong>Data Loaders</strong> We use <code>torchvision.datasets.ImageFolder</code> and <code>DataLoader</code> to handle the directory structure of our training and test data efficiently.</p></li>
-</ol>
-</section>
-<section id="optional-configurable-parameters-in-cli-or-code" class="level3">
-<h3 class="anchored" data-anchor-id="optional-configurable-parameters-in-cli-or-code">Optional / Configurable Parameters in CLI or Code</h3>
+<section id="insight-of-the-dataset" class="level3">
+<h3 class="anchored" data-anchor-id="insight-of-the-dataset">Insight of the Dataset</h3>
+<p>Later, we found out the dataset is already augmented with various transformations:</p>
+<table>
+<tbody><tr>
+<td>
+<img src="pics/food_or_not_food/base_dataset/1_aug_2.jpg" width="250" alt="Frist food image">
+</td>
+<td>
+<img src="pics/food_or_not_food/base_dataset/1_aug_4.jpg" width="250" alt="Second food image">
+</td>
+<td>
+<img src="pics/food_or_not_food/base_dataset/1_aug_6.jpg" width="250" alt="Third food image">
+</td>
+</tr>
+<tr>
+<td>
+<img src="pics/food_or_not_food/base_dataset/8_aug_1.jpg" width="250" alt="First augmented picture of the second example. It shows an picture of a man holding a rusty hand barrow.">
+</td>
+<td>
+<img src="pics/food_or_not_food/base_dataset/8_aug_2.jpg" width="250" alt="Second augmented picture of the second example. Same as the first example but rotated 90° counter clock-wise">
+</td>
+<td>
+<img src="pics/food_or_not_food/base_dataset/8_aug_6.jpg" width="250" alt="Third augmented picture of the second example. Same as the first but rotated 90° clock-wise.">
+</td>
+</tr>
+<tr>
+<td>
+<img src="pics/food_or_not_food/base_dataset/9_aug_4.jpg" width="250" alt="Fourth food image">
+</td>
+<td>
+<img src="pics/food_or_not_food/base_dataset/9_aug_6.jpg" width="250" alt="Fifth food image">
+</td>
+<td>
+<img src="pics/food_or_not_food/base_dataset/9_aug_8.jpg" width="250" alt="Sixth food image">
+</td>
+</tr>
+</tbody></table>
+<p>In general, this would be considered a good thing, because usually during training we augment the dataset in process.</p>
+<p>However we decided to concat the dataset with more data from scraped restaurant images so it can classify food or not food images more accurately for it’s specific use case (images on restaurant websites).</p>
+<p>That’s why we decided to remove all the augmentation from the dataset and use only the original images. Which left us with the following images:</p>
 <ul>
-<li><code>--train_dir</code> and <code>--test_dir</code>: Paths to the dataset folders.</li>
-<li><code>--max_epochs</code>: Number of training epochs (default: 30).</li>
-<li><code>batch_size</code>, <code>num_workers</code>, etc. can be tuned for performance on specific hardware.</li>
+<li>2,000 training images labeled as <em>food</em></li>
+<li>2,000 training images labeled as <em>not food</em></li>
+<li>500 test images labeled as <em>food</em></li>
+<li>500 test images labeled as <em>not food</em></li>
 </ul>
 </section>
+<section id="improved-dataset" class="level3">
+<h3 class="anchored" data-anchor-id="improved-dataset">Improved Dataset</h3>
+<p>To improve the dataset, we tried to add 50,000 additional images from our scraped restaurant websites.</p>
+<p>But the data isn’t cleaned yet, so it contains a lot of duplicates, similar (nearly identical) uniform and blurry images, because of that we used different techniques to filter out the bad images.</p>
+<ul>
+<li><strong>Duplicate Removal</strong>: We generate sha256 hashes of the images and remove every duplicate hash / image.</li>
+<li><strong>Similarity Removal</strong>: For that we had to different approaches:
+<ul>
+<li><strong>Hamming Distance</strong>: We calculated the perceptual hash of the images, these typ of hashes is designed to be similar for visually similar images. We then calculated the Hamming distance between the hashes and removed images under a certain threshold. (e.g.&nbsp;&lt; 5)</li>
+<li><strong>Cosine Similarity</strong>: We used a pre-trained model to extract feature vectors from the images and then calculated the cosine similarity between the vectors. We removed images with a cosine similarity above a certain threshold. (e.g.&nbsp;&gt; 0.97)</li>
+</ul></li>
+<li><strong>Blurry Image Removal</strong>: We used a Laplacian variance method to delete blurry images over a certain threshold. (e.g.&nbsp;&gt; 100)</li>
+<li><strong>Uniform Image Removal</strong>: We calculated the standard deviation of the pixel values in the image and removed images under a certain threshold. (e.g.&nbsp;&lt; 0.01)</li>
+</ul>
+<p>That way we could remove a lot of the bad images, resulting to a total of 20,739 images.</p>
+<section id="labeling-the-images" class="level4">
+<h4 class="anchored" data-anchor-id="labeling-the-images">Labeling the Images</h4>
+<p>Now the restaurant images are cleaned, now we want to label them as <em>food</em> or <em>not food</em>. Labeling 20,000 images is pretty time-consuming, so we decided to train a CNN model based of the base dataset and label the images automatically. In a secondary step we then manually filter all the badly labeled images.</p>
+<p>The training of the model we will describe in the section: <a href="#training-of-the-cnn-model">Training of the CNN Model</a>.</p>
 </section>
-<section id="summary" class="level2">
-<h2 class="anchored" data-anchor-id="summary">Summary</h2>
-<p>By fine-tuning a pre-trained ResNet18 on our labeled food/not-food dataset, we can build a highly effective and computationally efficient filter to clean up our restaurants dataset before running more complex classification tasks (e.g.&nbsp;cuisine detection). This improves both <strong>model accuracy downstream</strong> and <strong>data management overall</strong>.</p>
+<section id="final-dataset" class="level4">
+<h4 class="anchored" data-anchor-id="final-dataset">Final Dataset</h4>
+<p>After concatenating the base dataset with the restaurant images and labeling them, we end up with a total of <strong>26,000 images</strong>: Which then we split into training (80%), validation (10%) and test (10%) sets:</p>
+<table>
+<tbody><tr>
+<th>
+Set
+</th>
+<th>
+Food
+</th>
+<th>
+Not Food
+</th>
+<th>
+Total
+</th>
+</tr>
+<tr>
+<td>
+Training
+</td>
+<td>
+6,704
+</td>
+<td>
+14,365
+</td>
+<td>
+21,069
+</td>
+</tr>
+<tr>
+<td>
+Validation
+</td>
+<td>
+838
+</td>
+<td>
+1,796
+</td>
+<td>
+2,634
+</td>
+</tr>
+<tr>
+<td>
+Test
+</td>
+<td>
+838
+</td>
+<td>
+1,796
+</td>
+<td>
+2,634
+</td>
+</tr>
+<tr style="font-weight: bold;">
+<td>
+Total
+</td>
+<td>
+8,380
+</td>
+<td>
+17,957
+</td>
+<td>
+26,337
+</td>
+</tr>
+</tbody></table>
+<p>The dataset can be viewed in the following directory: <a href="../modelling/food_or_not_food/dataset">dataset</a>.</p>
+</section>
+</section>
+</section>
+<section id="training-of-the-cnn-model" class="level2">
+<h2 class="anchored" data-anchor-id="training-of-the-cnn-model">Training of the CNN Model</h2>
+<p>To train our CNN model, we use the PyTorch framework. Our model for the food or not-food classifier is based on the pretrained <strong>ResNet</strong> models from the <code>torchvision</code> library. We trained multiple models with different datasets (e.g.&nbsp;base dataset / improved dataset), additional augmentation and different splits. In the following we will give a quick overview of all the trained models and their performance.</p>
+<section id="training-overview" class="level3">
+<h3 class="anchored" data-anchor-id="training-overview">Training Overview</h3>
+<p>The following list shows the models in the correct order:</p>
+<ul>
+<li><strong>ResNet18 on the base dataset without augmentation:</strong> The first trained, which was also used for the labeling of the restaurant images.</li>
+<li><strong>ResNet18 on the base dataset with augmentation:</strong> The second trained model, which was to see if already augmented data (from the base dataset) will improve, after we trained it with an additional 10x augmentation.</li>
+<li><strong>ResNet18 on the improved dataset with augmentation:</strong> The third trained model.</li>
+<li><strong>ResNet50 on the improved dataset with augmentation:</strong> The fourth trained model, to see if a larger can improve the performance of the model.</li>
+</ul>
+<p>Although we start with a pre-trained model (<code>resnet18(weights=ResNet18_Weights.DEFAULT)</code>) or (<code>resnet50(weights=ResNet50_Weights.DEFAULT</code>), some adjustments are necessary to tailor it to our binary classification task:</p>
+</section>
+<section id="required-customizations" class="level3">
+<h3 class="anchored" data-anchor-id="required-customizations">Required Customizations</h3>
+<ol type="1">
+<li><p><strong>Final Layer Replacement</strong> The original ResNet18 and ResNet50 is trained for 1,000 ImageNet classes. Which means we need to modify the final layer to output only <strong>2 classes</strong>: <em>food</em> and <em>not food</em>. For the ResNet18 we replace the final layer with a fully connected linear layer with 2 output features:</p>
+<pre class="pycon"><code>model.fc = nn.Linear(model.fc.in_features, 2)</code></pre>
+<p>For the ResNet50, we define a sequential layer with an additional dropout layer for regularization:</p>
+<pre class="pycon"><code>model.fc = nn.Sequential(
+    nn.Dropout(0.5),
+    nn.Linear(model.fc.in_features, 2)
+)</code></pre></li>
+<li><p><strong>Loss Function</strong> Since this is a classification task, we use <code>CrossEntropyLoss</code>, which is standard for multi-class problems (including binary classification with logits).</p></li>
+<li><p><strong>Optimizer</strong> We use the <strong>Adam optimizer</strong> with a learning rate of 0.001 to efficiently update weights during training.</p></li>
+<li><p><strong>Early Stopping</strong> To prevent overfitting, we implement a simple early stopping mechanism. If the validation loss does not improve for 5 consecutive epochs, training stops. Because the base dataset only got a train and test split, during training we used the test partition also as validation. Which is not ideal, but we decided it’s good enough. For the improved dataset we got a test and validation split.</p></li>
+<li><p><strong>Data Augmentation</strong> For the augmentation we defined a <code>torchvision</code> transformer pipeline to then multiply our loaded dataset by 10. The transformer looks like this:</p>
+<pre class="pycon"><code>train_transform = transforms.Compose([
+     transforms.RandomResizedCrop(224),
+     transforms.RandomHorizontalFlip(),
+     transforms.RandomRotation(15),
+     transforms.ColorJitter(brightness=0.2, contrast=0.2, saturation=0.2, hue=0.1),
+     transforms.RandomAffine(degrees=0, translate=(0.1, 0.1)),
+     transforms.RandomVerticalFlip(p=0.1),
+     transforms.RandomGrayscale(p=0.1),
+     transforms.ToTensor(),
+     transforms.Normalize(mean=default_mean, std=default_std),
+ ])</code></pre>
+<p>Which does the following:</p>
+<ul>
+<li>Randomly resizes and crops the image to 224x224 pixels.</li>
+<li>Randomly flips the image horizontally.</li>
+<li>Randomly rotates the image by up to 15 degrees.</li>
+<li>Randomly adjusts the brightness, contrast, saturation, and hue of the image.</li>
+<li>Randomly translates the image by up to 10% in both x and y directions.</li>
+<li>Randomly flips the image vertically with a probability of 10%.</li>
+<li>Randomly converts the image to grayscale with a probability of 10%.</li>
+</ul>
+<p>With this transformer, we can now augment our dataset:</p>
+<pre class="pycon"><code>augmentations_per_image = 10
+
+augmented_datasets = [
+   datasets.ImageFolder(str(train_dir), transform=train_transform)
+   for _ in range(augmentations_per_image)
+]
+train_data = ConcatDataset(augmented_datasets)</code></pre></li>
+</ol>
+<hr>
+</section>
+<section id="model-performance-during-training" class="level3">
+<h3 class="anchored" data-anchor-id="model-performance-during-training">Model Performance during Training</h3>
+<p>The following plots shows us the performance progress during the training. For the ResNet18 model we used the loss instead of the accuracy to visualize the performance.</p>
+<p><img src="pics/food_or_not_food/training_resnet18_base_no_aug.png" class="img-fluid" alt="Training loss for Resnet18 on the base dataset without augmentation"> <img src="pics/food_or_not_food/training_resnet18_base_aug.png" class="img-fluid" alt="Training loss for Resnet18 on the base dataset with augmentation"> <img src="pics/food_or_not_food/training_resnet18_improved_aug_run2.png" class="img-fluid" alt="Training accuracy for Resnet18 on the improved dataset with augmentation"> <img src="pics/food_or_not_food/training_resnet50_improved_aug.png" class="img-fluid" alt="Training accuracy for Resnet50 on the improved dataset with augmentation"></p>
+<p>What we can see the training of the ResNet18 always ends after 10 epoches. The reason could be, for training the ResNet50 model we additionally used a <code>OneCycleLR</code> scheduler to adjust the learning rate during training.</p>
+<pre class="pycon"><code>scheduler = OneCycleLR(
+    optimizer,
+    max_lr=1e-4,  # max learning rate for the head
+    total_steps=num_epochs * len(train_loader),
+    pct_start=0.3,
+    div_factor=25,
+    final_div_factor=1e4,
+)</code></pre>
+<p>Then during the training we can call the scheduler step:</p>
+<pre class="pycon"><code>scheduler.step()</code></pre>
+<p>This shows us using a scheduler can improve the training alot and let us do more epoches. To then better understand if the model is overfitting or not.</p>
+</section>
+<section id="model-performance-on-testing-data" class="level3">
+<h3 class="anchored" data-anchor-id="model-performance-on-testing-data">Model Performance on Testing Data</h3>
+<p>The following plots show us the performance on the test split of the improved dataset of all the trained models.</p>
+<p>First we see the accuracy: <img src="pics/food_or_not_food/accuracy_food_or_not_food.png" class="img-fluid" alt="Accuracy Test"></p>
+<p>Second we see the precision, recall and F1 score in comparison: <img src="pics/food_or_not_food/precision_recall_f1_score_food_or_not_food.png" class="img-fluid" alt="Precision, Recall and F1 Score Test"></p>
+</section>
+<section id="confusion-matrix" class="level3">
+<h3 class="anchored" data-anchor-id="confusion-matrix">Confusion Matrix</h3>
+<p>To better understand the performance of our models, we can visualize the confusion matrix.</p>
+<p><img src="pics/food_or_not_food/confusion_matrix_resnet18_base_no_aug.png" class="img-fluid" alt="Confusion Matrix ResNet18 on the base dataset without augmentation"> <img src="pics/food_or_not_food/confusion_matrix_resnet18_base_aug.png" class="img-fluid" alt="Confusion Matrix ResNet18 on the base dataset with augmentation"> <img src="pics/food_or_not_food/confusion_matrix_resnet18_improved_aug.png" class="img-fluid" alt="Confusion Matrix ResNet18 on the improved dataset with augmentation"> <img src="pics/food_or_not_food/confusion_matrix_resnet50_improved_aug.png" class="img-fluid" alt="Confusion Matrix ResNet50 on the improved dataset with augmentation"></p>
 
 
+</section>
 </section>
 </section>
 

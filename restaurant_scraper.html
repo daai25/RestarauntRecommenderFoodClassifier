@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>restaraunt_scraper – Food Classifier</title>
+<title>restaurant_scraper – Food Classifier</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -81,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./restaraunt_scraper.html">Restaurant Website Content Extraction</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./restaurant_scraper.html">Restaurant Website Content Extraction</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -120,32 +120,20 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./data_report.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Data Report</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./restaraunt_scraper.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Restaurant Website Content Extraction</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./modelling_report.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Modelling Report</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./evaluation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Evaluation</span></a>
+  <a href="./data_report_open_street_map_cuisine_types.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data Report: OpenStreetMap - Cuisine Types</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./food_or_not_food_filter.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Food or Not-Food Filter</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./restaurant_scraper.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Restaurant Website Content Extraction</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -166,7 +154,7 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#restaurant-website-content-extraction" id="toc-restaurant-website-content-extraction" class="nav-link active" data-scroll-target="#restaurant-website-content-extraction">Restaurant Website Content Extraction</a></li>
   </ul>
-<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="restaraunt_scraper.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="restaurant_scraper.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
@@ -178,7 +166,7 @@ ul.task-list li input[type="checkbox"] {
 <h1>Restaurant Website Content Extraction</h1>
 <section id="overview" class="level4">
 <h4 class="anchored" data-anchor-id="overview">1. <strong>Overview</strong></h4>
-<p>To get the HTML content and images from restaurant websites, we utilized a relatively simple spider using Scrapy. This was gathered using the OpenStreetMap data, with the <a href="./data_report.html">documentation for that here</a>.</p>
+<p>To get the HTML content and images from restaurant websites, we utilized a relatively simple spider using Scrapy. This was gathered using the OpenStreetMap data, with the <a href="data_report.qmd">documentation for that here</a>.</p>
 <p>The raw HTML was gathered for future general use rather than any particular function. This HTML has had some unneeded content removed to save on storage and to increase readability. The images were gathered primarily for the purpose of recognizing and classifying cousine types of the restaurant based on their foods.</p>
 <p>Ultimately this serves the purpose of giving us information on the websites of Switzerland, as well as their images to be used during classification later in this project.</p>
 </section>
