@@ -1,0 +1,39 @@
+Epoch 01: Train Loss=4.1115, Train Acc=0.097 | Val Acc=0.348
+Model saved with validation accuracy: 0.348
+Epoch 02: Train Loss=3.0199, Train Acc=0.330 | Val Acc=0.523
+Model saved with validation accuracy: 0.523
+Epoch 03: Train Loss=2.3518, Train Acc=0.468 | Val Acc=0.616
+Model saved with validation accuracy: 0.616
+Epoch 04: Train Loss=2.0205, Train Acc=0.550 | Val Acc=0.669
+Model saved with validation accuracy: 0.669
+Epoch 05: Train Loss=1.8093, Train Acc=0.605 | Val Acc=0.713
+Model saved with validation accuracy: 0.713
+Epoch 06: Train Loss=1.6528, Train Acc=0.650 | Val Acc=0.740
+Model saved with validation accuracy: 0.740
+Epoch 07: Train Loss=1.5335, Train Acc=0.683 | Val Acc=0.765
+Model saved with validation accuracy: 0.765
+Epoch 08: Train Loss=1.4306, Train Acc=0.710 | Val Acc=0.783
+Model saved with validation accuracy: 0.783
+Epoch 09: Train Loss=1.3509, Train Acc=0.734 | Val Acc=0.796
+Model saved with validation accuracy: 0.796
+Epoch 10: Train Loss=1.2693, Train Acc=0.757 | Val Acc=0.807
+Model saved with validation accuracy: 0.807
+Epoch 11: Train Loss=1.1928, Train Acc=0.779 | Val Acc=0.816
+Model saved with validation accuracy: 0.816
+Epoch 12: Train Loss=1.1382, Train Acc=0.796 | Val Acc=0.822
+Model saved with validation accuracy: 0.822
+Epoch 13: Train Loss=1.0860, Train Acc=0.810 | Val Acc=0.822
+Model saved with validation accuracy: 0.822
+Epoch 14: Train Loss=1.0493, Train Acc=0.820 | Val Acc=0.827
+Model saved with validation accuracy: 0.827
+Epoch 15: Train Loss=1.0112, Train Acc=0.830 | Val Acc=0.833
+Model saved with validation accuracy: 0.833
+Epoch 16: Train Loss=0.9726, Train Acc=0.843 | Val Acc=0.828
+Epoch 17: Train Loss=0.9426, Train Acc=0.851 | Val Acc=0.833
+Epoch 18: Train Loss=0.9158, Train Acc=0.860 | Val Acc=0.828
+Epoch 19: Train Loss=0.8974, Train Acc=0.864 | Val Acc=0.833
+Early stopping at epoch 19
+#################### 
+
+
+Final Test Accuracy: 0.8262989095574086
