@@ -1,19 +1,48 @@
 from bs4 import BeautifulSoup
 from datetime import datetime
 from io import BytesIO
+import os
 import pandas as pd
 from PIL import Image
 import requests
+import shutil
 import streamlit as st
 from surprise import Dataset, Reader, SVD
 from urllib.parse import urljoin
 
-def Predict(images):
-    return f"Processed {len(images)} images."
+def Predict(images_bytes):
+    """
+    Processes a list of image byte objects, resizes them to 512x512, and saves them 
+    as JPEGs in the 'images' folder for classification.
+
+    Args:
+        images_bytes (List[bytes]): List of image data in bytes.
+
+    Returns:
+        str: Summary message indicating the number of images processed.
+    """
+    output_dir = "images"
+    if os.path.exists(output_dir):
+        shutil.rmtree(output_dir)
+    os.makedirs(output_dir, exist_ok=True)
+    for count, img_bytes in enumerate(images_bytes):
+        pilImage = Image.open(BytesIO(img_bytes))
+        pilImage = pilImage.convert("RGB")
+        pilImage = pilImage.resize((512, 512), Image.LANCZOS)
+        pilImage.save(os.path.join(output_dir, f"{count}.jpg"), format="JPEG", quality=85)
+
+    #CallFunction(output_dir)
+    return f"Processed {len(images_bytes)} images."
 
 def ScrapeImagesFromUrl(url):
     """
     Takes a single URL, scrapes images, and returns them as a list of image byte objects.
+    
+    Args:
+        url (str): The webpage URL to scrape for images.
+
+    Returns:
+        List[bytes]: List of image byte data from the page after resizing and conversion.
     """
     try:
         response = requests.get(url, timeout=10)
@@ -56,6 +85,10 @@ def ScrapeImagesFromUrl(url):
     return images_bytes_list
 
 def GenerateClassifierTab():
+    """
+    Generates the Streamlit tab for image classification, allowing users to either
+    upload local image files or provide a URL to scrape images.
+    """
     st.title("Image Classifier - Upload or Scrape")
 
     # User selects mode
@@ -63,9 +96,10 @@ def GenerateClassifierTab():
     
     if mode == "Upload Images":
         uploaded_files = st.file_uploader("Upload one or more images", type=["jpg", "jpeg", "png"], accept_multiple_files=True)
-    
+        
         if uploaded_files:
-            result = Predict(uploaded_files)
+            image_bytes = [file.read() for file in uploaded_files]
+            result = Predict(image_bytes)
             st.success(result)
     
     elif mode == "Submit Link":     
@@ -78,8 +112,25 @@ def GenerateClassifierTab():
                 st.success(result)
             else:
                 st.error("Found no images at URL")
+
 def GenerateRecommenderTab():
+    """
+    Generates the Streamlit tab for the restaurant recommender system.
+    Allows users to review restaurants and receive personalized recommendations
+    using an SVD model trained on all known user reviews.
+    """
     def Recommender(user_id, csv_path="combined_reviews.csv"):
+        """
+        Recommends a new restaurant for the given user by training an SVD model
+        on the full review dataset.
+
+        Args:
+            user_id (str): The user's ID (username).
+            csv_path (str): Path to the review CSV file.
+
+        Returns:
+            str: The recommended restaurant name.
+        """
         df = pd.read_csv(csv_path, delimiter="|")
         df = df.rename(columns={
             "restaurantName": "item",
@@ -113,10 +164,31 @@ def GenerateRecommenderTab():
     # Load CSV at app start
     @st.cache_data
     def load_restaurant_data(csv_path):
+        """
+        Loads restaurant review data and returns the DataFrame and sorted list of unique names.
+
+        Args:
+            csv_path (str): Path to the CSV file.
+
+        Returns:
+            Tuple[pd.DataFrame, List[str]]: DataFrame of reviews, and list of restaurant names.
+        """
         df = pd.read_csv(csv_path, delimiter="|")
         return df, sorted(df["restaurantName"].drop_duplicates())
     
     def append_review_to_csv(csv_path, restaurant, user_id, rating):
+        """
+        Appends a new review to the CSV file if the user hasn't already reviewed the restaurant.
+
+        Args:
+            csv_path (str): Path to the review CSV.
+            restaurant (str): Name of the restaurant.
+            user_id (str): ID of the reviewer.
+            rating (int): Rating given by the user.
+
+        Returns:
+            bool: True if the review was added, False if it already existed.
+        """
         df = pd.read_csv(csv_path, delimiter="|")
         already_reviewed = not df[(df["restaurantName"] == restaurant) & (df["reviewerId"] == user_id)].empty
     
