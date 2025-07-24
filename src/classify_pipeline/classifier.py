@@ -31,8 +31,11 @@ def classify_images(image_directory: str, model_path: str, out_features: int = 7
     )
     print(f"Model is on device: {device}")
 
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    json_path = os.path.join(script_dir, "food_cuisine_mapping.json")
+
     # load JSON-mapping
-    with open("food_cuisine_mapping.json", "r") as f:
+    with open(json_path, "r") as f:
         class_mapping = json.load(f)
 
     # Get the list of class names in the order your model uses
