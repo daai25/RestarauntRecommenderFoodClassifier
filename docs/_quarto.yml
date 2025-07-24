@@ -16,6 +16,7 @@ website:
             - modelling_report.qmd
             - evaluation.qmd
             - food_or_not_food_filter.qmd
+            - classification_pipeline.qmd
 
 bibliography: refs.bib
 csl: vancouver-brackets.csl
