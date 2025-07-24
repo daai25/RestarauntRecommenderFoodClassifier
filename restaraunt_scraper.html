@@ -148,6 +148,12 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Food or Not-Food Filter</span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./classification_pipeline.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Image Classification Pipeline</span></a>
+  </div>
+</li>
     </ul>
     </div>
 </nav>
@@ -264,7 +270,7 @@ scrape_status.csv</code></pre>
 </ul>
 </section>
 <section id="restaurants-without-a-provided-link" class="level4">
-<h4 class="anchored" data-anchor-id="restaurants-without-a-provided-link">7. Restaurants without a provided Link</h4>
+<h4 class="anchored" data-anchor-id="restaurants-without-a-provided-link">7. <strong>Restaurants without a provided Link</strong></h4>
 <p>Some restaurants in the <em>OpenStreetMap</em> data do not have a provided link to their website. For that we developed a script that uses <strong>Nominatim</strong> from Geopy and <strong>DuckDuckGo_Search</strong> to find the website of the restaurant based on its name and location. It uses the coordinates, which are always provided to get the name of the city. Then together with the name and the city it searches for the website. It may not be perfect, but is sufficient for our purposes.</p>
 
 

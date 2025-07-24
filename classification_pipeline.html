@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>project_charta – Food Classifier</title>
+<title>classification_pipeline – Food Classifier</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -81,7 +116,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./project_charta.html">Project Charta</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./classification_pipeline.html">Image Classification Pipeline</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -114,7 +149,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./project_charta.html" class="sidebar-item-text sidebar-link active">
+  <a href="./project_charta.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Project Charta</span></a>
   </div>
 </li>
@@ -150,7 +185,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./classification_pipeline.html" class="sidebar-item-text sidebar-link">
+  <a href="./classification_pipeline.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Image Classification Pipeline</span></a>
   </div>
 </li>
@@ -164,30 +199,17 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#project-charta" id="toc-project-charta" class="nav-link active" data-scroll-target="#project-charta">Project Charta</a>
+  <li><a href="#image-classification-pipeline" id="toc-image-classification-pipeline" class="nav-link active" data-scroll-target="#image-classification-pipeline">Image Classification Pipeline</a>
   <ul class="collapse">
-  <li><a href="#problem-definition" id="toc-problem-definition" class="nav-link" data-scroll-target="#problem-definition">Problem Definition</a></li>
-  <li><a href="#user-segments-needs" id="toc-user-segments-needs" class="nav-link" data-scroll-target="#user-segments-needs">User Segments &amp; Needs</a></li>
-  <li><a href="#stakeholders" id="toc-stakeholders" class="nav-link" data-scroll-target="#stakeholders">Stakeholders</a></li>
-  <li><a href="#situation-assessment" id="toc-situation-assessment" class="nav-link" data-scroll-target="#situation-assessment">Situation Assessment</a></li>
-  <li><a href="#project-goals-and-success-criteria" id="toc-project-goals-and-success-criteria" class="nav-link" data-scroll-target="#project-goals-and-success-criteria">Project Goals and Success Criteria</a></li>
-  <li><a href="#data-mining-goals" id="toc-data-mining-goals" class="nav-link" data-scroll-target="#data-mining-goals">Data Mining Goals</a>
-  <ul class="collapse">
-  <li><a href="#foodnot-food-classifier" id="toc-foodnot-food-classifier" class="nav-link" data-scroll-target="#foodnot-food-classifier">1. Food/Not Food Classifier</a></li>
-  <li><a href="#cuisine-predictor" id="toc-cuisine-predictor" class="nav-link" data-scroll-target="#cuisine-predictor">2. Cuisine Predictor</a></li>
-  <li><a href="#restaurant-recommender-system" id="toc-restaurant-recommender-system" class="nav-link" data-scroll-target="#restaurant-recommender-system">3. Restaurant Recommender System</a></li>
-  </ul></li>
-  <li><a href="#project-plan" id="toc-project-plan" class="nav-link" data-scroll-target="#project-plan">Project Plan</a></li>
-  <li><a href="#roles-and-contact-details" id="toc-roles-and-contact-details" class="nav-link" data-scroll-target="#roles-and-contact-details">Roles and Contact Details</a>
-  <ul class="collapse">
-  <li><a href="#adam-opperman" id="toc-adam-opperman" class="nav-link" data-scroll-target="#adam-opperman">Adam Opperman</a></li>
-  <li><a href="#moritz-feuchter" id="toc-moritz-feuchter" class="nav-link" data-scroll-target="#moritz-feuchter">Moritz Feuchter</a></li>
-  <li><a href="#nino-frei" id="toc-nino-frei" class="nav-link" data-scroll-target="#nino-frei">Nino Frei</a></li>
-  <li><a href="#sawyer-rogers" id="toc-sawyer-rogers" class="nav-link" data-scroll-target="#sawyer-rogers">Sawyer Rogers</a></li>
-  </ul></li>
+  <li><a href="#overview" id="toc-overview" class="nav-link" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#preparing-input-images" id="toc-preparing-input-images" class="nav-link" data-scroll-target="#preparing-input-images">Preparing Input Images</a></li>
+  <li><a href="#running-inference" id="toc-running-inference" class="nav-link" data-scroll-target="#running-inference">Running Inference</a></li>
+  <li><a href="#mapping-predictions-to-cuisine-types" id="toc-mapping-predictions-to-cuisine-types" class="nav-link" data-scroll-target="#mapping-predictions-to-cuisine-types">Mapping Predictions to Cuisine Types</a></li>
+  <li><a href="#aggregating-and-displaying-results" id="toc-aggregating-and-displaying-results" class="nav-link" data-scroll-target="#aggregating-and-displaying-results">Aggregating and Displaying Results</a></li>
+  <li><a href="#idea-behind-the-pipeline" id="toc-idea-behind-the-pipeline" class="nav-link" data-scroll-target="#idea-behind-the-pipeline">Idea behind the Pipeline</a></li>
   </ul></li>
   </ul>
-<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="project_charta.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="classification_pipeline.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
@@ -195,209 +217,105 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="project-charta" class="level1">
-<h1>Project Charta</h1>
-<section id="problem-definition" class="level2">
-<h2 class="anchored" data-anchor-id="problem-definition">Problem Definition</h2>
-<p>The purpose of this project is to design a web app with two functions: Classifying food into cuisine types based on images, and recommending restaraunts in Switzerland based on user preferences. OpenStreetMap does not have a cuisine type defined for many of its restaraunts, leaving a gap in their data. By classifying these images, we will be able to suggest a cuisine type for OpenStreetMap restaraunts that currently do not have a cuisine type assigned to them, or otherwise suggest fixes if they are innacurate. The restaraunt recommender can help users to find new restaraunts that are in line with their tastes and preferences.</p>
+<section id="image-classification-pipeline" class="level1">
+<h1>Image Classification Pipeline</h1>
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>At a high level, the pipeline:</p>
+<ol type="1">
+<li><strong>Loads</strong> a pre-trained ResNet50 classifier.</li>
+<li><strong>Reads and transforms</strong> each image in a directory.</li>
+<li><strong>Runs</strong> the model to get class probabilities.</li>
+<li><strong>Maps</strong> the predicted class to one or more cuisine types.</li>
+<li><strong>Counts</strong> how often each cuisine appears.</li>
+<li><strong>Outputs</strong> the top 3 cuisine type guesses.</li>
+</ol>
+<p>This approach allows to classify many images and get an aggregate guess of the predominant cuisine types present.</p>
+<hr>
 </section>
-<section id="user-segments-needs" class="level2">
-<h2 class="anchored" data-anchor-id="user-segments-needs">User Segments &amp; Needs</h2>
-<p>We identify two primary user groups:</p>
+<section id="preparing-input-images" class="level2">
+<h2 class="anchored" data-anchor-id="preparing-input-images">Preparing Input Images</h2>
+<ol type="1">
+<li><strong>List</strong> all files in the target directory.</li>
+<li><strong>Filter</strong> by image extensions (<code>.png</code>, <code>.jpg</code>, <code>.jpeg</code>).</li>
+<li><strong>Open</strong> each image with PIL and convert to RGB.</li>
+<li><strong>Apply</strong> the <code>transform</code> to get a tensor.</li>
+</ol>
+<hr>
+</section>
+<section id="running-inference" class="level2">
+<h2 class="anchored" data-anchor-id="running-inference">Running Inference</h2>
+<ol type="1">
+<li><strong>Forward pass</strong> through the model to get raw logits.</li>
+<li><strong>Apply softmax</strong> to convert logits to probabilities.</li>
+<li><strong>Select</strong> the top-1 class and its probability.</li>
+</ol>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> torch.no_grad():</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    logits <span class="op">=</span> model(image_tensor)             <span class="co"># [1, out_features]</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    probs <span class="op">=</span> torch.nn.functional.softmax(logits, dim<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    top_prob, top_idx <span class="op">=</span> probs.<span class="bu">max</span>(dim<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    class_index <span class="op">=</span> top_idx.item()</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    confidence <span class="op">=</span> top_prob.item()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ul>
-<li><p>Curious diners and tourists: People who want to discover new places to eat but struggle with vague or inconsistent tags in mapping apps.</p>
-<ul>
-<li>Need: Easy discovery of restaurants that match their taste preferences, possibly based on photos of food.</li>
-</ul></li>
-<li><p>Mapping and data improvement communities: Volunteers or professionals contributing to OSM.</p>
-<ul>
-<li>Need: A scalable way to improve metadata (like cuisine type) for under-described restaurants.</li>
-</ul></li>
+<li><strong><code>logits</code></strong>: Raw model outputs.</li>
+<li><strong><code>probs</code></strong>: Normalized confidences for each class.</li>
+<li><strong><code>class_index</code></strong>: Index of the most likely class.</li>
+<li><strong><code>confidence</code></strong>: Probability of that class (0–1).</li>
 </ul>
-<p>Users want an intuitive tool that helps them explore, discover, and trust the information about restaurants — ideally through a visual and preference-based interface.</p>
+<hr>
 </section>
-<section id="stakeholders" class="level2">
-<h2 class="anchored" data-anchor-id="stakeholders">Stakeholders</h2>
+<section id="mapping-predictions-to-cuisine-types" class="level2">
+<h2 class="anchored" data-anchor-id="mapping-predictions-to-cuisine-types">Mapping Predictions to Cuisine Types</h2>
+<p>We maintain a JSON file (<code>food_cuisine_mapping.json</code>) that maps each class name to a list of cuisine types. For example:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode json code-with-copy"><code class="sourceCode json"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">"lasagna"</span><span class="fu">:</span> <span class="ot">[</span><span class="st">"italian"</span><span class="ot">,</span> <span class="st">"argentine"</span><span class="ot">,</span> <span class="st">"brazilian"</span><span class="ot">]</span><span class="fu">,</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">"nachos"</span><span class="fu">:</span> <span class="ot">[</span><span class="st">"mexican"</span><span class="ot">,</span> <span class="st">"canadian"</span><span class="ot">]</span><span class="fu">,</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="er">//</span> <span class="er">...</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="fu">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<hr>
+</section>
+<section id="aggregating-and-displaying-results" class="level2">
+<h2 class="anchored" data-anchor-id="aggregating-and-displaying-results">Aggregating and Displaying Results</h2>
+<p>As we classify each image, we tally the counts for each cuisine type:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>cuisine_counts <span class="op">=</span> {}</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> cuisine <span class="kw">in</span> cuisines:</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    cuisine_counts[cuisine] <span class="op">=</span> cuisine_counts.get(cuisine, <span class="dv">0</span>) <span class="op">+</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>After processing all images, we sort the cuisine types by count and display the top 3:</p>
 <table class="caption-top table">
-<colgroup>
-<col style="width: 20%">
-<col style="width: 79%">
-</colgroup>
 <thead>
 <tr class="header">
-<th>Stakeholder</th>
-<th>Role / Goal</th>
+<th style="text-align: center;">Rank</th>
+<th style="text-align: left;">Cuisine</th>
+<th style="text-align: center;">Count</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Project team</td>
-<td>Build and test the web app; develop the image classification model</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;">Italian</td>
+<td style="text-align: center;">10</td>
 </tr>
 <tr class="even">
-<td>End users</td>
-<td>Use the app to discover restaurants and get accurate cuisine suggestions</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: left;">French</td>
+<td style="text-align: center;">7</td>
 </tr>
 <tr class="odd">
-<td>OpenStreetMap users</td>
-<td>Benefit from enriched and corrected restaurant metadata</td>
-</tr>
-<tr class="even">
-<td>Restaurant owners</td>
-<td>May benefit indirectly from improved visibility and recommendations</td>
-</tr>
-<tr class="odd">
-<td>University faculty</td>
-<td>Oversee the academic and technical direction of the project</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: left;">Japanese</td>
+<td style="text-align: center;">5</td>
 </tr>
 </tbody>
 </table>
-</section>
-<section id="situation-assessment" class="level2">
-<h2 class="anchored" data-anchor-id="situation-assessment">Situation Assessment</h2>
-<p>The human resources available to us are four developers with a varying level of experience in the subject matter. We will all be utilizing VSCode and GitHub to manage our codebase, and we all have a fair amount of experience using these tools. We will only have four weeks to complete this task, so we will have to use our time wisely to complete this on time.</p>
-<p>We may eventually run into problems with the restaurants we parse if they do not contain useful food images. The quality and variety of photos on these sites may throw off our model, and we should take steps to make sure</p>
-</section>
-<section id="project-goals-and-success-criteria" class="level2">
-<h2 class="anchored" data-anchor-id="project-goals-and-success-criteria">Project Goals and Success Criteria</h2>
-<p>This project will be successful when we are able to classify and predict cuisine types based on a series of images with at least 70% accuracy.</p>
-<p>We will also have to utilize a web app that recommends restaraunts based on user reviews. As the effectiveness of these recommendations is largely subjective, we will consider this successful if we have a web app that is capable of recommending restaraunts to the developers that we agree are reasonable with the information we provide.</p>
-</section>
-<section id="data-mining-goals" class="level2">
-<h2 class="anchored" data-anchor-id="data-mining-goals">Data Mining Goals</h2>
-<p>We will be utilizing multiple models to accomplish our tasks. We will need the following models:</p>
-<section id="foodnot-food-classifier" class="level3">
-<h3 class="anchored" data-anchor-id="foodnot-food-classifier">1. Food/Not Food Classifier</h3>
-<p><strong>Type of Task</strong>: Binary Classification<br>
-<strong>Goal</strong>: Automatically detect whether an image scraped from a restaurant website depicts food or not.</p>
-<p><strong>Dataset</strong>: - The <em>Food vs Not Food</em> dataset (publicly available) - Supplemented with manually validated scraped images from restaurant websites</p>
-<p><strong>Metric</strong>: - <em>F1-score ≥ 0.90</em>, to ensure strong balance between precision and recall</p>
-<p><strong>Purpose</strong>:<br>
-Filter out irrelevant or non-food images, improving the accuracy and cleanliness of data passed into downstream models.</p>
+<p>This gives you a concise summary of which cuisines appeared most often in your dataset.</p>
 <hr>
 </section>
-<section id="cuisine-predictor" class="level3">
-<h3 class="anchored" data-anchor-id="cuisine-predictor">2. Cuisine Predictor</h3>
-<p><strong>Type of Task</strong>: Multi-class Classification<br>
-<strong>Goal</strong>: Predict the cuisine type (e.g., Italian, Chinese, Swiss) of a restaurant based on a collection of its food images.</p>
-<p><strong>Dataset</strong>: - Labeled cuisine image datasets (e.g., Food-101) - Validated food images scraped from restaurant websites, optionally labeled by matching known cuisine types</p>
-<p><strong>Metric</strong>: - <em>Top-1 Accuracy ≥ 0.75</em> - <em>Top-3 Accuracy ≥ 0.90</em> (to allow for multiple plausible cuisine matches)</p>
-<p><strong>Purpose</strong>:<br>
-Assign cuisine labels to OpenStreetMap restaurants that lack this metadata, enhancing search and filtering within the application.</p>
-<hr>
-</section>
-<section id="restaurant-recommender-system" class="level3">
-<h3 class="anchored" data-anchor-id="restaurant-recommender-system">3. Restaurant Recommender System</h3>
-<p><strong>Type of Task</strong>: Hybrid Recommender System (Collaborative + Content-Based)<br>
-<strong>Goal</strong>: Recommend a shortlist of relevant restaurants to users based on review text or declared preferences.</p>
-<p><strong>Dataset</strong>: - TripAdvisor restaurant reviews (includes restaurant metadata and user-generated review text) - Optionally: Simulated or real user input preferences for evaluation</p>
-<p><strong>Metric</strong>: - <em>Precision@5 ≥ 0.80</em> (4 of 5 suggestions should be considered relevant) - <em>MAP (Mean Average Precision)</em> may also be calculated to assess ranking performance</p>
-<p><strong>Approach</strong>: - Embed user review text via Sentence-BERT or similar model - Compare similarity with restaurant reviews to generate personalized suggestions</p>
-<p><strong>Purpose</strong>:<br>
-Enable personalized restaurant discovery based on user intent and experience narratives, beyond just metadata filtering.</p>
-</section>
-</section>
-<section id="project-plan" class="level2">
-<h2 class="anchored" data-anchor-id="project-plan">Project Plan</h2>
-<p>There are four primary phases to this project that will mostly be done in the order in which they are presented, but may have some overlap:</p>
-<ul>
-<li><strong>Project Understanding</strong>: Discussion and planning of the project and its objectives.</li>
-<li><strong>Data Acquisition and Exploration</strong>: Finding data sources and working through the process of obtaining and cleaning that data.</li>
-<li><strong>Modelling</strong>: Designing and training models.</li>
-<li><strong>Evaluation</strong>: Evaluating models and designing of final web app.</li>
-</ul>
-<div id="fig-project-plan" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-project-plan-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="pics/project-gantt.png" class="img-fluid figure-img">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-project-plan-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1: Project Plan
-</figcaption>
-</figure>
-</div>
-</section>
-<section id="roles-and-contact-details" class="level2">
-<h2 class="anchored" data-anchor-id="roles-and-contact-details">Roles and Contact Details</h2>
-<section id="adam-opperman" class="level3">
-<h3 class="anchored" data-anchor-id="adam-opperman">Adam Opperman</h3>
-<ul>
-<li><strong>Role</strong>: <em>Data Acquisition/Structurer</em></li>
-<li><strong>Tasks</strong>:
-<ul>
-<li>Collect image datasets for use of cuisine classification.</li>
-<li>Clean and label image cuisine types.</li>
-</ul></li>
-<li><strong>Contact</strong>:
-<ul>
-<li>Email: oppermaa@mail.gvsu.edu</li>
-<li>GitHub: <a href="https://github.com/oppermaa">oppermaa</a></li>
-</ul></li>
-</ul>
-<hr>
-</section>
-<section id="moritz-feuchter" class="level3">
-<h3 class="anchored" data-anchor-id="moritz-feuchter">Moritz Feuchter</h3>
-<ul>
-<li><strong>Role</strong>: <em>Developer, Project Structure Lead</em></li>
-<li><strong>Tasks</strong>:
-<ul>
-<li>Designed and developed the cuisine classification pipeline<br>
-</li>
-<li>Constructed the layout and environment of the project</li>
-<li>Develop process for getting missing site URLs for <em>OpenStreetMap</em></li>
-</ul></li>
-<li><strong>Contact</strong>:
-<ul>
-<li>Email: feuchmor@students.zhaw.ch<br>
-</li>
-<li>GitHub: <a href="https://github.com/x-tr4ce">x-tr4ce</a></li>
-</ul></li>
-</ul>
-<hr>
-</section>
-<section id="nino-frei" class="level3">
-<h3 class="anchored" data-anchor-id="nino-frei">Nino Frei</h3>
-<ul>
-<li><strong>Role</strong>: <em>Developer, Data Structurer</em></li>
-<li><strong>Tasks</strong>:
-<ul>
-<li>Scrape <em>OpenStreetMap</em> data for restaurants/cafes in Switzerland.</li>
-<li>Clean and sort image data.</li>
-<li>Train Food/Not Food model.</li>
-</ul></li>
-<li><strong>Contact</strong>:
-<ul>
-<li>Email: freinin1@students.zhaw.ch</li>
-<li>GitHub: <a href="https://github.com/shinarove">shinarove</a></li>
-</ul></li>
-</ul>
-<hr>
-</section>
-<section id="sawyer-rogers" class="level3">
-<h3 class="anchored" data-anchor-id="sawyer-rogers">Sawyer Rogers</h3>
-<ul>
-<li><strong>Role</strong>: <em>Developer, Documenter</em></li>
-<li><strong>Tasks</strong>:
-<ul>
-<li>Design and implement the restaurant scraping spider.<br>
-</li>
-<li>Manag CSV-based status tracking and image processing.<br>
-</li>
-<li>Support integration with downstream classification systems.<br>
-</li>
-<li>Document project charta.</li>
-</ul></li>
-<li><strong>Contact</strong>:
-<ul>
-<li>Email: rogersaw@mail.gvsu.edu<br>
-</li>
-<li>GitHub: <a href="https://github.com/rogersaw711">rogersaw711</a></li>
-</ul></li>
-</ul>
+<section id="idea-behind-the-pipeline" class="level2">
+<h2 class="anchored" data-anchor-id="idea-behind-the-pipeline">Idea behind the Pipeline</h2>
+<p>We use a voting system to aggregate predictions across many images. This helps us: - <strong>Reduce noise</strong>: Individual images may be misclassified, but aggregating many predictions smooths out errors. - <strong>Capture diversity</strong>: A single restaurant may serve multiple cuisines, so we want to see the overall trends. - <strong>Provide confidence</strong>: The top cuisines with counts give a clearer picture than just a single guess.</p>
+<p>Also does a <em>Top-3</em> help us with uncertain predictions. If the top guess is not very confident, we can still see other likely cuisines.</p>
 
 
-</section>
 </section>
 </section>
 
