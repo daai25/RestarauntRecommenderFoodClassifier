@@ -21,7 +21,7 @@ def Predict(images_bytes):
     Returns:
         str: Summary message indicating the number of images processed.
     """
-    output_dir = "images"
+    output_dir = "images_to_classify"
     if os.path.exists(output_dir):
         shutil.rmtree(output_dir)
     os.makedirs(output_dir, exist_ok=True)
@@ -31,8 +31,8 @@ def Predict(images_bytes):
         pilImage = pilImage.resize((512, 512), Image.LANCZOS)
         pilImage.save(os.path.join(output_dir, f"{count}.jpg"), format="JPEG", quality=85)
 
-    #CallFunction(output_dir)
-    return f"Processed {len(images_bytes)} images."
+    top_results = CallFunction(output_dir)
+    return f"Your top three recommendations are {", ".join(top_results)}."
 
 def ScrapeImagesFromUrl(url):
     """

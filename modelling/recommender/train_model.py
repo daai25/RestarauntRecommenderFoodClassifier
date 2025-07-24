@@ -9,8 +9,7 @@ Utilizes SVD and the Surprise library for training, as well as pandas for handli
 '''
 # Load the uploaded CSV file
 base_dir = os.path.dirname(os.path.abspath(__file__))
-#file_path = os.path.join(base_dir, "combined_reviews.csv")
-file_path = os.path.join(base_dir, "ungerdybungerdy.csv")
+file_path = os.path.join(base_dir, "combined_reviews.csv")
 df = pd.read_csv(file_path, sep="|")
 
 # Rename columns

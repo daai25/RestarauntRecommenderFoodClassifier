@@ -16,6 +16,8 @@ website:
             - modelling_report.qmd
             - evaluation.qmd
             - food_or_not_food_filter.qmd
+            - restaurant_recommender.qmd
+            - webapp.qmd
 
 bibliography: refs.bib
 csl: vancouver-brackets.csl
