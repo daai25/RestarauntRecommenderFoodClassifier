@@ -15,6 +15,7 @@ website:
             - food_or_not_food_filter.qmd
             - restaurant_recommender.qmd
             - restaurant_scraper.qmd
+            - food_classifier.qmd
             - classification_pipeline.qmd
             - webapp.qmd
 
