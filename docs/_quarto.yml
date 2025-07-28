@@ -23,9 +23,14 @@ csl: vancouver-brackets.csl
 
 format:
     html:
-        theme: cosmo
+        respect-user-color-scheme: true
+        theme:
+            light: cosmos
+            dark: darkly
         css: styles.css
         toc: true
+        includes:
+            before-body: _includes/logo.html
 
     pdf:
         documentclass: scrreprt
