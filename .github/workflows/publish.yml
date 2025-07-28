@@ -17,10 +17,6 @@ jobs:
             - name: Install librsvg
               run: sudo apt-get install librsvg2-bin
 
-            - name: Install TinyTex directly
-              run: |
-                  sudo apt-get install -y texlive-xetex
-                  sudo tlmgr install --no-auto-install collection-fontsrecommended
             - name: Set up Quarto
               uses: quarto-dev/quarto-actions/setup@v2
               with:
