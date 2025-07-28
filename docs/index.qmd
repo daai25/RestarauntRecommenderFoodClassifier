@@ -6,3 +6,8 @@ The purpose of this documentation is to provide insight into the decisions that 
 On the left you will find a directory of pages that describe the major working parts of the project, as well as some overview files.
 
 On any given page you may click on the "PDF" button on the right to view the document as a downloadable PDF.
+
+Credit:
+
+* ChatGPT for code assistance
+* ChatGPT for Forkcast name and logo

@@ -19,6 +19,8 @@ dependencies:
     - pillow
     - tqdm
     - pytest
+    - streamlit
+    - surprise
     - tldextract
     - imagehash
     - streamlit

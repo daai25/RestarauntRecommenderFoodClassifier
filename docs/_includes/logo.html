@@ -1,0 +1,27 @@
+<style>
+    /* Style the logo container */
+    .sidebar-logo {
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    /* Ensure only the correct image is visible based on theme */
+    .theme-logo-light,
+    .theme-logo-dark {
+      width: 80px;
+      display: none;
+    }
+
+    html:not(.quarto-dark) .theme-logo-light {
+      display: inline;
+    }
+
+    html.quarto-dark .theme-logo-dark {
+      display: inline;
+    }
+</style>
+
+<div class="sidebar-logo">
+  <img src="pics/ForkCastBlack.png" class="theme-logo-light" />
+  <img src="pics/ForkCast.png" class="theme-logo-dark" />
+</div>
