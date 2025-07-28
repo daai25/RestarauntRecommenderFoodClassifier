@@ -213,91 +213,91 @@
   {
     "objectID": "webapp.html",
     "href": "webapp.html",
-    "title": "Food Classifier",
+    "title": "Webapp",
     "section": "",
-    "text": "ForkCast is a Streamlit web application that combines two core functionalities:\n\nImage Classification: Users can upload food-related images or submit a webpage URL to scrape food images. These are then cleaned and prepared for classification by a food cuisine classifier.\nRestaurant Recommendation: Based on collaborative filtering, users receive personalized restaurant suggestions using a recommender system trained on historical review data.",
+    "text": "ForkCast is a Streamlit web application that combines two core functionalities:\n\nImage Classification: Users can upload food-related images or submit a webpage URL to scrape food images. These are then cleaned and prepared for classification by a food cuisine classifier.\nRestaurant Recommendation: Based on collaborative filtering, users receive personalized restaurant suggestions using a recommender system trained on historical review data.\n\n\n\n\n\nThe application is written in Python and powered by the following libraries:\n\nstreamlit: Web UI and user interactivity\nPillow (PIL): Image manipulation\nrequests + BeautifulSoup: Web scraping\nsurprise: Recommendation engine using matrix factorization (SVD)\npandas: Data loading and transformation\n\nThe main script contains both app logic and backend functions, with two tabs in the UI:\n\nCuisine Classifier\nRecommender\n\n\n\n\n\n\nUsers can:\n\nUpload multiple images (jpg, jpeg, png)\nSubmit a URL, and the system will scrape &lt;img&gt; tags, filter and preprocess them\n\nFollowing uploading:\n\nAll images are converted into jpegs and resized to a constant size to allow for predictability and consistency in classification.\nCalls the classifier while passing a file location where all images are located\n\nIf a user has less than two reviews, they will not receive any recommendations. After at least two reviews have been submitted by a given user, they will receieve a restaurant recommendation based on their reviews, which is accomplished via Surprise’s SVD function:\n    reader = Reader(rating_scale=(1, 5))\n    data = Dataset.load_from_df(df[[\"user\", \"item\", \"rating\"]], reader)\n    trainset = data.build_full_trainset()\n\n    # Train SVD model\n    model = SVD()\n    model.fit(trainset)\nFor further information, see classifier documentation\n\n\n\n\nData is stored in a csv with the following format:\nrestaurantName|reviewerId|rating|reviewDate,\n\nEach line represents a single review. A user may review several restaurants, and a restaurant may be reviewed by many users.\nUsers interact with it by:\n\nEntering their user ID\nSelecting a restaurant from a dropdown\nProviding a star rating (1 to 5)\nSubmitting the review\nReceiving a recommendation if eligible\n\nSee recommender documentation for an in-depth description of the recommender.\n\n\n\nApp is divided into two primary tabs, one for image classification and one for restaurant recommendation. This is accomplished very easily via:\n    classifierTab, recommenderTab = st.tabs([\"Image Classifier\", \"Recommender\"])\n\n\n\nNavigationMenu\n\n\nThe recommender is embedded directly into the Streamlit app and is not saved. Since the model needs to be retrained after every new review, very little is gained by saving the model.\n\n\n\nThere are multiple ways in which we could improve the app in the future:\n\nLet users tag or label images to improve training data\nStore reviews in a permenant database instead of CSV\nAdd login/authentication system instead of allowing people to upload reviews under any UserID\n\n\n\n\nApp can be currently be run locally via streamlit run webapp.py. Making this publically accessible may be an option for the future, but we will allow it to just exist locally for proof of concept.\n\n\n\nBase/\n├── webapp.py\n├── combined_reviews.csv\n├── images/\n├── ForkCast.png\n└── favicon.png",
     "crumbs": [
-      "Overview"
+      "Webapp"
     ]
   },
   {
     "objectID": "webapp.html#overview",
     "href": "webapp.html#overview",
-    "title": "Food Classifier",
+    "title": "Webapp",
     "section": "",
     "text": "ForkCast is a Streamlit web application that combines two core functionalities:\n\nImage Classification: Users can upload food-related images or submit a webpage URL to scrape food images. These are then cleaned and prepared for classification by a food cuisine classifier.\nRestaurant Recommendation: Based on collaborative filtering, users receive personalized restaurant suggestions using a recommender system trained on historical review data.",
     "crumbs": [
-      "Overview"
+      "Webapp"
     ]
   },
   {
     "objectID": "webapp.html#project-structure",
     "href": "webapp.html#project-structure",
-    "title": "Food Classifier",
-    "section": "1. Project Structure",
-    "text": "1. Project Structure\nThe application is written in Python and powered by the following libraries:\n\nstreamlit: Web UI and user interactivity\nPillow (PIL): Image manipulation\nrequests + BeautifulSoup: Web scraping\nsurprise: Recommendation engine using matrix factorization (SVD)\npandas: Data loading and transformation\n\nThe main script contains both app logic and backend functions, with two tabs in the UI:\n\nCuisine Classifier\nRecommender",
+    "title": "Webapp",
+    "section": "",
+    "text": "The application is written in Python and powered by the following libraries:\n\nstreamlit: Web UI and user interactivity\nPillow (PIL): Image manipulation\nrequests + BeautifulSoup: Web scraping\nsurprise: Recommendation engine using matrix factorization (SVD)\npandas: Data loading and transformation\n\nThe main script contains both app logic and backend functions, with two tabs in the UI:\n\nCuisine Classifier\nRecommender",
     "crumbs": [
-      "Overview"
+      "Webapp"
     ]
   },
   {
     "objectID": "webapp.html#cuisine-classifier",
     "href": "webapp.html#cuisine-classifier",
-    "title": "Food Classifier",
-    "section": "2. Cuisine Classifier",
-    "text": "2. Cuisine Classifier\n\nUploading or Scraping Images\nUsers can:\n\nUpload multiple images (jpg, jpeg, png)\nSubmit a URL, and the system will scrape &lt;img&gt; tags, filter and preprocess them\n\nFollowing uploading:\n\nAll images are converted into jpegs and resized to a constant size to allow for predictability and consistency in classification.\nCalls the classifier while passing a file location where all images are located\n\nIf a user has less than two reviews, they will not receive any recommendations. After at least two reviews have been submitted by a given user, they will receieve a restaurant recommendation based on their reviews, which is accomplished via Surprise’s SVD function:\n    reader = Reader(rating_scale=(1, 5))\n    data = Dataset.load_from_df(df[[\"user\", \"item\", \"rating\"]], reader)\n    trainset = data.build_full_trainset()\n\n    # Train SVD model\n    model = SVD()\n    model.fit(trainset)\nFor further information, see classifier documentation",
+    "title": "Webapp",
+    "section": "",
+    "text": "Users can:\n\nUpload multiple images (jpg, jpeg, png)\nSubmit a URL, and the system will scrape &lt;img&gt; tags, filter and preprocess them\n\nFollowing uploading:\n\nAll images are converted into jpegs and resized to a constant size to allow for predictability and consistency in classification.\nCalls the classifier while passing a file location where all images are located\n\nIf a user has less than two reviews, they will not receive any recommendations. After at least two reviews have been submitted by a given user, they will receieve a restaurant recommendation based on their reviews, which is accomplished via Surprise’s SVD function:\n    reader = Reader(rating_scale=(1, 5))\n    data = Dataset.load_from_df(df[[\"user\", \"item\", \"rating\"]], reader)\n    trainset = data.build_full_trainset()\n\n    # Train SVD model\n    model = SVD()\n    model.fit(trainset)\nFor further information, see classifier documentation",
     "crumbs": [
-      "Overview"
+      "Webapp"
     ]
   },
   {
     "objectID": "webapp.html#recommender-system",
     "href": "webapp.html#recommender-system",
-    "title": "Food Classifier",
-    "section": "3. Recommender System",
-    "text": "3. Recommender System\nData is stored in a csv with the following format:\nrestaurantName|reviewerId|rating|reviewDate,\n\nEach line represents a single review. A user may review several restaurants, and a restaurant may be reviewed by many users.\nUsers interact with it by:\n\nEntering their user ID\nSelecting a restaurant from a dropdown\nProviding a star rating (1 to 5)\nSubmitting the review\nReceiving a recommendation if eligible\n\nSee recommender documentation for an in-depth description of the recommender.",
+    "title": "Webapp",
+    "section": "",
+    "text": "Data is stored in a csv with the following format:\nrestaurantName|reviewerId|rating|reviewDate,\n\nEach line represents a single review. A user may review several restaurants, and a restaurant may be reviewed by many users.\nUsers interact with it by:\n\nEntering their user ID\nSelecting a restaurant from a dropdown\nProviding a star rating (1 to 5)\nSubmitting the review\nReceiving a recommendation if eligible\n\nSee recommender documentation for an in-depth description of the recommender.",
     "crumbs": [
-      "Overview"
+      "Webapp"
     ]
   },
   {
     "objectID": "webapp.html#streamlit-app-design",
     "href": "webapp.html#streamlit-app-design",
-    "title": "Food Classifier",
-    "section": "4. Streamlit App Design",
-    "text": "4. Streamlit App Design\nApp is divided into two primary tabs, one for image classification and one for restaurant recommendation. This is accomplished very easily via:\n    classifierTab, recommenderTab = st.tabs([\"Image Classifier\", \"Recommender\"])\n\n\n\nNavigationMenu\n\n\nThe recommender is embedded directly into the Streamlit app and is not saved. Since the model needs to be retrained after every new review, very little is gained by saving the model.",
+    "title": "Webapp",
+    "section": "",
+    "text": "App is divided into two primary tabs, one for image classification and one for restaurant recommendation. This is accomplished very easily via:\n    classifierTab, recommenderTab = st.tabs([\"Image Classifier\", \"Recommender\"])\n\n\n\nNavigationMenu\n\n\nThe recommender is embedded directly into the Streamlit app and is not saved. Since the model needs to be retrained after every new review, very little is gained by saving the model.",
     "crumbs": [
-      "Overview"
+      "Webapp"
     ]
   },
   {
     "objectID": "webapp.html#future-development",
     "href": "webapp.html#future-development",
-    "title": "Food Classifier",
-    "section": "5. Future Development",
-    "text": "5. Future Development\nThere are multiple ways in which we could improve the app in the future:\n\nLet users tag or label images to improve training data\nStore reviews in a permenant database instead of CSV\nAdd login/authentication system instead of allowing people to upload reviews under any UserID",
+    "title": "Webapp",
+    "section": "",
+    "text": "There are multiple ways in which we could improve the app in the future:\n\nLet users tag or label images to improve training data\nStore reviews in a permenant database instead of CSV\nAdd login/authentication system instead of allowing people to upload reviews under any UserID",
     "crumbs": [
-      "Overview"
+      "Webapp"
     ]
   },
   {
     "objectID": "webapp.html#running-app",
     "href": "webapp.html#running-app",
-    "title": "Food Classifier",
-    "section": "6. Running App",
-    "text": "6. Running App\nApp can be currently be run locally via streamlit run webapp.py. Making this publically accessible may be an option for the future, but we will allow it to just exist locally for proof of concept.",
+    "title": "Webapp",
+    "section": "",
+    "text": "App can be currently be run locally via streamlit run webapp.py. Making this publically accessible may be an option for the future, but we will allow it to just exist locally for proof of concept.",
     "crumbs": [
-      "Overview"
+      "Webapp"
     ]
   },
   {
     "objectID": "webapp.html#file-layout",
     "href": "webapp.html#file-layout",
-    "title": "Food Classifier",
-    "section": "7. File Layout",
-    "text": "7. File Layout\nBase/\n├── webapp.py\n├── combined_reviews.csv\n├── images/\n├── ForkCast.png\n└── favicon.png",
+    "title": "Webapp",
+    "section": "",
+    "text": "Base/\n├── webapp.py\n├── combined_reviews.csv\n├── images/\n├── ForkCast.png\n└── favicon.png",
     "crumbs": [
-      "Overview"
+      "Webapp"
     ]
   },
   {
@@ -425,7 +425,7 @@
     "href": "index.html",
     "title": "About This Documentation",
     "section": "",
-    "text": "The purpose of this documentation is to provide insight into the decisions that we made in the planning and execution of this project.\nOn the left you will find a directory of pages that describe the major working parts of the project, as well as some overview files.\nOn any given page you may click on the “PDF” button on the right to view the document as a downloadable PDF.",
+    "text": "The purpose of this documentation is to provide insight into the decisions that we made in the planning and execution of this project.\nOn the left you will find a directory of pages that describe the major working parts of the project, as well as some overview files.\nOn any given page you may click on the “PDF” button on the right to view the document as a downloadable PDF.\nCredit:\n\nChatGPT for code assistance\nChatGPT for Forkcast name and logo",
     "crumbs": [
       "About This Documentation"
     ]
@@ -443,81 +443,81 @@
   {
     "objectID": "restaurant_recommender.html",
     "href": "restaurant_recommender.html",
-    "title": "Food Classifier",
+    "title": "Restaurant Recommender",
     "section": "",
-    "text": "The ForkCast Recommender is a collaborative filtering engine that suggests restaurants to users based on their review history. It uses the Surprise library’s Singular Value Decomposition (SVD) implementation to generate predictions from user-item rating data.",
+    "text": "The ForkCast Recommender is a collaborative filtering engine that suggests restaurants to users based on their review history. It uses the Surprise library’s Singular Value Decomposition (SVD) implementation to generate predictions from user-item rating data.\n\n\n\n\nAll review data is stored in a single CSV file named combined_reviews.csv, with the following format (pipe-delimited):\nrestaurantName|reviewerId|rating|reviewDate\nEach row represents one review by a specific user of a specific restaurant, along with a numeric rating (1–5) and the date of review.\n\nUsers may review multiple restaurants\n\nRestaurants may receive reviews from multiple users\n\nDuplicate reviews are prevented at submission time\n\n\n\n\nThe core of the recommendation logic is built using Surprise’s matrix factorization algorithm (SVD). This model is retrained every time a new review is submitted and accepted.\nfrom surprise import Dataset, Reader, SVD\n\nreader = Reader(rating_scale=(1, 5))\ndata = Dataset.load_from_df(df[[\"user\", \"item\", \"rating\"]], reader)\ntrainset = data.build_full_trainset()\n\nmodel = SVD()\nmodel.fit(trainset)\nAfter training, predictions can be made using:\nmodel.predict(user_id, restaurant_name).est\nPredicted scores are used to rank unseen restaurants and generate recommendations.\n\n\n\nUsers must submit at least two reviews to receive recommendations. This ensures that the system has a minimal amount of information to begin making predictions.\nThe recommendation pipeline follows these steps:\n\nReview is submitted via the web interface\nThe system checks for duplicates in combined_reviews.csv\nIf the review is new, it is appended to the CSV\nThe recommender model is retrained on the updated data\nA new recommendation is generated for the user, excluding any restaurants they have already reviewed\n\nThis workflow keeps the logic transparent and immediate, while remaining efficient on our small dataset.\nThe results of this are indeterminate as well, as we do not have a defined random state for the recommender. If we apply a defined random state, the output will be consistent, but we wanted to allow for some randomness so the recommendations are more varied.\n\n\n\nThe performance of this recommender is consistent, though not incredibly accurate. The method by which I found the current performance was through Surprises GridSearchCV. This allows us to give a list of parameters, and test for which combination has the best results:\nfrom surprise.model_selection import GridSearchCV\nfrom surprise import SVD\n\nparam_grid = {\n    'n_factors': [120, 140, 160, 180, 200],\n    'lr_all': [0.004, 0.006, 0.008, 0.01],\n    'reg_all': [0.03, 0.04, 0.05, 0.06],\n    'n_epochs': [20, 30, 40]\n}\n\ngs = GridSearchCV(SVD, param_grid, measures=['rmse'], cv=5, joblib_verbose=2)\ngs.fit(data)\n\nprint(\"Best RMSE:\", gs.best_score['rmse'])\nprint(\"Best Params:\", gs.best_params['rmse'])\nThis allows us to both see what the best parameters are, as well as what the performance is. Performance metrics are as follows:\n\nThe best performance using KNN had an RMSE of 1.09. This tells us that with KNN, the model should be somewhere +/- 1.09 stars of the true rating. This takes into account that predictions that are more incorrect are weighted more heavily, as well.\nSVD had slightly better performance, with or best performance having an RMSE of 0.85. This is not much better, given the range is only 1-5. This does leave a lot of room for improvement, but it does give us a good idea of how they would rate something, making it better than guessing.\n\nThis lack of performance is likely due to the sparseness of the data. There are 261 restaurants, and most users only review 1-5 restaurants, with us having a total of 7668 reviews. This leaves an incredibly sparse dataset, meaning finding a model that can accurately fill in the gaps of the reviews is very difficult. The best way of improving this would be to introduce more dense reviews, or to reduce the number of restaurants.\n\n\n\nTo keep the application lightweight, the model is not saved between sessions. Since training is fast and the dataset is relatively small, we retrain the model on each update. This eliminates the need for managing model versioning or state between users. Additionally, the model should be retrained after every new review, so saving the model will achieve little to nothing.\n\n\n\nThere are multiple areas for this recommender that could be improved:\n\nUse hybrid recommendation (collaborative + content-based filtering) to improve performance\nStore data in a persistent database (e.g., SQLite or PostgreSQL) rather than a .csv\nAdd a login/authentication system for user identity validation, rather than just having a username input\nIncorporate contextual metadata like cuisine type, price range, or location, since the data is not very descriptive as is\nIf the dataset scales upwards and there are more users, saving the model may be required, which would be retrained regularly\nAdd time weighting so newer reviews are prioritized",
     "crumbs": [
-      "Overview"
+      "Restaurant Recommender"
     ]
   },
   {
     "objectID": "restaurant_recommender.html#overview",
     "href": "restaurant_recommender.html#overview",
-    "title": "Food Classifier",
+    "title": "Restaurant Recommender",
     "section": "",
     "text": "The ForkCast Recommender is a collaborative filtering engine that suggests restaurants to users based on their review history. It uses the Surprise library’s Singular Value Decomposition (SVD) implementation to generate predictions from user-item rating data.",
     "crumbs": [
-      "Overview"
+      "Restaurant Recommender"
     ]
   },
   {
     "objectID": "restaurant_recommender.html#review-data-format",
     "href": "restaurant_recommender.html#review-data-format",
-    "title": "Food Classifier",
-    "section": "1. Review Data Format",
-    "text": "1. Review Data Format\nAll review data is stored in a single CSV file named combined_reviews.csv, with the following format (pipe-delimited):\nrestaurantName|reviewerId|rating|reviewDate\nEach row represents one review by a specific user of a specific restaurant, along with a numeric rating (1–5) and the date of review.\n\nUsers may review multiple restaurants\n\nRestaurants may receive reviews from multiple users\n\nDuplicate reviews are prevented at submission time",
+    "title": "Restaurant Recommender",
+    "section": "",
+    "text": "All review data is stored in a single CSV file named combined_reviews.csv, with the following format (pipe-delimited):\nrestaurantName|reviewerId|rating|reviewDate\nEach row represents one review by a specific user of a specific restaurant, along with a numeric rating (1–5) and the date of review.\n\nUsers may review multiple restaurants\n\nRestaurants may receive reviews from multiple users\n\nDuplicate reviews are prevented at submission time",
     "crumbs": [
-      "Overview"
+      "Restaurant Recommender"
     ]
   },
   {
     "objectID": "restaurant_recommender.html#svd-model-training",
     "href": "restaurant_recommender.html#svd-model-training",
-    "title": "Food Classifier",
-    "section": "2. SVD Model Training",
-    "text": "2. SVD Model Training\nThe core of the recommendation logic is built using Surprise’s matrix factorization algorithm (SVD). This model is retrained every time a new review is submitted and accepted.\nfrom surprise import Dataset, Reader, SVD\n\nreader = Reader(rating_scale=(1, 5))\ndata = Dataset.load_from_df(df[[\"user\", \"item\", \"rating\"]], reader)\ntrainset = data.build_full_trainset()\n\nmodel = SVD()\nmodel.fit(trainset)\nAfter training, predictions can be made using:\nmodel.predict(user_id, restaurant_name).est\nPredicted scores are used to rank unseen restaurants and generate recommendations.",
+    "title": "Restaurant Recommender",
+    "section": "",
+    "text": "The core of the recommendation logic is built using Surprise’s matrix factorization algorithm (SVD). This model is retrained every time a new review is submitted and accepted.\nfrom surprise import Dataset, Reader, SVD\n\nreader = Reader(rating_scale=(1, 5))\ndata = Dataset.load_from_df(df[[\"user\", \"item\", \"rating\"]], reader)\ntrainset = data.build_full_trainset()\n\nmodel = SVD()\nmodel.fit(trainset)\nAfter training, predictions can be made using:\nmodel.predict(user_id, restaurant_name).est\nPredicted scores are used to rank unseen restaurants and generate recommendations.",
     "crumbs": [
-      "Overview"
+      "Restaurant Recommender"
     ]
   },
   {
     "objectID": "restaurant_recommender.html#logic",
     "href": "restaurant_recommender.html#logic",
-    "title": "Food Classifier",
-    "section": "3. Logic",
-    "text": "3. Logic\nUsers must submit at least two reviews to receive recommendations. This ensures that the system has a minimal amount of information to begin making predictions.\nThe recommendation pipeline follows these steps:\n\nReview is submitted via the web interface\nThe system checks for duplicates in combined_reviews.csv\nIf the review is new, it is appended to the CSV\nThe recommender model is retrained on the updated data\nA new recommendation is generated for the user, excluding any restaurants they have already reviewed\n\nThis workflow keeps the logic transparent and immediate, while remaining efficient on our small dataset.\nThe results of this are indeterminate as well, as we do not have a defined random state for the recommender. If we apply a defined random state, the output will be consistent, but we wanted to allow for some randomness so the recommendations are more varied.",
+    "title": "Restaurant Recommender",
+    "section": "",
+    "text": "Users must submit at least two reviews to receive recommendations. This ensures that the system has a minimal amount of information to begin making predictions.\nThe recommendation pipeline follows these steps:\n\nReview is submitted via the web interface\nThe system checks for duplicates in combined_reviews.csv\nIf the review is new, it is appended to the CSV\nThe recommender model is retrained on the updated data\nA new recommendation is generated for the user, excluding any restaurants they have already reviewed\n\nThis workflow keeps the logic transparent and immediate, while remaining efficient on our small dataset.\nThe results of this are indeterminate as well, as we do not have a defined random state for the recommender. If we apply a defined random state, the output will be consistent, but we wanted to allow for some randomness so the recommendations are more varied.",
     "crumbs": [
-      "Overview"
+      "Restaurant Recommender"
     ]
   },
   {
     "objectID": "restaurant_recommender.html#performance",
     "href": "restaurant_recommender.html#performance",
-    "title": "Food Classifier",
-    "section": "4. Performance",
-    "text": "4. Performance\nThe performance of this recommender is consistent, though not incredibly accurate. The method by which I found the current performance was through Surprises GridSearchCV. This allows us to give a list of parameters, and test for which combination has the best results:\nfrom surprise.model_selection import GridSearchCV\nfrom surprise import SVD\n\nparam_grid = {\n    'n_factors': [120, 140, 160, 180, 200],\n    'lr_all': [0.004, 0.006, 0.008, 0.01],\n    'reg_all': [0.03, 0.04, 0.05, 0.06],\n    'n_epochs': [20, 30, 40]\n}\n\ngs = GridSearchCV(SVD, param_grid, measures=['rmse'], cv=5, joblib_verbose=2)\ngs.fit(data)\n\nprint(\"Best RMSE:\", gs.best_score['rmse'])\nprint(\"Best Params:\", gs.best_params['rmse'])\nThis allows us to both see what the best parameters are, as well as what the performance is. Performance metrics are as follows:\n\nThe best performance using KNN had an RMSE of 1.09. This tells us that with KNN, the model should be somewhere +/- 1.09 stars of the true rating. This takes into account that predictions that are more incorrect are weighted more heavily, as well.\nSVD had slightly better performance, with or best performance having an RMSE of 0.85. This is not much better, given the range is only 1-5. This does leave a lot of room for improvement, but it does give us a good idea of how they would rate something, making it better than guessing.\n\nThis lack of performance is likely due to the sparseness of the data. There are 261 restaurants, and most users only review 1-5 restaurants, with us having a total of 7668 reviews. This leaves an incredibly sparse dataset, meaning finding a model that can accurately fill in the gaps of the reviews is very difficult. The best way of improving this would be to introduce more dense reviews, or to reduce the number of restaurants.",
+    "title": "Restaurant Recommender",
+    "section": "",
+    "text": "The performance of this recommender is consistent, though not incredibly accurate. The method by which I found the current performance was through Surprises GridSearchCV. This allows us to give a list of parameters, and test for which combination has the best results:\nfrom surprise.model_selection import GridSearchCV\nfrom surprise import SVD\n\nparam_grid = {\n    'n_factors': [120, 140, 160, 180, 200],\n    'lr_all': [0.004, 0.006, 0.008, 0.01],\n    'reg_all': [0.03, 0.04, 0.05, 0.06],\n    'n_epochs': [20, 30, 40]\n}\n\ngs = GridSearchCV(SVD, param_grid, measures=['rmse'], cv=5, joblib_verbose=2)\ngs.fit(data)\n\nprint(\"Best RMSE:\", gs.best_score['rmse'])\nprint(\"Best Params:\", gs.best_params['rmse'])\nThis allows us to both see what the best parameters are, as well as what the performance is. Performance metrics are as follows:\n\nThe best performance using KNN had an RMSE of 1.09. This tells us that with KNN, the model should be somewhere +/- 1.09 stars of the true rating. This takes into account that predictions that are more incorrect are weighted more heavily, as well.\nSVD had slightly better performance, with or best performance having an RMSE of 0.85. This is not much better, given the range is only 1-5. This does leave a lot of room for improvement, but it does give us a good idea of how they would rate something, making it better than guessing.\n\nThis lack of performance is likely due to the sparseness of the data. There are 261 restaurants, and most users only review 1-5 restaurants, with us having a total of 7668 reviews. This leaves an incredibly sparse dataset, meaning finding a model that can accurately fill in the gaps of the reviews is very difficult. The best way of improving this would be to introduce more dense reviews, or to reduce the number of restaurants.",
     "crumbs": [
-      "Overview"
+      "Restaurant Recommender"
     ]
   },
   {
     "objectID": "restaurant_recommender.html#model-persistence",
     "href": "restaurant_recommender.html#model-persistence",
-    "title": "Food Classifier",
-    "section": "5. Model Persistence",
-    "text": "5. Model Persistence\nTo keep the application lightweight, the model is not saved between sessions. Since training is fast and the dataset is relatively small, we retrain the model on each update. This eliminates the need for managing model versioning or state between users. Additionally, the model should be retrained after every new review, so saving the model will achieve little to nothing.",
+    "title": "Restaurant Recommender",
+    "section": "",
+    "text": "To keep the application lightweight, the model is not saved between sessions. Since training is fast and the dataset is relatively small, we retrain the model on each update. This eliminates the need for managing model versioning or state between users. Additionally, the model should be retrained after every new review, so saving the model will achieve little to nothing.",
     "crumbs": [
-      "Overview"
+      "Restaurant Recommender"
     ]
   },
   {
     "objectID": "restaurant_recommender.html#future-improvements",
     "href": "restaurant_recommender.html#future-improvements",
-    "title": "Food Classifier",
-    "section": "6. Future Improvements",
-    "text": "6. Future Improvements\nThere are multiple areas for this recommender that could be improved:\n\nUse hybrid recommendation (collaborative + content-based filtering) to improve performance\nStore data in a persistent database (e.g., SQLite or PostgreSQL) rather than a .csv\nAdd a login/authentication system for user identity validation, rather than just having a username input\nIncorporate contextual metadata like cuisine type, price range, or location, since the data is not very descriptive as is\nIf the dataset scales upwards and there are more users, saving the model may be required, which would be retrained regularly\nAdd time weighting so newer reviews are prioritized",
+    "title": "Restaurant Recommender",
+    "section": "",
+    "text": "There are multiple areas for this recommender that could be improved:\n\nUse hybrid recommendation (collaborative + content-based filtering) to improve performance\nStore data in a persistent database (e.g., SQLite or PostgreSQL) rather than a .csv\nAdd a login/authentication system for user identity validation, rather than just having a username input\nIncorporate contextual metadata like cuisine type, price range, or location, since the data is not very descriptive as is\nIf the dataset scales upwards and there are more users, saving the model may be required, which would be retrained regularly\nAdd time weighting so newer reviews are prioritized",
     "crumbs": [
-      "Overview"
+      "Restaurant Recommender"
     ]
   },
   {
