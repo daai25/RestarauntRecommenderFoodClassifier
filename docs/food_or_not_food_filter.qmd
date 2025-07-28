@@ -125,7 +125,7 @@ Which then we split into training (80%), validation (10%) and test (10%) sets:
   </tr>
 </table>
 
-The dataset can be viewed in the following directory: [dataset](../modelling/food_or_not_food/dataset).
+The dataset can be viewed in the following directory: [dataset](https://github.com/daai25/RestarauntRecommenderFoodClassifier/tree/main/modelling/food_or_not_food/dataset).
 
 ## Training of the CNN Model
 
