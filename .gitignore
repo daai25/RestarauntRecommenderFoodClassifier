@@ -141,3 +141,6 @@ data_acquisition/restarauntContentScraper/scraped-data
 
 # exclude subdirectories of test/web_scraper/test_output
 test/web_scraper/test_output/*
+
+# exclude classify-image directory:
+images_to_classify/
