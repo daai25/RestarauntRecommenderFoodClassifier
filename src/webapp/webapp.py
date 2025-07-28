@@ -9,6 +9,7 @@ import shutil
 import streamlit as st
 from surprise import Dataset, Reader, SVD
 from urllib.parse import urljoin
+from urllib.parse import urlparse
 import sys
 from pathlib import Path
 
@@ -44,53 +45,101 @@ def Predict(images_bytes):
     return f"Your top three recommendations are {', '.join(filtered_results)}."
 
 
-def ScrapeImagesFromUrl(url):
+def ScrapeImagesFromUrl(start_url, max_depth=1, max_pages=10):
     """
-    Takes a single URL, scrapes images, and returns them as a list of image byte objects.
-
-    Args:
-        url (str): The webpage URL to scrape for images.
-
-    Returns:
-        List[bytes]: List of image byte data from the page after resizing and conversion.
+    Crawl `start_url` (and its sub-pages) for images with limits and progress tracking.
     """
-    try:
-        response = requests.get(url, timeout=10)
-        response.raise_for_status()
-    except Exception as e:
-        print(f"Error fetching page: {e}")
-        return []
+    import time
+    import random
 
-    soup = BeautifulSoup(response.text, "html.parser")
-    img_tags = soup.find_all("img")
+    # Show progress to user
+    progress_bar = st.progress(0)
+    status_text = st.empty()
+    status_text.text("Initializing crawler...")
+
+    parsed_root = urlparse(start_url)
+    visited = set()
+    to_visit = [(start_url, 0)]
     images_bytes_list = []
+    pages_visited = 0
 
-    for img_tag in img_tags:
-        src = img_tag.get("src") or img_tag.get("data-src")
-        if not src:
+    # Track domains to avoid going too far
+    base_domain = ".".join(
+        parsed_root.netloc.split(".")[-2:]
+    )  # Get example.com from subdomain.example.com
+
+    while to_visit and pages_visited < max_pages:
+        current_url, depth = to_visit.pop(0)
+        if current_url in visited or depth > max_depth:
             continue
 
-        if src.startswith("data:"):
-            continue
+        visited.add(current_url)
+        pages_visited += 1
 
-        img_url = urljoin(url, src)
+        # Update progress
+        progress = min(pages_visited / max_pages, 1.0)
+        progress_bar.progress(progress)
+        status_text.text(f"Crawling page {pages_visited}/{max_pages}: {current_url}")
+
+        # Add delay between requests
+        time.sleep(random.uniform(0.1, 0.3))
 
         try:
-            img_response = requests.get(img_url, timeout=10)
-            img_response.raise_for_status()
-
-            # Open image using PIL to validate & optionally preprocess
-            image = Image.open(BytesIO(img_response.content))
-            image = image.convert("RGB")
-            image = image.resize((512, 512), Image.LANCZOS)
-
-            # Save image to bytes
-            byte_stream = BytesIO()
-            image.save(byte_stream, format="JPEG", quality=85)
-            images_bytes_list.append(byte_stream.getvalue())
-
+            resp = requests.get(current_url, timeout=10)
+            resp.raise_for_status()
         except Exception as e:
-            continue  # Skip images that fail to download or process
+            status_text.text(f"Error accessing {current_url}: {str(e)}")
+            time.sleep(1)  # Brief pause after error
+            continue
+
+        soup = BeautifulSoup(resp.text, "html.parser")
+
+        # Process images with delay
+        for img_tag in soup.find_all("img"):
+            src = img_tag.get("src") or img_tag.get("data-src")
+            if not src or src.startswith("data:"):
+                continue
+
+            img_url = urljoin(current_url, src)
+
+            try:
+                # Small delay between image requests
+                time.sleep(random.uniform(0.1, 0.3))
+
+                status_text.text(f"Downloading image: {img_url}")
+                imr = requests.get(img_url, timeout=10)
+                imr.raise_for_status()
+
+                img = Image.open(BytesIO(imr.content)).convert("RGB")
+                img = img.resize((512, 512), Image.LANCZOS)
+                bs = BytesIO()
+                img.save(bs, format="JPEG", quality=85)
+                images_bytes_list.append(bs.getvalue())
+
+                # Update on successful image download
+                status_text.text(f"Downloaded {len(images_bytes_list)} images so far")
+
+            except Exception as e:
+                continue
+
+        # More selective link crawling
+        new_links = []
+        for a in soup.find_all("a", href=True):
+            link = urljoin(current_url, a["href"])
+            p = urlparse(link)
+
+            # Stricter domain filtering - must be same domain or subdomain
+            link_domain = ".".join(p.netloc.split(".")[-2:])
+            if link_domain == base_domain and link not in visited:
+                new_links.append((link, depth + 1))
+
+        # Limit links to avoid explosion
+        random.shuffle(new_links)  # Randomize for better coverage
+        to_visit.extend(new_links[:10])  # Add max 10 new links per page
+
+    # Clean up progress indicators
+    progress_bar.empty()
+    status_text.text(f"Completed! Found {len(images_bytes_list)} images.")
 
     return images_bytes_list
 
