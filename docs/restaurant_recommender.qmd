@@ -1,3 +1,5 @@
+# Restaurant Recommender
+
 ## Overview
 
 The **ForkCast Recommender** is a collaborative filtering engine that suggests restaurants to users based on their review history. It uses the [Surprise](https://surpriselib.com/) library’s Singular Value Decomposition (SVD) implementation to generate predictions from user-item rating data.

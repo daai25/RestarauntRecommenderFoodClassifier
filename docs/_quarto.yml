@@ -15,6 +15,7 @@ website:
             - food_or_not_food_filter.qmd
             - restaurant_recommender.qmd
             - restaurant_scraper.qmd
+            - food_classifier.qmd
             - classification_pipeline.qmd
             - webapp.qmd
 
@@ -23,9 +24,14 @@ csl: vancouver-brackets.csl
 
 format:
     html:
-        theme: cosmo
+        respect-user-color-scheme: true
+        theme:
+            light: cosmos
+            dark: darkly
         css: styles.css
         toc: true
+        includes:
+            before-body: _includes/logo.html
 
     pdf:
         documentclass: scrreprt
